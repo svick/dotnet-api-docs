@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ClientServices.Providers.ClientRoleProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class ClientRoleProvider&#xA;Inherits RoleProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClientRoleProvider : System::Web::Security::RoleProvider" />
+  <TypeSignature Language="F#" Value="type ClientRoleProvider = class&#xA;    inherit RoleProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -47,6 +49,8 @@
     <altmember cref="M:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser(System.String)" />
     <altmember cref="M:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole(System.String,System.String)" />
     <altmember cref="M:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8">How to: Configure Client Application Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,12 +62,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.ClientServices.Providers.ClientRoleProvider" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="AddUsersToRoles">
@@ -72,9 +78,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.AddUsersToRoles(System.String[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddUsersToRoles (usernames As String(), roleNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddUsersToRoles(cli::array &lt;System::String ^&gt; ^ usernames, cli::array &lt;System::String ^&gt; ^ roleNames);" />
+      <MemberSignature Language="F#" Value="override this.AddUsersToRoles : string[] * string[] -&gt; unit" Usage="clientRoleProvider.AddUsersToRoles (usernames, roleNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -90,6 +98,7 @@
         <summary>This method is not used by this class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ApplicationName">
@@ -98,9 +107,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientRoleProvider.ApplicationName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ApplicationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.Web.ClientServices.Providers.ClientRoleProvider.ApplicationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,6 +128,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="CreateRole">
@@ -125,9 +137,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.CreateRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CreateRole (roleName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CreateRole(System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="override this.CreateRole : string -&gt; unit" Usage="clientRoleProvider.CreateRole roleName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -141,6 +155,7 @@
         <summary>This method is not used by this class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteRole">
@@ -149,9 +164,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.DeleteRole(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DeleteRole (roleName As String, throwOnPopulatedRole As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool DeleteRole(System::String ^ roleName, bool throwOnPopulatedRole);" />
+      <MemberSignature Language="F#" Value="override this.DeleteRole : string * bool -&gt; bool" Usage="clientRoleProvider.DeleteRole (roleName, throwOnPopulatedRole)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -168,6 +185,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="FindUsersInRole">
@@ -176,9 +194,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.FindUsersInRole(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FindUsersInRole (roleName As String, usernameToMatch As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ FindUsersInRole(System::String ^ roleName, System::String ^ usernameToMatch);" />
+      <MemberSignature Language="F#" Value="override this.FindUsersInRole : string * string -&gt; string[]" Usage="clientRoleProvider.FindUsersInRole (roleName, usernameToMatch)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,6 +215,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllRoles">
@@ -203,9 +224,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.GetAllRoles" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAllRoles () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetAllRoles();" />
+      <MemberSignature Language="F#" Value="override this.GetAllRoles : unit -&gt; string[]" Usage="clientRoleProvider.GetAllRoles " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -217,6 +240,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetRolesForUser">
@@ -225,9 +249,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRolesForUser (username As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetRolesForUser(System::String ^ username);" />
+      <MemberSignature Language="F#" Value="override this.GetRolesForUser : string -&gt; string[]" Usage="clientRoleProvider.GetRolesForUser username" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -266,6 +292,8 @@
  <paramref name="username" /> is not the user name of the current, authenticated user.</exception>
         <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
         <altmember cref="M:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole(System.String,System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8">How to: Configure Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetUsersInRole">
@@ -274,9 +302,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.GetUsersInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetUsersInRole (roleName As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetUsersInRole(System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="override this.GetUsersInRole : string -&gt; string[]" Usage="clientRoleProvider.GetUsersInRole roleName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -291,6 +321,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -299,9 +330,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, config As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="clientRoleProvider.Initialize (name, config)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -354,6 +387,8 @@
           <paramref name="config" /> contains a <c>cacheTimeout</c> value that is not in the correct format for conversion to an <see cref="T:System.Int32" /> value.</exception>
         <exception cref="T:System.OverflowException">
           <paramref name="config" /> contains a <c>cacheTimeout</c> value that represents a number less than <see cref="F:System.Int32.MinValue" /> or greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8">How to: Configure Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="IsUserInRole">
@@ -362,9 +397,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsUserInRole (username As String, roleName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsUserInRole(System::String ^ username, System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="override this.IsUserInRole : string * string -&gt; bool" Usage="clientRoleProvider.IsUserInRole (username, roleName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -413,6 +450,7 @@
         <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
         <altmember cref="T:System.Web.ClientServices.ClientRolePrincipal" />
         <altmember cref="M:System.Web.ClientServices.ClientRolePrincipal.IsInRole(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveUsersFromRoles">
@@ -421,9 +459,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.RemoveUsersFromRoles(System.String[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveUsersFromRoles (usernames As String(), roleNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveUsersFromRoles(cli::array &lt;System::String ^&gt; ^ usernames, cli::array &lt;System::String ^&gt; ^ roleNames);" />
+      <MemberSignature Language="F#" Value="override this.RemoveUsersFromRoles : string[] * string[] -&gt; unit" Usage="clientRoleProvider.RemoveUsersFromRoles (usernames, roleNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -439,6 +479,7 @@
         <summary>This method is not used by this class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ResetCache">
@@ -447,9 +488,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.ResetCache" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetCache ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetCache();" />
+      <MemberSignature Language="F#" Value="member this.ResetCache : unit -&gt; unit" Usage="clientRoleProvider.ResetCache " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -478,6 +521,8 @@
         </remarks>
         <altmember cref="M:System.Web.ClientServices.Providers.ClientRoleProvider.GetRolesForUser(System.String)" />
         <altmember cref="M:System.Web.ClientServices.Providers.ClientRoleProvider.IsUserInRole(System.String,System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8">How to: Configure Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="RoleExists">
@@ -486,9 +531,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientRoleProvider.RoleExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function RoleExists (roleName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool RoleExists(System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="override this.RoleExists : string -&gt; bool" Usage="clientRoleProvider.RoleExists roleName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -503,6 +550,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ServiceUri">
@@ -511,11 +559,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri" />
       <MemberSignature Language="VB.NET" Value="Public Property ServiceUri As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServiceUri { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ServiceUri : string with get, set" Usage="System.Web.ClientServices.Providers.ClientRoleProvider.ServiceUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -541,6 +596,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">When getting this property, no service URI was found in the application configuration file, and this property has not been previously set.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8">How to: Configure Client Application Services</related>
       </Docs>
     </Member>
   </Members>

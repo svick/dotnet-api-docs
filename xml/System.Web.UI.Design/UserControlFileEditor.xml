@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.UserControlFileEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class UserControlFileEditor&#xA;Inherits UrlEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class UserControlFileEditor : System::Web::UI::Design::UrlEditor" />
+  <TypeSignature Language="F#" Value="type UserControlFileEditor = class&#xA;    inherit UrlEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,6 +17,8 @@
   <Docs>
     <summary>Provides a dialog box for selecting files to edit at design time.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -26,12 +30,20 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.UserControlFileEditor" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Caption">
@@ -40,9 +52,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.UserControlFileEditor.Caption" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Caption As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ Caption { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Caption : string" Usage="System.Web.UI.Design.UserControlFileEditor.Caption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,6 +66,8 @@
         <summary>Gets the caption for the dialog box.</summary>
         <value>The caption for the editor window.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Filter">
@@ -60,9 +76,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.UserControlFileEditor.Filter" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Filter As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ Filter { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Filter : string" Usage="System.Web.UI.Design.UserControlFileEditor.Filter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,6 +90,8 @@
         <summary>Gets the file name filter string used to determine the items that appear in the file list of the dialog box.</summary>
         <value>A string that filters the list of files available in the dialog box, such as "*.txt".</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

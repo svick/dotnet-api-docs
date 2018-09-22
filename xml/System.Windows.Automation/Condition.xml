@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Condition" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Condition" />
   <TypeSignature Language="C++ CLI" Value="public ref class Condition abstract" />
+  <TypeSignature Language="F#" Value="type Condition = class" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,6 +20,8 @@
     <altmember cref="T:System.Windows.Automation.AndCondition" />
     <altmember cref="T:System.Windows.Automation.OrCondition" />
     <altmember cref="T:System.Windows.Automation.NotCondition" />
+    <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/3acaee5a-6ce8-4c3e-81c8-67e59eb74477">Find a UI Automation Element Based on a Property Condition</related>
   </Docs>
   <Members>
     <Member MemberName="FalseCondition">
@@ -26,9 +30,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Condition.FalseCondition" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FalseCondition As Condition " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::Condition ^ FalseCondition;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FalseCondition : System.Windows.Automation.Condition" Usage="System.Windows.Automation.Condition.FalseCondition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -52,9 +58,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Condition.TrueCondition" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TrueCondition As Condition " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::Condition ^ TrueCondition;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TrueCondition : System.Windows.Automation.Condition" Usage="System.Windows.Automation.Condition.TrueCondition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.AppContext" />
   <TypeSignature Language="VB.NET" Value="Public Class AppContext" />
   <TypeSignature Language="C++ CLI" Value="public ref class AppContext abstract sealed" />
+  <TypeSignature Language="F#" Value="type AppContext = class" />
   <AssemblyInfo>
     <AssemblyName>System.AppContext</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,7 +103,7 @@
 ## AppContext for library consumers  
  If you are the consumer of a library, the <xref:System.AppContext> class  allows you to take advantage of a library or library method's opt-out mechanism for new functionality.   Individual methods of the class library that you are calling define particular switches that enable or disable a new behavior. The value of the switch  is a Boolean. If it is `false`, which is typically the default value, the new behavior is enabled; if it is `true`, the new behavior is disabled, and the member behaves as it did previously.  
   
- You can set the value of a switch in one of three ways:  
+ You can set the value of a switch in one of four ways:  
   
 -   By calling the <xref:System.AppContext.SetSwitch%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> method in your code.  The `switchName` argument defines the switch name, and the `isEnabled` property defines the value of the switch. Because <xref:System.AppContext> is a static class, it is available on a per-application domain basis.  
   
@@ -124,12 +125,21 @@
 -   By adding a string value whose name is the name of the switch to the `HKLM\SOFTWARE\Microsoft\.NETFramework\AppContext` key in the registry. Its value must be the string representation of a <xref:System.Boolean> that can be parsed by the <xref:System.Boolean.Parse%2A?displayProperty=nameWithType> method; that is, it must be "True", "true", "False", or "false". If the runtime encounters any other value, it ignores the switch.  
   
      Using the registry to define an <xref:System.AppContext> switch has machine scope; that is, it affects every application running on the machine.  
-  
+
+- For ASP.NET applications, you add an [\<Add>](~/docs/framework/configure-apps/file-schema/appsettings/add-element-for-appsettings.md) element to the [\<appSettings>](~/docs/framework/configure-apps/file-schema/appsettings/index.md) section of the web.config file. For example:
+
+   ```xml
+   <appSettings>
+      <add key="AppContext.SetSwitch:switchName1" value="switchValue1" />
+      <add key="AppContext.SetSwitch:switchName2" value="switchValue2" />
+   </appSettings>
+   ```
+   
  If you set the same switch in more than one way, the order of precedence for determining which setting overrides the others is:  
   
 1.  The programmatic setting.  
   
-2.  The setting in the app config file.  
+2.  The setting in the app config file or the web.config file.  
   
 3.  The registry setting.  
   
@@ -152,6 +162,8 @@
 
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/1eb2fae3-de4b-45b6-852f-517c39b751bd">&lt;runtime&gt; Element</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/4ce07f47-7ddb-4d91-b067-501bd8b88752">&lt;AppContextSwitchOverrides&gt; Element</related>
   </Docs>
   <Members>
     <Member MemberName="BaseDirectory">
@@ -160,6 +172,7 @@
       <MemberSignature Language="DocId" Value="P:System.AppContext.BaseDirectory" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BaseDirectory As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ BaseDirectory { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseDirectory : string" Usage="System.AppContext.BaseDirectory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -202,6 +215,7 @@
       <MemberSignature Language="DocId" Value="M:System.AppContext.GetData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetData (name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetData(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetData : string -&gt; obj" Usage="System.AppContext.GetData name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -221,6 +235,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netstandard-2.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -240,6 +259,7 @@
       <MemberSignature Language="DocId" Value="M:System.AppContext.SetSwitch(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SetSwitch (switchName As String, isEnabled As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetSwitch(System::String ^ switchName, bool isEnabled);" />
+      <MemberSignature Language="F#" Value="static member SetSwitch : string * bool -&gt; unit" Usage="System.AppContext.SetSwitch (switchName, isEnabled)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -285,7 +305,7 @@
 >  -   *Switch*.*namespace*.*switchname*  
 > -   *Switch*.*library*.*switchname*  
   
- In addition to setting the value of a switch programmatically, it can also be set:  
+ For applications running on the .NET Framework, in addition to setting the value of a switch programmatically, it can also be set:  
   
 -   By adding the switch name and value to the [\<AppContextSwitchOverrides>](~/docs/framework/configure-apps/file-schema/runtime/appcontextswitchoverrides-element.md) element in the [\<runtime>](~/docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of an application configuration file. For example, the following defines a switch named `Libraries.FPLibrary.UseExactFloatingPointComparison` whose value is `False`.  
   
@@ -302,8 +322,14 @@
 -   By adding a string value whose name is the name of the switch to the `HKLM\SOFTWARE\Microsoft\.NETFramework\AppContext` key in the registry. Its value must be the string representation of a <xref:System.Boolean> that can be parsed by the <xref:System.Boolean.Parse%2A?displayProperty=nameWithType> method; that is, it must be "True", "true", "False", or "false".  
   
  If `switchName` already exists, its value is overwritten by the `isEnabled` argument.  That is, the most recent call to the <xref:System.AppContext.SetSwitch%2A> method overrides the value defined in the registry, in an app configuration file, or by previous calls to the <xref:System.AppContext.SetSwitch%2A> method.  
-  
-   
+ 
+ ### AppContext.SetSwitch and .NET Core
+
+.NET Core supports programmatic calls with the <xref:System.AppContext.SetSwitch%2A> method only. The following switches are supported:
+
+|Switch|Values|Description|
+|--|--|--|
+|`System.Net.Http.useSocketsHttpHandler` |`true`|`false`|Determines whether high-level networking APIs such as <xref:System.Net.Http.HttpClient> use <xref:System.Net.Http.SocketsHttpHandler?displayProperty=nameWithType> (`true`) or <xref:System.Net.Http.HttpClientHandler?displayProperty=nameWithType> (`false`).|   
   
 ## Examples  
  The following line of code sets a switch named `Switch.AmazingLib.ThrowOnException` to `true`, which enables a legacy behavior. The library can then check whether a library consumer has set the value of the switch by calling the <xref:System.AppContext.TryGetSwitch%2A> method.  
@@ -326,6 +352,7 @@
       <MemberSignature Language="DocId" Value="P:System.AppContext.TargetFrameworkName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TargetFrameworkName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ TargetFrameworkName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkName : string" Usage="System.AppContext.TargetFrameworkName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -345,6 +372,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netstandard-2.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -369,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.AppContext.TryGetSwitch(System.String,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetSwitch (switchName As String, ByRef isEnabled As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGetSwitch(System::String ^ switchName, [Runtime::InteropServices::Out] bool % isEnabled);" />
+      <MemberSignature Language="F#" Value="static member TryGetSwitch : string *  -&gt; bool" Usage="System.AppContext.TryGetSwitch (switchName, isEnabled)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -394,7 +427,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="switchName" Type="System.String" />
-        <Parameter Name="isEnabled" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="isEnabled" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="switchName">The name of the switch.</param>

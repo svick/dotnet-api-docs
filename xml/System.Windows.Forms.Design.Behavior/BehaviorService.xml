@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BehaviorService&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class BehaviorService sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type BehaviorService = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -42,6 +44,8 @@
     <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
     <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
     <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7c60cc41-4324-46b5-b444-b39eda7cb33f">Behavior Service Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Adorners">
@@ -50,11 +54,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.BehaviorService.Adorners" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Adorners As BehaviorServiceAdornerCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Design::Behavior::BehaviorServiceAdornerCollection ^ Adorners { System::Windows::Forms::Design::Behavior::BehaviorServiceAdornerCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Adorners : System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection" Usage="System.Windows.Forms.Design.Behavior.BehaviorService.Adorners" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.Behavior.BehaviorServiceAdornerCollection</ReturnType>
       </ReturnValue>
@@ -81,6 +92,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="AdornerWindowGraphics">
@@ -89,9 +101,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.BehaviorService.AdornerWindowGraphics" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdornerWindowGraphics As Graphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ AdornerWindowGraphics { System::Drawing::Graphics ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AdornerWindowGraphics : System.Drawing.Graphics" Usage="System.Windows.Forms.Design.Behavior.BehaviorService.AdornerWindowGraphics" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,6 +119,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
         <altmember cref="T:System.Drawing.Graphics" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="AdornerWindowPointToScreen">
@@ -113,9 +128,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.AdornerWindowPointToScreen(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Function AdornerWindowPointToScreen (p As Point) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point AdornerWindowPointToScreen(System::Drawing::Point p);" />
+      <MemberSignature Language="F#" Value="member this.AdornerWindowPointToScreen : System.Drawing.Point -&gt; System.Drawing.Point" Usage="behaviorService.AdornerWindowPointToScreen p" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,6 +149,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="AdornerWindowToScreen">
@@ -140,9 +158,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.AdornerWindowToScreen" />
       <MemberSignature Language="VB.NET" Value="Public Function AdornerWindowToScreen () As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point AdornerWindowToScreen();" />
+      <MemberSignature Language="F#" Value="member this.AdornerWindowToScreen : unit -&gt; System.Drawing.Point" Usage="behaviorService.AdornerWindowToScreen " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,6 +176,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="BeginDrag">
@@ -164,9 +185,11 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Design.Behavior.BehaviorService.BeginDrag" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event BeginDrag As BehaviorDragDropEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::Design::Behavior::BehaviorDragDropEventHandler ^ BeginDrag;" />
+      <MemberSignature Language="F#" Value="member this.BeginDrag : System.Windows.Forms.Design.Behavior.BehaviorDragDropEventHandler " Usage="member this.BeginDrag : System.Windows.Forms.Design.Behavior.BehaviorDragDropEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -187,6 +210,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="ControlRectInAdornerWindow">
@@ -195,9 +219,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.ControlRectInAdornerWindow(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Function ControlRectInAdornerWindow (c As Control) As Rectangle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Rectangle ControlRectInAdornerWindow(System::Windows::Forms::Control ^ c);" />
+      <MemberSignature Language="F#" Value="member this.ControlRectInAdornerWindow : System.Windows.Forms.Control -&gt; System.Drawing.Rectangle" Usage="behaviorService.ControlRectInAdornerWindow c" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -221,6 +247,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="ControlToAdornerWindow">
@@ -229,9 +256,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.ControlToAdornerWindow(System.Windows.Forms.Control)" />
       <MemberSignature Language="VB.NET" Value="Public Function ControlToAdornerWindow (c As Control) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point ControlToAdornerWindow(System::Windows::Forms::Control ^ c);" />
+      <MemberSignature Language="F#" Value="member this.ControlToAdornerWindow : System.Windows.Forms.Control -&gt; System.Drawing.Point" Usage="behaviorService.ControlToAdornerWindow c" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -259,6 +288,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentBehavior">
@@ -267,9 +297,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.Behavior.BehaviorService.CurrentBehavior" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentBehavior As Behavior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Design::Behavior::Behavior ^ CurrentBehavior { System::Windows::Forms::Design::Behavior::Behavior ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentBehavior : System.Windows.Forms.Design.Behavior.Behavior" Usage="System.Windows.Forms.Design.Behavior.BehaviorService.CurrentBehavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -287,12 +319,14 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="behaviorService.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -320,9 +354,11 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Design.Behavior.BehaviorService.EndDrag" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event EndDrag As BehaviorDragDropEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::Design::Behavior::BehaviorDragDropEventHandler ^ EndDrag;" />
+      <MemberSignature Language="F#" Value="member this.EndDrag : System.Windows.Forms.Design.Behavior.BehaviorDragDropEventHandler " Usage="member this.EndDrag : System.Windows.Forms.Design.Behavior.BehaviorDragDropEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -343,6 +379,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetNextBehavior">
@@ -350,9 +387,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Design.Behavior.Behavior GetNextBehavior(class System.Windows.Forms.Design.Behavior.Behavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.GetNextBehavior(System.Windows.Forms.Design.Behavior.Behavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::Design::Behavior::Behavior ^ GetNextBehavior(System::Windows::Forms::Design::Behavior::Behavior ^ behavior);" />
+      <MemberSignature Language="F#" Value="member this.GetNextBehavior : System.Windows.Forms.Design.Behavior.Behavior -&gt; System.Windows.Forms.Design.Behavior.Behavior" Usage="behaviorService.GetNextBehavior behavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -383,9 +422,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.Invalidate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invalidate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate();" />
+      <MemberSignature Language="F#" Value="member this.Invalidate : unit -&gt; unit" Usage="behaviorService.Invalidate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -405,6 +446,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -413,9 +455,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.Invalidate(System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invalidate (rect As Rectangle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate(System::Drawing::Rectangle rect);" />
+      <MemberSignature Language="F#" Value="member this.Invalidate : System.Drawing.Rectangle -&gt; unit" Usage="behaviorService.Invalidate rect" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -438,6 +482,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
@@ -446,9 +491,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.Invalidate(System.Drawing.Region)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invalidate (r As Region)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate(System::Drawing::Region ^ r);" />
+      <MemberSignature Language="F#" Value="member this.Invalidate : System.Drawing.Region -&gt; unit" Usage="behaviorService.Invalidate r" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -471,6 +518,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="MapAdornerWindowPoint">
@@ -479,9 +527,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.MapAdornerWindowPoint(System.IntPtr,System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Function MapAdornerWindowPoint (handle As IntPtr, pt As Point) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point MapAdornerWindowPoint(IntPtr handle, System::Drawing::Point pt);" />
+      <MemberSignature Language="F#" Value="member this.MapAdornerWindowPoint : nativeint * System.Drawing.Point -&gt; System.Drawing.Point" Usage="behaviorService.MapAdornerWindowPoint (handle, pt)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -500,6 +550,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="PopBehavior">
@@ -507,9 +558,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.Design.Behavior.Behavior PopBehavior(class System.Windows.Forms.Design.Behavior.Behavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.PopBehavior(System.Windows.Forms.Design.Behavior.Behavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::Design::Behavior::Behavior ^ PopBehavior(System::Windows::Forms::Design::Behavior::Behavior ^ behavior);" />
+      <MemberSignature Language="F#" Value="member this.PopBehavior : System.Windows.Forms.Design.Behavior.Behavior -&gt; System.Windows.Forms.Design.Behavior.Behavior" Usage="behaviorService.PopBehavior behavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -534,6 +587,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="PushBehavior">
@@ -541,9 +595,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PushBehavior(class System.Windows.Forms.Design.Behavior.Behavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.PushBehavior(System.Windows.Forms.Design.Behavior.Behavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PushBehavior(System::Windows::Forms::Design::Behavior::Behavior ^ behavior);" />
+      <MemberSignature Language="F#" Value="member this.PushBehavior : System.Windows.Forms.Design.Behavior.Behavior -&gt; unit" Usage="behaviorService.PushBehavior behavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -568,6 +624,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="PushCaptureBehavior">
@@ -575,9 +632,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PushCaptureBehavior(class System.Windows.Forms.Design.Behavior.Behavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.PushCaptureBehavior(System.Windows.Forms.Design.Behavior.Behavior)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PushCaptureBehavior(System::Windows::Forms::Design::Behavior::Behavior ^ behavior);" />
+      <MemberSignature Language="F#" Value="member this.PushCaptureBehavior : System.Windows.Forms.Design.Behavior.Behavior -&gt; unit" Usage="behaviorService.PushCaptureBehavior behavior" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -602,6 +661,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="ScreenToAdornerWindow">
@@ -610,9 +670,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.ScreenToAdornerWindow(System.Drawing.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Function ScreenToAdornerWindow (p As Point) As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point ScreenToAdornerWindow(System::Drawing::Point p);" />
+      <MemberSignature Language="F#" Value="member this.ScreenToAdornerWindow : System.Drawing.Point -&gt; System.Drawing.Point" Usage="behaviorService.ScreenToAdornerWindow p" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -629,6 +691,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Synchronize">
@@ -637,9 +700,11 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.Design.Behavior.BehaviorService.Synchronize" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Synchronize As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Synchronize;" />
+      <MemberSignature Language="F#" Value="member this.Synchronize : EventHandler " Usage="member this.Synchronize : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -658,6 +723,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="SyncSelection">
@@ -666,9 +732,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.Behavior.BehaviorService.SyncSelection" />
       <MemberSignature Language="VB.NET" Value="Public Sub SyncSelection ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SyncSelection();" />
+      <MemberSignature Language="F#" Value="member this.SyncSelection : unit -&gt; unit" Usage="behaviorService.SyncSelection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -681,6 +749,7 @@
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Adorner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

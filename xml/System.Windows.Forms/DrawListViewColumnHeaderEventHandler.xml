@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawListViewColumnHeaderEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DrawListViewColumnHeaderEventHandler(sender As Object, e As DrawListViewColumnHeaderEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DrawListViewColumnHeaderEventHandler(System::Object ^ sender, DrawListViewColumnHeaderEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DrawListViewColumnHeaderEventHandler = delegate of obj * DrawListViewColumnHeaderEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -33,5 +35,6 @@
     <altmember cref="T:System.Windows.Forms.DrawListViewColumnHeaderEventArgs" />
     <altmember cref="T:System.Windows.Forms.ListView" />
     <altmember cref="E:System.Windows.Forms.ListView.DrawColumnHeader" />
+    <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
   </Docs>
 </Type>

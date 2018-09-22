@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ReliableSessionBindingElementImporter" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReliableSessionBindingElementImporter&#xA;Implements IPolicyImportExtension" />
   <TypeSignature Language="C++ CLI" Value="public ref class ReliableSessionBindingElementImporter sealed : System::ServiceModel::Description::IPolicyImportExtension" />
+  <TypeSignature Language="F#" Value="type ReliableSessionBindingElementImporter = class&#xA;    interface IPolicyImportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -22,7 +24,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] uses this class to import reliable session binding elements to binding policy assertions in metadata. This class takes the reliable session binding elements and writes custom policy assertions into the WSDL file when on the service. On the client, it looks for those assertions and inserts a corresponding binding element back into the client binding. Note that the presence of a reliable session in a binding is rendered as the reliable message assertion described in the WS-Reliable Messaging Policy specification.  
+ Windows Communication Foundation (WCF) uses this class to import reliable session binding elements to binding policy assertions in metadata. This class takes the reliable session binding elements and writes custom policy assertions into the WSDL file when on the service. On the client, it looks for those assertions and inserts a corresponding binding element back into the client binding. Note that the presence of a reliable session in a binding is rendered as the reliable message assertion described in the WS-Reliable Messaging Policy specification.  
   
  For more information about exchanging policy assertions between bindings to WSDL information see the <xref:System.ServiceModel.Description.IPolicyImportExtension> and <xref:System.ServiceModel.Description.IPolicyExportExtension> interfaces:  
   
@@ -43,8 +45,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.ReliableSessionBindingElementImporter" /> class.</summary>
@@ -63,6 +71,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ServiceContractAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceContractAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceContractAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ServiceContractAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -20,8 +22,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Interface, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Interface, AllowMultiple=false, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -53,7 +58,7 @@
   
  By default, the <xref:System.ServiceModel.ServiceContractAttribute.Name%2A> and <xref:System.ServiceModel.ServiceContractAttribute.Namespace%2A> properties are the name of the contract type and `http://tempuri.org`, respectively, and <xref:System.ServiceModel.ServiceContractAttribute.ProtectionLevel%2A> is <xref:System.Net.Security.ProtectionLevel.None?displayProperty=nameWithType>. It is recommended that service contracts explicitly set their names, namespaces, and protection levels using these properties. Doing so accomplishes two goals. First, it builds a contract that is not directly connected to the managed type information, enabling you to refactor your managed code and namespaces without breaking the contract as it is expressed in WSDL. Second, explicitly requiring a certain level of protection on the contract itself enables the runtime to validate whether the binding configuration supports that level of security, preventing poor configuration from exposing sensitive information. For more information about protection levels, see [Understanding Protection Level](~/docs/framework/wcf/understanding-protection-level.md).  
   
- To expose a service for use by client applications, create a host application to register your service endpoint with [!INCLUDE[indigo1](~/includes/indigo1-md.md)]. You can host WCF services using Windows Activation Services (WAS), in console applications, Windows Service applications, ASP.NET applications, Windows Forms applications, or any other kind of application domain.  
+ To expose a service for use by client applications, create a host application to register your service endpoint with Windows Communication Foundation (WCF). You can host WCF services using Windows Activation Services (WAS), in console applications, Windows Service applications, ASP.NET applications, Windows Forms applications, or any other kind of application domain.  
   
  Hosting in the WAS is very similar to creating an ASP.NET application. For details, see [How to: Host a WCF Service in IIS](~/docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md).  
   
@@ -87,6 +92,11 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.ServiceModel.OperationContractAttribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/036fae20-7c55-4002-b71d-ac4466e167a3">Defining Service Contracts</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/192be927-6be2-4fda-98f0-e513c4881acc">Hosting a Service</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7cf21bfe-23bd-46aa-8033-609f851dbf76">Service Creation Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/28dfff47-d95b-4cc2-9d5c-b3b9ba71fd50">Building a Client</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d780af9f-73c5-42db-9e52-077a5e4de7fe">Proxy Creation Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -99,6 +109,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -107,6 +118,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.ServiceContractAttribute" /> class.</summary>
@@ -126,10 +142,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceContractAttribute.CallbackContract" />
       <MemberSignature Language="VB.NET" Value="Public Property CallbackContract As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ CallbackContract { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CallbackContract : Type with get, set" Usage="System.ServiceModel.ServiceContractAttribute.CallbackContract" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -138,6 +156,14 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
@@ -171,10 +197,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceContractAttribute.ConfigurationName" />
       <MemberSignature Language="VB.NET" Value="Public Property ConfigurationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConfigurationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationName : string with get, set" Usage="System.ServiceModel.ServiceContractAttribute.ConfigurationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -183,6 +211,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -207,12 +240,19 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceContractAttribute.HasProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasProtectionLevel As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasProtectionLevel { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasProtectionLevel : bool" Usage="System.ServiceModel.ServiceContractAttribute.HasProtectionLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -236,10 +276,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceContractAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.ServiceContractAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -248,6 +290,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -268,7 +315,7 @@
  [!code-csharp[SCA.Names#1](~/samples/snippets/csharp/VS_Snippets_CFX/sca.names/cs/services.cs#1)]
  [!code-vb[SCA.Names#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.names/vb/services.vb#1)]  
   
- The following code example shows an [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client for the preceding service that imported WSDL using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). This client uses a `HelloWorldProxy` client rather than a `SampleServiceProxy` client (as is the case with the sample in the Example section of <xref:System.ServiceModel.ServiceContractAttribute>).  
+ The following code example shows an Windows Communication Foundation (WCF) client for the preceding service that imported WSDL using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). This client uses a `HelloWorldProxy` client rather than a `SampleServiceProxy` client (as is the case with the sample in the Example section of <xref:System.ServiceModel.ServiceContractAttribute>).  
   
  [!code-csharp[SCA.Names#3](~/samples/snippets/csharp/VS_Snippets_CFX/sca.names/cs/client.cs#3)]
  [!code-vb[SCA.Names#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.names/vb/client.vb#3)]  
@@ -285,10 +332,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceContractAttribute.Namespace" />
       <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.ServiceModel.ServiceContractAttribute.Namespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -297,6 +346,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -312,7 +366,7 @@
  [!code-csharp[SCA.Names#1](~/samples/snippets/csharp/VS_Snippets_CFX/sca.names/cs/services.cs#1)]
  [!code-vb[SCA.Names#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.names/vb/services.vb#1)]  
   
- The following code example shows an [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client for the preceding service that imported WSDL using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). This client uses a `HelloWorldClient` client rather than a `SampleServiceClient` client (as is the case with the sample in the Example section of <xref:System.ServiceModel.ServiceContractAttribute>).  
+ The following code example shows an Windows Communication Foundation (WCF) client for the preceding service that imported WSDL using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](~/docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md). This client uses a `HelloWorldClient` client rather than a `SampleServiceClient` client (as is the case with the sample in the Example section of <xref:System.ServiceModel.ServiceContractAttribute>).  
   
  [!code-csharp[SCA.Names#3](~/samples/snippets/csharp/VS_Snippets_CFX/sca.names/cs/client.cs#3)]
  [!code-vb[SCA.Names#3](~/samples/snippets/visualbasic/VS_Snippets_CFX/sca.names/vb/client.vb#3)]  
@@ -327,12 +381,19 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceContractAttribute.ProtectionLevel" />
       <MemberSignature Language="VB.NET" Value="Public Property ProtectionLevel As ProtectionLevel" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel ProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
+      <MemberSignature Language="F#" Value="member this.ProtectionLevel : System.Net.Security.ProtectionLevel with get, set" Usage="System.ServiceModel.ServiceContractAttribute.ProtectionLevel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Net.Security.ProtectionLevel</ReturnType>
       </ReturnValue>
@@ -378,16 +439,23 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ServiceContractAttribute.SessionMode" />
       <MemberSignature Language="VB.NET" Value="Public Property SessionMode As SessionMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::SessionMode SessionMode { System::ServiceModel::SessionMode get(); void set(System::ServiceModel::SessionMode value); };" />
+      <MemberSignature Language="F#" Value="member this.SessionMode : System.ServiceModel.SessionMode with get, set" Usage="System.ServiceModel.ServiceContractAttribute.SessionMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ServiceModel.SessionMode</ReturnType>
       </ReturnValue>

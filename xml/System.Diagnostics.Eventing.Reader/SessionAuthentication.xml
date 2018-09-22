@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.SessionAuthentication" />
   <TypeSignature Language="VB.NET" Value="Public Enum SessionAuthentication" />
   <TypeSignature Language="C++ CLI" Value="public enum class SessionAuthentication" />
+  <TypeSignature Language="F#" Value="type SessionAuthentication = " />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,6 +16,8 @@
   <Docs>
     <summary>Defines values for the type of authentication used during a Remote Procedure Call (RPC) login to a server. This login occurs when you create a <see cref="T:System.Diagnostics.Eventing.Reader.EventLogSession" /> object that specifies a connection to a remote computer.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -22,9 +26,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.SessionAuthentication.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Diagnostics.Eventing.Reader.SessionAuthentication.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -41,9 +47,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.SessionAuthentication.Kerberos" />
       <MemberSignature Language="VB.NET" Value="Kerberos" />
       <MemberSignature Language="C++ CLI" Value="Kerberos" />
+      <MemberSignature Language="F#" Value="Kerberos = 2" Usage="System.Diagnostics.Eventing.Reader.SessionAuthentication.Kerberos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,9 +68,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.SessionAuthentication.Negotiate" />
       <MemberSignature Language="VB.NET" Value="Negotiate" />
       <MemberSignature Language="C++ CLI" Value="Negotiate" />
+      <MemberSignature Language="F#" Value="Negotiate = 1" Usage="System.Diagnostics.Eventing.Reader.SessionAuthentication.Negotiate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,9 +89,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.SessionAuthentication.Ntlm" />
       <MemberSignature Language="VB.NET" Value="Ntlm" />
       <MemberSignature Language="C++ CLI" Value="Ntlm" />
+      <MemberSignature Language="F#" Value="Ntlm = 3" Usage="System.Diagnostics.Eventing.Reader.SessionAuthentication.Ntlm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

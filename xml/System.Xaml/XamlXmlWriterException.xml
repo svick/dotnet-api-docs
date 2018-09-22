@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlXmlWriterException" />
   <TypeSignature Language="VB.NET" Value="Public Class XamlXmlWriterException&#xA;Inherits XamlException" />
   <TypeSignature Language="C++ CLI" Value="public ref class XamlXmlWriterException : System::Xaml::XamlException" />
+  <TypeSignature Language="F#" Value="type XamlXmlWriterException = class&#xA;    inherit XamlException" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +13,11 @@
     <BaseTypeName>System.Xaml.XamlException</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>The exception that is thrown by certain <see cref="T:System.Xaml.XamlXmlWriter" /> APIs.</summary>
     <remarks>
@@ -23,6 +29,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Xaml.XamlXmlWriter" />
+    <related type="Article" href="http://msdn.microsoft.com/library/7c11abec-1075-474c-9d9b-778e5dab21c3">Understanding XAML Node Stream Structures and Concepts</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -45,6 +52,11 @@
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlXmlWriterException" /> class with a system-supplied message that describes the error.</summary>
@@ -57,11 +69,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriterException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlWriterException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlWriterException : string -&gt; System.Xaml.XamlXmlWriterException" Usage="new System.Xaml.XamlXmlWriterException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
@@ -77,11 +95,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriterException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; XamlXmlWriterException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlWriterException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Xaml.XamlXmlWriterException" Usage="new System.Xaml.XamlXmlWriterException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
@@ -99,11 +123,17 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlXmlWriterException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlXmlWriterException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlXmlWriterException : string * Exception -&gt; System.Xaml.XamlXmlWriterException" Usage="new System.Xaml.XamlXmlWriterException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
         <Parameter Name="innerException" Type="System.Exception" />

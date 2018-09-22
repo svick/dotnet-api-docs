@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MyGroupCollectionAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MyGroupCollectionAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class MyGroupCollectionAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type MyGroupCollectionAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,10 +15,13 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class, AllowMultiple=false, Inherited=false)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
       <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
     </Attribute>
   </Attributes>
@@ -33,6 +38,8 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <related type="Article" href="http://msdn.microsoft.com/library/f6bff4e6-6769-4294-956b-037aa6106d2a">My.Forms Object</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f188dc05-2c75-41b6-bb68-122d1c3110a2">My.WebServices Object</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,11 +48,18 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyGroupCollectionAttribute.#ctor(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (typeToCollect As String, createInstanceMethodName As String, disposeInstanceMethodName As String, defaultInstanceAlias As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MyGroupCollectionAttribute(System::String ^ typeToCollect, System::String ^ createInstanceMethodName, System::String ^ disposeInstanceMethodName, System::String ^ defaultInstanceAlias);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.MyGroupCollectionAttribute : string * string * string * string -&gt; Microsoft.VisualBasic.MyGroupCollectionAttribute" Usage="new Microsoft.VisualBasic.MyGroupCollectionAttribute (typeToCollect, createInstanceMethodName, disposeInstanceMethodName, defaultInstanceAlias)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="typeToCollect" Type="System.String" />
         <Parameter Name="createInstanceMethodName" Type="System.String" />
@@ -73,6 +87,8 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="http://msdn.microsoft.com/library/f6bff4e6-6769-4294-956b-037aa6106d2a">My.Forms Object</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f188dc05-2c75-41b6-bb68-122d1c3110a2">My.WebServices Object</related>
       </Docs>
     </Member>
     <Member MemberName="CreateMethod">
@@ -81,11 +97,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyGroupCollectionAttribute.CreateMethod" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreateMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CreateMethod { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CreateMethod : string" Usage="Microsoft.VisualBasic.MyGroupCollectionAttribute.CreateMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -101,6 +124,8 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="http://msdn.microsoft.com/library/f6bff4e6-6769-4294-956b-037aa6106d2a">My.Forms Object</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f188dc05-2c75-41b6-bb68-122d1c3110a2">My.WebServices Object</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultInstanceAlias">
@@ -109,11 +134,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyGroupCollectionAttribute.DefaultInstanceAlias" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultInstanceAlias As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultInstanceAlias { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultInstanceAlias : string" Usage="Microsoft.VisualBasic.MyGroupCollectionAttribute.DefaultInstanceAlias" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -129,6 +161,8 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="http://msdn.microsoft.com/library/f6bff4e6-6769-4294-956b-037aa6106d2a">My.Forms Object</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f188dc05-2c75-41b6-bb68-122d1c3110a2">My.WebServices Object</related>
       </Docs>
     </Member>
     <Member MemberName="DisposeMethod">
@@ -137,11 +171,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyGroupCollectionAttribute.DisposeMethod" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisposeMethod As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisposeMethod { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisposeMethod : string" Usage="Microsoft.VisualBasic.MyGroupCollectionAttribute.DisposeMethod" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -157,6 +198,8 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="http://msdn.microsoft.com/library/f6bff4e6-6769-4294-956b-037aa6106d2a">My.Forms Object</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f188dc05-2c75-41b6-bb68-122d1c3110a2">My.WebServices Object</related>
       </Docs>
     </Member>
     <Member MemberName="MyGroupName">
@@ -165,11 +208,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyGroupCollectionAttribute.MyGroupName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MyGroupName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MyGroupName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MyGroupName : string" Usage="Microsoft.VisualBasic.MyGroupCollectionAttribute.MyGroupName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -185,6 +235,8 @@
  ]]></format>
         </remarks>
         <forInternalUseOnly />
+        <related type="Article" href="http://msdn.microsoft.com/library/f6bff4e6-6769-4294-956b-037aa6106d2a">My.Forms Object</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f188dc05-2c75-41b6-bb68-122d1c3110a2">My.WebServices Object</related>
       </Docs>
     </Member>
   </Members>

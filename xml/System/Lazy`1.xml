@@ -1,9 +1,10 @@
 ﻿<Type Name="Lazy&lt;T&gt;" FullName="System.Lazy&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class Lazy&lt;T&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Lazy`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Lazy`1&lt;T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Lazy`1" />
   <TypeSignature Language="VB.NET" Value="Public Class Lazy(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Lazy" />
+  <TypeSignature Language="F#" Value="type Lazy&lt;'T&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,9 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+  </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
   </TypeParameters>
@@ -30,14 +34,17 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
       <AttributeName>System.Diagnostics.DebuggerDisplay("ThreadSafetyMode={Mode}, IsValueCreated={IsValueCreated}, IsValueFaulted={IsValueFaulted}, Value={ValueForDebugDisplay}")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.System_LazyDebugView`1))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -131,6 +138,7 @@
     </remarks>
     <threadsafe>By default, all public and protected members of the <see cref="T:System.Lazy`1" /> class are thread safe and may be used concurrently from multiple threads. These thread-safety guarantees may be removed optionally and per instance, using parameters to the type's constructors.</threadsafe>
     <altmember cref="T:System.Threading.LazyThreadSafetyMode" />
+    <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -171,6 +179,9 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Lazy`1" /> class. When lazy initialization occurs, the default constructor of the target type is used.</summary>
@@ -209,6 +220,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -217,6 +229,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (isThreadSafe As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(bool isThreadSafe);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : bool -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; isThreadSafe" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -235,6 +248,9 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="isThreadSafe" Type="System.Boolean" />
@@ -269,6 +285,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -277,6 +294,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(System.Func{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(Func&lt;T&gt; ^ valueFactory);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : Func&lt;'T&gt; -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; valueFactory" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -295,6 +313,9 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" />
@@ -344,6 +365,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="valueFactory" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -352,6 +374,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(System.Threading.LazyThreadSafetyMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (mode As LazyThreadSafetyMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(System::Threading::LazyThreadSafetyMode mode);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : System.Threading.LazyThreadSafetyMode -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; mode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -370,6 +393,9 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="mode" Type="System.Threading.LazyThreadSafetyMode" />
@@ -421,6 +447,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="mode" /> contains an invalid value.</exception>
         <altmember cref="T:System.Threading.LazyThreadSafetyMode" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -429,11 +456,21 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(T value);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : 'T -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="T" />
@@ -450,6 +487,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(System.Func{`0},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T), isThreadSafe As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(Func&lt;T&gt; ^ valueFactory, bool isThreadSafe);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : Func&lt;'T&gt; * bool -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; (valueFactory, isThreadSafe)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -468,6 +506,9 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" />
@@ -523,6 +564,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="valueFactory" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -531,6 +573,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(System.Func{`0},System.Threading.LazyThreadSafetyMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T), mode As LazyThreadSafetyMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(Func&lt;T&gt; ^ valueFactory, System::Threading::LazyThreadSafetyMode mode);" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : Func&lt;'T&gt; * System.Threading.LazyThreadSafetyMode -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; (valueFactory, mode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -549,6 +592,9 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" />
@@ -615,6 +661,7 @@
           <paramref name="mode" /> contains an invalid value.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="valueFactory" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
       </Docs>
     </Member>
     <Member MemberName="IsValueCreated">
@@ -623,6 +670,7 @@
       <MemberSignature Language="DocId" Value="P:System.Lazy`1.IsValueCreated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValueCreated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValueCreated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsValueCreated : bool" Usage="System.Lazy&lt;'T&gt;.IsValueCreated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -641,6 +689,9 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -662,6 +713,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.LazyThreadSafetyMode" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -670,6 +722,7 @@
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="lazy.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -688,6 +741,9 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -715,6 +771,7 @@
       <MemberSignature Language="DocId" Value="P:System.Lazy`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Value { T get(); };" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T" Usage="System.Lazy&lt;'T&gt;.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -734,8 +791,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
           <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -758,6 +818,7 @@
         <exception cref="T:System.MemberAccessException">The <see cref="T:System.Lazy`1" /> instance is initialized to use the default constructor of the type that is being lazily initialized, and permissions to access the constructor are missing.</exception>
         <exception cref="T:System.MissingMemberException">The <see cref="T:System.Lazy`1" /> instance is initialized to use the default constructor of the type that is being lazily initialized, and that type does not have a public, parameterless constructor.</exception>
         <exception cref="T:System.InvalidOperationException">The initialization function tries to access <see cref="P:System.Lazy`1.Value" /> on this instance.</exception>
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
       </Docs>
     </Member>
   </Members>

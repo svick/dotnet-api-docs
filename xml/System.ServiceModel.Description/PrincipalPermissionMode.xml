@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.PrincipalPermissionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum PrincipalPermissionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class PrincipalPermissionMode" />
+  <TypeSignature Language="F#" Value="type PrincipalPermissionMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -36,7 +38,7 @@
  [!code-vb[PrincipalPermissionMode#2](~/samples/snippets/visualbasic/VS_Snippets_CFX/principalpermissionmode/vb/source.vb#2)]  
   
 ## UseAspNetRoles  
- The UseAspNetRoles value is used for all credential types. This mode enables [!INCLUDE[indigo1](~/includes/indigo1-md.md)] to use the ASP.NET role provider to make authorization decisions.  
+ The UseAspNetRoles value is used for all credential types. This mode enables Windows Communication Foundation (WCF) to use the ASP.NET role provider to make authorization decisions.  
   
  When the credential for a service is an X.509 certificate, you can set the `Name` property of the <xref:System.Security.Permissions.PrincipalPermissionAttribute> to a string that consists of the concatenated values of the Subject field and the Thumbprint field, as shown in the following example.  
   
@@ -92,6 +94,7 @@ evaluationContext.Properties["Principal"]=new CustomPrincipal(identity);
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.PrincipalPermissionMode.Always" />
       <MemberSignature Language="VB.NET" Value="Always" />
       <MemberSignature Language="C++ CLI" Value="Always" />
+      <MemberSignature Language="F#" Value="Always = 4" Usage="System.ServiceModel.Description.PrincipalPermissionMode.Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -111,10 +114,12 @@ evaluationContext.Properties["Principal"]=new CustomPrincipal(identity);
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.PrincipalPermissionMode.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 3" Usage="System.ServiceModel.Description.PrincipalPermissionMode.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -131,10 +136,12 @@ evaluationContext.Properties["Principal"]=new CustomPrincipal(identity);
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.PrincipalPermissionMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ServiceModel.Description.PrincipalPermissionMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -152,10 +159,12 @@ evaluationContext.Properties["Principal"]=new CustomPrincipal(identity);
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.PrincipalPermissionMode.UseAspNetRoles" />
       <MemberSignature Language="VB.NET" Value="UseAspNetRoles" />
       <MemberSignature Language="C++ CLI" Value="UseAspNetRoles" />
+      <MemberSignature Language="F#" Value="UseAspNetRoles = 2" Usage="System.ServiceModel.Description.PrincipalPermissionMode.UseAspNetRoles" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -173,10 +182,12 @@ evaluationContext.Properties["Principal"]=new CustomPrincipal(identity);
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Description.PrincipalPermissionMode.UseWindowsGroups" />
       <MemberSignature Language="VB.NET" Value="UseWindowsGroups" />
       <MemberSignature Language="C++ CLI" Value="UseWindowsGroups" />
+      <MemberSignature Language="F#" Value="UseWindowsGroups = 1" Usage="System.ServiceModel.Description.PrincipalPermissionMode.UseWindowsGroups" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

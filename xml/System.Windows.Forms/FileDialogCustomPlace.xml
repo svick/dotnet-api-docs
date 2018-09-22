@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FileDialogCustomPlace" />
   <TypeSignature Language="VB.NET" Value="Public Class FileDialogCustomPlace" />
   <TypeSignature Language="C++ CLI" Value="public ref class FileDialogCustomPlace" />
+  <TypeSignature Language="F#" Value="type FileDialogCustomPlace = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -25,6 +27,8 @@
  ]]></format>
     </remarks>
     <altmember cref="P:System.Windows.Forms.FileDialog.CustomPlaces" />
+    <related type="Article" href="http://msdn.microsoft.com/library/63f6469b-59cd-40f6-9e61-8b5831856780">How To: Add a Custom Place to a File Dialog Box</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d8d8b544-8b4d-4da5-ba3a-b05e93244778">Known Folder GUIDs for File Dialog Custom Places</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -43,9 +47,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlace.#ctor(System.Guid)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (knownFolderGuid As Guid)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileDialogCustomPlace(Guid knownFolderGuid);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.FileDialogCustomPlace : Guid -&gt; System.Windows.Forms.FileDialogCustomPlace" Usage="new System.Windows.Forms.FileDialogCustomPlace knownFolderGuid" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -79,9 +85,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlace.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FileDialogCustomPlace(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.FileDialogCustomPlace : string -&gt; System.Windows.Forms.FileDialogCustomPlace" Usage="new System.Windows.Forms.FileDialogCustomPlace path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -100,11 +108,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialogCustomPlace.KnownFolderGuid" />
       <MemberSignature Language="VB.NET" Value="Public Property KnownFolderGuid As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid KnownFolderGuid { Guid get(); void set(Guid value); };" />
+      <MemberSignature Language="F#" Value="member this.KnownFolderGuid : Guid with get, set" Usage="System.Windows.Forms.FileDialogCustomPlace.KnownFolderGuid" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
@@ -121,9 +136,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialogCustomPlace.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Windows.Forms.FileDialogCustomPlace.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -142,9 +159,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlace.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fileDialogCustomPlace.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

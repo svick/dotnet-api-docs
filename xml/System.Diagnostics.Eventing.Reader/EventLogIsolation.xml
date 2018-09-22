@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogIsolation" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventLogIsolation" />
   <TypeSignature Language="C++ CLI" Value="public enum class EventLogIsolation" />
+  <TypeSignature Language="F#" Value="type EventLogIsolation = " />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,6 +16,8 @@
   <Docs>
     <summary>Defines the default access permissions for the event log. The Application and System values indicate that the log shares the access control list (ACL) with the appropriate Windows log (the Application or System event logs) and share the Event Tracing for Windows (ETW) session with other logs of the same isolation. All channels with Custom isolation use a private ETW session.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
   </Docs>
   <Members>
     <Member MemberName="Application">
@@ -22,9 +26,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.EventLogIsolation.Application" />
       <MemberSignature Language="VB.NET" Value="Application" />
       <MemberSignature Language="C++ CLI" Value="Application" />
+      <MemberSignature Language="F#" Value="Application = 0" Usage="System.Diagnostics.Eventing.Reader.EventLogIsolation.Application" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -41,9 +47,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.EventLogIsolation.Custom" />
       <MemberSignature Language="VB.NET" Value="Custom" />
       <MemberSignature Language="C++ CLI" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 2" Usage="System.Diagnostics.Eventing.Reader.EventLogIsolation.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,9 +68,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.EventLogIsolation.System" />
       <MemberSignature Language="VB.NET" Value="System" />
       <MemberSignature Language="C++ CLI" Value="System" />
+      <MemberSignature Language="F#" Value="System = 1" Usage="System.Diagnostics.Eventing.Reader.EventLogIsolation.System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

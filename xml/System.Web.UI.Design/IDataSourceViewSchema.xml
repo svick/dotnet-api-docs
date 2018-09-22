@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDataSourceViewSchema" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataSourceViewSchema" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataSourceViewSchema" />
+  <TypeSignature Language="F#" Value="type IDataSourceViewSchema = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -22,6 +24,7 @@
     <altmember cref="T:System.Web.UI.IDataSource" />
     <altmember cref="M:System.Web.UI.IDataSource.GetView(System.String)" />
     <altmember cref="T:System.Web.UI.DataSourceView" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
   </Docs>
   <Members>
     <Member MemberName="GetChildren">
@@ -30,9 +33,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceViewSchema.GetChildren" />
       <MemberSignature Language="VB.NET" Value="Public Function GetChildren () As IDataSourceViewSchema()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Web::UI::Design::IDataSourceViewSchema ^&gt; ^ GetChildren();" />
+      <MemberSignature Language="F#" Value="abstract member GetChildren : unit -&gt; System.Web.UI.Design.IDataSourceViewSchema[]" Usage="iDataSourceViewSchema.GetChildren " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,9 +65,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceViewSchema.GetFields" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFields () As IDataSourceFieldSchema()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Web::UI::Design::IDataSourceFieldSchema ^&gt; ^ GetFields();" />
+      <MemberSignature Language="F#" Value="abstract member GetFields : unit -&gt; System.Web.UI.Design.IDataSourceFieldSchema[]" Usage="iDataSourceViewSchema.GetFields " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,9 +98,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataSourceViewSchema.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.UI.Design.IDataSourceViewSchema.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

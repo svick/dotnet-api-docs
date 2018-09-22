@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.EqualityComparer`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EqualityComparer(Of T)&#xA;Implements IEqualityComparer, IEqualityComparer(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class EqualityComparer abstract : System::Collections::Generic::IEqualityComparer&lt;T&gt;, System::Collections::IEqualityComparer" />
+  <TypeSignature Language="F#" Value="type EqualityComparer&lt;'T&gt; = class&#xA;    interface IEqualityComparer&#xA;    interface IEqualityComparer&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +14,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -34,6 +36,11 @@
       <InterfaceName>System.Collections.IEqualityComparer</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="T">The type of objects to compare.</typeparam>
     <summary>Provides a base class for implementations of the <see cref="T:System.Collections.Generic.IEqualityComparer`1" /> generic interface.</summary>
@@ -79,6 +86,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -98,6 +106,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.EqualityComparer`1.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As EqualityComparer(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::EqualityComparer&lt;T&gt; ^ Default { System::Collections::Generic::EqualityComparer&lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Collections.Generic.EqualityComparer&lt;'T&gt;" Usage="System.Collections.Generic.EqualityComparer&lt;'T&gt;.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -108,6 +117,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -115,6 +125,14 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.EqualityComparer&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -130,15 +148,14 @@
    
   
 ## Examples  
- The following example creates two dictionary collections of type `Box`. Both dictionaries are created with the constructor that takes an <xref:System.Collections.Generic.EqualityComparer%601> as a parameter.  
+ The following example creates a collection that contains elements of the `Box` type and then searches it for a box matching another box by calling the `FindFirst` method, twice.
   
- To determine the equality of dictionary keys, the `boxesByDim` dictionary uses an equality comparer (`BoxEqDimensions`) that uses the implementation of the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method in the `Box` class. Two boxes are considered equal if their dimensions are the same.  
+ The first search does not specify any equality comparer, which means `FindFirst` uses <xref:System.Collections.Generic.EqualityComparer%601.Default%2A?displayProperty=nameWithType> to determine equality of boxes. That in turn uses the implementation of the <xref:System.IEquatable%601.Equals%2A?displayProperty=nameWithType> method in the `Box` class. Two boxes are considered equal if their dimensions are the same.
   
- The `boxesByVol` dictionary uses an equality comparer (`BoxEqVolume`) that defines equality by volume. Two boxes are considered equal if their volumes are the same.  
+ The second search specifies an equality comparer (`BoxEqVolume`) that defines equality by volume. Two boxes are considered equal if their volumes are the same.
   
- [!code-cpp[System.Collections.Generic.EqualityComparer.Default#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.collections.generic.equalitycomparer.default/cpp/program.cpp#1)]
- [!code-csharp[System.Collections.Generic.EqualityComparer.Default#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.equalitycomparer.default/cs/program.cs#1)]
- [!code-vb[System.Collections.Generic.EqualityComparer.Default#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.equalitycomparer.default/vb/program.vb#1)]  
+ [!code-csharp[System.Collections.Generic.EqualityComparer.Default#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.collections.generic.equalitycomparer.default/cs/program.cs)]
+ [!code-vb[System.Collections.Generic.EqualityComparer.Default#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.collections.generic.equalitycomparer.default/vb/program.vb)]
   
  ]]></format>
         </remarks>
@@ -153,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.EqualityComparer`1.Equals(`0,`0)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Equals (x As T, y As T) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Equals(T x, T y);" />
+      <MemberSignature Language="F#" Value="override this.Equals : 'T * 'T -&gt; bool" Usage="equalityComparer.Equals (x, y)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.Equals(`0,`0)</InterfaceMember>
@@ -166,6 +184,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -205,6 +224,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.EqualityComparer`1.GetHashCode(`0)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetHashCode (obj As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetHashCode(T obj);" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : 'T -&gt; int" Usage="equalityComparer.GetHashCode obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEqualityComparer`1.GetHashCode(`0)</InterfaceMember>
@@ -218,6 +238,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -261,6 +282,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -314,6 +336,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

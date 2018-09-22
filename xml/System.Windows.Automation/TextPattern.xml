@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TextPattern" />
   <TypeSignature Language="VB.NET" Value="Public Class TextPattern&#xA;Inherits BasePattern" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextPattern : System::Windows::Automation::BasePattern" />
+  <TypeSignature Language="F#" Value="type TextPattern = class&#xA;    inherit BasePattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,6 +25,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Automation.Provider.ITextProvider" />
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md">UI Automation Control Patterns for Clients</related>
   </Docs>
   <Members>
     <Member MemberName="AnimationStyleAttribute">
@@ -31,9 +35,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.AnimationStyleAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AnimationStyleAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ AnimationStyleAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable AnimationStyleAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.AnimationStyleAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -56,10 +62,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1000](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1000)]  
   
@@ -77,16 +83,18 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.BackgroundColorAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackgroundColorAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ BackgroundColorAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BackgroundColorAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.BackgroundColorAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the [BackgroundColor](http://msdn.microsoft.com/library/default.asp?url=/library/gdi/colors_9xiq.asp) attribute of a text range.</summary>
+        <summary>Identifies the BackgroundColor attribute of a text range.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -100,10 +108,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1001](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1001)]  
   
@@ -120,9 +128,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.BulletStyleAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BulletStyleAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ BulletStyleAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable BulletStyleAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.BulletStyleAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,10 +153,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1002](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1002)]  
   
@@ -164,9 +174,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.CapStyleAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CapStyleAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ CapStyleAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CapStyleAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.CapStyleAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -187,10 +199,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1003](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1003)]  
   
@@ -208,9 +220,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.CultureAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CultureAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ CultureAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CultureAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.CultureAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -236,10 +250,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1005](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1005)]  
   
@@ -256,9 +270,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TextPattern.DocumentRange" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentRange As TextPatternRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::Text::TextPatternRange ^ DocumentRange { System::Windows::Automation::Text::TextPatternRange ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DocumentRange : System.Windows.Automation.Text.TextPatternRange" Usage="System.Windows.Automation.TextPattern.DocumentRange" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -292,9 +308,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.FontNameAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontNameAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ FontNameAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontNameAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.FontNameAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -319,10 +337,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#FontName](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#fontname)]
  [!code-vb[UIATextPattern_snip#FontName](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATextPattern_snip/VisualBasic/SearchWindow.vb#fontname)]  
@@ -339,9 +357,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.FontSizeAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontSizeAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ FontSizeAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontSizeAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.FontSizeAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -362,10 +382,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1007](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1007)]  
   
@@ -384,9 +404,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.FontWeightAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontWeightAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ FontWeightAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FontWeightAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.FontWeightAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -400,7 +422,7 @@
 ## Remarks  
  This attribute refers to the relative stroke, thickness, or boldness of a font.  
   
- This attribute is modeled after the `lfWeight` field in [GDI LOGFONT](http://msdn.microsoft.com/library/default.asp?url=/library/gdi/fontext_1wmq.asp). For consistency, the following values have been adopted from LOGFONT: 0=DontCare, 100=Thin, 200=ExtraLight or UltraLight, 300=Light, 400=Normal or Regular, 500=Medium, 600=SemiBold or DemiBold, 700=Bold, 800=ExtraBold or UltraBold, and 900=Heavy or Black.  
+ This attribute is modeled after the `lfWeight` field in GDI LOGFONT. For consistency, the following values have been adopted from LOGFONT: 0=DontCare, 100=Thin, 200=ExtraLight or UltraLight, 300=Light, 400=Normal or Regular, 500=Medium, 600=SemiBold or DemiBold, 700=Bold, 800=ExtraBold or UltraBold, and 900=Heavy or Black.  
   
  This identifier is used by UI Automation client applications. UI Automation providers should use the equivalent field in <xref:System.Windows.Automation.TextPatternIdentifiers>.  
   
@@ -411,10 +433,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1008](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1008)]  
   
@@ -432,16 +454,18 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.ForegroundColorAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ForegroundColorAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ ForegroundColorAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ForegroundColorAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.ForegroundColorAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationTextAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Identifies the <see langword="ForegroundColor" /> ([COLORREF](http://msdn.microsoft.com/library/default.asp?url=/library/gdi/colors_9xiq.asp)) attribute of a text range.</summary>
+        <summary>Identifies the <see langword="ForegroundColor" /> (COLORREF) attribute of a text range.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -457,10 +481,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1009](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1009)]  
   
@@ -477,9 +501,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TextPattern.GetSelection" />
       <MemberSignature Language="VB.NET" Value="Public Function GetSelection () As TextPatternRange()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::Text::TextPatternRange ^&gt; ^ GetSelection();" />
+      <MemberSignature Language="F#" Value="member this.GetSelection : unit -&gt; System.Windows.Automation.Text.TextPatternRange[]" Usage="textPattern.GetSelection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -519,9 +545,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TextPattern.GetVisibleRanges" />
       <MemberSignature Language="VB.NET" Value="Public Function GetVisibleRanges () As TextPatternRange()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::Text::TextPatternRange ^&gt; ^ GetVisibleRanges();" />
+      <MemberSignature Language="F#" Value="member this.GetVisibleRanges : unit -&gt; System.Windows.Automation.Text.TextPatternRange[]" Usage="textPattern.GetVisibleRanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -556,9 +584,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.HorizontalTextAlignmentAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizontalTextAlignmentAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ HorizontalTextAlignmentAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HorizontalTextAlignmentAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.HorizontalTextAlignmentAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -581,10 +611,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1011](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1011)]  
   
@@ -601,9 +631,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.IndentationFirstLineAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IndentationFirstLineAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ IndentationFirstLineAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IndentationFirstLineAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.IndentationFirstLineAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -626,10 +658,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1012](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1012)]  
   
@@ -646,9 +678,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.IndentationLeadingAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IndentationLeadingAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ IndentationLeadingAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IndentationLeadingAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.IndentationLeadingAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -671,10 +705,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1013](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1013)]  
   
@@ -691,9 +725,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.IndentationTrailingAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IndentationTrailingAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ IndentationTrailingAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IndentationTrailingAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.IndentationTrailingAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -716,10 +752,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1014](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1014)]  
   
@@ -736,9 +772,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.IsHiddenAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsHiddenAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ IsHiddenAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsHiddenAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.IsHiddenAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -759,10 +797,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1015](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1015)]  
   
@@ -779,9 +817,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.IsItalicAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsItalicAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ IsItalicAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsItalicAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.IsItalicAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -802,10 +842,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1016](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1016)]  
   
@@ -822,9 +862,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.IsReadOnlyAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsReadOnlyAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ IsReadOnlyAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsReadOnlyAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.IsReadOnlyAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -850,10 +892,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1022](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1022)]  
   
@@ -870,9 +912,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.IsSubscriptAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSubscriptAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ IsSubscriptAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsSubscriptAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.IsSubscriptAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -893,10 +937,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1023](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1023)]  
   
@@ -913,9 +957,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.IsSuperscriptAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSuperscriptAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ IsSuperscriptAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable IsSuperscriptAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.IsSuperscriptAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -936,10 +982,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1024](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1024)]  
   
@@ -956,9 +1002,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.MarginBottomAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MarginBottomAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ MarginBottomAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MarginBottomAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.MarginBottomAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -981,10 +1029,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1025](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1025)]  
   
@@ -1001,9 +1049,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.MarginLeadingAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MarginLeadingAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ MarginLeadingAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MarginLeadingAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.MarginLeadingAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1026,10 +1076,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1026](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1026)]  
   
@@ -1046,9 +1096,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.MarginTopAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MarginTopAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ MarginTopAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MarginTopAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.MarginTopAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1071,10 +1123,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1027](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1027)]  
   
@@ -1091,9 +1143,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.MarginTrailingAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MarginTrailingAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ MarginTrailingAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MarginTrailingAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.MarginTrailingAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1116,10 +1170,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1028](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1028)]  
   
@@ -1136,9 +1190,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.MixedAttributeValue" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MixedAttributeValue As Object " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ MixedAttributeValue;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MixedAttributeValue : obj" Usage="System.Windows.Automation.TextPattern.MixedAttributeValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1161,10 +1217,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1000](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1000)]  
   
@@ -1181,9 +1237,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.OutlineStylesAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OutlineStylesAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ OutlineStylesAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable OutlineStylesAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.OutlineStylesAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1204,10 +1262,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1031](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1031)]  
   
@@ -1224,9 +1282,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.OverlineColorAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OverlineColorAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ OverlineColorAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable OverlineColorAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.OverlineColorAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1247,10 +1307,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1032](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1032)]  
   
@@ -1269,9 +1329,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.OverlineStyleAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OverlineStyleAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ OverlineStyleAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable OverlineStyleAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.OverlineStyleAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1292,10 +1354,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1033](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1033)]  
   
@@ -1312,9 +1374,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.Pattern" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.TextPattern.Pattern" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1346,9 +1410,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TextPattern.RangeFromChild(System.Windows.Automation.AutomationElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function RangeFromChild (childElement As AutomationElement) As TextPatternRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Text::TextPatternRange ^ RangeFromChild(System::Windows::Automation::AutomationElement ^ childElement);" />
+      <MemberSignature Language="F#" Value="member this.RangeFromChild : System.Windows.Automation.AutomationElement -&gt; System.Windows.Automation.Text.TextPatternRange" Usage="textPattern.RangeFromChild childElement" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1390,9 +1456,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TextPattern.RangeFromPoint(System.Windows.Point)" />
       <MemberSignature Language="VB.NET" Value="Public Function RangeFromPoint (screenLocation As Point) As TextPatternRange" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Text::TextPatternRange ^ RangeFromPoint(System::Windows::Point screenLocation);" />
+      <MemberSignature Language="F#" Value="member this.RangeFromPoint : System.Windows.Point -&gt; System.Windows.Automation.Text.TextPatternRange" Usage="textPattern.RangeFromPoint screenLocation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1431,9 +1499,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.StrikethroughColorAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrikethroughColorAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ StrikethroughColorAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StrikethroughColorAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.StrikethroughColorAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1454,10 +1524,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1038](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1038)]  
   
@@ -1474,9 +1544,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.StrikethroughStyleAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrikethroughStyleAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ StrikethroughStyleAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StrikethroughStyleAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.StrikethroughStyleAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1497,10 +1569,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1039](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1039)]  
   
@@ -1517,9 +1589,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TextPattern.SupportedTextSelection" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportedTextSelection As SupportedTextSelection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::SupportedTextSelection SupportedTextSelection { System::Windows::Automation::SupportedTextSelection get(); };" />
+      <MemberSignature Language="F#" Value="member this.SupportedTextSelection : System.Windows.Automation.SupportedTextSelection" Usage="System.Windows.Automation.TextPattern.SupportedTextSelection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1548,9 +1622,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.TabsAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TabsAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ TabsAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabsAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.TabsAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1573,10 +1649,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1040](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1040)]  
   
@@ -1593,9 +1669,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.TextChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextChangedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ TextChangedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextChangedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.TextPattern.TextChangedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1627,9 +1705,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.TextFlowDirectionsAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextFlowDirectionsAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ TextFlowDirectionsAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextFlowDirectionsAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.TextFlowDirectionsAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1650,10 +1730,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1041](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1041)]  
   
@@ -1670,9 +1750,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.TextSelectionChangedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextSelectionChangedEvent As AutomationEvent " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ TextSelectionChangedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TextSelectionChangedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.TextPattern.TextSelectionChangedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1709,9 +1791,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.UnderlineColorAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnderlineColorAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ UnderlineColorAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UnderlineColorAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.UnderlineColorAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1732,10 +1816,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1043](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1043)]  
   
@@ -1752,9 +1836,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TextPattern.UnderlineStyleAttribute" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnderlineStyleAttribute As AutomationTextAttribute " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationTextAttribute ^ UnderlineStyleAttribute;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UnderlineStyleAttribute : System.Windows.Automation.AutomationTextAttribute" Usage="System.Windows.Automation.TextPattern.UnderlineStyleAttribute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1775,10 +1861,10 @@
    
   
 ## Examples  
- The following example shows how to obtain an attribute value for a range of text in [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)].  
+ The following example shows how to obtain an attribute value for a range of text in Microsoft Notepad.  
   
 > [!NOTE]
->  [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is used as the text provider for example purposes only. [!INCLUDE[TLA#tla_notepad](~/includes/tlasharptla-notepad-md.md)] is not guaranteed to support the attribute value being requested.  
+>  Microsoft Notepad is used as the text provider for example purposes only. Microsoft Notepad is not guaranteed to support the attribute value being requested.  
   
  [!code-csharp[UIATextPattern_snip#1044](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATextPattern_snip/CSharp/SearchWindow.cs#1044)]  
   

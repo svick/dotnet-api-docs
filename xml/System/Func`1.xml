@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Func`1" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function Func(Of Out TResult)() As TResult " />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public delegate TResult Func();" />
+  <TypeSignature Language="F#" Value="type Func&lt;'Result&gt; = delegate of unit -&gt; 'Result" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +23,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TResult">
       <Constraints>
@@ -33,8 +38,8 @@
     <BaseTypeName>System.Delegate</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute>
-      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=b77a5c561934e089")</AttributeName>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=2.0.5.0, Culture=Neutral, PublicKeyToken=7cec85d7bea7798e")</AttributeName>
     </Attribute>
   </Attributes>
   <Parameters />
@@ -89,5 +94,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md">Lambda Expressions (C# Programming Guide)</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/procedures/lambda-expressions.md">Lambda Expressions</related>
+    <related type="Article" href="~/docs/csharp/programming-guide/delegates/index.md">Delegates (C# Programming Guide)</related>
+    <related type="Article" href="~/docs/visual-basic/programming-guide/language-features/delegates/index.md">Delegates in Visual Basic</related>
   </Docs>
 </Type>

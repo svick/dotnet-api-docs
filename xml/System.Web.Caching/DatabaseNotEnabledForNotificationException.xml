@@ -4,14 +4,21 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.DatabaseNotEnabledForNotificationException" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DatabaseNotEnabledForNotificationException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class DatabaseNotEnabledForNotificationException sealed : SystemException" />
+  <TypeSignature Language="F#" Value="type DatabaseNotEnabledForNotificationException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.SystemException</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>The exception that is thrown when a SQL Server database is not enabled to support dependencies associated with the <see cref="T:System.Web.Caching.SqlCacheDependency" /> class. This class cannot be inherited.</summary>
     <remarks>
@@ -47,8 +54,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Caching.DatabaseNotEnabledForNotificationException" /> class.</summary>
@@ -68,11 +81,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.DatabaseNotEnabledForNotificationException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DatabaseNotEnabledForNotificationException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Web.Caching.DatabaseNotEnabledForNotificationException : string -&gt; System.Web.Caching.DatabaseNotEnabledForNotificationException" Usage="new System.Web.Caching.DatabaseNotEnabledForNotificationException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
@@ -88,11 +108,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.DatabaseNotEnabledForNotificationException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DatabaseNotEnabledForNotificationException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Web.Caching.DatabaseNotEnabledForNotificationException : string * Exception -&gt; System.Web.Caching.DatabaseNotEnabledForNotificationException" Usage="new System.Web.Caching.DatabaseNotEnabledForNotificationException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
         <Parameter Name="innerException" Type="System.Exception" />

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataSourceCacheExpiry" />
   <TypeSignature Language="VB.NET" Value="Public Enum DataSourceCacheExpiry" />
   <TypeSignature Language="C++ CLI" Value="public enum class DataSourceCacheExpiry" />
+  <TypeSignature Language="F#" Value="type DataSourceCacheExpiry = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -29,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce">ASP.NET Caching</related>
   </Docs>
   <Members>
     <Member MemberName="Absolute">
@@ -37,9 +40,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceCacheExpiry.Absolute" />
       <MemberSignature Language="VB.NET" Value="Absolute" />
       <MemberSignature Language="C++ CLI" Value="Absolute" />
+      <MemberSignature Language="F#" Value="Absolute = 0" Usage="System.Web.UI.DataSourceCacheExpiry.Absolute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,6 +53,7 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>Cached data expires when the amount of time specified by the <see langword="CacheDuration" /> property has passed since the data was first cached.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce">ASP.NET Caching</related>
       </Docs>
     </Member>
     <Member MemberName="Sliding">
@@ -56,9 +62,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataSourceCacheExpiry.Sliding" />
       <MemberSignature Language="VB.NET" Value="Sliding" />
       <MemberSignature Language="C++ CLI" Value="Sliding" />
+      <MemberSignature Language="F#" Value="Sliding = 1" Usage="System.Web.UI.DataSourceCacheExpiry.Sliding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

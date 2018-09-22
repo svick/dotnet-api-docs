@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
   <TypeSignature Language="VB.NET" Value="Public Class WebPartPersonalization" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebPartPersonalization" />
+  <TypeSignature Language="F#" Value="type WebPartPersonalization = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.EmptyStringExpandableObjectConverter))</AttributeName>
     </Attribute>
   </Attributes>
@@ -80,6 +82,10 @@
   
  If you want to create a personalization subsystem significantly different from that provided by the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> and the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> classes, you should create a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> implementation by deriving from <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> and add your own custom logic. Then create a custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> implementation by deriving from <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />, add your own custom logic, and override the <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.CreatePersonalization" /> method to return your custom <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> implementation. Because a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control makes requests to the personalization infrastructure by way of a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> instance, the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control does not directly interact with or hold references to <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationProvider" /> implementations.</para>
     </block>
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -88,9 +94,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.#ctor(System.Web.UI.WebControls.WebParts.WebPartManager)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As WebPartManager)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartPersonalization(System::Web::UI::WebControls::WebParts::WebPartManager ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartPersonalization : System.Web.UI.WebControls.WebParts.WebPartManager -&gt; System.Web.UI.WebControls.WebParts.WebPartPersonalization" Usage="new System.Web.UI.WebControls.WebParts.WebPartPersonalization owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -109,6 +117,10 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="owner" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ApplyPersonalizationState">
@@ -126,9 +138,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ApplyPersonalizationState" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub ApplyPersonalizationState ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void ApplyPersonalizationState();" />
+      <MemberSignature Language="F#" Value="abstract member ApplyPersonalizationState : unit -&gt; unit&#xA;override this.ApplyPersonalizationState : unit -&gt; unit" Usage="webPartPersonalization.ApplyPersonalizationState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -151,6 +165,10 @@
   
  The personalization state returned from the data store was <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyPersonalizationState">
@@ -158,9 +176,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void ApplyPersonalizationState(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ApplyPersonalizationState(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void ApplyPersonalizationState(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyPersonalizationState : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.ApplyPersonalizationState : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartPersonalization.ApplyPersonalizationState webPart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -195,6 +215,10 @@
   
  An attempt was made to apply personalization data more than once to the same Web Parts control.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="CanEnterSharedScope">
@@ -203,17 +227,22 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.CanEnterSharedScope" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanEnterSharedScope As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanEnterSharedScope { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanEnterSharedScope : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartPersonalization.CanEnterSharedScope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -241,6 +270,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ChangeScope">
@@ -249,9 +282,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ChangeScope(System.Web.UI.WebControls.WebParts.PersonalizationScope)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ChangeScope (scope As PersonalizationScope)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ChangeScope(System::Web::UI::WebControls::WebParts::PersonalizationScope scope);" />
+      <MemberSignature Language="F#" Value="abstract member ChangeScope : System.Web.UI.WebControls.WebParts.PersonalizationScope -&gt; unit&#xA;override this.ChangeScope : System.Web.UI.WebControls.WebParts.PersonalizationScope -&gt; unit" Usage="webPartPersonalization.ChangeScope scope" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -277,6 +312,10 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="scope" /> is not a valid member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="CopyPersonalizationState">
@@ -285,9 +324,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.CopyPersonalizationState(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub CopyPersonalizationState (webPartA As WebPart, webPartB As WebPart)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void CopyPersonalizationState(System::Web::UI::WebControls::WebParts::WebPart ^ webPartA, System::Web::UI::WebControls::WebParts::WebPart ^ webPartB);" />
+      <MemberSignature Language="F#" Value="abstract member CopyPersonalizationState : System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.CopyPersonalizationState : System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartPersonalization.CopyPersonalizationState (webPartA, webPartB)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -323,6 +364,10 @@
   
  <paramref name="webPartA" /> and <paramref name="webPartB" /> are <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> controls, but their child controls are not of the same <see cref="T:System.Type" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -331,17 +376,22 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartPersonalization.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -362,6 +412,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set this property value after the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit(System.EventArgs)" /> method had completed.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="EnsureEnabled">
@@ -370,9 +424,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.EnsureEnabled(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnsureEnabled (ensureModifiable As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnsureEnabled(bool ensureModifiable);" />
+      <MemberSignature Language="F#" Value="member this.EnsureEnabled : bool -&gt; unit" Usage="webPartPersonalization.EnsureEnabled ensureModifiable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -416,6 +472,10 @@
   
  <see cref="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled" /> returned <see langword="false" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="EnterSharedScopeUserCapability">
@@ -424,9 +484,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartPersonalization.EnterSharedScopeUserCapability" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EnterSharedScopeUserCapability As WebPartUserCapability " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::WebPartUserCapability ^ EnterSharedScopeUserCapability;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EnterSharedScopeUserCapability : System.Web.UI.WebControls.WebParts.WebPartUserCapability" Usage="System.Web.UI.WebControls.WebParts.WebPartPersonalization.EnterSharedScopeUserCapability" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -443,6 +505,10 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ExtractPersonalizationState">
@@ -460,9 +526,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ExtractPersonalizationState" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub ExtractPersonalizationState ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void ExtractPersonalizationState();" />
+      <MemberSignature Language="F#" Value="abstract member ExtractPersonalizationState : unit -&gt; unit&#xA;override this.ExtractPersonalizationState : unit -&gt; unit" Usage="webPartPersonalization.ExtractPersonalizationState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -495,6 +563,10 @@
   
  The personalization state returned from the data store was <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ExtractPersonalizationState">
@@ -502,9 +574,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void ExtractPersonalizationState(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ExtractPersonalizationState(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void ExtractPersonalizationState(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
+      <MemberSignature Language="F#" Value="abstract member ExtractPersonalizationState : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.ExtractPersonalizationState : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartPersonalization.ExtractPersonalizationState webPart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -539,6 +613,10 @@
   
  The personalization state returned from the data store was <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="GetAuthorizationFilter">
@@ -547,9 +625,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.GetAuthorizationFilter(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetAuthorizationFilter (webPartID As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::String ^ GetAuthorizationFilter(System::String ^ webPartID);" />
+      <MemberSignature Language="F#" Value="abstract member GetAuthorizationFilter : string -&gt; string&#xA;override this.GetAuthorizationFilter : string -&gt; string" Usage="webPartPersonalization.GetAuthorizationFilter webPartID" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -582,6 +662,10 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="webPartID" /> is <see langword="null" /> or an empty string ("").</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="HasPersonalizationState">
@@ -590,17 +674,22 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.HasPersonalizationState" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HasPersonalizationState As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasPersonalizationState { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasPersonalizationState : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartPersonalization.HasPersonalizationState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -627,6 +716,10 @@
  \- or -  
   
  The value of the <see cref="P:System.Web.UI.Page.Request" /> property on the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's associated <see cref="T:System.Web.UI.Page" /> instance is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="InitialScope">
@@ -635,17 +728,22 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.InitialScope" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property InitialScope As PersonalizationScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::PersonalizationScope InitialScope { System::Web::UI::WebControls::WebParts::PersonalizationScope get(); void set(System::Web::UI::WebControls::WebParts::PersonalizationScope value); };" />
+      <MemberSignature Language="F#" Value="member this.InitialScope : System.Web.UI.WebControls.WebParts.PersonalizationScope with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartPersonalization.InitialScope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -666,6 +764,10 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set this property to a value other than its current value after the associated <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit(System.EventArgs)" /> method had completed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">An attempt was made to set a value of <see cref="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.InitialScope" /> that is not a member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -674,17 +776,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -704,6 +814,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="IsInitialized">
@@ -712,17 +826,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsInitialized" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsInitialized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsInitialized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInitialized : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsInitialized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -740,6 +862,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="IsModifiable">
@@ -748,17 +874,22 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsModifiable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsModifiable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsModifiable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsModifiable : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartPersonalization.IsModifiable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -784,6 +915,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -792,9 +927,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Load" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function Load () As PersonalizationScope" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::WebParts::PersonalizationScope Load();" />
+      <MemberSignature Language="F#" Value="abstract member Load : unit -&gt; System.Web.UI.WebControls.WebParts.PersonalizationScope&#xA;override this.Load : unit -&gt; System.Web.UI.WebControls.WebParts.PersonalizationScope" Usage="webPartPersonalization.Load " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -848,6 +985,10 @@
  An error occurred in the definition of a personalization provider in the configuration file.</exception>
         <exception cref="T:System.Configuration.ConfigurationErrorsException">The underlying personalization providers failed to initialize because a default provider could not be found or because a failure occurred while attempting to initialize a personalization provider.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ModifyStateUserCapability">
@@ -856,9 +997,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ModifyStateUserCapability" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ModifyStateUserCapability As WebPartUserCapability " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::WebPartUserCapability ^ ModifyStateUserCapability;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ModifyStateUserCapability : System.Web.UI.WebControls.WebParts.WebPartUserCapability" Usage="System.Web.UI.WebControls.WebParts.WebPartPersonalization.ModifyStateUserCapability" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -875,6 +1018,10 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ProviderName">
@@ -883,16 +1030,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ProviderName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ProviderName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ProviderName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ProviderName : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartPersonalization.ProviderName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -913,6 +1062,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to set this property to a value other than its current value after the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's <see cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.OnInit(System.EventArgs)" /> method has completed.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ResetPersonalizationState">
@@ -921,9 +1074,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ResetPersonalizationState" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ResetPersonalizationState ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResetPersonalizationState();" />
+      <MemberSignature Language="F#" Value="abstract member ResetPersonalizationState : unit -&gt; unit&#xA;override this.ResetPersonalizationState : unit -&gt; unit" Usage="webPartPersonalization.ResetPersonalizationState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -944,6 +1099,10 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" /> instance cannot reference a valid personalization provider.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -952,9 +1111,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Save" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Save ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Save();" />
+      <MemberSignature Language="F#" Value="abstract member Save : unit -&gt; unit&#xA;override this.Save : unit -&gt; unit" Usage="webPartPersonalization.Save " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -995,6 +1156,10 @@
   
  The value of the <see cref="P:System.Web.UI.Page.Request" /> property on the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's associated <see cref="T:System.Web.UI.Page" /> instance is <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="Scope">
@@ -1003,17 +1168,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.Scope" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scope As PersonalizationScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::PersonalizationScope Scope { System::Web::UI::WebControls::WebParts::PersonalizationScope get(); };" />
+      <MemberSignature Language="F#" Value="member this.Scope : System.Web.UI.WebControls.WebParts.PersonalizationScope" Usage="System.Web.UI.WebControls.WebParts.WebPartPersonalization.Scope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1032,6 +1205,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetDirty">
@@ -1049,9 +1226,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.SetDirty" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub SetDirty ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void SetDirty();" />
+      <MemberSignature Language="F#" Value="abstract member SetDirty : unit -&gt; unit&#xA;override this.SetDirty : unit -&gt; unit" Usage="webPartPersonalization.SetDirty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1072,6 +1251,10 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">No personalization data has been loaded.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="SetDirty">
@@ -1079,9 +1262,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void SetDirty(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.SetDirty(System.Web.UI.WebControls.WebParts.WebPart)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void SetDirty(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
+      <MemberSignature Language="F#" Value="abstract member SetDirty : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.SetDirty : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartPersonalization.SetDirty webPart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1104,6 +1289,10 @@
         <exception cref="T:System.ArgumentException">Attempted to mark as "dirty" a Web Parts control that is not managed by the parent <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />.</exception>
         <exception cref="T:System.InvalidOperationException">No personalization data has been loaded.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldResetPersonalizationState">
@@ -1112,11 +1301,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ShouldResetPersonalizationState" />
       <MemberSignature Language="VB.NET" Value="Protected Property ShouldResetPersonalizationState As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool ShouldResetPersonalizationState { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ShouldResetPersonalizationState : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartPersonalization.ShouldResetPersonalizationState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1134,6 +1333,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ToggleScope">
@@ -1142,9 +1345,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartPersonalization.ToggleScope" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ToggleScope ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ToggleScope();" />
+      <MemberSignature Language="F#" Value="abstract member ToggleScope : unit -&gt; unit&#xA;override this.ToggleScope : unit -&gt; unit" Usage="webPartPersonalization.ToggleScope " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1188,6 +1393,10 @@
  The value of the <see cref="P:System.Web.UI.Page.Request" /> property on the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control's associated <see cref="T:System.Web.UI.Page" /> instance is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">An attempt was made to toggle to a scope that is not defined in the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration. Technically, this situation should never occur.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="UserCapabilities">
@@ -1196,9 +1405,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.UserCapabilities" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property UserCapabilities As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Collections::IDictionary ^ UserCapabilities { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserCapabilities : System.Collections.IDictionary" Usage="System.Web.UI.WebControls.WebParts.WebPartPersonalization.UserCapabilities" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1216,6 +1427,10 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="WebPartManager">
@@ -1224,11 +1439,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartPersonalization.WebPartManager" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property WebPartManager As WebPartManager" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::WebControls::WebParts::WebPartManager ^ WebPartManager { System::Web::UI::WebControls::WebParts::WebPartManager ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebPartManager : System.Web.UI.WebControls.WebParts.WebPartManager" Usage="System.Web.UI.WebControls.WebParts.WebPartPersonalization.WebPartManager" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WebParts.WebPartManager</ReturnType>
       </ReturnValue>
@@ -1244,6 +1466,10 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
   </Members>

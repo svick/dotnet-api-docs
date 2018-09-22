@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.FormatterServices" />
   <TypeSignature Language="VB.NET" Value="Public Class FormatterServices" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormatterServices abstract sealed" />
+  <TypeSignature Language="F#" Value="type FormatterServices = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -23,7 +26,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -31,6 +34,7 @@
     <summary>Provides static methods to aid with the implementation of a <see cref="T:System.Runtime.Serialization.Formatter" /> for serialization. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Runtime.Serialization.Formatter" />
+    <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
   </Docs>
   <Members>
     <Member MemberName="CheckTypeSecurity">
@@ -39,9 +43,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.CheckTypeSecurity(System.Type,System.Runtime.Serialization.Formatters.TypeFilterLevel)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub CheckTypeSecurity (t As Type, securityLevel As TypeFilterLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CheckTypeSecurity(Type ^ t, System::Runtime::Serialization::Formatters::TypeFilterLevel securityLevel);" />
+      <MemberSignature Language="F#" Value="static member CheckTypeSecurity : Type * System.Runtime.Serialization.Formatters.TypeFilterLevel -&gt; unit" Usage="System.Runtime.Serialization.FormatterServices.CheckTypeSecurity (t, securityLevel)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -71,7 +78,7 @@
 ## Remarks  
  Use this method to determine whether a specified type can be deserialized when the <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel> property is set to `Low`.  
   
- .NET Framework remoting provides two levels of automatic deserialization, <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> and <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full>. <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> helps protect against deserialization attacks by deserializing only the types associated with the most basic remoting functionality. The <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full> deserialization level supports automatic deserialization of all types that remoting supports in all situations. For more information about the.NET Framework remoting types that <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> and <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full> support, see [&#91;\<topic://cpconAutomaticDeserializationInNETRemoting>&#93;](http://msdn.microsoft.com/library/313a0e88-5b2b-4a17-8391-0ddf9f7a787b).  
+ .NET Framework remoting provides two levels of automatic deserialization, <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> and <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full>. <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> helps protect against deserialization attacks by deserializing only the types associated with the most basic remoting functionality. The <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full> deserialization level supports automatic deserialization of all types that remoting supports in all situations. For more information about the.NET Framework remoting types that <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Low> and <xref:System.Runtime.Serialization.Formatters.TypeFilterLevel.Full> support, see [Automatic Deserialization in .NET Framework Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5dxse167(v=vs.100)).  
   
    
   
@@ -84,6 +91,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.SecurityException">The <paramref name="t" /> parameter is an advanced type and cannot be deserialized when the <see cref="T:System.Runtime.Serialization.Formatters.TypeFilterLevel" /> property is set to <see langword="Low" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5dxse167(v=vs.100)">Automatic Deserialization in .NET Framework Remoting</related>
       </Docs>
     </Member>
     <Member MemberName="GetObjectData">
@@ -92,9 +100,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.GetObjectData(System.Object,System.Reflection.MemberInfo[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetObjectData (obj As Object, members As MemberInfo()) As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Object ^&gt; ^ GetObjectData(System::Object ^ obj, cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ members);" />
+      <MemberSignature Language="F#" Value="static member GetObjectData : obj * System.Reflection.MemberInfo[] -&gt; obj[]" Usage="System.Runtime.Serialization.FormatterServices.GetObjectData (obj, members)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -108,7 +119,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -152,9 +163,12 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetSafeUninitializedObject(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.GetSafeUninitializedObject(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetSafeUninitializedObject(Type ^ type);" />
+      <MemberSignature Language="F#" Value="static member GetSafeUninitializedObject : Type -&gt; obj" Usage="System.Runtime.Serialization.FormatterServices.GetSafeUninitializedObject type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -168,7 +182,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -213,9 +227,12 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MemberInfo[] GetSerializableMembers(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.GetSerializableMembers(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetSerializableMembers(Type ^ type);" />
+      <MemberSignature Language="F#" Value="static member GetSerializableMembers : Type -&gt; System.Reflection.MemberInfo[]" Usage="System.Runtime.Serialization.FormatterServices.GetSerializableMembers type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -229,7 +246,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -247,12 +264,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Generally, the serializable members of a class are the non-transient, non-static members such as fields and properties. To be included, properties must have both a getter and a setter. A class that implements the <xref:System.Runtime.Serialization.ISerializable> interface or has a serialization surrogate does not have to serialize all these members, or can serialize additional members.  
-  
+ Generally, the serializable members of a class are non-transient, non-static members such as fields and properties. To be included, properties must have both a getter and a setter. A class that implements the <xref:System.Runtime.Serialization.ISerializable> interface or has a serialization surrogate does not have to serialize all these members, or can serialize additional members.  
+
+Because the `GetSerializableMembers` method calls the <xref:System.Type.GetFields%2A?displayProperty=nameWithType> method, it does not return fields in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which fields are returned.  
    
-  
 ## Examples  
- The following code example demonstrates implementing the <xref:System.Runtime.Serialization.FormatterServices.GetSerializableMembers%2A> method. This code example is part of a larger example provided for the <xref:System.Runtime.Serialization.FormatterServices> class.  
+ The following example calls the <xref:System.Runtime.Serialization.FormatterServices.GetSerializableMembers%2A> method from an implementation of <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=nameWithType> method.   
   
  [!code-cpp[FormatterServices#2](~/samples/snippets/cpp/VS_Snippets_Remoting/FormatterServices/cpp/FormatterServices.cpp#2)]
  [!code-csharp[FormatterServices#2](~/samples/snippets/csharp/VS_Snippets_Remoting/FormatterServices/CS/FormatterServices.cs#2)]  
@@ -264,6 +281,7 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">For providing serialization services. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />, <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
         <altmember cref="T:System.Runtime.Serialization.ISerializable" />
         <altmember cref="T:System.Reflection.MemberInfo" />
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName="GetSerializableMembers">
@@ -271,9 +289,12 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MemberInfo[] GetSerializableMembers(class System.Type type, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.GetSerializableMembers(System.Type,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetSerializableMembers(Type ^ type, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="static member GetSerializableMembers : Type * System.Runtime.Serialization.StreamingContext -&gt; System.Reflection.MemberInfo[]" Usage="System.Runtime.Serialization.FormatterServices.GetSerializableMembers (type, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -287,7 +308,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -307,9 +328,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Generally, the serializable members of a class are the non-transient, non-static members such as fields and properties. To be included, properties must have both a getter and a setter. A class that implements <xref:System.Runtime.Serialization.ISerializable> or has a serialization surrogate does not have to serialize all these members, or can serialize additional members.  
+ Generally, the serializable members of a class are non-transient, non-static members such as fields and properties. To be included, properties must have both a getter and a setter. A class that implements <xref:System.Runtime.Serialization.ISerializable> or has a serialization surrogate does not have to serialize all these members, or can serialize additional members.  
   
- Currently, you do not need to do anything different unless `context` has the <xref:System.Runtime.Serialization.StreamingContextStates> value <xref:System.Runtime.Serialization.StreamingContextStates.Clone> set.  
+If `context` includes the <xref:System.Runtime.Serialization.StreamingContextStates.Clone?displayProperty=nameWithType> enumeration value, transient fields are also included in the <xref:System.Reflection.MemberInfo> array returned by this method.  
+
+Because the `GetSerializableMembers` method calls the <xref:System.Type.GetFields%2A?displayProperty=nameWithType> method, it does not return fields in a particular order, such as alphabetical or declaration order. Your code must not depend on the order in which fields are returned.  
   
  ]]></format>
         </remarks>
@@ -318,6 +341,7 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">For providing serialization services. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />, <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
         <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
         <altmember cref="T:System.Reflection.MemberInfo" />
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName="GetSurrogateForCyclicalReference">
@@ -326,9 +350,11 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.GetSurrogateForCyclicalReference(System.Runtime.Serialization.ISerializationSurrogate)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSurrogateForCyclicalReference (innerSurrogate As ISerializationSurrogate) As ISerializationSurrogate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Serialization::ISerializationSurrogate ^ GetSurrogateForCyclicalReference(System::Runtime::Serialization::ISerializationSurrogate ^ innerSurrogate);" />
+      <MemberSignature Language="F#" Value="static member GetSurrogateForCyclicalReference : System.Runtime.Serialization.ISerializationSurrogate -&gt; System.Runtime.Serialization.ISerializationSurrogate" Usage="System.Runtime.Serialization.FormatterServices.GetSurrogateForCyclicalReference innerSurrogate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -342,10 +368,10 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -368,9 +394,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.GetTypeFromAssembly(System.Reflection.Assembly,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypeFromAssembly (assem As Assembly, name As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetTypeFromAssembly(System::Reflection::Assembly ^ assem, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member GetTypeFromAssembly : System.Reflection.Assembly * string -&gt; Type" Usage="System.Runtime.Serialization.FormatterServices.GetTypeFromAssembly (assem, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -384,7 +413,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -413,9 +442,12 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetUninitializedObject(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.GetUninitializedObject(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetUninitializedObject(Type ^ type);" />
+      <MemberSignature Language="F#" Value="static member GetUninitializedObject : Type -&gt; obj" Usage="System.Runtime.Serialization.FormatterServices.GetUninitializedObject type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -429,7 +461,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -465,9 +497,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.PopulateObjectMembers(System.Object,System.Reflection.MemberInfo[],System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function PopulateObjectMembers (obj As Object, members As MemberInfo(), data As Object()) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ PopulateObjectMembers(System::Object ^ obj, cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ members, cli::array &lt;System::Object ^&gt; ^ data);" />
+      <MemberSignature Language="F#" Value="static member PopulateObjectMembers : obj * System.Reflection.MemberInfo[] * obj[] -&gt; obj" Usage="System.Runtime.Serialization.FormatterServices.PopulateObjectMembers (obj, members, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -481,7 +516,7 @@
         <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>

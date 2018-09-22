@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class DataBoundControlDesigner&#xA;Inherits BaseDataBoundControlDesigner&#xA;Implements IDataBindingSchemaProvider, IDataSourceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataBoundControlDesigner : System::Web::UI::Design::WebControls::BaseDataBoundControlDesigner, System::Web::UI::Design::IDataBindingSchemaProvider, System::Web::UI::Design::IDataSourceProvider" />
+  <TypeSignature Language="F#" Value="type DataBoundControlDesigner = class&#xA;    inherit BaseDataBoundControlDesigner&#xA;    interface IDataBindingSchemaProvider&#xA;    interface IDataSourceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,6 +32,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,13 +45,21 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.DataBoundControlDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -56,9 +68,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.ActionLists" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.WebControls.DataBoundControlDesigner.ActionLists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,6 +84,8 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.ControlDesigner.ActionLists" />
         <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ConnectToDataSource">
@@ -78,9 +94,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.ConnectToDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function ConnectToDataSource () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ConnectToDataSource();" />
+      <MemberSignature Language="F#" Value="override this.ConnectToDataSource : unit -&gt; bool" Usage="dataBoundControlDesigner.ConnectToDataSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,6 +110,8 @@
         <returns>
           <see langword="true" /> if the data-bound control connected to a new data source; <see langword="false" /> if the data source did not change.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CreateDataSource">
@@ -100,9 +120,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.CreateDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateDataSource ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateDataSource();" />
+      <MemberSignature Language="F#" Value="override this.CreateDataSource : unit -&gt; unit" Usage="dataBoundControlDesigner.CreateDataSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -113,6 +135,8 @@
         <summary>Invokes the standard dialog box to create a new data source control, and sets the new data source control's ID to the <see cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID" /> property of the data-bound control.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataBind">
@@ -121,9 +145,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataBind(System.Web.UI.WebControls.BaseDataBoundControl)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DataBind (dataBoundControl As BaseDataBoundControl)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DataBind(System::Web::UI::WebControls::BaseDataBoundControl ^ dataBoundControl);" />
+      <MemberSignature Language="F#" Value="override this.DataBind : System.Web.UI.WebControls.BaseDataBoundControl -&gt; unit" Usage="dataBoundControlDesigner.DataBind dataBoundControl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,6 +163,8 @@
         <summary>Binds the <see cref="T:System.Web.UI.WebControls.DataBoundControl" /> object to the data source.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataMember">
@@ -145,9 +173,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataMember" />
       <MemberSignature Language="VB.NET" Value="Public Property DataMember As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataMember { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataMember : string with get, set" Usage="System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataMember" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -158,6 +188,8 @@
         <value>The shadowed <see cref="P:System.Web.UI.WebControls.DataBoundControl.DataMember" /> of the underlying data-bound control.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataSourceDesigner">
@@ -166,11 +198,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataSourceDesigner" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSourceDesigner As IDataSourceDesigner" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::IDataSourceDesigner ^ DataSourceDesigner { System::Web::UI::Design::IDataSourceDesigner ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataSourceDesigner : System.Web.UI.Design.IDataSourceDesigner" Usage="System.Web.UI.Design.WebControls.DataBoundControlDesigner.DataSourceDesigner" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.IDataSourceDesigner</ReturnType>
       </ReturnValue>
@@ -179,6 +218,8 @@
         <value>The designer of the data source of the underlying data-bound control.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DesignerView">
@@ -187,9 +228,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DesignerView" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignerView As DesignerDataSourceView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::DesignerDataSourceView ^ DesignerView { System::Web::UI::Design::DesignerDataSourceView ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignerView : System.Web.UI.Design.DesignerDataSourceView" Usage="System.Web.UI.Design.WebControls.DataBoundControlDesigner.DesignerView" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -200,6 +243,8 @@
         <value>The <see cref="T:System.Web.UI.Design.DesignerDataSourceView" /> object associated with the data source of this designer.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DisconnectFromDataSource">
@@ -208,9 +253,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.DisconnectFromDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DisconnectFromDataSource ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DisconnectFromDataSource();" />
+      <MemberSignature Language="F#" Value="override this.DisconnectFromDataSource : unit -&gt; unit" Usage="dataBoundControlDesigner.DisconnectFromDataSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -221,6 +268,8 @@
         <summary>Disconnects the data-bound control from data source events.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -229,9 +278,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="dataBoundControlDesigner.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -253,6 +304,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeDataSource">
@@ -261,9 +314,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.GetDesignTimeDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetDesignTimeDataSource () As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::IEnumerable ^ GetDesignTimeDataSource();" />
+      <MemberSignature Language="F#" Value="abstract member GetDesignTimeDataSource : unit -&gt; System.Collections.IEnumerable&#xA;override this.GetDesignTimeDataSource : unit -&gt; System.Collections.IEnumerable" Usage="dataBoundControlDesigner.GetDesignTimeDataSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -276,6 +331,8 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Collections.IEnumerable" />
         <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetSampleDataSource">
@@ -284,9 +341,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.GetSampleDataSource" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetSampleDataSource () As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::IEnumerable ^ GetSampleDataSource();" />
+      <MemberSignature Language="F#" Value="abstract member GetSampleDataSource : unit -&gt; System.Collections.IEnumerable&#xA;override this.GetSampleDataSource : unit -&gt; System.Collections.IEnumerable" Usage="dataBoundControlDesigner.GetSampleDataSource " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -298,6 +357,8 @@
         <returns>An object that implements the <see cref="T:System.Collections.IEnumerable" /> interface containing dummy sample data used to render the data-bound control on the design surface.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -306,9 +367,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="dataBoundControlDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -332,6 +395,8 @@
           <para>If you override the <see cref="M:System.Web.UI.Design.WebControls.DataBoundControlDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method, call the base implementation before performing other processing.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SampleRowCount">
@@ -340,9 +405,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.SampleRowCount" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property SampleRowCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int SampleRowCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.SampleRowCount : int" Usage="System.Web.UI.Design.WebControls.DataBoundControlDesigner.SampleRowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -356,6 +423,8 @@
           <para>To change the number of rows that the data-bound control displays on the design surface, override the <see cref="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.SampleRowCount" /> property to return the number of rows that you want displayed.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema">
@@ -363,13 +432,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.System#Web#UI#Design#IDataBindingSchemaProvider#CanRefreshSchema" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property CanRefreshSchema As Boolean Implements IDataBindingSchemaProvider.CanRefreshSchema" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Web::UI::Design::IDataBindingSchemaProvider::CanRefreshSchema { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.Design.IDataBindingSchemaProvider.CanRefreshSchema</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -387,6 +458,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataBindingSchemaProvider.RefreshSchema">
@@ -401,6 +474,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -420,6 +494,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataBindingSchemaProvider.Schema">
@@ -427,13 +503,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.IDataSourceViewSchema System.Web.UI.Design.IDataBindingSchemaProvider.Schema" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.System#Web#UI#Design#IDataBindingSchemaProvider#Schema" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Schema As IDataSourceViewSchema Implements IDataBindingSchemaProvider.Schema" />
-      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::Design::IDataSourceViewSchema ^ System.Web.UI.Design.IDataBindingSchemaProvider.Schema { System::Web::UI::Design::IDataSourceViewSchema ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Web::UI::Design::IDataSourceViewSchema ^ System::Web::UI::Design::IDataBindingSchemaProvider::Schema { System::Web::UI::Design::IDataSourceViewSchema ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.Design.IDataBindingSchemaProvider.Schema" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.Design.IDataBindingSchemaProvider.Schema</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -450,6 +528,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceProvider.GetResolvedSelectedDataSource">
@@ -464,6 +544,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -482,6 +563,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.Design.WebControls.BaseDataListDesigner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.Design.IDataSourceProvider.GetSelectedDataSource">
@@ -496,6 +579,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -514,6 +598,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.Design.IDataSourceProvider" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="UseDataSourcePickerActionList">
@@ -522,9 +608,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.DataBoundControlDesigner.UseDataSourcePickerActionList" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property UseDataSourcePickerActionList As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UseDataSourcePickerActionList { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UseDataSourcePickerActionList : bool" Usage="System.Web.UI.Design.WebControls.DataBoundControlDesigner.UseDataSourcePickerActionList" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -539,6 +627,8 @@
           <para>You may want to override this property to provide a dialog box to select a data source control or to disable the user from changing the data source control associated with the data-bound control.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.DataBoundControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
       </Docs>
     </Member>
   </Members>

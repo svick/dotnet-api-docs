@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.IXamlNameProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXamlNameProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXamlNameProvider" />
+  <TypeSignature Language="F#" Value="type IXamlNameProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/0e11f386-808c-4eae-9ba6-029ad7ba2211">.NET Framework XAML Services Conceptual Documentation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/b7e61222-e8cf-48d2-acd0-6df3b7685d48">x:Name Directive</related>
   </Docs>
   <Members>
     <Member MemberName="GetName">
@@ -31,6 +34,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.IXamlNameProvider.GetName(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetName (value As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetName(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member GetName : obj -&gt; string" Usage="iXamlNameProvider.GetName value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

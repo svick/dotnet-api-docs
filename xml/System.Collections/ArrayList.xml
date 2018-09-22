@@ -4,12 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.ArrayList" />
   <TypeSignature Language="VB.NET" Value="Public Class ArrayList&#xA;Implements ICloneable, IList" />
   <TypeSignature Language="C++ CLI" Value="public ref class ArrayList : ICloneable, System::Collections::IList" />
+  <TypeSignature Language="F#" Value="type ArrayList = class&#xA;    interface IList&#xA;    interface ICloneable&#xA;    interface ICollection&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.NonGeneric</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -34,14 +37,17 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.ArrayList/ArrayListDebugView))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -88,6 +94,7 @@
  Enumerating through a collection is intrinsically not a thread-safe procedure. Even when a collection is synchronized, other threads can still modify the collection, which causes the enumerator to throw an exception. To guarantee thread safety during enumeration, you can either lock the collection during the entire enumeration or catch the exceptions resulting from changes made by other threads.</threadsafe>
     <altmember cref="T:System.Collections.IList" />
     <altmember cref="T:System.Collections.Generic.List`1" />
+    <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -112,6 +119,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -124,6 +133,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.ArrayList" /> class that is empty and has the default initial capacity.</summary>
@@ -148,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.#ctor(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (c As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayList(System::Collections::ICollection ^ c);" />
+      <MemberSignature Language="F#" Value="new System.Collections.ArrayList : System.Collections.ICollection -&gt; System.Collections.ArrayList" Usage="new System.Collections.ArrayList c" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -155,6 +170,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -199,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayList(int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Collections.ArrayList : int -&gt; System.Collections.ArrayList" Usage="new System.Collections.ArrayList capacity" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -206,6 +224,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -247,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Adapter(System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Adapter (list As IList) As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ArrayList ^ Adapter(System::Collections::IList ^ list);" />
+      <MemberSignature Language="F#" Value="static member Adapter : System.Collections.IList -&gt; System.Collections.ArrayList" Usage="System.Collections.ArrayList.Adapter list" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -254,6 +275,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -305,6 +328,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Add(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Add(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj -&gt; int&#xA;override this.Add : obj -&gt; int" Usage="arrayList.Add value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
@@ -315,6 +339,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -375,6 +401,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.AddRange(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddRange (c As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddRange(System::Collections::ICollection ^ c);" />
+      <MemberSignature Language="F#" Value="abstract member AddRange : System.Collections.ICollection -&gt; unit&#xA;override this.AddRange : System.Collections.ICollection -&gt; unit" Usage="arrayList.AddRange c" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -382,6 +409,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -394,6 +423,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -458,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.BinarySearch(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function BinarySearch (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int BinarySearch(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member BinarySearch : obj -&gt; int&#xA;override this.BinarySearch : obj -&gt; int" Usage="arrayList.BinarySearch value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -465,6 +500,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -515,6 +552,7 @@
         <exception cref="T:System.ArgumentException">Neither <paramref name="value" /> nor the elements of <see cref="T:System.Collections.ArrayList" /> implement the <see cref="T:System.IComparable" /> interface.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="value" /> is not of the same type as the elements of the <see cref="T:System.Collections.ArrayList" />.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="BinarySearch">
@@ -523,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.BinarySearch(System.Object,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function BinarySearch (value As Object, comparer As IComparer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int BinarySearch(System::Object ^ value, System::Collections::IComparer ^ comparer);" />
+      <MemberSignature Language="F#" Value="abstract member BinarySearch : obj * System.Collections.IComparer -&gt; int&#xA;override this.BinarySearch : obj * System.Collections.IComparer -&gt; int" Usage="arrayList.BinarySearch (value, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -530,6 +569,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -591,6 +632,7 @@
           <paramref name="comparer" /> is <see langword="null" /> and neither <paramref name="value" /> nor the elements of <see cref="T:System.Collections.ArrayList" /> implement the <see cref="T:System.IComparable" /> interface.</exception>
         <exception cref="T:System.InvalidOperationException">
           <paramref name="comparer" /> is <see langword="null" /> and <paramref name="value" /> is not of the same type as the elements of the <see cref="T:System.Collections.ArrayList" />.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="BinarySearch">
@@ -599,6 +641,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function BinarySearch (index As Integer, count As Integer, value As Object, comparer As IComparer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int BinarySearch(int index, int count, System::Object ^ value, System::Collections::IComparer ^ comparer);" />
+      <MemberSignature Language="F#" Value="abstract member BinarySearch : int * int * obj * System.Collections.IComparer -&gt; int&#xA;override this.BinarySearch : int * int * obj * System.Collections.IComparer -&gt; int" Usage="arrayList.BinarySearch (index, count, value, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -606,6 +649,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -674,6 +719,7 @@
  <paramref name="count" /> is less than zero.</exception>
         <altmember cref="T:System.Collections.IComparer" />
         <altmember cref="T:System.IComparable" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Capacity">
@@ -682,6 +728,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.ArrayList.Capacity" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Capacity As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Capacity { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Capacity : int with get, set" Usage="System.Collections.ArrayList.Capacity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -689,6 +736,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -733,6 +782,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="arrayList.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
@@ -743,6 +793,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -798,6 +850,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="arrayList.Clone " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
@@ -808,6 +861,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -847,6 +902,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (item As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="abstract member Contains : obj -&gt; bool&#xA;override this.Contains : obj -&gt; bool" Usage="arrayList.Contains item" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
@@ -857,6 +913,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -894,6 +952,7 @@
         </remarks>
         <altmember cref="M:System.Collections.ArrayList.IndexOf(System.Object)" />
         <altmember cref="M:System.Collections.ArrayList.LastIndexOf(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CopyTo">
@@ -910,6 +969,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.CopyTo(System.Array)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array -&gt; unit&#xA;override this.CopyTo : Array -&gt; unit" Usage="arrayList.CopyTo array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -917,6 +977,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -977,6 +1039,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int arrayIndex);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="arrayList.CopyTo (array, arrayIndex)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
@@ -987,6 +1050,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1051,6 +1116,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(int32 index, class System.Array array, int32 arrayIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.CopyTo(System.Int32,System.Array,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(int index, Array ^ array, int arrayIndex, int count);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : int * Array * int * int -&gt; unit&#xA;override this.CopyTo : int * Array * int * int -&gt; unit" Usage="arrayList.CopyTo (index, array, arrayIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1058,6 +1124,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1139,6 +1207,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.ArrayList.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.ArrayList.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
@@ -1149,6 +1218,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1197,6 +1268,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.FixedSize(System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FixedSize (list As ArrayList) As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ArrayList ^ FixedSize(System::Collections::ArrayList ^ list);" />
+      <MemberSignature Language="F#" Value="static member FixedSize : System.Collections.ArrayList -&gt; System.Collections.ArrayList" Usage="System.Collections.ArrayList.FixedSize list" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1204,6 +1276,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1257,6 +1331,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.FixedSize(System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FixedSize (list As IList) As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IList ^ FixedSize(System::Collections::IList ^ list);" />
+      <MemberSignature Language="F#" Value="static member FixedSize : System.Collections.IList -&gt; System.Collections.IList" Usage="System.Collections.ArrayList.FixedSize list" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1264,6 +1339,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1317,6 +1394,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="arrayList.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
@@ -1327,6 +1405,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1339,6 +1419,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
@@ -1385,6 +1470,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.GetEnumerator(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator (index As Integer, count As Integer) As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator(int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : int * int -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : int * int -&gt; System.Collections.IEnumerator" Usage="arrayList.GetEnumerator (index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1392,6 +1478,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1404,6 +1492,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
@@ -1466,6 +1559,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.GetRange(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRange (index As Integer, count As Integer) As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::ArrayList ^ GetRange(int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member GetRange : int * int -&gt; System.Collections.ArrayList&#xA;override this.GetRange : int * int -&gt; System.Collections.ArrayList" Usage="arrayList.GetRange (index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1473,6 +1567,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1545,6 +1641,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.IndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : obj -&gt; int&#xA;override this.IndexOf : obj -&gt; int" Usage="arrayList.IndexOf value" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
@@ -1555,6 +1652,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1567,6 +1666,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1602,6 +1706,7 @@
         </remarks>
         <altmember cref="M:System.Collections.ArrayList.LastIndexOf(System.Object)" />
         <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -1610,6 +1715,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.IndexOf(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (value As Object, startIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Object ^ value, int startIndex);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : obj * int -&gt; int&#xA;override this.IndexOf : obj * int -&gt; int" Usage="arrayList.IndexOf (value, startIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1617,6 +1723,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1668,6 +1776,7 @@
           <paramref name="startIndex" /> is outside the range of valid indexes for the <see cref="T:System.Collections.ArrayList" />.</exception>
         <altmember cref="M:System.Collections.ArrayList.LastIndexOf(System.Object)" />
         <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -1676,6 +1785,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.IndexOf(System.Object,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (value As Object, startIndex As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Object ^ value, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : obj * int * int -&gt; int&#xA;override this.IndexOf : obj * int * int -&gt; int" Usage="arrayList.IndexOf (value, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1683,6 +1793,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1744,6 +1856,7 @@
  <paramref name="startIndex" /> and <paramref name="count" /> do not specify a valid section in the <see cref="T:System.Collections.ArrayList" />.</exception>
         <altmember cref="M:System.Collections.ArrayList.LastIndexOf(System.Object)" />
         <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -1752,6 +1865,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Insert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Insert (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * obj -&gt; unit&#xA;override this.Insert : int * obj -&gt; unit" Usage="arrayList.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
@@ -1762,6 +1876,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1832,6 +1948,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.InsertRange(System.Int32,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub InsertRange (index As Integer, c As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InsertRange(int index, System::Collections::ICollection ^ c);" />
+      <MemberSignature Language="F#" Value="abstract member InsertRange : int * System.Collections.ICollection -&gt; unit&#xA;override this.InsertRange : int * System.Collections.ICollection -&gt; unit" Usage="arrayList.InsertRange (index, c)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1839,6 +1956,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1915,6 +2034,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.ArrayList.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Collections.ArrayList.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
@@ -1925,6 +2045,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1973,6 +2095,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.ArrayList.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Collections.ArrayList.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
@@ -1983,6 +2106,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2032,6 +2157,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.ArrayList.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Collections.ArrayList.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -2042,6 +2168,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2098,6 +2226,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.ArrayList.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj with get, set" Usage="System.Collections.ArrayList.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
@@ -2108,6 +2237,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2185,6 +2316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.LastIndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member LastIndexOf : obj -&gt; int&#xA;override this.LastIndexOf : obj -&gt; int" Usage="arrayList.LastIndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2192,6 +2324,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2237,6 +2371,7 @@
         </remarks>
         <altmember cref="M:System.Collections.ArrayList.IndexOf(System.Object)" />
         <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -2245,6 +2380,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (value As Object, startIndex As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::Object ^ value, int startIndex);" />
+      <MemberSignature Language="F#" Value="abstract member LastIndexOf : obj * int -&gt; int&#xA;override this.LastIndexOf : obj * int -&gt; int" Usage="arrayList.LastIndexOf (value, startIndex)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2252,6 +2388,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2303,6 +2441,7 @@
           <paramref name="startIndex" /> is outside the range of valid indexes for the <see cref="T:System.Collections.ArrayList" />.</exception>
         <altmember cref="M:System.Collections.ArrayList.IndexOf(System.Object)" />
         <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="LastIndexOf">
@@ -2311,6 +2450,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (value As Object, startIndex As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::Object ^ value, int startIndex, int count);" />
+      <MemberSignature Language="F#" Value="abstract member LastIndexOf : obj * int * int -&gt; int&#xA;override this.LastIndexOf : obj * int * int -&gt; int" Usage="arrayList.LastIndexOf (value, startIndex, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2318,6 +2458,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2379,6 +2521,7 @@
  <paramref name="startIndex" /> and <paramref name="count" /> do not specify a valid section in the <see cref="T:System.Collections.ArrayList" />.</exception>
         <altmember cref="M:System.Collections.ArrayList.IndexOf(System.Object)" />
         <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ReadOnly">
@@ -2396,6 +2539,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.ReadOnly(System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadOnly (list As ArrayList) As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ArrayList ^ ReadOnly(System::Collections::ArrayList ^ list);" />
+      <MemberSignature Language="F#" Value="static member ReadOnly : System.Collections.ArrayList -&gt; System.Collections.ArrayList" Usage="System.Collections.ArrayList.ReadOnly list" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2403,6 +2547,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2457,6 +2603,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.ReadOnly(System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadOnly (list As IList) As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IList ^ ReadOnly(System::Collections::IList ^ list);" />
+      <MemberSignature Language="F#" Value="static member ReadOnly : System.Collections.IList -&gt; System.Collections.IList" Usage="System.Collections.ArrayList.ReadOnly list" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2464,6 +2611,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2509,6 +2658,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (obj As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : obj -&gt; unit&#xA;override this.Remove : obj -&gt; unit" Usage="arrayList.Remove obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
@@ -2519,6 +2669,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2531,6 +2683,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2572,6 +2729,7 @@
         <altmember cref="M:System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)" />
         <altmember cref="M:System.Collections.ArrayList.Add(System.Object)" />
         <altmember cref="M:System.Collections.ArrayList.Insert(System.Int32,System.Object)" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -2580,6 +2738,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="arrayList.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
@@ -2590,6 +2749,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2655,6 +2816,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveRange (index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveRange(int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveRange : int * int -&gt; unit&#xA;override this.RemoveRange : int * int -&gt; unit" Usage="arrayList.RemoveRange (index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2662,6 +2824,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2731,6 +2895,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Repeat(System.Object,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Repeat (value As Object, count As Integer) As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ArrayList ^ Repeat(System::Object ^ value, int count);" />
+      <MemberSignature Language="F#" Value="static member Repeat : obj * int -&gt; System.Collections.ArrayList" Usage="System.Collections.ArrayList.Repeat (value, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2738,6 +2903,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2800,6 +2967,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Reverse" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Reverse ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reverse();" />
+      <MemberSignature Language="F#" Value="abstract member Reverse : unit -&gt; unit&#xA;override this.Reverse : unit -&gt; unit" Usage="arrayList.Reverse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2807,6 +2975,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2853,6 +3023,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Reverse(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Reverse (index As Integer, count As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reverse(int index, int count);" />
+      <MemberSignature Language="F#" Value="abstract member Reverse : int * int -&gt; unit&#xA;override this.Reverse : int * int -&gt; unit" Usage="arrayList.Reverse (index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2860,6 +3031,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2919,6 +3092,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.SetRange(System.Int32,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetRange (index As Integer, c As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetRange(int index, System::Collections::ICollection ^ c);" />
+      <MemberSignature Language="F#" Value="abstract member SetRange : int * System.Collections.ICollection -&gt; unit&#xA;override this.SetRange : int * System.Collections.ICollection -&gt; unit" Usage="arrayList.SetRange (index, c)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2926,6 +3100,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3000,6 +3176,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Sort" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Sort ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Sort();" />
+      <MemberSignature Language="F#" Value="abstract member Sort : unit -&gt; unit&#xA;override this.Sort : unit -&gt; unit" Usage="arrayList.Sort " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -3007,6 +3184,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3045,6 +3224,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.ArrayList" /> is read-only.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -3053,6 +3233,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Sort(System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Sort (comparer As IComparer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Sort(System::Collections::IComparer ^ comparer);" />
+      <MemberSignature Language="F#" Value="abstract member Sort : System.Collections.IComparer -&gt; unit&#xA;override this.Sort : System.Collections.IComparer -&gt; unit" Usage="arrayList.Sort comparer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -3060,6 +3241,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3110,6 +3293,7 @@
         <exception cref="T:System.InvalidOperationException">An error occurred while comparing two elements.</exception>
         <exception cref="T:System.ArgumentException">
           <see langword="null" /> is passed for <paramref name="comparer" />, and the elements in the list do not implement <see cref="T:System.IComparable" />.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Sort">
@@ -3118,6 +3302,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Sort(System.Int32,System.Int32,System.Collections.IComparer)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Sort (index As Integer, count As Integer, comparer As IComparer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Sort(int index, int count, System::Collections::IComparer ^ comparer);" />
+      <MemberSignature Language="F#" Value="abstract member Sort : int * int * System.Collections.IComparer -&gt; unit&#xA;override this.Sort : int * int * System.Collections.IComparer -&gt; unit" Usage="arrayList.Sort (index, count, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -3125,6 +3310,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3183,6 +3370,7 @@
           <paramref name="index" /> and <paramref name="count" /> do not specify a valid range in the <see cref="T:System.Collections.ArrayList" />.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Collections.ArrayList" /> is read-only.</exception>
         <exception cref="T:System.InvalidOperationException">An error occurred while comparing two elements.</exception>
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Synchronized">
@@ -3200,6 +3388,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Synchronized(System.Collections.ArrayList)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Synchronized (list As ArrayList) As ArrayList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ArrayList ^ Synchronized(System::Collections::ArrayList ^ list);" />
+      <MemberSignature Language="F#" Value="static member Synchronized : System.Collections.ArrayList -&gt; System.Collections.ArrayList" Usage="System.Collections.ArrayList.Synchronized list" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -3207,6 +3396,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3268,6 +3459,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Synchronized(System.Collections.IList)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Synchronized (list As IList) As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IList ^ Synchronized(System::Collections::IList ^ list);" />
+      <MemberSignature Language="F#" Value="static member Synchronized : System.Collections.IList -&gt; System.Collections.IList" Usage="System.Collections.ArrayList.Synchronized list" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -3275,6 +3467,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3330,6 +3524,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.ArrayList.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Collections.ArrayList.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -3340,6 +3535,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3398,6 +3595,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.ToArray" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ToArray () As Object()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Object ^&gt; ^ ToArray();" />
+      <MemberSignature Language="F#" Value="abstract member ToArray : unit -&gt; obj[]&#xA;override this.ToArray : unit -&gt; obj[]" Usage="arrayList.ToArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -3405,6 +3603,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3439,6 +3639,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Array ToArray(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.ToArray(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Array ^ ToArray(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member ToArray : Type -&gt; Array&#xA;override this.ToArray : Type -&gt; Array" Usage="arrayList.ToArray type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -3446,6 +3647,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3459,7 +3662,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -3504,6 +3707,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.TrimToSize" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub TrimToSize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void TrimToSize();" />
+      <MemberSignature Language="F#" Value="abstract member TrimToSize : unit -&gt; unit&#xA;override this.TrimToSize : unit -&gt; unit" Usage="arrayList.TrimToSize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -3511,6 +3715,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

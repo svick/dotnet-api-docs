@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Interlocked" />
   <TypeSignature Language="VB.NET" Value="Public Class Interlocked" />
   <TypeSignature Language="C++ CLI" Value="public ref class Interlocked abstract sealed" />
+  <TypeSignature Language="F#" Value="type Interlocked = class" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +14,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -24,6 +27,11 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-4.0">
+      <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides atomic operations for variables that are shared by multiple threads.</summary>
     <remarks>
@@ -56,6 +64,8 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Add">
@@ -75,6 +85,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Add(System.Int32@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (ByRef location1 As Integer, value As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Add(int % location1, int value);" />
+      <MemberSignature Language="F#" Value="static member Add :  * int -&gt; int" Usage="System.Threading.Interlocked.Add (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -85,6 +96,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -93,15 +105,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="location1" Type="System.Int32" RefType="ref" />
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
@@ -118,6 +133,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -126,6 +143,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Add(System.Int64@,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (ByRef location1 As Long, value As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Add(long % location1, long value);" />
+      <MemberSignature Language="F#" Value="static member Add :  * int64 -&gt; int64" Usage="System.Threading.Interlocked.Add (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -136,6 +154,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -144,15 +163,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Int64&amp;" RefType="ref" />
+        <Parameter Name="location1" Type="System.Int64" RefType="ref" />
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
@@ -174,6 +196,8 @@
         <altmember cref="Overload:System.Threading.Interlocked.Increment" />
         <altmember cref="Overload:System.Threading.Interlocked.Decrement" />
         <altmember cref="M:System.Threading.Interlocked.Read(System.Int64@)" />
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CompareExchange">
@@ -193,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Double@,System.Double,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As Double, value As Double, comparand As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double CompareExchange(double % location1, double value, double comparand);" />
+      <MemberSignature Language="F#" Value="static member CompareExchange :  * double * double -&gt; double" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -203,6 +228,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -210,11 +236,16 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Double&amp;" RefType="ref" />
+        <Parameter Name="location1" Type="System.Double" RefType="ref" />
         <Parameter Name="value" Type="System.Double" />
         <Parameter Name="comparand" Type="System.Double" />
       </Parameters>
@@ -243,6 +274,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
@@ -251,6 +284,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Int32@,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As Integer, value As Integer, comparand As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CompareExchange(int % location1, int value, int comparand);" />
+      <MemberSignature Language="F#" Value="static member CompareExchange :  * int * int -&gt; int" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -261,6 +295,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -269,15 +305,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="location1" Type="System.Int32" RefType="ref" />
         <Parameter Name="value" Type="System.Int32" />
         <Parameter Name="comparand" Type="System.Int32" />
       </Parameters>
@@ -308,6 +347,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
@@ -316,6 +357,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Int64@,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As Long, value As Long, comparand As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long CompareExchange(long % location1, long value, long comparand);" />
+      <MemberSignature Language="F#" Value="static member CompareExchange :  * int64 * int64 -&gt; int64" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -326,6 +368,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -333,11 +376,16 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Int64&amp;" RefType="ref" />
+        <Parameter Name="location1" Type="System.Int64" RefType="ref" />
         <Parameter Name="value" Type="System.Int64" />
         <Parameter Name="comparand" Type="System.Int64" />
       </Parameters>
@@ -356,6 +404,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
@@ -364,6 +414,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.IntPtr@,System.IntPtr,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As IntPtr, value As IntPtr, comparand As IntPtr) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr CompareExchange(IntPtr % location1, IntPtr value, IntPtr comparand);" />
+      <MemberSignature Language="F#" Value="static member CompareExchange :  * nativeint * nativeint -&gt; nativeint" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -374,6 +425,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -382,15 +434,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.IntPtr&amp;" RefType="ref" />
+        <Parameter Name="location1" Type="System.IntPtr" RefType="ref" />
         <Parameter Name="value" Type="System.IntPtr" />
         <Parameter Name="comparand" Type="System.IntPtr" />
       </Parameters>
@@ -412,6 +467,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
@@ -420,6 +477,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Object@,System.Object,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As Object, value As Object, comparand As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CompareExchange(System::Object ^ % location1, System::Object ^ value, System::Object ^ comparand);" />
+      <MemberSignature Language="F#" Value="static member CompareExchange :  * obj * obj -&gt; obj" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -430,6 +488,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -438,15 +498,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="location1" Type="System.Object" RefType="ref" />
         <Parameter Name="value" Type="System.Object" />
         <Parameter Name="comparand" Type="System.Object" />
       </Parameters>
@@ -470,6 +533,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The address of <paramref name="location1" /> is a null pointer.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange">
@@ -478,6 +543,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange(System.Single@,System.Single,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange (ByRef location1 As Single, value As Single, comparand As Single) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float CompareExchange(float % location1, float value, float comparand);" />
+      <MemberSignature Language="F#" Value="static member CompareExchange :  * single * single -&gt; single" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -488,6 +554,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -495,11 +563,16 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Single&amp;" RefType="ref" />
+        <Parameter Name="location1" Type="System.Single" RefType="ref" />
         <Parameter Name="value" Type="System.Single" />
         <Parameter Name="comparand" Type="System.Single" />
       </Parameters>
@@ -528,6 +601,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <Member MemberName="CompareExchange&lt;T&gt;">
@@ -536,6 +611,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.CompareExchange``1(``0@,``0,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CompareExchange(Of T As Class) (ByRef location1 As T, value As T, comparand As T) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static T CompareExchange(T % location1, T value, T comparand);" />
+      <MemberSignature Language="F#" Value="static member CompareExchange :  * 'T * 'T -&gt; 'T (requires 'T : null)" Usage="System.Threading.Interlocked.CompareExchange (location1, value, comparand)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -546,6 +622,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -554,11 +631,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -572,7 +652,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location1" Type="T&amp;" RefType="ref" />
+        <Parameter Name="location1" Type="T" RefType="ref" />
         <Parameter Name="value" Type="T" />
         <Parameter Name="comparand" Type="T" />
       </Parameters>
@@ -616,6 +696,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Decrement(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Decrement (ByRef location As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Decrement(int % location);" />
+      <MemberSignature Language="F#" Value="static member Decrement :  -&gt; int" Usage="System.Threading.Interlocked.Decrement location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -626,6 +707,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -634,15 +717,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Int32" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="location">The variable whose value is to be decremented.</param>
@@ -662,7 +748,7 @@
  [!code-csharp[System.Threading.Interlocked.Decrement#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.decrement/cs/decrement1.cs#1)]
  [!code-vb[System.Threading.Interlocked.Decrement#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.decrement/vb/decrement1.vb#1)]  
   
- The following example is similar to the previous one, except that it uses the  instead of a thread procedure to generate 50,000 random midpoint integers. In this example, a lambda expression replaces the `GenerateNumbers` thread procedure, and the call to the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=nameWithType> method eliminates the need for the <xref:System.Threading.CountdownEvent> object.  
+ The following example is similar to the previous one, except that it uses the <xref:System.Threading.Tasks.Task> class instead of a thread procedure to generate 50,000 random midpoint integers. In this example, a lambda expression replaces the `GenerateNumbers` thread procedure, and the call to the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=nameWithType> method eliminates the need for the <xref:System.Threading.CountdownEvent> object.  
   
  [!code-csharp[System.Threading.Interlocked.Decrement#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.decrement/cs/decrement2.cs#2)]
  [!code-vb[System.Threading.Interlocked.Decrement#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.decrement/vb/decrement2.vb#2)]  
@@ -670,6 +756,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The address of <paramref name="location" /> is a null pointer.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <Member MemberName="Decrement">
@@ -678,6 +766,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Decrement(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Decrement (ByRef location As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Decrement(long % location);" />
+      <MemberSignature Language="F#" Value="static member Decrement :  -&gt; int64" Usage="System.Threading.Interlocked.Decrement location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -688,6 +777,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -695,11 +786,16 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location" Type="System.Int64&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Int64" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="location">The variable whose value is to be decremented.</param>
@@ -719,6 +815,8 @@
         <altmember cref="Overload:System.Threading.Interlocked.Increment" />
         <altmember cref="Overload:System.Threading.Interlocked.Add" />
         <altmember cref="M:System.Threading.Interlocked.Read(System.Int64@)" />
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Exchange">
@@ -738,6 +836,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Double@,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As Double, value As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Exchange(double % location1, double value);" />
+      <MemberSignature Language="F#" Value="static member Exchange :  * double -&gt; double" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -748,6 +847,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -755,11 +855,16 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Double&amp;" RefType="ref" />
+        <Parameter Name="location1" Type="System.Double" RefType="ref" />
         <Parameter Name="value" Type="System.Double" />
       </Parameters>
       <Docs>
@@ -769,6 +874,8 @@
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <Member MemberName="Exchange">
@@ -777,6 +884,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Int32@,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As Integer, value As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Exchange(int % location1, int value);" />
+      <MemberSignature Language="F#" Value="static member Exchange :  * int -&gt; int" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -787,6 +895,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -795,15 +905,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="location1" Type="System.Int32" RefType="ref" />
         <Parameter Name="value" Type="System.Int32" />
       </Parameters>
       <Docs>
@@ -824,6 +937,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The address of <paramref name="location1" /> is a null pointer.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <Member MemberName="Exchange">
@@ -832,6 +947,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Int64@,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As Long, value As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Exchange(long % location1, long value);" />
+      <MemberSignature Language="F#" Value="static member Exchange :  * int64 -&gt; int64" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -842,6 +958,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -849,11 +966,16 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Int64&amp;" RefType="ref" />
+        <Parameter Name="location1" Type="System.Int64" RefType="ref" />
         <Parameter Name="value" Type="System.Int64" />
       </Parameters>
       <Docs>
@@ -863,6 +985,8 @@
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <Member MemberName="Exchange">
@@ -871,6 +995,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.IntPtr@,System.IntPtr)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As IntPtr, value As IntPtr) As IntPtr" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr Exchange(IntPtr % location1, IntPtr value);" />
+      <MemberSignature Language="F#" Value="static member Exchange :  * nativeint -&gt; nativeint" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -881,6 +1006,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -889,15 +1015,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.IntPtr&amp;" RefType="ref" />
+        <Parameter Name="location1" Type="System.IntPtr" RefType="ref" />
         <Parameter Name="value" Type="System.IntPtr" />
       </Parameters>
       <Docs>
@@ -907,6 +1036,8 @@
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <Member MemberName="Exchange">
@@ -915,6 +1046,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Object@,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As Object, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Exchange(System::Object ^ % location1, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="static member Exchange :  * obj -&gt; obj" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -925,6 +1057,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -933,15 +1067,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Object&amp;" RefType="ref" />
+        <Parameter Name="location1" Type="System.Object" RefType="ref" />
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
@@ -952,21 +1089,15 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Remarks  
- Beginning with .NET Framework version 2.0, the <xref:System.Threading.Interlocked.Exchange%60%601%28%60%600%40%2C%60%600%29> method overload provides a type-safe alternative for reference types.  
-  
-   
-  
-## Examples  
- The following code example shows the syntax for using `Exchange` with any reference type object.  
-  
- [!code-cpp[System.Threading.Interlocked.Exchange#1](~/samples/snippets/cpp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange/CPP/source.cpp#1)]
- [!code-csharp[System.Threading.Interlocked.Exchange#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange/CS/source.cs#1)]
- [!code-vb[System.Threading.Interlocked.Exchange#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange/VB/source.vb#1)]  
-  
+## Remarks
+
+> [!NOTE]
+> Beginning with .NET Framework version 2.0, the <xref:System.Threading.Interlocked.Exchange%60%601%28%60%600%40%2C%60%600%29> method overload provides a type-safe alternative for reference types.  
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The address of <paramref name="location1" /> is a null pointer.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <Member MemberName="Exchange">
@@ -975,6 +1106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange(System.Single@,System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange (ByRef location1 As Single, value As Single) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Exchange(float % location1, float value);" />
+      <MemberSignature Language="F#" Value="static member Exchange :  * single -&gt; single" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -985,6 +1117,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -992,11 +1126,16 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location1" Type="System.Single&amp;" RefType="ref" />
+        <Parameter Name="location1" Type="System.Single" RefType="ref" />
         <Parameter Name="value" Type="System.Single" />
       </Parameters>
       <Docs>
@@ -1006,6 +1145,8 @@
         <returns>The original value of <paramref name="location1" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <Member MemberName="Exchange&lt;T&gt;">
@@ -1014,6 +1155,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Exchange``1(``0@,``0)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Exchange(Of T As Class) (ByRef location1 As T, value As T) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class static T Exchange(T % location1, T value);" />
+      <MemberSignature Language="F#" Value="static member Exchange :  * 'T -&gt; 'T (requires 'T : null)" Usage="System.Threading.Interlocked.Exchange (location1, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1024,6 +1166,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1032,11 +1175,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1050,7 +1196,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="location1" Type="T&amp;" RefType="ref" />
+        <Parameter Name="location1" Type="T" RefType="ref" />
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
@@ -1067,17 +1213,6 @@
   
 > [!NOTE]
 >  This method overload is preferable to the <xref:System.Threading.Interlocked.Exchange%28System.Object%40%2CSystem.Object%29> method overload, because the latter requires late-bound access to the destination object .  
-  
-   
-  
-## Examples  
- The following example launches ten tasks, each of which generates  100 ten-character part numbers. It then the part number that is first alphabetically.  
-  
- [!code-csharp[System.Threading.Interlocked.Exchange#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange/CS/Exchange5.cs#2)]
- [!code-vb[System.Threading.Interlocked.Exchange#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Threading.Interlocked.Exchange/VB/Exchange5.vb#2)]  
-  
- The example uses the `firstWidget` variable to store the ID that occurs first in the sort order. It compares each ID that it generates with the `firstWidget` value.  If the new value precedes the current value of `firstWidget` in the sort order, the example calls the <xref:System.Threading.Interlocked.Exchange%2A> method to assign the new value to `firstWidget`.  
-  
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location1" /> is a null pointer.</exception>
@@ -1100,6 +1235,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Increment(System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Increment (ByRef location As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Increment(int % location);" />
+      <MemberSignature Language="F#" Value="static member Increment :  -&gt; int" Usage="System.Threading.Interlocked.Increment location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1110,6 +1246,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1118,15 +1256,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location" Type="System.Int32&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Int32" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="location">The variable whose value is to be incremented.</param>
@@ -1146,7 +1287,7 @@
  [!code-csharp[System.Threading.Interlocked.Increment2#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.increment2/cs/increment3.cs#3)]
  [!code-vb[System.Threading.Interlocked.Increment2#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.increment2/vb/Increment3.vb#3)]  
   
- The following example is similar to the previous one, except that it uses the  instead of a thread procedure to generate 50,000 random midpoint integers. In this example, a lambda expression replaces the `GenerateNumbers` thread procedure, and the call to the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=nameWithType> method eliminates the need for the <xref:System.Threading.CountdownEvent> object.  
+ The following example is similar to the previous one, except that it uses the <xref:System.Threading.Tasks.Task> class instead of a thread procedure to generate 50,000 random midpoint integers. In this example, a lambda expression replaces the `GenerateNumbers` thread procedure, and the call to the <xref:System.Threading.Tasks.Task.WaitAll%2A?displayProperty=nameWithType> method eliminates the need for the <xref:System.Threading.CountdownEvent> object.  
   
  [!code-csharp[System.Threading.Interlocked.Increment2#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.interlocked.increment2/cs/increment4.cs#4)]
  [!code-vb[System.Threading.Interlocked.Increment2#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.interlocked.increment2/vb/Increment4.vb#4)]  
@@ -1154,6 +1295,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NullReferenceException">The address of <paramref name="location" /> is a null pointer.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <Member MemberName="Increment">
@@ -1162,6 +1305,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Increment(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Increment (ByRef location As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Increment(long % location);" />
+      <MemberSignature Language="F#" Value="static member Increment :  -&gt; int64" Usage="System.Threading.Interlocked.Increment location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1172,6 +1316,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1180,15 +1326,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location" Type="System.Int64&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Int64" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="location">The variable whose value is to be incremented.</param>
@@ -1208,6 +1357,8 @@
         <altmember cref="Overload:System.Threading.Interlocked.Decrement" />
         <altmember cref="Overload:System.Threading.Interlocked.Add" />
         <altmember cref="M:System.Threading.Interlocked.Read(System.Int64@)" />
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
     <Member MemberName="MemoryBarrier">
@@ -1216,6 +1367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.MemoryBarrier" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub MemoryBarrier ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MemoryBarrier();" />
+      <MemberSignature Language="F#" Value="static member MemoryBarrier : unit -&gt; unit" Usage="System.Threading.Interlocked.MemoryBarrier " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1233,6 +1385,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1259,11 +1416,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.MemoryBarrierProcessWide" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub MemoryBarrierProcessWide ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MemoryBarrierProcessWide();" />
+      <MemberSignature Language="F#" Value="static member MemoryBarrierProcessWide : unit -&gt; unit" Usage="System.Threading.Interlocked.MemoryBarrierProcessWide " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1280,6 +1444,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Interlocked.Read(System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Read (ByRef location As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long Read(long % location);" />
+      <MemberSignature Language="F#" Value="static member Read :  -&gt; int64" Usage="System.Threading.Interlocked.Read location" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1290,6 +1455,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1301,7 +1467,7 @@
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="location" Type="System.Int64&amp;" RefType="ref" />
+        <Parameter Name="location" Type="System.Int64" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="location">The 64-bit value to be loaded.</param>
@@ -1323,6 +1489,8 @@
         <altmember cref="Overload:System.Threading.Interlocked.Increment" />
         <altmember cref="Overload:System.Threading.Interlocked.Decrement" />
         <altmember cref="Overload:System.Threading.Interlocked.Add" />
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cbda7114-c752-4f3e-ada1-b1e8dd262f2b">Interlocked</related>
       </Docs>
     </Member>
   </Members>

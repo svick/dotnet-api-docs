@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.EndpointNotFoundException" />
   <TypeSignature Language="VB.NET" Value="Public Class EndpointNotFoundException&#xA;Inherits CommunicationException" />
   <TypeSignature Language="C++ CLI" Value="public ref class EndpointNotFoundException : System::ServiceModel::CommunicationException" />
+  <TypeSignature Language="F#" Value="type EndpointNotFoundException = class&#xA;    inherit CommunicationException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -19,6 +21,11 @@
     <BaseTypeName>System.ServiceModel.CommunicationException</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>The exception that is thrown when a remote endpoint could not be found or reached.</summary>
     <remarks>
@@ -27,7 +34,7 @@
 ## Remarks  
  The endpoint may not be found or reachable because the remote endpoint is down, the remote endpoint is unreachable, or because the remote network is unreachable.  
   
- This exception derives from <xref:System.ServiceModel.CommunicationException> that represents a class of recoverable errors that may be thrown during communication between endpoints and that robust client and service [!INCLUDE[indigo1](~/includes/indigo1-md.md)] applications are expected to handle. To prevent a handler for the <xref:System.ServiceModel.CommunicationException> handler from catching the more specific <xref:System.ServiceModel.EndpointNotFoundException>, catch this exception prior to handling <xref:System.ServiceModel.CommunicationException>.  
+ This exception derives from <xref:System.ServiceModel.CommunicationException> that represents a class of recoverable errors that may be thrown during communication between endpoints and that robust client and service Windows Communication Foundation (WCF) applications are expected to handle. To prevent a handler for the <xref:System.ServiceModel.CommunicationException> handler from catching the more specific <xref:System.ServiceModel.EndpointNotFoundException>, catch this exception prior to handling <xref:System.ServiceModel.CommunicationException>.  
   
  ]]></format>
     </remarks>
@@ -65,8 +72,14 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.EndpointNotFoundException" /> class.</summary>
@@ -79,10 +92,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointNotFoundException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EndpointNotFoundException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.EndpointNotFoundException : string -&gt; System.ServiceModel.EndpointNotFoundException" Usage="new System.ServiceModel.EndpointNotFoundException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -91,6 +106,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
@@ -113,16 +133,23 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; EndpointNotFoundException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.EndpointNotFoundException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.EndpointNotFoundException" Usage="new System.ServiceModel.EndpointNotFoundException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Primitives</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
@@ -147,10 +174,12 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointNotFoundException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EndpointNotFoundException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.EndpointNotFoundException : string * Exception -&gt; System.ServiceModel.EndpointNotFoundException" Usage="new System.ServiceModel.EndpointNotFoundException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -159,6 +188,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
         <Parameter Name="innerException" Type="System.Exception" />

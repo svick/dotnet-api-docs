@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Media.SystemSound" />
   <TypeSignature Language="VB.NET" Value="Public Class SystemSound" />
   <TypeSignature Language="C++ CLI" Value="public ref class SystemSound" />
+  <TypeSignature Language="F#" Value="type SystemSound = class" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -28,6 +30,7 @@
     </remarks>
     <altmember cref="T:System.Media.SystemSounds" />
     <altmember cref="T:System.Media.SoundPlayer" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f3945af9-045c-4e2d-b251-377c37ca2d77">SoundPlayer Class (Windows Forms)</related>
   </Docs>
   <Members>
     <Member MemberName="Play">
@@ -36,9 +39,11 @@
       <MemberSignature Language="DocId" Value="M:System.Media.SystemSound.Play" />
       <MemberSignature Language="VB.NET" Value="Public Sub Play ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Play();" />
+      <MemberSignature Language="F#" Value="member this.Play : unit -&gt; unit" Usage="systemSound.Play " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,6 +71,7 @@
         </remarks>
         <altmember cref="T:System.Media.SystemSounds" />
         <altmember cref="T:System.Media.SoundPlayer" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f3945af9-045c-4e2d-b251-377c37ca2d77">SoundPlayer Class (Windows Forms)</related>
       </Docs>
     </Member>
   </Members>

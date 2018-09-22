@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.GCCollectionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum GCCollectionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class GCCollectionMode" />
+  <TypeSignature Language="F#" Value="type GCCollectionMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,6 +16,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -25,6 +27,11 @@
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Specifies the behavior for a forced garbage collection.</summary>
     <remarks>
@@ -43,6 +50,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/019008fe-4708-4e65-bebf-04fd9941e149">Forced Collections</related>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -51,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.GCCollectionMode.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.GCCollectionMode.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -63,6 +72,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -84,6 +94,7 @@
       <MemberSignature Language="DocId" Value="F:System.GCCollectionMode.Forced" />
       <MemberSignature Language="VB.NET" Value="Forced" />
       <MemberSignature Language="C++ CLI" Value="Forced" />
+      <MemberSignature Language="F#" Value="Forced = 1" Usage="System.GCCollectionMode.Forced" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -96,6 +107,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -117,6 +129,7 @@
       <MemberSignature Language="DocId" Value="F:System.GCCollectionMode.Optimized" />
       <MemberSignature Language="VB.NET" Value="Optimized" />
       <MemberSignature Language="C++ CLI" Value="Optimized" />
+      <MemberSignature Language="F#" Value="Optimized = 2" Usage="System.GCCollectionMode.Optimized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -129,6 +142,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

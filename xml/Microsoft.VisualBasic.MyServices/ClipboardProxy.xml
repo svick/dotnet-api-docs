@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MyServices.ClipboardProxy" />
   <TypeSignature Language="VB.NET" Value="Public Class ClipboardProxy" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClipboardProxy" />
+  <TypeSignature Language="F#" Value="type ClipboardProxy = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
       <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
@@ -60,6 +65,7 @@
     </remarks>
     <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
     <altmember cref="T:System.Windows.Forms.Clipboard" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName="Clear">
@@ -68,9 +74,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="clipboardProxy.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,6 +122,8 @@ My.Computer.Clipboard.Clear()
           <see cref="F:System.Security.Permissions.UIPermissionClipboard.AllClipboard" /> permission is required to access the system Clipboard.</permission>
         <altmember cref="T:Microsoft.VisualBasic.Devices.Computer" />
         <altmember cref="M:System.Windows.Forms.Clipboard.Clear" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading from the Clipboard (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ContainsAudio">
@@ -122,9 +132,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsAudio" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsAudio () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsAudio();" />
+      <MemberSignature Language="F#" Value="member this.ContainsAudio : unit -&gt; bool" Usage="clipboardProxy.ContainsAudio " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -167,6 +179,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:System.Windows.Forms.Clipboard.ContainsAudio" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/playing-sounds.md">Playing Sounds</related>
       </Docs>
     </Member>
     <Member MemberName="ContainsData">
@@ -175,9 +189,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsData (format As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsData(System::String ^ format);" />
+      <MemberSignature Language="F#" Value="member this.ContainsData : string -&gt; bool" Usage="clipboardProxy.ContainsData format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -229,6 +245,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="ContainsFileDropList">
@@ -237,9 +255,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsFileDropList" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsFileDropList () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsFileDropList();" />
+      <MemberSignature Language="F#" Value="member this.ContainsFileDropList : unit -&gt; bool" Usage="clipboardProxy.ContainsFileDropList " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -285,6 +305,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:System.Windows.Forms.Clipboard.ContainsFileDropList" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetFileDropList" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetFileDropList(System.Collections.Specialized.StringCollection)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="ContainsImage">
@@ -293,9 +315,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsImage" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsImage () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsImage();" />
+      <MemberSignature Language="F#" Value="member this.ContainsImage : unit -&gt; bool" Usage="clipboardProxy.ContainsImage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -340,6 +364,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:System.Windows.Forms.Clipboard.ContainsImage" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetImage" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetImage(System.Drawing.Image)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ContainsText">
@@ -357,9 +383,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsText () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsText();" />
+      <MemberSignature Language="F#" Value="member this.ContainsText : unit -&gt; bool" Usage="clipboardProxy.ContainsText " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -404,6 +432,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:System.Windows.Forms.Clipboard.ContainsText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="ContainsText">
@@ -412,9 +442,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText(System.Windows.Forms.TextDataFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsText (format As TextDataFormat) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsText(System::Windows::Forms::TextDataFormat format);" />
+      <MemberSignature Language="F#" Value="member this.ContainsText : System.Windows.Forms.TextDataFormat -&gt; bool" Usage="clipboardProxy.ContainsText format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -463,6 +495,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:System.Windows.Forms.Clipboard.ContainsText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="GetAudioStream">
@@ -471,9 +505,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAudioStream () As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Stream ^ GetAudioStream();" />
+      <MemberSignature Language="F#" Value="member this.GetAudioStream : unit -&gt; System.IO.Stream" Usage="clipboardProxy.GetAudioStream " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -516,6 +552,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:System.Windows.Forms.Clipboard.GetAudioStream" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsAudio" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="GetData">
@@ -524,9 +562,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetData(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetData (format As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetData(System::String ^ format);" />
+      <MemberSignature Language="F#" Value="member this.GetData : string -&gt; obj" Usage="clipboardProxy.GetData format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -576,6 +616,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="GetDataObject">
@@ -584,13 +626,18 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDataObject () As IDataObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::IDataObject ^ GetDataObject();" />
+      <MemberSignature Language="F#" Value="member this.GetDataObject : unit -&gt; System.Windows.Forms.IDataObject" Usage="clipboardProxy.GetDataObject " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -639,6 +686,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetData(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="GetFileDropList">
@@ -647,9 +696,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetFileDropList" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFileDropList () As StringCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Specialized::StringCollection ^ GetFileDropList();" />
+      <MemberSignature Language="F#" Value="member this.GetFileDropList : unit -&gt; System.Collections.Specialized.StringCollection" Usage="clipboardProxy.GetFileDropList " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -697,6 +748,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:System.Windows.Forms.Clipboard.GetFileDropList" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsFileDropList" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetFileDropList(System.Collections.Specialized.StringCollection)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="GetImage">
@@ -705,9 +758,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetImage" />
       <MemberSignature Language="VB.NET" Value="Public Function GetImage () As Image" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Image ^ GetImage();" />
+      <MemberSignature Language="F#" Value="member this.GetImage : unit -&gt; System.Drawing.Image" Usage="clipboardProxy.GetImage " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -752,6 +807,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:System.Windows.Forms.Clipboard.GetImage" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsImage" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetImage(System.Drawing.Image)" />
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading from the Clipboard (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetText">
@@ -769,9 +826,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText" />
       <MemberSignature Language="VB.NET" Value="Public Function GetText () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetText();" />
+      <MemberSignature Language="F#" Value="member this.GetText : unit -&gt; string" Usage="clipboardProxy.GetText " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -817,6 +876,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:System.Windows.Forms.Clipboard.GetText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading from the Clipboard (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="GetText">
@@ -825,9 +886,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText(System.Windows.Forms.TextDataFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetText (format As TextDataFormat) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetText(System::Windows::Forms::TextDataFormat format);" />
+      <MemberSignature Language="F#" Value="member this.GetText : System.Windows.Forms.TextDataFormat -&gt; string" Usage="clipboardProxy.GetText format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -877,6 +940,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:System.Windows.Forms.Clipboard.GetText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading from the Clipboard (Visual Basic)</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetAudio">
@@ -894,9 +959,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAudio (audioBytes As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAudio(cli::array &lt;System::Byte&gt; ^ audioBytes);" />
+      <MemberSignature Language="F#" Value="member this.SetAudio : byte[] -&gt; unit" Usage="clipboardProxy.SetAudio audioBytes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -946,6 +1013,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:System.Windows.Forms.Clipboard.SetAudio" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsAudio" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="SetAudio">
@@ -954,9 +1023,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetAudio(System.IO.Stream)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAudio (audioStream As Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAudio(System::IO::Stream ^ audioStream);" />
+      <MemberSignature Language="F#" Value="member this.SetAudio : System.IO.Stream -&gt; unit" Usage="clipboardProxy.SetAudio audioStream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1005,6 +1076,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:System.Windows.Forms.Clipboard.SetAudio" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsAudio" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetAudioStream" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="SetData">
@@ -1013,9 +1086,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetData (format As String, data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(System::String ^ format, System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="member this.SetData : string * obj -&gt; unit" Usage="clipboardProxy.SetData (format, data)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1070,6 +1145,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetData(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="SetDataObject">
@@ -1078,13 +1155,18 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetDataObject(System.Windows.Forms.DataObject)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetDataObject (data As DataObject)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDataObject(System::Windows::Forms::DataObject ^ data);" />
+      <MemberSignature Language="F#" Value="member this.SetDataObject : System.Windows.Forms.DataObject -&gt; unit" Usage="clipboardProxy.SetDataObject data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1138,6 +1220,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetData(System.String)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetDataObject" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetData(System.String,System.Object)" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="SetFileDropList">
@@ -1146,9 +1230,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetFileDropList(System.Collections.Specialized.StringCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetFileDropList (filePaths As StringCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFileDropList(System::Collections::Specialized::StringCollection ^ filePaths);" />
+      <MemberSignature Language="F#" Value="member this.SetFileDropList : System.Collections.Specialized.StringCollection -&gt; unit" Usage="clipboardProxy.SetFileDropList filePaths" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1196,6 +1282,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:System.Windows.Forms.Clipboard.SetFileDropList(System.Collections.Specialized.StringCollection)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsFileDropList" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetFileDropList" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="SetImage">
@@ -1203,9 +1291,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="ILAsm" Value=".method public instance void SetImage(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetImage(System.Drawing.Image)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetImage(System::Drawing::Image ^ image);" />
+      <MemberSignature Language="F#" Value="member this.SetImage : System.Drawing.Image -&gt; unit" Usage="clipboardProxy.SetImage image" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1256,6 +1346,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="M:System.Windows.Forms.Clipboard.SetImage(System.Drawing.Image)" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsImage" />
         <altmember cref="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetImage" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetText">
@@ -1273,9 +1365,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetText (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.SetText : string -&gt; unit" Usage="clipboardProxy.SetText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1331,6 +1425,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:System.Windows.Forms.Clipboard.SetText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
     <Member MemberName="SetText">
@@ -1339,9 +1435,11 @@ My.Computer.Clipboard.Clear()
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.ClipboardProxy.SetText(System.String,System.Windows.Forms.TextDataFormat)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetText (text As String, format As TextDataFormat)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetText(System::String ^ text, System::Windows::Forms::TextDataFormat format);" />
+      <MemberSignature Language="F#" Value="member this.SetText : string * System.Windows.Forms.TextDataFormat -&gt; unit" Usage="clipboardProxy.SetText (text, format)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1400,6 +1498,8 @@ My.Computer.Clipboard.Clear()
         <altmember cref="Overload:System.Windows.Forms.Clipboard.SetText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText" />
         <altmember cref="Overload:Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md">Storing Data to and Reading From the Clipboard</related>
       </Docs>
     </Member>
   </Members>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.IPProtectionLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum IPProtectionLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class IPProtectionLevel" />
+  <TypeSignature Language="F#" Value="type IPProtectionLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -37,6 +38,7 @@
     <altmember cref="M:System.Net.Sockets.Socket.SetIPProtectionLevel(System.Net.Sockets.IPProtectionLevel)" />
     <altmember cref="M:System.Net.Sockets.TcpListener.AllowNatTraversal(System.Boolean)" />
     <altmember cref="M:System.Net.Sockets.UdpClient.AllowNatTraversal(System.Boolean)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/366c634c-7d16-478f-aedf-053eda94a1a0">&lt;socket&gt; Element (Network Settings)</related>
   </Docs>
   <Members>
     <Member MemberName="EdgeRestricted">
@@ -45,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IPProtectionLevel.EdgeRestricted" />
       <MemberSignature Language="VB.NET" Value="EdgeRestricted" />
       <MemberSignature Language="C++ CLI" Value="EdgeRestricted" />
+      <MemberSignature Language="F#" Value="EdgeRestricted = 20" Usage="System.Net.Sockets.IPProtectionLevel.EdgeRestricted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -75,6 +78,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IPProtectionLevel.Restricted" />
       <MemberSignature Language="VB.NET" Value="Restricted" />
       <MemberSignature Language="C++ CLI" Value="Restricted" />
+      <MemberSignature Language="F#" Value="Restricted = 30" Usage="System.Net.Sockets.IPProtectionLevel.Restricted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -105,6 +109,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IPProtectionLevel.Unrestricted" />
       <MemberSignature Language="VB.NET" Value="Unrestricted" />
       <MemberSignature Language="C++ CLI" Value="Unrestricted" />
+      <MemberSignature Language="F#" Value="Unrestricted = 10" Usage="System.Net.Sockets.IPProtectionLevel.Unrestricted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -135,6 +140,7 @@
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IPProtectionLevel.Unspecified" />
       <MemberSignature Language="VB.NET" Value="Unspecified" />
       <MemberSignature Language="C++ CLI" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = -1" Usage="System.Net.Sockets.IPProtectionLevel.Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>

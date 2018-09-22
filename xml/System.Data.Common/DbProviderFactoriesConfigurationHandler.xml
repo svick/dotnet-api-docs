@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbProviderFactoriesConfigurationHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class DbProviderFactoriesConfigurationHandler&#xA;Implements IConfigurationSectionHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbProviderFactoriesConfigurationHandler : System::Configuration::IConfigurationSectionHandler" />
+  <TypeSignature Language="F#" Value="type DbProviderFactoriesConfigurationHandler = class&#xA;    interface IConfigurationSectionHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,6 +22,7 @@
     <summary>This type supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,6 +34,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -38,6 +42,7 @@
         <summary>This type supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -46,9 +51,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactoriesConfigurationHandler.Create(System.Object,System.Object,System.Xml.XmlNode)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Create (parent As Object, configContext As Object, section As XmlNode) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Create(System::Object ^ parent, System::Object ^ configContext, System::Xml::XmlNode ^ section);" />
+      <MemberSignature Language="F#" Value="abstract member Create : obj * obj * System.Xml.XmlNode -&gt; obj&#xA;override this.Create : obj * obj * System.Xml.XmlNode -&gt; obj" Usage="dbProviderFactoriesConfigurationHandler.Create (parent, configContext, section)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -67,6 +74,7 @@
         <returns>This type supports the .NET Framework infrastructure and is not intended to be used directly from your code.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

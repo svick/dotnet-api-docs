@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.View" />
   <TypeSignature Language="VB.NET" Value="Public Class View&#xA;Inherits Control" />
   <TypeSignature Language="C++ CLI" Value="public ref class View : System::Web::UI::Control" />
+  <TypeSignature Language="F#" Value="type View = class&#xA;    inherit Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,14 +15,17 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.ViewDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.ParseChildren(false)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.ToolboxData("&lt;{0}:View runat="server"&gt;&lt;/{0}:View&gt;")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.ViewDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -83,6 +88,7 @@
     <altmember cref="T:System.Web.UI.WebControls.MultiView" />
     <altmember cref="T:System.Web.UI.WebControls.Button" />
     <altmember cref="T:System.Web.UI.WebControls.LinkButton" />
+    <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -94,8 +100,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.View" /> class.</summary>
@@ -108,9 +120,11 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.View.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Activate As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Activate;" />
+      <MemberSignature Language="F#" Value="member this.Activate : EventHandler " Usage="member this.Activate : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,6 +150,7 @@
         </remarks>
         <altmember cref="E:System.Web.UI.WebControls.View.Deactivate" />
         <altmember cref="T:System.Web.UI.WebControls.MultiView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Deactivate">
@@ -144,9 +159,11 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.View.Deactivate" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Deactivate As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Deactivate;" />
+      <MemberSignature Language="F#" Value="member this.Deactivate : EventHandler " Usage="member this.Deactivate : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,6 +189,7 @@
         </remarks>
         <altmember cref="E:System.Web.UI.WebControls.View.Activate" />
         <altmember cref="T:System.Web.UI.WebControls.MultiView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -180,13 +198,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.View.EnableTheming" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableTheming As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableTheming { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableTheming : bool with get, set" Usage="System.Web.UI.WebControls.View.EnableTheming" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -208,6 +228,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Control.EnableTheming" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnActivate">
@@ -216,9 +237,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.View.OnActivate(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnActivate (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnActivate(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnActivate : EventArgs -&gt; unit&#xA;override this.OnActivate : EventArgs -&gt; unit" Usage="view.OnActivate e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -239,6 +262,7 @@
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.WebControls.View.Activate" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnDeactivate">
@@ -247,9 +271,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.View.OnDeactivate(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnDeactivate (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnDeactivate(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDeactivate : EventArgs -&gt; unit&#xA;override this.OnDeactivate : EventArgs -&gt; unit" Usage="view.OnDeactivate e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -270,6 +296,7 @@
  ]]></format>
         </remarks>
         <altmember cref="E:System.Web.UI.WebControls.View.Deactivate" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -278,17 +305,22 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.View.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.WebControls.View.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -313,6 +345,7 @@
         <altmember cref="T:System.Web.UI.WebControls.MultiView" />
         <altmember cref="M:System.Web.UI.WebControls.MultiView.GetActiveView" />
         <altmember cref="P:System.Web.UI.WebControls.MultiView.ActiveViewIndex" />
+        <related type="Article" href="http://msdn.microsoft.com/library/5dffd974-2130-4992-adf2-f2a0ff23c363">MultiView and View Web Server Controls Overview</related>
       </Docs>
     </Member>
   </Members>

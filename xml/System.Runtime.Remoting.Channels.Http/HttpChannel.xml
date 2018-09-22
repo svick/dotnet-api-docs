@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpChannel&#xA;Inherits BaseChannelWithProperties&#xA;Implements IChannel, IChannelReceiver, IChannelReceiverHook, IChannelSender, ISecurableChannel" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpChannel : System::Runtime::Remoting::Channels::BaseChannelWithProperties, System::Runtime::Remoting::Channels::IChannel, System::Runtime::Remoting::Channels::IChannelReceiver, System::Runtime::Remoting::Channels::IChannelReceiverHook, System::Runtime::Remoting::Channels::IChannelSender, System::Runtime::Remoting::Channels::ISecurableChannel" />
+  <TypeSignature Language="F#" Value="type HttpChannel = class&#xA;    inherit BaseChannelWithProperties&#xA;    interface IChannelReceiver&#xA;    interface IChannel&#xA;    interface IChannelSender&#xA;    interface IChannelReceiverHook&#xA;    interface ISecurableChannel" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -34,11 +37,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
+
+[!INCLUDE [untrusted-data-class-note](~/includes/untrusted-data-class-note.md)]
+
  Channels transport messages across remoting boundaries (for example, between computers or application domains). The <xref:System.Runtime.Remoting.Channels.Http.HttpChannel> class transports messages using the HTTP protocol.  
   
  Channels are used by the .NET Framework remoting infrastructure to transport remote calls. When a client makes a call to a remote object, the call is serialized into a message that is sent by a client channel and received by a server channel. It is then deserialized and processed. Any returned values are transmitted by the server channel and received by the client channel.  
   
- A <xref:System.Runtime.Remoting.Channels.Http.HttpChannel> object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=nameWithType> method) or programmatically (by passing a <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Http.HttpChannel.%23ctor%2A> constructor). For a list of these configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/library/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+ A <xref:System.Runtime.Remoting.Channels.Http.HttpChannel> object has associated configuration properties that can be set at run time either in a configuration file (by invoking the static <xref:System.Runtime.Remoting.RemotingConfiguration.Configure%2A?displayProperty=nameWithType> method) or programmatically (by passing a <xref:System.Collections.IDictionary> collection to the <xref:System.Runtime.Remoting.Channels.Http.HttpChannel.%23ctor%2A> constructor). For a list of these configuration properties, see [Channel and Formatter Configuration Properties](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)).  
   
    
   
@@ -68,6 +74,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)">Channel and Formatter Configuration Properties</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -88,6 +95,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -109,9 +118,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (port As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpChannel(int port);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.Http.HttpChannel : int -&gt; System.Runtime.Remoting.Channels.Http.HttpChannel" Usage="new System.Runtime.Remoting.Channels.Http.HttpChannel port" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -136,9 +148,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.#ctor(System.Collections.IDictionary,System.Runtime.Remoting.Channels.IClientChannelSinkProvider,System.Runtime.Remoting.Channels.IServerChannelSinkProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (properties As IDictionary, clientSinkProvider As IClientChannelSinkProvider, serverSinkProvider As IServerChannelSinkProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpChannel(System::Collections::IDictionary ^ properties, System::Runtime::Remoting::Channels::IClientChannelSinkProvider ^ clientSinkProvider, System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ serverSinkProvider);" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.Http.HttpChannel : System.Collections.IDictionary * System.Runtime.Remoting.Channels.IClientChannelSinkProvider * System.Runtime.Remoting.Channels.IServerChannelSinkProvider -&gt; System.Runtime.Remoting.Channels.Http.HttpChannel" Usage="new System.Runtime.Remoting.Channels.Http.HttpChannel (properties, clientSinkProvider, serverSinkProvider)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -155,13 +170,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/library/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+ For more information about channel configuration properties, see [Channel and Formatter Configuration Properties](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)).  
   
  Channel sinks provide a plug-in point that allows access to the underlying messages flowing through the channel as well as the stream used by the transport mechanism to send messages to a remote object. Channel sinks are also responsible for transporting messages between the client and the server. Channel sinks are linked together in a chain, and all channel messages flow through this chain of sinks before the message is finally serialized and transported. If you do not require sink functionality, set the `clientSinkProvider` and `serverSinkProvider` parameters to `null`.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">A configuration property was incorrectly formatted.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)">Channel and Formatter Configuration Properties</related>
       </Docs>
     </Member>
     <Member MemberName="AddHookChannelUri">
@@ -170,9 +186,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.AddHookChannelUri(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddHookChannelUri (channelUri As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddHookChannelUri(System::String ^ channelUri);" />
+      <MemberSignature Language="F#" Value="abstract member AddHookChannelUri : string -&gt; unit&#xA;override this.AddHookChannelUri : string -&gt; unit" Usage="httpChannel.AddHookChannelUri channelUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -204,9 +223,12 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelData As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChannelData { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelData : obj" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -233,9 +255,12 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChannelName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelName : string" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -260,9 +285,12 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelPriority" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelPriority As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChannelPriority { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelPriority : int" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelPriority" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -287,9 +315,12 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelScheme" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelScheme As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChannelScheme { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelScheme : string" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelScheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -316,9 +347,12 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelSinkChain" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelSinkChain As IServerChannelSink" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Channels::IServerChannelSink ^ ChannelSinkChain { System::Runtime::Remoting::Channels::IServerChannelSink ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ChannelSinkChain : System.Runtime.Remoting.Channels.IServerChannelSink" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelSinkChain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -345,9 +379,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.CreateMessageSink(System.String,System.Object,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateMessageSink (url As String, remoteChannelData As Object, ByRef objectURI As String) As IMessageSink" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::Messaging::IMessageSink ^ CreateMessageSink(System::String ^ url, System::Object ^ remoteChannelData, [Runtime::InteropServices::Out] System::String ^ % objectURI);" />
+      <MemberSignature Language="F#" Value="abstract member CreateMessageSink : string * obj *  -&gt; System.Runtime.Remoting.Messaging.IMessageSink&#xA;override this.CreateMessageSink : string * obj *  -&gt; System.Runtime.Remoting.Messaging.IMessageSink" Usage="httpChannel.CreateMessageSink (url, remoteChannelData, objectURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -356,7 +393,7 @@
       <Parameters>
         <Parameter Name="url" Type="System.String" />
         <Parameter Name="remoteChannelData" Type="System.Object" />
-        <Parameter Name="objectURI" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="objectURI" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="url">The URL to which the new sink will deliver messages. Can be <see langword="null" />.</param>
@@ -388,9 +425,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.GetUrlsForUri(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUrlsForUri (objectURI As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetUrlsForUri(System::String ^ objectURI);" />
+      <MemberSignature Language="F#" Value="abstract member GetUrlsForUri : string -&gt; string[]&#xA;override this.GetUrlsForUri : string -&gt; string[]" Usage="httpChannel.GetUrlsForUri objectURI" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -421,9 +461,11 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.IsSecured" />
       <MemberSignature Language="VB.NET" Value="Public Property IsSecured As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSecured { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsSecured : bool with get, set" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.IsSecured" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -448,9 +490,12 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overrides Property Item(key As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : obj with get, set" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -482,9 +527,12 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.Keys" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Keys As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.ICollection" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -497,7 +545,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Channel properties are used to configure the channel at run time. For a list of possible channel properties and an example, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/library/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+ Channel properties are used to configure the channel at run time. For a list of possible channel properties and an example, see [Channel and Formatter Configuration Properties](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)).  
   
    
   
@@ -509,6 +557,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)">Channel and Formatter Configuration Properties</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -517,9 +566,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.Parse(System.String,System.String@)" />
       <MemberSignature Language="VB.NET" Value="Public Function Parse (url As String, ByRef objectURI As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Parse(System::String ^ url, [Runtime::InteropServices::Out] System::String ^ % objectURI);" />
+      <MemberSignature Language="F#" Value="abstract member Parse : string *  -&gt; string&#xA;override this.Parse : string *  -&gt; string" Usage="httpChannel.Parse (url, objectURI)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -527,7 +579,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="url" Type="System.String" />
-        <Parameter Name="objectURI" Type="System.String&amp;" RefType="out" />
+        <Parameter Name="objectURI" Type="System.String" RefType="out" />
       </Parameters>
       <Docs>
         <param name="url">The URL from which to extract the URI of the remote well-known object.</param>
@@ -554,9 +606,12 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.Properties" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Properties As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IDictionary ^ Properties { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.IDictionary" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -569,12 +624,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Channels properties are used to configure the channel at run time. The `Properties` property returns channel properties of the underlying <xref:System.Runtime.Remoting.Channels.Http.HttpServerChannel> and <xref:System.Runtime.Remoting.Channels.Http.HttpClientChannel>. For a list of possible channel properties and an example, see [Channel and Formatter Configuration Properties](http://msdn.microsoft.com/library/226ecf74-ebbd-4ea0-a701-dcf4441deefe).  
+ Channels properties are used to configure the channel at run time. The `Properties` property returns channel properties of the underlying <xref:System.Runtime.Remoting.Channels.Http.HttpServerChannel> and <xref:System.Runtime.Remoting.Channels.Http.HttpClientChannel>. For a list of possible channel properties and an example, see [Channel and Formatter Configuration Properties](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)).  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Runtime.Remoting.Channels.Http.HttpChannel" />
         <altmember cref="N:System.Runtime.Remoting.Channels.Http" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/kw7c6kwc(v=vs.100)">Channel and Formatter Configuration Properties</related>
       </Docs>
     </Member>
     <Member MemberName="StartListening">
@@ -583,9 +639,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.StartListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StartListening (data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StartListening(System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member StartListening : obj -&gt; unit&#xA;override this.StartListening : obj -&gt; unit" Usage="httpChannel.StartListening data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -615,9 +674,12 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Http.HttpChannel.StopListening(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub StopListening (data As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StopListening(System::Object ^ data);" />
+      <MemberSignature Language="F#" Value="abstract member StopListening : obj -&gt; unit&#xA;override this.StopListening : obj -&gt; unit" Usage="httpChannel.StopListening data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -640,9 +702,12 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Http.HttpChannel.WantsToListen" />
       <MemberSignature Language="VB.NET" Value="Public Property WantsToListen As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WantsToListen { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.WantsToListen : bool with get, set" Usage="System.Runtime.Remoting.Channels.Http.HttpChannel.WantsToListen" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

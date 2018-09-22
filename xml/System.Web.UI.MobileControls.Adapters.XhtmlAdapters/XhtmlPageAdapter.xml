@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class XhtmlPageAdapter&#xA;Inherits XhtmlControlAdapter&#xA;Implements IPageAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class XhtmlPageAdapter : System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlControlAdapter, System::Web::UI::MobileControls::IPageAdapter" />
+  <TypeSignature Language="F#" Value="type XhtmlPageAdapter = class&#xA;    inherit XhtmlControlAdapter&#xA;    interface IPageAdapter&#xA;    interface IControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,7 +19,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
     </Attribute>
   </Attributes>
@@ -34,6 +36,11 @@
     <permission cref="T:System.Web.AspNetHostingPermission">for verifying at load time that the class derived from <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter" /> has this permission. Associated enumerations: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />, <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter" />
     <altmember cref="T:System.Web.UI.MobileControls.IPageAdapter" />
+    <related type="Article" href="https://msdn.microsoft.com/library/480491b8-89f6-4056-b4ed-f5f6385e62ed">ASP.NET Mobile Web Forms and ASP.NET Compatibility</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">Introduction to Device Filtering in ASP.NET</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,12 +52,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="CacheVaryByHeaders">
@@ -59,12 +70,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.CacheVaryByHeaders" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CacheVaryByHeaders As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IList ^ CacheVaryByHeaders { System::Collections::IList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CacheVaryByHeaders : System.Collections.IList" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.CacheVaryByHeaders" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.MobileControls.IPageAdapter.CacheVaryByHeaders</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,6 +95,9 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.IPageAdapter" />
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="CookielessDataDictionary">
@@ -90,12 +106,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.CookielessDataDictionary" />
       <MemberSignature Language="VB.NET" Value="Public Property CookielessDataDictionary As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ CookielessDataDictionary { System::Collections::IDictionary ^ get(); void set(System::Collections::IDictionary ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CookielessDataDictionary : System.Collections.IDictionary with get, set" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.CookielessDataDictionary" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.MobileControls.IPageAdapter.CookielessDataDictionary</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,6 +132,10 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.MobileControlsSection" />
         <altmember cref="T:System.Collections.IDictionary" />
+        <related type="Article" href="https://msdn.microsoft.com/library/480491b8-89f6-4056-b4ed-f5f6385e62ed">ASP.NET Mobile Web Forms and ASP.NET Compatibility</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="CreateTextWriter">
@@ -122,12 +144,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.CreateTextWriter(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateTextWriter (writer As TextWriter) As HtmlTextWriter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::HtmlTextWriter ^ CreateTextWriter(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member CreateTextWriter : System.IO.TextWriter -&gt; System.Web.UI.HtmlTextWriter&#xA;override this.CreateTextWriter : System.IO.TextWriter -&gt; System.Web.UI.HtmlTextWriter" Usage="xhtmlPageAdapter.CreateTextWriter writer" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.MobileControls.IPageAdapter.CreateTextWriter(System.IO.TextWriter)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -143,6 +167,10 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.IO.TextWriter" />
         <altmember cref="T:System.Web.UI.XhtmlTextWriter" />
+        <related type="Article" href="https://msdn.microsoft.com/library/480491b8-89f6-4056-b4ed-f5f6385e62ed">ASP.NET Mobile Web Forms and ASP.NET Compatibility</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="DeterminePostBackMode">
@@ -151,12 +179,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.DeterminePostBackMode(System.Web.HttpRequest,System.String,System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function DeterminePostBackMode (request As HttpRequest, postEventSourceID As String, postEventArgumentID As String, baseCollection As NameValueCollection) As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Specialized::NameValueCollection ^ DeterminePostBackMode(System::Web::HttpRequest ^ request, System::String ^ postEventSourceID, System::String ^ postEventArgumentID, System::Collections::Specialized::NameValueCollection ^ baseCollection);" />
+      <MemberSignature Language="F#" Value="abstract member DeterminePostBackMode : System.Web.HttpRequest * string * string * System.Collections.Specialized.NameValueCollection -&gt; System.Collections.Specialized.NameValueCollection&#xA;override this.DeterminePostBackMode : System.Web.HttpRequest * string * string * System.Collections.Specialized.NameValueCollection -&gt; System.Collections.Specialized.NameValueCollection" Usage="xhtmlPageAdapter.DeterminePostBackMode (request, postEventSourceID, postEventArgumentID, baseCollection)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.MobileControls.IPageAdapter.DeterminePostBackMode(System.Web.HttpRequest,System.String,System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -185,6 +215,10 @@
         </remarks>
         <altmember cref="T:System.Web.HttpRequest" />
         <altmember cref="T:System.Collections.Specialized.NameValueCollection" />
+        <related type="Article" href="https://msdn.microsoft.com/library/480491b8-89f6-4056-b4ed-f5f6385e62ed">ASP.NET Mobile Web Forms and ASP.NET Compatibility</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="DeviceQualifies">
@@ -193,9 +227,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.DeviceQualifies(System.Web.HttpContext)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DeviceQualifies (context As HttpContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool DeviceQualifies(System::Web::HttpContext ^ context);" />
+      <MemberSignature Language="F#" Value="static member DeviceQualifies : System.Web.HttpContext -&gt; bool" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.DeviceQualifies context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -212,6 +248,10 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.Configuration.HttpCapabilitiesBase.PreferredRenderingType" />
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.Doctype" />
+        <related type="Article" href="https://msdn.microsoft.com/library/480491b8-89f6-4056-b4ed-f5f6385e62ed">ASP.NET Mobile Web Forms and ASP.NET Compatibility</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="EventArgumentKey">
@@ -220,9 +260,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.EventArgumentKey" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EventArgumentKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EventArgumentKey { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventArgumentKey : string" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.EventArgumentKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -240,6 +282,10 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.DeterminePostBackMode(System.Web.HttpRequest,System.String,System.String,System.Collections.Specialized.NameValueCollection)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/480491b8-89f6-4056-b4ed-f5f6385e62ed">ASP.NET Mobile Web Forms and ASP.NET Compatibility</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="EventSourceKey">
@@ -248,9 +294,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.EventSourceKey" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EventSourceKey As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EventSourceKey { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EventSourceKey : string" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.EventSourceKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -268,6 +316,10 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.DeterminePostBackMode(System.Web.HttpRequest,System.String,System.String,System.Collections.Specialized.NameValueCollection)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/480491b8-89f6-4056-b4ed-f5f6385e62ed">ASP.NET Mobile Web Forms and ASP.NET Compatibility</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="HandleError">
@@ -276,12 +328,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.HandleError(System.Exception,System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function HandleError (e As Exception, writer As HtmlTextWriter) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HandleError(Exception ^ e, System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member HandleError : Exception * System.Web.UI.HtmlTextWriter -&gt; bool&#xA;override this.HandleError : Exception * System.Web.UI.HtmlTextWriter -&gt; bool" Usage="xhtmlPageAdapter.HandleError (e, writer)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.MobileControls.IPageAdapter.HandleError(System.Exception,System.Web.UI.HtmlTextWriter)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -306,6 +360,10 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Exception" />
+        <related type="Article" href="https://msdn.microsoft.com/library/480491b8-89f6-4056-b4ed-f5f6385e62ed">ASP.NET Mobile Web Forms and ASP.NET Compatibility</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="HandlePagePostBackEvent">
@@ -314,12 +372,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.HandlePagePostBackEvent(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function HandlePagePostBackEvent (eventSource As String, eventArgument As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HandlePagePostBackEvent(System::String ^ eventSource, System::String ^ eventArgument);" />
+      <MemberSignature Language="F#" Value="abstract member HandlePagePostBackEvent : string * string -&gt; bool&#xA;override this.HandlePagePostBackEvent : string * string -&gt; bool" Usage="xhtmlPageAdapter.HandlePagePostBackEvent (eventSource, eventArgument)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.MobileControls.IPageAdapter.HandlePagePostBackEvent(System.String,System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -346,6 +406,10 @@
         <block subset="none" type="overrides">
           <para>When overriding the <see cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.HandlePagePostBackEvent(System.String,System.String)" /> method in a derived class, if you want your page adapter to handle the postback event, return <see langword="true" /> after handling the event.</para>
         </block>
+        <related type="Article" href="https://msdn.microsoft.com/library/480491b8-89f6-4056-b4ed-f5f6385e62ed">ASP.NET Mobile Web Forms and ASP.NET Compatibility</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="InitWriterState">
@@ -354,9 +418,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.InitWriterState(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InitWriterState (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitWriterState(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member InitWriterState : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit&#xA;override this.InitWriterState : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlPageAdapter.InitWriterState writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -386,6 +452,10 @@
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.UseDivsForBreaks" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SuppressNewLine" />
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SupportsNoWrapStyle" />
+        <related type="Article" href="https://msdn.microsoft.com/library/480491b8-89f6-4056-b4ed-f5f6385e62ed">ASP.NET Mobile Web Forms and ASP.NET Compatibility</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -394,12 +464,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="xhtmlPageAdapter.OnPreRender e" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.MobileControls.IControlAdapter.OnPreRender(System.EventArgs)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -428,6 +500,10 @@
         <altmember cref="P:System.Web.UI.MobileControls.MobileControl.Form" />
         <altmember cref="P:System.Web.UI.MobileControls.MobilePage.ActiveForm" />
         <altmember cref="P:System.Web.UI.MobileControls.Panel.Paginate" />
+        <related type="Article" href="https://msdn.microsoft.com/library/480491b8-89f6-4056-b4ed-f5f6385e62ed">ASP.NET Mobile Web Forms and ASP.NET Compatibility</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="OptimumPageWeight">
@@ -436,12 +512,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.OptimumPageWeight" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OptimumPageWeight As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int OptimumPageWeight { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.OptimumPageWeight : int" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.OptimumPageWeight" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.MobileControls.IPageAdapter.OptimumPageWeight</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -451,6 +529,11 @@
         <summary>Gets a page weight that is appropriate for the target device.  This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An integer that represents the optimal number of bytes for a page on the target device.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/78F2786D-0B5B-4760-9616-5027357713C2">Pagination Support</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/480491b8-89f6-4056-b4ed-f5f6385e62ed">ASP.NET Mobile Web Forms and ASP.NET Compatibility</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="Page">
@@ -459,12 +542,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.Page" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Page As MobilePage" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::MobileControls::MobilePage ^ Page { System::Web::UI::MobileControls::MobilePage ^ get(); void set(System::Web::UI::MobileControls::MobilePage ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Page : System.Web.UI.MobileControls.MobilePage with get, set" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.Page" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.MobileControls.IPageAdapter.Page</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -475,6 +560,10 @@
         <value>A <see cref="T:System.Web.UI.MobileControls.MobilePage" /> object.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.IPageAdapter.Page" />
+        <related type="Article" href="https://msdn.microsoft.com/library/480491b8-89f6-4056-b4ed-f5f6385e62ed">ASP.NET Mobile Web Forms and ASP.NET Compatibility</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="PersistCookielessData">
@@ -483,12 +572,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.PersistCookielessData" />
       <MemberSignature Language="VB.NET" Value="Public Property PersistCookielessData As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PersistCookielessData { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PersistCookielessData : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.PersistCookielessData" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.UI.MobileControls.IPageAdapter.PersistCookielessData</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -500,6 +591,10 @@
           <see langword="true" /> if the <see langword="CookielessDataDictionaryType" /> in the <see langword="MobileControls" /> configuration section of the Web.config file is set to a valid dictionary type; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.CookielessDataDictionary" />
+        <related type="Article" href="https://msdn.microsoft.com/library/480491b8-89f6-4056-b4ed-f5f6385e62ed">ASP.NET Mobile Web Forms and ASP.NET Compatibility</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -508,9 +603,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.Render(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As XhtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlPageAdapter.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -531,9 +628,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.RenderUrlPostBackEvent(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderUrlPostBackEvent (writer As XhtmlMobileTextWriter, target As String, argument As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderUrlPostBackEvent(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer, System::String ^ target, System::String ^ argument);" />
+      <MemberSignature Language="F#" Value="abstract member RenderUrlPostBackEvent : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string * string -&gt; unit&#xA;override this.RenderUrlPostBackEvent : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter * string * string -&gt; unit" Usage="xhtmlPageAdapter.RenderUrlPostBackEvent (writer, target, argument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -558,6 +657,10 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlPageAdapter.HandlePagePostBackEvent(System.String,System.String)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/480491b8-89f6-4056-b4ed-f5f6385e62ed">ASP.NET Mobile Web Forms and ASP.NET Compatibility</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
   </Members>

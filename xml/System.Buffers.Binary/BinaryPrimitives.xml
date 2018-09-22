@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Buffers.Binary.BinaryPrimitives" />
   <TypeSignature Language="VB.NET" Value="Public Class BinaryPrimitives" />
   <TypeSignature Language="C++ CLI" Value="public ref class BinaryPrimitives abstract sealed" />
+  <TypeSignature Language="F#" Value="type BinaryPrimitives = class" />
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,10 +25,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadInt16BigEndian(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt16BigEndian (source As ReadOnlySpan(Of Byte)) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ReadInt16BigEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="static member ReadInt16BigEndian : ReadOnlySpan&lt;byte&gt; -&gt; int16" Usage="System.Buffers.Binary.BinaryPrimitives.ReadInt16BigEndian source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int16</ReturnType>
@@ -47,10 +51,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadInt16LittleEndian(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt16LittleEndian (source As ReadOnlySpan(Of Byte)) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ReadInt16LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="static member ReadInt16LittleEndian : ReadOnlySpan&lt;byte&gt; -&gt; int16" Usage="System.Buffers.Binary.BinaryPrimitives.ReadInt16LittleEndian source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int16</ReturnType>
@@ -71,10 +77,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadInt32BigEndian(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt32BigEndian (source As ReadOnlySpan(Of Byte)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ReadInt32BigEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="static member ReadInt32BigEndian : ReadOnlySpan&lt;byte&gt; -&gt; int" Usage="System.Buffers.Binary.BinaryPrimitives.ReadInt32BigEndian source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -95,10 +103,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadInt32LittleEndian(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt32LittleEndian (source As ReadOnlySpan(Of Byte)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ReadInt32LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="static member ReadInt32LittleEndian : ReadOnlySpan&lt;byte&gt; -&gt; int" Usage="System.Buffers.Binary.BinaryPrimitives.ReadInt32LittleEndian source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -119,10 +129,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadInt64BigEndian(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt64BigEndian (source As ReadOnlySpan(Of Byte)) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ReadInt64BigEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="static member ReadInt64BigEndian : ReadOnlySpan&lt;byte&gt; -&gt; int64" Usage="System.Buffers.Binary.BinaryPrimitives.ReadInt64BigEndian source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -143,10 +155,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadInt64LittleEndian(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadInt64LittleEndian (source As ReadOnlySpan(Of Byte)) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ReadInt64LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="static member ReadInt64LittleEndian : ReadOnlySpan&lt;byte&gt; -&gt; int64" Usage="System.Buffers.Binary.BinaryPrimitives.ReadInt64LittleEndian source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -167,13 +181,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadUInt16BigEndian(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt16BigEndian (source As ReadOnlySpan(Of Byte)) As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ReadUInt16BigEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="static member ReadUInt16BigEndian : ReadOnlySpan&lt;byte&gt; -&gt; uint16" Usage="System.Buffers.Binary.BinaryPrimitives.ReadUInt16BigEndian source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -196,13 +212,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadUInt16LittleEndian(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt16LittleEndian (source As ReadOnlySpan(Of Byte)) As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ReadUInt16LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="static member ReadUInt16LittleEndian : ReadOnlySpan&lt;byte&gt; -&gt; uint16" Usage="System.Buffers.Binary.BinaryPrimitives.ReadUInt16LittleEndian source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -225,13 +243,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadUInt32BigEndian(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt32BigEndian (source As ReadOnlySpan(Of Byte)) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ReadUInt32BigEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="static member ReadUInt32BigEndian : ReadOnlySpan&lt;byte&gt; -&gt; uint32" Usage="System.Buffers.Binary.BinaryPrimitives.ReadUInt32BigEndian source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -254,13 +274,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt32LittleEndian (source As ReadOnlySpan(Of Byte)) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ReadUInt32LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="static member ReadUInt32LittleEndian : ReadOnlySpan&lt;byte&gt; -&gt; uint32" Usage="System.Buffers.Binary.BinaryPrimitives.ReadUInt32LittleEndian source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -283,13 +305,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadUInt64BigEndian(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt64BigEndian (source As ReadOnlySpan(Of Byte)) As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ReadUInt64BigEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="static member ReadUInt64BigEndian : ReadOnlySpan&lt;byte&gt; -&gt; uint64" Usage="System.Buffers.Binary.BinaryPrimitives.ReadUInt64BigEndian source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -312,13 +336,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReadUInt64LittleEndian(System.ReadOnlySpan{System.Byte})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReadUInt64LittleEndian (source As ReadOnlySpan(Of Byte)) As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ReadUInt64LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source);" />
+      <MemberSignature Language="F#" Value="static member ReadUInt64LittleEndian : ReadOnlySpan&lt;byte&gt; -&gt; uint64" Usage="System.Buffers.Binary.BinaryPrimitives.ReadUInt64LittleEndian source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -341,10 +367,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReverseEndianness(System.Byte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReverseEndianness (value As Byte) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Byte ReverseEndianness(System::Byte value);" />
+      <MemberSignature Language="F#" Value="static member ReverseEndianness : byte -&gt; byte" Usage="System.Buffers.Binary.BinaryPrimitives.ReverseEndianness value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte</ReturnType>
@@ -365,10 +393,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReverseEndianness(System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReverseEndianness (value As Short) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static short ReverseEndianness(short value);" />
+      <MemberSignature Language="F#" Value="static member ReverseEndianness : int16 -&gt; int16" Usage="System.Buffers.Binary.BinaryPrimitives.ReverseEndianness value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int16</ReturnType>
@@ -389,10 +419,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReverseEndianness(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReverseEndianness (value As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ReverseEndianness(int value);" />
+      <MemberSignature Language="F#" Value="static member ReverseEndianness : int -&gt; int" Usage="System.Buffers.Binary.BinaryPrimitives.ReverseEndianness value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -413,10 +445,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReverseEndianness(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReverseEndianness (value As Long) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static long ReverseEndianness(long value);" />
+      <MemberSignature Language="F#" Value="static member ReverseEndianness : int64 -&gt; int64" Usage="System.Buffers.Binary.BinaryPrimitives.ReverseEndianness value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -437,13 +471,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReverseEndianness(System.SByte)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReverseEndianness (value As SByte) As SByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::SByte ReverseEndianness(System::SByte value);" />
+      <MemberSignature Language="F#" Value="static member ReverseEndianness : sbyte -&gt; sbyte" Usage="System.Buffers.Binary.BinaryPrimitives.ReverseEndianness value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -466,13 +502,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReverseEndianness(System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReverseEndianness (value As UShort) As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt16 ReverseEndianness(System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="static member ReverseEndianness : uint16 -&gt; uint16" Usage="System.Buffers.Binary.BinaryPrimitives.ReverseEndianness value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -495,13 +533,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReverseEndianness(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReverseEndianness (value As UInteger) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt32 ReverseEndianness(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member ReverseEndianness : uint32 -&gt; uint32" Usage="System.Buffers.Binary.BinaryPrimitives.ReverseEndianness value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -524,13 +564,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.ReverseEndianness(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ReverseEndianness (value As ULong) As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::UInt64 ReverseEndianness(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member ReverseEndianness : uint64 -&gt; uint64" Usage="System.Buffers.Binary.BinaryPrimitives.ReverseEndianness value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -553,17 +595,19 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadInt16BigEndian(System.ReadOnlySpan{System.Byte},System.Int16@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt16BigEndian (source As ReadOnlySpan(Of Byte), ByRef value As Short) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt16BigEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] short % value);" />
+      <MemberSignature Language="F#" Value="static member TryReadInt16BigEndian : ReadOnlySpan&lt;byte&gt; *  -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryReadInt16BigEndian (source, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Int16&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Int16" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -579,17 +623,19 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadInt16LittleEndian(System.ReadOnlySpan{System.Byte},System.Int16@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt16LittleEndian (source As ReadOnlySpan(Of Byte), ByRef value As Short) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt16LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] short % value);" />
+      <MemberSignature Language="F#" Value="static member TryReadInt16LittleEndian : ReadOnlySpan&lt;byte&gt; *  -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryReadInt16LittleEndian (source, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Int16&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Int16" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -605,17 +651,19 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadInt32BigEndian(System.ReadOnlySpan{System.Byte},System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt32BigEndian (source As ReadOnlySpan(Of Byte), ByRef value As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt32BigEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] int % value);" />
+      <MemberSignature Language="F#" Value="static member TryReadInt32BigEndian : ReadOnlySpan&lt;byte&gt; *  -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryReadInt32BigEndian (source, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -631,17 +679,19 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadInt32LittleEndian(System.ReadOnlySpan{System.Byte},System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt32LittleEndian (source As ReadOnlySpan(Of Byte), ByRef value As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt32LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] int % value);" />
+      <MemberSignature Language="F#" Value="static member TryReadInt32LittleEndian : ReadOnlySpan&lt;byte&gt; *  -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryReadInt32LittleEndian (source, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -657,17 +707,19 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadInt64BigEndian(System.ReadOnlySpan{System.Byte},System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt64BigEndian (source As ReadOnlySpan(Of Byte), ByRef value As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt64BigEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] long % value);" />
+      <MemberSignature Language="F#" Value="static member TryReadInt64BigEndian : ReadOnlySpan&lt;byte&gt; *  -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryReadInt64BigEndian (source, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Int64&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -683,17 +735,19 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadInt64LittleEndian(System.ReadOnlySpan{System.Byte},System.Int64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadInt64LittleEndian (source As ReadOnlySpan(Of Byte), ByRef value As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadInt64LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] long % value);" />
+      <MemberSignature Language="F#" Value="static member TryReadInt64LittleEndian : ReadOnlySpan&lt;byte&gt; *  -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryReadInt64LittleEndian (source, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.Int64&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.Int64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -709,13 +763,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadUInt16BigEndian(System.ReadOnlySpan{System.Byte},System.UInt16@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt16BigEndian (source As ReadOnlySpan(Of Byte), ByRef value As UShort) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt16BigEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] System::UInt16 % value);" />
+      <MemberSignature Language="F#" Value="static member TryReadUInt16BigEndian : ReadOnlySpan&lt;byte&gt; *  -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryReadUInt16BigEndian (source, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -724,7 +780,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.UInt16&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.UInt16" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -740,13 +796,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadUInt16LittleEndian(System.ReadOnlySpan{System.Byte},System.UInt16@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt16LittleEndian (source As ReadOnlySpan(Of Byte), ByRef value As UShort) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt16LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] System::UInt16 % value);" />
+      <MemberSignature Language="F#" Value="static member TryReadUInt16LittleEndian : ReadOnlySpan&lt;byte&gt; *  -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryReadUInt16LittleEndian (source, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -755,7 +813,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.UInt16&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.UInt16" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -771,13 +829,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadUInt32BigEndian(System.ReadOnlySpan{System.Byte},System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt32BigEndian (source As ReadOnlySpan(Of Byte), ByRef value As UInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt32BigEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] System::UInt32 % value);" />
+      <MemberSignature Language="F#" Value="static member TryReadUInt32BigEndian : ReadOnlySpan&lt;byte&gt; *  -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryReadUInt32BigEndian (source, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -786,7 +846,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.UInt32&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.UInt32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -802,13 +862,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadUInt32LittleEndian(System.ReadOnlySpan{System.Byte},System.UInt32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt32LittleEndian (source As ReadOnlySpan(Of Byte), ByRef value As UInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt32LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] System::UInt32 % value);" />
+      <MemberSignature Language="F#" Value="static member TryReadUInt32LittleEndian : ReadOnlySpan&lt;byte&gt; *  -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryReadUInt32LittleEndian (source, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -817,7 +879,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.UInt32&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.UInt32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -833,13 +895,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadUInt64BigEndian(System.ReadOnlySpan{System.Byte},System.UInt64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt64BigEndian (source As ReadOnlySpan(Of Byte), ByRef value As ULong) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt64BigEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] System::UInt64 % value);" />
+      <MemberSignature Language="F#" Value="static member TryReadUInt64BigEndian : ReadOnlySpan&lt;byte&gt; *  -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryReadUInt64BigEndian (source, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -848,7 +912,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.UInt64&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.UInt64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -864,13 +928,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryReadUInt64LittleEndian(System.ReadOnlySpan{System.Byte},System.UInt64@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryReadUInt64LittleEndian (source As ReadOnlySpan(Of Byte), ByRef value As ULong) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryReadUInt64LittleEndian(ReadOnlySpan&lt;System::Byte&gt; source, [Runtime::InteropServices::Out] System::UInt64 % value);" />
+      <MemberSignature Language="F#" Value="static member TryReadUInt64LittleEndian : ReadOnlySpan&lt;byte&gt; *  -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryReadUInt64LittleEndian (source, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -879,7 +945,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
-        <Parameter Name="value" Type="System.UInt64&amp;" RefType="out" />
+        <Parameter Name="value" Type="System.UInt64" RefType="out" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -895,10 +961,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteInt16BigEndian(System.Span{System.Byte},System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt16BigEndian (destination As Span(Of Byte), value As Short) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt16BigEndian(Span&lt;System::Byte&gt; destination, short value);" />
+      <MemberSignature Language="F#" Value="static member TryWriteInt16BigEndian : Span&lt;byte&gt; * int16 -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryWriteInt16BigEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -921,10 +989,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteInt16LittleEndian(System.Span{System.Byte},System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt16LittleEndian (destination As Span(Of Byte), value As Short) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt16LittleEndian(Span&lt;System::Byte&gt; destination, short value);" />
+      <MemberSignature Language="F#" Value="static member TryWriteInt16LittleEndian : Span&lt;byte&gt; * int16 -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryWriteInt16LittleEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -947,10 +1017,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteInt32BigEndian(System.Span{System.Byte},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt32BigEndian (destination As Span(Of Byte), value As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt32BigEndian(Span&lt;System::Byte&gt; destination, int value);" />
+      <MemberSignature Language="F#" Value="static member TryWriteInt32BigEndian : Span&lt;byte&gt; * int -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryWriteInt32BigEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -973,10 +1045,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteInt32LittleEndian(System.Span{System.Byte},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt32LittleEndian (destination As Span(Of Byte), value As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt32LittleEndian(Span&lt;System::Byte&gt; destination, int value);" />
+      <MemberSignature Language="F#" Value="static member TryWriteInt32LittleEndian : Span&lt;byte&gt; * int -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryWriteInt32LittleEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -999,10 +1073,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteInt64BigEndian(System.Span{System.Byte},System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt64BigEndian (destination As Span(Of Byte), value As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt64BigEndian(Span&lt;System::Byte&gt; destination, long value);" />
+      <MemberSignature Language="F#" Value="static member TryWriteInt64BigEndian : Span&lt;byte&gt; * int64 -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryWriteInt64BigEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1025,10 +1101,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteInt64LittleEndian(System.Span{System.Byte},System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteInt64LittleEndian (destination As Span(Of Byte), value As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteInt64LittleEndian(Span&lt;System::Byte&gt; destination, long value);" />
+      <MemberSignature Language="F#" Value="static member TryWriteInt64LittleEndian : Span&lt;byte&gt; * int64 -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryWriteInt64LittleEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1051,13 +1129,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteUInt16BigEndian(System.Span{System.Byte},System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt16BigEndian (destination As Span(Of Byte), value As UShort) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt16BigEndian(Span&lt;System::Byte&gt; destination, System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="static member TryWriteUInt16BigEndian : Span&lt;byte&gt; * uint16 -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryWriteUInt16BigEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1082,13 +1162,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteUInt16LittleEndian(System.Span{System.Byte},System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt16LittleEndian (destination As Span(Of Byte), value As UShort) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt16LittleEndian(Span&lt;System::Byte&gt; destination, System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="static member TryWriteUInt16LittleEndian : Span&lt;byte&gt; * uint16 -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryWriteUInt16LittleEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1113,13 +1195,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteUInt32BigEndian(System.Span{System.Byte},System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt32BigEndian (destination As Span(Of Byte), value As UInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt32BigEndian(Span&lt;System::Byte&gt; destination, System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member TryWriteUInt32BigEndian : Span&lt;byte&gt; * uint32 -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryWriteUInt32BigEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1144,13 +1228,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteUInt32LittleEndian(System.Span{System.Byte},System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt32LittleEndian (destination As Span(Of Byte), value As UInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt32LittleEndian(Span&lt;System::Byte&gt; destination, System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member TryWriteUInt32LittleEndian : Span&lt;byte&gt; * uint32 -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryWriteUInt32LittleEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1175,13 +1261,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteUInt64BigEndian(System.Span{System.Byte},System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt64BigEndian (destination As Span(Of Byte), value As ULong) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt64BigEndian(Span&lt;System::Byte&gt; destination, System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member TryWriteUInt64BigEndian : Span&lt;byte&gt; * uint64 -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryWriteUInt64BigEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1206,13 +1294,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.TryWriteUInt64LittleEndian(System.Span{System.Byte},System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryWriteUInt64LittleEndian (destination As Span(Of Byte), value As ULong) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryWriteUInt64LittleEndian(Span&lt;System::Byte&gt; destination, System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member TryWriteUInt64LittleEndian : Span&lt;byte&gt; * uint64 -&gt; bool" Usage="System.Buffers.Binary.BinaryPrimitives.TryWriteUInt64LittleEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1237,10 +1327,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteInt16BigEndian(System.Span{System.Byte},System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt16BigEndian (destination As Span(Of Byte), value As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt16BigEndian(Span&lt;System::Byte&gt; destination, short value);" />
+      <MemberSignature Language="F#" Value="static member WriteInt16BigEndian : Span&lt;byte&gt; * int16 -&gt; unit" Usage="System.Buffers.Binary.BinaryPrimitives.WriteInt16BigEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1262,10 +1354,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteInt16LittleEndian(System.Span{System.Byte},System.Int16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt16LittleEndian (destination As Span(Of Byte), value As Short)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt16LittleEndian(Span&lt;System::Byte&gt; destination, short value);" />
+      <MemberSignature Language="F#" Value="static member WriteInt16LittleEndian : Span&lt;byte&gt; * int16 -&gt; unit" Usage="System.Buffers.Binary.BinaryPrimitives.WriteInt16LittleEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1287,10 +1381,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteInt32BigEndian(System.Span{System.Byte},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt32BigEndian (destination As Span(Of Byte), value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt32BigEndian(Span&lt;System::Byte&gt; destination, int value);" />
+      <MemberSignature Language="F#" Value="static member WriteInt32BigEndian : Span&lt;byte&gt; * int -&gt; unit" Usage="System.Buffers.Binary.BinaryPrimitives.WriteInt32BigEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1312,10 +1408,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteInt32LittleEndian(System.Span{System.Byte},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt32LittleEndian (destination As Span(Of Byte), value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt32LittleEndian(Span&lt;System::Byte&gt; destination, int value);" />
+      <MemberSignature Language="F#" Value="static member WriteInt32LittleEndian : Span&lt;byte&gt; * int -&gt; unit" Usage="System.Buffers.Binary.BinaryPrimitives.WriteInt32LittleEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1337,10 +1435,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteInt64BigEndian(System.Span{System.Byte},System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt64BigEndian (destination As Span(Of Byte), value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt64BigEndian(Span&lt;System::Byte&gt; destination, long value);" />
+      <MemberSignature Language="F#" Value="static member WriteInt64BigEndian : Span&lt;byte&gt; * int64 -&gt; unit" Usage="System.Buffers.Binary.BinaryPrimitives.WriteInt64BigEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1362,10 +1462,12 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteInt64LittleEndian(System.Span{System.Byte},System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteInt64LittleEndian (destination As Span(Of Byte), value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteInt64LittleEndian(Span&lt;System::Byte&gt; destination, long value);" />
+      <MemberSignature Language="F#" Value="static member WriteInt64LittleEndian : Span&lt;byte&gt; * int64 -&gt; unit" Usage="System.Buffers.Binary.BinaryPrimitives.WriteInt64LittleEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1387,13 +1489,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteUInt16BigEndian(System.Span{System.Byte},System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt16BigEndian (destination As Span(Of Byte), value As UShort)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt16BigEndian(Span&lt;System::Byte&gt; destination, System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="static member WriteUInt16BigEndian : Span&lt;byte&gt; * uint16 -&gt; unit" Usage="System.Buffers.Binary.BinaryPrimitives.WriteUInt16BigEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1417,13 +1521,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteUInt16LittleEndian(System.Span{System.Byte},System.UInt16)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt16LittleEndian (destination As Span(Of Byte), value As UShort)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt16LittleEndian(Span&lt;System::Byte&gt; destination, System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="static member WriteUInt16LittleEndian : Span&lt;byte&gt; * uint16 -&gt; unit" Usage="System.Buffers.Binary.BinaryPrimitives.WriteUInt16LittleEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1447,13 +1553,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteUInt32BigEndian(System.Span{System.Byte},System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt32BigEndian (destination As Span(Of Byte), value As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt32BigEndian(Span&lt;System::Byte&gt; destination, System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member WriteUInt32BigEndian : Span&lt;byte&gt; * uint32 -&gt; unit" Usage="System.Buffers.Binary.BinaryPrimitives.WriteUInt32BigEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1477,13 +1585,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteUInt32LittleEndian(System.Span{System.Byte},System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt32LittleEndian (destination As Span(Of Byte), value As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt32LittleEndian(Span&lt;System::Byte&gt; destination, System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member WriteUInt32LittleEndian : Span&lt;byte&gt; * uint32 -&gt; unit" Usage="System.Buffers.Binary.BinaryPrimitives.WriteUInt32LittleEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1507,13 +1617,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteUInt64BigEndian(System.Span{System.Byte},System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt64BigEndian (destination As Span(Of Byte), value As ULong)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt64BigEndian(Span&lt;System::Byte&gt; destination, System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member WriteUInt64BigEndian : Span&lt;byte&gt; * uint64 -&gt; unit" Usage="System.Buffers.Binary.BinaryPrimitives.WriteUInt64BigEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1537,13 +1649,15 @@
       <MemberSignature Language="DocId" Value="M:System.Buffers.Binary.BinaryPrimitives.WriteUInt64LittleEndian(System.Span{System.Byte},System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteUInt64LittleEndian (destination As Span(Of Byte), value As ULong)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteUInt64LittleEndian(Span&lt;System::Byte&gt; destination, System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member WriteUInt64LittleEndian : Span&lt;byte&gt; * uint64 -&gt; unit" Usage="System.Buffers.Binary.BinaryPrimitives.WriteUInt64LittleEndian (destination, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.1">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>

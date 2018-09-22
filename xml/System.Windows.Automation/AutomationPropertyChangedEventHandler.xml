@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationPropertyChangedEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub AutomationPropertyChangedEventHandler(sender As Object, e As AutomationPropertyChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void AutomationPropertyChangedEventHandler(System::Object ^ sender, AutomationPropertyChangedEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type AutomationPropertyChangedEventHandler = delegate of obj * AutomationPropertyChangedEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -42,5 +44,7 @@
     </remarks>
     <altmember cref="M:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationPropertyChangedEventHandler,System.Windows.Automation.AutomationProperty[])" />
     <altmember cref="M:System.Windows.Automation.Automation.RemoveAutomationPropertyChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationPropertyChangedEventHandler)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/b688effa-b3e8-4b05-944d-05ed89a245aa">Subscribe to UI Automation Events</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/b909e388-3f24-4997-b6d4-bd9c35c2dc27">UI Automation Events Overview</related>
   </Docs>
 </Type>

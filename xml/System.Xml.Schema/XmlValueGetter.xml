@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlValueGetter" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Function XmlValueGetter() As Object " />
   <TypeSignature Language="C++ CLI" Value="public delegate System::Object ^ XmlValueGetter();" />
+  <TypeSignature Language="F#" Value="type XmlValueGetter = delegate of unit -&gt; obj" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -56,5 +58,6 @@
     </remarks>
     <altmember cref="T:System.Xml.Schema.XmlSchemaValidator" />
     <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
+    <related type="Article" href="http://msdn.microsoft.com/library/911d4460-dd91-4958-85b2-2ca3299f9ec6">XmlSchemaValidator Push-Based Validation</related>
   </Docs>
 </Type>

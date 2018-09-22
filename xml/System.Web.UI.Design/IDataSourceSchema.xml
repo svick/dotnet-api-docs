@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDataSourceSchema" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataSourceSchema" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataSourceSchema" />
+  <TypeSignature Language="F#" Value="type IDataSourceSchema = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -24,6 +26,7 @@
     <altmember cref="T:System.Web.UI.Design.DataSetSchema" />
     <altmember cref="T:System.Web.UI.Design.XmlDocumentSchema" />
     <altmember cref="T:System.Web.UI.Design.TypeSchema" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
   </Docs>
   <Members>
     <Member MemberName="GetViews">
@@ -32,9 +35,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceSchema.GetViews" />
       <MemberSignature Language="VB.NET" Value="Public Function GetViews () As IDataSourceViewSchema()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Web::UI::Design::IDataSourceViewSchema ^&gt; ^ GetViews();" />
+      <MemberSignature Language="F#" Value="abstract member GetViews : unit -&gt; System.Web.UI.Design.IDataSourceViewSchema[]" Usage="iDataSourceSchema.GetViews " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

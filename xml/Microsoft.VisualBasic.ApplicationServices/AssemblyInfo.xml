@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class AssemblyInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class AssemblyInfo" />
+  <TypeSignature Language="F#" Value="type AssemblyInfo = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -35,6 +37,7 @@
     </remarks>
     <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
     <altmember cref="T:System.Diagnostics.FileVersionInfo" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,9 +46,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.#ctor(System.Reflection.Assembly)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (currentAssembly As Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyInfo(System::Reflection::Assembly ^ currentAssembly);" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ApplicationServices.AssemblyInfo : System.Reflection.Assembly -&gt; Microsoft.VisualBasic.ApplicationServices.AssemblyInfo" Usage="new Microsoft.VisualBasic.ApplicationServices.AssemblyInfo currentAssembly" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -57,6 +62,7 @@
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo" /> class with the specified assembly information.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="AssemblyName">
@@ -65,9 +71,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.AssemblyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,6 +114,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.AssemblyName" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="CompanyName">
@@ -114,9 +123,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.CompanyName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompanyName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CompanyName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CompanyName : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.CompanyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,6 +167,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyCompanyAttribute" /> attribute.</exception>
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Copyright">
@@ -164,9 +176,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Copyright" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Copyright As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Copyright { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Copyright : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Copyright" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,6 +220,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyCopyrightAttribute" /> attribute.</exception>
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -214,9 +229,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Description" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -256,6 +273,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyDescriptionAttribute" /> attribute.</exception>
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="DirectoryPath">
@@ -264,9 +282,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.DirectoryPath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DirectoryPath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DirectoryPath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DirectoryPath : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.DirectoryPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -304,6 +324,7 @@
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="LoadedAssemblies">
@@ -312,9 +333,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.LoadedAssemblies" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoadedAssemblies As ReadOnlyCollection(Of Assembly)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Reflection::Assembly ^&gt; ^ LoadedAssemblies { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Reflection::Assembly ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LoadedAssemblies : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Reflection.Assembly&gt;" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.LoadedAssemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -357,6 +380,7 @@
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
         <altmember cref="T:System.Collections.ObjectModel.ReadOnlyCollection`1" />
         <altmember cref="T:System.Reflection.Assembly" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="ProductName">
@@ -365,9 +389,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.ProductName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProductName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProductName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ProductName : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.ProductName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -407,6 +433,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyProductAttribute" /> attribute.</exception>
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="StackTrace">
@@ -415,9 +442,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.StackTrace" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StackTrace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StackTrace { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StackTrace : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.StackTrace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -475,6 +504,7 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access information in the file paths. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />.</permission>
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
         <altmember cref="P:System.Environment.StackTrace" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -483,9 +513,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Title" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -525,6 +557,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyTitleAttribute" /> attribute.</exception>
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Trademark">
@@ -533,9 +566,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Trademark" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Trademark As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Trademark { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Trademark : string" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Trademark" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -575,6 +610,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The assembly does not have an <see cref="T:System.Reflection.AssemblyTrademarkAttribute" /> attribute.</exception>
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="Version">
@@ -583,9 +619,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Version" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Version : Version" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -629,6 +667,7 @@
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.Deployment" />
         <altmember cref="P:System.Deployment.Application.ApplicationDeployment.CurrentVersion" />
         <altmember cref="T:System.Version" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="WorkingSet">
@@ -637,9 +676,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.WorkingSet" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkingSet As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property long WorkingSet { long get(); };" />
+      <MemberSignature Language="F#" Value="member this.WorkingSet : int64" Usage="Microsoft.VisualBasic.ApplicationServices.AssemblyInfo.WorkingSet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -682,6 +723,7 @@
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">Controls the ability to access all environment variables. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Info" />
         <altmember cref="P:System.Environment.WorkingSet" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.AppearanceEditorPart" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AppearanceEditorPart&#xA;Inherits EditorPart" />
   <TypeSignature Language="C++ CLI" Value="public ref class AppearanceEditorPart sealed : System::Web::UI::WebControls::WebParts::EditorPart" />
+  <TypeSignature Language="F#" Value="type AppearanceEditorPart = class&#xA;    inherit EditorPart" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -82,6 +84,7 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.BehaviorEditorPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.LayoutEditorPart" />
     <altmember cref="T:System.Web.UI.WebControls.WebParts.PropertyGridEditorPart" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -93,12 +96,19 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.AppearanceEditorPart" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyChanges">
@@ -107,9 +117,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.ApplyChanges" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ApplyChanges () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ApplyChanges();" />
+      <MemberSignature Language="F#" Value="override this.ApplyChanges : unit -&gt; bool" Usage="appearanceEditorPart.ApplyChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,6 +161,7 @@
  <see cref="P:System.Web.UI.WebControls.WebParts.Part.Title" /><see cref="P:System.Web.UI.WebControls.WebParts.Part.ChromeType" /><see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Direction" /><see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Height" /><see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Width" /><see cref="P:System.Web.UI.WebControls.WebParts.WebPart.Hidden" /></exception>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.EditorPart.ApplyChanges" />
         <altmember cref="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.SyncChanges" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -157,9 +170,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.CreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
+      <MemberSignature Language="F#" Value="override this.CreateChildControls : unit -&gt; unit" Usage="appearanceEditorPart.CreateChildControls " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -177,20 +192,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.DefaultButton" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property DefaultButton As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultButton { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultButton : string with get, set" Usage="System.Web.UI.WebControls.WebParts.AppearanceEditorPart.DefaultButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -216,9 +236,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="appearanceEditorPart.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -239,9 +261,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.RenderContents(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderContents (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="appearanceEditorPart.RenderContents writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -262,9 +286,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.SyncChanges" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SyncChanges ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SyncChanges();" />
+      <MemberSignature Language="F#" Value="override this.SyncChanges : unit -&gt; unit" Usage="appearanceEditorPart.SyncChanges " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -288,6 +314,7 @@
   
  If you create a custom control, you can follow the same approach, and call the <see cref="M:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.SyncChanges" /> method from the inherited <see cref="M:System.Web.UI.Control.OnPreRender(System.EventArgs)" /> method to ensure that any intervening changes are synchronized, but it is not necessary to do this.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -296,9 +323,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.AppearanceEditorPart.Title" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Web.UI.WebControls.WebParts.AppearanceEditorPart.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -328,6 +357,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.Part.Title" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

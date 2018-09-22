@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlWindow" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HtmlWindow" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlWindow sealed" />
+  <TypeSignature Language="F#" Value="type HtmlWindow = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -36,6 +38,8 @@
   
  ]]></format>
     </remarks>
+    <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms535873.aspx">window Object</related>
+    <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/aa741505.aspx">IHTMLWindow2 Interface</related>
   </Docs>
   <Members>
     <Member MemberName="Alert">
@@ -44,9 +48,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.Alert(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Alert (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Alert(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="member this.Alert : string -&gt; unit" Usage="htmlWindow.Alert message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -68,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms535933.aspx">alert Method</related>
       </Docs>
     </Member>
     <Member MemberName="AttachEventHandler">
@@ -75,9 +82,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AttachEventHandler(string eventName, class System.EventHandler eventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.AttachEventHandler(System.String,System.EventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AttachEventHandler(System::String ^ eventName, EventHandler ^ eventHandler);" />
+      <MemberSignature Language="F#" Value="member this.AttachEventHandler : string * EventHandler -&gt; unit" Usage="htmlWindow.AttachEventHandler (eventName, eventHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -99,6 +108,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListenerx">EventTarget.addEventListener()</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -107,9 +117,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="htmlWindow.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,6 +148,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536367.aspx">close Method</related>
       </Docs>
     </Member>
     <Member MemberName="Confirm">
@@ -144,9 +157,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.Confirm(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Confirm (message As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Confirm(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="member this.Confirm : string -&gt; bool" Usage="htmlWindow.Confirm message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -214,6 +229,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536376.aspx">confirm Method</related>
       </Docs>
     </Member>
     <Member MemberName="DetachEventHandler">
@@ -221,9 +237,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DetachEventHandler(string eventName, class System.EventHandler eventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.DetachEventHandler(System.String,System.EventHandler)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DetachEventHandler(System::String ^ eventName, EventHandler ^ eventHandler);" />
+      <MemberSignature Language="F#" Value="member this.DetachEventHandler : string * EventHandler -&gt; unit" Usage="htmlWindow.DetachEventHandler (eventName, eventHandler)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -238,6 +256,7 @@
         <param name="eventHandler">A reference to the managed code that handles the event.</param>
         <summary>Removes the named event handler.</summary>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536411.aspx">detachEvent Method</related>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -246,9 +265,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlWindow.Document" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Document As HtmlDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlDocument ^ Document { System::Windows::Forms::HtmlDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Document : System.Windows.Forms.HtmlDocument" Usage="System.Windows.Forms.HtmlWindow.Document" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -281,11 +302,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlWindow.DomWindow" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DomWindow As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DomWindow { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DomWindow : obj" Usage="System.Windows.Forms.HtmlWindow.DomWindow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -310,6 +338,9 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/aa741505.aspx">IHTMLWindow2 Interface</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/aa741356.aspx">IHTMLWindow3 Interface</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/aa741344.aspx">IHTMLWindow4 Interface</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -318,9 +349,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="htmlWindow.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -343,9 +376,11 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlWindow.Error" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Error As HtmlElementErrorEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementErrorEventHandler ^ Error;" />
+      <MemberSignature Language="F#" Value="member this.Error : System.Windows.Forms.HtmlElementErrorEventHandler " Usage="member this.Error : System.Windows.Forms.HtmlElementErrorEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -359,9 +394,7 @@
 ## Remarks  
  HTML pages can contain script code, usually written in JScript or VBScript, that executes when a page is loaded. <xref:System.Windows.Forms.HtmlWindow.Error> occurs whenever a script encounters a run-time error. Because script code is late-bound, which means that calls against the object are not resolved until run-time, errors can include everything from referencing a null object to calling an undefined property or method.  
   
- You can set the <xref:System.Windows.Forms.HtmlElementErrorEventArgs.Handled%2A> property of <xref:System.Windows.Forms.HtmlElementErrorEventArgs> to true in order to prevent the native error dialog box in Internet Explorer from displaying.  
-  
- For more information about the difference between canceling event bubbling and canceling the default action on an event, see [About the DHTML Object Model](http://msdn.microsoft.com/library/ms533022.aspx).  
+ You can set the <xref:System.Windows.Forms.HtmlElementErrorEventArgs.Handled%2A> property of <xref:System.Windows.Forms.HtmlElementErrorEventArgs> to true in order to prevent the native error dialog box in Internet Explorer from displaying.
   
    
   
@@ -373,6 +406,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/cc197053.aspx">onerror Event</related>
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -381,9 +415,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.Focus" />
       <MemberSignature Language="VB.NET" Value="Public Sub Focus ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Focus();" />
+      <MemberSignature Language="F#" Value="member this.Focus : unit -&gt; unit" Usage="htmlWindow.Focus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -402,6 +438,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536425.aspx">focus Method</related>
       </Docs>
     </Member>
     <Member MemberName="Frames">
@@ -410,9 +447,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlWindow.Frames" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Frames As HtmlWindowCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlWindowCollection ^ Frames { System::Windows::Forms::HtmlWindowCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Frames : System.Windows.Forms.HtmlWindowCollection" Usage="System.Windows.Forms.HtmlWindow.Frames" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -439,6 +478,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms537459.aspx">frames Collection</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -447,9 +487,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="htmlWindow.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -468,9 +510,11 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlWindow.GotFocus" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event GotFocus As HtmlElementEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ GotFocus;" />
+      <MemberSignature Language="F#" Value="member this.GotFocus : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.GotFocus : System.Windows.Forms.HtmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -490,7 +534,7 @@
   
 -   A `FRAME` clicked by the user, but only if the user's click does not put focus on an element within the window.  
   
- You cannot cancel the default action for the <xref:System.Windows.Forms.HtmlWindow.GotFocus> event, or prevent it from bubbling. For more information about the difference between canceling event bubbling and canceling the default action on an event, see [About the DHTML Object Model](http://msdn.microsoft.com/library/ms533022.aspx).  
+ You cannot cancel the default action for the <xref:System.Windows.Forms.HtmlWindow.GotFocus> event, or prevent it from bubbling.
   
    
   
@@ -504,6 +548,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536934.aspx">onfocus Event</related>
       </Docs>
     </Member>
     <Member MemberName="History">
@@ -512,9 +557,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlWindow.History" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property History As HtmlHistory" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlHistory ^ History { System::Windows::Forms::HtmlHistory ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.History : System.Windows.Forms.HtmlHistory" Usage="System.Windows.Forms.HtmlWindow.History" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -539,9 +586,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlWindow.IsClosed" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsClosed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsClosed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsClosed : bool" Usage="System.Windows.Forms.HtmlWindow.IsClosed" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -567,6 +616,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms537459.aspx">closed Property</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -575,9 +625,11 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlWindow.Load" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Load As HtmlElementEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ Load;" />
+      <MemberSignature Language="F#" Value="member this.Load : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.Load : System.Windows.Forms.HtmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -591,9 +643,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.HtmlWindow.Load> event works similarly to the <xref:System.Windows.Forms.WebBrowser.DocumentCompleted> event on the <xref:System.Windows.Forms.WebBrowser> control: it signals that it is safe to access HTML elements inside of the document.  
   
- You cannot cancel the default action for the <xref:System.Windows.Forms.HtmlWindow.Load> event.  
-  
- For more information about the difference between canceling event bubbling and canceling the default action on an event, see [About the DHTML Object Model](http://msdn.microsoft.com/library/ms533022.aspx).  
+ You cannot cancel the default action for the <xref:System.Windows.Forms.HtmlWindow.Load> event.
   
    
   
@@ -607,6 +657,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/cc197055.aspx">onload Event</related>
       </Docs>
     </Member>
     <Member MemberName="LostFocus">
@@ -615,9 +666,11 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlWindow.LostFocus" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event LostFocus As HtmlElementEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ LostFocus;" />
+      <MemberSignature Language="F#" Value="member this.LostFocus : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.LostFocus : System.Windows.Forms.HtmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -654,9 +707,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MoveTo(valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.MoveTo(System.Drawing.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveTo(System::Drawing::Point point);" />
+      <MemberSignature Language="F#" Value="member this.MoveTo : System.Drawing.Point -&gt; unit" Usage="htmlWindow.MoveTo point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -679,6 +734,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The code trying to execute this operation does not have permission to manipulate this window.</exception>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536626.aspx">moveTo Method</related>
       </Docs>
     </Member>
     <Member MemberName="MoveTo">
@@ -687,9 +743,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.MoveTo(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveTo (x As Integer, y As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveTo(int x, int y);" />
+      <MemberSignature Language="F#" Value="member this.MoveTo : int * int -&gt; unit" Usage="htmlWindow.MoveTo (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -722,9 +780,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlWindow.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.HtmlWindow.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -734,6 +794,7 @@
         <summary>Gets or sets the name of the window.</summary>
         <value>A <see cref="T:System.String" /> representing the name.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534187.aspx">name Property</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Navigate">
@@ -751,9 +812,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.Navigate(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Navigate (urlString As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Navigate(System::String ^ urlString);" />
+      <MemberSignature Language="F#" Value="member this.Navigate : string -&gt; unit" Usage="htmlWindow.Navigate urlString" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -773,6 +836,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536638.aspx">navigate Method</related>
       </Docs>
     </Member>
     <Member MemberName="Navigate">
@@ -781,9 +845,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.Navigate(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Navigate (url As Uri)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Navigate(Uri ^ url);" />
+      <MemberSignature Language="F#" Value="member this.Navigate : Uri -&gt; unit" Usage="htmlWindow.Navigate url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -804,9 +870,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.op_Equality(System.Windows.Forms.HtmlWindow,System.Windows.Forms.HtmlWindow)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As HtmlWindow, right As HtmlWindow) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Forms::HtmlWindow ^ left, System::Windows::Forms::HtmlWindow ^ right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Forms.HtmlWindow * System.Windows.Forms.HtmlWindow -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -838,9 +906,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.op_Inequality(System.Windows.Forms.HtmlWindow,System.Windows.Forms.HtmlWindow)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As HtmlWindow, right As HtmlWindow) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Forms::HtmlWindow ^ left, System::Windows::Forms::HtmlWindow ^ right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Forms.HtmlWindow * System.Windows.Forms.HtmlWindow -&gt; bool" Usage="System.Windows.Forms.HtmlWindow.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -874,9 +944,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.Open(System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Open (urlString As String, target As String, windowOptions As String, replaceEntry As Boolean) As HtmlWindow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::HtmlWindow ^ Open(System::String ^ urlString, System::String ^ target, System::String ^ windowOptions, bool replaceEntry);" />
+      <MemberSignature Language="F#" Value="member this.Open : string * string * string * bool -&gt; System.Windows.Forms.HtmlWindow" Usage="htmlWindow.Open (urlString, target, windowOptions, replaceEntry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -959,9 +1031,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.Open(System.Uri,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function Open (url As Uri, target As String, windowOptions As String, replaceEntry As Boolean) As HtmlWindow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::HtmlWindow ^ Open(Uri ^ url, System::String ^ target, System::String ^ windowOptions, bool replaceEntry);" />
+      <MemberSignature Language="F#" Value="member this.Open : Uri * string * string * bool -&gt; System.Windows.Forms.HtmlWindow" Usage="htmlWindow.Open (url, target, windowOptions, replaceEntry)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1050,6 +1124,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536651.aspx">open Method</related>
       </Docs>
     </Member>
     <Member MemberName="Opener">
@@ -1058,9 +1133,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlWindow.Opener" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Opener As HtmlWindow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlWindow ^ Opener { System::Windows::Forms::HtmlWindow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Opener : System.Windows.Forms.HtmlWindow" Usage="System.Windows.Forms.HtmlWindow.Opener" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1087,9 +1164,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.OpenNew(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenNew (urlString As String, windowOptions As String) As HtmlWindow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::HtmlWindow ^ OpenNew(System::String ^ urlString, System::String ^ windowOptions);" />
+      <MemberSignature Language="F#" Value="member this.OpenNew : string * string -&gt; System.Windows.Forms.HtmlWindow" Usage="htmlWindow.OpenNew (urlString, windowOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1124,9 +1203,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.OpenNew(System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function OpenNew (url As Uri, windowOptions As String) As HtmlWindow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::HtmlWindow ^ OpenNew(Uri ^ url, System::String ^ windowOptions);" />
+      <MemberSignature Language="F#" Value="member this.OpenNew : Uri * string -&gt; System.Windows.Forms.HtmlWindow" Usage="htmlWindow.OpenNew (url, windowOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1153,6 +1234,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536651.aspx">open Method</related>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1161,9 +1243,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlWindow.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As HtmlWindow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlWindow ^ Parent { System::Windows::Forms::HtmlWindow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Windows.Forms.HtmlWindow" Usage="System.Windows.Forms.HtmlWindow.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1180,6 +1264,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534326.aspx">parent Property</related>
       </Docs>
     </Member>
     <Member MemberName="Position">
@@ -1188,9 +1273,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlWindow.Position" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Position As Point" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point Position { System::Drawing::Point get(); };" />
+      <MemberSignature Language="F#" Value="member this.Position : System.Drawing.Point" Usage="System.Windows.Forms.HtmlWindow.Position" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1215,6 +1302,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc06e61f-43b6-4408-a676-2542dcfcd96e">Windows Forms Coordinates</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534389.aspx">screenLeft Property</related>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534390.aspx">screenTop Property</related>
       </Docs>
     </Member>
     <Member MemberName="Prompt">
@@ -1223,9 +1313,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.Prompt(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Prompt (message As String, defaultInputValue As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Prompt(System::String ^ message, System::String ^ defaultInputValue);" />
+      <MemberSignature Language="F#" Value="member this.Prompt : string * string -&gt; string" Usage="htmlWindow.Prompt (message, defaultInputValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1250,6 +1342,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536673.aspx">prompt Method</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveFocus">
@@ -1258,9 +1351,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.RemoveFocus" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveFocus ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFocus();" />
+      <MemberSignature Language="F#" Value="member this.RemoveFocus : unit -&gt; unit" Usage="htmlWindow.RemoveFocus " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1277,6 +1372,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536347.aspx">blur Method</related>
       </Docs>
     </Member>
     <Member MemberName="Resize">
@@ -1285,9 +1381,11 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlWindow.Resize" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Resize As HtmlElementEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ Resize;" />
+      <MemberSignature Language="F#" Value="member this.Resize : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.Resize : System.Windows.Forms.HtmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1308,6 +1406,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536959.aspx">onresize Event</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ResizeTo">
@@ -1324,9 +1423,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResizeTo(valuetype System.Drawing.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.ResizeTo(System.Drawing.Size)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResizeTo(System::Drawing::Size size);" />
+      <MemberSignature Language="F#" Value="member this.ResizeTo : System.Drawing.Size -&gt; unit" Usage="htmlWindow.ResizeTo size" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1350,6 +1451,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.UnauthorizedAccessException">The window you are trying to resize is in a different domain than its parent window. This restriction is part of cross-frame scripting security; for more information, see [About Cross-Frame Scripting and Security](http://msdn.microsoft.com/library/ms533028.aspx).</exception>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536723.aspx">resizeTo Method</related>
       </Docs>
     </Member>
     <Member MemberName="ResizeTo">
@@ -1358,9 +1460,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.ResizeTo(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResizeTo (width As Integer, height As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResizeTo(int width, int height);" />
+      <MemberSignature Language="F#" Value="member this.ResizeTo : int * int -&gt; unit" Usage="htmlWindow.ResizeTo (width, height)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1384,9 +1488,11 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlWindow.Scroll" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Scroll As HtmlElementEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ Scroll;" />
+      <MemberSignature Language="F#" Value="member this.Scroll : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.Scroll : System.Windows.Forms.HtmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1407,6 +1513,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536966.aspx">onscroll Event</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ScrollTo">
@@ -1423,9 +1530,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScrollTo(valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.ScrollTo(System.Drawing.Point)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollTo(System::Drawing::Point point);" />
+      <MemberSignature Language="F#" Value="member this.ScrollTo : System.Drawing.Point -&gt; unit" Usage="htmlWindow.ScrollTo point" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1453,6 +1562,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536731.aspx">scrollTo Method</related>
       </Docs>
     </Member>
     <Member MemberName="ScrollTo">
@@ -1461,9 +1571,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlWindow.ScrollTo(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ScrollTo (x As Integer, y As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollTo(int x, int y);" />
+      <MemberSignature Language="F#" Value="member this.ScrollTo : int * int -&gt; unit" Usage="htmlWindow.ScrollTo (x, y)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1493,9 +1605,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlWindow.Size" />
       <MemberSignature Language="VB.NET" Value="Public Property Size As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size Size { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Drawing.Size with get, set" Usage="System.Windows.Forms.HtmlWindow.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1513,9 +1627,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlWindow.StatusBarText" />
       <MemberSignature Language="VB.NET" Value="Public Property StatusBarText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StatusBarText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StatusBarText : string with get, set" Usage="System.Windows.Forms.HtmlWindow.StatusBarText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1532,6 +1648,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms534648.aspx">status Property</related>
       </Docs>
     </Member>
     <Member MemberName="Unload">
@@ -1540,9 +1657,11 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlWindow.Unload" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Unload As HtmlElementEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ Unload;" />
+      <MemberSignature Language="F#" Value="member this.Unload : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.Unload : System.Windows.Forms.HtmlElementEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1563,6 +1682,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms536973.aspx">onunload Event</related>
       </Docs>
     </Member>
     <Member MemberName="Url">
@@ -1571,9 +1691,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlWindow.Url" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Url As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Url { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Url : Uri" Usage="System.Windows.Forms.HtmlWindow.Url" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1598,9 +1720,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlWindow.WindowFrameElement" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WindowFrameElement As HtmlElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElement ^ WindowFrameElement { System::Windows::Forms::HtmlElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WindowFrameElement : System.Windows.Forms.HtmlElement" Usage="System.Windows.Forms.HtmlWindow.WindowFrameElement" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1626,6 +1750,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.UnauthorizedAccessException">You cannot access a <c>FRAME</c> elements or the <c>FRAME</c>'s document if the <c>FRAME</c> is in a different zone than the <c>FRAMESET</c> that contains it. For a full explanation, see [About Cross-Frame Scripting and Security](http://msdn.microsoft.com/library/ms533028.aspx).</permission>
+        <related type="ExternalDocumentation" href="http://msdn.microsoft.com/library/ms533771.aspx">frameElement Property</related>
       </Docs>
     </Member>
   </Members>

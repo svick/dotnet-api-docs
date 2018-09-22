@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.StandardEventOpcode" />
   <TypeSignature Language="VB.NET" Value="Public Enum StandardEventOpcode" />
   <TypeSignature Language="C++ CLI" Value="public enum class StandardEventOpcode" />
+  <TypeSignature Language="F#" Value="type StandardEventOpcode = " />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,6 +16,8 @@
   <Docs>
     <summary>Defines the standard opcodes that are attached to events by the event provider. For more information about opcodes, see <see cref="T:System.Diagnostics.Eventing.Reader.EventOpcode" />.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
   </Docs>
   <Members>
     <Member MemberName="DataCollectionStart">
@@ -22,9 +26,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.DataCollectionStart" />
       <MemberSignature Language="VB.NET" Value="DataCollectionStart" />
       <MemberSignature Language="C++ CLI" Value="DataCollectionStart" />
+      <MemberSignature Language="F#" Value="DataCollectionStart = 3" Usage="System.Diagnostics.Eventing.Reader.StandardEventOpcode.DataCollectionStart" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -41,9 +47,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.DataCollectionStop" />
       <MemberSignature Language="VB.NET" Value="DataCollectionStop" />
       <MemberSignature Language="C++ CLI" Value="DataCollectionStop" />
+      <MemberSignature Language="F#" Value="DataCollectionStop = 4" Usage="System.Diagnostics.Eventing.Reader.StandardEventOpcode.DataCollectionStop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,9 +68,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Extension" />
       <MemberSignature Language="VB.NET" Value="Extension" />
       <MemberSignature Language="C++ CLI" Value="Extension" />
+      <MemberSignature Language="F#" Value="Extension = 5" Usage="System.Diagnostics.Eventing.Reader.StandardEventOpcode.Extension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -79,9 +89,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Info" />
       <MemberSignature Language="VB.NET" Value="Info" />
       <MemberSignature Language="C++ CLI" Value="Info" />
+      <MemberSignature Language="F#" Value="Info = 0" Usage="System.Diagnostics.Eventing.Reader.StandardEventOpcode.Info" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,9 +110,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Receive" />
       <MemberSignature Language="VB.NET" Value="Receive" />
       <MemberSignature Language="C++ CLI" Value="Receive" />
+      <MemberSignature Language="F#" Value="Receive = 240" Usage="System.Diagnostics.Eventing.Reader.StandardEventOpcode.Receive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,9 +131,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Reply" />
       <MemberSignature Language="VB.NET" Value="Reply" />
       <MemberSignature Language="C++ CLI" Value="Reply" />
+      <MemberSignature Language="F#" Value="Reply = 6" Usage="System.Diagnostics.Eventing.Reader.StandardEventOpcode.Reply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,9 +152,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Resume" />
       <MemberSignature Language="VB.NET" Value="Resume" />
       <MemberSignature Language="C++ CLI" Value="Resume" />
+      <MemberSignature Language="F#" Value="Resume = 7" Usage="System.Diagnostics.Eventing.Reader.StandardEventOpcode.Resume" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -155,9 +173,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Send" />
       <MemberSignature Language="VB.NET" Value="Send" />
       <MemberSignature Language="C++ CLI" Value="Send" />
+      <MemberSignature Language="F#" Value="Send = 9" Usage="System.Diagnostics.Eventing.Reader.StandardEventOpcode.Send" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -174,9 +194,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Start" />
       <MemberSignature Language="VB.NET" Value="Start" />
       <MemberSignature Language="C++ CLI" Value="Start" />
+      <MemberSignature Language="F#" Value="Start = 1" Usage="System.Diagnostics.Eventing.Reader.StandardEventOpcode.Start" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -193,9 +215,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Stop" />
       <MemberSignature Language="VB.NET" Value="Stop" />
       <MemberSignature Language="C++ CLI" Value="Stop" />
+      <MemberSignature Language="F#" Value="Stop = 2" Usage="System.Diagnostics.Eventing.Reader.StandardEventOpcode.Stop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -212,9 +236,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.StandardEventOpcode.Suspend" />
       <MemberSignature Language="VB.NET" Value="Suspend" />
       <MemberSignature Language="C++ CLI" Value="Suspend" />
+      <MemberSignature Language="F#" Value="Suspend = 8" Usage="System.Diagnostics.Eventing.Reader.StandardEventOpcode.Suspend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

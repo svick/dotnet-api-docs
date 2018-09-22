@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DesignerObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignerObject&#xA;Implements IServiceProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerObject abstract : IServiceProvider" />
+  <TypeSignature Language="F#" Value="type DesignerObject = class&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -19,6 +21,8 @@
   <Docs>
     <summary>Represents an object in a design host such as Visual Studio 2005. This class must be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -27,9 +31,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerObject.#ctor(System.Web.UI.Design.ControlDesigner,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (designer As ControlDesigner, name As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerObject(System::Web::UI::Design::ControlDesigner ^ designer, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.DesignerObject : System.Web.UI.Design.ControlDesigner * string -&gt; System.Web.UI.Design.DesignerObject" Usage="new System.Web.UI.Design.DesignerObject (designer, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -48,6 +54,8 @@
   
  <paramref name="name" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Designer">
@@ -56,11 +64,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerObject.Designer" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Designer As ControlDesigner" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::ControlDesigner ^ Designer { System::Web::UI::Design::ControlDesigner ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Designer : System.Web.UI.Design.ControlDesigner" Usage="System.Web.UI.Design.DesignerObject.Designer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.UI.Design.ControlDesigner</ReturnType>
       </ReturnValue>
@@ -68,6 +83,8 @@
         <summary>Gets the associated designer component.</summary>
         <value>A <see cref="T:System.Web.UI.Design.ControlDesigner" /> object.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetService">
@@ -76,9 +93,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignerObject.GetService(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Function GetService (serviceType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetService(Type ^ serviceType);" />
+      <MemberSignature Language="F#" Value="member this.GetService : Type -&gt; obj" Usage="designerObject.GetService serviceType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -92,6 +111,8 @@
         <summary>Gets a service from the design host, as identified by the provided type.</summary>
         <returns>The requested service.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -100,11 +121,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerObject.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.UI.Design.DesignerObject.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -112,6 +140,8 @@
         <summary>Gets the name of the object.</summary>
         <value>The name of the object.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -120,9 +150,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.DesignerObject.Properties" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ Properties { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.IDictionary" Usage="System.Web.UI.Design.DesignerObject.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -132,6 +164,8 @@
         <summary>Gets the object's properties.</summary>
         <value>An <see cref="T:System.Collections.IDictionary" /> object containing the object's properties and their values.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="System.IServiceProvider.GetService">
@@ -143,8 +177,14 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -156,6 +196,8 @@
         <summary>For a description of this member, see <see cref="M:System.IServiceProvider.GetService(System.Type)" />.</summary>
         <returns>The requested service.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.Extensions" />
   <TypeSignature Language="VB.NET" Value="Public Module Extensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class Extensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type Extensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,6 +15,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Xml.Linq</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -40,6 +42,10 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/86ff2c9f-2ea1-43fc-bea3-6a9cc85f41ef">LINQ to XML Axes</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7c9b5ad2-dffc-47c4-a76f-a39815ecc7ec">Removing Elements, Attributes, and Nodes from an XML Tree</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51">Extension Methods (C# Programming Guide)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Ancestors&lt;T&gt;">
@@ -73,6 +79,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Ancestors``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Ancestors(Of T As XNode) (source As IEnumerable(Of T)) As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XNode[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Ancestors(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Ancestors : seq&lt;'T (requires 'T :&gt; System.Xml.Linq.XNode)&gt; -&gt; seq&lt;System.Xml.Linq.XElement&gt; (requires 'T :&gt; System.Xml.Linq.XNode)" Usage="System.Xml.Linq.Extensions.Ancestors source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -84,6 +91,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -315,6 +323,7 @@ Ancestors
         <altmember cref="Overload:System.Xml.Linq.Extensions.AncestorsAndSelf" />
         <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
         <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Ancestors&lt;T&gt;">
@@ -323,6 +332,7 @@ Ancestors
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Ancestors``1(System.Collections.Generic.IEnumerable{``0},System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Ancestors(Of T As XNode) (source As IEnumerable(Of T), name As XName) As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XNode[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Ancestors(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source, System::Xml::Linq::XName ^ name);" />
+      <MemberSignature Language="F#" Value="static member Ancestors : seq&lt;'T (requires 'T :&gt; System.Xml.Linq.XNode)&gt; * System.Xml.Linq.XName -&gt; seq&lt;System.Xml.Linq.XElement&gt; (requires 'T :&gt; System.Xml.Linq.XNode)" Usage="System.Xml.Linq.Extensions.Ancestors (source, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -334,6 +344,7 @@ Ancestors
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -561,6 +572,7 @@ Ancestors
         <altmember cref="Overload:System.Xml.Linq.Extensions.AncestorsAndSelf" />
         <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
         <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AncestorsAndSelf">
@@ -586,6 +598,7 @@ Ancestors
         <altmember cref="Overload:System.Xml.Linq.Extensions.Ancestors" />
         <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
         <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AncestorsAndSelf">
@@ -594,6 +607,7 @@ Ancestors
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.AncestorsAndSelf(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AncestorsAndSelf (source As IEnumerable(Of XElement)) As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ AncestorsAndSelf(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member AncestorsAndSelf : seq&lt;System.Xml.Linq.XElement&gt; -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="System.Xml.Linq.Extensions.AncestorsAndSelf source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -605,6 +619,7 @@ Ancestors
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -834,6 +849,7 @@ Ancestors and Self
         <altmember cref="Overload:System.Xml.Linq.Extensions.Ancestors" />
         <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
         <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="AncestorsAndSelf">
@@ -842,6 +858,7 @@ Ancestors and Self
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.AncestorsAndSelf(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement},System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AncestorsAndSelf (source As IEnumerable(Of XElement), name As XName) As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ AncestorsAndSelf(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source, System::Xml::Linq::XName ^ name);" />
+      <MemberSignature Language="F#" Value="static member AncestorsAndSelf : seq&lt;System.Xml.Linq.XElement&gt; * System.Xml.Linq.XName -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="System.Xml.Linq.Extensions.AncestorsAndSelf (source, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -853,6 +870,7 @@ Ancestors and Self
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1072,6 +1090,7 @@ Ancestors and Self
         <altmember cref="Overload:System.Xml.Linq.Extensions.Ancestors" />
         <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
         <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Attributes">
@@ -1094,6 +1113,7 @@ Ancestors and Self
         </remarks>
         <altmember cref="M:System.Xml.Linq.XElement.Attributes" />
         <altmember cref="Overload:System.Xml.Linq.Extensions.Elements" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Attributes">
@@ -1102,6 +1122,7 @@ Ancestors and Self
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Attributes(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Attributes (source As IEnumerable(Of XElement)) As IEnumerable(Of XAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XAttribute ^&gt; ^ Attributes(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Attributes : seq&lt;System.Xml.Linq.XElement&gt; -&gt; seq&lt;System.Xml.Linq.XAttribute&gt;" Usage="System.Xml.Linq.Extensions.Attributes source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1113,6 +1134,7 @@ Ancestors and Self
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1281,6 +1303,7 @@ aw:Att2="content6"
         </remarks>
         <altmember cref="M:System.Xml.Linq.XElement.Attributes" />
         <altmember cref="Overload:System.Xml.Linq.Extensions.Elements" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Attributes">
@@ -1289,6 +1312,7 @@ aw:Att2="content6"
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Attributes(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement},System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Attributes (source As IEnumerable(Of XElement), name As XName) As IEnumerable(Of XAttribute)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XAttribute ^&gt; ^ Attributes(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source, System::Xml::Linq::XName ^ name);" />
+      <MemberSignature Language="F#" Value="static member Attributes : seq&lt;System.Xml.Linq.XElement&gt; * System.Xml.Linq.XName -&gt; seq&lt;System.Xml.Linq.XAttribute&gt;" Usage="System.Xml.Linq.Extensions.Attributes (source, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1300,6 +1324,7 @@ aw:Att2="content6"
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1381,6 +1406,7 @@ Att1="content5"
         </remarks>
         <altmember cref="M:System.Xml.Linq.XElement.Attributes" />
         <altmember cref="Overload:System.Xml.Linq.Extensions.Elements" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="DescendantNodes&lt;T&gt;">
@@ -1389,6 +1415,7 @@ Att1="content5"
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.DescendantNodes``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DescendantNodes(Of T As XContainer) (source As IEnumerable(Of T)) As IEnumerable(Of XNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XContainer[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XNode ^&gt; ^ DescendantNodes(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member DescendantNodes : seq&lt;'T (requires 'T :&gt; System.Xml.Linq.XContainer)&gt; -&gt; seq&lt;System.Xml.Linq.XNode&gt; (requires 'T :&gt; System.Xml.Linq.XContainer)" Usage="System.Xml.Linq.Extensions.DescendantNodes source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1400,6 +1427,7 @@ Att1="content5"
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1607,6 +1635,7 @@ Text: ddd
         <altmember cref="Overload:System.Xml.Linq.Extensions.DescendantsAndSelf" />
         <altmember cref="M:System.Xml.Linq.Extensions.DescendantNodesAndSelf(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement})" />
         <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="DescendantNodesAndSelf">
@@ -1615,6 +1644,7 @@ Text: ddd
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.DescendantNodesAndSelf(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DescendantNodesAndSelf (source As IEnumerable(Of XElement)) As IEnumerable(Of XNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XNode ^&gt; ^ DescendantNodesAndSelf(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member DescendantNodesAndSelf : seq&lt;System.Xml.Linq.XElement&gt; -&gt; seq&lt;System.Xml.Linq.XNode&gt;" Usage="System.Xml.Linq.Extensions.DescendantNodesAndSelf source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1626,6 +1656,7 @@ Text: ddd
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1660,6 +1691,7 @@ Text: ddd
         <altmember cref="Overload:System.Xml.Linq.Extensions.DescendantsAndSelf" />
         <altmember cref="M:System.Xml.Linq.Extensions.DescendantNodes``1(System.Collections.Generic.IEnumerable{``0})" />
         <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Descendants&lt;T&gt;">
@@ -1695,6 +1727,7 @@ Text: ddd
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Descendants``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Descendants(Of T As XContainer) (source As IEnumerable(Of T)) As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XContainer[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Descendants(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Descendants : seq&lt;'T (requires 'T :&gt; System.Xml.Linq.XContainer)&gt; -&gt; seq&lt;System.Xml.Linq.XElement&gt; (requires 'T :&gt; System.Xml.Linq.XContainer)" Usage="System.Xml.Linq.Extensions.Descendants source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1706,6 +1739,7 @@ Text: ddd
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1880,6 +1914,7 @@ End Module
         <altmember cref="M:System.Xml.Linq.Extensions.DescendantNodes``1(System.Collections.Generic.IEnumerable{``0})" />
         <altmember cref="Overload:System.Xml.Linq.Extensions.DescendantsAndSelf" />
         <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Descendants&lt;T&gt;">
@@ -1888,6 +1923,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Descendants``1(System.Collections.Generic.IEnumerable{``0},System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Descendants(Of T As XContainer) (source As IEnumerable(Of T), name As XName) As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XContainer[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Descendants(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source, System::Xml::Linq::XName ^ name);" />
+      <MemberSignature Language="F#" Value="static member Descendants : seq&lt;'T (requires 'T :&gt; System.Xml.Linq.XContainer)&gt; * System.Xml.Linq.XName -&gt; seq&lt;System.Xml.Linq.XElement&gt; (requires 'T :&gt; System.Xml.Linq.XContainer)" Usage="System.Xml.Linq.Extensions.Descendants (source, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1899,6 +1935,7 @@ End Module
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2072,6 +2109,7 @@ This is some text where all of the text nodes must be concatenated. This is a se
         <altmember cref="M:System.Xml.Linq.Extensions.DescendantNodes``1(System.Collections.Generic.IEnumerable{``0})" />
         <altmember cref="Overload:System.Xml.Linq.Extensions.DescendantsAndSelf" />
         <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="DescendantsAndSelf">
@@ -2099,6 +2137,7 @@ This is some text where all of the text nodes must be concatenated. This is a se
         <altmember cref="M:System.Xml.Linq.Extensions.DescendantNodes``1(System.Collections.Generic.IEnumerable{``0})" />
         <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
         <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="DescendantsAndSelf">
@@ -2107,6 +2146,7 @@ This is some text where all of the text nodes must be concatenated. This is a se
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.DescendantsAndSelf(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DescendantsAndSelf (source As IEnumerable(Of XElement)) As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ DescendantsAndSelf(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member DescendantsAndSelf : seq&lt;System.Xml.Linq.XElement&gt; -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="System.Xml.Linq.Extensions.DescendantsAndSelf source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2118,6 +2158,7 @@ This is some text where all of the text nodes must be concatenated. This is a se
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2151,6 +2192,7 @@ This is some text where all of the text nodes must be concatenated. This is a se
         <altmember cref="M:System.Xml.Linq.Extensions.DescendantNodes``1(System.Collections.Generic.IEnumerable{``0})" />
         <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
         <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="DescendantsAndSelf">
@@ -2159,6 +2201,7 @@ This is some text where all of the text nodes must be concatenated. This is a se
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.DescendantsAndSelf(System.Collections.Generic.IEnumerable{System.Xml.Linq.XElement},System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function DescendantsAndSelf (source As IEnumerable(Of XElement), name As XName) As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ DescendantsAndSelf(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ source, System::Xml::Linq::XName ^ name);" />
+      <MemberSignature Language="F#" Value="static member DescendantsAndSelf : seq&lt;System.Xml.Linq.XElement&gt; * System.Xml.Linq.XName -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="System.Xml.Linq.Extensions.DescendantsAndSelf (source, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2170,6 +2213,7 @@ This is some text where all of the text nodes must be concatenated. This is a se
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2205,6 +2249,7 @@ This is some text where all of the text nodes must be concatenated. This is a se
         <altmember cref="M:System.Xml.Linq.Extensions.DescendantNodes``1(System.Collections.Generic.IEnumerable{``0})" />
         <altmember cref="Overload:System.Xml.Linq.Extensions.Descendants" />
         <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Elements&lt;T&gt;">
@@ -2235,6 +2280,7 @@ This is some text where all of the text nodes must be concatenated. This is a se
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Elements``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Elements(Of T As XContainer) (source As IEnumerable(Of T)) As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XContainer[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Elements(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Elements : seq&lt;'T (requires 'T :&gt; System.Xml.Linq.XContainer)&gt; -&gt; seq&lt;System.Xml.Linq.XElement&gt; (requires 'T :&gt; System.Xml.Linq.XContainer)" Usage="System.Xml.Linq.Extensions.Elements source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2246,6 +2292,7 @@ This is some text where all of the text nodes must be concatenated. This is a se
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2425,6 +2472,7 @@ End Module
         <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
         <altmember cref="M:System.Xml.Linq.XContainer.Descendants" />
         <altmember cref="Overload:System.Xml.Linq.Extensions.Attributes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Elements&lt;T&gt;">
@@ -2433,6 +2481,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Elements``1(System.Collections.Generic.IEnumerable{``0},System.Xml.Linq.XName)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Elements(Of T As XContainer) (source As IEnumerable(Of T), name As XName) As IEnumerable(Of XElement)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XContainer[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Elements(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source, System::Xml::Linq::XName ^ name);" />
+      <MemberSignature Language="F#" Value="static member Elements : seq&lt;'T (requires 'T :&gt; System.Xml.Linq.XContainer)&gt; * System.Xml.Linq.XName -&gt; seq&lt;System.Xml.Linq.XElement&gt; (requires 'T :&gt; System.Xml.Linq.XContainer)" Usage="System.Xml.Linq.Extensions.Elements (source, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2444,6 +2493,7 @@ End Module
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2617,6 +2667,7 @@ End Module
         <altmember cref="M:System.Xml.Linq.XContainer.DescendantNodes" />
         <altmember cref="M:System.Xml.Linq.XContainer.Descendants" />
         <altmember cref="Overload:System.Xml.Linq.Extensions.Attributes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="InDocumentOrder&lt;T&gt;">
@@ -2625,6 +2676,7 @@ End Module
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.InDocumentOrder``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function InDocumentOrder(Of T As XNode) (source As IEnumerable(Of T)) As IEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XNode[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;T&gt; ^ InDocumentOrder(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member InDocumentOrder : seq&lt;'T (requires 'T :&gt; System.Xml.Linq.XNode)&gt; -&gt; seq&lt;'T (requires 'T :&gt; System.Xml.Linq.XNode)&gt; (requires 'T :&gt; System.Xml.Linq.XNode)" Usage="System.Xml.Linq.Extensions.InDocumentOrder source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2636,6 +2688,7 @@ End Module
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2744,6 +2797,7 @@ Next
  ]]></format>
         </remarks>
         <altmember cref="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Nodes&lt;T&gt;">
@@ -2752,6 +2806,7 @@ Next
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Nodes``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Nodes(Of T As XContainer) (source As IEnumerable(Of T)) As IEnumerable(Of XNode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XContainer[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XNode ^&gt; ^ Nodes(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Nodes : seq&lt;'T (requires 'T :&gt; System.Xml.Linq.XContainer)&gt; -&gt; seq&lt;System.Xml.Linq.XNode&gt; (requires 'T :&gt; System.Xml.Linq.XContainer)" Usage="System.Xml.Linq.Extensions.Nodes source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2763,12 +2818,21 @@ Next
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.6">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.Extensions/&lt;Nodes&gt;d__1`1))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.Extensions/&lt;Nodes&gt;d__6`1))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XNode&gt;</ReturnType>
       </ReturnValue>
@@ -2855,6 +2919,7 @@ Text: ddd
         <altmember cref="M:System.Xml.Linq.XContainer.Nodes" />
         <altmember cref="Overload:System.Xml.Linq.Extensions.Elements" />
         <altmember cref="M:System.Xml.Linq.Extensions.InDocumentOrder``1(System.Collections.Generic.IEnumerable{``0})" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -2863,6 +2928,7 @@ Text: ddd
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Remove(System.Collections.Generic.IEnumerable{System.Xml.Linq.XAttribute})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Remove (source As IEnumerable(Of XAttribute))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Remove(System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XAttribute ^&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Remove : seq&lt;System.Xml.Linq.XAttribute&gt; -&gt; unit" Usage="System.Xml.Linq.Extensions.Remove source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2874,6 +2940,7 @@ Text: ddd
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2944,6 +3011,7 @@ Console.WriteLine(root)
         <altmember cref="Overload:System.Xml.Linq.Extensions.Attributes" />
         <altmember cref="M:System.Xml.Linq.XAttribute.Remove" />
         <altmember cref="M:System.Xml.Linq.XNode.Remove" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Remove&lt;T&gt;">
@@ -2952,6 +3020,7 @@ Console.WriteLine(root)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.Extensions.Remove``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Remove(Of T As XNode) (source As IEnumerable(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Xml::Linq::XNode[System::Runtime::CompilerServices::Extension]&#xA; static void Remove(System::Collections::Generic::IEnumerable&lt;T&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Remove : seq&lt;'T (requires 'T :&gt; System.Xml.Linq.XNode)&gt; -&gt; unit (requires 'T :&gt; System.Xml.Linq.XNode)" Usage="System.Xml.Linq.Extensions.Remove source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2963,6 +3032,7 @@ Console.WriteLine(root)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -3051,6 +3121,7 @@ Console.WriteLine(root)
         <altmember cref="Overload:System.Xml.Linq.Extensions.Attributes" />
         <altmember cref="M:System.Xml.Linq.XAttribute.Remove" />
         <altmember cref="M:System.Xml.Linq.XNode.Remove" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
   </Members>

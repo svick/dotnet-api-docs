@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Configuration.DateTimeSerializationSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DateTimeSerializationSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class DateTimeSerializationSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type DateTimeSerializationSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,6 +25,9 @@
  ]]></format>
     </remarks>
     <forInternalUseOnly />
+    <related type="Article" href="http://msdn.microsoft.com/library/90fda55c-7730-41e9-bc4b-6423a4b920af">&lt;dateTimeSerialization&gt; Element</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/3ce45919-388a-418c-8968-6df0372c73ec">&lt;system.xml.serialization&gt; Element</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38">Configuration File Schema for the .NET Framework</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,6 +39,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -49,13 +55,15 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.DateTimeSerializationSection.Mode" />
       <MemberSignature Language="VB.NET" Value="Public Property Mode As DateTimeSerializationSection.DateTimeSerializationMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::Configuration::DateTimeSerializationSection::DateTimeSerializationMode Mode { System::Xml::Serialization::Configuration::DateTimeSerializationSection::DateTimeSerializationMode get(); void set(System::Xml::Serialization::Configuration::DateTimeSerializationSection::DateTimeSerializationMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode with get, set" Usage="System.Xml.Serialization.Configuration.DateTimeSerializationSection.Mode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.Configuration.ConfigurationProperty("mode", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -82,11 +90,18 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.DateTimeSerializationSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Xml.Serialization.Configuration.DateTimeSerializationSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>

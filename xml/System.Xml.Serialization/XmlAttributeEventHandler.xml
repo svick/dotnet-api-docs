@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlAttributeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub XmlAttributeEventHandler(sender As Object, e As XmlAttributeEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void XmlAttributeEventHandler(System::Object ^ sender, XmlAttributeEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type XmlAttributeEventHandler = delegate of obj * XmlAttributeEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -62,5 +65,10 @@
     <altmember cref="M:System.Xml.Serialization.XmlSerializer.Deserialize(System.IO.Stream)" />
     <altmember cref="T:System.Xml.Serialization.XmlSerializer" />
     <altmember cref="T:System.Xml.Serialization.XmlAttributes" />
+    <related type="Article" href="~/docs/standard/serialization/introducing-xml-serialization.md">Introducing XML Serialization</related>
+    <related type="Article" href="~/docs/standard/serialization/how-to-specify-an-alternate-element-name-for-an-xml-stream.md">How to: Specify an Alternate Element Name for an XML Stream</related>
+    <related type="Article" href="~/docs/standard/serialization/controlling-xml-serialization-using-attributes.md">Controlling XML Serialization Using Attributes</related>
+    <related type="Article" href="~/docs/standard/serialization/examples-of-xml-serialization.md">Examples of XML Serialization</related>
+    <related type="Article" href="~/docs/standard/serialization/xml-schema-definition-tool-xsd-exe.md">XML Schema Definition Tool (Xsd.exe)</related>
   </Docs>
 </Type>

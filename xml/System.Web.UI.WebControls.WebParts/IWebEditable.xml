@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWebEditable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWebEditable" />
+  <TypeSignature Language="F#" Value="type IWebEditable = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -59,6 +61,7 @@
       <para>If you want to use server controls that are not <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls in a Web Parts application (that is, if you add these controls to a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" /> zone), and if you want to associate custom <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls with such server controls, you need to implement the <see cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" /> interface. Derived <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> controls should not implement the interface, because the base <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> class already does so.</para>
     </block>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.EditorPart" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <Member MemberName="CreateEditorParts">
@@ -67,9 +70,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.IWebEditable.CreateEditorParts" />
       <MemberSignature Language="VB.NET" Value="Public Function CreateEditorParts () As EditorPartCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::WebControls::WebParts::EditorPartCollection ^ CreateEditorParts();" />
+      <MemberSignature Language="F#" Value="abstract member CreateEditorParts : unit -&gt; System.Web.UI.WebControls.WebParts.EditorPartCollection" Usage="iWebEditable.CreateEditorParts " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -106,6 +111,7 @@
           <para>The <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> object that the <see cref="M:System.Web.UI.WebControls.WebParts.IWebEditable.CreateEditorParts" /> method returns is read-only and has no accessible method to add individual controls to it. However, in your override or implementation of the method, you can create another kind of <see cref="T:System.Collections.ICollection" /> object, such as an <see cref="T:System.Collections.ArrayList" />, to contain all the custom <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls, and pass it to the constructor when you create a new <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> object. For a code example, see the Example section.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.EditorPart" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="WebBrowsableObject">
@@ -114,9 +120,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.IWebEditable.WebBrowsableObject" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebBrowsableObject As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ WebBrowsableObject { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WebBrowsableObject : obj" Usage="System.Web.UI.WebControls.WebParts.IWebEditable.WebBrowsableObject" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,6 +157,7 @@
           <para>Normally, when you implement the <see cref="P:System.Web.UI.WebControls.WebParts.IWebEditable.WebBrowsableObject" /> property in a server control, you simply return a reference to the server control itself. In the case of the <see cref="T:System.Web.UI.WebControls.WebParts.GenericWebPart" /> class, because it wraps a child control to enable it to function as a <see cref="T:System.Web.UI.WebControls.WebParts.WebPart" /> control, its implementation of the <see cref="P:System.Web.UI.WebControls.WebParts.IWebEditable.WebBrowsableObject" /> property returns a reference to the child control.</para>
         </block>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.EditorPart" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

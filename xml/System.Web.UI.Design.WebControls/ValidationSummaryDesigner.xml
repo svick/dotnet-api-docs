@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ValidationSummaryDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class ValidationSummaryDesigner&#xA;Inherits PreviewControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class ValidationSummaryDesigner : System::Web::UI::Design::WebControls::PreviewControlDesigner" />
+  <TypeSignature Language="F#" Value="type ValidationSummaryDesigner = class&#xA;    inherit PreviewControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,7 +14,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.Design.SupportsPreviewControl(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -30,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,6 +45,11 @@
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.ValidationSummaryDesigner" /> class.</summary>
@@ -54,6 +61,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateViewControl">
@@ -62,6 +70,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ValidationSummaryDesigner.CreateViewControl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateViewControl () As Control" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::Control ^ CreateViewControl();" />
+      <MemberSignature Language="F#" Value="override this.CreateViewControl : unit -&gt; System.Web.UI.Control" Usage="validationSummaryDesigner.CreateViewControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -75,6 +84,7 @@
         <summary>Returns a copy of the associated control for viewing or rendering on the design surface.</summary>
         <returns>A Web server control.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -83,6 +93,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ValidationSummaryDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="validationSummaryDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -105,6 +116,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
   </Members>

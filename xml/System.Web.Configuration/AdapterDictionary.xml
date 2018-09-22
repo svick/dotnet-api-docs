@@ -4,14 +4,21 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.AdapterDictionary" />
   <TypeSignature Language="VB.NET" Value="Public Class AdapterDictionary&#xA;Inherits OrderedDictionary" />
   <TypeSignature Language="C++ CLI" Value="public ref class AdapterDictionary : System::Collections::Specialized::OrderedDictionary" />
+  <TypeSignature Language="F#" Value="type AdapterDictionary = class&#xA;    inherit OrderedDictionary" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Collections.Specialized.OrderedDictionary</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Used internally at run time by the configuration system to contain the names of the available adapters used to render server controls on different browsers.</summary>
     <remarks>To be added.</remarks>
@@ -27,8 +34,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Used internally at run time by the configuration system to create a new instance of this class.</summary>
@@ -42,9 +55,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AdapterDictionary.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ key); void set(System::String ^ key, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string with get, set" Usage="System.Web.Configuration.AdapterDictionary.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

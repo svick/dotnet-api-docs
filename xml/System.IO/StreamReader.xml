@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.StreamReader" />
   <TypeSignature Language="VB.NET" Value="Public Class StreamReader&#xA;Inherits TextReader" />
   <TypeSignature Language="C++ CLI" Value="public ref class StreamReader : System::IO::TextReader" />
+  <TypeSignature Language="F#" Value="type StreamReader = class&#xA;    inherit TextReader" />
   <AssemblyInfo>
     <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +13,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -29,8 +32,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -74,6 +80,10 @@
     <altmember cref="T:System.Text.Encoding" />
     <altmember cref="T:System.IO.Stream" />
     <altmember cref="T:System.IO.StreamWriter" />
+    <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+    <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
+    <related type="Article" href="~/docs/standard/io/how-to-read-and-write-to-a-newly-created-data-file.md">How to: Read and Write to a Newly Created Data File</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -92,6 +102,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamReader : System.IO.Stream -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader stream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -101,6 +112,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -147,6 +160,9 @@
           <paramref name="stream" /> does not support reading.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -155,9 +171,12 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamReader : string -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader path" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -170,6 +189,14 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="path" Type="System.String" />
       </Parameters>
@@ -211,6 +238,9 @@
         <exception cref="T:System.IO.IOException">
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
         <altmember cref="T:System.Text.Encoding" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -218,6 +248,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, bool detectEncodingFromByteOrderMarks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::IO::Stream ^ stream, bool detectEncodingFromByteOrderMarks);" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamReader : System.IO.Stream * bool -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (stream, detectEncodingFromByteOrderMarks)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -227,6 +258,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -253,7 +286,7 @@
 ## Remarks  
  This constructor initializes the encoding to <xref:System.Text.UTF8Encoding>, the <xref:System.IO.StreamReader.BaseStream%2A> property using the `stream` parameter, and the internal buffer size to 1024 bytes.  
   
- The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=nameWithType> is called.  
   
@@ -274,6 +307,9 @@
           <paramref name="stream" /> does not support reading.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> is <see langword="null" />.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -281,6 +317,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding);" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamReader : System.IO.Stream * System.Text.Encoding -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (stream, encoding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -290,6 +327,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -314,7 +353,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The character encoding is set by the `encoding` parameter, and the buffer size is set to 1024 bytes. The <xref:System.IO.StreamReader> object attempts to  detect the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ The character encoding is set by the `encoding` parameter, and the buffer size is set to 1024 bytes. The <xref:System.IO.StreamReader> object attempts to  detect the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=nameWithType> is called.  
   
@@ -339,6 +378,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> or <paramref name="encoding" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Text.Encoding" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -347,9 +389,12 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, detectEncodingFromByteOrderMarks As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::String ^ path, bool detectEncodingFromByteOrderMarks);" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamReader : string * bool -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (path, detectEncodingFromByteOrderMarks)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -362,6 +407,14 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="path" Type="System.String" />
         <Parameter Name="detectEncodingFromByteOrderMarks" Type="System.Boolean" />
@@ -380,7 +433,7 @@
   
  The `path` parameter is not required to be a file stored on disk; it can be any part of a system that supports access using streams.  
   
- The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the <xref:System.Text.UTF8Encoding> is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. Otherwise, the <xref:System.Text.UTF8Encoding> is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   
@@ -403,6 +456,9 @@
         <exception cref="T:System.IO.DirectoryNotFoundException">The specified path is invalid, such as being on an unmapped drive.</exception>
         <exception cref="T:System.IO.IOException">
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -410,9 +466,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.String,System.Text.Encoding)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::String ^ path, System::Text::Encoding ^ encoding);" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamReader : string * System.Text.Encoding -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (path, encoding)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -425,6 +484,14 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="path" Type="System.String" />
         <Parameter Name="encoding" Type="System.Text.Encoding" />
@@ -437,7 +504,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the encoding as specified by the `encoding` parameter, and the internal buffer size to 1024 bytes. The <xref:System.IO.StreamReader> object attempts to  detect the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ This constructor initializes the encoding as specified by the `encoding` parameter, and the internal buffer size to 1024 bytes. The <xref:System.IO.StreamReader> object attempts to  detect the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
   
@@ -468,6 +535,9 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
         <altmember cref="T:System.Text.Encoding" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -475,6 +545,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding encoding, bool detectEncodingFromByteOrderMarks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, bool detectEncodingFromByteOrderMarks);" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamReader : System.IO.Stream * System.Text.Encoding * bool -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (stream, encoding, detectEncodingFromByteOrderMarks)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -484,6 +555,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -512,7 +585,7 @@
 ## Remarks  
  This constructor initializes the encoding as specified by the `encoding` parameter, the <xref:System.IO.StreamReader.BaseStream%2A> property using the `stream` parameter, and the internal buffer size to 1024 bytes.  
   
- The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=nameWithType> is called.  
   
@@ -537,6 +610,9 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="stream" /> or <paramref name="encoding" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Text.Encoding" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -544,9 +620,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, class System.Text.Encoding encoding, bool detectEncodingFromByteOrderMarks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.String,System.Text.Encoding,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::String ^ path, System::Text::Encoding ^ encoding, bool detectEncodingFromByteOrderMarks);" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamReader : string * System.Text.Encoding * bool -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (path, encoding, detectEncodingFromByteOrderMarks)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -559,6 +638,14 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="path" Type="System.String" />
         <Parameter Name="encoding" Type="System.Text.Encoding" />
@@ -575,7 +662,7 @@
 ## Remarks  
  This constructor initializes the encoding as specified by the `encoding` parameter, and the internal buffer size to 1024 bytes.  
   
- The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The `path` parameter can be a file name, including a file on a Universal Naming Convention (UNC) share.  
   
@@ -606,6 +693,9 @@
         <exception cref="T:System.NotSupportedException">
           <paramref name="path" /> includes an incorrect or invalid syntax for file name, directory name, or volume label.</exception>
         <altmember cref="T:System.Text.Encoding" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -613,6 +703,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding encoding, bool detectEncodingFromByteOrderMarks, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, bool detectEncodingFromByteOrderMarks, int bufferSize);" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamReader : System.IO.Stream * System.Text.Encoding * bool * int -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (stream, encoding, detectEncodingFromByteOrderMarks, bufferSize)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -622,6 +713,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -652,7 +745,7 @@
 ## Remarks  
  The buffer size, in number of 16-bit characters, is set by the `bufferSize` parameter. If `bufferSize` is less than the minimum allowable size (128 characters), the minimum allowable size is used.  
   
- This constructor allows you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ This constructor allows you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The <xref:System.IO.StreamReader> object calls <xref:System.IO.Stream.Dispose> on the provided <xref:System.IO.Stream> object when <xref:System.IO.StreamReader.Dispose%2A?displayProperty=nameWithType> is called.  
   
@@ -681,6 +774,9 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="bufferSize" /> is less than or equal to zero.</exception>
         <altmember cref="T:System.Text.Encoding" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -688,9 +784,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, class System.Text.Encoding encoding, bool detectEncodingFromByteOrderMarks, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.String,System.Text.Encoding,System.Boolean,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::String ^ path, System::Text::Encoding ^ encoding, bool detectEncodingFromByteOrderMarks, int bufferSize);" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamReader : string * System.Text.Encoding * bool * int -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (path, encoding, detectEncodingFromByteOrderMarks, bufferSize)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -703,8 +802,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -726,7 +828,7 @@
 ## Remarks  
  This constructor initializes the encoding as specified by the `encoding` parameter.  
   
- This constructor allows you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ This constructor allows you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. The `detectEncodingFromByteOrderMarks` parameter detects the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
  The buffer size, in number of 16-bit characters, is set by the `bufferSize` parameter. If `bufferSize` is less than the minimum allowable size (128 characters), the minimum allowable size is used.  
   
@@ -761,6 +863,9 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="buffersize" /> is less than or equal to zero.</exception>
         <altmember cref="T:System.Text.Encoding" />
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -768,6 +873,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Text.Encoding encoding, bool detectEncodingFromByteOrderMarks, int32 bufferSize, bool leaveOpen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.#ctor(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Int32,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamReader(System::IO::Stream ^ stream, System::Text::Encoding ^ encoding, bool detectEncodingFromByteOrderMarks, int bufferSize, bool leaveOpen);" />
+      <MemberSignature Language="F#" Value="new System.IO.StreamReader : System.IO.Stream * System.Text.Encoding * bool * int * bool -&gt; System.IO.StreamReader" Usage="new System.IO.StreamReader (stream, encoding, detectEncodingFromByteOrderMarks, bufferSize, leaveOpen)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -813,7 +919,7 @@
   
  The buffer size, in number of 16-bit characters, is set by the `bufferSize` parameter. If `bufferSize` is less than the minimum allowable size (128 characters), the minimum allowable size is used.  
   
- This constructor enables you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. If the `detectEncodingFromByteOrderMarks` parameter is `true`, the constructor detects the encoding by looking at the first three bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, and big-endian Unicode text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
+ This constructor enables you to change the encoding the first time you read from the <xref:System.IO.StreamReader> object. If the `detectEncodingFromByteOrderMarks` parameter is `true`, the constructor detects the encoding by looking at the first four bytes of the stream. It automatically recognizes UTF-8, little-endian Unicode, big-endian Unicode, little-endian UTF-32, and big-endian UTF-32 text if the file starts with the appropriate byte order marks. Otherwise, the user-provided encoding is used. See the <xref:System.Text.Encoding.GetPreamble%2A?displayProperty=nameWithType> method for more information.  
   
 > [!NOTE]
 >  When reading from a <xref:System.IO.Stream>, it is more efficient to use a buffer that is the same size as the internal buffer of the stream.  
@@ -831,6 +937,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.StreamReader.BaseStream" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BaseStream As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Stream ^ BaseStream { System::IO::Stream ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseStream : System.IO.Stream" Usage="System.IO.StreamReader.BaseStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -840,6 +947,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -868,6 +977,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -876,9 +988,12 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="streamReader.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -890,6 +1005,9 @@
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -911,6 +1029,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentEncoding">
@@ -919,6 +1040,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.StreamReader.CurrentEncoding" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CurrentEncoding As Encoding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Text::Encoding ^ CurrentEncoding { System::Text::Encoding ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentEncoding : System.Text.Encoding" Usage="System.IO.StreamReader.CurrentEncoding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -928,6 +1050,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -963,6 +1087,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="DiscardBufferedData">
@@ -971,6 +1098,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.DiscardBufferedData" />
       <MemberSignature Language="VB.NET" Value="Public Sub DiscardBufferedData ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void DiscardBufferedData();" />
+      <MemberSignature Language="F#" Value="member this.DiscardBufferedData : unit -&gt; unit" Usage="streamReader.DiscardBufferedData " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -980,6 +1108,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1016,6 +1146,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -1024,6 +1157,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="streamReader.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1033,6 +1167,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1072,6 +1208,9 @@
   
  For more information about <see cref="M:System.IDisposable.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).</para>
         </block>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="EndOfStream">
@@ -1080,6 +1219,7 @@
       <MemberSignature Language="DocId" Value="P:System.IO.StreamReader.EndOfStream" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndOfStream As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EndOfStream { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.EndOfStream : bool" Usage="System.IO.StreamReader.EndOfStream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1089,6 +1229,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1101,6 +1242,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1118,6 +1264,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.StreamReader.Null" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As StreamReader " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::IO::StreamReader ^ Null;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Null : System.IO.StreamReader" Usage="System.IO.StreamReader.Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1127,6 +1274,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1154,6 +1303,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Peek">
@@ -1162,6 +1314,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.Peek" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Peek () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Peek();" />
+      <MemberSignature Language="F#" Value="override this.Peek : unit -&gt; int" Usage="streamReader.Peek " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1171,6 +1324,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1183,6 +1338,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1212,6 +1372,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Read">
@@ -1231,6 +1394,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.Read" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read();" />
+      <MemberSignature Language="F#" Value="override this.Read : unit -&gt; int" Usage="streamReader.Read " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1240,6 +1404,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1252,6 +1418,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1287,6 +1458,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -1295,10 +1469,20 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.Read(System.Span{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (buffer As Span(Of Char)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(Span&lt;char&gt; buffer);" />
+      <MemberSignature Language="F#" Value="override this.Read : Span&lt;char&gt; -&gt; int" Usage="streamReader.Read buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1319,6 +1503,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.Read(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (buffer As Char(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.Read : char[] * int * int -&gt; int" Usage="streamReader.Read (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1328,6 +1513,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1340,6 +1527,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1385,16 +1577,29 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> or <paramref name="count" /> is negative.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs, such as the stream is closed.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask&lt;int&gt; ReadAsync (Memory&lt;char&gt; buffer, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;int32&gt; ReadAsync(valuetype System.Memory`1&lt;char&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadAsync(System.Memory{System.Char},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.ReadAsync : Memory&lt;char&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;int&gt;" Usage="streamReader.ReadAsync (buffer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Int32&gt;</ReturnType>
@@ -1417,6 +1622,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadAsync(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadAsync (buffer As Char(), index As Integer, count As Integer) As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.ReadAsync : char[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="streamReader.ReadAsync (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1439,7 +1645,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1488,10 +1694,20 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadBlock(System.Span{System.Char})" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadBlock (buffer As Span(Of Char)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadBlock(Span&lt;char&gt; buffer);" />
+      <MemberSignature Language="F#" Value="override this.ReadBlock : Span&lt;char&gt; -&gt; int" Usage="streamReader.ReadBlock buffer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1512,6 +1728,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadBlock(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadBlock (buffer As Char(), index As Integer, count As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadBlock(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.ReadBlock : char[] * int * int -&gt; int" Usage="streamReader.ReadBlock (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1570,10 +1787,20 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.ValueTask&lt;int&gt; ReadBlockAsync (Memory&lt;char&gt; buffer, System.Threading.CancellationToken cancellationToken = null);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Threading.Tasks.ValueTask`1&lt;int32&gt; ReadBlockAsync(valuetype System.Memory`1&lt;char&gt; buffer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadBlockAsync(System.Memory{System.Char},System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.ReadBlockAsync : Memory&lt;char&gt; * System.Threading.CancellationToken -&gt; System.Threading.Tasks.ValueTask&lt;int&gt;" Usage="streamReader.ReadBlockAsync (buffer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask&lt;System.Int32&gt;</ReturnType>
@@ -1596,6 +1823,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadBlockAsync (buffer As Char(), index As Integer, count As Integer) As Task(Of Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadBlockAsync(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
+      <MemberSignature Language="F#" Value="override this.ReadBlockAsync : char[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="streamReader.ReadBlockAsync (buffer, index, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1618,7 +1846,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1659,6 +1887,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadLine" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadLine () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ReadLine();" />
+      <MemberSignature Language="F#" Value="override this.ReadLine : unit -&gt; string" Usage="streamReader.ReadLine " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1668,6 +1897,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1680,6 +1911,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1712,6 +1948,9 @@
         </remarks>
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory to allocate a buffer for the returned string.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="ReadLineAsync">
@@ -1720,6 +1959,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadLineAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadLineAsync () As Task(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;System::String ^&gt; ^ ReadLineAsync();" />
+      <MemberSignature Language="F#" Value="override this.ReadLineAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="streamReader.ReadLineAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1742,7 +1982,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1775,6 +2015,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadToEnd" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadToEnd () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ReadToEnd();" />
+      <MemberSignature Language="F#" Value="override this.ReadToEnd : unit -&gt; string" Usage="streamReader.ReadToEnd " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1784,6 +2025,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1796,6 +2039,11 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1832,6 +2080,9 @@
         </remarks>
         <exception cref="T:System.OutOfMemoryException">There is insufficient memory to allocate a buffer for the returned string.</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
+        <related type="Article" href="~/docs/standard/io/index.md">File and Stream I/O</related>
+        <related type="Article" href="~/docs/standard/io/how-to-read-text-from-a-file.md">How to: Read Text from a File</related>
+        <related type="Article" href="~/docs/standard/io/how-to-write-text-to-a-file.md">How to: Write Text to a File</related>
       </Docs>
     </Member>
     <Member MemberName="ReadToEndAsync">
@@ -1840,6 +2091,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.StreamReader.ReadToEndAsync" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadToEndAsync () As Task(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;System::String ^&gt; ^ ReadToEndAsync();" />
+      <MemberSignature Language="F#" Value="override this.ReadToEndAsync : unit -&gt; System.Threading.Tasks.Task&lt;string&gt;" Usage="streamReader.ReadToEndAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1862,7 +2114,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
         </Attribute>
       </Attributes>

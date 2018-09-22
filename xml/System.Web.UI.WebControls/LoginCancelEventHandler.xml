@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LoginCancelEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub LoginCancelEventHandler(sender As Object, e As LoginCancelEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void LoginCancelEventHandler(System::Object ^ sender, LoginCancelEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type LoginCancelEventHandler = delegate of obj * LoginCancelEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -33,5 +35,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.LoginCancelEventArgs" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f4ee4ece-c984-4bf7-bfde-f2365c06026d">Login Controls</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d85075bc-9c1a-4453-8a0c-539b10853c9c">Securing Login Controls</related>
   </Docs>
 </Type>

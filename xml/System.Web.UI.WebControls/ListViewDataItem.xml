@@ -4,14 +4,16 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewDataItem" />
   <TypeSignature Language="VB.NET" Value="Public Class ListViewDataItem&#xA;Inherits ListViewItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListViewDataItem : System::Web::UI::WebControls::ListViewItem" />
+  <TypeSignature Language="F#" Value="type ListViewDataItem = class&#xA;    inherit ListViewItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Web.UI.WebControls.ListViewItem</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Represents an individual data item in a <see cref="T:System.Web.UI.WebControls.ListView" /> control.</summary>
     <remarks>
@@ -45,6 +47,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.ListView" />
     <altmember cref="T:System.Web.UI.WebControls.ListViewItem" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,9 +56,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewDataItem.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (dataItemIndex As Integer, displayIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewDataItem(int dataItemIndex, int displayIndex);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ListViewDataItem : int * int -&gt; System.Web.UI.WebControls.ListViewDataItem" Usage="new System.Web.UI.WebControls.ListViewDataItem (dataItemIndex, displayIndex)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -79,6 +84,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -87,11 +93,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDataItem.DataItem" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property DataItem As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ DataItem { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataItem : obj with get, set" Usage="System.Web.UI.WebControls.ListViewDataItem.DataItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -115,6 +131,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ListViewDataItem.DataItemIndex" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataItemIndex">
@@ -123,11 +140,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDataItem.DataItemIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DataItemIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DataItemIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataItemIndex : int" Usage="System.Web.UI.WebControls.ListViewDataItem.DataItemIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -144,6 +168,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ListViewDataItem.DataItem" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayIndex">
@@ -152,11 +177,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDataItem.DisplayIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DisplayIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DisplayIndex { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayIndex : int" Usage="System.Web.UI.WebControls.ListViewDataItem.DisplayIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -184,6 +216,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewDataItem.DataItemIndex" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">ListView Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -192,9 +225,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewDataItem.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="listViewDataItem.OnBubbleEvent (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

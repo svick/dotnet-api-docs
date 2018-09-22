@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.ProviderMetadata" />
   <TypeSignature Language="VB.NET" Value="Public Class ProviderMetadata&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProviderMetadata : IDisposable" />
+  <TypeSignature Language="F#" Value="type ProviderMetadata = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -26,6 +28,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -35,6 +39,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.Reader.ProviderMetadata" /> class.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -43,11 +49,18 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.ProviderMetadata.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (providerName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProviderMetadata(System::String ^ providerName);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.ProviderMetadata : string -&gt; System.Diagnostics.Eventing.Reader.ProviderMetadata" Usage="new System.Diagnostics.Eventing.Reader.ProviderMetadata providerName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="providerName" Type="System.String" />
       </Parameters>
@@ -55,6 +68,8 @@
         <param name="providerName">The name of the event provider that you want to retrieve information about.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.Reader.ProviderMetadata" /> class by specifying the name of the provider that you want to retrieve information about.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -63,11 +78,18 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.ProviderMetadata.#ctor(System.String,System.Diagnostics.Eventing.Reader.EventLogSession,System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (providerName As String, session As EventLogSession, targetCultureInfo As CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProviderMetadata(System::String ^ providerName, System::Diagnostics::Eventing::Reader::EventLogSession ^ session, System::Globalization::CultureInfo ^ targetCultureInfo);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.ProviderMetadata : string * System.Diagnostics.Eventing.Reader.EventLogSession * System.Globalization.CultureInfo -&gt; System.Diagnostics.Eventing.Reader.ProviderMetadata" Usage="new System.Diagnostics.Eventing.Reader.ProviderMetadata (providerName, session, targetCultureInfo)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="providerName" Type="System.String" />
         <Parameter Name="session" Type="System.Diagnostics.Eventing.Reader.EventLogSession" />
@@ -79,6 +101,8 @@
         <param name="targetCultureInfo">The culture that specifies the language that the information should be returned in.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.Reader.ProviderMetadata" /> class by specifying the name of the provider that you want to retrieve information about, the event log service that the provider is registered with, and the language that you want to return the information in.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayName">
@@ -87,13 +111,15 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.DisplayName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.DisplayName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -104,6 +130,8 @@
         <summary>Gets the localized name of the event provider.</summary>
         <value>Returns a string that contains the localized name of the event provider.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -113,6 +141,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Releases the resources used by this object.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Dispose">
@@ -121,12 +151,14 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.ProviderMetadata.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="providerMetadata.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,6 +168,8 @@
       <Docs>
         <summary>Releases all the resources used by this object.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -144,14 +178,22 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.ProviderMetadata.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="providerMetadata.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -165,6 +207,8 @@
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by this object, and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Events">
@@ -173,13 +217,15 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.Events" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Events As IEnumerable(Of EventMetadata)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Diagnostics::Eventing::Reader::EventMetadata ^&gt; ^ Events { System::Collections::Generic::IEnumerable&lt;System::Diagnostics::Eventing::Reader::EventMetadata ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Events : seq&lt;System.Diagnostics.Eventing.Reader.EventMetadata&gt;" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.Events" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -190,6 +236,8 @@
         <summary>Gets an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventMetadata" /> objects, each of which represents an event that is defined in the provider.</summary>
         <value>Returns an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventMetadata" /> objects.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="HelpLink">
@@ -198,9 +246,11 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.HelpLink" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HelpLink As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ HelpLink { Uri ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HelpLink : Uri" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.HelpLink" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -210,6 +260,8 @@
         <summary>Gets the base of the URL used to form help requests for the events in this event provider.</summary>
         <value>Returns a <see cref="T:System.Uri" /> value.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Id">
@@ -218,9 +270,11 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.Id" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Id { Guid get(); };" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.Id" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -230,6 +284,8 @@
         <summary>Gets the globally unique identifier (GUID) for the event provider.</summary>
         <value>Returns the GUID value for the event provider.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Keywords">
@@ -238,9 +294,11 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.Keywords" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keywords As IList(Of EventKeyword)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventKeyword ^&gt; ^ Keywords { System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventKeyword ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keywords : System.Collections.Generic.IList&lt;System.Diagnostics.Eventing.Reader.EventKeyword&gt;" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.Keywords" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -250,6 +308,8 @@
         <summary>Gets an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventKeyword" /> objects, each of which represent an event keyword that is defined in the event provider.</summary>
         <value>Returns an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventKeyword" /> objects.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Levels">
@@ -258,9 +318,11 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.Levels" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Levels As IList(Of EventLevel)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventLevel ^&gt; ^ Levels { System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventLevel ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Levels : System.Collections.Generic.IList&lt;System.Diagnostics.Eventing.Reader.EventLevel&gt;" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.Levels" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -270,6 +332,8 @@
         <summary>Gets an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventLevel" /> objects, each of which represent a level that is defined in the event provider.</summary>
         <value>Returns an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventLevel" /> objects.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="LogLinks">
@@ -278,13 +342,15 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.LogLinks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogLinks As IList(Of EventLogLink)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventLogLink ^&gt; ^ LogLinks { System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventLogLink ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LogLinks : System.Collections.Generic.IList&lt;System.Diagnostics.Eventing.Reader.EventLogLink&gt;" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.LogLinks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -295,6 +361,8 @@
         <summary>Gets an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventLogLink" /> objects, each of which represent a link to an event log that is used by the event provider.</summary>
         <value>Returns an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventLogLink" /> objects.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="MessageFilePath">
@@ -303,9 +371,11 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.MessageFilePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageFilePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MessageFilePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.MessageFilePath : string" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.MessageFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -315,6 +385,8 @@
         <summary>Gets the path of the file that contains the message table resource that has the strings associated with the provider metadata.</summary>
         <value>Returns a string that contains the path of the provider message file.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -323,11 +395,18 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.Name" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -335,6 +414,8 @@
         <summary>Gets the unique name of the event provider.</summary>
         <value>Returns a string that contains the unique name of the event provider.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Opcodes">
@@ -343,9 +424,11 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.Opcodes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Opcodes As IList(Of EventOpcode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventOpcode ^&gt; ^ Opcodes { System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventOpcode ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Opcodes : System.Collections.Generic.IList&lt;System.Diagnostics.Eventing.Reader.EventOpcode&gt;" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.Opcodes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -355,6 +438,8 @@
         <summary>Gets an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventOpcode" /> objects, each of which represent an opcode that is defined in the event provider.</summary>
         <value>Returns an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventOpcode" /> objects.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="ParameterFilePath">
@@ -363,9 +448,11 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.ParameterFilePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterFilePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParameterFilePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterFilePath : string" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.ParameterFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -375,6 +462,8 @@
         <summary>Gets the path of the file that contains the message table resource that has the strings used for parameter substitutions in event descriptions.</summary>
         <value>Returns a string that contains the path of the file that contains the message table resource that has the strings used for parameter substitutions in event descriptions.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="ResourceFilePath">
@@ -383,9 +472,11 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.ResourceFilePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceFilePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResourceFilePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ResourceFilePath : string" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.ResourceFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -395,6 +486,8 @@
         <summary>Gets the path to the file that contains the metadata associated with the provider.</summary>
         <value>Returns a string that contains the path to the file that contains the metadata associated with the provider.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Tasks">
@@ -403,9 +496,11 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.ProviderMetadata.Tasks" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tasks As IList(Of EventTask)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventTask ^&gt; ^ Tasks { System::Collections::Generic::IList&lt;System::Diagnostics::Eventing::Reader::EventTask ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Tasks : System.Collections.Generic.IList&lt;System.Diagnostics.Eventing.Reader.EventTask&gt;" Usage="System.Diagnostics.Eventing.Reader.ProviderMetadata.Tasks" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -415,6 +510,8 @@
         <summary>Gets an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventTask" /> objects, each of which represent a task that is defined in the event provider.</summary>
         <value>Returns an enumerable collection of <see cref="T:System.Diagnostics.Eventing.Reader.EventTask" /> objects.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
   </Members>

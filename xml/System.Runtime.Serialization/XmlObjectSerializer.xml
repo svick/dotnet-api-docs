@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.XmlObjectSerializer" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlObjectSerializer" />
   <TypeSignature Language="C++ CLI" Value="public ref class XmlObjectSerializer abstract" />
+  <TypeSignature Language="F#" Value="type XmlObjectSerializer = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -13,6 +14,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -48,6 +50,8 @@
     </block>
     <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
     <altmember cref="T:System.Runtime.Serialization.NetDataContractSerializer" />
+    <related type="Article" href="~/docs/framework/wcf/feature-details/using-data-contracts.md">Using Data Contracts</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/3d64837e-0a0c-4cc8-90ff-a5c6f313c63a">Data Contract Serializer</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,6 +70,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -110,6 +115,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.IsStartObject(System.Xml.XmlDictionaryReader)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsStartObject (reader As XmlDictionaryReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsStartObject(System::Xml::XmlDictionaryReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member IsStartObject : System.Xml.XmlDictionaryReader -&gt; bool" Usage="xmlObjectSerializer.IsStartObject reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -120,6 +126,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -155,6 +162,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.IsStartObject(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsStartObject (reader As XmlReader) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsStartObject(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member IsStartObject : System.Xml.XmlReader -&gt; bool&#xA;override this.IsStartObject : System.Xml.XmlReader -&gt; bool" Usage="xmlObjectSerializer.IsStartObject reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -165,6 +173,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -209,6 +218,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ReadObject(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ReadObject(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="abstract member ReadObject : System.IO.Stream -&gt; obj&#xA;override this.ReadObject : System.IO.Stream -&gt; obj" Usage="xmlObjectSerializer.ReadObject stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -219,6 +229,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -251,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.Xml.XmlDictionaryReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadObject (reader As XmlDictionaryReader) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ReadObject(System::Xml::XmlDictionaryReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadObject : System.Xml.XmlDictionaryReader -&gt; obj&#xA;override this.ReadObject : System.Xml.XmlDictionaryReader -&gt; obj" Usage="xmlObjectSerializer.ReadObject reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -261,6 +273,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -293,6 +306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadObject (reader As XmlReader) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ReadObject(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="abstract member ReadObject : System.Xml.XmlReader -&gt; obj&#xA;override this.ReadObject : System.Xml.XmlReader -&gt; obj" Usage="xmlObjectSerializer.ReadObject reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -303,6 +317,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -328,6 +343,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.Xml.XmlDictionaryReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function ReadObject (reader As XmlDictionaryReader, verifyObjectName As Boolean) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ ReadObject(System::Xml::XmlDictionaryReader ^ reader, bool verifyObjectName);" />
+      <MemberSignature Language="F#" Value="abstract member ReadObject : System.Xml.XmlDictionaryReader * bool -&gt; obj" Usage="xmlObjectSerializer.ReadObject (reader, verifyObjectName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -338,6 +354,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -373,6 +390,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.ReadObject(System.Xml.XmlReader,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadObject (reader As XmlReader, verifyObjectName As Boolean) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ReadObject(System::Xml::XmlReader ^ reader, bool verifyObjectName);" />
+      <MemberSignature Language="F#" Value="abstract member ReadObject : System.Xml.XmlReader * bool -&gt; obj&#xA;override this.ReadObject : System.Xml.XmlReader * bool -&gt; obj" Usage="xmlObjectSerializer.ReadObject (reader, verifyObjectName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -383,6 +401,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -435,6 +454,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject(System.Xml.XmlDictionaryWriter)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteEndObject (writer As XmlDictionaryWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteEndObject(System::Xml::XmlDictionaryWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member WriteEndObject : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="xmlObjectSerializer.WriteEndObject writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -445,6 +465,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -472,6 +493,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteEndObject (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteEndObject(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member WriteEndObject : System.Xml.XmlWriter -&gt; unit&#xA;override this.WriteEndObject : System.Xml.XmlWriter -&gt; unit" Usage="xmlObjectSerializer.WriteEndObject writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -482,6 +504,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -521,6 +544,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteObject(class System.IO.Stream stream, object graph) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteObject(System.IO.Stream,System.Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteObject(System::IO::Stream ^ stream, System::Object ^ graph);" />
+      <MemberSignature Language="F#" Value="abstract member WriteObject : System.IO.Stream * obj -&gt; unit&#xA;override this.WriteObject : System.IO.Stream * obj -&gt; unit" Usage="xmlObjectSerializer.WriteObject (stream, graph)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -531,6 +555,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -560,6 +585,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteObject(System.Xml.XmlDictionaryWriter,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteObject (writer As XmlDictionaryWriter, graph As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteObject(System::Xml::XmlDictionaryWriter ^ writer, System::Object ^ graph);" />
+      <MemberSignature Language="F#" Value="abstract member WriteObject : System.Xml.XmlDictionaryWriter * obj -&gt; unit&#xA;override this.WriteObject : System.Xml.XmlDictionaryWriter * obj -&gt; unit" Usage="xmlObjectSerializer.WriteObject (writer, graph)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -570,6 +596,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -606,6 +633,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteObject(System.Xml.XmlWriter,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteObject (writer As XmlWriter, graph As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteObject(System::Xml::XmlWriter ^ writer, System::Object ^ graph);" />
+      <MemberSignature Language="F#" Value="abstract member WriteObject : System.Xml.XmlWriter * obj -&gt; unit&#xA;override this.WriteObject : System.Xml.XmlWriter * obj -&gt; unit" Usage="xmlObjectSerializer.WriteObject (writer, graph)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -616,6 +644,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -669,6 +698,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent(System.Xml.XmlDictionaryWriter,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteObjectContent (writer As XmlDictionaryWriter, graph As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteObjectContent(System::Xml::XmlDictionaryWriter ^ writer, System::Object ^ graph);" />
+      <MemberSignature Language="F#" Value="abstract member WriteObjectContent : System.Xml.XmlDictionaryWriter * obj -&gt; unit" Usage="xmlObjectSerializer.WriteObjectContent (writer, graph)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -679,6 +709,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -708,6 +739,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent(System.Xml.XmlWriter,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteObjectContent (writer As XmlWriter, graph As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteObjectContent(System::Xml::XmlWriter ^ writer, System::Object ^ graph);" />
+      <MemberSignature Language="F#" Value="abstract member WriteObjectContent : System.Xml.XmlWriter * obj -&gt; unit&#xA;override this.WriteObjectContent : System.Xml.XmlWriter * obj -&gt; unit" Usage="xmlObjectSerializer.WriteObjectContent (writer, graph)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -718,6 +750,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -764,6 +797,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject(System.Xml.XmlDictionaryWriter,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteStartObject (writer As XmlDictionaryWriter, graph As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteStartObject(System::Xml::XmlDictionaryWriter ^ writer, System::Object ^ graph);" />
+      <MemberSignature Language="F#" Value="abstract member WriteStartObject : System.Xml.XmlDictionaryWriter * obj -&gt; unit" Usage="xmlObjectSerializer.WriteStartObject (writer, graph)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -774,6 +808,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -803,6 +838,7 @@
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject(System.Xml.XmlWriter,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteStartObject (writer As XmlWriter, graph As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteStartObject(System::Xml::XmlWriter ^ writer, System::Object ^ graph);" />
+      <MemberSignature Language="F#" Value="abstract member WriteStartObject : System.Xml.XmlWriter * obj -&gt; unit&#xA;override this.WriteStartObject : System.Xml.XmlWriter * obj -&gt; unit" Usage="xmlObjectSerializer.WriteStartObject (writer, graph)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -813,6 +849,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>

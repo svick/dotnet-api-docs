@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
   <TypeSignature Language="VB.NET" Value="Public Class WmlMobileTextWriter&#xA;Inherits MobileTextWriter" />
   <TypeSignature Language="C++ CLI" Value="public ref class WmlMobileTextWriter : System::Web::UI::MobileControls::Adapters::MobileTextWriter" />
+  <TypeSignature Language="F#" Value="type WmlMobileTextWriter = class&#xA;    inherit MobileTextWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
     </Attribute>
   </Attributes>
@@ -21,6 +24,9 @@
     <summary>Provides a mobile text writer adapter class for the WML device adapter set. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -29,9 +35,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.#ctor(System.IO.TextWriter,System.Web.Mobile.MobileCapabilities,System.Web.UI.MobileControls.MobilePage)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter, device As MobileCapabilities, page As MobilePage)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WmlMobileTextWriter(System::IO::TextWriter ^ writer, System::Web::Mobile::MobileCapabilities ^ device, System::Web::UI::MobileControls::MobilePage ^ page);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter : System.IO.TextWriter * System.Web.Mobile.MobileCapabilities * System.Web.UI.MobileControls.MobilePage -&gt; System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" Usage="new System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter (writer, device, page)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -52,6 +61,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="AddFormVariable">
@@ -60,9 +72,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.AddFormVariable(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddFormVariable (clientID As String, value As String, generateRandomID As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFormVariable(System::String ^ clientID, System::String ^ value, bool generateRandomID);" />
+      <MemberSignature Language="F#" Value="member this.AddFormVariable : string * string * bool -&gt; unit" Usage="wmlMobileTextWriter.AddFormVariable (clientID, value, generateRandomID)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -87,6 +102,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="AnalyzeMode">
@@ -95,9 +112,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.AnalyzeMode" />
       <MemberSignature Language="VB.NET" Value="Public Property AnalyzeMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AnalyzeMode { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AnalyzeMode : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.AnalyzeMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,6 +135,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="AnalyzePostBack">
@@ -123,9 +145,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.AnalyzePostBack(System.Boolean,System.Web.UI.MobileControls.Adapters.WmlPostFieldType)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AnalyzePostBack (includeVariables As Boolean, postBackType As WmlPostFieldType)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AnalyzePostBack(bool includeVariables, System::Web::UI::MobileControls::Adapters::WmlPostFieldType postBackType);" />
+      <MemberSignature Language="F#" Value="abstract member AnalyzePostBack : bool * System.Web.UI.MobileControls.Adapters.WmlPostFieldType -&gt; unit&#xA;override this.AnalyzePostBack : bool * System.Web.UI.MobileControls.Adapters.WmlPostFieldType -&gt; unit" Usage="wmlMobileTextWriter.AnalyzePostBack (includeVariables, postBackType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,6 +173,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="BeginCustomMarkup">
@@ -156,9 +183,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.BeginCustomMarkup" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginCustomMarkup ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginCustomMarkup();" />
+      <MemberSignature Language="F#" Value="abstract member BeginCustomMarkup : unit -&gt; unit&#xA;override this.BeginCustomMarkup : unit -&gt; unit" Usage="wmlMobileTextWriter.BeginCustomMarkup " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -175,6 +205,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="BeginForm">
@@ -182,9 +214,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginForm(class System.Web.UI.MobileControls.Form form) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.BeginForm(System.Web.UI.MobileControls.Form)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginForm(System::Web::UI::MobileControls::Form ^ form);" />
+      <MemberSignature Language="F#" Value="abstract member BeginForm : System.Web.UI.MobileControls.Form -&gt; unit&#xA;override this.BeginForm : System.Web.UI.MobileControls.Form -&gt; unit" Usage="wmlMobileTextWriter.BeginForm form" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -204,6 +239,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="CalculateFormPostBackUrl">
@@ -212,9 +249,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.CalculateFormPostBackUrl(System.Boolean,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CalculateFormPostBackUrl (externalSubmit As Boolean, ByRef encode As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ CalculateFormPostBackUrl(bool externalSubmit, bool % encode);" />
+      <MemberSignature Language="F#" Value="abstract member CalculateFormPostBackUrl : bool *  -&gt; string&#xA;override this.CalculateFormPostBackUrl : bool *  -&gt; string" Usage="wmlMobileTextWriter.CalculateFormPostBackUrl (externalSubmit, encode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -222,7 +262,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="externalSubmit" Type="System.Boolean" />
-        <Parameter Name="encode" Type="System.Boolean&amp;" RefType="ref" />
+        <Parameter Name="encode" Type="System.Boolean" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="externalSubmit">
@@ -239,6 +279,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="CalculateFormQueryString">
@@ -247,9 +289,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.CalculateFormQueryString" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CalculateFormQueryString () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ CalculateFormQueryString();" />
+      <MemberSignature Language="F#" Value="abstract member CalculateFormQueryString : unit -&gt; string&#xA;override this.CalculateFormQueryString : unit -&gt; string" Usage="wmlMobileTextWriter.CalculateFormQueryString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -267,6 +312,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="CloseCharacterFormat">
@@ -275,9 +322,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.CloseCharacterFormat" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CloseCharacterFormat ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CloseCharacterFormat();" />
+      <MemberSignature Language="F#" Value="abstract member CloseCharacterFormat : unit -&gt; unit&#xA;override this.CloseCharacterFormat : unit -&gt; unit" Usage="wmlMobileTextWriter.CloseCharacterFormat " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -294,6 +344,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="CloseParagraph">
@@ -302,9 +354,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.CloseParagraph" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CloseParagraph ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CloseParagraph();" />
+      <MemberSignature Language="F#" Value="abstract member CloseParagraph : unit -&gt; unit&#xA;override this.CloseParagraph : unit -&gt; unit" Usage="wmlMobileTextWriter.CloseParagraph " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -321,6 +376,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentForm">
@@ -329,9 +386,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.CurrentForm" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CurrentForm As Form" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::Form ^ CurrentForm { System::Web::UI::MobileControls::Form ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentForm : System.Web.UI.MobileControls.Form" Usage="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.CurrentForm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -341,6 +401,8 @@
         <summary>Returns the form currently being rendered. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The form currently being rendered.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultFormat">
@@ -349,9 +411,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.DefaultFormat" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DefaultFormat As WmlMobileTextWriter.WmlFormat" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlFormat ^ DefaultFormat { System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlFormat ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultFormat : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat" Usage="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.DefaultFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -368,6 +433,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultLayout">
@@ -376,9 +443,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.DefaultLayout" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property DefaultLayout As WmlMobileTextWriter.WmlLayout" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlLayout ^ DefaultLayout { System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlLayout ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultLayout : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout" Usage="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.DefaultLayout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -395,6 +465,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="EndCustomMarkup">
@@ -403,9 +475,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EndCustomMarkup" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndCustomMarkup ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndCustomMarkup();" />
+      <MemberSignature Language="F#" Value="abstract member EndCustomMarkup : unit -&gt; unit&#xA;override this.EndCustomMarkup : unit -&gt; unit" Usage="wmlMobileTextWriter.EndCustomMarkup " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -422,6 +497,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="EndForm">
@@ -430,9 +507,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EndForm" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndForm ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndForm();" />
+      <MemberSignature Language="F#" Value="abstract member EndForm : unit -&gt; unit&#xA;override this.EndForm : unit -&gt; unit" Usage="wmlMobileTextWriter.EndForm " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -449,6 +529,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="EnsureFormat">
@@ -457,9 +539,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EnsureFormat" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EnsureFormat ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EnsureFormat();" />
+      <MemberSignature Language="F#" Value="abstract member EnsureFormat : unit -&gt; unit&#xA;override this.EnsureFormat : unit -&gt; unit" Usage="wmlMobileTextWriter.EnsureFormat " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -476,6 +561,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="EnsureLayout">
@@ -484,9 +571,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EnsureLayout" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EnsureLayout ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EnsureLayout();" />
+      <MemberSignature Language="F#" Value="abstract member EnsureLayout : unit -&gt; unit&#xA;override this.EnsureLayout : unit -&gt; unit" Usage="wmlMobileTextWriter.EnsureLayout " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -503,6 +593,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="EnterFormat">
@@ -510,9 +602,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnterFormat(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EnterFormat(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnterFormat(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="override this.EnterFormat : System.Web.UI.MobileControls.Style -&gt; unit" Usage="wmlMobileTextWriter.EnterFormat style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -533,9 +628,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EnterLayout(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.EnterLayout(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EnterLayout(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="override this.EnterLayout : System.Web.UI.MobileControls.Style -&gt; unit" Usage="wmlMobileTextWriter.EnterLayout style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -556,9 +654,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExitFormat(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.ExitFormat(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ExitFormat(System::Web::UI::MobileControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="override this.ExitFormat : System.Web.UI.MobileControls.Style -&gt; unit" Usage="wmlMobileTextWriter.ExitFormat style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -579,9 +680,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ExitLayout(class System.Web.UI.MobileControls.Style style, bool breakAfter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.ExitLayout(System.Web.UI.MobileControls.Style,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ExitLayout(System::Web::UI::MobileControls::Style ^ style, bool breakAfter);" />
+      <MemberSignature Language="F#" Value="override this.ExitLayout : System.Web.UI.MobileControls.Style * bool -&gt; unit" Usage="wmlMobileTextWriter.ExitLayout (style, breakAfter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -605,9 +709,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.IsValidSoftkeyLabel(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function IsValidSoftkeyLabel (label As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsValidSoftkeyLabel(System::String ^ label);" />
+      <MemberSignature Language="F#" Value="abstract member IsValidSoftkeyLabel : string -&gt; bool&#xA;override this.IsValidSoftkeyLabel : string -&gt; bool" Usage="wmlMobileTextWriter.IsValidSoftkeyLabel label" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -629,6 +736,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="MapClientIDToShortName">
@@ -637,9 +745,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.MapClientIDToShortName(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Function MapClientIDToShortName (clientID As String, generateRandomID As Boolean) As String" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; System::String ^ MapClientIDToShortName(System::String ^ clientID, bool generateRandomID);" />
+      <MemberSignature Language="F#" Value="member this.MapClientIDToShortName : string * bool -&gt; string" Usage="wmlMobileTextWriter.MapClientIDToShortName (clientID, generateRandomID)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -664,6 +775,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="NumberOfSoftkeys">
@@ -672,9 +785,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.NumberOfSoftkeys" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property NumberOfSoftkeys As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int NumberOfSoftkeys { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.NumberOfSoftkeys : int" Usage="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.NumberOfSoftkeys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -691,6 +807,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="OpenCharacterFormat">
@@ -699,9 +817,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.OpenCharacterFormat(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat,System.Boolean,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OpenCharacterFormat (format As WmlMobileTextWriter.WmlFormat, writeBold As Boolean, writeItalic As Boolean, writeSize As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OpenCharacterFormat(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlFormat ^ format, bool writeBold, bool writeItalic, bool writeSize);" />
+      <MemberSignature Language="F#" Value="abstract member OpenCharacterFormat : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat * bool * bool * bool -&gt; unit&#xA;override this.OpenCharacterFormat : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat * bool * bool * bool -&gt; unit" Usage="wmlMobileTextWriter.OpenCharacterFormat (format, writeBold, writeItalic, writeSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -727,6 +848,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="OpenParagraph">
@@ -735,9 +858,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.OpenParagraph(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OpenParagraph (layout As WmlMobileTextWriter.WmlLayout, writeAlignment As Boolean, writeWrapping As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OpenParagraph(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlLayout ^ layout, bool writeAlignment, bool writeWrapping);" />
+      <MemberSignature Language="F#" Value="abstract member OpenParagraph : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout * bool * bool -&gt; unit&#xA;override this.OpenParagraph : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlLayout * bool * bool -&gt; unit" Usage="wmlMobileTextWriter.OpenParagraph (layout, writeAlignment, writeWrapping)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -761,6 +887,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="Page">
@@ -769,9 +897,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.Page" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Page As MobilePage" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::MobilePage ^ Page { System::Web::UI::MobileControls::MobilePage ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Page : System.Web.UI.MobileControls.MobilePage" Usage="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.Page" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -788,6 +919,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="PendingBreak">
@@ -796,9 +929,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.PendingBreak" />
       <MemberSignature Language="VB.NET" Value="Protected Property PendingBreak As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool PendingBreak { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PendingBreak : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.PendingBreak" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -809,6 +945,8 @@
         <value>
           <see langword="true" /> if the <see langword="&lt; br &gt;" /> tag needs to be sent to the output stream; otherwise, false.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="PostAnalyzeForm">
@@ -817,9 +955,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.PostAnalyzeForm" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub PostAnalyzeForm ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostAnalyzeForm();" />
+      <MemberSignature Language="F#" Value="abstract member PostAnalyzeForm : unit -&gt; unit&#xA;override this.PostAnalyzeForm : unit -&gt; unit" Usage="wmlMobileTextWriter.PostAnalyzeForm " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -836,6 +977,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderBeginForm">
@@ -843,9 +986,12 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderBeginForm(class System.Web.UI.MobileControls.Form form) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderBeginForm(System.Web.UI.MobileControls.Form)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderBeginForm(System::Web::UI::MobileControls::Form ^ form);" />
+      <MemberSignature Language="F#" Value="abstract member RenderBeginForm : System.Web.UI.MobileControls.Form -&gt; unit&#xA;override this.RenderBeginForm : System.Web.UI.MobileControls.Form -&gt; unit" Usage="wmlMobileTextWriter.RenderBeginForm form" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -865,6 +1011,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderBeginHyperlink">
@@ -873,9 +1021,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderBeginHyperlink(System.String,System.Boolean,System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderBeginHyperlink (targetUrl As String, encodeUrl As Boolean, softkeyLabel As String, implicitSoftkeyLabel As Boolean, mapToSoftkey As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderBeginHyperlink(System::String ^ targetUrl, bool encodeUrl, System::String ^ softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey);" />
+      <MemberSignature Language="F#" Value="abstract member RenderBeginHyperlink : string * bool * string * bool * bool -&gt; unit&#xA;override this.RenderBeginHyperlink : string * bool * string * bool * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderBeginHyperlink (targetUrl, encodeUrl, softkeyLabel, implicitSoftkeyLabel, mapToSoftkey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -905,6 +1056,8 @@
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter,System.String)" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.Boolean)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderBeginPostBack">
@@ -913,9 +1066,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderBeginPostBack(System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderBeginPostBack (softkeyLabel As String, implicitSoftkeyLabel As Boolean, mapToSoftkey As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderBeginPostBack(System::String ^ softkeyLabel, bool implicitSoftkeyLabel, bool mapToSoftkey);" />
+      <MemberSignature Language="F#" Value="abstract member RenderBeginPostBack : string * bool * bool -&gt; unit&#xA;override this.RenderBeginPostBack : string * bool * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderBeginPostBack (softkeyLabel, implicitSoftkeyLabel, mapToSoftkey)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -932,6 +1088,8 @@
         <param name="mapToSoftkey">Set to <see langword="true" /> if mapping to a softkey on the device.</param>
         <summary>Begins the rendering of a postback. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderBeginSelect">
@@ -940,9 +1098,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderBeginSelect(System.String,System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderBeginSelect (name As String, iname As String, ivalue As String, title As String, multiSelect As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderBeginSelect(System::String ^ name, System::String ^ iname, System::String ^ ivalue, System::String ^ title, bool multiSelect);" />
+      <MemberSignature Language="F#" Value="abstract member RenderBeginSelect : string * string * string * string * bool -&gt; unit&#xA;override this.RenderBeginSelect : string * string * string * string * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderBeginSelect (name, iname, ivalue, title, multiSelect)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -972,6 +1133,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderDoEvent">
@@ -980,9 +1143,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderDoEvent(System.String,System.String,System.String,System.Web.UI.MobileControls.Adapters.WmlPostFieldType,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RenderDoEvent (doType As String, target As String, arg As String, postBackType As WmlPostFieldType, text As String, includeVariables As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderDoEvent(System::String ^ doType, System::String ^ target, System::String ^ arg, System::Web::UI::MobileControls::Adapters::WmlPostFieldType postBackType, System::String ^ text, bool includeVariables);" />
+      <MemberSignature Language="F#" Value="member this.RenderDoEvent : string * string * string * System.Web.UI.MobileControls.Adapters.WmlPostFieldType * string * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderDoEvent (doType, target, arg, postBackType, text, includeVariables)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1020,9 +1186,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderEndForm" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderEndForm ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderEndForm();" />
+      <MemberSignature Language="F#" Value="abstract member RenderEndForm : unit -&gt; unit&#xA;override this.RenderEndForm : unit -&gt; unit" Usage="wmlMobileTextWriter.RenderEndForm " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1039,6 +1208,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderEndHyperlink">
@@ -1047,9 +1218,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderEndHyperlink(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderEndHyperlink (breakAfter As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderEndHyperlink(bool breakAfter);" />
+      <MemberSignature Language="F#" Value="abstract member RenderEndHyperlink : bool -&gt; unit&#xA;override this.RenderEndHyperlink : bool -&gt; unit" Usage="wmlMobileTextWriter.RenderEndHyperlink breakAfter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1064,6 +1238,8 @@
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.Boolean)" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.Boolean)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderEndPostBack">
@@ -1072,9 +1248,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderEndPostBack(System.String,System.String,System.Web.UI.MobileControls.Adapters.WmlPostFieldType,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderEndPostBack (target As String, argument As String, postBackType As WmlPostFieldType, includeVariables As Boolean, breakAfter As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderEndPostBack(System::String ^ target, System::String ^ argument, System::Web::UI::MobileControls::Adapters::WmlPostFieldType postBackType, bool includeVariables, bool breakAfter);" />
+      <MemberSignature Language="F#" Value="abstract member RenderEndPostBack : string * string * System.Web.UI.MobileControls.Adapters.WmlPostFieldType * bool * bool -&gt; unit&#xA;override this.RenderEndPostBack : string * string * System.Web.UI.MobileControls.Adapters.WmlPostFieldType * bool * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderEndPostBack (target, argument, postBackType, includeVariables, breakAfter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1103,9 +1282,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderEndSelect(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderEndSelect (breakAfter As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderEndSelect(bool breakAfter);" />
+      <MemberSignature Language="F#" Value="abstract member RenderEndSelect : bool -&gt; unit&#xA;override this.RenderEndSelect : bool -&gt; unit" Usage="wmlMobileTextWriter.RenderEndSelect breakAfter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1118,6 +1300,8 @@
         <param name="breakAfter">Indicates whether a break must follow the selection list.</param>
         <summary>Completes rendering a selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderExtraCards">
@@ -1126,9 +1310,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderExtraCards" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderExtraCards ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderExtraCards();" />
+      <MemberSignature Language="F#" Value="abstract member RenderExtraCards : unit -&gt; unit&#xA;override this.RenderExtraCards : unit -&gt; unit" Usage="wmlMobileTextWriter.RenderExtraCards " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1145,6 +1332,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderFormDoEvent">
@@ -1153,9 +1342,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderFormDoEvent(System.String,System.String,System.Web.UI.MobileControls.Adapters.WmlPostFieldType,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RenderFormDoEvent (doType As String, arg As String, postBackType As WmlPostFieldType, text As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderFormDoEvent(System::String ^ doType, System::String ^ arg, System::Web::UI::MobileControls::Adapters::WmlPostFieldType postBackType, System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.RenderFormDoEvent : string * string * System.Web.UI.MobileControls.Adapters.WmlPostFieldType * string -&gt; unit" Usage="wmlMobileTextWriter.RenderFormDoEvent (doType, arg, postBackType, text)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1181,6 +1373,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderGoAction">
@@ -1189,9 +1383,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderGoAction(System.String,System.String,System.Web.UI.MobileControls.Adapters.WmlPostFieldType,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderGoAction (target As String, argument As String, postBackType As WmlPostFieldType, includeVariables As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderGoAction(System::String ^ target, System::String ^ argument, System::Web::UI::MobileControls::Adapters::WmlPostFieldType postBackType, bool includeVariables);" />
+      <MemberSignature Language="F#" Value="abstract member RenderGoAction : string * string * System.Web.UI.MobileControls.Adapters.WmlPostFieldType * bool -&gt; unit&#xA;override this.RenderGoAction : string * string * System.Web.UI.MobileControls.Adapters.WmlPostFieldType * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderGoAction (target, argument, postBackType, includeVariables)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1217,6 +1414,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderImage">
@@ -1225,9 +1424,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderImage(System.String,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderImage (source As String, localSource As String, alternateText As String, breakAfter As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderImage(System::String ^ source, System::String ^ localSource, System::String ^ alternateText, bool breakAfter);" />
+      <MemberSignature Language="F#" Value="abstract member RenderImage : string * string * string * bool -&gt; unit&#xA;override this.RenderImage : string * string * string * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderImage (source, localSource, alternateText, breakAfter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1248,6 +1450,8 @@
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.Boolean)" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.Boolean)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="RenderSelectOption">
@@ -1265,9 +1469,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderSelectOption(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderSelectOption (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderSelectOption(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member RenderSelectOption : string -&gt; unit&#xA;override this.RenderSelectOption : string -&gt; unit" Usage="wmlMobileTextWriter.RenderSelectOption text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1280,6 +1487,8 @@
         <param name="text">The option text.</param>
         <summary>Renders a single option within a selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderSelectOption">
@@ -1288,9 +1497,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderSelectOption(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderSelectOption (text As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderSelectOption(System::String ^ text, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member RenderSelectOption : string * string -&gt; unit&#xA;override this.RenderSelectOption : string * string -&gt; unit" Usage="wmlMobileTextWriter.RenderSelectOption (text, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1305,6 +1517,8 @@
         <param name="value">(Optional.) The option value.</param>
         <summary>Renders a single option within a selection list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="RenderText">
@@ -1314,6 +1528,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="RenderText">
@@ -1322,9 +1538,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RenderText (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RenderText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="member this.RenderText : string -&gt; unit" Usage="wmlMobileTextWriter.RenderText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1337,6 +1556,8 @@
         <param name="text">The text string to be rendered.</param>
         <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderText">
@@ -1345,9 +1566,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderText(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RenderText (text As String, breakAfter As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RenderText(System::String ^ text, bool breakAfter);" />
+      <MemberSignature Language="F#" Value="member this.RenderText : string * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderText (text, breakAfter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1362,6 +1586,8 @@
         <param name="breakAfter">Specifies whether a break must follow the element.</param>
         <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderText">
@@ -1370,9 +1596,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderText(System.String,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderText (text As String, breakAfter As Boolean, encodeText As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderText(System::String ^ text, bool breakAfter, bool encodeText);" />
+      <MemberSignature Language="F#" Value="abstract member RenderText : string * bool * bool -&gt; unit&#xA;override this.RenderText : string * bool * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderText (text, breakAfter, encodeText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1389,6 +1618,8 @@
         <param name="encodeText">Specifies whether the text must be encoded.</param>
         <summary>Renders a text element. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderTextBox">
@@ -1397,9 +1628,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.RenderTextBox(System.String,System.String,System.String,System.String,System.Boolean,System.Int32,System.Int32,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RenderTextBox (id As String, value As String, format As String, title As String, password As Boolean, size As Integer, maxLength As Integer, generateRandomID As Boolean, breakAfter As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RenderTextBox(System::String ^ id, System::String ^ value, System::String ^ format, System::String ^ title, bool password, int size, int maxLength, bool generateRandomID, bool breakAfter);" />
+      <MemberSignature Language="F#" Value="abstract member RenderTextBox : string * string * string * string * bool * int * int * bool * bool -&gt; unit&#xA;override this.RenderTextBox : string * string * string * string * bool * int * int * bool * bool -&gt; unit" Usage="wmlMobileTextWriter.RenderTextBox (id, value, format, title, password, size, maxLength, generateRandomID, breakAfter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1437,6 +1671,8 @@
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.String,System.Boolean,System.Boolean)" />
         <altmember cref="M:System.Web.UI.MobileControls.Adapters.WmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.String,System.Boolean)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="ResetFormattingState">
@@ -1445,9 +1681,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.ResetFormattingState" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub ResetFormattingState ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResetFormattingState();" />
+      <MemberSignature Language="F#" Value="abstract member ResetFormattingState : unit -&gt; unit&#xA;override this.ResetFormattingState : unit -&gt; unit" Usage="wmlMobileTextWriter.ResetFormattingState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1464,6 +1703,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="UsePostBackCard">
@@ -1472,9 +1713,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.UsePostBackCard(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function UsePostBackCard (includeVariables As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool UsePostBackCard(bool includeVariables);" />
+      <MemberSignature Language="F#" Value="abstract member UsePostBackCard : bool -&gt; bool&#xA;override this.UsePostBackCard : bool -&gt; bool" Usage="wmlMobileTextWriter.UsePostBackCard includeVariables" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1496,6 +1740,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="WriteAttribute">
@@ -1504,9 +1750,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteAttribute(System.String,System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteAttribute (attribute As String, value As String, encode As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteAttribute(System::String ^ attribute, System::String ^ value, bool encode);" />
+      <MemberSignature Language="F#" Value="abstract member WriteAttribute : string * string * bool -&gt; unit&#xA;override this.WriteAttribute : string * string * bool -&gt; unit" Usage="wmlMobileTextWriter.WriteAttribute (attribute, value, encode)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1533,9 +1782,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteBreak" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteBreak ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteBreak();" />
+      <MemberSignature Language="F#" Value="member this.WriteBreak : unit -&gt; unit" Usage="wmlMobileTextWriter.WriteBreak " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1545,6 +1797,8 @@
       <Docs>
         <summary>Writes a line break.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="WriteEncodedText">
@@ -1553,9 +1807,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteEncodedText(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEncodedText (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEncodedText(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="abstract member WriteEncodedText : string -&gt; unit&#xA;override this.WriteEncodedText : string -&gt; unit" Usage="wmlMobileTextWriter.WriteEncodedText text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1577,9 +1834,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteEncodedUrl(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEncodedUrl (url As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEncodedUrl(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="abstract member WriteEncodedUrl : string -&gt; unit&#xA;override this.WriteEncodedUrl : string -&gt; unit" Usage="wmlMobileTextWriter.WriteEncodedUrl url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1610,9 +1870,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WritePostField(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WritePostField (name As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WritePostField(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.WritePostField : string * string -&gt; unit" Usage="wmlMobileTextWriter.WritePostField (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1634,6 +1897,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="WritePostField">
@@ -1642,9 +1907,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WritePostField(System.String,System.String,System.Web.UI.MobileControls.Adapters.WmlPostFieldType)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WritePostField (name As String, value As String, type As WmlPostFieldType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WritePostField(System::String ^ name, System::String ^ value, System::Web::UI::MobileControls::Adapters::WmlPostFieldType type);" />
+      <MemberSignature Language="F#" Value="member this.WritePostField : string * string * System.Web.UI.MobileControls.Adapters.WmlPostFieldType -&gt; unit" Usage="wmlMobileTextWriter.WritePostField (name, value, type)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1661,6 +1929,8 @@
         <param name="type">The <see cref="T:System.Web.UI.MobileControls.Adapters.WmlPostFieldType" />.</param>
         <summary>Writes a &lt; <see langword="postfield" /> &gt; element, treating the value as specified by the <paramref name="type" /> parameter. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="WritePostFieldVariable">
@@ -1669,9 +1939,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WritePostFieldVariable(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WritePostFieldVariable (name As String, arg As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WritePostFieldVariable(System::String ^ name, System::String ^ arg);" />
+      <MemberSignature Language="F#" Value="member this.WritePostFieldVariable : string * string -&gt; unit" Usage="wmlMobileTextWriter.WritePostFieldVariable (name, arg)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1693,6 +1966,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="WriteText">
@@ -1701,9 +1976,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteText(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub WriteText (text As String, encodeText As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteText(System::String ^ text, bool encodeText);" />
+      <MemberSignature Language="F#" Value="member this.WriteText : string * bool -&gt; unit" Usage="wmlMobileTextWriter.WriteText (text, encodeText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1725,6 +2003,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="WriteTextEncodedAttribute">
@@ -1733,9 +2013,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WriteTextEncodedAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub WriteTextEncodedAttribute (attribute As String, value As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteTextEncodedAttribute(System::String ^ attribute, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="member this.WriteTextEncodedAttribute : string * string -&gt; unit" Usage="wmlMobileTextWriter.WriteTextEncodedAttribute (attribute, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1757,6 +2040,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
   </Members>

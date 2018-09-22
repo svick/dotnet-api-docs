@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.WebUser" />
   <TypeSignature Language="VB.NET" Value="Public Class WebUser&#xA;Inherits User" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebUser : Microsoft::VisualBasic::ApplicationServices::User" />
+  <TypeSignature Language="F#" Value="type WebUser = class&#xA;    inherit User" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -44,6 +46,8 @@
     <altmember cref="P:System.Threading.Thread.CurrentPrincipal" />
     <altmember cref="P:System.Web.HttpContext.User" />
     <altmember cref="P:System.Web.HttpContext.Current" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+    <related type="Article" href="~/docs/visual-basic/developing-apps/programming/accessing-user-data.md">Accessing User Data (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,8 +59,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.ApplicationServices.WebUser" /> class.</summary>
@@ -69,6 +79,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.User" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="InternalPrincipal">
@@ -77,9 +88,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.WebUser.InternalPrincipal" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Property InternalPrincipal As IPrincipal" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Security::Principal::IPrincipal ^ InternalPrincipal { System::Security::Principal::IPrincipal ^ get(); void set(System::Security::Principal::IPrincipal ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InternalPrincipal : System.Security.Principal.IPrincipal with get, set" Usage="Microsoft.VisualBasic.ApplicationServices.WebUser.InternalPrincipal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -100,6 +113,7 @@
         </remarks>
         <altmember cref="T:Microsoft.VisualBasic.ApplicationServices.User" />
         <altmember cref="P:Microsoft.VisualBasic.ApplicationServices.User.InternalPrincipal" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.HttpSessionStateContainer" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpSessionStateContainer&#xA;Implements IHttpSessionState" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpSessionStateContainer : System::Web::SessionState::IHttpSessionState" />
+  <TypeSignature Language="F#" Value="type HttpSessionStateContainer = class&#xA;    interface IHttpSessionState" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -36,6 +38,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.SessionState.SessionStateUtility" />
+    <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,9 +47,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.#ctor(System.String,System.Web.SessionState.ISessionStateItemCollection,System.Web.HttpStaticObjectsCollection,System.Int32,System.Boolean,System.Web.HttpCookieMode,System.Web.SessionState.SessionStateMode,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (id As String, sessionItems As ISessionStateItemCollection, staticObjects As HttpStaticObjectsCollection, timeout As Integer, newSession As Boolean, cookieMode As HttpCookieMode, mode As SessionStateMode, isReadonly As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpSessionStateContainer(System::String ^ id, System::Web::SessionState::ISessionStateItemCollection ^ sessionItems, System::Web::HttpStaticObjectsCollection ^ staticObjects, int timeout, bool newSession, System::Web::HttpCookieMode cookieMode, System::Web::SessionState::SessionStateMode mode, bool isReadonly);" />
+      <MemberSignature Language="F#" Value="new System.Web.SessionState.HttpSessionStateContainer : string * System.Web.SessionState.ISessionStateItemCollection * System.Web.HttpStaticObjectsCollection * int * bool * System.Web.HttpCookieMode * System.Web.SessionState.SessionStateMode * bool -&gt; System.Web.SessionState.HttpSessionStateContainer" Usage="new System.Web.SessionState.HttpSessionStateContainer (id, sessionItems, staticObjects, timeout, newSession, cookieMode, mode, isReadonly)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -84,6 +89,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="id" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Abandon">
@@ -92,12 +98,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.Abandon" />
       <MemberSignature Language="VB.NET" Value="Public Sub Abandon ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Abandon();" />
+      <MemberSignature Language="F#" Value="abstract member Abandon : unit -&gt; unit&#xA;override this.Abandon : unit -&gt; unit" Usage="httpSessionStateContainer.Abandon " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IHttpSessionState.Abandon</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -114,6 +122,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -122,12 +131,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.Add(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (name As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ name, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj -&gt; unit&#xA;override this.Add : string * obj -&gt; unit" Usage="httpSessionStateContainer.Add (name, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IHttpSessionState.Add(System.String,System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,6 +160,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -157,12 +169,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="httpSessionStateContainer.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IHttpSessionState.Clear</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,6 +186,7 @@
       <Docs>
         <summary>Removes all values and keys from the session-state collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CodePage">
@@ -180,12 +195,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.CodePage" />
       <MemberSignature Language="VB.NET" Value="Public Property CodePage As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CodePage { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CodePage : int with get, set" Usage="System.Web.SessionState.HttpSessionStateContainer.CodePage" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.CodePage</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -204,6 +221,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CookieMode">
@@ -212,14 +230,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.CookieMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CookieMode As HttpCookieMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpCookieMode CookieMode { System::Web::HttpCookieMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.CookieMode : System.Web.HttpCookieMode" Usage="System.Web.SessionState.HttpSessionStateContainer.CookieMode" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.CookieMode</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.HttpCookieMode</ReturnType>
       </ReturnValue>
@@ -234,6 +259,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -241,12 +267,14 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="httpSessionStateContainer.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IHttpSessionState.CopyTo(System.Array,System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -261,6 +289,7 @@
         <param name="index">The zero-based index in <c>array</c> from which copying starts.</param>
         <summary>Copies the collection of session-state values to a one-dimensional array, starting at the specified index in the array.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -269,12 +298,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.SessionState.HttpSessionStateContainer.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.Count</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -284,6 +315,7 @@
         <summary>Gets the number of items in the session-state collection.</summary>
         <value>The number of items in the collection.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -292,12 +324,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="httpSessionStateContainer.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IHttpSessionState.GetEnumerator</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -308,6 +342,7 @@
         <summary>Returns an enumerator that can be used to read all the session-state variable names in the current session.</summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can iterate through the variable names in the session-state collection.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsAbandoned">
@@ -316,11 +351,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.IsAbandoned" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAbandoned As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAbandoned { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAbandoned : bool" Usage="System.Web.SessionState.HttpSessionStateContainer.IsAbandoned" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -329,6 +371,7 @@
         <value>
           <see langword="true" /> if the current session has been abandoned; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsCookieless">
@@ -337,12 +380,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.IsCookieless" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCookieless As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCookieless { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsCookieless : bool" Usage="System.Web.SessionState.HttpSessionStateContainer.IsCookieless" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.IsCookieless</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -361,6 +406,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.SessionState.HttpSessionState.IsCookieless" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsNewSession">
@@ -369,14 +415,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.IsNewSession" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNewSession As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNewSession { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNewSession : bool" Usage="System.Web.SessionState.HttpSessionStateContainer.IsNewSession" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.IsNewSession</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -385,6 +438,7 @@
         <value>
           <see langword="true" /> if the session was created with the current request; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -393,14 +447,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Web.SessionState.HttpSessionStateContainer.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.IsReadOnly</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -409,6 +470,7 @@
         <value>
           <see langword="true" /> if the session is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -417,12 +479,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Web.SessionState.HttpSessionStateContainer.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.IsSynchronized</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -439,6 +503,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -448,6 +513,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Gets or sets individual session values.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -456,12 +522,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj with get, set" Usage="System.Web.SessionState.HttpSessionStateContainer.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.Item(System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -475,6 +543,7 @@
         <summary>Gets or sets a session value by numerical index.</summary>
         <value>The session-state value stored at the specified index.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -483,12 +552,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); void set(System::String ^ name, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Web.SessionState.HttpSessionStateContainer.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.Item(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -502,6 +573,7 @@
         <summary>Gets or sets a session value by name.</summary>
         <value>The session-state value with the specified name.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -510,12 +582,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As NameObjectCollectionBase.KeysCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::NameObjectCollectionBase::KeysCollection ^ Keys { System::Collections::Specialized::NameObjectCollectionBase::KeysCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" Usage="System.Web.SessionState.HttpSessionStateContainer.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.Keys</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -525,6 +599,7 @@
         <summary>Gets a collection of the keys for all values stored in the session-state collection.</summary>
         <value>The <see cref="T:System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" /> that contains all the session keys.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LCID">
@@ -533,12 +608,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.LCID" />
       <MemberSignature Language="VB.NET" Value="Public Property LCID As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LCID { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LCID : int with get, set" Usage="System.Web.SessionState.HttpSessionStateContainer.LCID" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.LCID</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -557,6 +634,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Mode">
@@ -565,14 +643,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.Mode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mode As SessionStateMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::SessionState::SessionStateMode Mode { System::Web::SessionState::SessionStateMode get(); };" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Web.SessionState.SessionStateMode" Usage="System.Web.SessionState.HttpSessionStateContainer.Mode" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.Mode</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.SessionState.SessionStateMode</ReturnType>
       </ReturnValue>
@@ -587,6 +672,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -595,12 +681,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.Remove(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; unit&#xA;override this.Remove : string -&gt; unit" Usage="httpSessionStateContainer.Remove name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IHttpSessionState.Remove(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -620,6 +708,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAll">
@@ -628,14 +717,21 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.RemoveAll" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAll ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAll();" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAll : unit -&gt; unit&#xA;override this.RemoveAll : unit -&gt; unit" Usage="httpSessionStateContainer.RemoveAll " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IHttpSessionState.RemoveAll</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -650,6 +746,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -658,12 +755,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.HttpSessionStateContainer.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="httpSessionStateContainer.RemoveAt index" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.SessionState.IHttpSessionState.RemoveAt(System.Int32)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -682,6 +781,7 @@
  \- or -  
   
  <paramref name="index" /> is equal to or greater than <see cref="P:System.Web.SessionState.HttpSessionStateContainer.Count" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SessionID">
@@ -690,12 +790,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.SessionID" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionID As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SessionID { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SessionID : string" Usage="System.Web.SessionState.HttpSessionStateContainer.SessionID" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.SessionID</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -705,6 +807,7 @@
         <summary>Gets the unique identifier for the session.</summary>
         <value>The unique session identifier.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StaticObjects">
@@ -713,14 +816,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.StaticObjects" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StaticObjects As HttpStaticObjectsCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpStaticObjectsCollection ^ StaticObjects { System::Web::HttpStaticObjectsCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StaticObjects : System.Web.HttpStaticObjectsCollection" Usage="System.Web.SessionState.HttpSessionStateContainer.StaticObjects" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.StaticObjects</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.HttpStaticObjectsCollection</ReturnType>
       </ReturnValue>
@@ -737,6 +847,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SyncRoot">
@@ -745,12 +856,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.SessionState.HttpSessionStateContainer.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.SyncRoot</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -760,6 +873,7 @@
         <summary>Gets an object that can be used to synchronize access to the collection of session-state values.</summary>
         <value>An object that can be used to synchronize access to the collection.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Timeout">
@@ -768,14 +882,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.SessionState.HttpSessionStateContainer.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Property Timeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Timeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : int with get, set" Usage="System.Web.SessionState.HttpSessionStateContainer.Timeout" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Web.SessionState.IHttpSessionState.Timeout</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -788,6 +909,7 @@
  \- or -  
   
  An attempt was made to set the <see cref="P:System.Web.SessionState.HttpSessionStateContainer.Timeout" /> value to an integer value greater than the maximum allowed when <see cref="P:System.Web.SessionState.HttpSessionState.Mode" /> is set to <see cref="F:System.Web.SessionState.SessionStateMode.InProc" /> or <see cref="F:System.Web.SessionState.SessionStateMode.StateServer" />. The maximum allowed is 525,600 (one year).</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6d60d381-6521-4e1d-9089-da6464f2a9bc">ASP.NET Session State Overview</related>
       </Docs>
     </Member>
   </Members>

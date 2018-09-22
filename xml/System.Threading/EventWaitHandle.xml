@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.EventWaitHandle" />
   <TypeSignature Language="VB.NET" Value="Public Class EventWaitHandle&#xA;Inherits WaitHandle" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventWaitHandle : System::Threading::WaitHandle" />
+  <TypeSignature Language="F#" Value="type EventWaitHandle = class&#xA;    inherit WaitHandle" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +14,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -25,7 +27,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -67,6 +69,8 @@
     <altmember cref="T:System.Threading.WaitHandle" />
     <altmember cref="T:System.Threading.AutoResetEvent" />
     <altmember cref="T:System.Threading.ManualResetEvent" />
+    <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -86,6 +90,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialState As Boolean, mode As EventResetMode)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventWaitHandle(bool initialState, System::Threading::EventResetMode mode);" />
+      <MemberSignature Language="F#" Value="new System.Threading.EventWaitHandle : bool * System.Threading.EventResetMode -&gt; System.Threading.EventWaitHandle" Usage="new System.Threading.EventWaitHandle (initialState, mode)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -96,6 +101,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -104,7 +110,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -136,6 +142,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -144,6 +151,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialState As Boolean, mode As EventResetMode, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventWaitHandle(bool initialState, System::Threading::EventResetMode mode, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Threading.EventWaitHandle : bool * System.Threading.EventResetMode * string -&gt; System.Threading.EventWaitHandle" Usage="new System.Threading.EventWaitHandle (initialState, mode, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -154,6 +162,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -162,7 +171,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-2.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -198,6 +207,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is longer than 260 characters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -206,6 +216,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode,System.String,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialState As Boolean, mode As EventResetMode, name As String, ByRef createdNew As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventWaitHandle(bool initialState, System::Threading::EventResetMode mode, System::String ^ name, [Runtime::InteropServices::Out] bool % createdNew);" />
+      <MemberSignature Language="F#" Value="new System.Threading.EventWaitHandle : bool * System.Threading.EventResetMode * string *  -&gt; System.Threading.EventWaitHandle" Usage="new System.Threading.EventWaitHandle (initialState, mode, name, createdNew)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -216,6 +227,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -224,7 +236,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-2.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -232,7 +244,7 @@
         <Parameter Name="initialState" Type="System.Boolean" />
         <Parameter Name="mode" Type="System.Threading.EventResetMode" />
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="createdNew" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="createdNew" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="initialState">
@@ -257,6 +269,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is longer than 260 characters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -265,14 +278,22 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.#ctor(System.Boolean,System.Threading.EventResetMode,System.String,System.Boolean@,System.Security.AccessControl.EventWaitHandleSecurity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialState As Boolean, mode As EventResetMode, name As String, ByRef createdNew As Boolean, eventSecurity As EventWaitHandleSecurity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventWaitHandle(bool initialState, System::Threading::EventResetMode mode, System::String ^ name, [Runtime::InteropServices::Out] bool % createdNew, System::Security::AccessControl::EventWaitHandleSecurity ^ eventSecurity);" />
+      <MemberSignature Language="F#" Value="new System.Threading.EventWaitHandle : bool * System.Threading.EventResetMode * string *  * System.Security.AccessControl.EventWaitHandleSecurity -&gt; System.Threading.EventWaitHandle" Usage="new System.Threading.EventWaitHandle (initialState, mode, name, createdNew, eventSecurity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -280,7 +301,7 @@
         <Parameter Name="initialState" Type="System.Boolean" />
         <Parameter Name="mode" Type="System.Threading.EventResetMode" />
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="createdNew" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="createdNew" Type="System.Boolean" RefType="out" />
         <Parameter Name="eventSecurity" Type="System.Security.AccessControl.EventWaitHandleSecurity" />
       </Parameters>
       <Docs>
@@ -331,6 +352,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="name" /> is longer than 260 characters.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName="GetAccessControl">
@@ -339,14 +361,22 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.GetAccessControl" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAccessControl () As EventWaitHandleSecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::EventWaitHandleSecurity ^ GetAccessControl();" />
+      <MemberSignature Language="F#" Value="member this.GetAccessControl : unit -&gt; System.Security.AccessControl.EventWaitHandleSecurity" Usage="eventWaitHandle.GetAccessControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -389,6 +419,7 @@
  The current <see cref="T:System.Threading.EventWaitHandle" /> object represents a named system event, and was not opened with <see cref="F:System.Security.AccessControl.EventWaitHandleRights.ReadPermissions" />.</exception>
         <exception cref="T:System.NotSupportedException">Not supported for Windows 98 or Windows Millennium Edition.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="M:System.Threading.WaitHandle.Close" /> method was previously called on this <see cref="T:System.Threading.EventWaitHandle" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="OpenExisting">
@@ -408,6 +439,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.OpenExisting(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenExisting (name As String) As EventWaitHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::EventWaitHandle ^ OpenExisting(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member OpenExisting : string -&gt; System.Threading.EventWaitHandle" Usage="System.Threading.EventWaitHandle.OpenExisting name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -418,6 +450,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -426,7 +459,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-2.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -481,6 +514,7 @@
         <exception cref="T:System.IO.IOException">A Win32 error occurred.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The named event exists, but the user does not have the security access required to use it.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName="OpenExisting">
@@ -489,14 +523,22 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.OpenExisting(System.String,System.Security.AccessControl.EventWaitHandleRights)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenExisting (name As String, rights As EventWaitHandleRights) As EventWaitHandle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::EventWaitHandle ^ OpenExisting(System::String ^ name, System::Security::AccessControl::EventWaitHandleRights rights);" />
+      <MemberSignature Language="F#" Value="static member OpenExisting : string * System.Security.AccessControl.EventWaitHandleRights -&gt; System.Threading.EventWaitHandle" Usage="System.Threading.EventWaitHandle.OpenExisting (name, rights)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -551,6 +593,7 @@
         <exception cref="T:System.IO.IOException">A Win32 error occurred.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The named event exists, but the user does not have the desired security access.</exception>
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -559,6 +602,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Function Reset () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Reset();" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; bool" Usage="eventWaitHandle.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -569,6 +613,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -577,7 +622,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -591,6 +636,7 @@
           <see langword="true" /> if the operation succeeds; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="M:System.Threading.WaitHandle.Close" /> method was previously called on this <see cref="T:System.Threading.EventWaitHandle" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName="Set">
@@ -599,6 +645,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.Set" />
       <MemberSignature Language="VB.NET" Value="Public Function Set () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Set();" />
+      <MemberSignature Language="F#" Value="member this.Set : unit -&gt; bool" Usage="eventWaitHandle.Set " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -609,6 +656,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -617,7 +665,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -654,6 +702,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="M:System.Threading.WaitHandle.Close" /> method was previously called on this <see cref="T:System.Threading.EventWaitHandle" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <Member MemberName="SetAccessControl">
@@ -662,13 +711,21 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.SetAccessControl(System.Security.AccessControl.EventWaitHandleSecurity)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetAccessControl (eventSecurity As EventWaitHandleSecurity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessControl(System::Security::AccessControl::EventWaitHandleSecurity ^ eventSecurity);" />
+      <MemberSignature Language="F#" Value="member this.SetAccessControl : System.Security.AccessControl.EventWaitHandleSecurity -&gt; unit" Usage="eventWaitHandle.SetAccessControl eventSecurity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -713,6 +770,7 @@
  The event was not opened with <see cref="F:System.Security.AccessControl.EventWaitHandleRights.ChangePermissions" />.</exception>
         <exception cref="T:System.SystemException">The current <see cref="T:System.Threading.EventWaitHandle" /> object does not represent a named system event.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="M:System.Threading.WaitHandle.Close" /> method was previously called on this <see cref="T:System.Threading.EventWaitHandle" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cd94fc34-ac15-427f-b723-a1240a4fab7d">EventWaitHandle, AutoResetEvent, and ManualResetEvent</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="TryOpenExisting">
@@ -732,6 +790,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.TryOpenExisting(System.String,System.Threading.EventWaitHandle@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryOpenExisting (name As String, ByRef result As EventWaitHandle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryOpenExisting(System::String ^ name, [Runtime::InteropServices::Out] System::Threading::EventWaitHandle ^ % result);" />
+      <MemberSignature Language="F#" Value="static member TryOpenExisting : string *  -&gt; bool" Usage="System.Threading.EventWaitHandle.TryOpenExisting (name, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -750,7 +809,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.0;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netcore-2.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -759,7 +818,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="result" Type="System.Threading.EventWaitHandle&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Threading.EventWaitHandle" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">The name of the system synchronization event to open.</param>
@@ -800,14 +859,21 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.EventWaitHandle.TryOpenExisting(System.String,System.Security.AccessControl.EventWaitHandleRights,System.Threading.EventWaitHandle@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryOpenExisting (name As String, rights As EventWaitHandleRights, ByRef result As EventWaitHandle) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryOpenExisting(System::String ^ name, System::Security::AccessControl::EventWaitHandleRights rights, [Runtime::InteropServices::Out] System::Threading::EventWaitHandle ^ % result);" />
+      <MemberSignature Language="F#" Value="static member TryOpenExisting : string * System.Security.AccessControl.EventWaitHandleRights *  -&gt; bool" Usage="System.Threading.EventWaitHandle.TryOpenExisting (name, rights, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -817,7 +883,7 @@
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="rights" Type="System.Security.AccessControl.EventWaitHandleRights" />
-        <Parameter Name="result" Type="System.Threading.EventWaitHandle&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Threading.EventWaitHandle" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">The name of the system synchronization event to open.</param>

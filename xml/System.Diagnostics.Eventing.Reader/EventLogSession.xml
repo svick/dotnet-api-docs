@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogSession" />
   <TypeSignature Language="VB.NET" Value="Public Class EventLogSession&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class EventLogSession : IDisposable" />
+  <TypeSignature Language="F#" Value="type EventLogSession = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -26,6 +28,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -35,6 +39,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new <see cref="T:System.Diagnostics.Eventing.Reader.EventLogSession" /> object.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -46,10 +52,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -57,6 +64,8 @@
       <Docs>
         <summary>Initializes a new <see cref="T:System.Diagnostics.Eventing.Reader.EventLogSession" /> object, establishes a connection with the local Event Log service.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -65,11 +74,18 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (server As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogSession(System::String ^ server);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogSession : string -&gt; System.Diagnostics.Eventing.Reader.EventLogSession" Usage="new System.Diagnostics.Eventing.Reader.EventLogSession server" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="server" Type="System.String" />
       </Parameters>
@@ -77,6 +93,8 @@
         <param name="server">The name of the computer on which to connect to the Event Log service.</param>
         <summary>Initializes a new <see cref="T:System.Diagnostics.Eventing.Reader.EventLogSession" /> object, and establishes a connection with the Event Log service on the specified computer. The credentials (user name and password) of the user who calls the method is used for the credentials to access the remote computer.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -85,13 +103,15 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.#ctor(System.String,System.String,System.String,System.Security.SecureString,System.Diagnostics.Eventing.Reader.SessionAuthentication)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (server As String, domain As String, user As String, password As SecureString, logOnType As SessionAuthentication)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogSession(System::String ^ server, System::String ^ domain, System::String ^ user, System::Security::SecureString ^ password, System::Diagnostics::Eventing::Reader::SessionAuthentication logOnType);" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.Reader.EventLogSession : string * string * string * System.Security.SecureString * System.Diagnostics.Eventing.Reader.SessionAuthentication -&gt; System.Diagnostics.Eventing.Reader.EventLogSession" Usage="new System.Diagnostics.Eventing.Reader.EventLogSession (server, domain, user, password, logOnType)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -110,6 +130,8 @@
         <param name="logOnType">The type of connection to use for the connection to the remote computer.</param>
         <summary>Initializes a new <see cref="T:System.Diagnostics.Eventing.Reader.EventLogSession" /> object, and establishes a connection with the Event Log service on the specified computer. The specified credentials (user name and password) are used for the credentials to access the remote computer.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="CancelCurrentOperations">
@@ -118,9 +140,11 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.CancelCurrentOperations" />
       <MemberSignature Language="VB.NET" Value="Public Sub CancelCurrentOperations ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelCurrentOperations();" />
+      <MemberSignature Language="F#" Value="member this.CancelCurrentOperations : unit -&gt; unit" Usage="eventLogSession.CancelCurrentOperations " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,6 +154,8 @@
       <Docs>
         <summary>Cancels any operations (such as reading an event log or subscribing to an event log) that are currently active for the Event Log service that this session object is connected to.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ClearLog">
@@ -147,6 +173,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ClearLog">
@@ -155,11 +183,18 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ClearLog(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearLog (logName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearLog(System::String ^ logName);" />
+      <MemberSignature Language="F#" Value="member this.ClearLog : string -&gt; unit" Usage="eventLogSession.ClearLog logName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -177,6 +212,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="ClearLog">
@@ -185,9 +222,11 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ClearLog(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ClearLog (logName As String, backupPath As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearLog(System::String ^ logName, System::String ^ backupPath);" />
+      <MemberSignature Language="F#" Value="member this.ClearLog : string * string -&gt; unit" Usage="eventLogSession.ClearLog (logName, backupPath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,6 +248,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Dispose">
@@ -218,6 +259,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Releases the resources used by this object.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Dispose">
@@ -226,12 +269,14 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="eventLogSession.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -241,6 +286,8 @@
       <Docs>
         <summary>Releases all the resources used by this object.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -249,14 +296,22 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="eventLogSession.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5">
+          <AttributeName>System.Security.SecurityTreatAsSafe</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -270,6 +325,8 @@
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by this object, and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ExportLog">
@@ -279,6 +336,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Exports events into an external log file. The events are stored without the event messages.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ExportLog">
@@ -286,11 +345,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportLog(string path, valuetype System.Diagnostics.Eventing.Reader.PathType pathType, string query, string targetFilePath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ExportLog(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportLog(System::String ^ path, System::Diagnostics::Eventing::Reader::PathType pathType, System::String ^ query, System::String ^ targetFilePath);" />
+      <MemberSignature Language="F#" Value="member this.ExportLog : string * System.Diagnostics.Eventing.Reader.PathType * string * string -&gt; unit" Usage="eventLogSession.ExportLog (path, pathType, query, targetFilePath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -307,6 +373,8 @@
         <param name="targetFilePath">The path to the log file (ends in .evtx) in which the exported events will be stored after this method is executed.</param>
         <summary>Exports events into an external log file. The events are stored without the event messages.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="ExportLog">
@@ -314,9 +382,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportLog(string path, valuetype System.Diagnostics.Eventing.Reader.PathType pathType, string query, string targetFilePath, bool tolerateQueryErrors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ExportLog(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportLog(System::String ^ path, System::Diagnostics::Eventing::Reader::PathType pathType, System::String ^ query, System::String ^ targetFilePath, bool tolerateQueryErrors);" />
+      <MemberSignature Language="F#" Value="member this.ExportLog : string * System.Diagnostics.Eventing.Reader.PathType * string * string * bool -&gt; unit" Usage="eventLogSession.ExportLog (path, pathType, query, targetFilePath, tolerateQueryErrors)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -338,6 +408,8 @@
           <see langword="true" /> indicates that the method will continue exporting events even if the specified query fails for some logs, and <see langword="false" /> indicates that this method will not continue to export events when the specified query fails.</param>
         <summary>Exports events into an external log file. A flag can be set to indicate that the method will continue exporting events even if the specified query fails for some logs. The events are stored without the event messages.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ExportLogAndMessages">
@@ -354,9 +426,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportLogAndMessages(string path, valuetype System.Diagnostics.Eventing.Reader.PathType pathType, string query, string targetFilePath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ExportLogAndMessages(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportLogAndMessages(System::String ^ path, System::Diagnostics::Eventing::Reader::PathType pathType, System::String ^ query, System::String ^ targetFilePath);" />
+      <MemberSignature Language="F#" Value="member this.ExportLogAndMessages : string * System.Diagnostics.Eventing.Reader.PathType * string * string -&gt; unit" Usage="eventLogSession.ExportLogAndMessages (path, pathType, query, targetFilePath)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -387,6 +461,8 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/bb671205.aspx">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/bb671204.aspx">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="ExportLogAndMessages">
@@ -394,9 +470,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExportLogAndMessages(string path, valuetype System.Diagnostics.Eventing.Reader.PathType pathType, string query, string targetFilePath, bool tolerateQueryErrors, class System.Globalization.CultureInfo targetCultureInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.ExportLogAndMessages(System.String,System.Diagnostics.Eventing.Reader.PathType,System.String,System.String,System.Boolean,System.Globalization.CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExportLogAndMessages(System::String ^ path, System::Diagnostics::Eventing::Reader::PathType pathType, System::String ^ query, System::String ^ targetFilePath, bool tolerateQueryErrors, System::Globalization::CultureInfo ^ targetCultureInfo);" />
+      <MemberSignature Language="F#" Value="member this.ExportLogAndMessages : string * System.Diagnostics.Eventing.Reader.PathType * string * string * bool * System.Globalization.CultureInfo -&gt; unit" Usage="eventLogSession.ExportLogAndMessages (path, pathType, query, targetFilePath, tolerateQueryErrors, targetCultureInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -427,6 +505,8 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/bb671205.aspx">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/bb671204.aspx">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="GetLogInformation">
@@ -434,9 +514,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Diagnostics.Eventing.Reader.EventLogInformation GetLogInformation(string logName, valuetype System.Diagnostics.Eventing.Reader.PathType pathType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.GetLogInformation(System.String,System.Diagnostics.Eventing.Reader.PathType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::Eventing::Reader::EventLogInformation ^ GetLogInformation(System::String ^ logName, System::Diagnostics::Eventing::Reader::PathType pathType);" />
+      <MemberSignature Language="F#" Value="member this.GetLogInformation : string * System.Diagnostics.Eventing.Reader.PathType -&gt; System.Diagnostics.Eventing.Reader.EventLogInformation" Usage="eventLogSession.GetLogInformation (logName, pathType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -452,6 +534,8 @@
         <summary>Gets an object that contains runtime information for the specified event log.</summary>
         <returns>Returns an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogInformation" /> object that contains information about the specified log.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="GetLogNames">
@@ -460,13 +544,15 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.GetLogNames" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLogNames () As IEnumerable(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ GetLogNames();" />
+      <MemberSignature Language="F#" Value="member this.GetLogNames : unit -&gt; seq&lt;string&gt;" Usage="eventLogSession.GetLogNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -478,6 +564,8 @@
         <summary>Gets an enumerable collection of all the event log names that are registered with the Event Log service.</summary>
         <returns>Returns an enumerable collection of strings that contain the event log names.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="GetProviderNames">
@@ -486,13 +574,15 @@
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.Reader.EventLogSession.GetProviderNames" />
       <MemberSignature Language="VB.NET" Value="Public Function GetProviderNames () As IEnumerable(Of String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ GetProviderNames();" />
+      <MemberSignature Language="F#" Value="member this.GetProviderNames : unit -&gt; seq&lt;string&gt;" Usage="eventLogSession.GetProviderNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -504,6 +594,8 @@
         <summary>Gets an enumerable collection of all the event provider names that are registered with the Event Log service. An event provider is an application that publishes events to an event log.</summary>
         <returns>Returns an enumerable collection of strings that contain the event provider names.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
     <Member MemberName="GlobalSession">
@@ -512,11 +604,18 @@
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogSession.GlobalSession" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GlobalSession As EventLogSession" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Diagnostics::Eventing::Reader::EventLogSession ^ GlobalSession { System::Diagnostics::Eventing::Reader::EventLogSession ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.GlobalSession : System.Diagnostics.Eventing.Reader.EventLogSession" Usage="System.Diagnostics.Eventing.Reader.EventLogSession.GlobalSession" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.EventLogSession</ReturnType>
       </ReturnValue>
@@ -524,6 +623,8 @@
         <summary>Gets a static predefined session object that is connected to the Event Log service on the local computer.</summary>
         <value>Returns an <see cref="T:System.Diagnostics.Eventing.Reader.EventLogSession" /> object that is a predefined session object that is connected to the Event Log service on the local computer.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
       </Docs>
     </Member>
   </Members>

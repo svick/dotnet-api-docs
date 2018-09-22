@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowQueue" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowQueue" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowQueue" />
+  <TypeSignature Language="F#" Value="type WorkflowQueue = class" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
   </Attributes>
@@ -34,13 +36,15 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.WorkflowQueue> by calling the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A?displayProperty=nameWithType> method. It also uses the <xref:System.Workflow.Runtime.WorkflowQueue.Count%2A> property to determine whether any messages exist in the current queue. Finally, the code uses the <xref:System.Workflow.Runtime.WorkflowQueue.Dequeue%2A> method to remove and return the first object in the queue.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)).  
   
  [!code-csharp[WF_Samples#227](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#227)]
  [!code-vb[WF_Samples#227](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#227)]  
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735924(v=vs.90)">Workflow and Application Communication</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)">File System Watcher Activity</related>
   </Docs>
   <Members>
     <Member MemberName="Count">
@@ -49,9 +53,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueue.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Workflow.Runtime.WorkflowQueue.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,13 +72,14 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.WorkflowQueue> by calling the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A?displayProperty=nameWithType> method. It also uses the <xref:System.Workflow.Runtime.WorkflowQueue.Count%2A> property to determine whether any messages exist in the current queue. Finally, the code uses the <xref:System.Workflow.Runtime.WorkflowQueue.Dequeue%2A> method to remove and return the first object in the queue.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)).  
   
  [!code-csharp[WF_Samples#227](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#227)]
  [!code-vb[WF_Samples#227](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#227)]  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)">File System Watcher Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Dequeue">
@@ -81,9 +88,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.Dequeue" />
       <MemberSignature Language="VB.NET" Value="Public Function Dequeue () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Dequeue();" />
+      <MemberSignature Language="F#" Value="member this.Dequeue : unit -&gt; obj" Usage="workflowQueue.Dequeue " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,7 +113,7 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.WorkflowQueue> by calling the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A?displayProperty=nameWithType> method. It also uses the <xref:System.Workflow.Runtime.WorkflowQueue.Count%2A> property to determine whether any messages exist in the current queue. Finally, the code uses the <xref:System.Workflow.Runtime.WorkflowQueue.Dequeue%2A> method to remove and return the first object in the queue.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)).  
   
  [!code-csharp[WF_Samples#227](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#227)]
  [!code-vb[WF_Samples#227](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#227)]  
@@ -112,6 +121,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Workflow.Runtime.WorkflowQueue" /> is empty.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)">File System Watcher Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -120,9 +130,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueue.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Workflow.Runtime.WorkflowQueue.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -141,9 +153,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.Enqueue(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Enqueue (item As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Enqueue(System::Object ^ item);" />
+      <MemberSignature Language="F#" Value="member this.Enqueue : obj -&gt; unit" Usage="workflowQueue.Enqueue item" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,9 +179,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.Peek" />
       <MemberSignature Language="VB.NET" Value="Public Function Peek () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Peek();" />
+      <MemberSignature Language="F#" Value="member this.Peek : unit -&gt; obj" Usage="workflowQueue.Peek " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,9 +210,11 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowQueue.QueueItemArrived" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event QueueItemArrived As EventHandler(Of QueueEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ QueueItemArrived;" />
+      <MemberSignature Language="F#" Value="member this.QueueItemArrived : EventHandler&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; " Usage="member this.QueueItemArrived : System.EventHandler&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -220,9 +238,11 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event QueueItemAvailable As EventHandler(Of QueueEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ QueueItemAvailable;" />
+      <MemberSignature Language="F#" Value="member this.QueueItemAvailable : EventHandler&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; " Usage="member this.QueueItemAvailable : System.EventHandler&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -246,9 +266,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueue.QueueName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueueName As IComparable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IComparable ^ QueueName { IComparable ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueueName : IComparable" Usage="System.Workflow.Runtime.WorkflowQueue.QueueName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -273,9 +295,11 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueue.QueuingService" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueuingService As WorkflowQueuingService" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::WorkflowQueuingService ^ QueuingService { System::Workflow::Runtime::WorkflowQueuingService ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueuingService : System.Workflow.Runtime.WorkflowQueuingService" Usage="System.Workflow.Runtime.WorkflowQueue.QueuingService" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -293,9 +317,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.RegisterForQueueItemArrived(System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterForQueueItemArrived (eventListener As IActivityEventListener(Of QueueEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterForQueueItemArrived(System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ eventListener);" />
+      <MemberSignature Language="F#" Value="member this.RegisterForQueueItemArrived : System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; -&gt; unit" Usage="workflowQueue.RegisterForQueueItemArrived eventListener" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -333,9 +359,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.RegisterForQueueItemAvailable(System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterForQueueItemAvailable (eventListener As IActivityEventListener(Of QueueEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterForQueueItemAvailable(System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ eventListener);" />
+      <MemberSignature Language="F#" Value="member this.RegisterForQueueItemAvailable : System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; -&gt; unit" Usage="workflowQueue.RegisterForQueueItemAvailable eventListener" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -353,7 +381,7 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.WorkflowQueue> by calling the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A?displayProperty=nameWithType> method. It also uses the <xref:System.Workflow.Runtime.WorkflowQueue.RegisterForQueueItemAvailable%2A> to register the specified listener.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)).  
   
  [!code-csharp[WF_Samples#225](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#225)]
  [!code-vb[WF_Samples#225](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#225)]  
@@ -362,6 +390,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="eventListener" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)">File System Watcher Activity</related>
       </Docs>
     </Member>
     <Member MemberName="RegisterForQueueItemAvailable">
@@ -370,9 +399,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.RegisterForQueueItemAvailable(System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs},System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RegisterForQueueItemAvailable (eventListener As IActivityEventListener(Of QueueEventArgs), subscriberQualifiedName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterForQueueItemAvailable(System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ eventListener, System::String ^ subscriberQualifiedName);" />
+      <MemberSignature Language="F#" Value="member this.RegisterForQueueItemAvailable : System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; * string -&gt; unit" Usage="workflowQueue.RegisterForQueueItemAvailable (eventListener, subscriberQualifiedName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -404,9 +435,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.UnregisterForQueueItemArrived(System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnregisterForQueueItemArrived (eventListener As IActivityEventListener(Of QueueEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnregisterForQueueItemArrived(System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ eventListener);" />
+      <MemberSignature Language="F#" Value="member this.UnregisterForQueueItemArrived : System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; -&gt; unit" Usage="workflowQueue.UnregisterForQueueItemArrived eventListener" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -436,9 +469,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.UnregisterForQueueItemAvailable(System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs})" />
       <MemberSignature Language="VB.NET" Value="Public Sub UnregisterForQueueItemAvailable (eventListener As IActivityEventListener(Of QueueEventArgs))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnregisterForQueueItemAvailable(System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ eventListener);" />
+      <MemberSignature Language="F#" Value="member this.UnregisterForQueueItemAvailable : System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; -&gt; unit" Usage="workflowQueue.UnregisterForQueueItemAvailable eventListener" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -456,7 +491,7 @@
 ## Examples  
  The following code example demonstrates how you can create a <xref:System.Workflow.Runtime.WorkflowQueue> by calling the <xref:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue%2A?displayProperty=nameWithType> method. It also uses the <xref:System.Workflow.Runtime.WorkflowQueue.UnregisterForQueueItemAvailable%2A> to unregister the specified listener.  
   
- This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](http://msdn.microsoft.com/library/5442b63a-bdad-43d0-b7cf-f0b5d8b56a99).  
+ This code example is part of the File Watcher Activity SDK Sample from the FileSystemEvent.cs file. For more information, see [File System Watcher Activity](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)).  
   
  [!code-csharp[WF_Samples#226](~/samples/snippets/csharp/VS_Snippets_CFX/wf_samples/cs/snippets24.cs#226)]
  [!code-vb[WF_Samples#226](~/samples/snippets/visualbasic/VS_Snippets_CFX/wf_samples/vb/snippets24.vb#226)]  
@@ -465,6 +500,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="eventListener" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms741707(v=vs.90)">File System Watcher Activity</related>
       </Docs>
     </Member>
   </Members>

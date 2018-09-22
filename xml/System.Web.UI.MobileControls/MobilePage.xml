@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.MobilePage" />
   <TypeSignature Language="VB.NET" Value="Public Class MobilePage&#xA;Inherits Page" />
   <TypeSignature Language="C++ CLI" Value="public ref class MobilePage : System::Web::UI::Page" />
+  <TypeSignature Language="F#" Value="type MobilePage = class&#xA;    inherit Page" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,14 +16,20 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Designer("Microsoft.VisualStudio.Web.WebForms.MobileWebFormDesigner, Microsoft.VisualStudio.Web, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.ComponentModel.Design.IRootDesigner))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>System.ComponentModel.Designer("Microsoft.VSDesigner.MobileWebForms.MobileWebFormDesigner, Microsoft.VSDesigner.Mobile, Version=7.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.ComponentModel.Design.IRootDesigner))</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.Designer("Microsoft.VisualStudio.Web.WebForms.MobileWebFormDesigner, Microsoft.VisualStudio.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.ComponentModel.Design.IRootDesigner))</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -44,6 +53,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,12 +66,16 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Web.UI.MobileControls.MobilePage" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AbsoluteFilePath">
@@ -69,13 +84,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.AbsoluteFilePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AbsoluteFilePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AbsoluteFilePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AbsoluteFilePath : string" Usage="System.Web.UI.MobileControls.MobilePage.AbsoluteFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -93,6 +111,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ActiveForm">
@@ -101,20 +121,26 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.ActiveForm" />
       <MemberSignature Language="VB.NET" Value="Public Property ActiveForm As Form" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Form ^ ActiveForm { System::Web::UI::MobileControls::Form ^ get(); void set(System::Web::UI::MobileControls::Form ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveForm : System.Web.UI.MobileControls.Form with get, set" Usage="System.Web.UI.MobileControls.MobilePage.ActiveForm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -143,6 +169,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The page does not contain any forms.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Adapter">
@@ -151,20 +179,26 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.Adapter" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Adapter As IPageAdapter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::IPageAdapter ^ Adapter { System::Web::UI::MobileControls::IPageAdapter ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Adapter : System.Web.UI.MobileControls.IPageAdapter" Usage="System.Web.UI.MobileControls.MobilePage.Adapter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -174,6 +208,11 @@
         <summary>Gets the device-specific adapter for the control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The device-specific adapter for the control.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">Introduction to Mobile Application Development in ASP.NET</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AddedControl">
@@ -181,9 +220,12 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddedControl(class System.Web.UI.Control control, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.AddedControl(System.Web.UI.Control,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddedControl(System::Web::UI::Control ^ control, int index);" />
+      <MemberSignature Language="F#" Value="abstract member AddedControl : System.Web.UI.Control * int -&gt; unit&#xA;override this.AddedControl : System.Web.UI.Control * int -&gt; unit" Usage="mobilePage.AddedControl (control, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -205,6 +247,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddParsedSubObject">
@@ -213,9 +256,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.AddParsedSubObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddParsedSubObject (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddParsedSubObject(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="abstract member AddParsedSubObject : obj -&gt; unit&#xA;override this.AddParsedSubObject : obj -&gt; unit" Usage="mobilePage.AddParsedSubObject o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -238,6 +284,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Exception">The <see cref="P:System.Web.UI.MobileControls.MobilePage.StyleSheet" /> property has already been set.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AllowCustomAttributes">
@@ -246,20 +293,26 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.AllowCustomAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowCustomAttributes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowCustomAttributes { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowCustomAttributes : bool with get, set" Usage="System.Web.UI.MobileControls.MobilePage.AllowCustomAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -292,6 +345,8 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.MobileControl.CustomAttributes" />
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ClientViewState">
@@ -300,20 +355,26 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.ClientViewState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientViewState As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClientViewState { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClientViewState : string" Usage="System.Web.UI.MobileControls.MobilePage.ClientViewState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -323,6 +384,9 @@
         <summary>Gets the view-state information, which combines private view state and an identifier for application view state, to write to the client in encoded form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The view-state information, which combines private view state and an identifier for application view state.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateHtmlTextWriter">
@@ -331,9 +395,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.CreateHtmlTextWriter(System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateHtmlTextWriter (writer As TextWriter) As HtmlTextWriter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::HtmlTextWriter ^ CreateHtmlTextWriter(System::IO::TextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member CreateHtmlTextWriter : System.IO.TextWriter -&gt; System.Web.UI.HtmlTextWriter&#xA;override this.CreateHtmlTextWriter : System.IO.TextWriter -&gt; System.Web.UI.HtmlTextWriter" Usage="mobilePage.CreateHtmlTextWriter writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -360,6 +427,9 @@
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter" />
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.ChtmlMobileTextWriter" />
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter" />
+        <related type="Article" href="https://msdn.microsoft.com/library/bdfeaa58-dedd-4c0d-8610-988aac0eff19(v=vs.100)">ASP.NET Device Filtering Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/8437a6a5-855c-4637-8654-75a87b293847">Adapter Mappings</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DesignMode">
@@ -368,22 +438,31 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.DesignMode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignMode As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DesignMode { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.DesignMode : bool" Usage="System.Web.UI.MobileControls.MobilePage.DesignMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -395,6 +474,8 @@
         <value>
           <see langword="true" /> if the page is being instantiated in design mode; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeterminePostBackMode">
@@ -403,9 +484,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.DeterminePostBackMode" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function DeterminePostBackMode () As NameValueCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Specialized::NameValueCollection ^ DeterminePostBackMode();" />
+      <MemberSignature Language="F#" Value="abstract member DeterminePostBackMode : unit -&gt; System.Collections.Specialized.NameValueCollection&#xA;override this.DeterminePostBackMode : unit -&gt; System.Collections.Specialized.NameValueCollection" Usage="mobilePage.DeterminePostBackMode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -423,6 +507,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Device">
@@ -431,20 +516,26 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.Device" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Device As MobileCapabilities" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Mobile::MobileCapabilities ^ Device { System::Web::Mobile::MobileCapabilities ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Device : System.Web.Mobile.MobileCapabilities" Usage="System.Web.UI.MobileControls.MobilePage.Device" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -463,6 +554,8 @@
         </remarks>
         <altmember cref="T:System.Web.Mobile.MobileCapabilities" />
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.ControlAdapter" />
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableEventValidation">
@@ -471,9 +564,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.EnableEventValidation" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableEventValidation As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableEventValidation { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableEventValidation : bool with get, set" Usage="System.Web.UI.MobileControls.MobilePage.EnableEventValidation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -494,6 +589,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set this property.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTheming">
@@ -502,16 +598,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.EnableTheming" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableTheming As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableTheming { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableTheming : bool with get, set" Usage="System.Web.UI.MobileControls.MobilePage.EnableTheming" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -531,6 +632,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set this property. The value of this property cannot be changed.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Forms">
@@ -539,20 +641,26 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.Forms" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Forms As IList" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ Forms { System::Collections::IList ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Forms : System.Collections.IList" Usage="System.Web.UI.MobileControls.MobilePage.Forms" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -562,6 +670,9 @@
         <summary>Gets the collection of forms on the specified <see cref="T:System.Web.UI.MobileControls.MobilePage" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The collection of forms that is contained in the page.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/0140DAA7-3C17-40DF-8C63-FDFC3AD8E803">Forms</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetControlAdapter">
@@ -570,9 +681,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.GetControlAdapter(System.Web.UI.MobileControls.MobileControl)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetControlAdapter (control As MobileControl) As IControlAdapter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::MobileControls::IControlAdapter ^ GetControlAdapter(System::Web::UI::MobileControls::MobileControl ^ control);" />
+      <MemberSignature Language="F#" Value="abstract member GetControlAdapter : System.Web.UI.MobileControls.MobileControl -&gt; System.Web.UI.MobileControls.IControlAdapter&#xA;override this.GetControlAdapter : System.Web.UI.MobileControls.MobileControl -&gt; System.Web.UI.MobileControls.IControlAdapter" Usage="mobilePage.GetControlAdapter control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -593,6 +707,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetForm">
@@ -601,9 +717,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.GetForm(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetForm (id As String) As Form" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::MobileControls::Form ^ GetForm(System::String ^ id);" />
+      <MemberSignature Language="F#" Value="member this.GetForm : string -&gt; System.Web.UI.MobileControls.Form" Usage="mobilePage.GetForm id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -626,6 +745,8 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The requested form was not found.</exception>
         <altmember cref="T:System.Web.UI.MobileControls.Form" />
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPrivateViewState">
@@ -634,9 +755,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.GetPrivateViewState(System.Web.UI.MobileControls.MobileControl)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPrivateViewState (ctl As MobileControl) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetPrivateViewState(System::Web::UI::MobileControls::MobileControl ^ ctl);" />
+      <MemberSignature Language="F#" Value="member this.GetPrivateViewState : System.Web.UI.MobileControls.MobileControl -&gt; obj" Usage="mobilePage.GetPrivateViewState ctl" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -657,6 +781,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HasHiddenVariables">
@@ -665,9 +791,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.HasHiddenVariables" />
       <MemberSignature Language="VB.NET" Value="Public Function HasHiddenVariables () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasHiddenVariables();" />
+      <MemberSignature Language="F#" Value="member this.HasHiddenVariables : unit -&gt; bool" Usage="mobilePage.HasHiddenVariables " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -679,6 +808,8 @@
         <returns>
           <see langword="true" /> if the page has any hidden variables defined; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HiddenPostEventArgumentId">
@@ -687,9 +818,12 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobilePage.HiddenPostEventArgumentId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HiddenPostEventArgumentId As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ HiddenPostEventArgumentId;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HiddenPostEventArgumentId : string" Usage="System.Web.UI.MobileControls.MobilePage.HiddenPostEventArgumentId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -705,6 +839,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HiddenPostEventSourceId">
@@ -713,9 +850,12 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobilePage.HiddenPostEventSourceId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HiddenPostEventSourceId As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ HiddenPostEventSourceId;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HiddenPostEventSourceId : string" Usage="System.Web.UI.MobileControls.MobilePage.HiddenPostEventSourceId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -733,6 +873,9 @@
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.MobilePage.HiddenVariables" />
         <altmember cref="F:System.Web.UI.MobileControls.MobilePage.HiddenVariablePrefix" />
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HiddenVariablePrefix">
@@ -741,9 +884,12 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobilePage.HiddenVariablePrefix" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HiddenVariablePrefix As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ HiddenVariablePrefix;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HiddenVariablePrefix : string" Usage="System.Web.UI.MobileControls.MobilePage.HiddenVariablePrefix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -752,6 +898,8 @@
       <Docs>
         <summary>Returns the prefix to use to render hidden variables. This field is read-only. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HiddenVariables">
@@ -760,20 +908,26 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.HiddenVariables" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HiddenVariables As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ HiddenVariables { System::Collections::IDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HiddenVariables : System.Collections.IDictionary" Usage="System.Web.UI.MobileControls.MobilePage.HiddenVariables" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -783,6 +937,9 @@
         <summary>Gets a dictionary of hidden variables on the specified <see cref="T:System.Web.UI.MobileControls.MobilePage" /> object. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A dictionary of the hidden variables that is contained in the page.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IdSeparator">
@@ -791,9 +948,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.IdSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IdSeparator As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property char IdSeparator { char get(); };" />
+      <MemberSignature Language="F#" Value="member this.IdSeparator : char" Usage="System.Web.UI.MobileControls.MobilePage.IdSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -811,6 +970,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.Page.ID" />
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="InitOutputCache">
@@ -836,9 +996,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.InitOutputCache(System.Int32,System.String,System.String,System.Web.UI.OutputCacheLocation,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitOutputCache (duration As Integer, varyByHeader As String, varyByCustom As String, location As OutputCacheLocation, varyByParam As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitOutputCache(int duration, System::String ^ varyByHeader, System::String ^ varyByCustom, System::Web::UI::OutputCacheLocation location, System::String ^ varyByParam);" />
+      <MemberSignature Language="F#" Value="abstract member InitOutputCache : int * string * string * System.Web.UI.OutputCacheLocation * string -&gt; unit&#xA;override this.InitOutputCache : int * string * string * System.Web.UI.OutputCacheLocation * string -&gt; unit" Usage="mobilePage.InitOutputCache (duration, varyByHeader, varyByCustom, location, varyByParam)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -866,6 +1029,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="InitOutputCache">
@@ -874,9 +1038,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.InitOutputCache(System.Int32,System.String,System.String,System.String,System.Web.UI.OutputCacheLocation,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitOutputCache (duration As Integer, varyByContentEncoding As String, varyByHeader As String, varyByCustom As String, location As OutputCacheLocation, varyByParam As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitOutputCache(int duration, System::String ^ varyByContentEncoding, System::String ^ varyByHeader, System::String ^ varyByCustom, System::Web::UI::OutputCacheLocation location, System::String ^ varyByParam);" />
+      <MemberSignature Language="F#" Value="abstract member InitOutputCache : int * string * string * string * System.Web.UI.OutputCacheLocation * string -&gt; unit&#xA;override this.InitOutputCache : int * string * string * string * System.Web.UI.OutputCacheLocation * string -&gt; unit" Usage="mobilePage.InitOutputCache (duration, varyByContentEncoding, varyByHeader, varyByCustom, location, varyByParam)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -906,6 +1072,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoadPageStateFromPersistenceMedium">
@@ -914,9 +1081,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.LoadPageStateFromPersistenceMedium" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function LoadPageStateFromPersistenceMedium () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ LoadPageStateFromPersistenceMedium();" />
+      <MemberSignature Language="F#" Value="abstract member LoadPageStateFromPersistenceMedium : unit -&gt; obj&#xA;override this.LoadPageStateFromPersistenceMedium : unit -&gt; obj" Usage="mobilePage.LoadPageStateFromPersistenceMedium " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -935,6 +1105,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.MobilePage.SavePageStateToPersistenceMedium(System.Object)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -943,9 +1114,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="abstract member LoadViewState : obj -&gt; unit&#xA;override this.LoadViewState : obj -&gt; unit" Usage="mobilePage.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -961,13 +1135,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is primarily used by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce).  
+ This method is primarily used by the .NET Framework infrastructure and is not intended to be used directly from your code. However, control developers can override this method to specify how a custom server control restores its view state. For more information, see [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)).  
   
  This member overrides the <xref:System.Web.UI.Control.LoadViewState%2A?displayProperty=nameWithType> method and saves any existing adapter state with the view state in an object array.  
   
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.MobilePage.SaveViewState" />
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MakePathAbsolute">
@@ -976,9 +1151,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.MakePathAbsolute(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function MakePathAbsolute (virtualPath As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ MakePathAbsolute(System::String ^ virtualPath);" />
+      <MemberSignature Language="F#" Value="member this.MakePathAbsolute : string -&gt; string" Usage="mobilePage.MakePathAbsolute virtualPath" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -999,6 +1177,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MasterPageFile">
@@ -1007,22 +1187,30 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.MasterPageFile" />
       <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Property MasterPageFile As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MasterPageFile { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MasterPageFile : string with get, set" Usage="System.Web.UI.MobileControls.MobilePage.MasterPageFile" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1042,6 +1230,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set this property. Master pages are not supported on mobile pages.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnDeviceCustomize">
@@ -1050,9 +1239,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnDeviceCustomize(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDeviceCustomize (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDeviceCustomize(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDeviceCustomize : EventArgs -&gt; unit&#xA;override this.OnDeviceCustomize : EventArgs -&gt; unit" Usage="mobilePage.OnDeviceCustomize e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1072,6 +1264,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/k20acyeh(v=vs.85)">Introduction to the DeviceSpecific Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnError">
@@ -1080,9 +1275,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnError(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnError (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnError(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnError : EventArgs -&gt; unit&#xA;override this.OnError : EventArgs -&gt; unit" Usage="mobilePage.OnError e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1102,6 +1300,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -1110,9 +1309,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnInit : EventArgs -&gt; unit&#xA;override this.OnInit : EventArgs -&gt; unit" Usage="mobilePage.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1132,6 +1334,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
@@ -1140,9 +1343,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnLoad(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLoad (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLoad(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLoad : EventArgs -&gt; unit&#xA;override this.OnLoad : EventArgs -&gt; unit" Usage="mobilePage.OnLoad e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1162,6 +1368,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreInit">
@@ -1170,9 +1377,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnPreInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPreInit : EventArgs -&gt; unit&#xA;override this.OnPreInit : EventArgs -&gt; unit" Usage="mobilePage.OnPreInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1192,6 +1401,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
@@ -1200,9 +1410,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnPreRender(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreRender (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPreRender : EventArgs -&gt; unit&#xA;override this.OnPreRender : EventArgs -&gt; unit" Usage="mobilePage.OnPreRender e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1222,6 +1435,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnUnload">
@@ -1230,9 +1444,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnUnload(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnUnload (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnUnload(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnUnload : EventArgs -&gt; unit&#xA;override this.OnUnload : EventArgs -&gt; unit" Usage="mobilePage.OnUnload e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1252,6 +1469,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnViewStateExpire">
@@ -1260,9 +1478,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.OnViewStateExpire(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnViewStateExpire (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnViewStateExpire(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnViewStateExpire : EventArgs -&gt; unit&#xA;override this.OnViewStateExpire : EventArgs -&gt; unit" Usage="mobilePage.OnViewStateExpire e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1291,6 +1512,8 @@
  -or-  
   
  The session state history has exceeded its allocated size.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="PageClientViewStateKey">
@@ -1299,9 +1522,12 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobilePage.PageClientViewStateKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PageClientViewStateKey As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ PageClientViewStateKey;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PageClientViewStateKey : string" Usage="System.Web.UI.MobileControls.MobilePage.PageClientViewStateKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1313,10 +1539,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This field is used by adapters to render private view state. For more information, see the [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce) documentation.  
+ This field is used by adapters to render private view state. For more information, see the [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)) documentation.  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="QueryStringText">
@@ -1325,13 +1555,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.QueryStringText" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueryStringText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QueryStringText { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.QueryStringText : string" Usage="System.Web.UI.MobileControls.MobilePage.QueryStringText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1352,6 +1585,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -1360,9 +1595,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.RaisePostBackEvent(System.Web.UI.IPostBackEventHandler,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RaisePostBackEvent (sourceControl As IPostBackEventHandler, eventArgument As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RaisePostBackEvent(System::Web::UI::IPostBackEventHandler ^ sourceControl, System::String ^ eventArgument);" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : System.Web.UI.IPostBackEventHandler * string -&gt; unit&#xA;override this.RaisePostBackEvent : System.Web.UI.IPostBackEventHandler * string -&gt; unit" Usage="mobilePage.RaisePostBackEvent (sourceControl, eventArgument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1384,6 +1622,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="RedirectToMobilePage">
@@ -1393,6 +1632,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Redirects to another mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="RedirectToMobilePage">
@@ -1401,9 +1642,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.RedirectToMobilePage(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RedirectToMobilePage (url As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedirectToMobilePage(System::String ^ url);" />
+      <MemberSignature Language="F#" Value="member this.RedirectToMobilePage : string -&gt; unit" Usage="mobilePage.RedirectToMobilePage url" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1416,6 +1660,8 @@
         <param name="url">The URL of the redirect action.</param>
         <summary>Redirects to another mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RedirectToMobilePage">
@@ -1424,9 +1670,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.RedirectToMobilePage(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RedirectToMobilePage (url As String, endResponse As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedirectToMobilePage(System::String ^ url, bool endResponse);" />
+      <MemberSignature Language="F#" Value="member this.RedirectToMobilePage : string * bool -&gt; unit" Usage="mobilePage.RedirectToMobilePage (url, endResponse)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1442,6 +1691,8 @@
         <summary>Redirects to a specified mobile page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.HttpResponse.Redirect(System.String,System.Boolean)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RelativeFilePath">
@@ -1450,13 +1701,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.RelativeFilePath" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelativeFilePath As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelativeFilePath { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.RelativeFilePath : string" Usage="System.Web.UI.MobileControls.MobilePage.RelativeFilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1467,6 +1721,8 @@
         <summary>Gets a relative URL to the page. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A relative URL to the page.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RemovedControl">
@@ -1474,9 +1730,12 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemovedControl(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.RemovedControl(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemovedControl(System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="abstract member RemovedControl : System.Web.UI.Control -&gt; unit&#xA;override this.RemovedControl : System.Web.UI.Control -&gt; unit" Usage="mobilePage.RemovedControl control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1498,6 +1757,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.Form" />
         <altmember cref="P:System.Web.UI.MobileControls.MobilePage.Forms" />
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -1506,9 +1766,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member Render : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="mobilePage.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1528,6 +1791,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RenderControl">
@@ -1536,9 +1800,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.RenderControl(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RenderControl (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RenderControl(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member RenderControl : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderControl : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="mobilePage.RenderControl writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1558,6 +1824,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SavePageStateToPersistenceMedium">
@@ -1566,9 +1833,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.SavePageStateToPersistenceMedium(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SavePageStateToPersistenceMedium (view As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SavePageStateToPersistenceMedium(System::Object ^ view);" />
+      <MemberSignature Language="F#" Value="abstract member SavePageStateToPersistenceMedium : obj -&gt; unit&#xA;override this.SavePageStateToPersistenceMedium : obj -&gt; unit" Usage="mobilePage.SavePageStateToPersistenceMedium view" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1590,6 +1860,7 @@
         </remarks>
         <exception cref="T:System.Exception">Session state is disabled or read-only.</exception>
         <altmember cref="M:System.Web.UI.MobileControls.MobilePage.LoadPageStateFromPersistenceMedium" />
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -1598,9 +1869,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="abstract member SaveViewState : unit -&gt; obj&#xA;override this.SaveViewState : unit -&gt; obj" Usage="mobilePage.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1619,6 +1893,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.MobileControls.MobilePage.LoadViewState(System.Object)" />
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StyleSheet">
@@ -1627,20 +1902,26 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.StyleSheet" />
       <MemberSignature Language="VB.NET" Value="Public Property StyleSheet As StyleSheet" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::StyleSheet ^ StyleSheet { System::Web::UI::MobileControls::StyleSheet ^ get(); void set(System::Web::UI::MobileControls::StyleSheet ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StyleSheet : System.Web.UI.MobileControls.StyleSheet with get, set" Usage="System.Web.UI.MobileControls.MobilePage.StyleSheet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1657,6 +1938,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StyleSheetTheme">
@@ -1665,13 +1949,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.StyleSheetTheme" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property StyleSheetTheme As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StyleSheetTheme { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StyleSheetTheme : string with get, set" Usage="System.Web.UI.MobileControls.MobilePage.StyleSheetTheme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1691,6 +1980,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set this property. Themes are not supported on Mobile Web Forms pages.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Theme">
@@ -1699,13 +1989,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.Theme" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Theme As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Theme { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Theme : string with get, set" Usage="System.Web.UI.MobileControls.MobilePage.Theme" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1724,6 +2019,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set this property. Themes are not supported on Mobile Web Forms pages.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Title">
@@ -1732,20 +2028,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.Title" />
       <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Web.UI.MobileControls.MobilePage.Title" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1756,6 +2057,7 @@
         <value>An empty string.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to set the <see cref="P:System.Web.UI.MobileControls.MobilePage.Title" /> property.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UniqueFilePathSuffix">
@@ -1764,13 +2066,16 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobilePage.UniqueFilePathSuffix" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UniqueFilePathSuffix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UniqueFilePathSuffix { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UniqueFilePathSuffix : string" Usage="System.Web.UI.MobileControls.MobilePage.UniqueFilePathSuffix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1796,9 +2101,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.Validate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate();" />
+      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="mobilePage.Validate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1815,13 +2123,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void VerifyRenderingInServerForm(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobilePage.VerifyRenderingInServerForm(System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void VerifyRenderingInServerForm(System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="abstract member VerifyRenderingInServerForm : System.Web.UI.Control -&gt; unit&#xA;override this.VerifyRenderingInServerForm : System.Web.UI.Control -&gt; unit" Usage="mobilePage.VerifyRenderingInServerForm control" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1844,6 +2158,7 @@
         </remarks>
         <exception cref="T:System.Exception">
           <paramref name="control" /> must be contained in a <see cref="T:System.Web.UI.MobileControls.Form" /> control.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ViewStateID">
@@ -1852,9 +2167,12 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobilePage.ViewStateID" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ViewStateID As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ViewStateID;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ViewStateID : string" Usage="System.Web.UI.MobileControls.MobilePage.ViewStateID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1866,10 +2184,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This field is used by adapters to render view-state information. For more information, see the [ASP.NET State Management Overview](http://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce) documentation.  
+ This field is used by adapters to render view-state information. For more information, see the [ASP.NET State Management Overview](https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)) documentation.  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5C923438-9C89-472B-92FA-EE9894A498E2">Pages</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/f2bf0e0f-955c-4a75-a48f-97a01e3f4e2c">ASP.NET Mobile Application Development Overview</related>
       </Docs>
     </Member>
   </Members>

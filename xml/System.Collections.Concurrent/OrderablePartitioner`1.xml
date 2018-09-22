@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.OrderablePartitioner`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class OrderablePartitioner(Of TSource)&#xA;Inherits Partitioner(Of TSource)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TSource&gt;&#xA;public ref class OrderablePartitioner abstract : System::Collections::Concurrent::Partitioner&lt;TSource&gt;" />
+  <TypeSignature Language="F#" Value="type OrderablePartitioner&lt;'Source&gt; = class&#xA;    inherit Partitioner&lt;'Source&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Concurrent</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +50,8 @@
  ]]></format>
     </remarks>
     <threadsafe>All public members of <see cref="T:System.Collections.Concurrent.OrderablePartitioner`1" /> are thread-safe and may be called from multiple threads concurrently.</threadsafe>
+    <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -57,6 +60,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.OrderablePartitioner`1.#ctor(System.Boolean,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (keysOrderedInEachPartition As Boolean, keysOrderedAcrossPartitions As Boolean, keysNormalized As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; OrderablePartitioner(bool keysOrderedInEachPartition, bool keysOrderedAcrossPartitions, bool keysNormalized);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Concurrent.OrderablePartitioner&lt;'Source&gt; : bool * bool * bool -&gt; System.Collections.Concurrent.OrderablePartitioner&lt;'Source&gt;" Usage="new System.Collections.Concurrent.OrderablePartitioner&lt;'Source&gt; (keysOrderedInEachPartition, keysOrderedAcrossPartitions, keysNormalized)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -91,6 +95,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="GetDynamicPartitions">
@@ -99,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.OrderablePartitioner`1.GetDynamicPartitions" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDynamicPartitions () As IEnumerable(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ GetDynamicPartitions();" />
+      <MemberSignature Language="F#" Value="override this.GetDynamicPartitions : unit -&gt; seq&lt;'Source&gt;" Usage="orderablePartitioner.GetDynamicPartitions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -137,6 +146,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Dynamic partitioning is not supported by the base class. It must be implemented in derived classes.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="GetOrderableDynamicPartitions">
@@ -145,6 +158,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.OrderablePartitioner`1.GetOrderableDynamicPartitions" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetOrderableDynamicPartitions () As IEnumerable(Of KeyValuePair(Of Long, TSource))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;long, TSource&gt;&gt; ^ GetOrderableDynamicPartitions();" />
+      <MemberSignature Language="F#" Value="abstract member GetOrderableDynamicPartitions : unit -&gt; seq&lt;System.Collections.Generic.KeyValuePair&lt;int64, 'Source&gt;&gt;&#xA;override this.GetOrderableDynamicPartitions : unit -&gt; seq&lt;System.Collections.Generic.KeyValuePair&lt;int64, 'Source&gt;&gt;" Usage="orderablePartitioner.GetOrderableDynamicPartitions " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -183,6 +197,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">Dynamic partitioning is not supported by this partitioner.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="GetOrderablePartitions">
@@ -191,6 +209,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.OrderablePartitioner`1.GetOrderablePartitions(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetOrderablePartitions (partitionCount As Integer) As IList(Of IEnumerator(Of KeyValuePair(Of Long, TSource)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IList&lt;System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;long, TSource&gt;&gt; ^&gt; ^ GetOrderablePartitions(int partitionCount);" />
+      <MemberSignature Language="F#" Value="abstract member GetOrderablePartitions : int -&gt; System.Collections.Generic.IList&lt;System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;int64, 'Source&gt;&gt;&gt;" Usage="orderablePartitioner.GetOrderablePartitions partitionCount" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -229,6 +248,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="GetPartitions">
@@ -237,6 +260,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.OrderablePartitioner`1.GetPartitions(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPartitions (partitionCount As Integer) As IList(Of IEnumerator(Of TSource))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IList&lt;System::Collections::Generic::IEnumerator&lt;TSource&gt; ^&gt; ^ GetPartitions(int partitionCount);" />
+      <MemberSignature Language="F#" Value="override this.GetPartitions : int -&gt; System.Collections.Generic.IList&lt;System.Collections.Generic.IEnumerator&lt;'Source&gt;&gt;" Usage="orderablePartitioner.GetPartitions partitionCount" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -273,6 +297,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="KeysNormalized">
@@ -281,6 +309,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.OrderablePartitioner`1.KeysNormalized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeysNormalized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeysNormalized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeysNormalized : bool" Usage="System.Collections.Concurrent.OrderablePartitioner&lt;'Source&gt;.KeysNormalized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -321,6 +350,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.OrderablePartitioner`1.KeysOrderedAcrossPartitions" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeysOrderedAcrossPartitions As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeysOrderedAcrossPartitions { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeysOrderedAcrossPartitions : bool" Usage="System.Collections.Concurrent.OrderablePartitioner&lt;'Source&gt;.KeysOrderedAcrossPartitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -353,6 +383,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="KeysOrderedInEachPartition">
@@ -361,6 +395,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.OrderablePartitioner`1.KeysOrderedInEachPartition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeysOrderedInEachPartition As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeysOrderedInEachPartition { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.KeysOrderedInEachPartition : bool" Usage="System.Collections.Concurrent.OrderablePartitioner&lt;'Source&gt;.KeysOrderedInEachPartition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -391,6 +426,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
   </Members>

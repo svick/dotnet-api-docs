@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.IPolicyImportExtension" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPolicyImportExtension" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPolicyImportExtension" />
+  <TypeSignature Language="F#" Value="type IPolicyImportExtension = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -20,7 +22,7 @@
   
  Unlike its counterpart, <xref:System.ServiceModel.Description.IPolicyExportExtension>, <xref:System.ServiceModel.Description.IPolicyImportExtension> does not require implementation by a <xref:System.ServiceModel.Channels.BindingElement> object; you can load it using the client configuration section shown in the Examples section or programmatically by adding it to the <xref:System.ServiceModel.Description.WsdlImporter?displayProperty=nameWithType> constructor.  
   
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] passes two objects to the <xref:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy%2A> method, a <xref:System.ServiceModel.Description.MetadataImporter> and a <xref:System.ServiceModel.Description.PolicyConversionContext>. Typically the <xref:System.ServiceModel.Description.PolicyConversionContext> object already contains the policy assertions for each binding scope.  
+ Windows Communication Foundation (WCF) passes two objects to the <xref:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy%2A> method, a <xref:System.ServiceModel.Description.MetadataImporter> and a <xref:System.ServiceModel.Description.PolicyConversionContext>. Typically the <xref:System.ServiceModel.Description.PolicyConversionContext> object already contains the policy assertions for each binding scope.  
   
  An <xref:System.ServiceModel.Description.IPolicyImportExtension> implementation performs the following steps:  
   
@@ -69,9 +71,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy(System.ServiceModel.Description.MetadataImporter,System.ServiceModel.Description.PolicyConversionContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub ImportPolicy (importer As MetadataImporter, context As PolicyConversionContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ImportPolicy(System::ServiceModel::Description::MetadataImporter ^ importer, System::ServiceModel::Description::PolicyConversionContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member ImportPolicy : System.ServiceModel.Description.MetadataImporter * System.ServiceModel.Description.PolicyConversionContext -&gt; unit" Usage="iPolicyImportExtension.ImportPolicy (importer, context)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,7 +95,7 @@
 ## Remarks  
  Implement the `ImportPolicy` method to obtain policy assertions and perform some modification of the imported contract or binding to support the assertion. Typically, a policy importer responds to finding a custom policy assertion by configuring or inserting a binding element into the binding being imported.  
   
- [!INCLUDE[indigo1](~/includes/indigo1-md.md)] passes two objects to the <xref:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy%2A> method, a <xref:System.ServiceModel.Description.MetadataImporter> and a <xref:System.ServiceModel.Description.PolicyConversionContext>. Typically the <xref:System.ServiceModel.Description.PolicyConversionContext> object already contains the policy assertions for each binding scope.  
+ Windows Communication Foundation (WCF) passes two objects to the <xref:System.ServiceModel.Description.IPolicyImportExtension.ImportPolicy%2A> method, a <xref:System.ServiceModel.Description.MetadataImporter> and a <xref:System.ServiceModel.Description.PolicyConversionContext>. Typically the <xref:System.ServiceModel.Description.PolicyConversionContext> object already contains the policy assertions for each binding scope.  
   
  An <xref:System.ServiceModel.Description.IPolicyImportExtension> implementation performs the following steps:  
   

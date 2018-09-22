@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.StyleCollectionEditor" />
   <TypeSignature Language="VB.NET" Value="Public Class StyleCollectionEditor&#xA;Inherits CollectionEditor" />
   <TypeSignature Language="C++ CLI" Value="public ref class StyleCollectionEditor : System::ComponentModel::Design::CollectionEditor" />
+  <TypeSignature Language="F#" Value="type StyleCollectionEditor = class&#xA;    inherit CollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,6 +17,8 @@
   <Docs>
     <summary>Provides a design-time editor in a design host, such as Microsoft Visual Studio 2005, for a <see cref="T:System.Web.UI.WebControls.StyleCollection" /> object.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -22,11 +26,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.StyleCollectionEditor.#ctor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; StyleCollectionEditor(Type ^ type);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.StyleCollectionEditor : Type -&gt; System.Web.UI.Design.WebControls.StyleCollectionEditor" Usage="new System.Web.UI.Design.WebControls.StyleCollectionEditor type" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
@@ -34,6 +45,8 @@
         <param name="type">The type to create an instance of.</param>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.WebControls.StyleCollectionEditor" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
@@ -42,9 +55,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.StyleCollectionEditor.CreateInstance(System.Type)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstance (itemType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateInstance(Type ^ itemType);" />
+      <MemberSignature Language="F#" Value="override this.CreateInstance : Type -&gt; obj" Usage="styleCollectionEditor.CreateInstance itemType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -61,6 +76,8 @@
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Web.UI.Design.WebControls.StyleCollectionEditor.CreateInstance(System.Type)" /> method should throw an exception if it cannot create a new instance of the specified type.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

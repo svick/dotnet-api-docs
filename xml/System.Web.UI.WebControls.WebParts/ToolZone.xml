@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ToolZone" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class ToolZone&#xA;Inherits WebZone&#xA;Implements IPostBackEventHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolZone abstract : System::Web::UI::WebControls::WebParts::WebZone, System::Web::UI::IPostBackEventHandler" />
+  <TypeSignature Language="F#" Value="type ToolZone = class&#xA;    inherit WebZone&#xA;    interface IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -52,6 +54,10 @@
   
  To create a custom zone, you can override any of the virtual <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> members to fully customize the rendering, or you can override only a specific member. Optionally, you can also create a custom display mode for your zone by inheriting from the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> class, but this is not required. In the constructor of your zone, you should add the various display modes in which you want your zone to be displayed to a <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayModeCollection" /> object, so that your zone is visible when the page is in those display modes.</para>
     </block>
+    <related type="Article" href="http://msdn.microsoft.com/library/13525a0a-22b8-4861-b24c-99df859e2cb5">Introduction to Web Parts</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ff0149e4-695a-401a-8cda-53df6d7d2668">Overview: The Web Parts Control Set</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/24e42f74-82dc-4c13-8574-130398985fc0">Walkthrough: Changing Display Modes on a Web Parts Page</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -61,6 +67,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Associates one or more <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" /> objects with a particular type of <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> zone, enabling that zone to be displayed when a page is in the appropriate page display mode.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -69,9 +76,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.#ctor(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (associatedDisplayModes As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ToolZone(System::Collections::ICollection ^ associatedDisplayModes);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ToolZone : System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.ToolZone" Usage="new System.Web.UI.WebControls.WebParts.ToolZone associatedDisplayModes" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -92,6 +101,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="associatedDisplayModes" /> parameter is equal to <see langword="null" /> or 0.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -100,9 +110,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.#ctor(System.Web.UI.WebControls.WebParts.WebPartDisplayMode)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (associatedDisplayMode As WebPartDisplayMode)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; ToolZone(System::Web::UI::WebControls::WebParts::WebPartDisplayMode ^ associatedDisplayMode);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ToolZone : System.Web.UI.WebControls.WebParts.WebPartDisplayMode -&gt; System.Web.UI.WebControls.WebParts.ToolZone" Usage="new System.Web.UI.WebControls.WebParts.ToolZone associatedDisplayMode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -120,6 +132,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="associatedDisplayMode" /> parameter is equal to <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="AssociatedDisplayModes">
@@ -128,17 +141,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.AssociatedDisplayModes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssociatedDisplayModes As WebPartDisplayModeCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartDisplayModeCollection ^ AssociatedDisplayModes { System::Web::UI::WebControls::WebParts::WebPartDisplayModeCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AssociatedDisplayModes : System.Web.UI.WebControls.WebParts.WebPartDisplayModeCollection" Usage="System.Web.UI.WebControls.WebParts.ToolZone.AssociatedDisplayModes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -169,6 +190,7 @@
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartManager.SupportedDisplayModes" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.AssociatedWithToolZone" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Close">
@@ -177,9 +199,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.Close" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="toolZone.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -189,6 +213,7 @@
       <Docs>
         <summary>Provides a base method declaration that derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls can override to handle the details of closing a specialized zone.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Display">
@@ -197,9 +222,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.Display" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property Display As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool Display { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Display : bool" Usage="System.Web.UI.WebControls.WebParts.ToolZone.Display" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -219,6 +246,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.AssociatedDisplayModes" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="EditUIStyle">
@@ -227,23 +255,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditUIStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ EditUIStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.EditUIStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.ToolZone.EditUIStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -278,6 +311,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="HeaderCloseVerb">
@@ -286,23 +320,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HeaderCloseVerb As WebPartVerb" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ HeaderCloseVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderCloseVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -338,6 +377,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.HeaderVerbStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="HeaderVerbStyle">
@@ -346,23 +386,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.HeaderVerbStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeaderVerbStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ HeaderVerbStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderVerbStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.ToolZone.HeaderVerbStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -397,6 +442,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.HeaderCloseVerb" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="InstructionText">
@@ -405,13 +451,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property InstructionText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InstructionText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InstructionText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ToolZone.InstructionText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -463,6 +511,7 @@
           <para>Tool zones in the Web Parts control set that derive from the <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> class (see the zones listed in the <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> class overview) override the <see cref="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText" /> property to provide default instructions for end users.</para>
         </block>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionTextStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="InstructionTextStyle">
@@ -471,23 +520,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionTextStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstructionTextStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ InstructionTextStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstructionTextStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.ToolZone.InstructionTextStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -498,6 +552,7 @@
         <value>A <see cref="T:System.Web.UI.WebControls.Style" /> that contains style attributes for the instruction text within a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.InstructionText" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="LabelStyle">
@@ -506,23 +561,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.LabelStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LabelStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ LabelStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LabelStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.ToolZone.LabelStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -532,6 +592,7 @@
         <summary>Gets the style attributes for the contents of the labels that appear alongside the editing controls within a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control. The derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls, such as <see cref="T:System.Web.UI.WebControls.WebParts.CatalogZone" /> and <see cref="T:System.Web.UI.WebControls.WebParts.EditorZone" />, apply the styles to the labels.</summary>
         <value>A <see cref="T:System.Web.UI.WebControls.Style" /> that contains style attributes for the labels within a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="LoadViewState">
@@ -540,9 +601,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="toolZone.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -556,6 +619,7 @@
         <summary>Loads view state.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The length of <paramref name="savedState" />, when converted to an object array, does not equal 7.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnDisplayModeChanged">
@@ -564,9 +628,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.OnDisplayModeChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDisplayModeChanged (sender As Object, e As WebPartDisplayModeEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDisplayModeChanged(System::Object ^ sender, System::Web::UI::WebControls::WebParts::WebPartDisplayModeEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnDisplayModeChanged : obj * System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs -&gt; unit&#xA;override this.OnDisplayModeChanged : obj * System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs -&gt; unit" Usage="toolZone.OnDisplayModeChanged (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -581,6 +647,7 @@
         <param name="e">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartDisplayModeEventArgs" /> that contains the event data.</param>
         <summary>Provides a base method declaration that derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls can override to handle the details of changing page display modes for a specialized zone.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -589,9 +656,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="toolZone.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -604,6 +673,7 @@
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
         <summary>Creates specialized event handlers used by the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartManager" /> control on a Web page.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="OnSelectedWebPartChanged">
@@ -612,9 +682,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.OnSelectedWebPartChanged(System.Object,System.Web.UI.WebControls.WebParts.WebPartEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedWebPartChanged (sender As Object, e As WebPartEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedWebPartChanged(System::Object ^ sender, System::Web::UI::WebControls::WebParts::WebPartEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnSelectedWebPartChanged : obj * System.Web.UI.WebControls.WebParts.WebPartEventArgs -&gt; unit&#xA;override this.OnSelectedWebPartChanged : obj * System.Web.UI.WebControls.WebParts.WebPartEventArgs -&gt; unit" Usage="toolZone.OnSelectedWebPartChanged (sender, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -629,6 +701,7 @@
         <param name="e">A <see cref="T:System.Web.UI.WebControls.WebParts.WebPartEventArgs" /> that contains the event data.</param>
         <summary>Provides a base method declaration that derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls can override to handle the event of changing which Web Parts control is selected within a specialized zone.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -637,12 +710,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (eventArgument As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="toolZone.RaisePostBackEvent eventArgument" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -662,6 +737,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RenderFooter">
@@ -670,9 +746,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderFooter(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderFooter (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderFooter(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderFooter : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="toolZone.RenderFooter writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -685,6 +763,7 @@
         <param name="writer">An <see cref="T:System.Web.UI.HtmlTextWriter" /> that renders verbs in a zone's footer area.</param>
         <summary>Overrides the base method to render verbs in the footer of a <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> control.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RenderHeader">
@@ -693,9 +772,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderHeader(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderHeader (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderHeader(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderHeader : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="toolZone.RenderHeader writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -715,6 +796,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RenderVerb">
@@ -723,9 +805,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerb(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebParts.WebPartVerb)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderVerb (writer As HtmlTextWriter, verb As WebPartVerb)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderVerb(System::Web::UI::HtmlTextWriter ^ writer, System::Web::UI::WebControls::WebParts::WebPartVerb ^ verb);" />
+      <MemberSignature Language="F#" Value="abstract member RenderVerb : System.Web.UI.HtmlTextWriter * System.Web.UI.WebControls.WebParts.WebPartVerb -&gt; unit&#xA;override this.RenderVerb : System.Web.UI.HtmlTextWriter * System.Web.UI.WebControls.WebParts.WebPartVerb -&gt; unit" Usage="toolZone.RenderVerb (writer, verb)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -749,6 +833,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerbs(System.Web.UI.HtmlTextWriter)" />
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartVerb" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="RenderVerbs">
@@ -757,9 +842,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerbs(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderVerbs (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderVerbs(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member RenderVerbs : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderVerbs : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="toolZone.RenderVerbs writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -773,6 +860,7 @@
         <summary>Provides a base method declaration that derived <see cref="T:System.Web.UI.WebControls.WebParts.ToolZone" /> controls can override to customize the rendering of the verbs within a specialized zone.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.WebControls.WebParts.ToolZone.RenderVerb(System.Web.UI.HtmlTextWriter,System.Web.UI.WebControls.WebParts.WebPartVerb)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="SaveViewState">
@@ -781,9 +869,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="toolZone.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -809,8 +899,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -829,9 +925,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ToolZone.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="toolZone.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -850,22 +948,30 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ToolZone.Visible" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.ToolZone.Visible" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -892,6 +998,7 @@
         <exception cref="T:System.InvalidOperationException">The caller attempts to set the property at run time.</exception>
         <altmember cref="P:System.Web.UI.WebControls.WebParts.ToolZone.Display" />
         <altmember cref="P:System.Web.UI.Control.Visible" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ListControlDataBindingHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class ListControlDataBindingHandler&#xA;Inherits DataBindingHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListControlDataBindingHandler : System::Web::UI::Design::DataBindingHandler" />
+  <TypeSignature Language="F#" Value="type ListControlDataBindingHandler = class&#xA;    inherit DataBindingHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -43,6 +46,10 @@
     <altmember cref="T:System.Web.UI.Design.WebControls.ListControlDesigner" />
     <altmember cref="T:System.Web.UI.Design.DataBindingHandler" />
     <altmember cref="T:System.Web.UI.DataBindingHandlerAttribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -54,8 +61,15 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.ListControlDataBindingHandler" /> class.</summary>
@@ -71,6 +85,7 @@
         <altmember cref="T:System.Web.UI.Design.WebControls.ListControlDesigner" />
         <altmember cref="T:System.Web.UI.Design.DataBindingHandler" />
         <altmember cref="T:System.Web.UI.DataBindingHandlerAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataBindControl">
@@ -78,9 +93,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DataBindControl(class System.ComponentModel.Design.IDesignerHost designerHost, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ListControlDataBindingHandler.DataBindControl(System.ComponentModel.Design.IDesignerHost,System.Web.UI.Control)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DataBindControl(System::ComponentModel::Design::IDesignerHost ^ designerHost, System::Web::UI::Control ^ control);" />
+      <MemberSignature Language="F#" Value="override this.DataBindControl : System.ComponentModel.Design.IDesignerHost * System.Web.UI.Control -&gt; unit" Usage="listControlDataBindingHandler.DataBindControl (designerHost, control)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -116,6 +134,7 @@
         <altmember cref="P:System.Web.UI.WebControls.ListControl.Items" />
         <altmember cref="P:System.Web.UI.IDataBindingsAccessor.DataBindings" />
         <altmember cref="M:System.Web.UI.Design.DataBindingHandler.DataBindControl(System.ComponentModel.Design.IDesignerHost,System.Web.UI.Control)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
   </Members>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Http.HttpRequestException" />
   <TypeSignature Language="VB.NET" Value="Public Class HttpRequestException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpRequestException : Exception" />
+  <TypeSignature Language="F#" Value="type HttpRequestException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +21,11 @@
     <BaseTypeName>System.Exception</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>A base class for exceptions thrown by the <see cref="T:System.Net.Http.HttpClient" /> and <see cref="T:System.Net.Http.HttpMessageHandler" /> classes.</summary>
     <remarks>To be added.</remarks>
@@ -68,6 +74,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpRequestException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.HttpRequestException : string -&gt; System.Net.Http.HttpRequestException" Usage="new System.Net.Http.HttpRequestException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -96,6 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpRequestException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpRequestException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.HttpRequestException : string * Exception -&gt; System.Net.Http.HttpRequestException" Usage="new System.Net.Http.HttpRequestException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

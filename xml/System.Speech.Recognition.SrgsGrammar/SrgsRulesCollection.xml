@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SrgsRulesCollection&#xA;Inherits KeyedCollection(Of String, SrgsRule)" />
   <TypeSignature Language="C++ CLI" Value="public ref class SrgsRulesCollection sealed : System::Collections::ObjectModel::KeyedCollection&lt;System::String ^, System::Speech::Recognition::SrgsGrammar::SrgsRule ^&gt;" />
+  <TypeSignature Language="F#" Value="type SrgsRulesCollection = class&#xA;    inherit KeyedCollection&lt;string, SrgsRule&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,6 +18,11 @@
     </BaseTypeArguments>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents a collection of <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRule" /> objects.</summary>
     <remarks>
@@ -37,8 +44,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection" /> class.</summary>
@@ -51,9 +64,11 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.Add(System.Speech.Recognition.SrgsGrammar.SrgsRule[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (ParamArray rules As SrgsRule())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(... cli::array &lt;System::Speech::Recognition::SrgsGrammar::SrgsRule ^&gt; ^ rules);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Speech.Recognition.SrgsGrammar.SrgsRule[] -&gt; unit" Usage="srgsRulesCollection.Add rules" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,9 +98,11 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsRulesCollection.GetKeyForItem(System.Speech.Recognition.SrgsGrammar.SrgsRule)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (rule As SrgsRule) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetKeyForItem(System::Speech::Recognition::SrgsGrammar::SrgsRule ^ rule);" />
+      <MemberSignature Language="F#" Value="abstract member GetKeyForItem : System.Speech.Recognition.SrgsGrammar.SrgsRule -&gt; string&#xA;override this.GetKeyForItem : System.Speech.Recognition.SrgsGrammar.SrgsRule -&gt; string" Usage="srgsRulesCollection.GetKeyForItem rule" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

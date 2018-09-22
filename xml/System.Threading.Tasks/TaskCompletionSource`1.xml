@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskCompletionSource`1" />
   <TypeSignature Language="VB.NET" Value="Public Class TaskCompletionSource(Of TResult)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class TaskCompletionSource" />
+  <TypeSignature Language="F#" Value="type TaskCompletionSource&lt;'Result&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,7 +35,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In many scenarios, it is useful to enable a <xref:System.Threading.Tasks.Task%601> to represent an external asynchronous operation. <xref:System.Threading.Tasks.TaskCompletionSource%601> is provided for this purpose. It enables the creation of a task that can be handed out to consumers, and those consumers can use the members of the task as they would any other. However, unlike most tasks, the state of a task created by a TaskCompletionSource is controlled explicitly by the methods on TaskCompletionSource. This enables the completion of the external asynchronous operation to be propagated to the underlying Task. The separation also ensures that consumers are not able to transition the state without access to the corresponding TaskCompletionSource. For more information, see the entry [The Nature of TaskCompletionSource\<TResult>](http://blogs.msdn.com/b/pfxteam/archive/2009/06/02/9685804.aspx) in the Parallel Programming with .NET blog.  
+ In many scenarios, it is useful to enable a <xref:System.Threading.Tasks.Task%601> to represent an external asynchronous operation. <xref:System.Threading.Tasks.TaskCompletionSource%601> is provided for this purpose. It enables the creation of a task that can be handed out to consumers. The consumers can use the members of the task the same way as they would in any other scenario handling task member variables. However, unlike most tasks, the state of a task created by a TaskCompletionSource is controlled explicitly by the methods on TaskCompletionSource. This enables the completion of the external asynchronous operation to be propagated to the underlying Task. The separation also ensures that consumers are not able to transition the state without access to the corresponding TaskCompletionSource. For more information, see the entry [The Nature of TaskCompletionSource\<TResult>](http://blogs.msdn.com/b/pfxteam/archive/2009/06/02/9685804.aspx) in the Parallel Programming with .NET blog.  
   
  The [Parallel Extensions samples](http://go.microsoft.com/fwlink/?LinkID=165717) also contain examples of how to use <xref:System.Threading.Tasks.TaskCompletionSource%601>.  
   
@@ -49,6 +50,8 @@
  ]]></format>
     </remarks>
     <threadsafe>All members of <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" /> are thread-safe and may be used from multiple threads concurrently.</threadsafe>
+    <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+    <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -89,6 +92,8 @@
       <Docs>
         <summary>Creates a <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -97,6 +102,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCompletionSource(System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt; : obj -&gt; System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt;" Usage="new System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt; state" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -121,6 +127,8 @@
         <param name="state">The state to use as the underlying <see cref="T:System.Threading.Tasks.Task`1" />'s AsyncState.</param>
         <summary>Creates a <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" /> with the specified state.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -129,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Threading.Tasks.TaskCreationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (creationOptions As TaskCreationOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCompletionSource(System::Threading::Tasks::TaskCreationOptions creationOptions);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt; : System.Threading.Tasks.TaskCreationOptions -&gt; System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt;" Usage="new System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt; creationOptions" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -161,6 +170,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> represent options invalid for use with a <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -169,6 +180,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Object,System.Threading.Tasks.TaskCreationOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (state As Object, creationOptions As TaskCreationOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskCompletionSource(System::Object ^ state, System::Threading::Tasks::TaskCreationOptions creationOptions);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt; : obj * System.Threading.Tasks.TaskCreationOptions -&gt; System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt;" Usage="new System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt; (state, creationOptions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -196,6 +208,8 @@
         <summary>Creates a <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" /> with the specified state and options.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="creationOptions" /> represent options invalid for use with a <see cref="T:System.Threading.Tasks.TaskCompletionSource`1" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName="SetCanceled">
@@ -204,6 +218,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.SetCanceled" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetCanceled ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCanceled();" />
+      <MemberSignature Language="F#" Value="member this.SetCanceled : unit -&gt; unit" Usage="taskCompletionSource.SetCanceled " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -230,6 +245,9 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">The underlying <see cref="T:System.Threading.Tasks.Task`1" /> is already in one of the three final states: <see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion" />, <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" />, or <see cref="F:System.Threading.Tasks.TaskStatus.Canceled" />, or if the underlying <see cref="T:System.Threading.Tasks.Task`1" /> has already been disposed.</exception>
         <altmember cref="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled" />
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-cancellation.md">Task Cancellation</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetException">
@@ -249,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Collections.Generic.IEnumerable{System.Exception})" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetException (exceptions As IEnumerable(Of Exception))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetException(System::Collections::Generic::IEnumerable&lt;Exception ^&gt; ^ exceptions);" />
+      <MemberSignature Language="F#" Value="member this.SetException : seq&lt;Exception&gt; -&gt; unit" Usage="taskCompletionSource.SetException exceptions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -280,6 +299,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="exceptions" /> argument is null.</exception>
         <exception cref="T:System.ArgumentException">There are one or more null elements in <paramref name="exceptions" />.</exception>
         <exception cref="T:System.InvalidOperationException">The underlying <see cref="T:System.Threading.Tasks.Task`1" /> is already in one of the three final states: <see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion" />, <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" />, or <see cref="F:System.Threading.Tasks.TaskStatus.Canceled" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName="SetException">
@@ -287,6 +308,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetException(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetException(Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="member this.SetException : Exception -&gt; unit" Usage="taskCompletionSource.SetException exception" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -317,6 +339,8 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="P:System.Threading.Tasks.TaskCompletionSource`1.Task" /> was disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> argument is null.</exception>
         <exception cref="T:System.InvalidOperationException">The underlying <see cref="T:System.Threading.Tasks.Task`1" /> is already in one of the three final states: <see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion" />, <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" />, or <see cref="F:System.Threading.Tasks.TaskStatus.Canceled" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName="SetResult">
@@ -325,6 +349,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.SetResult(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetResult (result As TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetResult(TResult result);" />
+      <MemberSignature Language="F#" Value="member this.SetResult : 'Result -&gt; unit" Usage="taskCompletionSource.SetResult result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -354,6 +379,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="P:System.Threading.Tasks.TaskCompletionSource`1.Task" /> was disposed.</exception>
         <exception cref="T:System.InvalidOperationException">The underlying <see cref="T:System.Threading.Tasks.Task`1" /> is already in one of the three final states: <see cref="F:System.Threading.Tasks.TaskStatus.RanToCompletion" />, <see cref="F:System.Threading.Tasks.TaskStatus.Faulted" />, or <see cref="F:System.Threading.Tasks.TaskStatus.Canceled" />.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName="Task">
@@ -362,6 +389,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.TaskCompletionSource`1.Task" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Task As Task(Of TResult)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::Task&lt;TResult&gt; ^ Task { System::Threading::Tasks::Task&lt;TResult&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Task : System.Threading.Tasks.Task&lt;'Result&gt;" Usage="System.Threading.Tasks.TaskCompletionSource&lt;'Result&gt;.Task" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -395,6 +423,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="TrySetCanceled">
@@ -414,6 +445,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled" />
       <MemberSignature Language="VB.NET" Value="Public Function TrySetCanceled () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetCanceled();" />
+      <MemberSignature Language="F#" Value="member this.TrySetCanceled : unit -&gt; bool" Usage="taskCompletionSource.TrySetCanceled " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -448,6 +480,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName="TrySetCanceled">
@@ -455,6 +489,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TrySetCanceled(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled(System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetCanceled(System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.TrySetCanceled : System.Threading.CancellationToken -&gt; bool" Usage="taskCompletionSource.TrySetCanceled cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -517,6 +552,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetException(System.Collections.Generic.IEnumerable{System.Exception})" />
       <MemberSignature Language="VB.NET" Value="Public Function TrySetException (exceptions As IEnumerable(Of Exception)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetException(System::Collections::Generic::IEnumerable&lt;Exception ^&gt; ^ exceptions);" />
+      <MemberSignature Language="F#" Value="member this.TrySetException : seq&lt;Exception&gt; -&gt; bool" Usage="taskCompletionSource.TrySetException exceptions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -559,6 +595,8 @@
  -or-  
   
  The <paramref name="exceptions" /> collection is empty.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName="TrySetException">
@@ -566,6 +604,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TrySetException(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetException(System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetException(Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="member this.TrySetException : Exception -&gt; bool" Usage="taskCompletionSource.TrySetException exception" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -603,6 +642,8 @@
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="P:System.Threading.Tasks.TaskCompletionSource`1.Task" /> was disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="exception" /> argument is null.</exception>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
     <Member MemberName="TrySetResult">
@@ -611,6 +652,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskCompletionSource`1.TrySetResult(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function TrySetResult (result As TResult) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetResult(TResult result);" />
+      <MemberSignature Language="F#" Value="member this.TrySetResult : 'Result -&gt; bool" Usage="taskCompletionSource.TrySetResult result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -648,6 +690,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/parallel-programming/using-tpl-with-other-asynchronous-patterns.md">Using TPL with Other Asynchronous Patterns</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/how-to-wrap-eap-patterns-in-a-task.md">How to: Wrap EAP Patterns in a Task</related>
       </Docs>
     </Member>
   </Members>

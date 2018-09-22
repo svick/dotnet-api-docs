@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAutoSizeModeEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewAutoSizeModeEventHandler(sender As Object, e As DataGridViewAutoSizeModeEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewAutoSizeModeEventHandler(System::Object ^ sender, DataGridViewAutoSizeModeEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewAutoSizeModeEventHandler = delegate of obj * DataGridViewAutoSizeModeEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -49,5 +51,6 @@
     <altmember cref="P:System.Windows.Forms.DataGridView.RowHeadersWidthSizeMode" />
     <altmember cref="T:System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode" />
     <altmember cref="T:System.Windows.Forms.DataGridViewAutoSizeModeEventArgs" />
+    <related type="Article" href="http://msdn.microsoft.com/library/7532764d-e5c1-4943-a08b-6377a722d3b6">Resizing Columns and Rows in the Windows Forms DataGridView Control</related>
   </Docs>
 </Type>

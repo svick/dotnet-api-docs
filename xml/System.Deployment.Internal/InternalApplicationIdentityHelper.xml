@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Deployment.Internal.InternalApplicationIdentityHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class InternalApplicationIdentityHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class InternalApplicationIdentityHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type InternalApplicationIdentityHelper = class" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -14,13 +16,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>Provides access to internal properties of an <see cref="T:System.ApplicationIdentity" /> object.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/e72f2550-bdec-4a20-a2f4-2e14847266c1">IDefinitionAppId Interface</related>
   </Docs>
   <Members>
     <Member MemberName="GetInternalAppId">
@@ -29,12 +32,19 @@
       <MemberSignature Language="DocId" Value="M:System.Deployment.Internal.InternalApplicationIdentityHelper.GetInternalAppId(System.ApplicationIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetInternalAppId (id As ApplicationIdentity) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetInternalAppId(ApplicationIdentity ^ id);" />
+      <MemberSignature Language="F#" Value="static member GetInternalAppId : ApplicationIdentity -&gt; obj" Usage="System.Deployment.Internal.InternalApplicationIdentityHelper.GetInternalAppId id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -47,6 +57,7 @@
         <returns>The unique identifier held by the <see cref="T:System.ApplicationIdentity" /> object.</returns>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/e72f2550-bdec-4a20-a2f4-2e14847266c1">IDefinitionAppId Interface</related>
       </Docs>
     </Member>
   </Members>

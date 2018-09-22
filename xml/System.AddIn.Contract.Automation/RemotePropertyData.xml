@@ -4,14 +4,21 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.RemotePropertyData" />
   <TypeSignature Language="VB.NET" Value="Public Structure RemotePropertyData" />
   <TypeSignature Language="C++ CLI" Value="public value class RemotePropertyData" />
+  <TypeSignature Language="F#" Value="type RemotePropertyData = struct" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides information about a property of a type that components can access across application domain and process boundaries.</summary>
     <remarks>
@@ -30,9 +37,11 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemotePropertyData.Attributes" />
       <MemberSignature Language="VB.NET" Value="Public Attributes As PropertyAttributes " />
       <MemberSignature Language="C++ CLI" Value="public: System::Reflection::PropertyAttributes Attributes;" />
+      <MemberSignature Language="F#" Value="val mutable Attributes : System.Reflection.PropertyAttributes" Usage="System.AddIn.Contract.Automation.RemotePropertyData.Attributes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -56,9 +65,11 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemotePropertyData.CanRead" />
       <MemberSignature Language="VB.NET" Value="Public CanRead As Boolean " />
       <MemberSignature Language="C++ CLI" Value="public: bool CanRead;" />
+      <MemberSignature Language="F#" Value="val mutable CanRead : bool" Usage="System.AddIn.Contract.Automation.RemotePropertyData.CanRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,9 +93,11 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemotePropertyData.CanWrite" />
       <MemberSignature Language="VB.NET" Value="Public CanWrite As Boolean " />
       <MemberSignature Language="C++ CLI" Value="public: bool CanWrite;" />
+      <MemberSignature Language="F#" Value="val mutable CanWrite : bool" Usage="System.AddIn.Contract.Automation.RemotePropertyData.CanWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,9 +121,11 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemotePropertyData.IndexParameters" />
       <MemberSignature Language="VB.NET" Value="Public IndexParameters As RemoteParameterData() " />
       <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::AddIn::Contract::Automation::RemoteParameterData&gt; ^ IndexParameters;" />
+      <MemberSignature Language="F#" Value="val mutable IndexParameters : System.AddIn.Contract.Automation.RemoteParameterData[]" Usage="System.AddIn.Contract.Automation.RemotePropertyData.IndexParameters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -127,9 +142,11 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemotePropertyData.MemberData" />
       <MemberSignature Language="VB.NET" Value="Public MemberData As RemoteMemberData " />
       <MemberSignature Language="C++ CLI" Value="public: System::AddIn::Contract::Automation::RemoteMemberData MemberData;" />
+      <MemberSignature Language="F#" Value="val mutable MemberData : System.AddIn.Contract.Automation.RemoteMemberData" Usage="System.AddIn.Contract.Automation.RemotePropertyData.MemberData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,9 +170,11 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemotePropertyData.PropertyType" />
       <MemberSignature Language="VB.NET" Value="Public PropertyType As IRemoteTypeContract " />
       <MemberSignature Language="C++ CLI" Value="public: System::AddIn::Contract::Automation::IRemoteTypeContract ^ PropertyType;" />
+      <MemberSignature Language="F#" Value="val mutable PropertyType : System.AddIn.Contract.Automation.IRemoteTypeContract" Usage="System.AddIn.Contract.Automation.RemotePropertyData.PropertyType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

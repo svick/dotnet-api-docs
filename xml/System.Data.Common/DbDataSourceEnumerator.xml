@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbDataSourceEnumerator" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbDataSourceEnumerator" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbDataSourceEnumerator abstract" />
+  <TypeSignature Language="F#" Value="type DbDataSourceEnumerator = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -33,6 +35,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Data.Sql.SqlDataSourceEnumerator" />
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,6 +47,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -67,6 +71,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDataSources">
@@ -75,9 +80,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataSourceEnumerator.GetDataSources" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDataSources () As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Data::DataTable ^ GetDataSources();" />
+      <MemberSignature Language="F#" Value="abstract member GetDataSources : unit -&gt; System.Data.DataTable" Usage="dbDataSourceEnumerator.GetDataSources " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -114,6 +121,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Data.Sql.SqlDataSourceEnumerator.GetDataSources" />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

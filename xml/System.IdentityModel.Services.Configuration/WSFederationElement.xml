@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.Configuration.WSFederationElement" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WSFederationElement&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class WSFederationElement sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type WSFederationElement = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +24,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.IdentityModel.Services.WSFederationAuthenticationModule" />
+    <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -48,13 +50,14 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.AuthenticationType" />
       <MemberSignature Language="VB.NET" Value="Public Property AuthenticationType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AuthenticationType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationType : string with get, set" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.AuthenticationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("authenticationType", IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -66,6 +69,7 @@
         <value>A string that contains a URI that represents the WS-Federation sign-in request wauth type. The default is an empty string. Optional.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.AuthenticationType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="CustomAttributes">
@@ -74,6 +78,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.CustomAttributes" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomAttributes As Dictionary(Of String, String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt; ^ CustomAttributes { System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CustomAttributes : System.Collections.Generic.Dictionary&lt;string, string&gt;" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.CustomAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -86,6 +91,7 @@
         <summary>Gets or sets the dictionary that contains any custom attributes.</summary>
         <value>The dictionary that contains the custom attributes, keyed by attribute name.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Freshness">
@@ -94,13 +100,14 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.Freshness" />
       <MemberSignature Language="VB.NET" Value="Public Property Freshness As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Freshness { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Freshness : string with get, set" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.Freshness" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("freshness", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -112,6 +119,7 @@
         <value>The required freshness. Sets the WS-Federation sign-in request wfresh parameter. Optional.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Freshness" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="HomeRealm">
@@ -120,13 +128,14 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.HomeRealm" />
       <MemberSignature Language="VB.NET" Value="Public Property HomeRealm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HomeRealm { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HomeRealm : string with get, set" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.HomeRealm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("homeRealm", IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -138,6 +147,7 @@
         <value>A string that contains the URI of the home realm of the identity provider (IP). The default is an empty string. Sets the WS-Federation sign-in request whr parameter. Optional.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.HomeRealm" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="IsConfigured">
@@ -146,6 +156,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.IsConfigured" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsConfigured As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsConfigured { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsConfigured : bool" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.IsConfigured" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -167,13 +178,14 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.Issuer" />
       <MemberSignature Language="VB.NET" Value="Public Property Issuer As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Issuer { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Issuer : string with get, set" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.Issuer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("issuer", IsRequired=true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -185,6 +197,7 @@
         <value>A string that contains the URI of the token issuer. The default is an empty string. Required.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Issuer" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="OnDeserializeUnrecognizedAttribute">
@@ -193,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.WSFederationElement.OnDeserializeUnrecognizedAttribute(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnDeserializeUnrecognizedAttribute (name As String, value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnDeserializeUnrecognizedAttribute(System::String ^ name, System::String ^ value);" />
+      <MemberSignature Language="F#" Value="override this.OnDeserializeUnrecognizedAttribute : string * string -&gt; bool" Usage="wSFederationElement.OnDeserializeUnrecognizedAttribute (name, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -219,13 +233,14 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.PassiveRedirectEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property PassiveRedirectEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PassiveRedirectEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PassiveRedirectEnabled : bool with get, set" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.PassiveRedirectEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("passiveRedirectEnabled", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -238,6 +253,7 @@
           <see langword="true" /> to enable the WS-Federation Authentication Module (WSFAM) to automatically redirect unauthorized requests to an STS; otherwise, <see langword="false" />. The default is <see langword="true" />, unauthorized requests are automatically redirected. Optional.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.PassiveRedirectEnabled" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="PersistentCookiesOnPassiveRedirects">
@@ -246,13 +262,14 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.PersistentCookiesOnPassiveRedirects" />
       <MemberSignature Language="VB.NET" Value="Public Property PersistentCookiesOnPassiveRedirects As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PersistentCookiesOnPassiveRedirects { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.PersistentCookiesOnPassiveRedirects : bool with get, set" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.PersistentCookiesOnPassiveRedirects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("persistentCookiesOnPassiveRedirects", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -265,6 +282,7 @@
           <see langword="true" /> to issue persistent cookies when the WS-Federation Authentication Module (WSFAM) is enabled to initiate WS-Federation passive protocol redirects; otherwise, <see langword="false" />. The default is <see langword="false" />, cookies are not issued. Optional.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.PersistentCookiesOnPassiveRedirects" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Policy">
@@ -273,13 +291,14 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.Policy" />
       <MemberSignature Language="VB.NET" Value="Public Property Policy As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Policy { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Policy : string with get, set" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.Policy" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("policy", IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -291,6 +310,7 @@
         <value>A string that contains the URI of the relevant policy. The default is an empty string. Sets the WS-Federation sign-in request wp parameter. Optional.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Policy" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Realm">
@@ -299,13 +319,14 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.Realm" />
       <MemberSignature Language="VB.NET" Value="Public Property Realm As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Realm { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Realm : string with get, set" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.Realm" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("realm", IsRequired=true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -317,6 +338,7 @@
         <value>A string that contains the URI of requesting realm. The default is an empty string. Sets the WS-Federation sign-in request wtrealm parameter. Required.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Realm" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Reply">
@@ -325,13 +347,14 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.Reply" />
       <MemberSignature Language="VB.NET" Value="Public Property Reply As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Reply { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Reply : string with get, set" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.Reply" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("reply", IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -343,6 +366,7 @@
         <value>A string that contains the URI of the address to reply to. The default is an empty string. Sets the wreply parameter on a WS-Federation sign-in request. Optional.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Reply" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Request">
@@ -351,13 +375,14 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.Request" />
       <MemberSignature Language="VB.NET" Value="Public Property Request As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Request { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Request : string with get, set" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.Request" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("request", IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -369,6 +394,7 @@
         <value>A string that contains the token issuance request. The default is an empty string. Sets the WS-Federation sign-in request wreq parameter. Optional.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Request" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="RequestPtr">
@@ -377,13 +403,14 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.RequestPtr" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestPtr As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestPtr { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestPtr : string with get, set" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.RequestPtr" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("requestPtr", IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -395,6 +422,7 @@
         <value>A URL that specifies the location of the token issuance request. The default is an empty string. Sets the WS-Federation sign-in request wreqptr parameter. Optional.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.RequestPtr" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="RequireHttps">
@@ -403,13 +431,14 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.RequireHttps" />
       <MemberSignature Language="VB.NET" Value="Public Property RequireHttps As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireHttps { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RequireHttps : bool with get, set" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.RequireHttps" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("requireHttps", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -422,6 +451,7 @@
           <see langword="true" /> to specify that the WS-Federation Authentication Module (WSFAM) to only redirect to a secure URL for the STS; otherwise, <see langword="false" />. The default is <see langword="true" />, the WSFAM only redirects to a secure URL for the STS. Optional.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.RequireHttps" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="Resource">
@@ -430,13 +460,14 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.Resource" />
       <MemberSignature Language="VB.NET" Value="Public Property Resource As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Resource { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Resource : string with get, set" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.Resource" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("resource", IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -448,6 +479,7 @@
         <value>A string that contains the URI of the WS-Federation resource value. The default is an empty string. Sets the request WS-Federation sign-in request wres parameter. Optional.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.Resource" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="SignInQueryString">
@@ -456,13 +488,14 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.SignInQueryString" />
       <MemberSignature Language="VB.NET" Value="Public Property SignInQueryString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignInQueryString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SignInQueryString : string with get, set" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.SignInQueryString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("signInQueryString", IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -474,6 +507,7 @@
         <value>Any application defined parameters for the WS-Federation sign-in request URL. The default is an empty string. Provides an extensibility point to include application defined query parameters in the sign-in request URL. Optional.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.SignInQueryString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="SignOutQueryString">
@@ -482,13 +516,14 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.SignOutQueryString" />
       <MemberSignature Language="VB.NET" Value="Public Property SignOutQueryString As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignOutQueryString { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SignOutQueryString : string with get, set" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.SignOutQueryString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("signOutQueryString", IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -500,6 +535,7 @@
         <value>Any application defined parameters for the WS-Federation sign-out request URL. The default is an empty string. Provides an extensibility point to include application defined query parameters in the sign-out request URL. Optional.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOutQueryString" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="SignOutReply">
@@ -508,13 +544,14 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.WSFederationElement.SignOutReply" />
       <MemberSignature Language="VB.NET" Value="Public Property SignOutReply As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignOutReply { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SignOutReply : string with get, set" Usage="System.IdentityModel.Services.Configuration.WSFederationElement.SignOutReply" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("signOutReply", IsRequired=false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -526,6 +563,7 @@
         <value>A string that contains the URL to return to following sign out. Sets the wreply parameter on a WS-Federation sign-out request. Optional.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.IdentityModel.Services.WSFederationAuthenticationModule.SignOutReply" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c537f770-68bd-4f82-96ad-6424ad91369f">&lt;wsFederation&gt;</related>
       </Docs>
     </Member>
   </Members>

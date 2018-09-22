@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.ExeConfigurationFileMap" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExeConfigurationFileMap&#xA;Inherits ConfigurationFileMap" />
   <TypeSignature Language="C++ CLI" Value="public ref class ExeConfigurationFileMap sealed : System::Configuration::ConfigurationFileMap" />
+  <TypeSignature Language="F#" Value="type ExeConfigurationFileMap = class&#xA;    inherit ConfigurationFileMap" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -33,6 +35,7 @@
     </remarks>
     <altmember cref="T:System.Configuration.ConfigurationFileMap" />
     <altmember cref="T:System.Web.Configuration.WebConfigurationFileMap" />
+    <related type="Article" href="~/docs/framework/configure-apps/index.md">Configuration Files</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -53,6 +56,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -71,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ExeConfigurationFileMap.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (machineConfigFileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ExeConfigurationFileMap(System::String ^ machineConfigFileName);" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ExeConfigurationFileMap : string -&gt; System.Configuration.ExeConfigurationFileMap" Usage="new System.Configuration.ExeConfigurationFileMap machineConfigFileName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -94,6 +99,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76">.NET Framework Targeting for Web Projects</related>
+        <related type="Article" href="~/docs/framework/configure-apps/index.md">Configuration Files</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -102,9 +109,11 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.ExeConfigurationFileMap.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="exeConfigurationFileMap.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -127,9 +136,11 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ExeConfigurationFileMap.ExeConfigFilename" />
       <MemberSignature Language="VB.NET" Value="Public Property ExeConfigFilename As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExeConfigFilename { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExeConfigFilename : string with get, set" Usage="System.Configuration.ExeConfigurationFileMap.ExeConfigFilename" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -151,9 +162,11 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ExeConfigurationFileMap.LocalUserConfigFilename" />
       <MemberSignature Language="VB.NET" Value="Public Property LocalUserConfigFilename As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocalUserConfigFilename { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LocalUserConfigFilename : string with get, set" Usage="System.Configuration.ExeConfigurationFileMap.LocalUserConfigFilename" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -175,9 +188,11 @@
       <MemberSignature Language="DocId" Value="P:System.Configuration.ExeConfigurationFileMap.RoamingUserConfigFilename" />
       <MemberSignature Language="VB.NET" Value="Public Property RoamingUserConfigFilename As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RoamingUserConfigFilename { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RoamingUserConfigFilename : string with get, set" Usage="System.Configuration.ExeConfigurationFileMap.RoamingUserConfigFilename" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>

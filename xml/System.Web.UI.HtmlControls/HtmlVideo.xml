@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlVideo" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlVideo&#xA;Inherits HtmlContainerControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlVideo : System::Web::UI::HtmlControls::HtmlContainerControl" />
+  <TypeSignature Language="F#" Value="type HtmlVideo = class&#xA;    inherit HtmlContainerControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,6 +16,7 @@
   <Docs>
     <summary>Provides programmatic access to the HTML <see langword="&lt;video&gt;" /> element on the server.</summary>
     <remarks>To be added.</remarks>
+    <related type="ExternalDocumentation" href="http://dev.w3.org/html5/spec/the-video-element.html#the-video-element">video element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,19 +42,20 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlVideo.Poster" />
       <MemberSignature Language="VB.NET" Value="Public Property Poster As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Poster { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Poster : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlVideo.Poster" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.UrlProperty</AttributeName>
         </Attribute>
       </Attributes>
@@ -63,6 +66,7 @@
         <summary>Gets or sets the <see langword="poster" /> attribute.</summary>
         <value>The <see langword="poster" /> attribute.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://dev.w3.org/html5/spec/the-video-element.html#attr-video-poster">poster attribute</related>
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -71,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlVideo.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderAttributes (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlVideo.RenderAttributes writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,19 +99,20 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlVideo.Src" />
       <MemberSignature Language="VB.NET" Value="Public Property Src As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Src { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Src : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlVideo.Src" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.UrlProperty</AttributeName>
         </Attribute>
       </Attributes>
@@ -117,6 +123,7 @@
         <summary>Gets or sets the <see langword="src" /> attribute.</summary>
         <value>The <see langword="src" /> attribute.</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://dev.w3.org/html5/spec/media-elements.html#attr-media-src">src attribute</related>
       </Docs>
     </Member>
   </Members>

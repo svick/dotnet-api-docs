@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowIdentity" />
   <TypeSignature Language="VB.NET" Value="Public Class WorkflowIdentity&#xA;Implements IEquatable(Of WorkflowIdentity)" />
   <TypeSignature Language="C++ CLI" Value="public ref class WorkflowIdentity : IEquatable&lt;System::Activities::WorkflowIdentity ^&gt;" />
+  <TypeSignature Language="F#" Value="type WorkflowIdentity = class&#xA;    interface IEquatable&lt;WorkflowIdentity&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,11 +18,14 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Activities.XamlIntegration.WorkflowIdentityConverter))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,23 +36,23 @@
 ## Remarks  
  This class supports the versioning and dynamic update functionality of Windows Workflow Foundation. For more information about workflow versioning, workflow identity, and dynamic update, see the following topics:  
   
- - [Workflow Versioning](http://go.microsoft.com/fwlink/?LinkID=271561)  
+ - [Workflow Versioning](~/docs/framework/windows-workflow-foundation/whats-new-in-wf-in-dotnet.md)  
    Describes the workflow versioning functionality introduced in [!INCLUDE[net_v45](~/includes/net-v45-md.md)].  
   
- - [Dynamic Update](http://go.microsoft.com/fwlink/?LinkId=271563)  
+ - [Dynamic Update](~/docs/framework/windows-workflow-foundation/dynamic-update.md)  
     Describes how to update the workflow definition of a persisted workflow instance by using dynamic update.  
   
- - [Using WorkflowApplication Identity and Versioning](http://go.microsoft.com/fwlink/?LinkId=271564)  
+ - [Using WorkflowApplication Identity and Versioning](~/docs/framework/windows-workflow-foundation/using-workflowidentity-and-versioning.md)  
     Describes how to use <xref:System.Activities.WorkflowIdentity> to host multiple versions of a workflow side-by-side.  
   
- - [Side by Side Versioning in WorkflowServiceHost](http://go.microsoft.com/fwlink/?LinkId=271565)  
+ - [Side by Side Versioning in WorkflowServiceHost](~/docs/framework/wcf/feature-details/side-by-side-versioning-in-workflowservicehost.md)  
     Describes how to host multiple versions of a workflow on a single endpoint.  
   
- - [How to: Host Multiple Versions of a Workflow Side-by-Side](http://go.microsoft.com/fwlink/?LinkId=271566)  
-    This step in the [Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkId=271570) demonstrates updating a workflow definition, and hosting workflows using both the old and new definition at the same time.  
+ - [How to: Host Multiple Versions of a Workflow Side-by-Side](~/docs/framework/windows-workflow-foundation/how-to-host-multiple-versions-of-a-workflow-side-by-side.md)  
+    This step in the [Getting Started Tutorial](~/docs/framework/windows-workflow-foundation/getting-started-tutorial.md) demonstrates updating a workflow definition, and hosting workflows using both the old and new definition at the same time.  
   
- - [How to: Update the Definition of a Running Workflow Instance](http://go.microsoft.com/fwlink/?LinkId=271567)  
-    This step in the [Getting Started Tutorial](http://go.microsoft.com/fwlink/?LinkId=271570) demonstrates updating persisted workflow instances to use a new workflow definition.  
+ - [How to: Update the Definition of a Running Workflow Instance](~/docs/framework/windows-workflow-foundation/how-to-update-the-definition-of-a-running-workflow-instance.md)  
+    This step in the [Getting Started Tutorial](~/docs/framework/windows-workflow-foundation/getting-started-tutorial.md) demonstrates updating persisted workflow instances to use a new workflow definition.  
   
  ]]></format>
     </remarks>
@@ -85,6 +89,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Version version, string package) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.#ctor(System.String,System.Version,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowIdentity(System::String ^ name, Version ^ version, System::String ^ package);" />
+      <MemberSignature Language="F#" Value="new System.Activities.WorkflowIdentity : string * Version * string -&gt; System.Activities.WorkflowIdentity" Usage="new System.Activities.WorkflowIdentity (name, version, package)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -118,6 +123,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.Equals(System.Activities.WorkflowIdentity)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As WorkflowIdentity) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Activities::WorkflowIdentity ^ other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Activities.WorkflowIdentity -&gt; bool" Usage="workflowIdentity.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -146,6 +152,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="workflowIdentity.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -171,6 +178,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="workflowIdentity.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -192,6 +200,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowIdentity.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Activities.WorkflowIdentity.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -212,6 +221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowIdentity.Package" />
       <MemberSignature Language="VB.NET" Value="Public Property Package As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Package { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Package : string with get, set" Usage="System.Activities.WorkflowIdentity.Package" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -232,6 +242,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (identity As String) As WorkflowIdentity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::WorkflowIdentity ^ Parse(System::String ^ identity);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Activities.WorkflowIdentity" Usage="System.Activities.WorkflowIdentity.Parse identity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -256,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="workflowIdentity.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -277,6 +289,7 @@
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowIdentity.TryParse(System.String,System.Activities.WorkflowIdentity@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (identity As String, ByRef result As WorkflowIdentity) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ identity, [Runtime::InteropServices::Out] System::Activities::WorkflowIdentity ^ % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Activities.WorkflowIdentity.TryParse (identity, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -287,7 +300,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="identity" Type="System.String" />
-        <Parameter Name="result" Type="System.Activities.WorkflowIdentity&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Activities.WorkflowIdentity" RefType="out" />
       </Parameters>
       <Docs>
         <param name="identity">A new identity.</param>
@@ -304,6 +317,7 @@
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowIdentity.Version" />
       <MemberSignature Language="VB.NET" Value="Public Property Version As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); void set(Version ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Version : Version with get, set" Usage="System.Activities.WorkflowIdentity.Version" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

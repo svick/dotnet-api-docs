@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.GroupByBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Enum GroupByBehavior" />
   <TypeSignature Language="C++ CLI" Value="public enum class GroupByBehavior" />
+  <TypeSignature Language="F#" Value="type GroupByBehavior = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -31,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName="ExactMatch">
@@ -39,9 +42,11 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.ExactMatch" />
       <MemberSignature Language="VB.NET" Value="ExactMatch" />
       <MemberSignature Language="C++ CLI" Value="ExactMatch" />
+      <MemberSignature Language="F#" Value="ExactMatch = 4" Usage="System.Data.Common.GroupByBehavior.ExactMatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -60,6 +65,7 @@
       <MemberValue>4</MemberValue>
       <Docs>
         <summary>The GROUP BY clause must contain all nonaggregated columns in the select list, and must not contain other columns not in the select list.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MustContainAll">
@@ -68,9 +74,11 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.MustContainAll" />
       <MemberSignature Language="VB.NET" Value="MustContainAll" />
       <MemberSignature Language="C++ CLI" Value="MustContainAll" />
+      <MemberSignature Language="F#" Value="MustContainAll = 3" Usage="System.Data.Common.GroupByBehavior.MustContainAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -89,6 +97,7 @@
       <MemberValue>3</MemberValue>
       <Docs>
         <summary>The GROUP BY clause must contain all nonaggregated columns in the select list, and can contain other columns not in the select list.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="NotSupported">
@@ -97,9 +106,11 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.NotSupported" />
       <MemberSignature Language="VB.NET" Value="NotSupported" />
       <MemberSignature Language="C++ CLI" Value="NotSupported" />
+      <MemberSignature Language="F#" Value="NotSupported = 1" Usage="System.Data.Common.GroupByBehavior.NotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -118,6 +129,7 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>The GROUP BY clause is not supported.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -126,9 +138,11 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Data.Common.GroupByBehavior.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -147,6 +161,7 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>The support for the GROUP BY clause is unknown.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Unrelated">
@@ -155,9 +170,11 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.Unrelated" />
       <MemberSignature Language="VB.NET" Value="Unrelated" />
       <MemberSignature Language="C++ CLI" Value="Unrelated" />
+      <MemberSignature Language="F#" Value="Unrelated = 2" Usage="System.Data.Common.GroupByBehavior.Unrelated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -176,6 +193,7 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>There is no relationship between the columns in the GROUP BY clause and the nonaggregated columns in the SELECT list. You may group by any column.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.CaseInsensitiveHashCodeProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class CaseInsensitiveHashCodeProvider&#xA;Implements IHashCodeProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class CaseInsensitiveHashCodeProvider : System::Collections::IHashCodeProvider" />
+  <TypeSignature Language="F#" Value="type CaseInsensitiveHashCodeProvider = class&#xA;    interface IHashCodeProvider" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -27,11 +30,14 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Obsolete("Please use StringComparer instead.")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -60,6 +66,7 @@
     <altmember cref="P:System.Threading.Thread.CurrentCulture" />
     <altmember cref="T:System.Globalization.CultureInfo" />
     <altmember cref="T:System.Collections.CaseInsensitiveComparer" />
+    <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -81,6 +88,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -100,7 +109,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Collections.CaseInsensitiveHashCodeProvider> instance is created using this constructor, the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> of the current thread is saved. Comparison procedures use the saved culture to determine the casing rules; therefore, hash code comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ When the <xref:System.Collections.CaseInsensitiveHashCodeProvider> instance is created using this constructor, the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> of the current thread is saved. Comparison procedures use the saved culture to determine the casing rules; therefore, hash code comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).  
   
    
   
@@ -116,6 +125,7 @@
         <altmember cref="P:System.Threading.Thread.CurrentCulture" />
         <altmember cref="T:System.Globalization.CultureInfo" />
         <altmember cref="T:System.Globalization.CompareInfo" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -124,9 +134,12 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CaseInsensitiveHashCodeProvider.#ctor(System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (culture As CultureInfo)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CaseInsensitiveHashCodeProvider(System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="new System.Collections.CaseInsensitiveHashCodeProvider : System.Globalization.CultureInfo -&gt; System.Collections.CaseInsensitiveHashCodeProvider" Usage="new System.Collections.CaseInsensitiveHashCodeProvider culture" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -149,7 +162,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Comparison procedures use the specified <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> to determine the casing rules. Hash code comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ Comparison procedures use the specified <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> to determine the casing rules. Hash code comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).  
   
    
   
@@ -165,6 +178,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="culture" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Globalization.CultureInfo" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -173,9 +187,12 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.CaseInsensitiveHashCodeProvider.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As CaseInsensitiveHashCodeProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::CaseInsensitiveHashCodeProvider ^ Default { System::Collections::CaseInsensitiveHashCodeProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Collections.CaseInsensitiveHashCodeProvider" Usage="System.Collections.CaseInsensitiveHashCodeProvider.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -198,11 +215,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Collections.CaseInsensitiveHashCodeProvider> instance is created using the parameterless constructor, the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> of the current thread is saved. Comparison procedures use the saved culture to determine the casing rules; therefore, hash code comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ When the <xref:System.Collections.CaseInsensitiveHashCodeProvider> instance is created using the parameterless constructor, the <xref:System.Threading.Thread.CurrentCulture%2A?displayProperty=nameWithType> of the current thread is saved. Comparison procedures use the saved culture to determine the casing rules; therefore, hash code comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).  
   
  ]]></format>
         </remarks>
         <altmember cref="P:System.Threading.Thread.CurrentCulture" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="DefaultInvariant">
@@ -211,9 +229,12 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.CaseInsensitiveHashCodeProvider.DefaultInvariant" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultInvariant As CaseInsensitiveHashCodeProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::CaseInsensitiveHashCodeProvider ^ DefaultInvariant { System::Collections::CaseInsensitiveHashCodeProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultInvariant : System.Collections.CaseInsensitiveHashCodeProvider" Usage="System.Collections.CaseInsensitiveHashCodeProvider.DefaultInvariant" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -236,7 +257,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Comparison procedures use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> to determine the casing rules. Hash code comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).  
+ Comparison procedures use the <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType> to determine the casing rules. Hash code comparisons might have different results depending on the culture. For more information on culture-specific comparisons, see the <xref:System.Globalization> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).  
   
    
   
@@ -250,6 +271,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Globalization.CultureInfo.InvariantCulture" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -258,12 +280,15 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.CaseInsensitiveHashCodeProvider.GetHashCode(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (obj As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetHashCode(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : obj -&gt; int" Usage="caseInsensitiveHashCodeProvider.GetHashCode obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IHashCodeProvider.GetHashCode(System.Object)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -297,6 +322,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.Object.GetHashCode" />
+        <related type="Article" href="~/docs/standard/globalization-localization/performing-culture-insensitive-string-operations-in-collections.md">Performing Culture-Insensitive String Operations in Collections</related>
       </Docs>
     </Member>
   </Members>

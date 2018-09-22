@@ -4,13 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.AddInSecurityLevel" />
   <TypeSignature Language="VB.NET" Value="Public Enum AddInSecurityLevel" />
   <TypeSignature Language="C++ CLI" Value="public enum class AddInSecurityLevel" />
+  <TypeSignature Language="F#" Value="type AddInSecurityLevel = " />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Specifies the trust level that is granted to the application domain that an add-in is loaded into.</summary>
     <remarks>
@@ -31,6 +38,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/8dd45b02-7218-40f9-857d-40d7b98b850b">Add-Ins and Extensibility</related>
   </Docs>
   <Members>
     <Member MemberName="FullTrust">
@@ -39,9 +47,11 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSecurityLevel.FullTrust" />
       <MemberSignature Language="VB.NET" Value="FullTrust" />
       <MemberSignature Language="C++ CLI" Value="FullTrust" />
+      <MemberSignature Language="F#" Value="FullTrust = 2" Usage="System.AddIn.Hosting.AddInSecurityLevel.FullTrust" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,9 +68,11 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSecurityLevel.Host" />
       <MemberSignature Language="VB.NET" Value="Host" />
       <MemberSignature Language="C++ CLI" Value="Host" />
+      <MemberSignature Language="F#" Value="Host = 3" Usage="System.AddIn.Hosting.AddInSecurityLevel.Host" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,9 +101,11 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSecurityLevel.Internet" />
       <MemberSignature Language="VB.NET" Value="Internet" />
       <MemberSignature Language="C++ CLI" Value="Internet" />
+      <MemberSignature Language="F#" Value="Internet = 0" Usage="System.AddIn.Hosting.AddInSecurityLevel.Internet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,9 +122,11 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.AddInSecurityLevel.Intranet" />
       <MemberSignature Language="VB.NET" Value="Intranet" />
       <MemberSignature Language="C++ CLI" Value="Intranet" />
+      <MemberSignature Language="F#" Value="Intranet = 1" Usage="System.AddIn.Hosting.AddInSecurityLevel.Intranet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Configuration.NetDataContractSerializerSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetDataContractSerializerSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class NetDataContractSerializerSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type NetDataContractSerializerSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +19,8 @@
     <altmember cref="T:System.Runtime.Serialization.NetDataContractSerializer" />
     <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
     <altmember cref="P:System.Runtime.Serialization.DataContractSerializer.KnownTypes" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f41fb4d5-24e7-4059-8010-286a30bfea93">&lt;dataContractSerializer&gt; Element</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/1a0baea1-27b7-470d-9136-5bbad86c4337">Data Contract Known Types</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -43,13 +46,14 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Configuration.NetDataContractSerializerSection.EnableUnsafeTypeForwarding" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnableUnsafeTypeForwarding As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableUnsafeTypeForwarding { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnableUnsafeTypeForwarding : bool" Usage="System.Runtime.Serialization.Configuration.NetDataContractSerializerSection.EnableUnsafeTypeForwarding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.Configuration.ConfigurationProperty("enableUnsafeTypeForwarding", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -69,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Configuration.NetDataContractSerializerSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Runtime.Serialization.Configuration.NetDataContractSerializerSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

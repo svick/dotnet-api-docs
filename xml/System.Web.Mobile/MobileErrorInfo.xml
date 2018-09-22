@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Mobile.MobileErrorInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class MobileErrorInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class MobileErrorInfo" />
+  <TypeSignature Language="F#" Value="type MobileErrorInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
     </Attribute>
   </Attributes>
@@ -28,6 +31,8 @@
  ]]></format>
     </remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/5d79d49c-2ac3-4d72-bf8f-41c899b58140">Managing Adaptive Error Reporting in Mobile Web Applications</related>
   </Docs>
   <Members>
     <Member MemberName="ContextKey">
@@ -36,9 +41,12 @@
       <MemberSignature Language="DocId" Value="F:System.Web.Mobile.MobileErrorInfo.ContextKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContextKey As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ContextKey;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContextKey : string" Usage="System.Web.Mobile.MobileErrorInfo.ContextKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -54,6 +62,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5d79d49c-2ac3-4d72-bf8f-41c899b58140">Managing Adaptive Error Reporting in Mobile Web Applications</related>
       </Docs>
     </Member>
     <Member MemberName="Description">
@@ -62,9 +72,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.MobileErrorInfo.Description" />
       <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.Web.Mobile.MobileErrorInfo.Description" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -74,6 +87,8 @@
         <summary>Returns a description of the exception. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A description of the exception.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5d79d49c-2ac3-4d72-bf8f-41c899b58140">Managing Adaptive Error Reporting in Mobile Web Applications</related>
       </Docs>
     </Member>
     <Member MemberName="File">
@@ -82,9 +97,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.MobileErrorInfo.File" />
       <MemberSignature Language="VB.NET" Value="Public Property File As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ File { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.File : string with get, set" Usage="System.Web.Mobile.MobileErrorInfo.File" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -94,6 +112,8 @@
         <summary>Returns the name of the code file where the exception occurred. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The name of the code file where the exception occurred.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5d79d49c-2ac3-4d72-bf8f-41c899b58140">Managing Adaptive Error Reporting in Mobile Web Applications</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -102,9 +122,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.MobileErrorInfo.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ key); void set(System::String ^ key, System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string with get, set" Usage="System.Web.Mobile.MobileErrorInfo.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -118,6 +141,8 @@
         <summary>Returns a string value from the internal dictionary or hash table using the given key. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>A string value from the internal dictionary or hash table using the given key.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5d79d49c-2ac3-4d72-bf8f-41c899b58140">Managing Adaptive Error Reporting in Mobile Web Applications</related>
       </Docs>
     </Member>
     <Member MemberName="LineNumber">
@@ -126,9 +151,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.MobileErrorInfo.LineNumber" />
       <MemberSignature Language="VB.NET" Value="Public Property LineNumber As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LineNumber { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : string with get, set" Usage="System.Web.Mobile.MobileErrorInfo.LineNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -138,6 +166,8 @@
         <summary>Returns the line number in the code where the exception occurred, if tracing is enabled. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The line number in the code where the exception occurred.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5d79d49c-2ac3-4d72-bf8f-41c899b58140">Managing Adaptive Error Reporting in Mobile Web Applications</related>
       </Docs>
     </Member>
     <Member MemberName="MiscText">
@@ -146,9 +176,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.MobileErrorInfo.MiscText" />
       <MemberSignature Language="VB.NET" Value="Public Property MiscText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MiscText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MiscText : string with get, set" Usage="System.Web.Mobile.MobileErrorInfo.MiscText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -158,6 +191,8 @@
         <summary>Returns an alternate text for the exception. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An alternate text for the exception.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5d79d49c-2ac3-4d72-bf8f-41c899b58140">Managing Adaptive Error Reporting in Mobile Web Applications</related>
       </Docs>
     </Member>
     <Member MemberName="MiscTitle">
@@ -166,9 +201,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.MobileErrorInfo.MiscTitle" />
       <MemberSignature Language="VB.NET" Value="Public Property MiscTitle As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MiscTitle { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MiscTitle : string with get, set" Usage="System.Web.Mobile.MobileErrorInfo.MiscTitle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -178,6 +216,8 @@
         <summary>Returns an alternate title for the exception. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>An alternate title for the exception.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5d79d49c-2ac3-4d72-bf8f-41c899b58140">Managing Adaptive Error Reporting in Mobile Web Applications</related>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -186,9 +226,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.MobileErrorInfo.Type" />
       <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Web.Mobile.MobileErrorInfo.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -198,6 +241,8 @@
         <summary>Returns the <see cref="T:System.Type" /> of the exception. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The <see cref="T:System.Type" /> of the exception.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/6dcdb87f-666e-46d4-bacb-b7b18470a943">Mobile Device Capabilities</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/5d79d49c-2ac3-4d72-bf8f-41c899b58140">Managing Adaptive Error Reporting in Mobile Web Applications</related>
       </Docs>
     </Member>
   </Members>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xaml.IDestinationTypeProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDestinationTypeProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDestinationTypeProvider" />
+  <TypeSignature Language="F#" Value="type IDestinationTypeProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +33,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Xaml.XamlObjectWriter" />
+    <related type="Article" href="http://msdn.microsoft.com/library/db07a952-05ce-4aa4-b6f9-aac7397d0326">Type Converters or Markup Extensions for XAML</related>
   </Docs>
   <Members>
     <Member MemberName="GetDestinationType">
@@ -40,6 +42,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xaml.IDestinationTypeProvider.GetDestinationType" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDestinationType () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetDestinationType();" />
+      <MemberSignature Language="F#" Value="abstract member GetDestinationType : unit -&gt; Type" Usage="iDestinationTypeProvider.GetDestinationType " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

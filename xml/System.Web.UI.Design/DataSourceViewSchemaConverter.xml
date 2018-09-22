@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DataSourceViewSchemaConverter" />
   <TypeSignature Language="VB.NET" Value="Public Class DataSourceViewSchemaConverter&#xA;Inherits TypeConverter" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataSourceViewSchemaConverter : System::ComponentModel::TypeConverter" />
+  <TypeSignature Language="F#" Value="type DataSourceViewSchemaConverter = class&#xA;    inherit TypeConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -34,6 +36,7 @@
     <altmember cref="T:System.ComponentModel.TypeConverter" />
     <altmember cref="Overload:System.ComponentModel.TypeDescriptor.GetConverter" />
     <altmember cref="T:System.ComponentModel.TypeConverterAttribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,8 +48,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.DataSourceViewSchemaConverter" /> class.</summary>
@@ -61,6 +70,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
       </Docs>
     </Member>
     <Member MemberName="CanConvertFrom">
@@ -69,9 +79,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFrom (context As ITypeDescriptorContext, sourceType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ sourceType);" />
+      <MemberSignature Language="F#" Value="abstract member CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool&#xA;override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="dataSourceViewSchemaConverter.CanConvertFrom (context, sourceType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,6 +110,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertFrom">
@@ -106,9 +119,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFrom (context As ITypeDescriptorContext, culture As CultureInfo, value As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj&#xA;override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="dataSourceViewSchemaConverter.ConvertFrom (context, culture, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,6 +152,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">The conversion could not be performed.</exception>
         <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetStandardValues">
@@ -147,6 +163,7 @@
       <Docs>
         <summary>Returns a list of available values that can be assigned to a control property.</summary>
         <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetStandardValues">
@@ -155,11 +172,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValues (context As ITypeDescriptorContext) As TypeConverter.StandardValuesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::TypeConverter::StandardValuesCollection ^ GetStandardValues(System::ComponentModel::ITypeDescriptorContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection&#xA;override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="dataSourceViewSchemaConverter.GetStandardValues context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.TypeConverter+StandardValuesCollection</ReturnType>
       </ReturnValue>
@@ -185,6 +209,7 @@
         <altmember cref="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
         <altmember cref="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
         <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
       </Docs>
     </Member>
     <Member MemberName="GetStandardValues">
@@ -193,9 +218,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStandardValues (context As ITypeDescriptorContext, typeFilter As Type) As TypeConverter.StandardValuesCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::TypeConverter::StandardValuesCollection ^ GetStandardValues(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ typeFilter);" />
+      <MemberSignature Language="F#" Value="abstract member GetStandardValues : System.ComponentModel.ITypeDescriptorContext * Type -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection&#xA;override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext * Type -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="dataSourceViewSchemaConverter.GetStandardValues (context, typeFilter)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -212,6 +239,7 @@
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> containing available values for assignment to the associated control property.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesExclusive">
@@ -220,9 +248,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesExclusive (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesExclusive(System::ComponentModel::ITypeDescriptorContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="dataSourceViewSchemaConverter.GetStandardValuesExclusive context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -246,6 +276,7 @@
         </remarks>
         <altmember cref="Overload:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesSupported" />
         <altmember cref="T:System.ComponentModel.TypeConverter" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
       </Docs>
     </Member>
     <Member MemberName="GetStandardValuesSupported">
@@ -254,9 +285,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesSupported (context As ITypeDescriptorContext) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool&#xA;override this.GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="dataSourceViewSchemaConverter.GetStandardValuesSupported context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -282,6 +315,7 @@
         </remarks>
         <altmember cref="T:System.ComponentModel.TypeConverter" />
         <altmember cref="M:System.Web.UI.Design.DataSourceViewSchemaConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/4881917b-628f-4689-b872-472e4f8a4e3a">Design-Time Architecture</related>
       </Docs>
     </Member>
   </Members>

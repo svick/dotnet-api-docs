@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.FormsAuthenticationUser" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormsAuthenticationUser&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormsAuthenticationUser sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type FormsAuthenticationUser = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -31,7 +33,7 @@
  The following code example shows how to obtain the <xref:System.Web.Configuration.FormsAuthenticationUserCollection> to access the <xref:System.Web.Configuration.FormsAuthenticationUser> objects of an existing Web application. The configuration file will contain a setup similar to the following.  
   
 > [!NOTE]
->  If you use the [credentials Element for forms for authentication (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e5a001f8-fdbe-4c88-80ca-bfe36df23479) section, be sure to follow the guidelines explained at [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1). For scalability and better security, it is recommended you use an external database to store the users' credentials. For more information about building secure ASP.NET applications, search the Microsoft MSDN Web site (msdn.microsoft.com) for "Securing Your ASP.NET Application" and "Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication."  
+>  If you use the [credentials Element for forms for authentication (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e5a001f8-fdbe-4c88-80ca-bfe36df23479) section, be sure to follow the guidelines explained at [ASP.NET Authentication](https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)). For scalability and better security, it is recommended you use an external database to store the users' credentials. For more information about building secure ASP.NET applications, search the Microsoft MSDN Web site (msdn.microsoft.com) for "Securing Your ASP.NET Application" and "Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication."  
   
 ```  
 <authentication mode="Forms">  
@@ -55,6 +57,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/99e2f9e8-5b97-4a4d-a4ed-5f93276053b7">Forms Authentication Across Applications</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -63,9 +68,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.FormsAuthenticationUser.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, password As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; FormsAuthenticationUser(System::String ^ name, System::String ^ password);" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.FormsAuthenticationUser : string * string -&gt; System.Web.Configuration.FormsAuthenticationUser" Usage="new System.Web.Configuration.FormsAuthenticationUser (name, password)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -100,19 +107,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationUser.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationUser.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.Configuration.LowerCaseStringConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("name", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsKey=true, IsRequired=true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator</AttributeName>
         </Attribute>
       </Attributes>
@@ -141,16 +150,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationUser.Password" />
       <MemberSignature Language="VB.NET" Value="Public Property Password As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Password : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationUser.Password" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("password", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsRequired=true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator</AttributeName>
         </Attribute>
       </Attributes>
@@ -179,11 +190,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationUser.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.FormsAuthenticationUser.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>

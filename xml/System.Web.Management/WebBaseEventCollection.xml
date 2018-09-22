@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebBaseEventCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebBaseEventCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebBaseEventCollection sealed : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type WebBaseEventCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -33,6 +35,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Management.SqlWebEventProvider" />
+    <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,9 +44,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEventCollection.#ctor(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (events As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBaseEventCollection(System::Collections::ICollection ^ events);" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebBaseEventCollection : System.Collections.ICollection -&gt; System.Web.Management.WebBaseEventCollection" Usage="new System.Web.Management.WebBaseEventCollection events" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -79,9 +84,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEventCollection.Contains(System.Web.Management.WebBaseEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As WebBaseEvent) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::Management::WebBaseEvent ^ value);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.Management.WebBaseEvent -&gt; bool" Usage="webBaseEventCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -115,9 +122,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebBaseEventCollection.IndexOf(System.Web.Management.WebBaseEvent)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As WebBaseEvent) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Management::WebBaseEvent ^ value);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.Management.WebBaseEvent -&gt; int" Usage="webBaseEventCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -151,9 +160,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebBaseEventCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As WebBaseEvent" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Management::WebBaseEvent ^ default[int] { System::Web::Management::WebBaseEvent ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Management.WebBaseEvent" Usage="System.Web.Management.WebBaseEventCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

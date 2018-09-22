@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SrgsGrammar.SrgsToken" />
   <TypeSignature Language="VB.NET" Value="Public Class SrgsToken&#xA;Inherits SrgsElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class SrgsToken : System::Speech::Recognition::SrgsGrammar::SrgsElement" />
+  <TypeSignature Language="F#" Value="type SrgsToken = class&#xA;    inherit SrgsElement" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,8 +15,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Diagnostics.DebuggerDisplay("{DebuggerDisplayString ()}")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -39,9 +44,11 @@
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SrgsGrammar.SrgsToken.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SrgsToken(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SrgsGrammar.SrgsToken : string -&gt; System.Speech.Recognition.SrgsGrammar.SrgsToken" Usage="new System.Speech.Recognition.SrgsGrammar.SrgsToken text" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -70,11 +77,18 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsToken.Display" />
       <MemberSignature Language="VB.NET" Value="Public Property Display As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Display { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Display : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsToken.Display" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -99,11 +113,18 @@
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsToken.Pronunciation" />
       <MemberSignature Language="VB.NET" Value="Public Property Pronunciation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Pronunciation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Pronunciation : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsToken.Pronunciation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -114,7 +135,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Phones are letters or symbols that describe the sounds of speech. System.Speech supports three phonetic alphabets for specifying custom pronunciations: the Universal Phone Set (UPS), the Speech API (SAPI) Phone set, and the International Phonetic Alphabet (IPA). The phones specified in <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken.Pronunciation%2A> must match the phonetic alphabet specified in <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.PhoneticAlphabet%2A>. See [Lexicons and Phonetic Alphabets](http://msdn.microsoft.com/library/435e3c6f-6834-4e5a-b0f6-c17b2275dc51) for more information.  
+ Phones are letters or symbols that describe the sounds of speech. System.Speech supports three phonetic alphabets for specifying custom pronunciations: the Universal Phone Set (UPS), the Speech API (SAPI) Phone set, and the International Phonetic Alphabet (IPA). The phones specified in <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken.Pronunciation%2A> must match the phonetic alphabet specified in <xref:System.Speech.Recognition.SrgsGrammar.SrgsDocument.PhoneticAlphabet%2A>. See [Lexicons and Phonetic Alphabets](https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh378335(v%3doffice.14)) for more information.  
   
  The phones specified in <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken.Pronunciation%2A> indicate how the contents of <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken.Text%2A> should be pronounced for successful recognition.  The speech recognition engine uses the pronunciation specified in <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken.Pronunciation%2A> to match speech input and returns the string contained by <xref:System.Speech.Recognition.SrgsGrammar.SrgsToken.Text%2A> in the recognition result.  
   
@@ -209,6 +230,7 @@ namespace SampleRecognition
         </remarks>
         <exception cref="T:System.ArgumentNullException">An attempt is made to set <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsToken.Pronunciation" /> to <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">An attempt is made to assign an empty string to <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsToken.Pronunciation" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/office/developer/speech-technologies/hh378335(v%3doffice.14)">Lexicons and Phonetic Alphabets</related>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -217,11 +239,18 @@ namespace SampleRecognition
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SrgsGrammar.SrgsToken.Text" />
       <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Speech.Recognition.SrgsGrammar.SrgsToken.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

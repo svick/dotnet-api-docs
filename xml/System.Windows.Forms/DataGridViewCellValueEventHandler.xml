@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellValueEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewCellValueEventHandler(sender As Object, e As DataGridViewCellValueEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewCellValueEventHandler(System::Object ^ sender, DataGridViewCellValueEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellValueEventHandler = delegate of obj * DataGridViewCellValueEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -46,5 +48,6 @@
     <altmember cref="E:System.Windows.Forms.DataGridView.CellValueNeeded" />
     <altmember cref="E:System.Windows.Forms.DataGridView.CellValuePushed" />
     <altmember cref="T:System.Windows.Forms.DataGridViewCellValueEventArgs" />
+    <related type="Article" href="http://msdn.microsoft.com/library/feae5d43-2848-4b1a-8ea7-77085dc415b5">Virtual Mode in the Windows Forms DataGridView Control</related>
   </Docs>
 </Type>

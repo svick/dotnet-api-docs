@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpRuntimeSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpRuntimeSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class HttpRuntimeSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type HttpRuntimeSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -47,6 +49,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -72,13 +75,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.AllowDynamicModuleRegistration" />
       <MemberSignature Language="VB.NET" Value="Public Property AllowDynamicModuleRegistration As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowDynamicModuleRegistration { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AllowDynamicModuleRegistration : bool with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.AllowDynamicModuleRegistration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("allowDynamicModuleRegistration", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -98,13 +102,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.ApartmentThreading" />
       <MemberSignature Language="VB.NET" Value="Public Property ApartmentThreading As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ApartmentThreading { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ApartmentThreading : bool with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.ApartmentThreading" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("apartmentThreading", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -131,16 +137,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.AppRequestQueueLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property AppRequestQueueLimit As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AppRequestQueueLimit { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.AppRequestQueueLimit : int with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.AppRequestQueueLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("appRequestQueueLimit", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -177,13 +185,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.AsyncPreloadMode" />
       <MemberSignature Language="VB.NET" Value="Public Property AsyncPreloadMode As AsyncPreloadModeFlags" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::AsyncPreloadModeFlags AsyncPreloadMode { System::Web::Configuration::AsyncPreloadModeFlags get(); void set(System::Web::Configuration::AsyncPreloadModeFlags value); };" />
+      <MemberSignature Language="F#" Value="member this.AsyncPreloadMode : System.Web.Configuration.AsyncPreloadModeFlags with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.AsyncPreloadMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("asyncPreloadMode", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -209,13 +218,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.DefaultRegexMatchTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultRegexMatchTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan DefaultRegexMatchTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultRegexMatchTimeout : TimeSpan with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.DefaultRegexMatchTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("defaultRegexMatchTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -234,16 +244,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.DelayNotificationTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property DelayNotificationTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan DelayNotificationTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.DelayNotificationTimeout : TimeSpan with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.DelayNotificationTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.TimeSpanSecondsConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("delayNotificationTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -280,13 +292,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.Enable" />
       <MemberSignature Language="VB.NET" Value="Public Property Enable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enable { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Enable : bool with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.Enable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("enable", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -313,6 +327,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c6d99815-e022-4d2c-9420-1d7ab5b9d504">Using Application Domains</related>
       </Docs>
     </Member>
     <Member MemberName="EnableHeaderChecking">
@@ -321,13 +336,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.EnableHeaderChecking" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableHeaderChecking As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableHeaderChecking { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableHeaderChecking : bool with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.EnableHeaderChecking" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("enableHeaderChecking", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -366,6 +383,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/985fe5d8-eb71-4024-b361-41fbdc1618d8">HTTP</related>
       </Docs>
     </Member>
     <Member MemberName="EnableKernelOutputCache">
@@ -374,13 +392,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.EnableKernelOutputCache" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableKernelOutputCache As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableKernelOutputCache { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableKernelOutputCache : bool with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.EnableKernelOutputCache" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("enableKernelOutputCache", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -418,6 +438,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ac11c8ea-df5d-4de8-b315-9ccf1048b0ce">ASP.NET Caching Features</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f882bf1b-a009-4312-ac06-74370ffabc0b">Performance Overview</related>
       </Docs>
     </Member>
     <Member MemberName="EnableVersionHeader">
@@ -426,13 +448,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.EnableVersionHeader" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableVersionHeader As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableVersionHeader { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableVersionHeader : bool with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.EnableVersionHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("enableVersionHeader", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -459,6 +483,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/775ad4fb-914f-453c-98ef-ce1089b6f903">Assembly Versioning</related>
       </Docs>
     </Member>
     <Member MemberName="EncoderType">
@@ -467,16 +492,17 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.EncoderType" />
       <MemberSignature Language="VB.NET" Value="Public Property EncoderType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EncoderType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EncoderType : string with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.EncoderType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("encoderType", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -504,19 +530,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.ExecutionTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ExecutionTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ExecutionTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.ExecutionTimeout : TimeSpan with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.ExecutionTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.TimeSpanSecondsConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("executionTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.TimeSpanValidator(MaxValueString="10675199.02:48:05.4775807", MinValueString="00:00:00")</AttributeName>
         </Attribute>
       </Attributes>
@@ -553,13 +581,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.FcnMode" />
       <MemberSignature Language="VB.NET" Value="Public Property FcnMode As FcnMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::FcnMode FcnMode { System::Web::Configuration::FcnMode get(); void set(System::Web::Configuration::FcnMode value); };" />
+      <MemberSignature Language="F#" Value="member this.FcnMode : System.Web.Configuration.FcnMode with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.FcnMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("fcnMode", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -578,16 +607,17 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.MaxQueryStringLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxQueryStringLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxQueryStringLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxQueryStringLength : int with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.MaxQueryStringLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("maxQueryStringLength", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -601,7 +631,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Web.Configuration.HttpRuntimeSection.MaxQueryStringLength%2A> property can be any integer, zero or larger. If the length of a query string exceeds the size limit, ASP.NET returns an `HTTP 400` (Bad Request) status code.  
+ The value of the <xref:System.Web.Configuration.HttpRuntimeSection.MaxQueryStringLength%2A> property can be any integer, zero or greater. If the length of a query string exceeds the size limit, ASP.NET returns an `HTTP 400` (Bad Request) status code.  
   
 > [!NOTE]
 >  Extremely small values can make a Web site unusable.  
@@ -621,16 +651,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.MaxRequestLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxRequestLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxRequestLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxRequestLength : int with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.MaxRequestLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("maxRequestLength", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -667,16 +699,17 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.MaxUrlLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxUrlLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxUrlLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxUrlLength : int with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.MaxUrlLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("maxUrlLength", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -690,7 +723,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Web.Configuration.HttpRuntimeSection.MaxUrlLength%2A> property can be any integer, zero or larger.  
+ The value of the <xref:System.Web.Configuration.HttpRuntimeSection.MaxUrlLength%2A> property can be any integer, zero or greater.  
   
 > [!NOTE]
 >  Extremely small values can make a Web site unusable.  
@@ -709,16 +742,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.MaxWaitChangeNotification" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxWaitChangeNotification As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxWaitChangeNotification { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxWaitChangeNotification : int with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.MaxWaitChangeNotification" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("maxWaitChangeNotification", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -747,6 +782,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/app-domains/application-domains.md">Application Domains Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MinFreeThreads">
@@ -755,16 +791,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.MinFreeThreads" />
       <MemberSignature Language="VB.NET" Value="Public Property MinFreeThreads As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinFreeThreads { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MinFreeThreads : int with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.MinFreeThreads" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("minFreeThreads", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -793,6 +831,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/threading/threads-and-threading.md">Threads and Threading</related>
+        <related type="Article" href="~/docs/standard/threading/using-threads-and-threading.md">Using Threads and Threading</related>
       </Docs>
     </Member>
     <Member MemberName="MinLocalRequestFreeThreads">
@@ -801,16 +841,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.MinLocalRequestFreeThreads" />
       <MemberSignature Language="VB.NET" Value="Public Property MinLocalRequestFreeThreads As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinLocalRequestFreeThreads { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MinLocalRequestFreeThreads : int with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.MinLocalRequestFreeThreads" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("minLocalRequestFreeThreads", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -836,6 +878,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/threading/threads-and-threading.md">Threads and Threading</related>
+        <related type="Article" href="~/docs/standard/threading/using-threads-and-threading.md">Using Threads and Threading</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -844,11 +888,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.HttpRuntimeSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
@@ -864,13 +915,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.RelaxedUrlToFileSystemMapping" />
       <MemberSignature Language="VB.NET" Value="Public Property RelaxedUrlToFileSystemMapping As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RelaxedUrlToFileSystemMapping { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RelaxedUrlToFileSystemMapping : bool with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.RelaxedUrlToFileSystemMapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("relaxedUrlToFileSystemMapping", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -899,16 +951,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.RequestLengthDiskThreshold" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestLengthDiskThreshold As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RequestLengthDiskThreshold { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestLengthDiskThreshold : int with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.RequestLengthDiskThreshold" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("requestLengthDiskThreshold", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -943,13 +997,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.RequestPathInvalidCharacters" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestPathInvalidCharacters As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestPathInvalidCharacters { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestPathInvalidCharacters : string with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.RequestPathInvalidCharacters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("requestPathInvalidCharacters", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -977,16 +1032,17 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.RequestValidationMode" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestValidationMode As Version" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ RequestValidationMode { Version ^ get(); void set(Version ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestValidationMode : Version with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.RequestValidationMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.Configuration.VersionConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("requestValidationMode", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1007,8 +1063,14 @@
 -   `4.0` The <xref:System.Web.HttpRequest> object internally sets a flag that indicates that request validation should be triggered whenever any HTTP request data is accessed. This guarantees that the request validation is triggered before data such as cookies and URLs are accessed during the request. The request validation settings of the  element (if any) in the configuration file or of the  directive in an individual page are ignored.  
   
 -   `2.0`. Request validation is enabled only for pages, not for all HTTP requests. In addition, the request validation settings of the  element (if any) in the configuration file or of the  directive in an individual page are used to determine which page requests to validate.  
+
+-   `0.0`. Request validation is disabled for the application. `0.0` is only recognized in ASP.NET 4.6 and later.
   
- The value that you assign to this property is not validated to match a specific version of ASP.NET. Any numeric value smaller than `4.0` (for example, `3.7`, `2.9`, or `2.0`) is interpreted as `2.0`. Any number larger than `4.5` is interpreted as `4.5`.  
+ The value that you assign to this property is not validated to match a specific version of ASP.NET. 
+
+ In ASP.NET 4.5, and earlier any numeric value less than `4.0` (for example, `3.7`, `2.9`, or `2.0`) is interpreted as `2.0`. Any number greater than `4.5` is interpreted as `4.5`.  
+
+ In ASP.NET 4.6, and later any numeric value  greater than  `0.0` and  less than `4.0` (for example, `3.7`, `2.9`, or `1.0`) is interpreted as `2.0`. Any number greater than `4.5` is interpreted as `4.5`
   
  To set this value in a configuration file, you can assign a value to the `requestValidationMode` attribute of the `httpRuntime` element. For more information, see [httpRuntime Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/library/e9b81350-8aaf-47cc-9843-5f7d0c59f369).  
   
@@ -1022,16 +1084,17 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.RequestValidationType" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestValidationType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestValidationType { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestValidationType : string with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.RequestValidationType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("requestValidationType", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1057,13 +1120,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.RequireRootedSaveAsPath" />
       <MemberSignature Language="VB.NET" Value="Public Property RequireRootedSaveAsPath As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireRootedSaveAsPath { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RequireRootedSaveAsPath : bool with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.RequireRootedSaveAsPath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("requireRootedSaveAsPath", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1100,13 +1165,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.SendCacheControlHeader" />
       <MemberSignature Language="VB.NET" Value="Public Property SendCacheControlHeader As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SendCacheControlHeader { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SendCacheControlHeader : bool with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.SendCacheControlHeader" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("sendCacheControlHeader", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1135,6 +1202,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpRuntimeSection.SetReadOnly" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetReadOnly ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetReadOnly();" />
+      <MemberSignature Language="F#" Value="override this.SetReadOnly : unit -&gt; unit" Usage="httpRuntimeSection.SetReadOnly " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1155,16 +1223,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.ShutdownTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property ShutdownTimeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ShutdownTimeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.ShutdownTimeout : TimeSpan with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.ShutdownTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.TimeSpanSecondsConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("shutdownTimeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1198,13 +1268,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.TargetFramework" />
       <MemberSignature Language="VB.NET" Value="Public Property TargetFramework As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFramework { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TargetFramework : string with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.TargetFramework" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("targetFramework", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1223,13 +1294,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.UseFullyQualifiedRedirectUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property UseFullyQualifiedRedirectUrl As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseFullyQualifiedRedirectUrl { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseFullyQualifiedRedirectUrl : bool with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.UseFullyQualifiedRedirectUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("useFullyQualifiedRedirectUrl", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1267,16 +1340,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpRuntimeSection.WaitChangeNotification" />
       <MemberSignature Language="VB.NET" Value="Public Property WaitChangeNotification As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WaitChangeNotification { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.WaitChangeNotification : int with get, set" Usage="System.Web.Configuration.HttpRuntimeSection.WaitChangeNotification" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("waitChangeNotification", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.IntegerValidator(MinValue=0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1305,6 +1380,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/app-domains/application-domains.md">Application Domains Overview</related>
       </Docs>
     </Member>
   </Members>

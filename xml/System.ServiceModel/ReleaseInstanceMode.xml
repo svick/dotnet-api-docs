@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ReleaseInstanceMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ReleaseInstanceMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ReleaseInstanceMode" />
+  <TypeSignature Language="F#" Value="type ReleaseInstanceMode = " />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -18,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.ReleaseInstanceMode> with the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property to inform [!INCLUDE[indigo1](~/includes/indigo1-md.md)] that the current service object must be recycled at a particular point in the invocation process. The default behavior is to recycle a service object according to the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value.  
+ Use the <xref:System.ServiceModel.ReleaseInstanceMode> with the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property to inform Windows Communication Foundation (WCF) that the current service object must be recycled at a particular point in the invocation process. The default behavior is to recycle a service object according to the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value.  
   
    
   
@@ -38,10 +40,12 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.ReleaseInstanceMode.AfterCall" />
       <MemberSignature Language="VB.NET" Value="AfterCall" />
       <MemberSignature Language="C++ CLI" Value="AfterCall" />
+      <MemberSignature Language="F#" Value="AfterCall = 2" Usage="System.ServiceModel.ReleaseInstanceMode.AfterCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,10 +62,12 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.ReleaseInstanceMode.BeforeAndAfterCall" />
       <MemberSignature Language="VB.NET" Value="BeforeAndAfterCall" />
       <MemberSignature Language="C++ CLI" Value="BeforeAndAfterCall" />
+      <MemberSignature Language="F#" Value="BeforeAndAfterCall = 3" Usage="System.ServiceModel.ReleaseInstanceMode.BeforeAndAfterCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -78,10 +84,12 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.ReleaseInstanceMode.BeforeCall" />
       <MemberSignature Language="VB.NET" Value="BeforeCall" />
       <MemberSignature Language="C++ CLI" Value="BeforeCall" />
+      <MemberSignature Language="F#" Value="BeforeCall = 1" Usage="System.ServiceModel.ReleaseInstanceMode.BeforeCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,10 +106,12 @@
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.ReleaseInstanceMode.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ServiceModel.ReleaseInstanceMode.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbCommandBuilder" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbCommandBuilder&#xA;Inherits Component" />
   <TypeSignature Language="C++ CLI" Value="public ref class DbCommandBuilder abstract : System::ComponentModel::Component" />
+  <TypeSignature Language="F#" Value="type DbCommandBuilder = class&#xA;    inherit Component" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -44,6 +46,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,6 +59,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -71,6 +76,8 @@
       <Docs>
         <summary>Initializes a new instance of a class that inherits from the <see cref="T:System.Data.Common.DbCommandBuilder" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyParameterInfo">
@@ -78,9 +85,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ApplyParameterInfo(class System.Data.Common.DbParameter parameter, class System.Data.DataRow row, valuetype System.Data.StatementType statementType, bool whereClause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.ApplyParameterInfo(System.Data.Common.DbParameter,System.Data.DataRow,System.Data.StatementType,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void ApplyParameterInfo(System::Data::Common::DbParameter ^ parameter, System::Data::DataRow ^ row, System::Data::StatementType statementType, bool whereClause);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyParameterInfo : System.Data.Common.DbParameter * System.Data.DataRow * System.Data.StatementType * bool -&gt; unit" Usage="dbCommandBuilder.ApplyParameterInfo (parameter, row, statementType, whereClause)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -117,6 +126,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CatalogLocation">
@@ -125,9 +136,11 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommandBuilder.CatalogLocation" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CatalogLocation As CatalogLocation" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Common::CatalogLocation CatalogLocation { System::Data::Common::CatalogLocation get(); void set(System::Data::Common::CatalogLocation value); };" />
+      <MemberSignature Language="F#" Value="member this.CatalogLocation : System.Data.Common.CatalogLocation with get, set" Usage="System.Data.Common.DbCommandBuilder.CatalogLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -141,7 +154,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -152,6 +165,8 @@
         <summary>Sets or gets the <see cref="T:System.Data.Common.CatalogLocation" /> for an instance of the <see cref="T:System.Data.Common.DbCommandBuilder" /> class.</summary>
         <value>A <see cref="T:System.Data.Common.CatalogLocation" /> object.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CatalogSeparator">
@@ -160,9 +175,11 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommandBuilder.CatalogSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CatalogSeparator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CatalogSeparator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CatalogSeparator : string with get, set" Usage="System.Data.Common.DbCommandBuilder.CatalogSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -176,7 +193,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(".")</AttributeName>
         </Attribute>
       </Attributes>
@@ -187,6 +204,8 @@
         <summary>Sets or gets a string used as the catalog separator for an instance of the <see cref="T:System.Data.Common.DbCommandBuilder" /> class.</summary>
         <value>A string indicating the catalog separator for use with an instance of the <see cref="T:System.Data.Common.DbCommandBuilder" /> class.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ConflictOption">
@@ -195,9 +214,11 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommandBuilder.ConflictOption" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ConflictOption As ConflictOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::ConflictOption ConflictOption { System::Data::ConflictOption get(); void set(System::Data::ConflictOption value); };" />
+      <MemberSignature Language="F#" Value="member this.ConflictOption : System.Data.ConflictOption with get, set" Usage="System.Data.Common.DbCommandBuilder.ConflictOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -211,7 +232,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -222,6 +243,8 @@
         <summary>Specifies which <see cref="T:System.Data.ConflictOption" /> is to be used by the <see cref="T:System.Data.Common.DbCommandBuilder" />.</summary>
         <value>Returns one of the <see cref="T:System.Data.ConflictOption" /> values describing the behavior of this <see cref="T:System.Data.Common.DbCommandBuilder" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DataAdapter">
@@ -230,9 +253,11 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommandBuilder.DataAdapter" />
       <MemberSignature Language="VB.NET" Value="Public Property DataAdapter As DbDataAdapter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DbDataAdapter ^ DataAdapter { System::Data::Common::DbDataAdapter ^ get(); void set(System::Data::Common::DbDataAdapter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataAdapter : System.Data.Common.DbDataAdapter with get, set" Usage="System.Data.Common.DbCommandBuilder.DataAdapter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -246,11 +271,14 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -269,6 +297,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -277,9 +307,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="dbCommandBuilder.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -316,8 +348,10 @@
           <para>
             <see cref="Overload:System.Data.Common.DbCommandBuilder.Dispose" /> can be called multiple times by other objects. When overriding <see cref="M:System.Data.Common.DbCommandBuilder.Dispose(System.Boolean)" />, be careful not to reference objects that have been previously disposed of in an earlier call to <see cref="Overload:System.Data.Common.DbCommandBuilder.Dispose" />. For more information about how to implement <see cref="M:System.Data.Common.DbCommandBuilder.Dispose(System.Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see langword="Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see langword="Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetDeleteCommand">
@@ -342,6 +376,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetDeleteCommand">
@@ -350,9 +386,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetDeleteCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDeleteCommand () As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbCommand ^ GetDeleteCommand();" />
+      <MemberSignature Language="F#" Value="member this.GetDeleteCommand : unit -&gt; System.Data.Common.DbCommand" Usage="dbCommandBuilder.GetDeleteCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -384,6 +422,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDeleteCommand">
@@ -392,9 +432,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetDeleteCommand(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetDeleteCommand (useColumnsForParameterNames As Boolean) As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbCommand ^ GetDeleteCommand(bool useColumnsForParameterNames);" />
+      <MemberSignature Language="F#" Value="member this.GetDeleteCommand : bool -&gt; System.Data.Common.DbCommand" Usage="dbCommandBuilder.GetDeleteCommand useColumnsForParameterNames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -437,6 +479,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetInsertCommand">
@@ -461,6 +505,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetInsertCommand">
@@ -469,9 +515,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetInsertCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInsertCommand () As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbCommand ^ GetInsertCommand();" />
+      <MemberSignature Language="F#" Value="member this.GetInsertCommand : unit -&gt; System.Data.Common.DbCommand" Usage="dbCommandBuilder.GetInsertCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -503,6 +551,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetInsertCommand">
@@ -511,9 +561,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetInsertCommand(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetInsertCommand (useColumnsForParameterNames As Boolean) As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbCommand ^ GetInsertCommand(bool useColumnsForParameterNames);" />
+      <MemberSignature Language="F#" Value="member this.GetInsertCommand : bool -&gt; System.Data.Common.DbCommand" Usage="dbCommandBuilder.GetInsertCommand useColumnsForParameterNames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -556,6 +608,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetParameterName">
@@ -566,6 +620,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Returns the name of the specified parameter.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetParameterName">
@@ -574,9 +629,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetParameterName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetParameterName (parameterOrdinal As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ GetParameterName(int parameterOrdinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetParameterName : int -&gt; string" Usage="dbCommandBuilder.GetParameterName parameterOrdinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -597,9 +654,11 @@
       </Parameters>
       <Docs>
         <param name="parameterOrdinal">The number to be included as part of the parameter's name..</param>
-        <summary>Returns the name of the specified parameter in the format of @p*#*. Use when building a custom command builder.</summary>
+        <summary>Returns the name of the specified parameter in the format of @p#. Use when building a custom command builder.</summary>
         <returns>The name of the parameter with the specified number appended as part of the parameter name.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetParameterName">
@@ -608,9 +667,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetParameterName(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetParameterName (parameterName As String) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ GetParameterName(System::String ^ parameterName);" />
+      <MemberSignature Language="F#" Value="abstract member GetParameterName : string -&gt; string" Usage="dbCommandBuilder.GetParameterName parameterName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -634,6 +695,8 @@
         <summary>Returns the full parameter name, given the partial parameter name.</summary>
         <returns>The full parameter name corresponding to the partial parameter name requested.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetParameterPlaceholder">
@@ -642,9 +705,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetParameterPlaceholder(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetParameterPlaceholder (parameterOrdinal As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::String ^ GetParameterPlaceholder(int parameterOrdinal);" />
+      <MemberSignature Language="F#" Value="abstract member GetParameterPlaceholder : int -&gt; string" Usage="dbCommandBuilder.GetParameterPlaceholder parameterOrdinal" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -675,6 +740,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSchemaTable">
@@ -683,9 +750,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetSchemaTable(System.Data.Common.DbCommand)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetSchemaTable (sourceCommand As DbCommand) As DataTable" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::DataTable ^ GetSchemaTable(System::Data::Common::DbCommand ^ sourceCommand);" />
+      <MemberSignature Language="F#" Value="abstract member GetSchemaTable : System.Data.Common.DbCommand -&gt; System.Data.DataTable&#xA;override this.GetSchemaTable : System.Data.Common.DbCommand -&gt; System.Data.DataTable" Usage="dbCommandBuilder.GetSchemaTable sourceCommand" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -716,6 +785,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetUpdateCommand">
@@ -740,6 +811,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetUpdateCommand">
@@ -748,9 +821,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetUpdateCommand" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUpdateCommand () As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbCommand ^ GetUpdateCommand();" />
+      <MemberSignature Language="F#" Value="member this.GetUpdateCommand : unit -&gt; System.Data.Common.DbCommand" Usage="dbCommandBuilder.GetUpdateCommand " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -782,6 +857,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetUpdateCommand">
@@ -790,9 +867,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.GetUpdateCommand(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetUpdateCommand (useColumnsForParameterNames As Boolean) As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbCommand ^ GetUpdateCommand(bool useColumnsForParameterNames);" />
+      <MemberSignature Language="F#" Value="member this.GetUpdateCommand : bool -&gt; System.Data.Common.DbCommand" Usage="dbCommandBuilder.GetUpdateCommand useColumnsForParameterNames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -835,6 +914,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="InitializeCommand">
@@ -843,9 +924,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.InitializeCommand(System.Data.Common.DbCommand)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function InitializeCommand (command As DbCommand) As DbCommand" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::Common::DbCommand ^ InitializeCommand(System::Data::Common::DbCommand ^ command);" />
+      <MemberSignature Language="F#" Value="abstract member InitializeCommand : System.Data.Common.DbCommand -&gt; System.Data.Common.DbCommand&#xA;override this.InitializeCommand : System.Data.Common.DbCommand -&gt; System.Data.Common.DbCommand" Usage="dbCommandBuilder.InitializeCommand command" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -876,6 +959,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="QuoteIdentifier">
@@ -884,9 +969,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.QuoteIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function QuoteIdentifier (unquotedIdentifier As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ QuoteIdentifier(System::String ^ unquotedIdentifier);" />
+      <MemberSignature Language="F#" Value="abstract member QuoteIdentifier : string -&gt; string&#xA;override this.QuoteIdentifier : string -&gt; string" Usage="dbCommandBuilder.QuoteIdentifier unquotedIdentifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -910,6 +997,8 @@
         <summary>Given an unquoted identifier in the correct catalog case, returns the correct quoted form of that identifier, including properly escaping any embedded quotes in the identifier.</summary>
         <returns>The quoted version of the identifier. Embedded quotes within the identifier are properly escaped.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="QuotePrefix">
@@ -918,9 +1007,11 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommandBuilder.QuotePrefix" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property QuotePrefix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ QuotePrefix { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.QuotePrefix : string with get, set" Usage="System.Data.Common.DbCommandBuilder.QuotePrefix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -934,7 +1025,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
       </Attributes>
@@ -956,6 +1047,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">This property cannot be changed after an insert, update, or delete command has been generated.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="QuoteSuffix">
@@ -964,9 +1057,11 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommandBuilder.QuoteSuffix" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property QuoteSuffix As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ QuoteSuffix { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.QuoteSuffix : string with get, set" Usage="System.Data.Common.DbCommandBuilder.QuoteSuffix" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -980,7 +1075,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1001,6 +1096,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RefreshSchema">
@@ -1009,9 +1106,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.RefreshSchema" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub RefreshSchema ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RefreshSchema();" />
+      <MemberSignature Language="F#" Value="abstract member RefreshSchema : unit -&gt; unit&#xA;override this.RefreshSchema : unit -&gt; unit" Usage="dbCommandBuilder.RefreshSchema " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1044,6 +1143,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RowUpdatingHandler">
@@ -1052,9 +1153,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.RowUpdatingHandler(System.Data.Common.RowUpdatingEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RowUpdatingHandler (rowUpdatingEvent As RowUpdatingEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RowUpdatingHandler(System::Data::Common::RowUpdatingEventArgs ^ rowUpdatingEvent);" />
+      <MemberSignature Language="F#" Value="member this.RowUpdatingHandler : System.Data.Common.RowUpdatingEventArgs -&gt; unit" Usage="dbCommandBuilder.RowUpdatingHandler rowUpdatingEvent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1077,6 +1180,8 @@
         <param name="rowUpdatingEvent">A <see cref="T:System.Data.Common.RowUpdatingEventArgs" /> instance containing information about the event.</param>
         <summary>Adds an event handler for the <see cref="E:System.Data.OleDb.OleDbDataAdapter.RowUpdating" /> event.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SchemaSeparator">
@@ -1085,9 +1190,11 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommandBuilder.SchemaSeparator" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SchemaSeparator As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SchemaSeparator { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SchemaSeparator : string with get, set" Usage="System.Data.Common.DbCommandBuilder.SchemaSeparator" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1101,7 +1208,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(".")</AttributeName>
         </Attribute>
       </Attributes>
@@ -1119,6 +1226,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SetAllValues">
@@ -1127,9 +1236,11 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbCommandBuilder.SetAllValues" />
       <MemberSignature Language="VB.NET" Value="Public Property SetAllValues As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SetAllValues { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SetAllValues : bool with get, set" Usage="System.Data.Common.DbCommandBuilder.SetAllValues" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1143,7 +1254,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1162,6 +1273,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SetRowUpdatingHandler">
@@ -1170,9 +1283,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.SetRowUpdatingHandler(System.Data.Common.DbDataAdapter)" />
       <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub SetRowUpdatingHandler (adapter As DbDataAdapter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void SetRowUpdatingHandler(System::Data::Common::DbDataAdapter ^ adapter);" />
+      <MemberSignature Language="F#" Value="abstract member SetRowUpdatingHandler : System.Data.Common.DbDataAdapter -&gt; unit" Usage="dbCommandBuilder.SetRowUpdatingHandler adapter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1202,6 +1317,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UnquoteIdentifier">
@@ -1210,9 +1327,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbCommandBuilder.UnquoteIdentifier(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function UnquoteIdentifier (quotedIdentifier As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ UnquoteIdentifier(System::String ^ quotedIdentifier);" />
+      <MemberSignature Language="F#" Value="abstract member UnquoteIdentifier : string -&gt; string&#xA;override this.UnquoteIdentifier : string -&gt; string" Usage="dbCommandBuilder.UnquoteIdentifier quotedIdentifier" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1236,6 +1355,8 @@
         <summary>Given a quoted identifier, returns the correct unquoted form of that identifier, including properly un-escaping any embedded quotes in the identifier.</summary>
         <returns>The unquoted identifier, with embedded quotes properly un-escaped.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6e3fb8b5-373b-4f9e-ab03-a22693df8e91">Automatically Generating Commands</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

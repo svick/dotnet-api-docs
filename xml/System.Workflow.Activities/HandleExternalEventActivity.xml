@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.HandleExternalEventActivity" />
   <TypeSignature Language="VB.NET" Value="Public Class HandleExternalEventActivity&#xA;Inherits Activity&#xA;Implements IActivityEventListener(Of QueueEventArgs), IDynamicPropertyTypeProvider, IEventActivity" />
   <TypeSignature Language="C++ CLI" Value="public ref class HandleExternalEventActivity : System::Workflow::ComponentModel::Activity, System::Workflow::Activities::IEventActivity, System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt;, System::Workflow::ComponentModel::IDynamicPropertyTypeProvider" />
+  <TypeSignature Language="F#" Value="type HandleExternalEventActivity = class&#xA;    inherit Activity&#xA;    interface IEventActivity&#xA;    interface IActivityEventListener&lt;QueueEventArgs&gt;&#xA;    interface IDynamicPropertyTypeProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,16 +25,16 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.DefaultEvent("Invoked")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Designer(typeof(System.Workflow.Activities.HandleExternalEventActivityDesigner), typeof(System.ComponentModel.Design.IDesigner))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Workflow.ComponentModel.Compiler.ActivityValidator(typeof(System.Workflow.Activities.HandleExternalEventActivityValidator))</AttributeName>
     </Attribute>
   </Attributes>
@@ -64,6 +66,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -73,6 +76,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" /> class.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -84,6 +88,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -100,6 +105,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -108,9 +114,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.HandleExternalEventActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; HandleExternalEventActivity(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.HandleExternalEventActivity : string -&gt; System.Workflow.Activities.HandleExternalEventActivity" Usage="new System.Workflow.Activities.HandleExternalEventActivity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -120,6 +128,7 @@
         <param name="name">The user-defined name of the activity.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -128,9 +137,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.HandleExternalEventActivity.Cancel(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function Cancel (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Cancel(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Cancel : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="handleExternalEventActivity.Cancel executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -144,6 +155,7 @@
         <summary>Cancels the handling of the event.</summary>
         <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> of the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" /> at the end of the requested operation.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="CorrelationToken">
@@ -152,23 +164,28 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.HandleExternalEventActivity.CorrelationToken" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CorrelationToken As CorrelationToken" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Workflow::Runtime::CorrelationToken ^ CorrelationToken { System::Workflow::Runtime::CorrelationToken ^ get(); void set(System::Workflow::Runtime::CorrelationToken ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CorrelationToken : System.Workflow.Runtime.CorrelationToken with get, set" Usage="System.Workflow.Activities.HandleExternalEventActivity.CorrelationToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Workflow.Activities.CorrelationTokenTypeConverter))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -192,6 +209,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="CorrelationTokenProperty">
@@ -200,9 +218,11 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.HandleExternalEventActivity.CorrelationTokenProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CorrelationTokenProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ CorrelationTokenProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CorrelationTokenProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.HandleExternalEventActivity.CorrelationTokenProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,6 +238,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="EventName">
@@ -226,23 +247,31 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.HandleExternalEventActivity.EventName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property EventName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EventName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.EventName : string with get, set" Usage="System.Workflow.Activities.HandleExternalEventActivity.EventName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Workflow.Activities.Common.PropertyValueProviderTypeConverter))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Workflow.ComponentModel.Design.PropertyValueProviderTypeConverter))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -262,6 +291,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="EventNameProperty">
@@ -270,9 +300,11 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.HandleExternalEventActivity.EventNameProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EventNameProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ EventNameProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable EventNameProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.HandleExternalEventActivity.EventNameProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -288,6 +320,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -296,9 +329,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.HandleExternalEventActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="handleExternalEventActivity.Execute executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -312,6 +347,7 @@
         <summary>Tries to run the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" /> associated with the <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />.</summary>
         <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" /> of the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" /> at the end of the requested operation.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="HandleFault">
@@ -319,9 +355,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus HandleFault(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.HandleExternalEventActivity.HandleFault(System.Workflow.ComponentModel.ActivityExecutionContext,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus HandleFault(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="override this.HandleFault : System.Workflow.ComponentModel.ActivityExecutionContext * Exception -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="handleExternalEventActivity.HandleFault (executionContext, exception)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -347,9 +385,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.HandleExternalEventActivity.Initialize(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub Initialize (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Initialize(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : IServiceProvider -&gt; unit" Usage="handleExternalEventActivity.Initialize provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -364,6 +404,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="provider" /> is a null reference (<see langword="Nothing" /> in Visual Basic), the type of the service provider is a null reference (<see langword="Nothing" />), or the proxy for the service provider is a null reference (<see langword="Nothing" />).</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="InitializeProperties">
@@ -372,9 +413,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.HandleExternalEventActivity.InitializeProperties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeProperties ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeProperties();" />
+      <MemberSignature Language="F#" Value="override this.InitializeProperties : unit -&gt; unit" Usage="handleExternalEventActivity.InitializeProperties " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -399,23 +442,28 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.HandleExternalEventActivity.InterfaceType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property InterfaceType As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ InterfaceType { Type ^ get(); void set(Type ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.InterfaceType : Type with get, set" Usage="System.Workflow.Activities.HandleExternalEventActivity.InterfaceType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor(typeof(System.Workflow.ComponentModel.Design.TypeBrowserEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Workflow.ComponentModel.Design.TypeFilterProvider(typeof(System.Workflow.Activities.ExternalDataExchangeInterfaceTypeFilterProvider))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -435,6 +483,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="InterfaceTypeProperty">
@@ -443,9 +492,11 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.HandleExternalEventActivity.InterfaceTypeProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InterfaceTypeProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ InterfaceTypeProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InterfaceTypeProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.HandleExternalEventActivity.InterfaceTypeProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -461,6 +512,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Invoked">
@@ -469,13 +521,15 @@
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.HandleExternalEventActivity.Invoked" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Invoked As EventHandler(Of ExternalDataEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Activities::ExternalDataEventArgs ^&gt; ^ Invoked;" />
+      <MemberSignature Language="F#" Value="member this.Invoked : EventHandler&lt;System.Workflow.Activities.ExternalDataEventArgs&gt; " Usage="member this.Invoked : System.EventHandler&lt;System.Workflow.Activities.ExternalDataEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -495,6 +549,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="InvokedEvent">
@@ -503,9 +558,11 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.HandleExternalEventActivity.InvokedEvent" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InvokedEvent As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ InvokedEvent;" />
+      <MemberSignature Language="F#" Value=" staticval mutable InvokedEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.HandleExternalEventActivity.InvokedEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -521,6 +578,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="OnClosed">
@@ -529,9 +587,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.HandleExternalEventActivity.OnClosed(System.IServiceProvider)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClosed (provider As IServiceProvider)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClosed(IServiceProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.OnClosed : IServiceProvider -&gt; unit" Usage="handleExternalEventActivity.OnClosed provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -559,9 +619,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.HandleExternalEventActivity.OnInvoked(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnInvoked (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnInvoked(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnInvoked : EventArgs -&gt; unit&#xA;override this.OnInvoked : EventArgs -&gt; unit" Usage="handleExternalEventActivity.OnInvoked e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -589,6 +651,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="ParameterBindings">
@@ -597,17 +660,22 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.HandleExternalEventActivity.ParameterBindings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterBindings As WorkflowParameterBindingCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::WorkflowParameterBindingCollection ^ ParameterBindings { System::Workflow::ComponentModel::WorkflowParameterBindingCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterBindings : System.Workflow.ComponentModel.WorkflowParameterBindingCollection" Usage="System.Workflow.Activities.HandleExternalEventActivity.ParameterBindings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -627,6 +695,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="ParameterBindingsProperty">
@@ -635,9 +704,11 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.HandleExternalEventActivity.ParameterBindingsProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ParameterBindingsProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ParameterBindingsProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ParameterBindingsProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.HandleExternalEventActivity.ParameterBindingsProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -646,6 +717,7 @@
       <Docs>
         <summary>Represents the <see cref="T:System.Workflow.ComponentModel.DependencyProperty" /> that targets the <see cref="P:System.Workflow.Activities.HandleExternalEventActivity.ParameterBindings" /> property.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Roles">
@@ -654,16 +726,18 @@
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.HandleExternalEventActivity.Roles" />
       <MemberSignature Language="VB.NET" Value="Public Property Roles As WorkflowRoleCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::WorkflowRoleCollection ^ Roles { System::Workflow::Activities::WorkflowRoleCollection ^ get(); void set(System::Workflow::Activities::WorkflowRoleCollection ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Roles : System.Workflow.Activities.WorkflowRoleCollection with get, set" Usage="System.Workflow.Activities.HandleExternalEventActivity.Roles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor(typeof(System.Workflow.ComponentModel.Design.BindUITypeEditor), typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
       </Attributes>
@@ -689,6 +763,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="RolesProperty">
@@ -697,9 +772,11 @@
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.HandleExternalEventActivity.RolesProperty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RolesProperty As DependencyProperty " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ RolesProperty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RolesProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.HandleExternalEventActivity.RolesProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -715,6 +792,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="System.Workflow.Activities.IEventActivity.QueueName">
@@ -722,13 +800,15 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.IComparable System.Workflow.Activities.IEventActivity.QueueName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.HandleExternalEventActivity.System#Workflow#Activities#IEventActivity#QueueName" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property QueueName As IComparable Implements IEventActivity.QueueName" />
-      <MemberSignature Language="C++ CLI" Value="property IComparable ^ System.Workflow.Activities.IEventActivity.QueueName { IComparable ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property IComparable ^ System::Workflow::Activities::IEventActivity::QueueName { IComparable ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Workflow.Activities.IEventActivity.QueueName" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Workflow.Activities.IEventActivity.QueueName</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -752,6 +832,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -766,6 +847,7 @@
         <param name="parentEventHandler">The <see cref="T:System.EventHandler" /> for the parent event.</param>
         <summary>Creates the subscription of the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" /> activity to an event.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="System.Workflow.Activities.IEventActivity.Unsubscribe">
@@ -780,6 +862,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -794,6 +877,7 @@
         <param name="parentEventHandler">The <see cref="T:System.EventHandler" /> for the parent event.</param>
         <summary>Cancels the subscription of the <see cref="T:System.Workflow.Activities.HandleExternalEventActivity" /> activity to an event.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms734592(v=vs.90)">Using the HandleExternalEvent Activity</related>
       </Docs>
     </Member>
     <Member MemberName="System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt;.OnEvent">
@@ -808,6 +892,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -836,6 +921,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -872,6 +958,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

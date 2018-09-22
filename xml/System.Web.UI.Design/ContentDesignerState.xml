@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ContentDesignerState" />
   <TypeSignature Language="VB.NET" Value="Public Enum ContentDesignerState" />
   <TypeSignature Language="C++ CLI" Value="public enum class ContentDesignerState" />
+  <TypeSignature Language="F#" Value="type ContentDesignerState = " />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,6 +16,8 @@
   <Docs>
     <summary>Enumerates the possible settings for the state of a <see cref="T:System.Web.UI.Design.WebControls.ContentDesigner" /> control at design time.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName="ShowDefaultContent">
@@ -22,9 +26,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ContentDesignerState.ShowDefaultContent" />
       <MemberSignature Language="VB.NET" Value="ShowDefaultContent" />
       <MemberSignature Language="C++ CLI" Value="ShowDefaultContent" />
+      <MemberSignature Language="F#" Value="ShowDefaultContent = 0" Usage="System.Web.UI.Design.ContentDesignerState.ShowDefaultContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -41,9 +47,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.ContentDesignerState.ShowUserContent" />
       <MemberSignature Language="VB.NET" Value="ShowUserContent" />
       <MemberSignature Language="C++ CLI" Value="ShowUserContent" />
+      <MemberSignature Language="F#" Value="ShowUserContent = 1" Usage="System.Web.UI.Design.ContentDesignerState.ShowUserContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

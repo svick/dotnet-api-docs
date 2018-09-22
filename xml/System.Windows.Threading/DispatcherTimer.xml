@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherTimer" />
   <TypeSignature Language="VB.NET" Value="Public Class DispatcherTimer" />
   <TypeSignature Language="C++ CLI" Value="public ref class DispatcherTimer" />
+  <TypeSignature Language="F#" Value="type DispatcherTimer = class" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -22,7 +24,7 @@
   
  Timers are not guaranteed to execute exactly when the time interval occurs, but they are guaranteed to not execute before the time interval occurs.  This is because <xref:System.Windows.Threading.DispatcherTimer> operations are placed on the <xref:System.Windows.Threading.Dispatcher> queue like other operations.  When the <xref:System.Windows.Threading.DispatcherTimer> operation executes is dependent on the other jobs in the queue and their priorities.  
   
- If a <xref:System.Timers.Timer?displayProperty=nameWithType> is used in a [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] application, it is worth noting that the <xref:System.Timers.Timer?displayProperty=nameWithType> runs on a different thread then the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] thread.  In order to access objects on the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] thread, it is necessary to post the operation onto the <xref:System.Windows.Threading.Dispatcher> of the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] thread using <xref:System.Windows.Threading.Dispatcher.Invoke%2A> or <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A>. Reasons for using a <xref:System.Windows.Threading.DispatcherTimer> opposed to a <xref:System.Timers.Timer?displayProperty=nameWithType> are that the <xref:System.Windows.Threading.DispatcherTimer> runs on the same thread as the <xref:System.Windows.Threading.Dispatcher> and a <xref:System.Windows.Threading.DispatcherPriority> can be set on the <xref:System.Windows.Threading.DispatcherTimer>.  
+ If a <xref:System.Timers.Timer?displayProperty=nameWithType> is used in a [!INCLUDE[TLA2#tla_wpf](~/includes/tla2sharptla-wpf-md.md)] application, it is worth noting that the <xref:System.Timers.Timer?displayProperty=nameWithType> runs on a different thread than the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] thread.  In order to access objects on the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] thread, it is necessary to post the operation onto the <xref:System.Windows.Threading.Dispatcher> of the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] thread using <xref:System.Windows.Threading.Dispatcher.Invoke%2A> or <xref:System.Windows.Threading.Dispatcher.BeginInvoke%2A>. Reasons for using a <xref:System.Windows.Threading.DispatcherTimer> as opposed to a <xref:System.Timers.Timer?displayProperty=nameWithType> are that the <xref:System.Windows.Threading.DispatcherTimer> runs on the same thread as the <xref:System.Windows.Threading.Dispatcher> and a <xref:System.Windows.Threading.DispatcherPriority> can be set on the <xref:System.Windows.Threading.DispatcherTimer>.  
   
  A <xref:System.Windows.Threading.DispatcherTimer> will keep an object alive whenever the object's methods are bound to the timer.  
   
@@ -61,8 +63,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Threading.DispatcherTimer" /> class.</summary>
@@ -82,9 +90,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherTimer.#ctor(System.Windows.Threading.DispatcherPriority)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (priority As DispatcherPriority)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatcherTimer(System::Windows::Threading::DispatcherPriority priority);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Threading.DispatcherTimer : System.Windows.Threading.DispatcherPriority -&gt; System.Windows.Threading.DispatcherTimer" Usage="new System.Windows.Threading.DispatcherTimer priority" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -108,9 +118,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Threading.DispatcherPriority priority, class System.Windows.Threading.Dispatcher dispatcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherTimer.#ctor(System.Windows.Threading.DispatcherPriority,System.Windows.Threading.Dispatcher)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatcherTimer(System::Windows::Threading::DispatcherPriority priority, System::Windows::Threading::Dispatcher ^ dispatcher);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Threading.DispatcherTimer : System.Windows.Threading.DispatcherPriority * System.Windows.Threading.Dispatcher -&gt; System.Windows.Threading.DispatcherTimer" Usage="new System.Windows.Threading.DispatcherTimer (priority, dispatcher)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -131,9 +143,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.TimeSpan interval, valuetype System.Windows.Threading.DispatcherPriority priority, class System.EventHandler callback, class System.Windows.Threading.Dispatcher dispatcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherTimer.#ctor(System.TimeSpan,System.Windows.Threading.DispatcherPriority,System.EventHandler,System.Windows.Threading.Dispatcher)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatcherTimer(TimeSpan interval, System::Windows::Threading::DispatcherPriority priority, EventHandler ^ callback, System::Windows::Threading::Dispatcher ^ dispatcher);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Threading.DispatcherTimer : TimeSpan * System.Windows.Threading.DispatcherPriority * EventHandler * System.Windows.Threading.Dispatcher -&gt; System.Windows.Threading.DispatcherTimer" Usage="new System.Windows.Threading.DispatcherTimer (interval, priority, callback, dispatcher)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -161,11 +175,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherTimer.Dispatcher" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dispatcher As Dispatcher" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Threading::Dispatcher ^ Dispatcher { System::Windows::Threading::Dispatcher ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Dispatcher : System.Windows.Threading.Dispatcher" Usage="System.Windows.Threading.DispatcherTimer.Dispatcher" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Threading.Dispatcher</ReturnType>
       </ReturnValue>
@@ -188,11 +209,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherTimer.Interval" />
       <MemberSignature Language="VB.NET" Value="Public Property Interval As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Interval { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.Interval : TimeSpan with get, set" Usage="System.Windows.Threading.DispatcherTimer.Interval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
@@ -223,11 +251,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherTimer.IsEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Property IsEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEnabled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : bool with get, set" Usage="System.Windows.Threading.DispatcherTimer.IsEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -261,9 +296,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherTimer.Start" />
       <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
+      <MemberSignature Language="F#" Value="member this.Start : unit -&gt; unit" Usage="dispatcherTimer.Start " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -302,9 +339,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherTimer.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="dispatcherTimer.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -333,11 +372,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherTimer.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Threading.DispatcherTimer.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -353,9 +402,11 @@
       <MemberSignature Language="DocId" Value="E:System.Windows.Threading.DispatcherTimer.Tick" />
       <MemberSignature Language="VB.NET" Value="Public Event Tick As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Tick;" />
+      <MemberSignature Language="F#" Value="member this.Tick : EventHandler " Usage="member this.Tick : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

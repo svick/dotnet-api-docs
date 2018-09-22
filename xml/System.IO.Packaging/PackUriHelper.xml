@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackUriHelper" />
   <TypeSignature Language="VB.NET" Value="Public Class PackUriHelper" />
   <TypeSignature Language="C++ CLI" Value="public ref class PackUriHelper abstract sealed" />
+  <TypeSignature Language="F#" Value="type PackUriHelper = class" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -11,6 +12,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -28,10 +30,15 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.ComparePackUri(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ComparePackUri (firstPackUri As Uri, secondPackUri As Uri) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ComparePackUri(Uri ^ firstPackUri, Uri ^ secondPackUri);" />
+      <MemberSignature Language="F#" Value="static member ComparePackUri : Uri * Uri -&gt; int" Usage="System.IO.Packaging.PackUriHelper.ComparePackUri (firstPackUri, secondPackUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -85,6 +92,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ComparePartUri (firstPartUri As Uri, secondPartUri As Uri) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ComparePartUri(Uri ^ firstPartUri, Uri ^ secondPartUri);" />
+      <MemberSignature Language="F#" Value="static member ComparePartUri : Uri * Uri -&gt; int" Usage="System.IO.Packaging.PackUriHelper.ComparePartUri (firstPartUri, secondPartUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -93,6 +101,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -170,6 +179,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Create">
@@ -178,11 +188,21 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.Create(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (packageUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ Create(Uri ^ packageUri);" />
+      <MemberSignature Language="F#" Value="static member Create : Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.Create packageUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
@@ -225,6 +245,7 @@
           <paramref name="packageUri" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="packageUri" /> is not an absolute URI.</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -233,11 +254,21 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.Create(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (packageUri As Uri, partUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ Create(Uri ^ packageUri, Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="static member Create : Uri * Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.Create (packageUri, partUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
@@ -292,6 +323,7 @@
  -or-  
   
  <paramref name="partUri" /> is not a valid part URI syntax.</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -300,10 +332,15 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.Create(System.Uri,System.Uri,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (packageUri As Uri, partUri As Uri, fragment As String) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ Create(Uri ^ packageUri, Uri ^ partUri, System::String ^ fragment);" />
+      <MemberSignature Language="F#" Value="static member Create : Uri * Uri * string -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.Create (packageUri, partUri, fragment)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -370,6 +407,7 @@
  -or-  
   
  <paramref name="fragment" /> is empty or does begin with "#".</exception>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="CreatePartUri">
@@ -378,6 +416,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function CreatePartUri (partUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ CreatePartUri(Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="static member CreatePartUri : Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.CreatePartUri partUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -386,6 +425,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -427,6 +467,8 @@
         </remarks>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=160055">Writing a Package Sample</related>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="GetNormalizedPartUri">
@@ -435,6 +477,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.GetNormalizedPartUri(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNormalizedPartUri (partUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ GetNormalizedPartUri(Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="static member GetNormalizedPartUri : Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.GetNormalizedPartUri partUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -443,6 +486,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -470,6 +514,7 @@
         <altmember cref="M:System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="GetPackageUri">
@@ -478,10 +523,15 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPackageUri (packUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ GetPackageUri(Uri ^ packUri);" />
+      <MemberSignature Language="F#" Value="static member GetPackageUri : Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.GetPackageUri packUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -511,6 +561,7 @@
         </remarks>
         <altmember cref="Overload:System.IO.Packaging.PackUriHelper.Create" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="GetPartUri">
@@ -519,10 +570,15 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetPartUri (packUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ GetPartUri(Uri ^ packUri);" />
+      <MemberSignature Language="F#" Value="static member GetPartUri : Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.GetPartUri packUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -555,6 +611,7 @@
         <altmember cref="M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetNormalizedPartUri(System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="GetRelationshipPartUri">
@@ -563,6 +620,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.GetRelationshipPartUri(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRelationshipPartUri (partUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ GetRelationshipPartUri(Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="static member GetRelationshipPartUri : Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.GetRelationshipPartUri partUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -571,6 +629,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -620,6 +679,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetRelativeUri (sourcePartUri As Uri, targetPartUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ GetRelativeUri(Uri ^ sourcePartUri, Uri ^ targetPartUri);" />
+      <MemberSignature Language="F#" Value="static member GetRelativeUri : Uri * Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.GetRelativeUri (sourcePartUri, targetPartUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -628,6 +688,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -659,6 +720,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="sourcePartUri" /> or <paramref name="targetPartUri" /> is <see langword="null" />.</exception>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="GetSourcePartUriFromRelationshipPartUri">
@@ -667,6 +729,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetSourcePartUriFromRelationshipPartUri (relationshipPartUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ GetSourcePartUriFromRelationshipPartUri(Uri ^ relationshipPartUri);" />
+      <MemberSignature Language="F#" Value="static member GetSourcePartUriFromRelationshipPartUri : Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri relationshipPartUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -675,6 +738,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -714,6 +778,7 @@
   
  The <see cref="P:System.IO.Packaging.PackageRelationship.SourceUri" /> of the relationship part references another relationship part (not valid).</exception>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetRelationshipPartUri(System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="IsRelationshipPartUri">
@@ -722,6 +787,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.IsRelationshipPartUri(System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function IsRelationshipPartUri (partUri As Uri) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsRelationshipPartUri(Uri ^ partUri);" />
+      <MemberSignature Language="F#" Value="static member IsRelationshipPartUri : Uri -&gt; bool" Usage="System.IO.Packaging.PackUriHelper.IsRelationshipPartUri partUri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -730,6 +796,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -754,6 +821,7 @@
  <paramref name="partUri" /> is an invalid <see cref="T:System.IO.Packaging.PackagePart" /> syntax.</exception>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="ResolvePartUri">
@@ -762,6 +830,7 @@
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ResolvePartUri (sourcePartUri As Uri, targetUri As Uri) As Uri" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ ResolvePartUri(Uri ^ sourcePartUri, Uri ^ targetUri);" />
+      <MemberSignature Language="F#" Value="static member ResolvePartUri : Uri * Uri -&gt; Uri" Usage="System.IO.Packaging.PackUriHelper.ResolvePartUri (sourcePartUri, targetUri)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -770,6 +839,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -819,6 +889,7 @@
  <paramref name="targetUri" /> is not a valid relative URI.</exception>
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)" />
         <altmember cref="M:System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)" />
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/?LinkID=71255">Open Packaging Conventions Specification</related>
       </Docs>
     </Member>
     <Member MemberName="UriSchemePack">
@@ -827,6 +898,7 @@
       <MemberSignature Language="DocId" Value="F:System.IO.Packaging.PackUriHelper.UriSchemePack" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UriSchemePack As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ UriSchemePack;" />
+      <MemberSignature Language="F#" Value=" staticval mutable UriSchemePack : string" Usage="System.IO.Packaging.PackUriHelper.UriSchemePack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -835,6 +907,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

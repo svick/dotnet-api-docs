@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.IExtensibleDataObject" />
   <TypeSignature Language="VB.NET" Value="Public Interface IExtensibleDataObject" />
   <TypeSignature Language="C++ CLI" Value="public interface class IExtensibleDataObject" />
+  <TypeSignature Language="F#" Value="type IExtensibleDataObject = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -52,6 +54,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.Serialization.ExtensionDataObject" />
+    <related type="Article" href="http://msdn.microsoft.com/library/4a0700cb-5f5f-4137-8705-3a3ecf06461f">Data Contract Versioning</related>
+    <related type="Article" href="~/docs/framework/wcf/feature-details/using-data-contracts.md">Using Data Contracts</related>
   </Docs>
   <Members>
     <Member MemberName="ExtensionData">
@@ -60,10 +64,12 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.IExtensibleDataObject.ExtensionData" />
       <MemberSignature Language="VB.NET" Value="Public Property ExtensionData As ExtensionDataObject" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::ExtensionDataObject ^ ExtensionData { System::Runtime::Serialization::ExtensionDataObject ^ get(); void set(System::Runtime::Serialization::ExtensionDataObject ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ExtensionData : System.Runtime.Serialization.ExtensionDataObject with get, set" Usage="System.Runtime.Serialization.IExtensibleDataObject.ExtensionData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>

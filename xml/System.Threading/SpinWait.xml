@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.SpinWait" />
   <TypeSignature Language="VB.NET" Value="Public Structure SpinWait" />
   <TypeSignature Language="C++ CLI" Value="public value class SpinWait" />
+  <TypeSignature Language="F#" Value="type SpinWait = struct" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,7 +33,7 @@
 ## Remarks  
  <xref:System.Threading.SpinWait> encapsulates common spinning logic. On single-processor machines, yields are always used instead of busy waits, and on computers with Intel processors employing Hyper-Threading technology, it helps to prevent hardware thread starvation. SpinWait encapsulates a good mixture of spinning and true yielding.  
   
- <xref:System.Threading.SpinWait> is a value type, which means that low-level code can utilize SpinWait without fear of unnecessary allocation overheads. SpinWait is not generally useful for ordinary applications. In most cases, you should use the synchronization classes provided by the .NET Framework, such as <xref:System.Threading.Monitor>. For most purposes where spin waiting is required, however, the <xref:System.Threading.SpinWait> type should be preferred over the <xref:System.Threading.Thread.SpinWait%2A> method.  
+ <xref:System.Threading.SpinWait> is a value type, which means that low-level code can utilize SpinWait without fear of unnecessary allocation overheads. SpinWait is not generally useful for ordinary applications. In most cases, you should use the synchronization classes provided by the .NET Framework, such as <xref:System.Threading.Monitor>. For most purposes where spin waiting is required, however, the <xref:System.Threading.SpinWait> type should be preferred over the <xref:System.Threading.Thread.SpinWait%2A?displayProperty=nameWithType> method.  
   
    
   
@@ -45,6 +46,8 @@
  ]]></format>
     </remarks>
     <threadsafe>While <see cref="T:System.Threading.SpinWait" /> is designed to be used in concurrent applications, it is not designed to be used from multiple threads concurrently. <see cref="T:System.Threading.SpinWait" /> members are not thread-safe. If multiple threads must spin, each should use its own instance of <see cref="T:System.Threading.SpinWait" />.</threadsafe>
+    <related type="Article" href="~/docs/standard/threading/spinwait.md">SpinWait</related>
+    <related type="Article" href="~/docs/standard/threading/how-to-use-spinwait-to-implement-a-two-phase-wait-operation.md">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
   </Docs>
   <Members>
     <Member MemberName="Count">
@@ -53,6 +56,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.SpinWait.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Threading.SpinWait.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -77,6 +81,8 @@
         <summary>Gets the number of times <see cref="M:System.Threading.SpinWait.SpinOnce" /> has been called on this instance.</summary>
         <value>Returns an integer that represents the number of times <see cref="M:System.Threading.SpinWait.SpinOnce" /> has been called on this instance.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </Member>
     <Member MemberName="NextSpinWillYield">
@@ -85,6 +91,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.SpinWait.NextSpinWillYield" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextSpinWillYield As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NextSpinWillYield { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.NextSpinWillYield : bool" Usage="System.Threading.SpinWait.NextSpinWillYield" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -116,6 +123,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -124,6 +133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinWait.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="spinWait.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -298,6 +308,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </Member>
     <Member MemberName="SpinOnce">
@@ -306,6 +318,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinWait.SpinOnce" />
       <MemberSignature Language="VB.NET" Value="Public Sub SpinOnce ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SpinOnce();" />
+      <MemberSignature Language="F#" Value="member this.SpinOnce : unit -&gt; unit" Usage="spinWait.SpinOnce " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -337,6 +350,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SpinUntil">
@@ -348,6 +363,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Spins until the specified condition is satisfied.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="SpinUntil">
@@ -356,6 +373,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinWait.SpinUntil(System.Func{System.Boolean})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub SpinUntil (condition As Func(Of Boolean))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SpinUntil(Func&lt;bool&gt; ^ condition);" />
+      <MemberSignature Language="F#" Value="static member SpinUntil : Func&lt;bool&gt; -&gt; unit" Usage="System.Threading.SpinWait.SpinUntil condition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -384,6 +402,8 @@
         <summary>Spins until the specified condition is satisfied.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="condition" /> argument is null.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </Member>
     <Member MemberName="SpinUntil">
@@ -392,6 +412,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinWait.SpinUntil(System.Func{System.Boolean},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SpinUntil (condition As Func(Of Boolean), millisecondsTimeout As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SpinUntil(Func&lt;bool&gt; ^ condition, int millisecondsTimeout);" />
+      <MemberSignature Language="F#" Value="static member SpinUntil : Func&lt;bool&gt; * int -&gt; bool" Usage="System.Threading.SpinWait.SpinUntil (condition, millisecondsTimeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -425,6 +446,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="condition" /> argument is null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="millisecondsTimeout" /> is a negative number other than -1, which represents an infinite time-out.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </Member>
     <Member MemberName="SpinUntil">
@@ -433,6 +456,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinWait.SpinUntil(System.Func{System.Boolean},System.TimeSpan)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function SpinUntil (condition As Func(Of Boolean), timeout As TimeSpan) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SpinUntil(Func&lt;bool&gt; ^ condition, TimeSpan timeout);" />
+      <MemberSignature Language="F#" Value="static member SpinUntil : Func&lt;bool&gt; * TimeSpan -&gt; bool" Usage="System.Threading.SpinWait.SpinUntil (condition, timeout)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -466,6 +490,8 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="condition" /> argument is null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/36012f42-34e5-4f86-adf4-973f433ed6c6">SpinWait</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b2ac4e4a-051a-4f65-b4b9-f8e103aff195">How to: Use SpinWait to Implement a Two-Phase Wait Operation</related>
       </Docs>
     </Member>
   </Members>

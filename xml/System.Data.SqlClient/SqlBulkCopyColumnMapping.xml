@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlBulkCopyColumnMapping" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlBulkCopyColumnMapping" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlBulkCopyColumnMapping sealed" />
+  <TypeSignature Language="F#" Value="type SqlBulkCopyColumnMapping = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -11,6 +12,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -49,6 +51,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -59,6 +63,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlBulkCopyColumnMapping" /> class.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -75,6 +80,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -104,6 +110,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -112,6 +120,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopyColumnMapping.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceColumnOrdinal As Integer, destinationOrdinal As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBulkCopyColumnMapping(int sourceColumnOrdinal, int destinationOrdinal);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlBulkCopyColumnMapping : int * int -&gt; System.Data.SqlClient.SqlBulkCopyColumnMapping" Usage="new System.Data.SqlClient.SqlBulkCopyColumnMapping (sourceColumnOrdinal, destinationOrdinal)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -120,6 +129,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -149,6 +159,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -157,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopyColumnMapping.#ctor(System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceColumnOrdinal As Integer, destinationColumn As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBulkCopyColumnMapping(int sourceColumnOrdinal, System::String ^ destinationColumn);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlBulkCopyColumnMapping : int * string -&gt; System.Data.SqlClient.SqlBulkCopyColumnMapping" Usage="new System.Data.SqlClient.SqlBulkCopyColumnMapping (sourceColumnOrdinal, destinationColumn)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -165,6 +177,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -194,6 +207,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -202,6 +217,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopyColumnMapping.#ctor(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceColumn As String, destinationOrdinal As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBulkCopyColumnMapping(System::String ^ sourceColumn, int destinationOrdinal);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlBulkCopyColumnMapping : string * int -&gt; System.Data.SqlClient.SqlBulkCopyColumnMapping" Usage="new System.Data.SqlClient.SqlBulkCopyColumnMapping (sourceColumn, destinationOrdinal)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -210,6 +226,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -239,6 +256,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -247,6 +266,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopyColumnMapping.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (sourceColumn As String, destinationColumn As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBulkCopyColumnMapping(System::String ^ sourceColumn, System::String ^ destinationColumn);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlBulkCopyColumnMapping : string * string -&gt; System.Data.SqlClient.SqlBulkCopyColumnMapping" Usage="new System.Data.SqlClient.SqlBulkCopyColumnMapping (sourceColumn, destinationColumn)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -255,6 +275,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -284,6 +305,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DestinationColumn">
@@ -292,6 +315,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlBulkCopyColumnMapping.DestinationColumn" />
       <MemberSignature Language="VB.NET" Value="Public Property DestinationColumn As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DestinationColumn { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DestinationColumn : string with get, set" Usage="System.Data.SqlClient.SqlBulkCopyColumnMapping.DestinationColumn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -300,6 +324,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -332,6 +357,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DestinationOrdinal">
@@ -340,6 +367,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlBulkCopyColumnMapping.DestinationOrdinal" />
       <MemberSignature Language="VB.NET" Value="Public Property DestinationOrdinal As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DestinationOrdinal { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.DestinationOrdinal : int with get, set" Usage="System.Data.SqlClient.SqlBulkCopyColumnMapping.DestinationOrdinal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -348,6 +376,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -380,6 +409,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SourceColumn">
@@ -388,6 +419,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlBulkCopyColumnMapping.SourceColumn" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceColumn As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceColumn { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceColumn : string with get, set" Usage="System.Data.SqlClient.SqlBulkCopyColumnMapping.SourceColumn" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -396,6 +428,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -428,6 +461,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="SourceOrdinal">
@@ -436,6 +471,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlBulkCopyColumnMapping.SourceOrdinal" />
       <MemberSignature Language="VB.NET" Value="Public Property SourceOrdinal As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SourceOrdinal { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SourceOrdinal : int with get, set" Usage="System.Data.SqlClient.SqlBulkCopyColumnMapping.SourceOrdinal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -444,6 +480,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -476,6 +513,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/83a7a0d2-8018-4354-97b9-0b1d99f8342b">Performing Bulk Copy Operations</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

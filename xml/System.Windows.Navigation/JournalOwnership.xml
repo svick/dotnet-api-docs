@@ -4,13 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.JournalOwnership" />
   <TypeSignature Language="VB.NET" Value="Public Enum JournalOwnership" />
   <TypeSignature Language="C++ CLI" Value="public enum class JournalOwnership" />
+  <TypeSignature Language="F#" Value="type JournalOwnership = " />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Specifies whether a <see cref="T:System.Windows.Controls.Frame" /> uses its own journal. <see cref="T:System.Windows.Navigation.JournalOwnership" /> is used by the <see cref="P:System.Windows.Controls.Frame.JournalOwnership" /> property.</summary>
     <remarks>
@@ -47,9 +54,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.JournalOwnership.Automatic" />
       <MemberSignature Language="VB.NET" Value="Automatic" />
       <MemberSignature Language="C++ CLI" Value="Automatic" />
+      <MemberSignature Language="F#" Value="Automatic = 0" Usage="System.Windows.Navigation.JournalOwnership.Automatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -66,9 +75,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.JournalOwnership.OwnsJournal" />
       <MemberSignature Language="VB.NET" Value="OwnsJournal" />
       <MemberSignature Language="C++ CLI" Value="OwnsJournal" />
+      <MemberSignature Language="F#" Value="OwnsJournal = 1" Usage="System.Windows.Navigation.JournalOwnership.OwnsJournal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -85,9 +96,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.JournalOwnership.UsesParentJournal" />
       <MemberSignature Language="VB.NET" Value="UsesParentJournal" />
       <MemberSignature Language="C++ CLI" Value="UsesParentJournal" />
+      <MemberSignature Language="F#" Value="UsesParentJournal = 2" Usage="System.Windows.Navigation.JournalOwnership.UsesParentJournal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

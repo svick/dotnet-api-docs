@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.ConsoleSpecialKey" />
   <TypeSignature Language="VB.NET" Value="Public Enum ConsoleSpecialKey" />
   <TypeSignature Language="C++ CLI" Value="public enum class ConsoleSpecialKey" />
+  <TypeSignature Language="F#" Value="type ConsoleSpecialKey = " />
   <AssemblyInfo>
     <AssemblyName>System.Console</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,6 +13,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -22,6 +24,11 @@
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Specifies combinations of modifier and console keys that can interrupt the current process.</summary>
     <remarks>
@@ -52,6 +59,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleSpecialKey.ControlBreak" />
       <MemberSignature Language="VB.NET" Value="ControlBreak" />
       <MemberSignature Language="C++ CLI" Value="ControlBreak" />
+      <MemberSignature Language="F#" Value="ControlBreak = 1" Usage="System.ConsoleSpecialKey.ControlBreak" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -61,6 +69,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -82,6 +91,7 @@
       <MemberSignature Language="DocId" Value="F:System.ConsoleSpecialKey.ControlC" />
       <MemberSignature Language="VB.NET" Value="ControlC" />
       <MemberSignature Language="C++ CLI" Value="ControlC" />
+      <MemberSignature Language="F#" Value="ControlC = 0" Usage="System.ConsoleSpecialKey.ControlC" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -91,6 +101,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

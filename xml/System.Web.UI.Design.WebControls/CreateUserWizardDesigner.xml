@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.CreateUserWizardDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class CreateUserWizardDesigner&#xA;Inherits WizardDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class CreateUserWizardDesigner : System::Web::UI::Design::WebControls::WizardDesigner" />
+  <TypeSignature Language="F#" Value="type CreateUserWizardDesigner = class&#xA;    inherit WizardDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -35,6 +37,10 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -46,12 +52,22 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.WebControls.CreateUserWizardDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="ActionLists">
@@ -60,9 +76,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.ActionLists" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.WebControls.CreateUserWizardDesigner.ActionLists" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -72,6 +90,8 @@
         <summary>Gets the <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> object for this designer.</summary>
         <value>The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> associated with this designer.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="AddDesignerRegions">
@@ -80,9 +100,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.AddDesignerRegions(System.Web.UI.Design.DesignerRegionCollection)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddDesignerRegions (regions As DesignerRegionCollection)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddDesignerRegions(System::Web::UI::Design::DesignerRegionCollection ^ regions);" />
+      <MemberSignature Language="F#" Value="override this.AddDesignerRegions : System.Web.UI.Design.DesignerRegionCollection -&gt; unit" Usage="createUserWizardDesigner.AddDesignerRegions regions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -97,6 +119,8 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.Design.DesignerRegion" />
         <altmember cref="T:System.Web.UI.Design.DesignerRegionCollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="AutoFormats">
@@ -105,9 +129,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.AutoFormats" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AutoFormats As DesignerAutoFormatCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::DesignerAutoFormatCollection ^ AutoFormats { System::Web::UI::Design::DesignerAutoFormatCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.AutoFormats : System.Web.UI.Design.DesignerAutoFormatCollection" Usage="System.Web.UI.Design.WebControls.CreateUserWizardDesigner.AutoFormats" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,6 +143,8 @@
         <summary>Gets the <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> object associated with this designer.</summary>
         <value>The <see cref="T:System.Web.UI.Design.DesignerAutoFormatCollection" /> associated with this designer.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="ConvertToCustomNavigationTemplate">
@@ -125,9 +153,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.ConvertToCustomNavigationTemplate" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ConvertToCustomNavigationTemplate ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ConvertToCustomNavigationTemplate();" />
+      <MemberSignature Language="F#" Value="override this.ConvertToCustomNavigationTemplate : unit -&gt; unit" Usage="createUserWizardDesigner.ConvertToCustomNavigationTemplate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -137,6 +167,8 @@
       <Docs>
         <summary>Converts the child controls associated with the underlying wizard control to a custom navigation template.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="GetErrorDesignTimeHtml">
@@ -145,9 +177,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.GetErrorDesignTimeHtml(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetErrorDesignTimeHtml (e As Exception) As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetErrorDesignTimeHtml(Exception ^ e);" />
+      <MemberSignature Language="F#" Value="override this.GetErrorDesignTimeHtml : Exception -&gt; string" Usage="createUserWizardDesigner.GetErrorDesignTimeHtml e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,6 +205,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -179,9 +215,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.Initialize(System.ComponentModel.IComponent)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="createUserWizardDesigner.Initialize component" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -194,6 +232,8 @@
         <param name="component">The control element being designed.</param>
         <summary>Initializes the designer and loads the specified component.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="PreFilterProperties">
@@ -202,9 +242,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.PreFilterProperties(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="createUserWizardDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -230,6 +272,8 @@
           <para>You can directly modify the dictionary that is accessible through the <paramref name="properties" /> parameter, or you can leave it unchanged. If you are overriding the <see cref="M:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.PreFilterProperties(System.Collections.IDictionary)" /> method, call the base implementation before you perform your own filtering.</para>
         </block>
         <altmember cref="T:System.ComponentModel.Design.IDesignerFilter" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="UsePreviewControl">
@@ -238,9 +282,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.UsePreviewControl" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property UsePreviewControl As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UsePreviewControl { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.UsePreviewControl : bool" Usage="System.Web.UI.Design.WebControls.CreateUserWizardDesigner.UsePreviewControl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -264,6 +310,8 @@
         <block subset="none" type="overrides">
           <para>You can override the <see cref="P:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.UsePreviewControl" /> property to return <see langword="false" /> or to determine its value based on whether the wizard control is marked with a class-level <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />. If the <see cref="P:System.Web.UI.Design.WebControls.CreateUserWizardDesigner.UsePreviewControl" /> is not overridden, the designer ignores the <see cref="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
   </Members>

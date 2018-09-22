@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BulletedList" />
   <TypeSignature Language="VB.NET" Value="Public Class BulletedList&#xA;Inherits ListControl&#xA;Implements IPostBackEventHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class BulletedList : System::Web::UI::WebControls::ListControl, System::Web::UI::IPostBackEventHandler" />
+  <TypeSignature Language="F#" Value="type BulletedList = class&#xA;    inherit ListControl&#xA;    interface IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,17 +19,20 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.DefaultEvent("Click")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.DefaultProperty("BulletStyle")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.BulletedListDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.SupportsEventValidation</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.BulletedListDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -170,6 +175,7 @@
     <altmember cref="E:System.Web.UI.WebControls.BulletedList.Click" />
     <altmember cref="T:System.Web.UI.WebControls.ListItem" />
     <altmember cref="T:System.Web.UI.DataSourceControl" />
+    <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -181,6 +187,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -202,6 +209,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="AddAttributesToRender">
@@ -210,9 +218,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BulletedList.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="bulletedList.AddAttributesToRender writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -236,6 +246,7 @@
           <para>The <see cref="M:System.Web.UI.WebControls.BulletedList.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" /> method overrides the <see cref="M:System.Web.UI.WebControls.ListControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" /> method.</para>
         </block>
         <altmember cref="T:System.Web.UI.HtmlTextWriter" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="AutoPostBack">
@@ -244,16 +255,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.AutoPostBack" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoPostBack As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoPostBack { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AutoPostBack : bool with get, set" Usage="System.Web.UI.WebControls.BulletedList.AutoPostBack" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -283,6 +299,7 @@
         <exception cref="T:System.NotSupportedException">An attempt was made to assign a value to the <see cref="P:System.Web.UI.WebControls.BulletedList.AutoPostBack" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.ListControl" />
         <altmember cref="P:System.Web.UI.WebControls.ListControl.AutoPostBack" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="BulletImageUrl">
@@ -291,20 +308,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.BulletImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property BulletImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ BulletImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BulletImageUrl : string with get, set" Usage="System.Web.UI.WebControls.BulletedList.BulletImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -357,6 +379,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.BulletedList.BulletStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="BulletStyle">
@@ -365,13 +388,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.BulletStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property BulletStyle As BulletStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::BulletStyle BulletStyle { System::Web::UI::WebControls::BulletStyle get(); void set(System::Web::UI::WebControls::BulletStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.BulletStyle : System.Web.UI.WebControls.BulletStyle with get, set" Usage="System.Web.UI.WebControls.BulletedList.BulletStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -420,6 +445,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The specified type is not one of the <see cref="T:System.Web.UI.WebControls.BulletStyle" /> values.</exception>
         <altmember cref="T:System.Web.UI.WebControls.BulletStyle" />
         <altmember cref="P:System.Web.UI.WebControls.BulletedList.BulletImageUrl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Click">
@@ -428,9 +454,11 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.BulletedList.Click" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Click As BulletedListEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::BulletedListEventHandler ^ Click;" />
+      <MemberSignature Language="F#" Value="member this.Click : System.Web.UI.WebControls.BulletedListEventHandler " Usage="member this.Click : System.Web.UI.WebControls.BulletedListEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -444,7 +472,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.BulletedList.Click> event is raised when a list item in a <xref:System.Web.UI.WebControls.BulletedList> control is clicked. To enable list items in a <xref:System.Web.UI.WebControls.BulletedList> control to raise the <xref:System.Web.UI.WebControls.BulletedList.Click> event, the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property first must be set to the value <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton>.  
   
- Raising an event invokes the event handler through a delegate. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -457,6 +485,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Controls">
@@ -465,9 +494,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.Controls" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Controls As ControlCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ControlCollection ^ Controls { System::Web::UI::ControlCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Controls : System.Web.UI.ControlCollection" Usage="System.Web.UI.WebControls.BulletedList.Controls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -486,6 +517,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.EmptyControlCollection" />
         <altmember cref="T:System.Web.UI.Control" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayMode">
@@ -494,13 +526,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.DisplayMode" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DisplayMode As BulletedListDisplayMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::BulletedListDisplayMode DisplayMode { System::Web::UI::WebControls::BulletedListDisplayMode get(); void set(System::Web::UI::WebControls::BulletedListDisplayMode value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayMode : System.Web.UI.WebControls.BulletedListDisplayMode with get, set" Usage="System.Web.UI.WebControls.BulletedList.DisplayMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -542,6 +576,7 @@
         <altmember cref="T:System.Web.UI.WebControls.BulletedListDisplayMode" />
         <altmember cref="P:System.Web.UI.WebControls.ListItem.Value" />
         <altmember cref="E:System.Web.UI.WebControls.BulletedList.Click" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FirstBulletNumber">
@@ -550,13 +585,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.FirstBulletNumber" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FirstBulletNumber As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FirstBulletNumber { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.FirstBulletNumber : int with get, set" Usage="System.Web.UI.WebControls.BulletedList.FirstBulletNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -588,6 +625,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.BulletStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnClick">
@@ -596,9 +634,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClick (e As BulletedListEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClick(System::Web::UI::WebControls::BulletedListEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnClick : System.Web.UI.WebControls.BulletedListEventArgs -&gt; unit&#xA;override this.OnClick : System.Web.UI.WebControls.BulletedListEventArgs -&gt; unit" Usage="bulletedList.OnClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -616,7 +656,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.BulletedList.Click> event is raised when a list item in the <xref:System.Web.UI.WebControls.BulletedList> control is clicked. To enable list items in a <xref:System.Web.UI.WebControls.BulletedList> control to raise the <xref:System.Web.UI.WebControls.BulletedList.Click> event, you must first set the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property to the value <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton>.  
   
- Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ Raising an event invokes the event handler through a delegate. For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  The <xref:System.Web.UI.WebControls.BulletedList.OnClick%2A> method also allows derived classes to handle the event without attaching a delegate. This is the preferred technique for handling the event in a derived class.  
   
@@ -634,6 +674,7 @@
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" /> method for the base class so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.BulletedList.Click" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RaisePostBackEvent">
@@ -642,12 +683,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BulletedList.RaisePostBackEvent(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (eventArgument As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="bulletedList.RaisePostBackEvent eventArgument" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -672,6 +715,7 @@
         <altmember cref="E:System.Web.UI.WebControls.BulletedList.Click" />
         <altmember cref="M:System.Web.UI.Page.Validate(System.String)" />
         <altmember cref="M:System.Web.UI.WebControls.BulletedList.OnClick(System.Web.UI.WebControls.BulletedListEventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -680,9 +724,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BulletedList.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="bulletedList.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -706,6 +752,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RenderBulletText">
@@ -714,9 +761,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BulletedList.RenderBulletText(System.Web.UI.WebControls.ListItem,System.Int32,System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderBulletText (item As ListItem, index As Integer, writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderBulletText(System::Web::UI::WebControls::ListItem ^ item, int index, System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member RenderBulletText : System.Web.UI.WebControls.ListItem * int * System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderBulletText : System.Web.UI.WebControls.ListItem * int * System.Web.UI.HtmlTextWriter -&gt; unit" Usage="bulletedList.RenderBulletText (item, index, writer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -742,6 +791,7 @@
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.BulletedList.Render(System.Web.UI.HtmlTextWriter)" />
         <altmember cref="M:System.Web.UI.WebControls.BulletedList.RenderContents(System.Web.UI.HtmlTextWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
@@ -750,9 +800,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BulletedList.RenderContents(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderContents (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="bulletedList.RenderContents writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -774,6 +826,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.HtmlTextWriter" />
         <altmember cref="M:System.Web.UI.WebControls.BulletedList.Render(System.Web.UI.HtmlTextWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RenderWhenDataEmpty">
@@ -782,16 +835,17 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.RenderWhenDataEmpty" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property RenderWhenDataEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RenderWhenDataEmpty { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RenderWhenDataEmpty : bool with get, set" Usage="System.Web.UI.WebControls.BulletedList.RenderWhenDataEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -811,16 +865,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.SelectedIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SelectedIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int SelectedIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedIndex : int with get, set" Usage="System.Web.UI.WebControls.BulletedList.SelectedIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -846,6 +905,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to assign a value to the <see cref="P:System.Web.UI.WebControls.BulletedList.SelectedIndex" />.</exception>
         <altmember cref="T:System.Web.UI.WebControls.BulletedListEventArgs" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SelectedItem">
@@ -854,13 +914,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.SelectedItem" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SelectedItem As ListItem" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ListItem ^ SelectedItem { System::Web::UI::WebControls::ListItem ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedItem : System.Web.UI.WebControls.ListItem" Usage="System.Web.UI.WebControls.BulletedList.SelectedItem" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -885,6 +950,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ListControl.SelectedItem" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SelectedValue">
@@ -893,16 +959,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.SelectedValue" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property SelectedValue As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SelectedValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectedValue : string with get, set" Usage="System.Web.UI.WebControls.BulletedList.SelectedValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -927,6 +998,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to assign a value to the <see cref="P:System.Web.UI.WebControls.BulletedList.SelectedValue" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.ListControl.SelectedValue" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.Web.UI.IPostBackEventHandler.RaisePostBackEvent">
@@ -941,8 +1013,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -969,11 +1047,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.TagKey" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TagKey As HtmlTextWriterTag" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
+      <MemberSignature Language="F#" Value="member this.TagKey : System.Web.UI.HtmlTextWriterTag" Usage="System.Web.UI.WebControls.BulletedList.TagKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterTag</ReturnType>
       </ReturnValue>
@@ -989,6 +1074,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Target">
@@ -997,16 +1083,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.Target" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property Target As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="System.Web.UI.WebControls.BulletedList.Target" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.TargetConverter))</AttributeName>
         </Attribute>
       </Attributes>
@@ -1055,6 +1143,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ListItem.Value" />
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -1063,13 +1152,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BulletedList.Text" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.WebControls.BulletedList.Text" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1093,6 +1187,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">An attempt was made to assign a value to the <see cref="P:System.Web.UI.WebControls.BulletedList.Text" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/caf33c44-5541-4e62-ad53-fe1d8e42c313">BulletedList Web Server Control</related>
       </Docs>
     </Member>
   </Members>

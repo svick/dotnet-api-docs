@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDataSourceDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDataSourceDesigner" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDataSourceDesigner" />
+  <TypeSignature Language="F#" Value="type IDataSourceDesigner = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -29,6 +31,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
     <altmember cref="T:System.ComponentModel.DesignerAttribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
   </Docs>
   <Members>
     <Member MemberName="CanConfigure">
@@ -37,9 +40,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataSourceDesigner.CanConfigure" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanConfigure As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanConfigure { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanConfigure : bool" Usage="System.Web.UI.Design.IDataSourceDesigner.CanConfigure" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -59,9 +64,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanRefreshSchema As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRefreshSchema { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRefreshSchema : bool" Usage="System.Web.UI.Design.IDataSourceDesigner.CanRefreshSchema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -81,9 +88,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceDesigner.Configure" />
       <MemberSignature Language="VB.NET" Value="Public Sub Configure ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Configure();" />
+      <MemberSignature Language="F#" Value="abstract member Configure : unit -&gt; unit" Usage="iDataSourceDesigner.Configure " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -109,9 +118,11 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Design.IDataSourceDesigner.DataSourceChanged" />
       <MemberSignature Language="VB.NET" Value="Event DataSourceChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataSourceChanged;" />
+      <MemberSignature Language="F#" Value="member this.DataSourceChanged : EventHandler " Usage="member this.DataSourceChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -129,6 +140,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.Design.DataSourceDesigner" />
         <altmember cref="E:System.Web.UI.IDataSource.DataSourceChanged" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
       </Docs>
     </Member>
     <Member MemberName="GetView">
@@ -137,9 +149,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceDesigner.GetView(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetView (viewName As String) As DesignerDataSourceView" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::Design::DesignerDataSourceView ^ GetView(System::String ^ viewName);" />
+      <MemberSignature Language="F#" Value="abstract member GetView : string -&gt; System.Web.UI.Design.DesignerDataSourceView" Usage="iDataSourceDesigner.GetView viewName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -173,9 +187,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceDesigner.GetViewNames" />
       <MemberSignature Language="VB.NET" Value="Public Function GetViewNames () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetViewNames();" />
+      <MemberSignature Language="F#" Value="abstract member GetViewNames : unit -&gt; string[]" Usage="iDataSourceDesigner.GetViewNames " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,9 +212,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceDesigner.RefreshSchema(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RefreshSchema (preferSilent As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RefreshSchema(bool preferSilent);" />
+      <MemberSignature Language="F#" Value="abstract member RefreshSchema : bool -&gt; unit" Usage="iDataSourceDesigner.RefreshSchema preferSilent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -221,9 +239,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceDesigner.ResumeDataSourceEvents" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResumeDataSourceEvents ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResumeDataSourceEvents();" />
+      <MemberSignature Language="F#" Value="abstract member ResumeDataSourceEvents : unit -&gt; unit" Usage="iDataSourceDesigner.ResumeDataSourceEvents " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -234,6 +254,7 @@
         <summary>Resumes raising data source events after calling the <see cref="M:System.Web.UI.Design.IDataSourceDesigner.SuppressDataSourceEvents" /> method.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Design.IDataSourceDesigner.SuppressDataSourceEvents" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
       </Docs>
     </Member>
     <Member MemberName="SchemaRefreshed">
@@ -242,9 +263,11 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Design.IDataSourceDesigner.SchemaRefreshed" />
       <MemberSignature Language="VB.NET" Value="Event SchemaRefreshed As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SchemaRefreshed;" />
+      <MemberSignature Language="F#" Value="member this.SchemaRefreshed : EventHandler " Usage="member this.SchemaRefreshed : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -254,6 +277,7 @@
         <summary>Occurs when the fields or data of the underlying data source have changed.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="E:System.Web.UI.Design.IDataSourceDesigner.DataSourceChanged" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
       </Docs>
     </Member>
     <Member MemberName="SuppressDataSourceEvents">
@@ -262,9 +286,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceDesigner.SuppressDataSourceEvents" />
       <MemberSignature Language="VB.NET" Value="Public Sub SuppressDataSourceEvents ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SuppressDataSourceEvents();" />
+      <MemberSignature Language="F#" Value="abstract member SuppressDataSourceEvents : unit -&gt; unit" Usage="iDataSourceDesigner.SuppressDataSourceEvents " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -275,6 +301,7 @@
         <summary>Suppresses all events raised by a data source until the <see cref="M:System.Web.UI.Design.IDataSourceDesigner.ResumeDataSourceEvents" /> method is called.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Design.IDataSourceDesigner.ResumeDataSourceEvents" />
+        <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
       </Docs>
     </Member>
   </Members>

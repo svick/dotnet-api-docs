@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewSortEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class GridViewSortEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class GridViewSortEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type GridViewSortEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -25,7 +27,7 @@
   
  A <xref:System.Web.UI.WebControls.GridViewSortEventArgs> object is passed to the event-handling method, which allows you to specify or determine the sort expression and sort direction in which to sort the <xref:System.Web.UI.WebControls.GridView> control. To determine the sort expression, use the <xref:System.Web.UI.WebControls.GridViewSortEventArgs.SortExpression%2A> property. To determine the sort direction, use the <xref:System.Web.UI.WebControls.GridViewSortEventArgs.SortDirection%2A> property. You can also cancel a sorting operation by setting the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property to `true`.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  For a list of initial property values for an instance of <xref:System.Web.UI.WebControls.GridViewSortEventArgs>, see the <xref:System.Web.UI.WebControls.GridViewSelectEventArgs.%23ctor%2A> constructor.  
   
@@ -51,11 +53,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sortExpression, valuetype System.Web.UI.WebControls.SortDirection sortDirection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewSortEventArgs.#ctor(System.String,System.Web.UI.WebControls.SortDirection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; GridViewSortEventArgs(System::String ^ sortExpression, System::Web::UI::WebControls::SortDirection sortDirection);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.GridViewSortEventArgs : string * System.Web.UI.WebControls.SortDirection -&gt; System.Web.UI.WebControls.GridViewSortEventArgs" Usage="new System.Web.UI.WebControls.GridViewSortEventArgs (sortExpression, sortDirection)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="sortExpression" Type="System.String" />
         <Parameter Name="sortDirection" Type="System.Web.UI.WebControls.SortDirection" />
@@ -92,11 +101,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewSortEventArgs.SortDirection" />
       <MemberSignature Language="VB.NET" Value="Public Property SortDirection As SortDirection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::SortDirection SortDirection { System::Web::UI::WebControls::SortDirection get(); void set(System::Web::UI::WebControls::SortDirection value); };" />
+      <MemberSignature Language="F#" Value="member this.SortDirection : System.Web.UI.WebControls.SortDirection with get, set" Usage="System.Web.UI.WebControls.GridViewSortEventArgs.SortDirection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.SortDirection</ReturnType>
       </ReturnValue>
@@ -130,11 +149,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewSortEventArgs.SortExpression" />
       <MemberSignature Language="VB.NET" Value="Public Property SortExpression As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SortExpression { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SortExpression : string with get, set" Usage="System.Web.UI.WebControls.GridViewSortEventArgs.SortExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

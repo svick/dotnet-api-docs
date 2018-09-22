@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.ConstrainedExecution.Consistency" />
   <TypeSignature Language="VB.NET" Value="Public Enum Consistency" />
   <TypeSignature Language="C++ CLI" Value="public enum class Consistency" />
+  <TypeSignature Language="F#" Value="type Consistency = " />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -21,6 +23,11 @@
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Specifies a reliability contract.</summary>
     <remarks>
@@ -40,6 +47,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute" />
+    <related type="Article" href="http://msdn.microsoft.com/library/99354547-39c1-4b0b-8553-938e8f8d1808">Constrained Execution Regions</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/cf624c1f-c160-46a1-bb2b-213587688da7">Reliability Best Practices</related>
   </Docs>
   <Members>
     <Member MemberName="MayCorruptAppDomain">
@@ -48,9 +57,11 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Consistency.MayCorruptAppDomain" />
       <MemberSignature Language="VB.NET" Value="MayCorruptAppDomain" />
       <MemberSignature Language="C++ CLI" Value="MayCorruptAppDomain" />
+      <MemberSignature Language="F#" Value="MayCorruptAppDomain = 1" Usage="System.Runtime.ConstrainedExecution.Consistency.MayCorruptAppDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -77,9 +88,11 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Consistency.MayCorruptInstance" />
       <MemberSignature Language="VB.NET" Value="MayCorruptInstance" />
       <MemberSignature Language="C++ CLI" Value="MayCorruptInstance" />
+      <MemberSignature Language="F#" Value="MayCorruptInstance = 2" Usage="System.Runtime.ConstrainedExecution.Consistency.MayCorruptInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -106,9 +119,11 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Consistency.MayCorruptProcess" />
       <MemberSignature Language="VB.NET" Value="MayCorruptProcess" />
       <MemberSignature Language="C++ CLI" Value="MayCorruptProcess" />
+      <MemberSignature Language="F#" Value="MayCorruptProcess = 0" Usage="System.Runtime.ConstrainedExecution.Consistency.MayCorruptProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -135,9 +150,11 @@
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState" />
       <MemberSignature Language="VB.NET" Value="WillNotCorruptState" />
       <MemberSignature Language="C++ CLI" Value="WillNotCorruptState" />
+      <MemberSignature Language="F#" Value="WillNotCorruptState = 3" Usage="System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

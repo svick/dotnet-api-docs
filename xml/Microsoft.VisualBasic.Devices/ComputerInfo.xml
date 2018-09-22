@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.ComputerInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class ComputerInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class ComputerInfo" />
+  <TypeSignature Language="F#" Value="type ComputerInfo = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(Microsoft.VisualBasic.Devices.ComputerInfo/ComputerInfoDebugView))</AttributeName>
     </Attribute>
   </Attributes>
@@ -34,6 +36,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,10 +48,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -56,6 +60,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Devices.ComputerInfo" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="AvailablePhysicalMemory">
@@ -64,16 +69,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ComputerInfo.AvailablePhysicalMemory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AvailablePhysicalMemory As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt64 AvailablePhysicalMemory { System::UInt64 get(); };" />
+      <MemberSignature Language="F#" Value="member this.AvailablePhysicalMemory : uint64" Usage="Microsoft.VisualBasic.Devices.ComputerInfo.AvailablePhysicalMemory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -99,6 +106,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">The application cannot obtain the memory status.</exception>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="AvailableVirtualMemory">
@@ -107,16 +115,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ComputerInfo.AvailableVirtualMemory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AvailableVirtualMemory As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt64 AvailableVirtualMemory { System::UInt64 get(); };" />
+      <MemberSignature Language="F#" Value="member this.AvailableVirtualMemory : uint64" Usage="Microsoft.VisualBasic.Devices.ComputerInfo.AvailableVirtualMemory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -142,6 +152,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">The application cannot obtain the memory status.</exception>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="InstalledUICulture">
@@ -150,9 +161,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ComputerInfo.InstalledUICulture" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstalledUICulture As CultureInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ InstalledUICulture { System::Globalization::CultureInfo ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.InstalledUICulture : System.Globalization.CultureInfo" Usage="Microsoft.VisualBasic.Devices.ComputerInfo.InstalledUICulture" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -179,6 +192,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Globalization.CultureInfo" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="OSFullName">
@@ -187,13 +201,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ComputerInfo.OSFullName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OSFullName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OSFullName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OSFullName : string" Usage="Microsoft.VisualBasic.Devices.ComputerInfo.OSFullName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -220,6 +236,7 @@
         </remarks>
         <exception cref="T:System.Security.SecurityException">The calling code does not have full trust.</exception>
         <permission cref="T:System.Security.Permissions.FileIOPermission">Controls the ability to access files and folders. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" />.</permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="OSPlatform">
@@ -228,9 +245,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ComputerInfo.OSPlatform" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OSPlatform As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OSPlatform { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OSPlatform : string" Usage="Microsoft.VisualBasic.Devices.ComputerInfo.OSPlatform" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -257,6 +276,7 @@
         <exception cref="T:System.ExecutionEngineException">The application cannot obtain the operating-system platform information.</exception>
         <altmember cref="P:System.OperatingSystem.Platform" />
         <altmember cref="P:System.Environment.OSVersion" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="OSVersion">
@@ -265,9 +285,11 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ComputerInfo.OSVersion" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OSVersion As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OSVersion { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.OSVersion : string" Usage="Microsoft.VisualBasic.Devices.ComputerInfo.OSVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -294,6 +316,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ExecutionEngineException">The application cannot obtain the operating-system version information.</exception>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="TotalPhysicalMemory">
@@ -302,16 +325,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ComputerInfo.TotalPhysicalMemory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalPhysicalMemory As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt64 TotalPhysicalMemory { System::UInt64 get(); };" />
+      <MemberSignature Language="F#" Value="member this.TotalPhysicalMemory : uint64" Usage="Microsoft.VisualBasic.Devices.ComputerInfo.TotalPhysicalMemory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -337,6 +362,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">The application cannot obtain the memory status.</exception>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
     <Member MemberName="TotalVirtualMemory">
@@ -345,16 +371,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ComputerInfo.TotalVirtualMemory" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalVirtualMemory As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt64 TotalVirtualMemory { System::UInt64 get(); };" />
+      <MemberSignature Language="F#" Value="member this.TotalVirtualMemory : uint64" Usage="Microsoft.VisualBasic.Devices.ComputerInfo.TotalVirtualMemory" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -380,6 +408,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ComponentModel.Win32Exception">The application cannot obtain the memory status.</exception>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
       </Docs>
     </Member>
   </Members>

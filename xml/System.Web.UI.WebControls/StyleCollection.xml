@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.StyleCollection" />
   <TypeSignature Language="VB.NET" Value="Public Class StyleCollection&#xA;Inherits StateManagedCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class StyleCollection : System::Web::UI::StateManagedCollection" />
+  <TypeSignature Language="F#" Value="type StyleCollection = class&#xA;    inherit StateManagedCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -42,6 +44,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.StateManagedCollection" />
     <altmember cref="T:System.Web.UI.WebControls.Style" />
+    <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
   </Docs>
   <Members>
     <Member MemberName="Add">
@@ -49,9 +52,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.UI.WebControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.StyleCollection.Add(System.Web.UI.WebControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::UI::WebControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.WebControls.Style -&gt; int" Usage="styleCollection.Add style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,6 +81,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.Style" />
         <altmember cref="M:System.Web.UI.WebControls.StyleCollection.Insert(System.Int32,System.Web.UI.WebControls.Style)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -83,9 +89,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.StyleCollection.Contains(System.Web.UI.WebControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.Style -&gt; bool" Usage="styleCollection.Contains style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -108,6 +116,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.StyleCollection.IndexOf(System.Web.UI.WebControls.Style)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -116,9 +125,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.StyleCollection.CopyTo(System.Web.UI.WebControls.Style[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (styleArray As Style(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::Style ^&gt; ^ styleArray, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Web.UI.WebControls.Style[] * int -&gt; unit" Usage="styleCollection.CopyTo (styleArray, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -140,6 +151,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="CreateKnownType">
@@ -148,9 +160,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.StyleCollection.CreateKnownType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateKnownType (index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateKnownType(int index);" />
+      <MemberSignature Language="F#" Value="override this.CreateKnownType : int -&gt; obj" Usage="styleCollection.CreateKnownType index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -164,6 +178,7 @@
         <summary>Creates an instance of the <see cref="T:System.Web.UI.WebControls.Style" /> class, based on the single element collection returned by the <see cref="M:System.Web.UI.WebControls.StyleCollection.GetKnownTypes" /> method.</summary>
         <returns>An instance of the <see cref="T:System.Web.UI.WebControls.Style" /> class.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="GetKnownTypes">
@@ -172,9 +187,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.StyleCollection.GetKnownTypes" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKnownTypes () As Type()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetKnownTypes();" />
+      <MemberSignature Language="F#" Value="override this.GetKnownTypes : unit -&gt; Type[]" Usage="styleCollection.GetKnownTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -185,6 +202,7 @@
         <summary>Gets an array of the <see cref="T:System.Web.UI.IStateManager" /> types that the <see cref="T:System.Web.UI.WebControls.StyleCollection" /> can contain.</summary>
         <returns>An array containing one <see cref="T:System.Type" /> object for the <see cref="T:System.Web.UI.WebControls.Style" /> class, which indicates that the <see cref="T:System.Web.UI.WebControls.StyleCollection" /> can contain <see cref="T:System.Web.UI.WebControls.Style" /> objects.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -192,9 +210,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.StyleCollection.IndexOf(System.Web.UI.WebControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.Style -&gt; int" Usage="styleCollection.IndexOf style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -215,6 +235,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -222,9 +243,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.UI.WebControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.StyleCollection.Insert(System.Int32,System.Web.UI.WebControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::WebControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.WebControls.Style -&gt; unit" Usage="styleCollection.Insert (index, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -250,6 +273,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.Style" />
         <altmember cref="M:System.Web.UI.WebControls.StyleCollection.Add(System.Web.UI.WebControls.Style)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -258,9 +282,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.StyleCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(i As Integer) As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ default[int] { System::Web::UI::WebControls::Style ^ get(int i); void set(int i, System::Web::UI::WebControls::Style ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.Style with get, set" Usage="System.Web.UI.WebControls.StyleCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -282,6 +308,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -289,9 +316,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.WebControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.StyleCollection.Remove(System.Web.UI.WebControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::Style ^ style);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.WebControls.Style -&gt; unit" Usage="styleCollection.Remove style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -316,6 +345,7 @@
         <altmember cref="T:System.Web.UI.WebControls.Style" />
         <altmember cref="M:System.Web.UI.WebControls.StyleCollection.RemoveAt(System.Int32)" />
         <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -324,9 +354,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.StyleCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="styleCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -351,6 +383,7 @@
         <altmember cref="T:System.Web.UI.WebControls.Style" />
         <altmember cref="M:System.Web.UI.WebControls.StyleCollection.Remove(System.Web.UI.WebControls.Style)" />
         <altmember cref="M:System.Web.UI.StateManagedCollection.Clear" />
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
     <Member MemberName="SetDirtyObject">
@@ -359,9 +392,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.StyleCollection.SetDirtyObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDirtyObject (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDirtyObject(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.SetDirtyObject : obj -&gt; unit" Usage="styleCollection.SetDirtyObject o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -374,6 +409,7 @@
         <param name="o">The <see cref="T:System.Web.UI.WebControls.Style" /> object that should serialize itself completely.</param>
         <summary>Instructs the input <see cref="T:System.Web.UI.WebControls.Style" /> object contained in the collection to record its entire state to view state, rather than recording only change information.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/782c2db6-fc9b-4243-8df9-a8ffe2f4cc42">ASP.NET Web Server Controls and CSS Styles</related>
       </Docs>
     </Member>
   </Members>

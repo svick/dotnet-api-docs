@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlConnectionColumnEncryptionSetting" />
   <TypeSignature Language="VB.NET" Value="Public Enum SqlConnectionColumnEncryptionSetting" />
   <TypeSignature Language="C++ CLI" Value="public enum class SqlConnectionColumnEncryptionSetting" />
+  <TypeSignature Language="F#" Value="type SqlConnectionColumnEncryptionSetting = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -15,6 +16,8 @@
   <Docs>
     <summary>Specifies that Always Encrypted functionality is enabled in a connection. Note that these settings cannot be used to bypass encryption and gain access to plaintext data. For details, see [Always Encrypted (Database Engine)](/sql/relational-databases/security/encryption/always-encrypted-database-engine).</summary>
     <remarks>To be added.</remarks>
+    <related type="ExternalDocumentation" href="http://blogs.msdn.com/b/sqlsecurity/archive/2015/06/04/getting-started-with-always-encrypted.aspx">Getting Started with Always Encrypted</related>
+    <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/mt147923.aspx">Always Encrypted (client development)</related>
   </Docs>
   <Members>
     <Member MemberName="Disabled">
@@ -23,6 +26,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlConnectionColumnEncryptionSetting.Disabled" />
       <MemberSignature Language="VB.NET" Value="Disabled" />
       <MemberSignature Language="C++ CLI" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 0" Usage="System.Data.SqlClient.SqlConnectionColumnEncryptionSetting.Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -43,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlConnectionColumnEncryptionSetting.Enabled" />
       <MemberSignature Language="VB.NET" Value="Enabled" />
       <MemberSignature Language="C++ CLI" Value="Enabled" />
+      <MemberSignature Language="F#" Value="Enabled = 1" Usage="System.Data.SqlClient.SqlConnectionColumnEncryptionSetting.Enabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

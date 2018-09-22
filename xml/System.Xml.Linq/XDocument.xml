@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XDocument" />
   <TypeSignature Language="VB.NET" Value="Public Class XDocument&#xA;Inherits XContainer" />
   <TypeSignature Language="C++ CLI" Value="public ref class XDocument : System::Xml::Linq::XContainer" />
+  <TypeSignature Language="F#" Value="type XDocument = class&#xA;    inherit XContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,6 +15,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Xml.Linq</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -106,6 +108,8 @@ Console.WriteLine(doc)
     <altmember cref="T:System.Xml.Linq.XDeclaration" />
     <altmember cref="T:System.Xml.Linq.XElement" />
     <altmember cref="T:System.Xml.Linq.XNode" />
+    <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/90f78331-1be8-42fb-93e7-bd1325826467">XDocument Class Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -197,6 +201,8 @@ Console.WriteLine(doc)
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/90f78331-1be8-42fb-93e7-bd1325826467">XDocument Class Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -216,12 +222,18 @@ Console.WriteLine(doc)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XDocument" /> class.</summary>
@@ -262,6 +274,8 @@ Console.WriteLine(doc)
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/90f78331-1be8-42fb-93e7-bd1325826467">XDocument Class Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -270,6 +284,7 @@ Console.WriteLine(doc)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.#ctor(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray content As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XDocument(... cli::array &lt;System::Object ^&gt; ^ content);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XDocument : obj[] -&gt; System.Xml.Linq.XDocument" Usage="new System.Xml.Linq.XDocument content" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -281,6 +296,7 @@ Console.WriteLine(doc)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -378,6 +394,8 @@ Console.WriteLine(doc)
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/90f78331-1be8-42fb-93e7-bd1325826467">XDocument Class Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -386,6 +404,7 @@ Console.WriteLine(doc)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.#ctor(System.Xml.Linq.XDocument)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (other As XDocument)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XDocument(System::Xml::Linq::XDocument ^ other);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XDocument : System.Xml.Linq.XDocument -&gt; System.Xml.Linq.XDocument" Usage="new System.Xml.Linq.XDocument other" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -397,6 +416,7 @@ Console.WriteLine(doc)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -420,6 +440,8 @@ Console.WriteLine(doc)
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/90f78331-1be8-42fb-93e7-bd1325826467">XDocument Class Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -428,6 +450,7 @@ Console.WriteLine(doc)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.#ctor(System.Xml.Linq.XDeclaration,System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (declaration As XDeclaration, ParamArray content As Object())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XDocument(System::Xml::Linq::XDeclaration ^ declaration, ... cli::array &lt;System::Object ^&gt; ^ content);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XDocument : System.Xml.Linq.XDeclaration * obj[] -&gt; System.Xml.Linq.XDocument" Usage="new System.Xml.Linq.XDocument (declaration, content)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -439,12 +462,18 @@ Console.WriteLine(doc)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="declaration" Type="System.Xml.Linq.XDeclaration" />
         <Parameter Name="content" Type="System.Object[]">
@@ -542,6 +571,8 @@ Console.WriteLine(File.ReadAllText("Test.xml"))
  ]]></format>
         </remarks>
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/90f78331-1be8-42fb-93e7-bd1325826467">XDocument Class Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Declaration">
@@ -550,6 +581,7 @@ Console.WriteLine(File.ReadAllText("Test.xml"))
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDocument.Declaration" />
       <MemberSignature Language="VB.NET" Value="Public Property Declaration As XDeclaration" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XDeclaration ^ Declaration { System::Xml::Linq::XDeclaration ^ get(); void set(System::Xml::Linq::XDeclaration ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Declaration : System.Xml.Linq.XDeclaration with get, set" Usage="System.Xml.Linq.XDocument.Declaration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -561,12 +593,21 @@ Console.WriteLine(File.ReadAllText("Test.xml"))
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.Linq.XDeclaration</ReturnType>
       </ReturnValue>
@@ -612,6 +653,8 @@ Console.WriteLine(doc.Declaration)
  ]]></format>
         </remarks>
         <altmember cref="T:System.Xml.Linq.XDeclaration" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName="DocumentType">
@@ -620,6 +663,7 @@ Console.WriteLine(doc.Declaration)
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDocument.DocumentType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentType As XDocumentType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XDocumentType ^ DocumentType { System::Xml::Linq::XDocumentType ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DocumentType : System.Xml.Linq.XDocumentType" Usage="System.Xml.Linq.XDocument.DocumentType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -631,12 +675,18 @@ Console.WriteLine(doc.Declaration)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.Linq.XDocumentType</ReturnType>
       </ReturnValue>
@@ -746,6 +796,7 @@ Console.WriteLine(doc)
         </remarks>
         <altmember cref="T:System.Xml.Linq.XDocumentType" />
         <altmember cref="P:System.Xml.Linq.XDocument.NodeType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Load">
@@ -769,6 +820,8 @@ Console.WriteLine(doc)
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d266f58d-f2f3-4668-b661-e716e658d13a">Querying an XDocument vs. Querying an XElement</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Load">
@@ -776,6 +829,7 @@ Console.WriteLine(doc)
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XDocument Load(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Load(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Load(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.Stream -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Load stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -793,6 +847,11 @@ Console.WriteLine(doc)
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.Linq.XDocument</ReturnType>
       </ReturnValue>
@@ -826,6 +885,7 @@ Console.WriteLine(doc)
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XDocument Load(class System.IO.TextReader textReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Load(System.IO.TextReader)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Load(System::IO::TextReader ^ textReader);" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.TextReader -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Load textReader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -837,12 +897,18 @@ Console.WriteLine(doc)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.Linq.XDocument</ReturnType>
       </ReturnValue>
@@ -887,6 +953,8 @@ Console.WriteLine(doc)
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d266f58d-f2f3-4668-b661-e716e658d13a">Querying an XDocument vs. Querying an XElement</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -895,6 +963,7 @@ Console.WriteLine(doc)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Load(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Load (uri As String) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Load(System::String ^ uri);" />
+      <MemberSignature Language="F#" Value="static member Load : string -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Load uri" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -906,12 +975,18 @@ Console.WriteLine(doc)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.Linq.XDocument</ReturnType>
       </ReturnValue>
@@ -994,6 +1069,8 @@ Console.WriteLine(doc)
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d266f58d-f2f3-4668-b661-e716e658d13a">Querying an XDocument vs. Querying an XElement</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1002,6 +1079,7 @@ Console.WriteLine(doc)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Load(System.Xml.XmlReader)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Load (reader As XmlReader) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Load(System::Xml::XmlReader ^ reader);" />
+      <MemberSignature Language="F#" Value="static member Load : System.Xml.XmlReader -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Load reader" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1013,12 +1091,18 @@ Console.WriteLine(doc)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.Linq.XDocument</ReturnType>
       </ReturnValue>
@@ -1095,6 +1179,8 @@ End Using
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d266f58d-f2f3-4668-b661-e716e658d13a">Querying an XDocument vs. Querying an XElement</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1102,6 +1188,7 @@ End Using
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XDocument Load(class System.IO.Stream stream, valuetype System.Xml.Linq.LoadOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Load(System.IO.Stream,System.Xml.Linq.LoadOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Load(System::IO::Stream ^ stream, System::Xml::Linq::LoadOptions options);" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.Stream * System.Xml.Linq.LoadOptions -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Load (stream, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1152,6 +1239,7 @@ End Using
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XDocument Load(class System.IO.TextReader textReader, valuetype System.Xml.Linq.LoadOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Load(System.IO.TextReader,System.Xml.Linq.LoadOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Load(System::IO::TextReader ^ textReader, System::Xml::Linq::LoadOptions options);" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.TextReader * System.Xml.Linq.LoadOptions -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Load (textReader, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1163,6 +1251,7 @@ End Using
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1274,6 +1363,8 @@ Count of white space nodes (preserving whitespace): 3
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d266f58d-f2f3-4668-b661-e716e658d13a">Querying an XDocument vs. Querying an XElement</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1282,6 +1373,7 @@ Count of white space nodes (preserving whitespace): 3
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Load(System.String,System.Xml.Linq.LoadOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Load (uri As String, options As LoadOptions) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Load(System::String ^ uri, System::Xml::Linq::LoadOptions options);" />
+      <MemberSignature Language="F#" Value="static member Load : string * System.Xml.Linq.LoadOptions -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Load (uri, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1293,6 +1385,7 @@ Count of white space nodes (preserving whitespace): 3
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1368,6 +1461,8 @@ nodes if preserving whitespace: 82
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d266f58d-f2f3-4668-b661-e716e658d13a">Querying an XDocument vs. Querying an XElement</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -1376,6 +1471,7 @@ nodes if preserving whitespace: 82
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Load(System.Xml.XmlReader,System.Xml.Linq.LoadOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Load (reader As XmlReader, options As LoadOptions) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Load(System::Xml::XmlReader ^ reader, System::Xml::Linq::LoadOptions options);" />
+      <MemberSignature Language="F#" Value="static member Load : System.Xml.XmlReader * System.Xml.Linq.LoadOptions -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Load (reader, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1387,6 +1483,7 @@ nodes if preserving whitespace: 82
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1510,6 +1607,8 @@ Root                1    2
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName="LoadAsync">
@@ -1517,11 +1616,18 @@ Root                1    2
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Xml.Linq.XDocument&gt; LoadAsync(class System.IO.Stream stream, valuetype System.Xml.Linq.LoadOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.LoadAsync(System.IO.Stream,System.Xml.Linq.LoadOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Xml::Linq::XDocument ^&gt; ^ LoadAsync(System::IO::Stream ^ stream, System::Xml::Linq::LoadOptions options, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="static member LoadAsync : System.IO.Stream * System.Xml.Linq.LoadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Xml.Linq.XDocument&gt;" Usage="System.Xml.Linq.XDocument.LoadAsync (stream, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Xml.Linq.XDocument&gt;</ReturnType>
@@ -1545,11 +1651,18 @@ Root                1    2
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Xml.Linq.XDocument&gt; LoadAsync(class System.IO.TextReader textReader, valuetype System.Xml.Linq.LoadOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.LoadAsync(System.IO.TextReader,System.Xml.Linq.LoadOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Xml::Linq::XDocument ^&gt; ^ LoadAsync(System::IO::TextReader ^ textReader, System::Xml::Linq::LoadOptions options, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="static member LoadAsync : System.IO.TextReader * System.Xml.Linq.LoadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Xml.Linq.XDocument&gt;" Usage="System.Xml.Linq.XDocument.LoadAsync (textReader, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Xml.Linq.XDocument&gt;</ReturnType>
@@ -1573,11 +1686,18 @@ Root                1    2
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Xml.Linq.XDocument&gt; LoadAsync(class System.Xml.XmlReader reader, valuetype System.Xml.Linq.LoadOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.LoadAsync(System.Xml.XmlReader,System.Xml.Linq.LoadOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Xml::Linq::XDocument ^&gt; ^ LoadAsync(System::Xml::XmlReader ^ reader, System::Xml::Linq::LoadOptions options, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="static member LoadAsync : System.Xml.XmlReader * System.Xml.Linq.LoadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Xml.Linq.XDocument&gt;" Usage="System.Xml.Linq.XDocument.LoadAsync (reader, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Xml.Linq.XDocument&gt;</ReturnType>
@@ -1602,6 +1722,7 @@ Root                1    2
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDocument.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Xml.XmlNodeType" Usage="System.Xml.Linq.XDocument.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1613,6 +1734,7 @@ Root                1    2
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1663,6 +1785,7 @@ Document
         </remarks>
         <altmember cref="T:System.Xml.XmlNodeType" />
         <altmember cref="P:System.Xml.Linq.XDocument.DocumentType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Parse">
@@ -1721,6 +1844,8 @@ Console.WriteLine(doc)
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8bdfdca0-6738-47a4-af3b-6d36d85e4d28">Parsing XML</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Parse">
@@ -1729,6 +1854,7 @@ Console.WriteLine(doc)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (text As String) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Parse(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Parse text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1740,12 +1866,18 @@ Console.WriteLine(doc)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.Linq.XDocument</ReturnType>
       </ReturnValue>
@@ -1808,6 +1940,8 @@ Console.WriteLine(doc)
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8bdfdca0-6738-47a4-af3b-6d36d85e4d28">Parsing XML</related>
       </Docs>
     </Member>
     <Member MemberName="Parse">
@@ -1816,6 +1950,7 @@ Console.WriteLine(doc)
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Parse(System.String,System.Xml.Linq.LoadOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (text As String, options As LoadOptions) As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Parse(System::String ^ text, System::Xml::Linq::LoadOptions options);" />
+      <MemberSignature Language="F#" Value="static member Parse : string * System.Xml.Linq.LoadOptions -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Parse (text, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1827,6 +1962,7 @@ Console.WriteLine(doc)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1909,6 +2045,8 @@ nodes when not preserving whitespace: 4
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8bdfdca0-6738-47a4-af3b-6d36d85e4d28">Parsing XML</related>
       </Docs>
     </Member>
     <Member MemberName="Root">
@@ -1917,6 +2055,7 @@ nodes when not preserving whitespace: 4
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDocument.Root" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Root As XElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XElement ^ Root { System::Xml::Linq::XElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Root : System.Xml.Linq.XElement" Usage="System.Xml.Linq.XDocument.Root" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1928,12 +2067,18 @@ nodes when not preserving whitespace: 4
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Xml.Linq.XElement</ReturnType>
       </ReturnValue>
@@ -1996,6 +2141,8 @@ Pubs
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/69468b03-4f18-4d69-98a4-3fa90d904f08">How to: Find All Nodes in a Namespace</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Save">
@@ -2010,6 +2157,8 @@ Pubs
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Save">
@@ -2017,6 +2166,7 @@ Pubs
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Save(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.Stream -&gt; unit" Usage="xDocument.Save stream" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2062,6 +2212,7 @@ Pubs
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.TextWriter textWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Save(System.IO.TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::TextWriter ^ textWriter);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.TextWriter -&gt; unit" Usage="xDocument.Save textWriter" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2073,6 +2224,7 @@ Pubs
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2140,6 +2292,8 @@ Console.WriteLine(sb.ToString())
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2148,10 +2302,12 @@ Console.WriteLine(sb.ToString())
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Save(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (fileName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ fileName);" />
+      <MemberSignature Language="F#" Value="member this.Save : string -&gt; unit" Usage="xDocument.Save fileName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2218,6 +2374,8 @@ Console.WriteLine(File.ReadAllText("Root.xml"))
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2226,6 +2384,7 @@ Console.WriteLine(File.ReadAllText("Root.xml"))
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Save(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.Xml.XmlWriter -&gt; unit" Usage="xDocument.Save writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2237,6 +2396,7 @@ Console.WriteLine(File.ReadAllText("Root.xml"))
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2304,6 +2464,8 @@ Console.WriteLine(sb.ToString())
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2311,6 +2473,7 @@ Console.WriteLine(sb.ToString())
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream, valuetype System.Xml.Linq.SaveOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Save(System.IO.Stream,System.Xml.Linq.SaveOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ stream, System::Xml::Linq::SaveOptions options);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.Stream * System.Xml.Linq.SaveOptions -&gt; unit" Usage="xDocument.Save (stream, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2358,6 +2521,7 @@ Console.WriteLine(sb.ToString())
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.TextWriter textWriter, valuetype System.Xml.Linq.SaveOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Save(System.IO.TextWriter,System.Xml.Linq.SaveOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::TextWriter ^ textWriter, System::Xml::Linq::SaveOptions options);" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.TextWriter * System.Xml.Linq.SaveOptions -&gt; unit" Usage="xDocument.Save (textWriter, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2369,6 +2533,7 @@ Console.WriteLine(sb.ToString())
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2455,6 +2620,8 @@ End Using
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName="Save">
@@ -2463,10 +2630,12 @@ End Using
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Save(System.String,System.Xml.Linq.SaveOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Save (fileName As String, options As SaveOptions)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ fileName, System::Xml::Linq::SaveOptions options);" />
+      <MemberSignature Language="F#" Value="member this.Save : string * System.Xml.Linq.SaveOptions -&gt; unit" Usage="xDocument.Save (fileName, options)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2542,6 +2711,8 @@ Console.WriteLine(File.ReadAllText("Root2.xml"))
         <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/215bcf5b-284b-4d7e-a95a-8d8e241341a9">How to: Read and Write an Encoded Document</related>
       </Docs>
     </Member>
     <Member MemberName="SaveAsync">
@@ -2549,11 +2720,18 @@ Console.WriteLine(File.ReadAllText("Root2.xml"))
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsync(class System.Xml.XmlWriter writer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.SaveAsync(System.Xml.XmlWriter,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ SaveAsync(System::Xml::XmlWriter ^ writer, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.SaveAsync : System.Xml.XmlWriter * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xDocument.SaveAsync (writer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -2575,11 +2753,18 @@ Console.WriteLine(File.ReadAllText("Root2.xml"))
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsync(class System.IO.Stream stream, valuetype System.Xml.Linq.SaveOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.SaveAsync(System.IO.Stream,System.Xml.Linq.SaveOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ SaveAsync(System::IO::Stream ^ stream, System::Xml::Linq::SaveOptions options, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.SaveAsync : System.IO.Stream * System.Xml.Linq.SaveOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xDocument.SaveAsync (stream, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -2603,11 +2788,18 @@ Console.WriteLine(File.ReadAllText("Root2.xml"))
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsync(class System.IO.TextWriter textWriter, valuetype System.Xml.Linq.SaveOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.SaveAsync(System.IO.TextWriter,System.Xml.Linq.SaveOptions,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ SaveAsync(System::IO::TextWriter ^ textWriter, System::Xml::Linq::SaveOptions options, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="member this.SaveAsync : System.IO.TextWriter * System.Xml.Linq.SaveOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xDocument.SaveAsync (textWriter, options, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -2632,6 +2824,7 @@ Console.WriteLine(File.ReadAllText("Root2.xml"))
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (writer As XmlWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="xDocument.WriteTo writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2643,6 +2836,7 @@ Console.WriteLine(File.ReadAllText("Root2.xml"))
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -2710,6 +2904,7 @@ Console.WriteLine(sb.ToString())
         <altmember cref="Overload:System.Xml.Linq.XDocument.Save" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
         <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="WriteToAsync">
@@ -2717,11 +2912,18 @@ Console.WriteLine(sb.ToString())
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteToAsync(class System.Xml.XmlWriter writer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.WriteToAsync(System.Xml.XmlWriter,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteToAsync(System::Xml::XmlWriter ^ writer, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.WriteToAsync : System.Xml.XmlWriter * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xDocument.WriteToAsync (writer, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.Linq</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>

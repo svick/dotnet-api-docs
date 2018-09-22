@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IClientMessageFormatter" />
   <TypeSignature Language="VB.NET" Value="Public Interface IClientMessageFormatter" />
   <TypeSignature Language="C++ CLI" Value="public interface class IClientMessageFormatter" />
+  <TypeSignature Language="F#" Value="type IClientMessageFormatter = interface" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -24,7 +26,7 @@
 ## Remarks  
  Implement the <xref:System.ServiceModel.Dispatcher.IClientMessageFormatter> interface to create a custom client formatter that serializes objects into messages and deserializes messages into objects for a particular operation.  
   
- Attach custom [!INCLUDE[indigo1](~/includes/indigo1-md.md)] client formatters to the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A> property to handle this conversion explicitly.  
+ Attach custom Windows Communication Foundation (WCF) client formatters to the <xref:System.ServiceModel.Dispatcher.ClientOperation.Formatter%2A> property to handle this conversion explicitly.  
   
  ]]></format>
     </remarks>
@@ -35,10 +37,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object DeserializeReply(class System.ServiceModel.Channels.Message message, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IClientMessageFormatter.DeserializeReply(System.ServiceModel.Channels.Message,System.Object[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ DeserializeReply(System::ServiceModel::Channels::Message ^ message, cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="abstract member DeserializeReply : System.ServiceModel.Channels.Message * obj[] -&gt; obj" Usage="iClientMessageFormatter.DeserializeReply (message, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -74,10 +78,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message SerializeRequest(class System.ServiceModel.Channels.MessageVersion messageVersion, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IClientMessageFormatter.SerializeRequest(System.ServiceModel.Channels.MessageVersion,System.Object[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ SerializeRequest(System::ServiceModel::Channels::MessageVersion ^ messageVersion, cli::array &lt;System::Object ^&gt; ^ parameters);" />
+      <MemberSignature Language="F#" Value="abstract member SerializeRequest : System.ServiceModel.Channels.MessageVersion * obj[] -&gt; System.ServiceModel.Channels.Message" Usage="iClientMessageFormatter.SerializeRequest (messageVersion, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>

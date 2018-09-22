@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Transactions.EnterpriseServicesInteropOption" />
   <TypeSignature Language="VB.NET" Value="Public Enum EnterpriseServicesInteropOption" />
   <TypeSignature Language="C++ CLI" Value="public enum class EnterpriseServicesInteropOption" />
+  <TypeSignature Language="F#" Value="type EnterpriseServicesInteropOption = " />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -27,10 +29,11 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The .NET Framework allows managed .NET components to participate in COM+ transactions using the classes in the <xref:System.EnterpriseServices> namespace. However, since the interoperation is not provided by default, you need to use this enumeration to specify how you want to participate in the COM+ context. Specifically, when you create a new <xref:System.Transactions.TransactionScope>, use this enumeration to indicate how you want your transaction to participate in COM+ transactions. For more information, see [Interoperability with Enterprise Services and COM+ Transactions](http://msdn.microsoft.com/library/2e93b3c6-4d48-4b9b-82b2-7d5908a2c970).  
+ The .NET Framework allows managed .NET components to participate in COM+ transactions using the classes in the <xref:System.EnterpriseServices> namespace. However, since the interoperation is not provided by default, you need to use this enumeration to specify how you want to participate in the COM+ context. Specifically, when you create a new <xref:System.Transactions.TransactionScope>, use this enumeration to indicate how you want your transaction to participate in COM+ transactions. For more information, see [Interoperability with Enterprise Services and COM+ Transactions](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms229974(v=vs.85)).  
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms229974(v=vs.85)">Interoperability with Enterprise Services and COM+ Transactions</related>
   </Docs>
   <Members>
     <Member MemberName="Automatic">
@@ -39,9 +42,11 @@
       <MemberSignature Language="DocId" Value="F:System.Transactions.EnterpriseServicesInteropOption.Automatic" />
       <MemberSignature Language="VB.NET" Value="Automatic" />
       <MemberSignature Language="C++ CLI" Value="Automatic" />
+      <MemberSignature Language="F#" Value="Automatic = 1" Usage="System.Transactions.EnterpriseServicesInteropOption.Automatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -68,9 +73,11 @@
       <MemberSignature Language="DocId" Value="F:System.Transactions.EnterpriseServicesInteropOption.Full" />
       <MemberSignature Language="VB.NET" Value="Full" />
       <MemberSignature Language="C++ CLI" Value="Full" />
+      <MemberSignature Language="F#" Value="Full = 2" Usage="System.Transactions.EnterpriseServicesInteropOption.Full" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -97,9 +104,11 @@
       <MemberSignature Language="DocId" Value="F:System.Transactions.EnterpriseServicesInteropOption.None" />
       <MemberSignature Language="VB.NET" Value="None" />
       <MemberSignature Language="C++ CLI" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Transactions.EnterpriseServicesInteropOption.None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

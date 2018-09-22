@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileManager" />
   <TypeSignature Language="VB.NET" Value="Public Class ProfileManager" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfileManager abstract sealed" />
+  <TypeSignature Language="F#" Value="type ProfileManager = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -69,6 +71,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
   <Members>
     <Member MemberName="AddDynamicProfileProperty">
@@ -77,6 +80,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileManager.AddDynamicProfileProperty(System.Web.Configuration.ProfilePropertySettings)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub AddDynamicProfileProperty (property As ProfilePropertySettings)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddDynamicProfileProperty(System::Web::Configuration::ProfilePropertySettings ^ property);" />
+      <MemberSignature Language="F#" Value="static member AddDynamicProfileProperty : System.Web.Configuration.ProfilePropertySettings -&gt; unit" Usage="System.Web.Profile.ProfileManager.AddDynamicProfileProperty property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,9 +111,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileManager.ApplicationName" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property ApplicationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.Web.Profile.ProfileManager.ApplicationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,6 +155,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AutomaticSaveEnabled">
@@ -157,9 +164,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileManager.AutomaticSaveEnabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AutomaticSaveEnabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool AutomaticSaveEnabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.AutomaticSaveEnabled : bool" Usage="System.Web.Profile.ProfileManager.AutomaticSaveEnabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -198,6 +207,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to get the <see cref="P:System.Web.Profile.ProfileManager.AutomaticSaveEnabled" /> property value without at least <see cref="F:System.Web.AspNetHostingPermissionLevel.Medium" /> permission.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteInactiveProfiles">
@@ -206,9 +216,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileManager.DeleteInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DeleteInactiveProfiles (authenticationOption As ProfileAuthenticationOption, userInactiveSinceDate As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DeleteInactiveProfiles(System::Web::Profile::ProfileAuthenticationOption authenticationOption, DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="F#" Value="static member DeleteInactiveProfiles : System.Web.Profile.ProfileAuthenticationOption * DateTime -&gt; int" Usage="System.Web.Profile.ProfileManager.DeleteInactiveProfiles (authenticationOption, userInactiveSinceDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -244,6 +256,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteProfile">
@@ -252,9 +265,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileManager.DeleteProfile(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DeleteProfile (username As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool DeleteProfile(System::String ^ username);" />
+      <MemberSignature Language="F#" Value="static member DeleteProfile : string -&gt; bool" Usage="System.Web.Profile.ProfileManager.DeleteProfile username" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -293,6 +308,7 @@
           <paramref name="username" /> is an empty string ("") or contains a comma.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="DeleteProfiles">
@@ -302,6 +318,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Deletes profile properties and information from the data source for a supplied list of profiles.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="DeleteProfiles">
@@ -310,9 +327,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileManager.DeleteProfiles(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DeleteProfiles (usernames As String()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DeleteProfiles(cli::array &lt;System::String ^&gt; ^ usernames);" />
+      <MemberSignature Language="F#" Value="static member DeleteProfiles : string[] -&gt; int" Usage="System.Web.Profile.ProfileManager.DeleteProfiles usernames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -363,6 +382,7 @@
  \- or -  
   
  One of the items in <paramref name="usernames" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteProfiles">
@@ -371,9 +391,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileManager.DeleteProfiles(System.Web.Profile.ProfileInfoCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DeleteProfiles (profiles As ProfileInfoCollection) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DeleteProfiles(System::Web::Profile::ProfileInfoCollection ^ profiles);" />
+      <MemberSignature Language="F#" Value="static member DeleteProfiles : System.Web.Profile.ProfileInfoCollection -&gt; int" Usage="System.Web.Profile.ProfileManager.DeleteProfiles profiles" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -421,6 +443,7 @@
  \- or -  
   
  One of the <see cref="T:System.Web.Profile.ProfileInfo" /> objects in <paramref name="profiles" /> has a <see cref="P:System.Web.Profile.ProfileInfo.UserName" /> that is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Enabled">
@@ -429,9 +452,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileManager.Enabled" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Enabled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool Enabled { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool" Usage="System.Web.Profile.ProfileManager.Enabled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -465,6 +490,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindInactiveProfilesByUserName">
@@ -474,6 +500,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Retrieves profile information for profiles in which the last activity date occurred on or before a specified date and time and the user name for the profile matches a specified name.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FindInactiveProfilesByUserName">
@@ -482,9 +509,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileManager.FindInactiveProfilesByUserName(System.Web.Profile.ProfileAuthenticationOption,System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindInactiveProfilesByUserName (authenticationOption As ProfileAuthenticationOption, usernameToMatch As String, userInactiveSinceDate As DateTime) As ProfileInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Profile::ProfileInfoCollection ^ FindInactiveProfilesByUserName(System::Web::Profile::ProfileAuthenticationOption authenticationOption, System::String ^ usernameToMatch, DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="F#" Value="static member FindInactiveProfilesByUserName : System.Web.Profile.ProfileAuthenticationOption * string * DateTime -&gt; System.Web.Profile.ProfileInfoCollection" Usage="System.Web.Profile.ProfileManager.FindInactiveProfilesByUserName (authenticationOption, usernameToMatch, userInactiveSinceDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -531,6 +560,7 @@
           <paramref name="usernameToMatch" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="usernameToMatch" /> is an empty string ("").</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindInactiveProfilesByUserName">
@@ -539,9 +569,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileManager.FindInactiveProfilesByUserName(System.Web.Profile.ProfileAuthenticationOption,System.String,System.DateTime,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindInactiveProfilesByUserName (authenticationOption As ProfileAuthenticationOption, usernameToMatch As String, userInactiveSinceDate As DateTime, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As ProfileInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Profile::ProfileInfoCollection ^ FindInactiveProfilesByUserName(System::Web::Profile::ProfileAuthenticationOption authenticationOption, System::String ^ usernameToMatch, DateTime userInactiveSinceDate, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="static member FindInactiveProfilesByUserName : System.Web.Profile.ProfileAuthenticationOption * string * DateTime * int * int *  -&gt; System.Web.Profile.ProfileInfoCollection" Usage="System.Web.Profile.ProfileManager.FindInactiveProfilesByUserName (authenticationOption, usernameToMatch, userInactiveSinceDate, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -553,7 +585,7 @@
         <Parameter Name="userInactiveSinceDate" Type="System.DateTime" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="authenticationOption">One of the <see cref="T:System.Web.Profile.ProfileAuthenticationOption" /> values, specifying whether anonymous, authenticated, or both types of profiles are returned.</param>
@@ -605,6 +637,7 @@
  \- or -  
   
  <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindProfilesByUserName">
@@ -614,6 +647,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Retrieves profile information for profiles in which the user name matches a specified name.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FindProfilesByUserName">
@@ -622,9 +656,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileManager.FindProfilesByUserName(System.Web.Profile.ProfileAuthenticationOption,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindProfilesByUserName (authenticationOption As ProfileAuthenticationOption, usernameToMatch As String) As ProfileInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Profile::ProfileInfoCollection ^ FindProfilesByUserName(System::Web::Profile::ProfileAuthenticationOption authenticationOption, System::String ^ usernameToMatch);" />
+      <MemberSignature Language="F#" Value="static member FindProfilesByUserName : System.Web.Profile.ProfileAuthenticationOption * string -&gt; System.Web.Profile.ProfileInfoCollection" Usage="System.Web.Profile.ProfileManager.FindProfilesByUserName (authenticationOption, usernameToMatch)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -668,6 +704,7 @@
           <paramref name="usernameToMatch" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="usernameToMatch" /> is an empty string ("").</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FindProfilesByUserName">
@@ -676,9 +713,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileManager.FindProfilesByUserName(System.Web.Profile.ProfileAuthenticationOption,System.String,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindProfilesByUserName (authenticationOption As ProfileAuthenticationOption, usernameToMatch As String, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As ProfileInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Profile::ProfileInfoCollection ^ FindProfilesByUserName(System::Web::Profile::ProfileAuthenticationOption authenticationOption, System::String ^ usernameToMatch, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="static member FindProfilesByUserName : System.Web.Profile.ProfileAuthenticationOption * string * int * int *  -&gt; System.Web.Profile.ProfileInfoCollection" Usage="System.Web.Profile.ProfileManager.FindProfilesByUserName (authenticationOption, usernameToMatch, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -689,7 +728,7 @@
         <Parameter Name="usernameToMatch" Type="System.String" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="authenticationOption">One of the <see cref="T:System.Web.Profile.ProfileAuthenticationOption" /> enumeration values, specifying whether anonymous, authenticated, or both types of profiles are returned.</param>
@@ -740,6 +779,7 @@
  \- or -  
   
  <paramref name="pageIndex" /> multiplied by <paramref name="pageSize" /> is larger than <see cref="F:System.Int32.MaxValue" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAllInactiveProfiles">
@@ -749,6 +789,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Retrieves user profile data for profiles in which the last activity date occurred on or before a specified date and time.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetAllInactiveProfiles">
@@ -757,9 +798,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileManager.GetAllInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAllInactiveProfiles (authenticationOption As ProfileAuthenticationOption, userInactiveSinceDate As DateTime) As ProfileInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Profile::ProfileInfoCollection ^ GetAllInactiveProfiles(System::Web::Profile::ProfileAuthenticationOption authenticationOption, DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="F#" Value="static member GetAllInactiveProfiles : System.Web.Profile.ProfileAuthenticationOption * DateTime -&gt; System.Web.Profile.ProfileInfoCollection" Usage="System.Web.Profile.ProfileManager.GetAllInactiveProfiles (authenticationOption, userInactiveSinceDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -797,6 +840,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllInactiveProfiles">
@@ -805,9 +849,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileManager.GetAllInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAllInactiveProfiles (authenticationOption As ProfileAuthenticationOption, userInactiveSinceDate As DateTime, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As ProfileInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Profile::ProfileInfoCollection ^ GetAllInactiveProfiles(System::Web::Profile::ProfileAuthenticationOption authenticationOption, DateTime userInactiveSinceDate, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="static member GetAllInactiveProfiles : System.Web.Profile.ProfileAuthenticationOption * DateTime * int * int *  -&gt; System.Web.Profile.ProfileInfoCollection" Usage="System.Web.Profile.ProfileManager.GetAllInactiveProfiles (authenticationOption, userInactiveSinceDate, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -818,7 +864,7 @@
         <Parameter Name="userInactiveSinceDate" Type="System.DateTime" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="authenticationOption">One of the <see cref="T:System.Web.Profile.ProfileAuthenticationOption" /> enumeration values, specifying whether anonymous, authenticated, or both types of profiles are returned.</param>
@@ -851,6 +897,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAllProfiles">
@@ -860,6 +907,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Retrieves user profile data for profiles in the data source.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetAllProfiles">
@@ -868,9 +916,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileManager.GetAllProfiles(System.Web.Profile.ProfileAuthenticationOption)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAllProfiles (authenticationOption As ProfileAuthenticationOption) As ProfileInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Profile::ProfileInfoCollection ^ GetAllProfiles(System::Web::Profile::ProfileAuthenticationOption authenticationOption);" />
+      <MemberSignature Language="F#" Value="static member GetAllProfiles : System.Web.Profile.ProfileAuthenticationOption -&gt; System.Web.Profile.ProfileInfoCollection" Usage="System.Web.Profile.ProfileManager.GetAllProfiles authenticationOption" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -903,6 +953,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllProfiles">
@@ -911,9 +962,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileManager.GetAllProfiles(System.Web.Profile.ProfileAuthenticationOption,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAllProfiles (authenticationOption As ProfileAuthenticationOption, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As ProfileInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Profile::ProfileInfoCollection ^ GetAllProfiles(System::Web::Profile::ProfileAuthenticationOption authenticationOption, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="static member GetAllProfiles : System.Web.Profile.ProfileAuthenticationOption * int * int *  -&gt; System.Web.Profile.ProfileInfoCollection" Usage="System.Web.Profile.ProfileManager.GetAllProfiles (authenticationOption, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -923,7 +976,7 @@
         <Parameter Name="authenticationOption" Type="System.Web.Profile.ProfileAuthenticationOption" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="authenticationOption">One of the <see cref="T:System.Web.Profile.ProfileAuthenticationOption" /> enumeration values, specifying whether anonymous, authenticated, or both types of profiles are returned.</param>
@@ -952,6 +1005,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetNumberOfInactiveProfiles">
@@ -960,9 +1014,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileManager.GetNumberOfInactiveProfiles(System.Web.Profile.ProfileAuthenticationOption,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNumberOfInactiveProfiles (authenticationOption As ProfileAuthenticationOption, userInactiveSinceDate As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetNumberOfInactiveProfiles(System::Web::Profile::ProfileAuthenticationOption authenticationOption, DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="F#" Value="static member GetNumberOfInactiveProfiles : System.Web.Profile.ProfileAuthenticationOption * DateTime -&gt; int" Usage="System.Web.Profile.ProfileManager.GetNumberOfInactiveProfiles (authenticationOption, userInactiveSinceDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -996,6 +1052,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetNumberOfProfiles">
@@ -1004,9 +1061,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileManager.GetNumberOfProfiles(System.Web.Profile.ProfileAuthenticationOption)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetNumberOfProfiles (authenticationOption As ProfileAuthenticationOption) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetNumberOfProfiles(System::Web::Profile::ProfileAuthenticationOption authenticationOption);" />
+      <MemberSignature Language="F#" Value="static member GetNumberOfProfiles : System.Web.Profile.ProfileAuthenticationOption -&gt; int" Usage="System.Web.Profile.ProfileManager.GetNumberOfProfiles authenticationOption" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1035,6 +1094,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -1043,9 +1103,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileManager.Provider" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Provider As ProfileProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Profile::ProfileProvider ^ Provider { System::Web::Profile::ProfileProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Provider : System.Web.Profile.ProfileProvider" Usage="System.Web.Profile.ProfileManager.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1071,6 +1133,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to get the <see cref="P:System.Web.Profile.ProfileManager.Provider" /> property value without at least <see cref="F:System.Web.AspNetHostingPermissionLevel.Medium" /> permission.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Providers">
@@ -1079,9 +1142,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileManager.Providers" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Providers As ProfileProviderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Profile::ProfileProviderCollection ^ Providers { System::Web::Profile::ProfileProviderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Web.Profile.ProfileProviderCollection" Usage="System.Web.Profile.ProfileManager.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1131,6 +1196,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to get the <see cref="P:System.Web.Profile.ProfileManager.Providers" /> property value without at least <see cref="F:System.Web.AspNetHostingPermissionLevel.Medium" /> permission.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
   </Members>

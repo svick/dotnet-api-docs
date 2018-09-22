@@ -4,16 +4,21 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.RouteBase" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class RouteBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class RouteBase abstract" />
+  <TypeSignature Language="F#" Value="type RouteBase = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Web.Routing</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Web.Routing, Version=3.5.0.0, Culture=Neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
@@ -27,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,10 +46,20 @@
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes the class for use by an inherited class instance. This constructor can only be called by an inherited class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetRouteData">
@@ -52,10 +68,15 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteBase.GetRouteData(System.Web.HttpContextBase)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetRouteData (httpContext As HttpContextBase) As RouteData" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Routing::RouteData ^ GetRouteData(System::Web::HttpContextBase ^ httpContext);" />
+      <MemberSignature Language="F#" Value="abstract member GetRouteData : System.Web.HttpContextBase -&gt; System.Web.Routing.RouteData" Usage="routeBase.GetRouteData httpContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Routing.RouteData</ReturnType>
@@ -68,6 +89,7 @@
         <summary>When overridden in a derived class, returns route information about the request.</summary>
         <returns>An object that contains the values from the route definition if the route matches the current request, or <see langword="null" /> if the route does not match the request.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="GetVirtualPath">
@@ -75,10 +97,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.Routing.VirtualPathData GetVirtualPath(class System.Web.Routing.RequestContext requestContext, class System.Web.Routing.RouteValueDictionary values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.RouteBase.GetVirtualPath(System.Web.Routing.RequestContext,System.Web.Routing.RouteValueDictionary)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::Routing::VirtualPathData ^ GetVirtualPath(System::Web::Routing::RequestContext ^ requestContext, System::Web::Routing::RouteValueDictionary ^ values);" />
+      <MemberSignature Language="F#" Value="abstract member GetVirtualPath : System.Web.Routing.RequestContext * System.Web.Routing.RouteValueDictionary -&gt; System.Web.Routing.VirtualPathData" Usage="routeBase.GetVirtualPath (requestContext, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Web.Routing.VirtualPathData</ReturnType>
@@ -100,6 +127,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
     </Member>
     <Member MemberName="RouteExistingFiles">
@@ -108,10 +136,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteBase.RouteExistingFiles" />
       <MemberSignature Language="VB.NET" Value="Public Property RouteExistingFiles As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RouteExistingFiles { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RouteExistingFiles : bool with get, set" Usage="System.Web.Routing.RouteBase.RouteExistingFiles" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Routing</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

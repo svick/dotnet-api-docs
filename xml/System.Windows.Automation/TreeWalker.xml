@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TreeWalker" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TreeWalker" />
   <TypeSignature Language="C++ CLI" Value="public ref class TreeWalker sealed" />
+  <TypeSignature Language="F#" Value="type TreeWalker = class" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -28,6 +30,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -35,9 +40,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Automation.Condition condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TreeWalker.#ctor(System.Windows.Automation.Condition)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeWalker(System::Windows::Automation::Condition ^ condition);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.TreeWalker : System.Windows.Automation.Condition -&gt; System.Windows.Automation.TreeWalker" Usage="new System.Windows.Automation.TreeWalker condition" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -64,6 +71,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <Member MemberName="Condition">
@@ -72,11 +82,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TreeWalker.Condition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Condition As Condition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::Condition ^ Condition { System::Windows::Automation::Condition ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Condition : System.Windows.Automation.Condition" Usage="System.Windows.Automation.TreeWalker.Condition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Condition</ReturnType>
       </ReturnValue>
@@ -93,9 +110,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TreeWalker.ContentViewWalker" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentViewWalker As TreeWalker " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::TreeWalker ^ ContentViewWalker;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentViewWalker : System.Windows.Automation.TreeWalker" Usage="System.Windows.Automation.TreeWalker.ContentViewWalker" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -121,6 +140,9 @@
         </remarks>
         <altmember cref="F:System.Windows.Automation.AutomationElement.IsContentElementProperty" />
         <altmember cref="F:System.Windows.Automation.AutomationElement.IsControlElementProperty" />
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <Member MemberName="ControlViewWalker">
@@ -129,9 +151,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TreeWalker.ControlViewWalker" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ControlViewWalker As TreeWalker " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::TreeWalker ^ ControlViewWalker;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ControlViewWalker : System.Windows.Automation.TreeWalker" Usage="System.Windows.Automation.TreeWalker.ControlViewWalker" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -156,6 +180,9 @@
  ]]></format>
         </remarks>
         <altmember cref="F:System.Windows.Automation.AutomationElement.IsControlElementProperty" />
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetFirstChild">
@@ -183,9 +210,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TreeWalker.GetFirstChild(System.Windows.Automation.AutomationElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFirstChild (element As AutomationElement) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ GetFirstChild(System::Windows::Automation::AutomationElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.GetFirstChild : System.Windows.Automation.AutomationElement -&gt; System.Windows.Automation.AutomationElement" Usage="treeWalker.GetFirstChild element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -216,6 +245,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <Member MemberName="GetFirstChild">
@@ -224,9 +256,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TreeWalker.GetFirstChild(System.Windows.Automation.AutomationElement,System.Windows.Automation.CacheRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetFirstChild (element As AutomationElement, request As CacheRequest) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ GetFirstChild(System::Windows::Automation::AutomationElement ^ element, System::Windows::Automation::CacheRequest ^ request);" />
+      <MemberSignature Language="F#" Value="member this.GetFirstChild : System.Windows.Automation.AutomationElement * System.Windows.Automation.CacheRequest -&gt; System.Windows.Automation.AutomationElement" Usage="treeWalker.GetFirstChild (element, request)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -251,6 +285,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetLastChild">
@@ -278,9 +315,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TreeWalker.GetLastChild(System.Windows.Automation.AutomationElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLastChild (element As AutomationElement) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ GetLastChild(System::Windows::Automation::AutomationElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.GetLastChild : System.Windows.Automation.AutomationElement -&gt; System.Windows.Automation.AutomationElement" Usage="treeWalker.GetLastChild element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -303,6 +342,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <Member MemberName="GetLastChild">
@@ -311,9 +353,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TreeWalker.GetLastChild(System.Windows.Automation.AutomationElement,System.Windows.Automation.CacheRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetLastChild (element As AutomationElement, request As CacheRequest) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ GetLastChild(System::Windows::Automation::AutomationElement ^ element, System::Windows::Automation::CacheRequest ^ request);" />
+      <MemberSignature Language="F#" Value="member this.GetLastChild : System.Windows.Automation.AutomationElement * System.Windows.Automation.CacheRequest -&gt; System.Windows.Automation.AutomationElement" Usage="treeWalker.GetLastChild (element, request)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -338,6 +382,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetNextSibling">
@@ -365,9 +412,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TreeWalker.GetNextSibling(System.Windows.Automation.AutomationElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNextSibling (element As AutomationElement) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ GetNextSibling(System::Windows::Automation::AutomationElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.GetNextSibling : System.Windows.Automation.AutomationElement -&gt; System.Windows.Automation.AutomationElement" Usage="treeWalker.GetNextSibling element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -398,6 +447,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <Member MemberName="GetNextSibling">
@@ -406,9 +458,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TreeWalker.GetNextSibling(System.Windows.Automation.AutomationElement,System.Windows.Automation.CacheRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNextSibling (element As AutomationElement, request As CacheRequest) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ GetNextSibling(System::Windows::Automation::AutomationElement ^ element, System::Windows::Automation::CacheRequest ^ request);" />
+      <MemberSignature Language="F#" Value="member this.GetNextSibling : System.Windows.Automation.AutomationElement * System.Windows.Automation.CacheRequest -&gt; System.Windows.Automation.AutomationElement" Usage="treeWalker.GetNextSibling (element, request)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -433,6 +487,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetParent">
@@ -458,9 +515,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TreeWalker.GetParent(System.Windows.Automation.AutomationElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParent (element As AutomationElement) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ GetParent(System::Windows::Automation::AutomationElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.GetParent : System.Windows.Automation.AutomationElement -&gt; System.Windows.Automation.AutomationElement" Usage="treeWalker.GetParent element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -484,6 +543,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <Member MemberName="GetParent">
@@ -492,9 +554,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TreeWalker.GetParent(System.Windows.Automation.AutomationElement,System.Windows.Automation.CacheRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetParent (element As AutomationElement, request As CacheRequest) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ GetParent(System::Windows::Automation::AutomationElement ^ element, System::Windows::Automation::CacheRequest ^ request);" />
+      <MemberSignature Language="F#" Value="member this.GetParent : System.Windows.Automation.AutomationElement * System.Windows.Automation.CacheRequest -&gt; System.Windows.Automation.AutomationElement" Usage="treeWalker.GetParent (element, request)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -517,6 +581,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetPreviousSibling">
@@ -544,9 +611,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TreeWalker.GetPreviousSibling(System.Windows.Automation.AutomationElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPreviousSibling (element As AutomationElement) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ GetPreviousSibling(System::Windows::Automation::AutomationElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.GetPreviousSibling : System.Windows.Automation.AutomationElement -&gt; System.Windows.Automation.AutomationElement" Usage="treeWalker.GetPreviousSibling element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -569,6 +638,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <Member MemberName="GetPreviousSibling">
@@ -577,9 +649,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TreeWalker.GetPreviousSibling(System.Windows.Automation.AutomationElement,System.Windows.Automation.CacheRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPreviousSibling (element As AutomationElement, request As CacheRequest) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ GetPreviousSibling(System::Windows::Automation::AutomationElement ^ element, System::Windows::Automation::CacheRequest ^ request);" />
+      <MemberSignature Language="F#" Value="member this.GetPreviousSibling : System.Windows.Automation.AutomationElement * System.Windows.Automation.CacheRequest -&gt; System.Windows.Automation.AutomationElement" Usage="treeWalker.GetPreviousSibling (element, request)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -604,6 +678,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Normalize">
@@ -631,9 +708,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TreeWalker.Normalize(System.Windows.Automation.AutomationElement)" />
       <MemberSignature Language="VB.NET" Value="Public Function Normalize (element As AutomationElement) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ Normalize(System::Windows::Automation::AutomationElement ^ element);" />
+      <MemberSignature Language="F#" Value="member this.Normalize : System.Windows.Automation.AutomationElement -&gt; System.Windows.Automation.AutomationElement" Usage="treeWalker.Normalize element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -656,6 +735,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <Member MemberName="Normalize">
@@ -664,9 +746,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.TreeWalker.Normalize(System.Windows.Automation.AutomationElement,System.Windows.Automation.CacheRequest)" />
       <MemberSignature Language="VB.NET" Value="Public Function Normalize (element As AutomationElement, request As CacheRequest) As AutomationElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ Normalize(System::Windows::Automation::AutomationElement ^ element, System::Windows::Automation::CacheRequest ^ request);" />
+      <MemberSignature Language="F#" Value="member this.Normalize : System.Windows.Automation.AutomationElement * System.Windows.Automation.CacheRequest -&gt; System.Windows.Automation.AutomationElement" Usage="treeWalker.Normalize (element, request)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -691,6 +775,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
     <Member MemberName="RawViewWalker">
@@ -699,9 +786,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TreeWalker.RawViewWalker" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RawViewWalker As TreeWalker " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::TreeWalker ^ RawViewWalker;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RawViewWalker : System.Windows.Automation.TreeWalker" Usage="System.Windows.Automation.TreeWalker.RawViewWalker" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -725,6 +814,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/03b98058-bdb3-47a0-8ff7-45e6cdf67166">UI Automation Tree Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/afcd21dc-2ffa-48c9-9332-51269f44b7e9">Navigate Among UI Automation Elements with TreeWalker</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c2caaf45-e59c-42a1-bc9b-77a6de520171">Obtaining UI Automation Elements</related>
       </Docs>
     </Member>
   </Members>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellStyle" />
   <TypeSignature Language="VB.NET" Value="Public Class DataGridViewCellStyle&#xA;Implements ICloneable" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewCellStyle : ICloneable" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellStyle = class&#xA;    interface ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,11 +19,14 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataGridViewCellStyleEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.DataGridViewCellStyleConverter))</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataGridViewCellStyleEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -57,6 +62,8 @@
     <altmember cref="P:System.Windows.Forms.DataGridViewCell.InheritedStyle" />
     <altmember cref="P:System.Windows.Forms.DataGridViewCell.Style" />
     <altmember cref="T:System.Windows.Forms.DataGridViewCellFormattingEventArgs" />
+    <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0a45c661-89dc-4390-9cc6-c47eee501488">DataGridView Control Overview (Windows Forms)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -67,6 +74,7 @@
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> class.</summary>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -78,6 +86,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -85,6 +94,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> class using default property values.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -92,9 +102,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellStyle.#ctor(System.Windows.Forms.DataGridViewCellStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewCellStyle(System::Windows::Forms::DataGridViewCellStyle ^ dataGridViewCellStyle);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewCellStyle : System.Windows.Forms.DataGridViewCellStyle -&gt; System.Windows.Forms.DataGridViewCellStyle" Usage="new System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -107,6 +119,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dataGridViewCellStyle" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Alignment">
@@ -115,13 +128,15 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.Alignment" />
       <MemberSignature Language="VB.NET" Value="Public Property Alignment As DataGridViewContentAlignment" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewContentAlignment Alignment { System::Windows::Forms::DataGridViewContentAlignment get(); void set(System::Windows::Forms::DataGridViewContentAlignment value); };" />
+      <MemberSignature Language="F#" Value="member this.Alignment : System.Windows.Forms.DataGridViewContentAlignment with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.Alignment" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -144,6 +159,8 @@
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.DataGridViewContentAlignment" /> value.</exception>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/07bf558d-3748-42ba-8ba0-37fdef924081">Data Formatting in the Windows Forms DataGridView Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="ApplyStyle">
@@ -151,9 +168,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyStyle(class System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellStyle.ApplyStyle(System.Windows.Forms.DataGridViewCellStyle)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyStyle(System::Windows::Forms::DataGridViewCellStyle ^ dataGridViewCellStyle);" />
+      <MemberSignature Language="F#" Value="abstract member ApplyStyle : System.Windows.Forms.DataGridViewCellStyle -&gt; unit&#xA;override this.ApplyStyle : System.Windows.Forms.DataGridViewCellStyle -&gt; unit" Usage="dataGridViewCellStyle.ApplyStyle dataGridViewCellStyle" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,6 +195,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dataGridViewCellStyle" /> is <see langword="null" />.</exception>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="BackColor">
@@ -184,9 +204,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.BackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.BackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -207,6 +229,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -215,9 +238,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellStyle.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As DataGridViewCellStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::DataGridViewCellStyle ^ Clone();" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Windows.Forms.DataGridViewCellStyle&#xA;override this.Clone : unit -&gt; System.Windows.Forms.DataGridViewCellStyle" Usage="dataGridViewCellStyle.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -229,6 +254,7 @@
         <returns>A <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> that represents an exact copy of this cell style.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataSourceNullValue">
@@ -237,19 +263,27 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue" />
       <MemberSignature Language="VB.NET" Value="Public Property DataSourceNullValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataSourceNullValue { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DataSourceNullValue : obj with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -283,6 +317,7 @@
         <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
         <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.IsDataSourceNullValueDefault" />
         <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.NullValue" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -291,9 +326,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellStyle.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataGridViewCellStyle.Equals o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -309,6 +346,7 @@
           <see langword="true" /> if <paramref name="o" /> is a <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> and has the same property values as this instance; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Font">
@@ -317,9 +355,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.Font" />
       <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.Font" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -346,6 +386,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="ForeColor">
@@ -354,9 +395,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.ForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.ForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -382,6 +425,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Format">
@@ -390,19 +434,27 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.Format" />
       <MemberSignature Language="VB.NET" Value="Public Property Format As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Format { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Format : string with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.Format" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.FormatStringEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.FormatStringEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -429,6 +481,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/07bf558d-3748-42ba-8ba0-37fdef924081">Data Formatting in the Windows Forms DataGridView Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="FormatProvider">
@@ -437,16 +491,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.FormatProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property FormatProvider As IFormatProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property IFormatProvider ^ FormatProvider { IFormatProvider ^ get(); void set(IFormatProvider ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FormatProvider : IFormatProvider with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.FormatProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -458,6 +517,7 @@
         <value>An <see cref="T:System.IFormatProvider" /> used for cell formatting. The default is <see cref="P:System.Globalization.CultureInfo.CurrentUICulture" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -466,9 +526,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellStyle.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataGridViewCellStyle.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -488,16 +550,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.IsDataSourceNullValueDefault" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDataSourceNullValueDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDataSourceNullValueDefault { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsDataSourceNullValueDefault : bool" Usage="System.Windows.Forms.DataGridViewCellStyle.IsDataSourceNullValueDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -518,6 +585,7 @@
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
         <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="IsFormatProviderDefault">
@@ -526,16 +594,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.IsFormatProviderDefault" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFormatProviderDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFormatProviderDefault { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFormatProviderDefault : bool" Usage="System.Windows.Forms.DataGridViewCellStyle.IsFormatProviderDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -555,6 +628,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="IsNullValueDefault">
@@ -563,16 +637,21 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.IsNullValueDefault" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNullValueDefault As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNullValueDefault { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNullValueDefault : bool" Usage="System.Windows.Forms.DataGridViewCellStyle.IsNullValueDefault" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -592,6 +671,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="NullValue">
@@ -600,16 +680,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.NullValue" />
       <MemberSignature Language="VB.NET" Value="Public Property NullValue As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NullValue { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NullValue : obj with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.NullValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
         </Attribute>
       </Attributes>
@@ -645,6 +727,8 @@
         <altmember cref="P:System.Windows.Forms.DataGridViewCell.Value" />
         <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue" />
         <altmember cref="P:System.Windows.Forms.DataGridViewCellStyle.IsDataSourceNullValueDefault" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8c33543c-9c08-4636-a65a-fdf714a529b7">How to: Format Data in the Windows Forms DataGridView Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Padding">
@@ -653,9 +737,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.Padding" />
       <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.Padding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -683,6 +769,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="SelectionBackColor">
@@ -691,9 +778,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.SelectionBackColor" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectionBackColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color SelectionBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.SelectionBackColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -714,6 +803,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="SelectionForeColor">
@@ -722,9 +812,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.SelectionForeColor" />
       <MemberSignature Language="VB.NET" Value="Public Property SelectionForeColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color SelectionForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.SelectionForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.SelectionForeColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -750,6 +842,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="System.ICloneable.Clone">
@@ -764,8 +857,14 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -782,6 +881,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Tag">
@@ -790,17 +890,22 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -811,6 +916,7 @@
         <value>An object that contains additional data. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -819,9 +925,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellStyle.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataGridViewCellStyle.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -833,6 +941,7 @@
         <returns>A string indicating the current property settings of the <see cref="T:System.Windows.Forms.DataGridViewCellStyle" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
     <Member MemberName="WrapMode">
@@ -841,13 +950,15 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.WrapMode" />
       <MemberSignature Language="VB.NET" Value="Public Property WrapMode As DataGridViewTriState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewTriState WrapMode { System::Windows::Forms::DataGridViewTriState get(); void set(System::Windows::Forms::DataGridViewTriState value); };" />
+      <MemberSignature Language="F#" Value="member this.WrapMode : System.Windows.Forms.DataGridViewTriState with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.WrapMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -875,6 +986,8 @@
         </remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The property value is not a valid <see cref="T:System.Windows.Forms.DataGridViewTriState" /> value.</exception>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8c33543c-9c08-4636-a65a-fdf714a529b7">How to: Format Data in the Windows Forms DataGridView Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/dbb75ed6-8804-4232-8382-f9920c2e380c">Cell Styles in the Windows Forms DataGridView Control</related>
       </Docs>
     </Member>
   </Members>

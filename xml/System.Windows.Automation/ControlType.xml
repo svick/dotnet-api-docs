@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ControlType" />
   <TypeSignature Language="VB.NET" Value="Public Class ControlType&#xA;Inherits AutomationIdentifier" />
   <TypeSignature Language="C++ CLI" Value="public ref class ControlType : System::Windows::Automation::AutomationIdentifier" />
+  <TypeSignature Language="F#" Value="type ControlType = class&#xA;    inherit AutomationIdentifier" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/75159ef8-bd43-4d13-acb7-1f1fe9253160">UI Automation Control Types Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Button">
@@ -38,9 +41,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Button" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Button As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Button;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Button : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Button" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -58,6 +63,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/057c983a-da83-4c50-86c7-26fe381076a6">UI Automation Support for the Button Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Calendar">
@@ -66,9 +72,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Calendar" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Calendar As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Calendar;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Calendar : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Calendar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -77,6 +85,7 @@
       <Docs>
         <summary>Identifies a calendar control, such as a date-picker.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/e91a7393-a7f9-4838-a1a6-857438b24bc9">UI Automation Support for the Calendar Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="CheckBox">
@@ -85,9 +94,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.CheckBox" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CheckBox As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ CheckBox;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CheckBox : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.CheckBox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -103,6 +114,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9c2a0e70-3a39-4ba9-96ea-a7fe531fae9f">UI Automation Support for the CheckBox Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="ComboBox">
@@ -111,9 +123,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.ComboBox" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ComboBox As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ ComboBox;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ComboBox : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.ComboBox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -129,6 +143,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/bb321126-4770-41da-983a-67b7b89d45dd">UI Automation Support for the ComboBox Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Custom">
@@ -137,9 +152,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Custom" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Custom As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Custom;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Custom : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -167,9 +184,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.DataGrid" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DataGrid As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ DataGrid;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DataGrid : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.DataGrid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -185,6 +204,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a3db4a3f-feb5-4e5f-9b42-aae7fa816e8a">UI Automation Support for the DataGrid Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="DataItem">
@@ -193,9 +213,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.DataItem" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DataItem As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ DataItem;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DataItem : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.DataItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -211,6 +233,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/181708fd-2595-4c43-9abd-75811627d64c">UI Automation Support for the DataItem Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -219,9 +242,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Document" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Document As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Document;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Document : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -237,6 +262,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a79d594b-1ca0-4543-8dac-afd2c645201d">UI Automation Support for the Document Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Edit">
@@ -245,9 +271,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Edit" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Edit As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Edit;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Edit : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Edit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -265,6 +293,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6db9d231-c0a0-4e17-910e-ac80357f774f">UI Automation Support for the Edit Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="GetNeverSupportedPatterns">
@@ -273,9 +302,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ControlType.GetNeverSupportedPatterns" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNeverSupportedPatterns () As AutomationPattern()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::AutomationPattern ^&gt; ^ GetNeverSupportedPatterns();" />
+      <MemberSignature Language="F#" Value="member this.GetNeverSupportedPatterns : unit -&gt; System.Windows.Automation.AutomationPattern[]" Usage="controlType.GetNeverSupportedPatterns " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -309,9 +340,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ControlType.GetRequiredPatternSets" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRequiredPatternSets () As AutomationPattern()()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;cli::array &lt;System::Windows::Automation::AutomationPattern ^&gt; ^&gt; ^ GetRequiredPatternSets();" />
+      <MemberSignature Language="F#" Value="member this.GetRequiredPatternSets : unit -&gt; System.Windows.Automation.AutomationPattern[][]" Usage="controlType.GetRequiredPatternSets " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -347,9 +380,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ControlType.GetRequiredProperties" />
       <MemberSignature Language="VB.NET" Value="Public Function GetRequiredProperties () As AutomationProperty()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::AutomationProperty ^&gt; ^ GetRequiredProperties();" />
+      <MemberSignature Language="F#" Value="member this.GetRequiredProperties : unit -&gt; System.Windows.Automation.AutomationProperty[]" Usage="controlType.GetRequiredProperties " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -375,9 +410,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Group" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Group As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Group;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Group : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Group" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -393,6 +430,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/18e01bab-01f8-4567-b867-88dce9c4a435">UI Automation Support for the Group Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Header">
@@ -401,9 +439,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Header" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Header As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Header;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Header : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Header" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -412,6 +452,7 @@
       <Docs>
         <summary>Identifies a header control, which is a container for the labels of rows and columns of information.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d2e48891-2dbe-409e-8655-2f753908e29b">UI Automation Support for the Header Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="HeaderItem">
@@ -420,9 +461,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.HeaderItem" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderItem As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ HeaderItem;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderItem : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.HeaderItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -431,6 +474,7 @@
       <Docs>
         <summary>Identifies a header item, which is the label for a row or column of information.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/09ce1310-ee31-493c-a71e-010bafc42fcf">UI Automation Support for the HeaderItem Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Hyperlink">
@@ -439,9 +483,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Hyperlink" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Hyperlink As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Hyperlink;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Hyperlink : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Hyperlink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -457,6 +503,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/110cceea-5932-4955-a1a6-13afc51422b2">UI Automation Support for the Hyperlink Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Image">
@@ -465,9 +512,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Image" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Image As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Image;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Image : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Image" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -485,6 +534,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/4e0eeefb-e09b-46d2-b83b-0a7e35543ab8">UI Automation Support for the Image Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="List">
@@ -493,9 +543,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.List" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly List As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ List;" />
+      <MemberSignature Language="F#" Value=" staticval mutable List : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.List" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -517,6 +569,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/0e959fcb-50f2-413b-948d-7167d279bc11">UI Automation Support for the List Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="ListItem">
@@ -525,9 +578,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.ListItem" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ListItem As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ ListItem;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ListItem : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.ListItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -543,6 +598,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/34f533bf-fc14-4e78-8fee-fb7107345fab">UI Automation Support for the ListItem Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="LocalizedControlType">
@@ -551,9 +607,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ControlType.LocalizedControlType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalizedControlType As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocalizedControlType { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalizedControlType : string" Usage="System.Windows.Automation.ControlType.LocalizedControlType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -581,9 +639,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ControlType.LookupById(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function LookupById (id As Integer) As ControlType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Automation::ControlType ^ LookupById(int id);" />
+      <MemberSignature Language="F#" Value="static member LookupById : int -&gt; System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.LookupById id" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -612,9 +672,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Menu" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Menu As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Menu;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Menu : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Menu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -630,6 +692,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/016323cb-f800-4938-b77b-2eb25d646090">UI Automation Support for the Menu Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="MenuBar">
@@ -638,9 +701,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.MenuBar" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MenuBar As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ MenuBar;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MenuBar : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.MenuBar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -656,6 +721,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c1202b21-c1f0-4560-853c-7b99bd73ad97">UI Automation Support for the MenuBar Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="MenuItem">
@@ -664,9 +730,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.MenuItem" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MenuItem As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ MenuItem;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MenuItem : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.MenuItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -682,6 +750,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/54bce311-3d23-40b9-ba90-1bdbdaf8fbba">UI Automation Support for the MenuItem Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Pane">
@@ -690,9 +759,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Pane" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pane As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Pane;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Pane : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Pane" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -708,6 +779,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/79761191-4449-4630-899c-9cbdb8867d3f">UI Automation Support for the Pane Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="ProgressBar">
@@ -716,9 +788,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.ProgressBar" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ProgressBar As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ ProgressBar;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ProgressBar : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.ProgressBar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -727,6 +801,7 @@
       <Docs>
         <summary>Identifies a progress bar control, which visually indicates the progress of a lengthy operation.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/302e778c-24b0-4789-814a-c8d37cf53a5f">UI Automation Support for the ProgressBar Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="RadioButton">
@@ -735,9 +810,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.RadioButton" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RadioButton As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ RadioButton;" />
+      <MemberSignature Language="F#" Value=" staticval mutable RadioButton : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.RadioButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -746,6 +823,7 @@
       <Docs>
         <summary>Identifies a radio button control, which is a selection mechanism allowing exactly one selected item in a group.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/87170464-7857-41f1-bcf7-bb41be31cb53">UI Automation Support for the RadioButton Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="ScrollBar">
@@ -754,9 +832,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.ScrollBar" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScrollBar As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ ScrollBar;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ScrollBar : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.ScrollBar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -774,6 +854,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/329891d7-b609-49e6-920a-09ea8a627d07">UI Automation Support for the ScrollBar Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Separator">
@@ -782,9 +863,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Separator" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Separator As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Separator;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Separator : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Separator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -793,6 +876,7 @@
       <Docs>
         <summary>Identifies a separator, which creates a visual division in controls like menus and toolbars.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89f42247-c699-4afa-91e1-2baaf0d86c9d">UI Automation Support for the Separator Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Slider">
@@ -801,9 +885,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Slider" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Slider As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Slider;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Slider : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Slider" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -819,6 +905,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/045ea62f-7b50-46cf-a5a9-8eb97704355f">UI Automation Support for the Slider Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Spinner">
@@ -827,9 +914,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Spinner" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Spinner As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Spinner;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Spinner : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Spinner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -845,6 +934,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3a29d185-65d8-42e3-bcc3-7f43e96f40c5">UI Automation Support for the Spinner Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="SplitButton">
@@ -853,9 +943,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.SplitButton" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SplitButton As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ SplitButton;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SplitButton : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.SplitButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -864,6 +956,7 @@
       <Docs>
         <summary>Identifies a split button, which is a button that performs a default action and can also expand to a list of other possible actions.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/14b05ccf-bcd8-4045-9bae-f7679cd98711">UI Automation Support for the SplitButton Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="StatusBar">
@@ -872,9 +965,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.StatusBar" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StatusBar As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ StatusBar;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StatusBar : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.StatusBar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -890,6 +985,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/48dee94a-5119-4939-a4c7-ffeaf794c732">UI Automation Support for the StatusBar Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Tab">
@@ -898,9 +994,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Tab" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Tab As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Tab;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Tab : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Tab" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -916,6 +1014,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f8be2732-836d-4e4d-85e2-73aa39479bf4">UI Automation Support for the Tab Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="TabItem">
@@ -924,9 +1023,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.TabItem" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TabItem As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ TabItem;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TabItem : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.TabItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -935,6 +1036,7 @@
       <Docs>
         <summary>Identifies a tab item control, which represents a page of a tab control.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9b21160d-e1c2-468b-9275-26e4369ae40d">UI Automation Support for the TabItem Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Table">
@@ -943,9 +1045,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Table" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Table As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Table;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Table : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Table" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -961,6 +1065,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/9050dde5-6469-4c83-abb7-f861c24ff985">UI Automation Support for the Table Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -969,9 +1074,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Text" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Text As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Text;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Text : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -987,6 +1094,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab0d0ada-8a71-4547-9c03-aadf675938f2">UI Automation Support for the Text Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Thumb">
@@ -995,9 +1103,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Thumb" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Thumb As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Thumb;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Thumb : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Thumb" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1013,6 +1123,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/13636338-e320-4355-b071-ede20a3fb1de">UI Automation Support for the Thumb Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="TitleBar">
@@ -1021,9 +1132,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.TitleBar" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TitleBar As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ TitleBar;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TitleBar : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.TitleBar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1032,6 +1145,7 @@
       <Docs>
         <summary>Identifies the caption bar on a window.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/3b7a4e13-0305-45d5-bc33-1f4133c50782">UI Automation Support for the TitleBar Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="ToolBar">
@@ -1040,9 +1154,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.ToolBar" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolBar As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ ToolBar;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolBar : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.ToolBar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1051,6 +1167,7 @@
       <Docs>
         <summary>Identifies a toolbar, such as the control that contains a set of command buttons in an application window.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/85152efd-f4c5-430c-8878-3371cc598616">UI Automation Support for the ToolBar Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="ToolTip">
@@ -1059,9 +1176,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.ToolTip" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTip As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ ToolTip;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTip : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.ToolTip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1070,6 +1189,7 @@
       <Docs>
         <summary>Identifies a tooltip control, an informational window that appears as a result of moving the pointer over a control or sometimes when tabbing to a control using the keyboard.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c3779d78-3164-43ae-8dae-bfaeafffdd65">UI Automation Support for the ToolTip Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Tree">
@@ -1078,9 +1198,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Tree" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Tree As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Tree;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Tree : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Tree" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1098,6 +1220,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/312dd04d-a86b-4072-8b12-2beeabdff5e3">UI Automation Support for the Tree Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="TreeItem">
@@ -1106,9 +1229,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.TreeItem" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TreeItem As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ TreeItem;" />
+      <MemberSignature Language="F#" Value=" staticval mutable TreeItem : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.TreeItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1124,6 +1249,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/229f341a-477f-434e-b877-4db9973068eb">UI Automation Support for the TreeItem Control Type</related>
       </Docs>
     </Member>
     <Member MemberName="Window">
@@ -1132,9 +1258,11 @@
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Window" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Window As ControlType " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Window;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Window : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Window" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1150,6 +1278,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/53be78a6-cdcc-4af3-a464-5927d19c54e8">UI Automation Support for the Window Control Type</related>
       </Docs>
     </Member>
   </Members>

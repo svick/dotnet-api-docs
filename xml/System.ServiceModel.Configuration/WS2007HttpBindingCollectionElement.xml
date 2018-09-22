@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WS2007HttpBindingCollectionElement" />
   <TypeSignature Language="VB.NET" Value="Public Class WS2007HttpBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of WS2007HttpBinding, WS2007HttpBindingElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class WS2007HttpBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::WS2007HttpBinding ^, System::ServiceModel::Configuration::WS2007HttpBindingElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type WS2007HttpBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;WS2007HttpBinding, WS2007HttpBindingElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -20,6 +22,7 @@
     <summary>Represents a configuration element that contains sub-elements that specify settings for using the <see cref="T:System.ServiceModel.WS2007HttpBinding" /> binding.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.ServiceModel.WS2007HttpBinding" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8586ecc9-bdaa-44d6-8d4d-7038e4ea1741">&lt;ws2007HttpBinding&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -31,8 +34,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WS2007HttpBindingCollectionElement" /> class.</summary>

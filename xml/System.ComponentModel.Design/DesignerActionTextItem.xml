@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionTextItem" />
   <TypeSignature Language="VB.NET" Value="Public Class DesignerActionTextItem&#xA;Inherits DesignerActionItem" />
   <TypeSignature Language="C++ CLI" Value="public ref class DesignerActionTextItem : System::ComponentModel::Design::DesignerActionItem" />
+  <TypeSignature Language="F#" Value="type DesignerActionTextItem = class&#xA;    inherit DesignerActionItem" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -36,6 +38,7 @@
     </remarks>
     <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
     <altmember cref="T:System.ComponentModel.Design.DesignerActionHeaderItem" />
+    <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,9 +47,11 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionTextItem.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, category As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionTextItem(System::String ^ displayName, System::String ^ category);" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionTextItem : string * string -&gt; System.ComponentModel.Design.DesignerActionTextItem" Usage="new System.ComponentModel.Design.DesignerActionTextItem (displayName, category)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -78,6 +83,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.Description" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
       </Docs>
     </Member>
   </Members>

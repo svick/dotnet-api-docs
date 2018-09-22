@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.PagerStyle" />
   <TypeSignature Language="VB.NET" Value="Public Class PagerStyle&#xA;Inherits Style" />
   <TypeSignature Language="C++ CLI" Value="public ref class PagerStyle : System::Web::UI::MobileControls::Style" />
+  <TypeSignature Language="F#" Value="type PagerStyle = class&#xA;    inherit Style" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
     </Attribute>
   </Attributes>
@@ -33,6 +36,7 @@
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
     <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
     <altmember cref="T:System.Web.UI.MobileControls.Style" />
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,6 +48,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -58,9 +64,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagerStyle.GetNextPageText(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetNextPageText (currentPageIndex As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetNextPageText(int currentPageIndex);" />
+      <MemberSignature Language="F#" Value="member this.GetNextPageText : int -&gt; string" Usage="pagerStyle.GetNextPageText currentPageIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,6 +93,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
         <altmember cref="P:System.Web.UI.MobileControls.PagerStyle.NextPageText" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetPageLabelText">
@@ -92,9 +102,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagerStyle.GetPageLabelText(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPageLabelText (currentPageIndex As Integer, pageCount As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPageLabelText(int currentPageIndex, int pageCount);" />
+      <MemberSignature Language="F#" Value="member this.GetPageLabelText : int * int -&gt; string" Usage="pagerStyle.GetPageLabelText (currentPageIndex, pageCount)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,6 +133,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
         <altmember cref="P:System.Web.UI.MobileControls.PagerStyle.PageLabel" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetPreviousPageText">
@@ -128,9 +142,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagerStyle.GetPreviousPageText(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPreviousPageText (currentPageIndex As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPreviousPageText(int currentPageIndex);" />
+      <MemberSignature Language="F#" Value="member this.GetPreviousPageText : int -&gt; string" Usage="pagerStyle.GetPreviousPageText currentPageIndex" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -154,6 +171,7 @@
         <altmember cref="P:System.Web.UI.MobileControls.PagerStyle.PreviousPageText" />
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="NextPageText">
@@ -162,19 +180,22 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PagerStyle.NextPageText" />
       <MemberSignature Language="VB.NET" Value="Public Property NextPageText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NextPageText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.NextPageText : string with get, set" Usage="System.Web.UI.MobileControls.PagerStyle.NextPageText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -214,6 +235,7 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
         <altmember cref="P:System.Web.UI.MobileControls.PagerStyle.NextPageText" />
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="NextPageTextKey">
@@ -222,9 +244,12 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.PagerStyle.NextPageTextKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NextPageTextKey As Object " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ NextPageTextKey;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NextPageTextKey : obj" Usage="System.Web.UI.MobileControls.PagerStyle.NextPageTextKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,6 +260,7 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="PageLabel">
@@ -243,19 +269,22 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PagerStyle.PageLabel" />
       <MemberSignature Language="VB.NET" Value="Public Property PageLabel As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PageLabel { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PageLabel : string with get, set" Usage="System.Web.UI.MobileControls.PagerStyle.PageLabel" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -306,6 +335,7 @@ void Page_Load(object sender, EventArgs e)
         </remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="PageLabelKey">
@@ -314,9 +344,12 @@ void Page_Load(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.PagerStyle.PageLabelKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PageLabelKey As Object " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ PageLabelKey;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PageLabelKey : obj" Usage="System.Web.UI.MobileControls.PagerStyle.PageLabelKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -327,6 +360,7 @@ void Page_Load(object sender, EventArgs e)
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousPageText">
@@ -335,19 +369,22 @@ void Page_Load(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PagerStyle.PreviousPageText" />
       <MemberSignature Language="VB.NET" Value="Public Property PreviousPageText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PreviousPageText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.PreviousPageText : string with get, set" Usage="System.Web.UI.MobileControls.PagerStyle.PreviousPageText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -390,6 +427,7 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
         <altmember cref="T:System.Web.UI.MobileControls.PagerStyle" />
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousPageTextKey">
@@ -398,9 +436,12 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.PagerStyle.PreviousPageTextKey" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreviousPageTextKey As Object " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Object ^ PreviousPageTextKey;" />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviousPageTextKey : obj" Usage="System.Web.UI.MobileControls.PagerStyle.PreviousPageTextKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -411,6 +452,7 @@ void Form1_PageIndexChanged(object sender, EventArgs e)
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
         <altmember cref="T:System.Web.UI.MobileControls.Style" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/dd374sys(v=vs.85)">Introduction to the StyleSheet Control</related>
       </Docs>
     </Member>
   </Members>

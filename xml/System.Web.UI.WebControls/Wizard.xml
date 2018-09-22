@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Wizard" />
   <TypeSignature Language="VB.NET" Value="Public Class Wizard&#xA;Inherits CompositeControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class Wizard : System::Web::UI::WebControls::CompositeControl" />
+  <TypeSignature Language="F#" Value="type Wizard = class&#xA;    inherit CompositeControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,17 +15,20 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Bindable(false)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.DefaultEvent("FinishButtonClick")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.WizardDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Web.UI.ToolboxData("&lt;{0}:Wizard runat="server"&gt; &lt;WizardSteps&gt; &lt;asp:WizardStep title="Step 1" runat="server"&gt;&lt;/asp:WizardStep&gt; &lt;asp:WizardStep title="Step 2" runat="server"&gt;&lt;/asp:WizardStep&gt; &lt;/WizardSteps&gt; &lt;/{0}:Wizard&gt;")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.Designer("System.Web.UI.Design.WebControls.WizardDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -303,6 +308,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.CompositeControl" />
     <altmember cref="T:System.Web.UI.Control" />
+    <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Introduction to the ASP.NET Wizard Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -314,8 +320,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.Wizard" /> class.</summary>
@@ -327,6 +339,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ActiveStep">
@@ -335,17 +348,22 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.ActiveStep" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveStep As WizardStepBase" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WizardStepBase ^ ActiveStep { System::Web::UI::WebControls::WizardStepBase ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveStep : System.Web.UI.WebControls.WizardStepBase" Usage="System.Web.UI.WebControls.Wizard.ActiveStep" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -372,6 +390,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">The corresponding <see cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" /> is less than -1 or greater than the number of <see cref="T:System.Web.UI.WebControls.WizardStepBase" /> objects in the <see cref="T:System.Web.UI.WebControls.Wizard" />.</exception>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ActiveStepChanged">
@@ -380,9 +399,11 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Wizard.ActiveStepChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event ActiveStepChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ActiveStepChanged;" />
+      <MemberSignature Language="F#" Value="member this.ActiveStepChanged : EventHandler " Usage="member this.ActiveStepChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -396,7 +417,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event is raised when the current step that is displayed in the <xref:System.Web.UI.WebControls.Wizard> control changes. Use the <xref:System.Web.UI.WebControls.Wizard.ActiveStepChanged> event to provide additional processing when the current step of the <xref:System.Web.UI.WebControls.Wizard> control changes.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -409,6 +430,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.Wizard.OnActiveStepChanged(System.Object,System.EventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="ActiveStepIndex">
@@ -417,16 +439,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ActiveStepIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ActiveStepIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.ActiveStepIndex : int with get, set" Usage="System.Web.UI.WebControls.Wizard.ActiveStepIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(-1)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -466,6 +490,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The selected value is higher than the number of wizard steps defined in the <see cref="P:System.Web.UI.WebControls.Wizard.WizardSteps" /> collection.</exception>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStep" />
         <altmember cref="M:System.Web.UI.WebControls.Wizard.MoveTo(System.Web.UI.WebControls.WizardStepBase)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="AllowNavigationToStep">
@@ -474,9 +499,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.AllowNavigationToStep(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function AllowNavigationToStep (index As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool AllowNavigationToStep(int index);" />
+      <MemberSignature Language="F#" Value="abstract member AllowNavigationToStep : int -&gt; bool&#xA;override this.AllowNavigationToStep : int -&gt; bool" Usage="wizard.AllowNavigationToStep index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -508,6 +535,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" />
         <altmember cref="P:System.Web.UI.WebControls.WizardStepBase.AllowReturn" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonClick">
@@ -516,9 +544,11 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Wizard.CancelButtonClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event CancelButtonClick As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CancelButtonClick;" />
+      <MemberSignature Language="F#" Value="member this.CancelButtonClick : EventHandler " Usage="member this.CancelButtonClick : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -532,7 +562,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.CancelButtonClick> event is raised when the **Cancel** button on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the <xref:System.Web.UI.WebControls.Wizard.CancelButtonClick> event to provide additional processing when the **Cancel** button is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -545,6 +575,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.Wizard.OnCancelButtonClick(System.EventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonID">
@@ -553,9 +584,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.CancelButtonID" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly CancelButtonID As String " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ CancelButtonID;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CancelButtonID : string" Usage="System.Web.UI.WebControls.Wizard.CancelButtonID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -572,6 +605,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonImageUrl">
@@ -580,20 +614,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CancelButtonImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CancelButtonImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CancelButtonImageUrl : string with get, set" Usage="System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -615,6 +654,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonStyle">
@@ -623,23 +663,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.CancelButtonStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CancelButtonStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ CancelButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CancelButtonStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.Wizard.CancelButtonStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -665,6 +710,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonText">
@@ -673,13 +719,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CancelButtonText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CancelButtonText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CancelButtonText : string with get, set" Usage="System.Web.UI.WebControls.Wizard.CancelButtonText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -713,6 +761,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelButtonType">
@@ -721,13 +770,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.CancelButtonType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CancelButtonType As ButtonType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType CancelButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
+      <MemberSignature Language="F#" Value="member this.CancelButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.Wizard.CancelButtonType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -742,6 +793,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelCommandName">
@@ -750,9 +802,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.CancelCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CancelCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ CancelCommandName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CancelCommandName : string" Usage="System.Web.UI.WebControls.Wizard.CancelCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -769,6 +823,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CancelDestinationPageUrl">
@@ -777,23 +832,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CancelDestinationPageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CancelDestinationPageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.CancelDestinationPageUrl : string with get, set" Usage="System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.UrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.UrlEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -817,6 +877,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CellPadding">
@@ -825,13 +886,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.CellPadding" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CellPadding As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CellPadding { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CellPadding : int with get, set" Usage="System.Web.UI.WebControls.Wizard.CellPadding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -858,6 +921,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CellSpacing" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CellSpacing">
@@ -866,13 +930,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.CellSpacing" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property CellSpacing As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CellSpacing { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.CellSpacing : int with get, set" Usage="System.Web.UI.WebControls.Wizard.CellSpacing" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
       </Attributes>
@@ -899,6 +965,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CellPadding" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
@@ -907,9 +974,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.CreateChildControls" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
+      <MemberSignature Language="F#" Value="override this.CreateChildControls : unit -&gt; unit" Usage="wizard.CreateChildControls " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -927,9 +996,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.CreateControlCollection" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
+      <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="wizard.CreateControlCollection " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -948,9 +1019,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.CreateControlHierarchy" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CreateControlHierarchy ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CreateControlHierarchy();" />
+      <MemberSignature Language="F#" Value="abstract member CreateControlHierarchy : unit -&gt; unit&#xA;override this.CreateControlHierarchy : unit -&gt; unit" Usage="wizard.CreateControlHierarchy " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -964,6 +1037,7 @@
         <altmember cref="M:System.Web.UI.WebControls.Wizard.CreateChildControls" />
         <altmember cref="M:System.Web.UI.WebControls.Wizard.CreateControlCollection" />
         <altmember cref="M:System.Web.UI.WebControls.Wizard.CreateControlStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CreateControlStyle">
@@ -972,9 +1046,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.CreateControlStyle" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlStyle () As Style" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Style ^ CreateControlStyle();" />
+      <MemberSignature Language="F#" Value="override this.CreateControlStyle : unit -&gt; System.Web.UI.WebControls.Style" Usage="wizard.CreateControlStyle " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -993,9 +1069,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.CustomFinishButtonID" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly CustomFinishButtonID As String " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ CustomFinishButtonID;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CustomFinishButtonID : string" Usage="System.Web.UI.WebControls.Wizard.CustomFinishButtonID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1012,6 +1090,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CustomNextButtonID">
@@ -1020,9 +1099,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.CustomNextButtonID" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly CustomNextButtonID As String " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ CustomNextButtonID;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CustomNextButtonID : string" Usage="System.Web.UI.WebControls.Wizard.CustomNextButtonID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1039,6 +1120,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CustomPreviousButtonID">
@@ -1047,9 +1129,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.CustomPreviousButtonID" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly CustomPreviousButtonID As String " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ CustomPreviousButtonID;" />
+      <MemberSignature Language="F#" Value=" staticval mutable CustomPreviousButtonID : string" Usage="System.Web.UI.WebControls.Wizard.CustomPreviousButtonID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1066,6 +1150,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DataListID">
@@ -1074,9 +1159,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.DataListID" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly DataListID As String " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ DataListID;" />
+      <MemberSignature Language="F#" Value=" staticval mutable DataListID : string" Usage="System.Web.UI.WebControls.Wizard.DataListID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1093,6 +1180,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.DataList" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DisplayCancelButton">
@@ -1101,16 +1189,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DisplayCancelButton As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DisplayCancelButton { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplayCancelButton : bool with get, set" Usage="System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1129,6 +1219,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="DisplaySideBar">
@@ -1137,17 +1228,22 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.DisplaySideBar" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property DisplaySideBar As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DisplaySideBar { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.DisplaySideBar : bool with get, set" Usage="System.Web.UI.WebControls.Wizard.DisplaySideBar" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1170,6 +1266,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarButtonStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishButtonClick">
@@ -1178,9 +1275,11 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Wizard.FinishButtonClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event FinishButtonClick As WizardNavigationEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WizardNavigationEventHandler ^ FinishButtonClick;" />
+      <MemberSignature Language="F#" Value="member this.FinishButtonClick : System.Web.UI.WebControls.WizardNavigationEventHandler " Usage="member this.FinishButtonClick : System.Web.UI.WebControls.WizardNavigationEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1194,7 +1293,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.FinishButtonClick> event is raised when the **Finish** button on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the <xref:System.Web.UI.WebControls.Wizard.FinishButtonClick> event to provide additional processing when the **Finish** button is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -1207,6 +1306,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.Wizard.OnFinishButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishButtonID">
@@ -1215,9 +1315,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.FinishButtonID" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly FinishButtonID As String " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ FinishButtonID;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FinishButtonID : string" Usage="System.Web.UI.WebControls.Wizard.FinishButtonID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1234,6 +1336,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonImageUrl">
@@ -1242,20 +1345,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FinishCompleteButtonImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FinishCompleteButtonImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FinishCompleteButtonImageUrl : string with get, set" Usage="System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1275,6 +1383,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonStyle">
@@ -1283,23 +1392,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FinishCompleteButtonStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ FinishCompleteButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FinishCompleteButtonStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1323,6 +1437,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonText">
@@ -1331,13 +1446,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FinishCompleteButtonText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FinishCompleteButtonText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FinishCompleteButtonText : string with get, set" Usage="System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1369,6 +1486,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishCompleteButtonType">
@@ -1377,13 +1495,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FinishCompleteButtonType As ButtonType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType FinishCompleteButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
+      <MemberSignature Language="F#" Value="member this.FinishCompleteButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1397,6 +1517,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishDestinationPageUrl">
@@ -1405,23 +1526,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishDestinationPageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FinishDestinationPageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FinishDestinationPageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FinishDestinationPageUrl : string with get, set" Usage="System.Web.UI.WebControls.Wizard.FinishDestinationPageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.UrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.UrlEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1443,6 +1569,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishNavigationTemplate">
@@ -1451,23 +1578,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FinishNavigationTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ FinishNavigationTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FinishNavigationTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Wizard.FinishNavigationTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.Wizard))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1505,6 +1637,7 @@
         <altmember cref="F:System.Web.UI.WebControls.WizardStepType.Finish" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNavigationTemplate" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonID">
@@ -1513,9 +1646,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.FinishPreviousButtonID" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly FinishPreviousButtonID As String " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ FinishPreviousButtonID;" />
+      <MemberSignature Language="F#" Value=" staticval mutable FinishPreviousButtonID : string" Usage="System.Web.UI.WebControls.Wizard.FinishPreviousButtonID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1532,6 +1667,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonImageUrl">
@@ -1540,20 +1676,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FinishPreviousButtonImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FinishPreviousButtonImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FinishPreviousButtonImageUrl : string with get, set" Usage="System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1573,6 +1714,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonStyle">
@@ -1581,23 +1723,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FinishPreviousButtonStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ FinishPreviousButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FinishPreviousButtonStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1620,6 +1767,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonText">
@@ -1628,13 +1776,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FinishPreviousButtonText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FinishPreviousButtonText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.FinishPreviousButtonText : string with get, set" Usage="System.Web.UI.WebControls.Wizard.FinishPreviousButtonText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1666,6 +1816,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="FinishPreviousButtonType">
@@ -1674,13 +1825,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property FinishPreviousButtonType As ButtonType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType FinishPreviousButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
+      <MemberSignature Language="F#" Value="member this.FinishPreviousButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.Wizard.FinishPreviousButtonType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1694,6 +1847,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignModeState">
@@ -1702,9 +1856,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.GetDesignModeState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDesignModeState () As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::IDictionary ^ GetDesignModeState();" />
+      <MemberSignature Language="F#" Value="override this.GetDesignModeState : unit -&gt; System.Collections.IDictionary" Usage="wizard.GetDesignModeState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1723,9 +1879,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.GetHistory" />
       <MemberSignature Language="VB.NET" Value="Public Function GetHistory () As ICollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ GetHistory();" />
+      <MemberSignature Language="F#" Value="member this.GetHistory : unit -&gt; System.Collections.ICollection" Usage="wizard.GetHistory " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1743,6 +1901,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="GetStepType">
@@ -1751,9 +1910,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.GetStepType(System.Web.UI.WebControls.WizardStepBase,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetStepType (wizardStep As WizardStepBase, index As Integer) As WizardStepType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::WebControls::WizardStepType GetStepType(System::Web::UI::WebControls::WizardStepBase ^ wizardStep, int index);" />
+      <MemberSignature Language="F#" Value="member this.GetStepType : System.Web.UI.WebControls.WizardStepBase * int -&gt; System.Web.UI.WebControls.WizardStepType" Usage="wizard.GetStepType (wizardStep, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1786,6 +1947,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WizardStepType" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="HeaderPlaceholderId">
@@ -1794,6 +1956,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.HeaderPlaceholderId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderPlaceholderId As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ HeaderPlaceholderId;" />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderPlaceholderId : string" Usage="System.Web.UI.WebControls.Wizard.HeaderPlaceholderId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1820,23 +1983,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.HeaderStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeaderStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ HeaderStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Wizard.HeaderStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1858,6 +2026,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderText" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="HeaderTemplate">
@@ -1866,23 +2035,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.HeaderTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HeaderTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ HeaderTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Wizard.HeaderTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.Wizard))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1905,6 +2079,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderText" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="HeaderText">
@@ -1913,16 +2088,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.HeaderText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property HeaderText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HeaderText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.HeaderText : string with get, set" Usage="System.Web.UI.WebControls.Wizard.HeaderText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1957,6 +2134,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.HeaderStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="LayoutTemplate">
@@ -1965,23 +2143,27 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.LayoutTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property LayoutTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ LayoutTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LayoutTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Wizard.LayoutTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.Wizard))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2016,9 +2198,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.LoadControlState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadControlState (state As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadControlState(System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.LoadControlState : obj -&gt; unit" Usage="wizard.LoadControlState state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2039,9 +2223,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.LoadViewState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="wizard.LoadViewState savedState" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2064,9 +2250,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.MoveCompleteCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MoveCompleteCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ MoveCompleteCommandName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MoveCompleteCommandName : string" Usage="System.Web.UI.WebControls.Wizard.MoveCompleteCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2086,6 +2274,7 @@
         <altmember cref="F:System.Web.UI.WebControls.Wizard.MoveNextCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.Wizard.MovePreviousCommandName" />
         <altmember cref="F:System.Web.UI.WebControls.Wizard.MoveToCommandName" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="MoveNextCommandName">
@@ -2094,9 +2283,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.MoveNextCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MoveNextCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ MoveNextCommandName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MoveNextCommandName : string" Usage="System.Web.UI.WebControls.Wizard.MoveNextCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2113,6 +2304,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="MovePreviousCommandName">
@@ -2121,9 +2313,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.MovePreviousCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MovePreviousCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ MovePreviousCommandName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MovePreviousCommandName : string" Usage="System.Web.UI.WebControls.Wizard.MovePreviousCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2140,6 +2334,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="MoveTo">
@@ -2148,9 +2343,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.MoveTo(System.Web.UI.WebControls.WizardStepBase)" />
       <MemberSignature Language="VB.NET" Value="Public Sub MoveTo (wizardStep As WizardStepBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveTo(System::Web::UI::WebControls::WizardStepBase ^ wizardStep);" />
+      <MemberSignature Language="F#" Value="member this.MoveTo : System.Web.UI.WebControls.WizardStepBase -&gt; unit" Usage="wizard.MoveTo wizardStep" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2184,6 +2381,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="MoveToCommandName">
@@ -2192,9 +2390,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.MoveToCommandName" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MoveToCommandName As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ MoveToCommandName;" />
+      <MemberSignature Language="F#" Value=" staticval mutable MoveToCommandName : string" Usage="System.Web.UI.WebControls.Wizard.MoveToCommandName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2211,6 +2411,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="NavigationButtonStyle">
@@ -2219,23 +2420,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NavigationButtonStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ NavigationButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NavigationButtonStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2274,6 +2480,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationStyle" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="NavigationPlaceholderId">
@@ -2282,6 +2489,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.NavigationPlaceholderId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NavigationPlaceholderId As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ NavigationPlaceholderId;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NavigationPlaceholderId : string" Usage="System.Web.UI.WebControls.Wizard.NavigationPlaceholderId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2308,23 +2516,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.NavigationStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NavigationStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ NavigationStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.NavigationStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Wizard.NavigationStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2365,6 +2578,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="NextButtonClick">
@@ -2373,9 +2587,11 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Wizard.NextButtonClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event NextButtonClick As WizardNavigationEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WizardNavigationEventHandler ^ NextButtonClick;" />
+      <MemberSignature Language="F#" Value="member this.NextButtonClick : System.Web.UI.WebControls.WizardNavigationEventHandler " Usage="member this.NextButtonClick : System.Web.UI.WebControls.WizardNavigationEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2389,7 +2605,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event is raised when the **Next** button on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the <xref:System.Web.UI.WebControls.Wizard.NextButtonClick> event to provide additional processing when the **Next** button is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2402,6 +2618,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnActiveStepChanged">
@@ -2410,9 +2627,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.OnActiveStepChanged(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnActiveStepChanged (source As Object, e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnActiveStepChanged(System::Object ^ source, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnActiveStepChanged : obj * EventArgs -&gt; unit&#xA;override this.OnActiveStepChanged : obj * EventArgs -&gt; unit" Usage="wizard.OnActiveStepChanged (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2450,6 +2669,7 @@
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnActiveStepChanged(System.Object,System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnActiveStepChanged(System.Object,System.EventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.Wizard.ActiveStepChanged" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnBubbleEvent">
@@ -2458,9 +2678,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.OnBubbleEvent(System.Object,System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="wizard.OnBubbleEvent (source, e)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2485,9 +2707,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.OnCancelButtonClick(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCancelButtonClick (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCancelButtonClick(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnCancelButtonClick : EventArgs -&gt; unit&#xA;override this.OnCancelButtonClick : EventArgs -&gt; unit" Usage="wizard.OnCancelButtonClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2523,6 +2747,7 @@
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnCancelButtonClick(System.EventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnCancelButtonClick(System.EventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.Wizard.CancelButtonClick" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnFinishButtonClick">
@@ -2531,9 +2756,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.OnFinishButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFinishButtonClick (e As WizardNavigationEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFinishButtonClick(System::Web::UI::WebControls::WizardNavigationEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnFinishButtonClick : System.Web.UI.WebControls.WizardNavigationEventArgs -&gt; unit&#xA;override this.OnFinishButtonClick : System.Web.UI.WebControls.WizardNavigationEventArgs -&gt; unit" Usage="wizard.OnFinishButtonClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2569,6 +2796,7 @@
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnFinishButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnFinishButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.Wizard.FinishButtonClick" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnInit">
@@ -2577,9 +2805,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.OnInit(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="wizard.OnInit e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2600,9 +2830,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNextButtonClick (e As WizardNavigationEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnNextButtonClick(System::Web::UI::WebControls::WizardNavigationEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnNextButtonClick : System.Web.UI.WebControls.WizardNavigationEventArgs -&gt; unit&#xA;override this.OnNextButtonClick : System.Web.UI.WebControls.WizardNavigationEventArgs -&gt; unit" Usage="wizard.OnNextButtonClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2638,6 +2870,7 @@
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.Wizard.NextButtonClick" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnPreviousButtonClick">
@@ -2646,9 +2879,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.OnPreviousButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPreviousButtonClick (e As WizardNavigationEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPreviousButtonClick(System::Web::UI::WebControls::WizardNavigationEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnPreviousButtonClick : System.Web.UI.WebControls.WizardNavigationEventArgs -&gt; unit&#xA;override this.OnPreviousButtonClick : System.Web.UI.WebControls.WizardNavigationEventArgs -&gt; unit" Usage="wizard.OnPreviousButtonClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2684,6 +2919,7 @@
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnPreviousButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnPreviousButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.Wizard.PreviousButtonClick" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnSideBarButtonClick">
@@ -2692,9 +2928,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSideBarButtonClick (e As WizardNavigationEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSideBarButtonClick(System::Web::UI::WebControls::WizardNavigationEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnSideBarButtonClick : System.Web.UI.WebControls.WizardNavigationEventArgs -&gt; unit&#xA;override this.OnSideBarButtonClick : System.Web.UI.WebControls.WizardNavigationEventArgs -&gt; unit" Usage="wizard.OnSideBarButtonClick e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2733,6 +2971,7 @@
           <para>When overriding the <see cref="M:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method in a derived class, be sure to call the <see cref="M:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" /> method of the base class so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Web.UI.WebControls.Wizard.SideBarButtonClick" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="PreviousButtonClick">
@@ -2741,9 +2980,11 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Wizard.PreviousButtonClick" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event PreviousButtonClick As WizardNavigationEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WizardNavigationEventHandler ^ PreviousButtonClick;" />
+      <MemberSignature Language="F#" Value="member this.PreviousButtonClick : System.Web.UI.WebControls.WizardNavigationEventHandler " Usage="member this.PreviousButtonClick : System.Web.UI.WebControls.WizardNavigationEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2757,7 +2998,7 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.Wizard.PreviousButtonClick> event is raised when the **Previous** button on the <xref:System.Web.UI.WebControls.Wizard> control is clicked. Use the <xref:System.Web.UI.WebControls.Wizard.PreviousButtonClick> event to provide additional processing when the **Previous** button is clicked.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2770,6 +3011,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.Wizard.OnPreviousButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RegisterCommandEvents">
@@ -2778,9 +3020,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.RegisterCommandEvents(System.Web.UI.WebControls.IButtonControl)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Sub RegisterCommandEvents (button As IButtonControl)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void RegisterCommandEvents(System::Web::UI::WebControls::IButtonControl ^ button);" />
+      <MemberSignature Language="F#" Value="member this.RegisterCommandEvents : System.Web.UI.WebControls.IButtonControl -&gt; unit" Usage="wizard.RegisterCommandEvents button" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2793,6 +3037,7 @@
         <param name="button">The <see cref="T:System.Web.UI.WebControls.IButtonControl" /> for which the new instance of <see cref="T:System.Web.UI.WebControls.CommandEventHandler" /> is registered.</param>
         <summary>Registers a new instance of the <see cref="T:System.Web.UI.WebControls.CommandEventHandler" /> class for the specified <see cref="T:System.Web.UI.WebControls.IButtonControl" /> object.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Render">
@@ -2801,9 +3046,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="wizard.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2824,9 +3071,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.SaveControlState" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveControlState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveControlState();" />
+      <MemberSignature Language="F#" Value="override this.SaveControlState : unit -&gt; obj" Usage="wizard.SaveControlState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2845,9 +3094,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.SaveViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="wizard.SaveViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2866,9 +3117,11 @@
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Wizard.SideBarButtonClick" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Custom Event SideBarButtonClick As WizardNavigationEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::Web::UI::WebControls::WizardNavigationEventHandler ^ SideBarButtonClick;" />
+      <MemberSignature Language="F#" Value="member this.SideBarButtonClick : System.Web.UI.WebControls.WizardNavigationEventHandler " Usage="member this.SideBarButtonClick : System.Web.UI.WebControls.WizardNavigationEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2885,7 +3138,7 @@
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Wizard.SideBarButtonClick> event does not raise an event if a <xref:System.Web.UI.WebControls.Button> control with the <xref:System.Web.UI.WebControls.Button.CommandName%2A> property set to `Move` is outside of the <xref:System.Web.UI.WebControls.DataList> control's sidebar list for the <xref:System.Web.UI.WebControls.Wizard.SideBarTemplate%2A> object.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -2898,6 +3151,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SideBarButtonID">
@@ -2906,9 +3160,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.SideBarButtonID" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly SideBarButtonID As String " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ SideBarButtonID;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SideBarButtonID : string" Usage="System.Web.UI.WebControls.Wizard.SideBarButtonID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -2925,6 +3181,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SideBarButtonStyle">
@@ -2933,23 +3190,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.SideBarButtonStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SideBarButtonStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ SideBarButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SideBarButtonStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.Wizard.SideBarButtonStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2994,6 +3256,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplaySideBar" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SideBarPlaceholderId">
@@ -3002,6 +3265,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.SideBarPlaceholderId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SideBarPlaceholderId As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ SideBarPlaceholderId;" />
+      <MemberSignature Language="F#" Value=" staticval mutable SideBarPlaceholderId : string" Usage="System.Web.UI.WebControls.Wizard.SideBarPlaceholderId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3028,23 +3292,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.SideBarStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SideBarStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ SideBarStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SideBarStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Wizard.SideBarStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3090,6 +3359,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplaySideBar" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SideBarTemplate">
@@ -3098,23 +3368,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.SideBarTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SideBarTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ SideBarTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SideBarTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Wizard.SideBarTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.Wizard))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3161,6 +3436,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.SideBarButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.DisplaySideBar" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SkipLinkText">
@@ -3169,13 +3445,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.SkipLinkText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property SkipLinkText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SkipLinkText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SkipLinkText : string with get, set" Usage="System.Web.UI.WebControls.Wizard.SkipLinkText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3198,6 +3476,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StartNavigationTemplate">
@@ -3206,23 +3485,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property StartNavigationTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ StartNavigationTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StartNavigationTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.Wizard))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3249,6 +3533,7 @@
         <altmember cref="F:System.Web.UI.WebControls.WizardStepType.Start" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNavigationTemplate" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonID">
@@ -3257,9 +3542,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.StartNextButtonID" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly StartNextButtonID As String " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ StartNextButtonID;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StartNextButtonID : string" Usage="System.Web.UI.WebControls.Wizard.StartNextButtonID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3276,6 +3563,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonImageUrl">
@@ -3284,20 +3572,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StartNextButtonImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property StartNextButtonImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StartNextButtonImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StartNextButtonImageUrl : string with get, set" Usage="System.Web.UI.WebControls.Wizard.StartNextButtonImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3318,6 +3611,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonStyle">
@@ -3326,23 +3620,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StartNextButtonStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartNextButtonStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ StartNextButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StartNextButtonStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.Wizard.StartNextButtonStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3367,6 +3666,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonText">
@@ -3375,13 +3675,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StartNextButtonText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property StartNextButtonText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StartNextButtonText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StartNextButtonText : string with get, set" Usage="System.Web.UI.WebControls.Wizard.StartNextButtonText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3414,6 +3716,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonType" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StartNextButtonType">
@@ -3422,13 +3725,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StartNextButtonType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property StartNextButtonType As ButtonType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType StartNextButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
+      <MemberSignature Language="F#" Value="member this.StartNextButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.Wizard.StartNextButtonType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3443,6 +3748,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNextButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepNavigationTemplate">
@@ -3451,23 +3757,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepNavigationTemplate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property StepNavigationTemplate As ITemplate" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ StepNavigationTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StepNavigationTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Wizard.StepNavigationTemplate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.Wizard))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3493,6 +3804,7 @@
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonID">
@@ -3501,9 +3813,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.StepNextButtonID" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly StepNextButtonID As String " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ StepNextButtonID;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StepNextButtonID : string" Usage="System.Web.UI.WebControls.Wizard.StepNextButtonID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3520,6 +3834,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonImageUrl">
@@ -3528,20 +3843,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property StepNextButtonImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StepNextButtonImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StepNextButtonImageUrl : string with get, set" Usage="System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3561,6 +3881,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonStyle">
@@ -3569,23 +3890,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepNextButtonStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StepNextButtonStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ StepNextButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StepNextButtonStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.Wizard.StepNextButtonStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3609,6 +3935,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonType" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonText">
@@ -3617,13 +3944,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepNextButtonText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property StepNextButtonText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StepNextButtonText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StepNextButtonText : string with get, set" Usage="System.Web.UI.WebControls.Wizard.StepNextButtonText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3655,6 +3984,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepNextButtonType">
@@ -3663,13 +3993,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepNextButtonType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property StepNextButtonType As ButtonType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType StepNextButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
+      <MemberSignature Language="F#" Value="member this.StepNextButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.Wizard.StepNextButtonType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3683,6 +4015,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepNextButtonText" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonID">
@@ -3691,9 +4024,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.StepPreviousButtonID" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly StepPreviousButtonID As String " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ StepPreviousButtonID;" />
+      <MemberSignature Language="F#" Value=" staticval mutable StepPreviousButtonID : string" Usage="System.Web.UI.WebControls.Wizard.StepPreviousButtonID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3710,6 +4045,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.IButtonControl" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonImageUrl">
@@ -3718,20 +4054,25 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property StepPreviousButtonImageUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StepPreviousButtonImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StepPreviousButtonImageUrl : string with get, set" Usage="System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.UrlProperty</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.ImageUrlEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3751,6 +4092,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonStyle">
@@ -3759,23 +4101,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StepPreviousButtonStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ StepPreviousButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StepPreviousButtonStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3799,6 +4146,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonText" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonType" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonText">
@@ -3807,13 +4155,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonText" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property StepPreviousButtonText As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StepPreviousButtonText { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.StepPreviousButtonText : string with get, set" Usage="System.Web.UI.WebControls.Wizard.StepPreviousButtonText" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3845,6 +4195,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonType" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepPreviousButtonType">
@@ -3853,13 +4204,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonType" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property StepPreviousButtonType As ButtonType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType StepPreviousButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
+      <MemberSignature Language="F#" Value="member this.StepPreviousButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.Wizard.StepPreviousButtonType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3873,6 +4226,7 @@
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle" />
         <altmember cref="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonText" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="StepStyle">
@@ -3881,23 +4235,28 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepStyle" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StepStyle As TableItemStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ StepStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.StepStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Wizard.StepStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3940,6 +4299,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WizardStep" />
         <altmember cref="T:System.Web.UI.WebControls.Style" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="TagKey">
@@ -3948,9 +4308,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.TagKey" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TagKey As HtmlTextWriterTag" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
+      <MemberSignature Language="F#" Value="member this.TagKey : System.Web.UI.HtmlTextWriterTag" Usage="System.Web.UI.WebControls.Wizard.TagKey" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3968,6 +4330,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.HtmlTextWriterTag" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="TrackViewState">
@@ -3976,9 +4339,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.TrackViewState" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="wizard.TrackViewState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -3996,6 +4361,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.WizardStepPlaceholderId" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WizardStepPlaceholderId As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ WizardStepPlaceholderId;" />
+      <MemberSignature Language="F#" Value=" staticval mutable WizardStepPlaceholderId : string" Usage="System.Web.UI.WebControls.Wizard.WizardStepPlaceholderId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4022,23 +4388,31 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.WizardSteps" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property WizardSteps As WizardStepCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WizardStepCollection ^ WizardSteps { System::Web::UI::WebControls::WizardStepCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.WizardSteps : System.Web.UI.WebControls.WizardStepCollection" Usage="System.Web.UI.WebControls.Wizard.WizardSteps" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.WebControls.WizardStepCollectionEditor,System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.Themeable(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.WebControls.WizardStepCollectionEditor,System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4072,6 +4446,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WizardStepCollection" />
         <altmember cref="T:System.Web.UI.WebControls.WizardStepBase" />
+        <related type="Article" href="http://msdn.microsoft.com/library/c0cc4b96-8d75-41f7-977a-4d75098d7a9e">Wizard Web Server Control</related>
       </Docs>
     </Member>
   </Members>

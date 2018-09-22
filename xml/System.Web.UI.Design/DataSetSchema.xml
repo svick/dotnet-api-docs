@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DataSetSchema" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataSetSchema&#xA;Implements IDataSourceSchema" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataSetSchema sealed : System::Web::UI::Design::IDataSourceSchema" />
+  <TypeSignature Language="F#" Value="type DataSetSchema = class&#xA;    interface IDataSourceSchema" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -38,6 +40,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.Design.DataSetViewSchema" />
     <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -45,9 +48,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataSet dataSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSetSchema.#ctor(System.Data.DataSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DataSetSchema(System::Data::DataSet ^ dataSet);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.DataSetSchema : System.Data.DataSet -&gt; System.Web.UI.Design.DataSetSchema" Usage="new System.Web.UI.Design.DataSetSchema dataSet" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -59,6 +64,7 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.Design.DataSetViewSchema" />
         <altmember cref="T:System.Web.UI.Design.DataSetFieldSchema" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
       </Docs>
     </Member>
     <Member MemberName="GetViews">
@@ -67,12 +73,14 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataSetSchema.GetViews" />
       <MemberSignature Language="VB.NET" Value="Public Function GetViews () As IDataSourceViewSchema()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Web::UI::Design::IDataSourceViewSchema ^&gt; ^ GetViews();" />
+      <MemberSignature Language="F#" Value="abstract member GetViews : unit -&gt; System.Web.UI.Design.IDataSourceViewSchema[]&#xA;override this.GetViews : unit -&gt; System.Web.UI.Design.IDataSourceViewSchema[]" Usage="dataSetSchema.GetViews " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Web.UI.Design.IDataSourceSchema.GetViews</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

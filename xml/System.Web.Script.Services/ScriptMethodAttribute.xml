@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Script.Services.ScriptMethodAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScriptMethodAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptMethodAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type ScriptMethodAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Method)</AttributeName>
     </Attribute>
   </Attributes>
@@ -56,6 +58,9 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.Services.WebMethodAttribute" />
+    <related type="Article" href="https://msdn.microsoft.com/library/4e876911-6276-4de8-b22a-d326a2033582">Using Web Services in ASP.NET AJAX</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/fe3f6e9e-0acd-44c9-bf0f-0a8598fc13b8">Exposing Web Services to Client Script in ASP.NET AJAX</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/fc06c224-f01a-45be-94af-bd71afbc07b0">Calling Web Services from Client Script in ASP.NET AJAX</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -67,8 +72,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Script.Services.ScriptMethodAttribute" /> class.</summary>
@@ -81,11 +92,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Script.Services.ScriptMethodAttribute.ResponseFormat" />
       <MemberSignature Language="VB.NET" Value="Public Property ResponseFormat As ResponseFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Script::Services::ResponseFormat ResponseFormat { System::Web::Script::Services::ResponseFormat get(); void set(System::Web::Script::Services::ResponseFormat value); };" />
+      <MemberSignature Language="F#" Value="member this.ResponseFormat : System.Web.Script.Services.ResponseFormat with get, set" Usage="System.Web.Script.Services.ScriptMethodAttribute.ResponseFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.Script.Services.ResponseFormat</ReturnType>
       </ReturnValue>
@@ -119,11 +140,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Script.Services.ScriptMethodAttribute.UseHttpGet" />
       <MemberSignature Language="VB.NET" Value="Public Property UseHttpGet As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseHttpGet { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseHttpGet : bool with get, set" Usage="System.Web.Script.Services.ScriptMethodAttribute.UseHttpGet" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -161,11 +192,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Script.Services.ScriptMethodAttribute.XmlSerializeString" />
       <MemberSignature Language="VB.NET" Value="Public Property XmlSerializeString As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool XmlSerializeString { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.XmlSerializeString : bool with get, set" Usage="System.Web.Script.Services.ScriptMethodAttribute.XmlSerializeString" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -190,6 +231,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/78f88d7b-2d9c-40a5-a5c5-1277619077d0">Sys.Net.ClientServiceProxy Class</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/fc06c224-f01a-45be-94af-bd71afbc07b0">Calling Web Services from Client Script in ASP.NET AJAX</related>
       </Docs>
     </Member>
   </Members>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ScriptingJsonSerializationSection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScriptingJsonSerializationSection&#xA;Inherits ConfigurationSection" />
   <TypeSignature Language="C++ CLI" Value="public ref class ScriptingJsonSerializationSection sealed : System::Configuration::ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type ScriptingJsonSerializationSection = class&#xA;    inherit ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -45,6 +47,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Configuration.ConfigurationSection" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ea4fb56e-bc1d-405a-9877-00cf5e552a30">How to: Configure ASP.NET Services in ASP.NET AJAX</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,8 +59,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ScriptingJsonSerializationSection" /> class.</summary>
@@ -70,13 +79,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingJsonSerializationSection.Converters" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Converters As ConvertersCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ConvertersCollection ^ Converters { System::Web::Configuration::ConvertersCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Converters : System.Web.Configuration.ConvertersCollection" Usage="System.Web.Configuration.ScriptingJsonSerializationSection.Converters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("converters", DefaultValue=Mono.Cecil.CustomAttributeArgument, IsKey=true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -95,13 +106,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingJsonSerializationSection.MaxJsonLength" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxJsonLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxJsonLength { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxJsonLength : int with get, set" Usage="System.Web.Configuration.ScriptingJsonSerializationSection.MaxJsonLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("maxJsonLength", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -119,6 +132,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/8290e543-7eff-47a4-aace-681f3c07229b">Web Services in ASP.NET AJAX</related>
       </Docs>
     </Member>
     <Member MemberName="Properties">
@@ -127,11 +141,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingJsonSerializationSection.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.ScriptingJsonSerializationSection.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
@@ -147,13 +168,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ScriptingJsonSerializationSection.RecursionLimit" />
       <MemberSignature Language="VB.NET" Value="Public Property RecursionLimit As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RecursionLimit { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.RecursionLimit : int with get, set" Usage="System.Web.Configuration.ScriptingJsonSerializationSection.RecursionLimit" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("recursionLimit", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -174,6 +197,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The property is being set to a value that is less than one.</exception>
+        <related type="Article" href="https://msdn.microsoft.com/library/8290e543-7eff-47a4-aace-681f3c07229b">Web Services in ASP.NET AJAX</related>
       </Docs>
     </Member>
   </Members>

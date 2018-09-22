@@ -4,10 +4,15 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlNotificationEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlNotificationEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlNotificationEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type SqlNotificationEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data.SqlClient</AssemblyName>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.EventArgs</BaseTypeName>
@@ -16,6 +21,7 @@
   <Docs>
     <summary>Represents the set of arguments passed to the notification event handler.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -24,11 +30,16 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlNotificationEventArgs.#ctor(System.Data.SqlClient.SqlNotificationType,System.Data.SqlClient.SqlNotificationInfo,System.Data.SqlClient.SqlNotificationSource)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (type As SqlNotificationType, info As SqlNotificationInfo, source As SqlNotificationSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlNotificationEventArgs(System::Data::SqlClient::SqlNotificationType type, System::Data::SqlClient::SqlNotificationInfo info, System::Data::SqlClient::SqlNotificationSource source);" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlNotificationEventArgs : System.Data.SqlClient.SqlNotificationType * System.Data.SqlClient.SqlNotificationInfo * System.Data.SqlClient.SqlNotificationSource -&gt; System.Data.SqlClient.SqlNotificationEventArgs" Usage="new System.Data.SqlClient.SqlNotificationEventArgs (type, info, source)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="type" Type="System.Data.SqlClient.SqlNotificationType" />
@@ -44,6 +55,7 @@
           <see cref="T:System.Data.SqlClient.SqlNotificationSource" /> value that indicates the source that generated the notification.</param>
         <summary>Creates a new instance of the <see cref="T:System.Data.SqlClient.SqlNotificationEventArgs" /> object.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Info">
@@ -52,11 +64,16 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlNotificationEventArgs.Info" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Info As SqlNotificationInfo" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlNotificationInfo Info { System::Data::SqlClient::SqlNotificationInfo get(); };" />
+      <MemberSignature Language="F#" Value="member this.Info : System.Data.SqlClient.SqlNotificationInfo" Usage="System.Data.SqlClient.SqlNotificationEventArgs.Info" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SqlNotificationInfo</ReturnType>
@@ -72,6 +89,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Source">
@@ -80,11 +98,16 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlNotificationEventArgs.Source" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Source As SqlNotificationSource" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlNotificationSource Source { System::Data::SqlClient::SqlNotificationSource get(); };" />
+      <MemberSignature Language="F#" Value="member this.Source : System.Data.SqlClient.SqlNotificationSource" Usage="System.Data.SqlClient.SqlNotificationEventArgs.Source" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SqlNotificationSource</ReturnType>
@@ -93,6 +116,7 @@
         <summary>Gets a value that indicates the source that generated the notification, such as a change to the query data or the database’s state.</summary>
         <value>The source of the notification.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Type">
@@ -101,11 +125,16 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlNotificationEventArgs.Type" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As SqlNotificationType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlNotificationType Type { System::Data::SqlClient::SqlNotificationType get(); };" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Data.SqlClient.SqlNotificationType" Usage="System.Data.SqlClient.SqlNotificationEventArgs.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SqlNotificationType</ReturnType>
@@ -114,6 +143,7 @@
         <summary>Gets a value that indicates whether this notification is generated because of an actual change, or by the subscription.</summary>
         <value>A value indicating whether the notification was generated by a change or a subscription.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

@@ -4,13 +4,18 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IXamlTypeResolver" />
   <TypeSignature Language="VB.NET" Value="Public Interface IXamlTypeResolver" />
   <TypeSignature Language="C++ CLI" Value="public interface class IXamlTypeResolver" />
+  <TypeSignature Language="F#" Value="type IXamlTypeResolver = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
@@ -29,6 +34,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Xaml.Schema.XamlTypeTypeConverter" />
+    <related type="Article" href="http://msdn.microsoft.com/library/0e11f386-808c-4eae-9ba6-029ad7ba2211">System.Xaml Conceptual Documentation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/db07a952-05ce-4aa4-b6f9-aac7397d0326">Type Converters or Markup Extensions for XAML</related>
   </Docs>
   <Members>
     <Member MemberName="Resolve">
@@ -37,10 +44,15 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IXamlTypeResolver.Resolve(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function Resolve (qualifiedTypeName As String) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ Resolve(System::String ^ qualifiedTypeName);" />
+      <MemberSignature Language="F#" Value="abstract member Resolve : string -&gt; Type" Usage="iXamlTypeResolver.Resolve qualifiedTypeName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>

@@ -4,8 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Drawing.BufferedGraphicsContext" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BufferedGraphicsContext&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class BufferedGraphicsContext sealed : IDisposable" />
+  <TypeSignature Language="F#" Value="type BufferedGraphicsContext = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Drawing.Common</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -47,6 +53,7 @@
     <altmember cref="T:System.Drawing.BufferedGraphics" />
     <altmember cref="T:System.Drawing.BufferedGraphicsManager" />
     <altmember cref="F:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer" />
+    <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -58,6 +65,11 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Common</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -76,6 +88,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
+        <related type="Article" href="~/docs/framework/winforms/advanced/how-to-manually-manage-buffered-graphics.md">How to: Manually Manage Buffered Graphics</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Allocate">
@@ -93,9 +107,15 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.BufferedGraphicsContext.Allocate(System.Drawing.Graphics,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Allocate (targetGraphics As Graphics, targetRectangle As Rectangle) As BufferedGraphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::BufferedGraphics ^ Allocate(System::Drawing::Graphics ^ targetGraphics, System::Drawing::Rectangle targetRectangle);" />
+      <MemberSignature Language="F#" Value="member this.Allocate : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; System.Drawing.BufferedGraphics" Usage="bufferedGraphicsContext.Allocate (targetGraphics, targetRectangle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Common</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -130,6 +150,7 @@
         <altmember cref="T:System.Drawing.BufferedGraphics" />
         <altmember cref="T:System.Drawing.Graphics" />
         <altmember cref="T:System.Drawing.Rectangle" />
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
       </Docs>
     </Member>
     <Member MemberName="Allocate">
@@ -138,9 +159,15 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.BufferedGraphicsContext.Allocate(System.IntPtr,System.Drawing.Rectangle)" />
       <MemberSignature Language="VB.NET" Value="Public Function Allocate (targetDC As IntPtr, targetRectangle As Rectangle) As BufferedGraphics" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::BufferedGraphics ^ Allocate(IntPtr targetDC, System::Drawing::Rectangle targetRectangle);" />
+      <MemberSignature Language="F#" Value="member this.Allocate : nativeint * System.Drawing.Rectangle -&gt; System.Drawing.BufferedGraphics" Usage="bufferedGraphicsContext.Allocate (targetDC, targetRectangle)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Common</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -176,6 +203,7 @@
         <altmember cref="T:System.Drawing.BufferedGraphics" />
         <altmember cref="T:System.IntPtr" />
         <altmember cref="T:System.Drawing.Rectangle" />
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -184,12 +212,18 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.BufferedGraphicsContext.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="bufferedGraphicsContext.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Common</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -209,6 +243,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
@@ -217,10 +252,15 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.BufferedGraphicsContext.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!BufferedGraphicsContext ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="bufferedGraphicsContext.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Common</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -237,9 +277,15 @@
       <MemberSignature Language="DocId" Value="M:System.Drawing.BufferedGraphicsContext.Invalidate" />
       <MemberSignature Language="VB.NET" Value="Public Sub Invalidate ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate();" />
+      <MemberSignature Language="F#" Value="member this.Invalidate : unit -&gt; unit" Usage="bufferedGraphicsContext.Invalidate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Common</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -256,6 +302,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
       </Docs>
     </Member>
     <Member MemberName="MaximumBuffer">
@@ -264,11 +311,22 @@
       <MemberSignature Language="DocId" Value="P:System.Drawing.BufferedGraphicsContext.MaximumBuffer" />
       <MemberSignature Language="VB.NET" Value="Public Property MaximumBuffer As Size" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size MaximumBuffer { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
+      <MemberSignature Language="F#" Value="member this.MaximumBuffer : System.Drawing.Size with get, set" Usage="System.Drawing.BufferedGraphicsContext.MaximumBuffer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Common</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
@@ -294,6 +352,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">The height or width of the size is less than or equal to zero.</exception>
         <permission cref="T:System.Security.Permissions.UIPermission">for allowing user access to all windows. Related enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
+        <related type="Article" href="~/docs/framework/winforms/advanced/double-buffered-graphics.md">Double Buffered Graphics</related>
       </Docs>
     </Member>
   </Members>

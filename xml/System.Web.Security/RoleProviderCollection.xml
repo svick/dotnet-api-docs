@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.RoleProviderCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RoleProviderCollection&#xA;Inherits ProviderCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class RoleProviderCollection sealed : System::Configuration::Provider::ProviderCollection" />
+  <TypeSignature Language="F#" Value="type RoleProviderCollection = class&#xA;    inherit ProviderCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,6 +32,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,8 +44,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates a new, empty role-provider collection.</summary>
@@ -54,6 +63,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -62,9 +72,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (provider As ProviderBase)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Configuration::Provider::ProviderBase ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Configuration.Provider.ProviderBase -&gt; unit" Usage="roleProviderCollection.Add provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,6 +100,7 @@
           <paramref name="provider" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="provider" /> is not of a type that inherits the <see cref="T:System.Web.Security.RoleProvider" /> abstract class.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -96,9 +109,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.RoleProviderCollection.CopyTo(System.Web.Security.RoleProvider[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As RoleProvider(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Security::RoleProvider ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Web.Security.RoleProvider[] * int -&gt; unit" Usage="roleProviderCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -128,6 +143,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -136,9 +152,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.RoleProviderCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As RoleProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Security::RoleProvider ^ default[System::String ^] { System::Web::Security::RoleProvider ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Security.RoleProvider" Usage="System.Web.Security.RoleProviderCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -167,6 +185,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
   </Members>

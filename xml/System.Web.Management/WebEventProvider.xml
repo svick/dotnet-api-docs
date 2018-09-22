@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebEventProvider" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebEventProvider&#xA;Inherits ProviderBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebEventProvider abstract : System::Configuration::Provider::ProviderBase" />
+  <TypeSignature Language="F#" Value="type WebEventProvider = class&#xA;    inherit ProviderBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -61,6 +63,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/e003f224-70fe-4cd8-a71a-2dc81e2d7e4c">ASP.NET Health Monitoring Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/bbb1c959-e6e4-42b2-be62-49b7ca5ab72c">Example: Custom Event Provider</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ab894e83-7e2f-4af8-a116-b1bff8f815b2">Installing and Configuring ASP.NET Providers</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -72,8 +77,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebEventProvider" /> class.</summary>
@@ -101,9 +112,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebEventProvider.Flush" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Flush ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Flush();" />
+      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit" Usage="webEventProvider.Flush " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,9 +149,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebEventProvider.ProcessEvent(System.Web.Management.WebBaseEvent)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ProcessEvent (raisedEvent As WebBaseEvent)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ProcessEvent(System::Web::Management::WebBaseEvent ^ raisedEvent);" />
+      <MemberSignature Language="F#" Value="abstract member ProcessEvent : System.Web.Management.WebBaseEvent -&gt; unit" Usage="webEventProvider.ProcessEvent raisedEvent" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -174,9 +189,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebEventProvider.Shutdown" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Shutdown ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Shutdown();" />
+      <MemberSignature Language="F#" Value="abstract member Shutdown : unit -&gt; unit" Usage="webEventProvider.Shutdown " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

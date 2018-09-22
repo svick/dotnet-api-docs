@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class ClientWindowsAuthenticationMembershipProvider&#xA;Inherits MembershipProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class ClientWindowsAuthenticationMembershipProvider : System::Web::Security::MembershipProvider" />
+  <TypeSignature Language="F#" Value="type ClientWindowsAuthenticationMembershipProvider = class&#xA;    inherit MembershipProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -44,6 +46,8 @@
     <altmember cref="T:System.Web.ClientServices.Providers.ClientRoleProvider" />
     <altmember cref="P:System.Web.Security.Membership.Provider" />
     <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8">How to: Configure Client Application Services</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -55,12 +59,19 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ApplicationName">
@@ -69,9 +80,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ApplicationName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ApplicationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ApplicationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -88,6 +101,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ChangePassword">
@@ -96,9 +110,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ChangePassword(System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ChangePassword (username As String, oldPassword As String, newPassword As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ChangePassword(System::String ^ username, System::String ^ oldPassword, System::String ^ newPassword);" />
+      <MemberSignature Language="F#" Value="override this.ChangePassword : string * string * string -&gt; bool" Usage="clientWindowsAuthenticationMembershipProvider.ChangePassword (username, oldPassword, newPassword)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,6 +133,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ChangePasswordQuestionAndAnswer">
@@ -125,9 +142,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ChangePasswordQuestionAndAnswer(System.String,System.String,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ChangePasswordQuestionAndAnswer (username As String, password As String, newPasswordQuestion As String, newPasswordAnswer As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ChangePasswordQuestionAndAnswer(System::String ^ username, System::String ^ password, System::String ^ newPasswordQuestion, System::String ^ newPasswordAnswer);" />
+      <MemberSignature Language="F#" Value="override this.ChangePasswordQuestionAndAnswer : string * string * string * string -&gt; bool" Usage="clientWindowsAuthenticationMembershipProvider.ChangePasswordQuestionAndAnswer (username, password, newPasswordQuestion, newPasswordAnswer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,6 +167,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="CreateUser">
@@ -156,9 +176,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.CreateUser(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Object,System.Web.Security.MembershipCreateStatus@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateUser (username As String, password As String, email As String, passwordQuestion As String, passwordAnswer As String, isApproved As Boolean, providerUserKey As Object, ByRef status As MembershipCreateStatus) As MembershipUser" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUser ^ CreateUser(System::String ^ username, System::String ^ password, System::String ^ email, System::String ^ passwordQuestion, System::String ^ passwordAnswer, bool isApproved, System::Object ^ providerUserKey, [Runtime::InteropServices::Out] System::Web::Security::MembershipCreateStatus % status);" />
+      <MemberSignature Language="F#" Value="override this.CreateUser : string * string * string * string * string * bool * obj *  -&gt; System.Web.Security.MembershipUser" Usage="clientWindowsAuthenticationMembershipProvider.CreateUser (username, password, email, passwordQuestion, passwordAnswer, isApproved, providerUserKey, status)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -172,7 +194,7 @@
         <Parameter Name="passwordAnswer" Type="System.String" />
         <Parameter Name="isApproved" Type="System.Boolean" />
         <Parameter Name="providerUserKey" Type="System.Object" />
-        <Parameter Name="status" Type="System.Web.Security.MembershipCreateStatus&amp;" RefType="out" />
+        <Parameter Name="status" Type="System.Web.Security.MembershipCreateStatus" RefType="out" />
       </Parameters>
       <Docs>
         <param name="username">Not used.</param>
@@ -187,6 +209,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="DeleteUser">
@@ -195,9 +218,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.DeleteUser(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DeleteUser (username As String, deleteAllRelatedData As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool DeleteUser(System::String ^ username, bool deleteAllRelatedData);" />
+      <MemberSignature Language="F#" Value="override this.DeleteUser : string * bool -&gt; bool" Usage="clientWindowsAuthenticationMembershipProvider.DeleteUser (username, deleteAllRelatedData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -214,6 +239,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="EnablePasswordReset">
@@ -222,9 +248,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.EnablePasswordReset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property EnablePasswordReset As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnablePasswordReset { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnablePasswordReset : bool" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.EnablePasswordReset" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -241,6 +269,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="EnablePasswordRetrieval">
@@ -249,9 +278,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.EnablePasswordRetrieval" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property EnablePasswordRetrieval As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnablePasswordRetrieval { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.EnablePasswordRetrieval : bool" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.EnablePasswordRetrieval" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -268,6 +299,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="FindUsersByEmail">
@@ -276,9 +308,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.FindUsersByEmail(System.String,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FindUsersByEmail (emailToMatch As String, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As MembershipUserCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUserCollection ^ FindUsersByEmail(System::String ^ emailToMatch, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="override this.FindUsersByEmail : string * int * int *  -&gt; System.Web.Security.MembershipUserCollection" Usage="clientWindowsAuthenticationMembershipProvider.FindUsersByEmail (emailToMatch, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -288,7 +322,7 @@
         <Parameter Name="emailToMatch" Type="System.String" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="emailToMatch">Not used.</param>
@@ -299,6 +333,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="FindUsersByName">
@@ -307,9 +342,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.FindUsersByName(System.String,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FindUsersByName (usernameToMatch As String, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As MembershipUserCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUserCollection ^ FindUsersByName(System::String ^ usernameToMatch, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="override this.FindUsersByName : string * int * int *  -&gt; System.Web.Security.MembershipUserCollection" Usage="clientWindowsAuthenticationMembershipProvider.FindUsersByName (usernameToMatch, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -319,7 +356,7 @@
         <Parameter Name="usernameToMatch" Type="System.String" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="usernameToMatch">Not used.</param>
@@ -330,6 +367,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllUsers">
@@ -338,9 +376,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetAllUsers(System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAllUsers (pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As MembershipUserCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUserCollection ^ GetAllUsers(int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="override this.GetAllUsers : int * int *  -&gt; System.Web.Security.MembershipUserCollection" Usage="clientWindowsAuthenticationMembershipProvider.GetAllUsers (pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -349,7 +389,7 @@
       <Parameters>
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pageIndex">Not used.</param>
@@ -359,6 +399,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetNumberOfUsersOnline">
@@ -367,9 +408,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetNumberOfUsersOnline" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetNumberOfUsersOnline () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetNumberOfUsersOnline();" />
+      <MemberSignature Language="F#" Value="override this.GetNumberOfUsersOnline : unit -&gt; int" Usage="clientWindowsAuthenticationMembershipProvider.GetNumberOfUsersOnline " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -381,6 +424,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetPassword">
@@ -389,9 +433,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetPassword(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPassword (username As String, answer As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetPassword(System::String ^ username, System::String ^ answer);" />
+      <MemberSignature Language="F#" Value="override this.GetPassword : string * string -&gt; string" Usage="clientWindowsAuthenticationMembershipProvider.GetPassword (username, answer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -408,6 +454,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetUser">
@@ -417,6 +464,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>This method is not used by this class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetUser">
@@ -425,9 +473,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetUser(System.Object,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetUser (providerUserKey As Object, userIsOnline As Boolean) As MembershipUser" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUser ^ GetUser(System::Object ^ providerUserKey, bool userIsOnline);" />
+      <MemberSignature Language="F#" Value="override this.GetUser : obj * bool -&gt; System.Web.Security.MembershipUser" Usage="clientWindowsAuthenticationMembershipProvider.GetUser (providerUserKey, userIsOnline)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -444,6 +494,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetUser">
@@ -452,9 +503,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetUser(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetUser (username As String, userIsOnline As Boolean) As MembershipUser" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::Security::MembershipUser ^ GetUser(System::String ^ username, bool userIsOnline);" />
+      <MemberSignature Language="F#" Value="override this.GetUser : string * bool -&gt; System.Web.Security.MembershipUser" Usage="clientWindowsAuthenticationMembershipProvider.GetUser (username, userIsOnline)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -471,6 +524,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="GetUserNameByEmail">
@@ -479,9 +533,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.GetUserNameByEmail(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetUserNameByEmail (email As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetUserNameByEmail(System::String ^ email);" />
+      <MemberSignature Language="F#" Value="override this.GetUserNameByEmail : string -&gt; string" Usage="clientWindowsAuthenticationMembershipProvider.GetUserNameByEmail email" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -496,6 +552,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="Logout">
@@ -504,9 +561,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout" />
       <MemberSignature Language="VB.NET" Value="Public Sub Logout ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Logout();" />
+      <MemberSignature Language="F#" Value="member this.Logout : unit -&gt; unit" Usage="clientWindowsAuthenticationMembershipProvider.Logout " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -532,6 +591,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser(System.String,System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="MaxInvalidPasswordAttempts">
@@ -540,9 +600,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.MaxInvalidPasswordAttempts" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MaxInvalidPasswordAttempts As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaxInvalidPasswordAttempts { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MaxInvalidPasswordAttempts : int" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.MaxInvalidPasswordAttempts" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -559,6 +621,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="MinRequiredNonAlphanumericCharacters">
@@ -567,9 +630,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.MinRequiredNonAlphanumericCharacters" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MinRequiredNonAlphanumericCharacters As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MinRequiredNonAlphanumericCharacters { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinRequiredNonAlphanumericCharacters : int" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.MinRequiredNonAlphanumericCharacters" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -586,6 +651,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="MinRequiredPasswordLength">
@@ -594,9 +660,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.MinRequiredPasswordLength" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MinRequiredPasswordLength As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MinRequiredPasswordLength { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinRequiredPasswordLength : int" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.MinRequiredPasswordLength" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -613,6 +681,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordAttemptWindow">
@@ -621,9 +690,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.PasswordAttemptWindow" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PasswordAttemptWindow As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int PasswordAttemptWindow { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.PasswordAttemptWindow : int" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.PasswordAttemptWindow" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -640,6 +711,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordFormat">
@@ -648,9 +720,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.PasswordFormat" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PasswordFormat As MembershipPasswordFormat" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Security::MembershipPasswordFormat PasswordFormat { System::Web::Security::MembershipPasswordFormat get(); };" />
+      <MemberSignature Language="F#" Value="member this.PasswordFormat : System.Web.Security.MembershipPasswordFormat" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.PasswordFormat" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -667,6 +741,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="PasswordStrengthRegularExpression">
@@ -675,9 +750,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.PasswordStrengthRegularExpression" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PasswordStrengthRegularExpression As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PasswordStrengthRegularExpression { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PasswordStrengthRegularExpression : string" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.PasswordStrengthRegularExpression" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -694,6 +771,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="RequiresQuestionAndAnswer">
@@ -702,9 +780,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.RequiresQuestionAndAnswer" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RequiresQuestionAndAnswer As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresQuestionAndAnswer { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequiresQuestionAndAnswer : bool" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.RequiresQuestionAndAnswer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -721,6 +801,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="RequiresUniqueEmail">
@@ -729,9 +810,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.RequiresUniqueEmail" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RequiresUniqueEmail As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresUniqueEmail { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequiresUniqueEmail : bool" Usage="System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.RequiresUniqueEmail" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -748,6 +831,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ResetPassword">
@@ -756,9 +840,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ResetPassword(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ResetPassword (username As String, answer As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ResetPassword(System::String ^ username, System::String ^ answer);" />
+      <MemberSignature Language="F#" Value="override this.ResetPassword : string * string -&gt; string" Usage="clientWindowsAuthenticationMembershipProvider.ResetPassword (username, answer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -775,6 +861,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="UnlockUser">
@@ -783,9 +870,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.UnlockUser(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function UnlockUser (username As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool UnlockUser(System::String ^ username);" />
+      <MemberSignature Language="F#" Value="override this.UnlockUser : string -&gt; bool" Usage="clientWindowsAuthenticationMembershipProvider.UnlockUser username" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -800,6 +889,7 @@
         <returns>Not applicable. This method always throws an exception.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="UpdateUser">
@@ -808,9 +898,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.UpdateUser(System.Web.Security.MembershipUser)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub UpdateUser (user As MembershipUser)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void UpdateUser(System::Web::Security::MembershipUser ^ user);" />
+      <MemberSignature Language="F#" Value="override this.UpdateUser : System.Web.Security.MembershipUser -&gt; unit" Usage="clientWindowsAuthenticationMembershipProvider.UpdateUser user" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -824,6 +916,7 @@
         <summary>This method is not used by this class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">Always thrown.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateUser">
@@ -832,9 +925,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.ValidateUser(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ValidateUser (username As String, password As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ValidateUser(System::String ^ username, System::String ^ password);" />
+      <MemberSignature Language="F#" Value="override this.ValidateUser : string * string -&gt; bool" Usage="clientWindowsAuthenticationMembershipProvider.ValidateUser (username, password)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -877,6 +972,8 @@
         <altmember cref="T:System.Security.Principal.WindowsIdentity" />
         <altmember cref="T:System.Web.ClientServices.Providers.ClientRoleProvider" />
         <altmember cref="M:System.Web.ClientServices.Providers.ClientWindowsAuthenticationMembershipProvider.Logout" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1487d8df-089e-4f21-abfb-a791a652b58e">Client Application Services</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8">How to: Configure Client Application Services</related>
       </Docs>
     </Member>
   </Members>

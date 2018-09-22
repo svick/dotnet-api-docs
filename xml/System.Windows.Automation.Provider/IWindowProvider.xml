@@ -4,20 +4,25 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IWindowProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IWindowProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IWindowProvider" />
+  <TypeSignature Language="F#" Value="type IWindowProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.Guid("987df77b-db06-4d77-8f8a-86a9c3bb90b9")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -31,6 +36,11 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Automation.WindowPattern" />
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/6acc6d08-bd67-4e2e-915c-9c1d34eb86fe">Server-side UI Automation Provider Implementation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/3584c0a1-9cd0-4968-8b63-b06390890ef6">Client-side UI Automation Provider Implementation</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0d635c35-ffa8-4dc8-bbc9-12fcd5445776">Support Control Patterns in a UI Automation Provider</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -39,9 +49,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IWindowProvider.Close" />
       <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="iWindowProvider.Close " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -64,6 +76,7 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">When the control is unable to perform the requested action.</exception>
         <exception cref="T:System.Windows.Automation.ElementNotAvailableException">When the target element is no longer available (for example, the window has closed).</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="InteractionState">
@@ -72,9 +85,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IWindowProvider.InteractionState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InteractionState As WindowInteractionState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::WindowInteractionState InteractionState { System::Windows::Automation::WindowInteractionState get(); };" />
+      <MemberSignature Language="F#" Value="member this.InteractionState : System.Windows.Automation.WindowInteractionState" Usage="System.Windows.Automation.Provider.IWindowProvider.InteractionState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -84,6 +99,7 @@
         <summary>Gets the interaction state of the window.</summary>
         <value>The <see cref="T:System.Windows.Automation.WindowInteractionState" /> of the control.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="IsModal">
@@ -92,9 +108,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IWindowProvider.IsModal" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsModal As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsModal { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsModal : bool" Usage="System.Windows.Automation.Provider.IWindowProvider.IsModal" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -105,6 +123,7 @@
         <value>
           <see langword="true" /> if the window is modal; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="IsTopmost">
@@ -113,9 +132,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IWindowProvider.IsTopmost" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTopmost As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTopmost { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsTopmost : bool" Usage="System.Windows.Automation.Provider.IWindowProvider.IsTopmost" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,6 +147,7 @@
         <value>
           <see langword="true" /> if the window is topmost; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="Maximizable">
@@ -134,9 +156,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IWindowProvider.Maximizable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Maximizable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Maximizable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Maximizable : bool" Usage="System.Windows.Automation.Provider.IWindowProvider.Maximizable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -147,6 +171,7 @@
         <value>
           <see langword="true" /> if the window can be maximized; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="Minimizable">
@@ -155,9 +180,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IWindowProvider.Minimizable" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Minimizable As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Minimizable { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.Minimizable : bool" Usage="System.Windows.Automation.Provider.IWindowProvider.Minimizable" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -168,6 +195,7 @@
         <value>
           <see langword="true" /> if the window can be minimized; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="SetVisualState">
@@ -176,9 +204,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IWindowProvider.SetVisualState(System.Windows.Automation.WindowVisualState)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetVisualState (state As WindowVisualState)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetVisualState(System::Windows::Automation::WindowVisualState state);" />
+      <MemberSignature Language="F#" Value="abstract member SetVisualState : System.Windows.Automation.WindowVisualState -&gt; unit" Usage="iWindowProvider.SetVisualState state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -192,6 +222,7 @@
         <summary>Changes the visual state of the window. For example, minimizes or maximizes it.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">When the control does not support the requested behavior.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="VisualState">
@@ -200,9 +231,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Provider.IWindowProvider.VisualState" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisualState As WindowVisualState" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::WindowVisualState VisualState { System::Windows::Automation::WindowVisualState get(); };" />
+      <MemberSignature Language="F#" Value="member this.VisualState : System.Windows.Automation.WindowVisualState" Usage="System.Windows.Automation.Provider.IWindowProvider.VisualState" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -212,6 +245,7 @@
         <summary>Gets the visual state of the window.</summary>
         <value>The visual state of the window.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="WaitForInputIdle">
@@ -220,9 +254,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IWindowProvider.WaitForInputIdle(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function WaitForInputIdle (milliseconds As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool WaitForInputIdle(int milliseconds);" />
+      <MemberSignature Language="F#" Value="abstract member WaitForInputIdle : int -&gt; bool" Usage="iWindowProvider.WaitForInputIdle milliseconds" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -247,6 +283,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">When the parameter passed in is not a valid number.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a28cb286-296e-4a62-b4cb-55ad636ebccc">Implementing the UI Automation Window Control Pattern</related>
       </Docs>
     </Member>
   </Members>

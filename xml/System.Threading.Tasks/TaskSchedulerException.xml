@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskSchedulerException" />
   <TypeSignature Language="VB.NET" Value="Public Class TaskSchedulerException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class TaskSchedulerException : Exception" />
+  <TypeSignature Language="F#" Value="type TaskSchedulerException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +25,17 @@
     <BaseTypeName>System.Exception</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents an exception used to communicate an invalid operation by a <see cref="T:System.Threading.Tasks.TaskScheduler" />.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+    <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+    <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -83,6 +91,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -91,6 +101,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskSchedulerException.#ctor(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskSchedulerException(Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskSchedulerException : Exception -&gt; System.Threading.Tasks.TaskSchedulerException" Usage="new System.Threading.Tasks.TaskSchedulerException innerException" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -116,6 +127,8 @@
         <summary>Initializes a new instance of the <see cref="T:System.Threading.Tasks.TaskSchedulerException" /> class using the default error message and a reference to the inner exception that is the cause of this exception.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -124,6 +137,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskSchedulerException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskSchedulerException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskSchedulerException : string -&gt; System.Threading.Tasks.TaskSchedulerException" Usage="new System.Threading.Tasks.TaskSchedulerException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -161,6 +175,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -169,6 +185,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskSchedulerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; TaskSchedulerException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskSchedulerException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Threading.Tasks.TaskSchedulerException" Usage="new System.Threading.Tasks.TaskSchedulerException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -200,6 +217,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/p/?LinkID=248602">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -208,6 +226,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.TaskSchedulerException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TaskSchedulerException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.TaskSchedulerException : string * Exception -&gt; System.Threading.Tasks.TaskSchedulerException" Usage="new System.Threading.Tasks.TaskSchedulerException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -249,6 +268,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Threading.Tasks.TaskScheduler" />
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="~/docs/standard/parallel-programming/task-based-asynchronous-programming.md">Task-based Asynchronous Programming</related>
       </Docs>
     </Member>
   </Members>

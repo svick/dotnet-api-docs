@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceThrottlingBehavior" />
   <TypeSignature Language="VB.NET" Value="Public Class ServiceThrottlingBehavior&#xA;Implements IServiceBehavior" />
   <TypeSignature Language="C++ CLI" Value="public ref class ServiceThrottlingBehavior : System::ServiceModel::Description::IServiceBehavior" />
+  <TypeSignature Language="F#" Value="type ServiceThrottlingBehavior = class&#xA;    interface IServiceBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -57,6 +59,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -78,11 +81,18 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxConcurrentCalls As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConcurrentCalls { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxConcurrentCalls : int with get, set" Usage="System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -93,7 +103,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> property specifies the maximum number of messages actively processing across a <xref:System.ServiceModel.ServiceHost> object. Each channel can have one pending message that does not count against the value of <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> until [!INCLUDE[indigo1](~/includes/indigo1-md.md)] begins to process it.  
+ The <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> property specifies the maximum number of messages actively processing across a <xref:System.ServiceModel.ServiceHost> object. Each channel can have one pending message that does not count against the value of <xref:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentCalls%2A> until Windows Communication Foundation (WCF) begins to process it.  
   
  You can also set the values of this attribute by using the [&lt;serviceThrottling&gt;](~/docs/framework/configure-apps/file-schema/wcf/servicethrottling.md) element in an application configuration file.  
   
@@ -117,9 +127,11 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentInstances" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxConcurrentInstances As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConcurrentInstances { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxConcurrentInstances : int with get, set" Usage="System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentInstances" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -153,11 +165,18 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentSessions" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxConcurrentSessions As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConcurrentSessions { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxConcurrentSessions : int with get, set" Usage="System.ServiceModel.Description.ServiceThrottlingBehavior.MaxConcurrentSessions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -200,6 +219,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -238,6 +258,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -272,6 +293,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Configuration.IApplicationSettingsProvider" />
   <TypeSignature Language="VB.NET" Value="Public Interface IApplicationSettingsProvider" />
   <TypeSignature Language="C++ CLI" Value="public interface class IApplicationSettingsProvider" />
+  <TypeSignature Language="F#" Value="type IApplicationSettingsProvider = interface" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -36,6 +38,7 @@
     </remarks>
     <altmember cref="T:System.Configuration.SettingsProvider" />
     <altmember cref="T:System.Configuration.ApplicationSettingsBase" />
+    <related type="Article" href="http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562">Application Settings Architecture</related>
   </Docs>
   <Members>
     <Member MemberName="GetPreviousVersion">
@@ -44,9 +47,11 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.IApplicationSettingsProvider.GetPreviousVersion(System.Configuration.SettingsContext,System.Configuration.SettingsProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetPreviousVersion (context As SettingsContext, property As SettingsProperty) As SettingsPropertyValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::SettingsPropertyValue ^ GetPreviousVersion(System::Configuration::SettingsContext ^ context, System::Configuration::SettingsProperty ^ property);" />
+      <MemberSignature Language="F#" Value="abstract member GetPreviousVersion : System.Configuration.SettingsContext * System.Configuration.SettingsProperty -&gt; System.Configuration.SettingsPropertyValue" Usage="iApplicationSettingsProvider.GetPreviousVersion (context, property)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -76,6 +81,7 @@
         <permission cref="T:System.Security.SecurityException">For <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /> permission.</permission>
         <altmember cref="M:System.Configuration.IApplicationSettingsProvider.Upgrade(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)" />
         <altmember cref="M:System.Configuration.ApplicationSettingsBase.GetPreviousVersion(System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/649f1342-766b-49e6-a90d-5b019a751e11">Side-by-Side Execution</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -84,9 +90,11 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.IApplicationSettingsProvider.Reset(System.Configuration.SettingsContext)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Reset (context As SettingsContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset(System::Configuration::SettingsContext ^ context);" />
+      <MemberSignature Language="F#" Value="abstract member Reset : System.Configuration.SettingsContext -&gt; unit" Usage="iApplicationSettingsProvider.Reset context" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -123,9 +131,11 @@
       <MemberSignature Language="DocId" Value="M:System.Configuration.IApplicationSettingsProvider.Upgrade(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Upgrade (context As SettingsContext, properties As SettingsPropertyCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Upgrade(System::Configuration::SettingsContext ^ context, System::Configuration::SettingsPropertyCollection ^ properties);" />
+      <MemberSignature Language="F#" Value="abstract member Upgrade : System.Configuration.SettingsContext * System.Configuration.SettingsPropertyCollection -&gt; unit" Usage="iApplicationSettingsProvider.Upgrade (context, properties)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -159,6 +169,7 @@
         <altmember cref="M:System.Configuration.IApplicationSettingsProvider.GetPreviousVersion(System.Configuration.SettingsContext,System.Configuration.SettingsProperty)" />
         <altmember cref="M:System.Configuration.ApplicationSettingsBase.Upgrade" />
         <altmember cref="T:System.Configuration.NoSettingsVersionUpgradeAttribute" />
+        <related type="Article" href="http://msdn.microsoft.com/library/649f1342-766b-49e6-a90d-5b019a751e11">Side-by-Side Execution</related>
       </Docs>
     </Member>
   </Members>

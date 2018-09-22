@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Parallel" />
   <TypeSignature Language="VB.NET" Value="Public Class Parallel" />
   <TypeSignature Language="C++ CLI" Value="public ref class Parallel abstract sealed" />
+  <TypeSignature Language="F#" Value="type Parallel = class" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +42,8 @@
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Threading.Tasks.Parallel" /> are thread-safe and may be used concurrently from multiple threads.</threadsafe>
+    <related type="Article" href="~/docs/standard/parallel-programming/data-parallelism-task-parallel-library.md">Data Parallelism (Task Parallel Library)</related>
+    <related type="ExternalDocumentation" href="https://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364">Samples for Parallel Programming with the .NET Framework</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="For">
@@ -59,6 +62,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For(System.Int32,System.Int32,System.Action{System.Int32,System.Threading.Tasks.ParallelLoopState})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function For (fromInclusive As Integer, toExclusive As Integer, body As Action(Of Integer, ParallelLoopState)) As ParallelLoopResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::ParallelLoopResult For(int fromInclusive, int toExclusive, Action&lt;int, System::Threading::Tasks::ParallelLoopState ^&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member For : int * int * Action&lt;int, System.Threading.Tasks.ParallelLoopState&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.For (fromInclusive, toExclusive, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -123,6 +127,7 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <altmember cref="T:System.Threading.Tasks.ParallelLoopState" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -131,6 +136,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For(System.Int32,System.Int32,System.Action{System.Int32})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function For (fromInclusive As Integer, toExclusive As Integer, body As Action(Of Integer)) As ParallelLoopResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::ParallelLoopResult For(int fromInclusive, int toExclusive, Action&lt;int&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member For : int * int * Action&lt;int&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.For (fromInclusive, toExclusive, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -180,6 +186,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -188,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For(System.Int64,System.Int64,System.Action{System.Int64,System.Threading.Tasks.ParallelLoopState})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function For (fromInclusive As Long, toExclusive As Long, body As Action(Of Long, ParallelLoopState)) As ParallelLoopResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::ParallelLoopResult For(long fromInclusive, long toExclusive, Action&lt;long, System::Threading::Tasks::ParallelLoopState ^&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member For : int64 * int64 * Action&lt;int64, System.Threading.Tasks.ParallelLoopState&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.For (fromInclusive, toExclusive, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -237,6 +245,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -245,6 +254,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For(System.Int64,System.Int64,System.Action{System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function For (fromInclusive As Long, toExclusive As Long, body As Action(Of Long)) As ParallelLoopResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::ParallelLoopResult For(long fromInclusive, long toExclusive, Action&lt;long&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member For : int64 * int64 * Action&lt;int64&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.For (fromInclusive, toExclusive, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -286,6 +296,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -293,6 +304,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For(int32 fromInclusive, int32 toExclusive, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`2&lt;int32, class System.Threading.Tasks.ParallelLoopState&gt; body) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For(System.Int32,System.Int32,System.Threading.Tasks.ParallelOptions,System.Action{System.Int32,System.Threading.Tasks.ParallelLoopState})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::ParallelLoopResult For(int fromInclusive, int toExclusive, System::Threading::Tasks::ParallelOptions ^ parallelOptions, Action&lt;int, System::Threading::Tasks::ParallelLoopState ^&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member For : int * int * System.Threading.Tasks.ParallelOptions * Action&lt;int, System.Threading.Tasks.ParallelLoopState&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.For (fromInclusive, toExclusive, parallelOptions, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -342,6 +354,7 @@
  The <paramref name="parallelOptions" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -349,6 +362,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For(int32 fromInclusive, int32 toExclusive, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`1&lt;int32&gt; body) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For(System.Int32,System.Int32,System.Threading.Tasks.ParallelOptions,System.Action{System.Int32})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::ParallelLoopResult For(int fromInclusive, int toExclusive, System::Threading::Tasks::ParallelOptions ^ parallelOptions, Action&lt;int&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member For : int * int * System.Threading.Tasks.ParallelOptions * Action&lt;int&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.For (fromInclusive, toExclusive, parallelOptions, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -406,6 +420,7 @@
  The <paramref name="parallelOptions" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -413,6 +428,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For(int64 fromInclusive, int64 toExclusive, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`2&lt;int64, class System.Threading.Tasks.ParallelLoopState&gt; body) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For(System.Int64,System.Int64,System.Threading.Tasks.ParallelOptions,System.Action{System.Int64,System.Threading.Tasks.ParallelLoopState})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::ParallelLoopResult For(long fromInclusive, long toExclusive, System::Threading::Tasks::ParallelOptions ^ parallelOptions, Action&lt;long, System::Threading::Tasks::ParallelLoopState ^&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member For : int64 * int64 * System.Threading.Tasks.ParallelOptions * Action&lt;int64, System.Threading.Tasks.ParallelLoopState&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.For (fromInclusive, toExclusive, parallelOptions, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -470,6 +486,7 @@
  The <paramref name="parallelOptions" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For">
@@ -477,6 +494,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For(int64 fromInclusive, int64 toExclusive, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`1&lt;int64&gt; body) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For(System.Int64,System.Int64,System.Threading.Tasks.ParallelOptions,System.Action{System.Int64})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::ParallelLoopResult For(long fromInclusive, long toExclusive, System::Threading::Tasks::ParallelOptions ^ parallelOptions, Action&lt;long&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member For : int64 * int64 * System.Threading.Tasks.ParallelOptions * Action&lt;int64&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.For (fromInclusive, toExclusive, parallelOptions, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -534,6 +552,7 @@
  The <paramref name="parallelOptions" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For&lt;TLocal&gt;">
@@ -542,6 +561,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For``1(System.Int32,System.Int32,System.Func{``0},System.Func{System.Int32,System.Threading.Tasks.ParallelLoopState,``0,``0},System.Action{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function For(Of TLocal) (fromInclusive As Integer, toExclusive As Integer, localInit As Func(Of TLocal), body As Func(Of Integer, ParallelLoopState, TLocal, TLocal), localFinally As Action(Of TLocal)) As ParallelLoopResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TLocal&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult For(int fromInclusive, int toExclusive, Func&lt;TLocal&gt; ^ localInit, Func&lt;int, System::Threading::Tasks::ParallelLoopState ^, TLocal, TLocal&gt; ^ body, Action&lt;TLocal&gt; ^ localFinally);" />
+      <MemberSignature Language="F#" Value="static member For : int * int * Func&lt;'Local&gt; * Func&lt;int, System.Threading.Tasks.ParallelLoopState, 'Local, 'Local&gt; * Action&lt;'Local&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.For (fromInclusive, toExclusive, localInit, body, localFinally)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -605,6 +625,7 @@
   
  The <paramref name="localFinally" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For&lt;TLocal&gt;">
@@ -613,6 +634,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For``1(System.Int64,System.Int64,System.Func{``0},System.Func{System.Int64,System.Threading.Tasks.ParallelLoopState,``0,``0},System.Action{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function For(Of TLocal) (fromInclusive As Long, toExclusive As Long, localInit As Func(Of TLocal), body As Func(Of Long, ParallelLoopState, TLocal, TLocal), localFinally As Action(Of TLocal)) As ParallelLoopResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TLocal&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult For(long fromInclusive, long toExclusive, Func&lt;TLocal&gt; ^ localInit, Func&lt;long, System::Threading::Tasks::ParallelLoopState ^, TLocal, TLocal&gt; ^ body, Action&lt;TLocal&gt; ^ localFinally);" />
+      <MemberSignature Language="F#" Value="static member For : int64 * int64 * Func&lt;'Local&gt; * Func&lt;int64, System.Threading.Tasks.ParallelLoopState, 'Local, 'Local&gt; * Action&lt;'Local&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.For (fromInclusive, toExclusive, localInit, body, localFinally)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -676,6 +698,7 @@
   
  The <paramref name="localFinally" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For&lt;TLocal&gt;">
@@ -683,6 +706,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For&lt;TLocal&gt;(int32 fromInclusive, int32 toExclusive, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`4&lt;int32, class System.Threading.Tasks.ParallelLoopState, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For``1(System.Int32,System.Int32,System.Threading.Tasks.ParallelOptions,System.Func{``0},System.Func{System.Int32,System.Threading.Tasks.ParallelLoopState,``0,``0},System.Action{``0})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TLocal&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult For(int fromInclusive, int toExclusive, System::Threading::Tasks::ParallelOptions ^ parallelOptions, Func&lt;TLocal&gt; ^ localInit, Func&lt;int, System::Threading::Tasks::ParallelLoopState ^, TLocal, TLocal&gt; ^ body, Action&lt;TLocal&gt; ^ localFinally);" />
+      <MemberSignature Language="F#" Value="static member For : int * int * System.Threading.Tasks.ParallelOptions * Func&lt;'Local&gt; * Func&lt;int, System.Threading.Tasks.ParallelLoopState, 'Local, 'Local&gt; * Action&lt;'Local&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.For (fromInclusive, toExclusive, parallelOptions, localInit, body, localFinally)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -760,6 +784,7 @@
         <exception cref="T:System.OperationCanceledException">The <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> argument is canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="For&lt;TLocal&gt;">
@@ -767,6 +792,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult For&lt;TLocal&gt;(int64 fromInclusive, int64 toExclusive, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`4&lt;int64, class System.Threading.Tasks.ParallelLoopState, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.For``1(System.Int64,System.Int64,System.Threading.Tasks.ParallelOptions,System.Func{``0},System.Func{System.Int64,System.Threading.Tasks.ParallelLoopState,``0,``0},System.Action{``0})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TLocal&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult For(long fromInclusive, long toExclusive, System::Threading::Tasks::ParallelOptions ^ parallelOptions, Func&lt;TLocal&gt; ^ localInit, Func&lt;long, System::Threading::Tasks::ParallelLoopState ^, TLocal, TLocal&gt; ^ body, Action&lt;TLocal&gt; ^ localFinally);" />
+      <MemberSignature Language="F#" Value="static member For : int64 * int64 * System.Threading.Tasks.ParallelOptions * Func&lt;'Local&gt; * Func&lt;int64, System.Threading.Tasks.ParallelLoopState, 'Local, 'Local&gt; * Action&lt;'Local&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.For (fromInclusive, toExclusive, parallelOptions, localInit, body, localFinally)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -836,6 +862,7 @@
         <exception cref="T:System.OperationCanceledException">The <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> argument is canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ForEach&lt;TSource&gt;">
@@ -854,6 +881,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Concurrent.OrderablePartitioner{``0},System.Action{``0,System.Threading.Tasks.ParallelLoopState,System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForEach(Of TSource) (source As OrderablePartitioner(Of TSource), body As Action(Of TSource, ParallelLoopState, Long)) As ParallelLoopResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Concurrent::OrderablePartitioner&lt;TSource&gt; ^ source, Action&lt;TSource, System::Threading::Tasks::ParallelLoopState ^, long&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member ForEach : System.Collections.Concurrent.OrderablePartitioner&lt;'Source&gt; * Action&lt;'Source, System.Threading.Tasks.ParallelLoopState, int64&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -907,6 +935,7 @@
  -or-  
   
  Any methods in the source orderable partitioner return <see langword="null" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -915,6 +944,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Concurrent.Partitioner{``0},System.Action{``0,System.Threading.Tasks.ParallelLoopState})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForEach(Of TSource) (source As Partitioner(Of TSource), body As Action(Of TSource, ParallelLoopState)) As ParallelLoopResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Concurrent::Partitioner&lt;TSource&gt; ^ source, Action&lt;TSource, System::Threading::Tasks::ParallelLoopState ^&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member ForEach : System.Collections.Concurrent.Partitioner&lt;'Source&gt; * Action&lt;'Source, System.Threading.Tasks.ParallelLoopState&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -968,6 +998,7 @@
  -or-  
   
  The <see cref="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)" /> method in the <paramref name="source" /> partitioner does not return the correct number of partitions.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -976,6 +1007,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Concurrent.Partitioner{``0},System.Action{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForEach(Of TSource) (source As Partitioner(Of TSource), body As Action(Of TSource)) As ParallelLoopResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Concurrent::Partitioner&lt;TSource&gt; ^ source, Action&lt;TSource&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member ForEach : System.Collections.Concurrent.Partitioner&lt;'Source&gt; * Action&lt;'Source&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -1037,6 +1069,7 @@
  -or-  
   
  The <see cref="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)" /> method in the <paramref name="source" /> partitioner does not return the correct number of partitions.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1045,6 +1078,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,System.Threading.Tasks.ParallelLoopState,System.Int64})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForEach(Of TSource) (source As IEnumerable(Of TSource), body As Action(Of TSource, ParallelLoopState, Long)) As ParallelLoopResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, Action&lt;TSource, System::Threading::Tasks::ParallelLoopState ^, long&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member ForEach : seq&lt;'Source&gt; * Action&lt;'Source, System.Threading.Tasks.ParallelLoopState, int64&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -1090,6 +1124,7 @@
   
  The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1098,6 +1133,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0,System.Threading.Tasks.ParallelLoopState})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForEach(Of TSource) (source As IEnumerable(Of TSource), body As Action(Of TSource, ParallelLoopState)) As ParallelLoopResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, Action&lt;TSource, System::Threading::Tasks::ParallelLoopState ^&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member ForEach : seq&lt;'Source&gt; * Action&lt;'Source, System.Threading.Tasks.ParallelLoopState&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -1143,6 +1179,7 @@
   
  The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1151,6 +1188,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForEach(Of TSource) (source As IEnumerable(Of TSource), body As Action(Of TSource)) As ParallelLoopResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, Action&lt;TSource&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member ForEach : seq&lt;'Source&gt; * Action&lt;'Source&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -1191,7 +1229,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Threading.Tasks.Parallel.ForEach%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Action%7B%60%600%7D%29> method to count the number of vowels and non-whitespace characters in a text file. In this case, the <xref:System.Threading.Tasks.ParallelLoopResult> value returned by the method is ignored. Note that, because operations can run in parallel, you must ensure that incrementing the counter variables is an atomic operation, and that multiple threads do not attempt to access the counter variables simultaneously. For this purpose, the example uses the `lock` statement (in C#) and the `SyncLock` statement (in Visual Basic).  
+ The following example uses the <xref:System.Threading.Tasks.Parallel.ForEach%60%601%28System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Action%7B%60%600%7D%29> method to count the number of vowels and non-white-space characters in a text file. In this case, the <xref:System.Threading.Tasks.ParallelLoopResult> value returned by the method is ignored. Note that, because operations can run in parallel, you must ensure that incrementing the counter variables is an atomic operation, and that multiple threads do not attempt to access the counter variables simultaneously. For this purpose, the example uses the `lock` statement (in C#) and the `SyncLock` statement (in Visual Basic).  
   
  [!code-csharp[System.Threading.Tasks.Parallel.ForEach#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.threading.tasks.parallel.foreach/cs/foreach1.cs#1)]
  [!code-vb[System.Threading.Tasks.Parallel.ForEach#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.threading.tasks.parallel.foreach/vb/foreach1.vb#1)]  
@@ -1204,6 +1242,7 @@
   
  The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1211,6 +1250,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Concurrent.OrderablePartitioner`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`3&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, int64&gt; body) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Concurrent.OrderablePartitioner{``0},System.Threading.Tasks.ParallelOptions,System.Action{``0,System.Threading.Tasks.ParallelLoopState,System.Int64})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Concurrent::OrderablePartitioner&lt;TSource&gt; ^ source, System::Threading::Tasks::ParallelOptions ^ parallelOptions, Action&lt;TSource, System::Threading::Tasks::ParallelLoopState ^, long&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member ForEach : System.Collections.Concurrent.OrderablePartitioner&lt;'Source&gt; * System.Threading.Tasks.ParallelOptions * Action&lt;'Source, System.Threading.Tasks.ParallelLoopState, int64&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, parallelOptions, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -1272,6 +1312,7 @@
  -or-  
   
  The exception that is thrown when any methods in the <paramref name="source" /> orderable partitioner return <see langword="null" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1279,6 +1320,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Concurrent.Partitioner`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`2&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState&gt; body) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Concurrent.Partitioner{``0},System.Threading.Tasks.ParallelOptions,System.Action{``0,System.Threading.Tasks.ParallelLoopState})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Concurrent::Partitioner&lt;TSource&gt; ^ source, System::Threading::Tasks::ParallelOptions ^ parallelOptions, Action&lt;TSource, System::Threading::Tasks::ParallelLoopState ^&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member ForEach : System.Collections.Concurrent.Partitioner&lt;'Source&gt; * System.Threading.Tasks.ParallelOptions * Action&lt;'Source, System.Threading.Tasks.ParallelLoopState&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, parallelOptions, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -1336,6 +1378,7 @@
  -or-  
   
  The exception that is thrown when any methods in the <paramref name="source" /> partitioner return <see langword="null" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1343,6 +1386,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Concurrent.Partitioner`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`1&lt;!!TSource&gt; body) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Concurrent.Partitioner{``0},System.Threading.Tasks.ParallelOptions,System.Action{``0})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Concurrent::Partitioner&lt;TSource&gt; ^ source, System::Threading::Tasks::ParallelOptions ^ parallelOptions, Action&lt;TSource&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member ForEach : System.Collections.Concurrent.Partitioner&lt;'Source&gt; * System.Threading.Tasks.ParallelOptions * Action&lt;'Source&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, parallelOptions, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -1400,6 +1444,7 @@
  -or-  
   
  The exception that is thrown when any methods in the <paramref name="source" /> partitioner return <see langword="null" />.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1407,6 +1452,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`3&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, int64&gt; body) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Threading.Tasks.ParallelOptions,System.Action{``0,System.Threading.Tasks.ParallelLoopState,System.Int64})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, System::Threading::Tasks::ParallelOptions ^ parallelOptions, Action&lt;TSource, System::Threading::Tasks::ParallelLoopState ^, long&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member ForEach : seq&lt;'Source&gt; * System.Threading.Tasks.ParallelOptions * Action&lt;'Source, System.Threading.Tasks.ParallelLoopState, int64&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, parallelOptions, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -1460,6 +1506,7 @@
  The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1467,6 +1514,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`2&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState&gt; body) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Threading.Tasks.ParallelOptions,System.Action{``0,System.Threading.Tasks.ParallelLoopState})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, System::Threading::Tasks::ParallelOptions ^ parallelOptions, Action&lt;TSource, System::Threading::Tasks::ParallelLoopState ^&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member ForEach : seq&lt;'Source&gt; * System.Threading.Tasks.ParallelOptions * Action&lt;'Source, System.Threading.Tasks.ParallelLoopState&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, parallelOptions, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -1520,6 +1568,7 @@
  The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource&gt;">
@@ -1527,6 +1576,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action`1&lt;!!TSource&gt; body) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Threading.Tasks.ParallelOptions,System.Action{``0})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, System::Threading::Tasks::ParallelOptions ^ parallelOptions, Action&lt;TSource&gt; ^ body);" />
+      <MemberSignature Language="F#" Value="static member ForEach : seq&lt;'Source&gt; * System.Threading.Tasks.ParallelOptions * Action&lt;'Source&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, parallelOptions, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -1580,6 +1630,7 @@
  The <paramref name="body" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
@@ -1588,6 +1639,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``2(System.Collections.Concurrent.OrderablePartitioner{``0},System.Func{``1},System.Func{``0,System.Threading.Tasks.ParallelLoopState,System.Int64,``1,``1},System.Action{``1})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForEach(Of TSource, TLocal) (source As OrderablePartitioner(Of TSource), localInit As Func(Of TLocal), body As Func(Of TSource, ParallelLoopState, Long, TLocal, TLocal), localFinally As Action(Of TLocal)) As ParallelLoopResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TLocal&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Concurrent::OrderablePartitioner&lt;TSource&gt; ^ source, Func&lt;TLocal&gt; ^ localInit, Func&lt;TSource, System::Threading::Tasks::ParallelLoopState ^, long, TLocal, TLocal&gt; ^ body, Action&lt;TLocal&gt; ^ localFinally);" />
+      <MemberSignature Language="F#" Value="static member ForEach : System.Collections.Concurrent.OrderablePartitioner&lt;'Source&gt; * Func&lt;'Local&gt; * Func&lt;'Source, System.Threading.Tasks.ParallelLoopState, int64, 'Local, 'Local&gt; * Action&lt;'Local&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, localInit, body, localFinally)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -1652,6 +1704,7 @@
  The <paramref name="localFinally" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions" /> property in the <paramref name="source" /><see cref="T:System.Collections.Concurrent.Partitioner" /> returns <see langword="false" /> or the partitioner returns <see langword="null" /> partitions.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
@@ -1660,6 +1713,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``2(System.Collections.Concurrent.Partitioner{``0},System.Func{``1},System.Func{``0,System.Threading.Tasks.ParallelLoopState,``1,``1},System.Action{``1})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForEach(Of TSource, TLocal) (source As Partitioner(Of TSource), localInit As Func(Of TLocal), body As Func(Of TSource, ParallelLoopState, TLocal, TLocal), localFinally As Action(Of TLocal)) As ParallelLoopResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TLocal&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Concurrent::Partitioner&lt;TSource&gt; ^ source, Func&lt;TLocal&gt; ^ localInit, Func&lt;TSource, System::Threading::Tasks::ParallelLoopState ^, TLocal, TLocal&gt; ^ body, Action&lt;TLocal&gt; ^ localFinally);" />
+      <MemberSignature Language="F#" Value="static member ForEach : System.Collections.Concurrent.Partitioner&lt;'Source&gt; * Func&lt;'Local&gt; * Func&lt;'Source, System.Threading.Tasks.ParallelLoopState, 'Local, 'Local&gt; * Action&lt;'Local&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, localInit, body, localFinally)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -1724,6 +1778,7 @@
  The <paramref name="localFinally" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="P:System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions" /> property in the <paramref name="source" /><see cref="T:System.Collections.Concurrent.Partitioner" /> returns <see langword="false" /> or the partitioner returns <see langword="null" /> partitions.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
@@ -1732,6 +1787,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``2(System.Collections.Generic.IEnumerable{``0},System.Func{``1},System.Func{``0,System.Threading.Tasks.ParallelLoopState,System.Int64,``1,``1},System.Action{``1})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForEach(Of TSource, TLocal) (source As IEnumerable(Of TSource), localInit As Func(Of TLocal), body As Func(Of TSource, ParallelLoopState, Long, TLocal, TLocal), localFinally As Action(Of TLocal)) As ParallelLoopResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TLocal&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, Func&lt;TLocal&gt; ^ localInit, Func&lt;TSource, System::Threading::Tasks::ParallelLoopState ^, long, TLocal, TLocal&gt; ^ body, Action&lt;TLocal&gt; ^ localFinally);" />
+      <MemberSignature Language="F#" Value="static member ForEach : seq&lt;'Source&gt; * Func&lt;'Local&gt; * Func&lt;'Source, System.Threading.Tasks.ParallelLoopState, int64, 'Local, 'Local&gt; * Action&lt;'Local&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, localInit, body, localFinally)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -1795,6 +1851,7 @@
   
  The <paramref name="localFinally" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
@@ -1803,6 +1860,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``2(System.Collections.Generic.IEnumerable{``0},System.Func{``1},System.Func{``0,System.Threading.Tasks.ParallelLoopState,``1,``1},System.Action{``1})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ForEach(Of TSource, TLocal) (source As IEnumerable(Of TSource), localInit As Func(Of TLocal), body As Func(Of TSource, ParallelLoopState, TLocal, TLocal), localFinally As Action(Of TLocal)) As ParallelLoopResult" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TLocal&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, Func&lt;TLocal&gt; ^ localInit, Func&lt;TSource, System::Threading::Tasks::ParallelLoopState ^, TLocal, TLocal&gt; ^ body, Action&lt;TLocal&gt; ^ localFinally);" />
+      <MemberSignature Language="F#" Value="static member ForEach : seq&lt;'Source&gt; * Func&lt;'Local&gt; * Func&lt;'Source, System.Threading.Tasks.ParallelLoopState, 'Local, 'Local&gt; * Action&lt;'Local&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, localInit, body, localFinally)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -1874,6 +1932,7 @@
   
  The <paramref name="localFinally" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
@@ -1881,6 +1940,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource, TLocal&gt;(class System.Collections.Concurrent.OrderablePartitioner`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`5&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, int64, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``2(System.Collections.Concurrent.OrderablePartitioner{``0},System.Threading.Tasks.ParallelOptions,System.Func{``1},System.Func{``0,System.Threading.Tasks.ParallelLoopState,System.Int64,``1,``1},System.Action{``1})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TLocal&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Concurrent::OrderablePartitioner&lt;TSource&gt; ^ source, System::Threading::Tasks::ParallelOptions ^ parallelOptions, Func&lt;TLocal&gt; ^ localInit, Func&lt;TSource, System::Threading::Tasks::ParallelLoopState ^, long, TLocal, TLocal&gt; ^ body, Action&lt;TLocal&gt; ^ localFinally);" />
+      <MemberSignature Language="F#" Value="static member ForEach : System.Collections.Concurrent.OrderablePartitioner&lt;'Source&gt; * System.Threading.Tasks.ParallelOptions * Func&lt;'Local&gt; * Func&lt;'Source, System.Threading.Tasks.ParallelLoopState, int64, 'Local, 'Local&gt; * Action&lt;'Local&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, parallelOptions, localInit, body, localFinally)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -1949,6 +2009,7 @@
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.OperationCanceledException">The <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> argument is canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
@@ -1956,6 +2017,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource, TLocal&gt;(class System.Collections.Concurrent.Partitioner`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`4&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``2(System.Collections.Concurrent.Partitioner{``0},System.Threading.Tasks.ParallelOptions,System.Func{``1},System.Func{``0,System.Threading.Tasks.ParallelLoopState,``1,``1},System.Action{``1})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TLocal&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Concurrent::Partitioner&lt;TSource&gt; ^ source, System::Threading::Tasks::ParallelOptions ^ parallelOptions, Func&lt;TLocal&gt; ^ localInit, Func&lt;TSource, System::Threading::Tasks::ParallelLoopState ^, TLocal, TLocal&gt; ^ body, Action&lt;TLocal&gt; ^ localFinally);" />
+      <MemberSignature Language="F#" Value="static member ForEach : System.Collections.Concurrent.Partitioner&lt;'Source&gt; * System.Threading.Tasks.ParallelOptions * Func&lt;'Local&gt; * Func&lt;'Source, System.Threading.Tasks.ParallelLoopState, 'Local, 'Local&gt; * Action&lt;'Local&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, parallelOptions, localInit, body, localFinally)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -2028,6 +2090,7 @@
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
         <exception cref="T:System.OperationCanceledException">The <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> argument is canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
@@ -2035,6 +2098,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource, TLocal&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`5&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, int64, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``2(System.Collections.Generic.IEnumerable{``0},System.Threading.Tasks.ParallelOptions,System.Func{``1},System.Func{``0,System.Threading.Tasks.ParallelLoopState,System.Int64,``1,``1},System.Action{``1})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TLocal&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, System::Threading::Tasks::ParallelOptions ^ parallelOptions, Func&lt;TLocal&gt; ^ localInit, Func&lt;TSource, System::Threading::Tasks::ParallelLoopState ^, long, TLocal, TLocal&gt; ^ body, Action&lt;TLocal&gt; ^ localFinally);" />
+      <MemberSignature Language="F#" Value="static member ForEach : seq&lt;'Source&gt; * System.Threading.Tasks.ParallelOptions * Func&lt;'Local&gt; * Func&lt;'Source, System.Threading.Tasks.ParallelLoopState, int64, 'Local, 'Local&gt; * Action&lt;'Local&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, parallelOptions, localInit, body, localFinally)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -2106,6 +2170,7 @@
         <exception cref="T:System.OperationCanceledException">The <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> argument is canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <Member MemberName="ForEach&lt;TSource,TLocal&gt;">
@@ -2113,6 +2178,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Threading.Tasks.ParallelLoopResult ForEach&lt;TSource, TLocal&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!TSource&gt; source, class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Func`1&lt;!!TLocal&gt; localInit, class System.Func`4&lt;!!TSource, class System.Threading.Tasks.ParallelLoopState, !!TLocal, !!TLocal&gt; body, class System.Action`1&lt;!!TLocal&gt; localFinally) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.ForEach``2(System.Collections.Generic.IEnumerable{``0},System.Threading.Tasks.ParallelOptions,System.Func{``1},System.Func{``0,System.Threading.Tasks.ParallelLoopState,``1,``1},System.Action{``1})" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource, typename TLocal&gt;&#xA; static System::Threading::Tasks::ParallelLoopResult ForEach(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, System::Threading::Tasks::ParallelOptions ^ parallelOptions, Func&lt;TLocal&gt; ^ localInit, Func&lt;TSource, System::Threading::Tasks::ParallelLoopState ^, TLocal, TLocal&gt; ^ body, Action&lt;TLocal&gt; ^ localFinally);" />
+      <MemberSignature Language="F#" Value="static member ForEach : seq&lt;'Source&gt; * System.Threading.Tasks.ParallelOptions * Func&lt;'Local&gt; * Func&lt;'Source, System.Threading.Tasks.ParallelLoopState, 'Local, 'Local&gt; * Action&lt;'Local&gt; -&gt; System.Threading.Tasks.ParallelLoopResult" Usage="System.Threading.Tasks.Parallel.ForEach (source, parallelOptions, localInit, body, localFinally)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -2184,6 +2250,7 @@
         <exception cref="T:System.OperationCanceledException">The <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> argument is canceled.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.CancellationTokenSource" /> associated with the <see cref="T:System.Threading.CancellationToken" /> in the <paramref name="parallelOptions" /> has been disposed.</exception>
         <exception cref="T:System.AggregateException">The exception that contains all the individual exceptions thrown on all threads.</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/msp-n-p/ff963552(v=pandp.10)">Parallel Loops</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Invoke">
@@ -2202,6 +2269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.Invoke(System.Action[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub Invoke (ParamArray actions As Action())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Invoke(... cli::array &lt;Action ^&gt; ^ actions);" />
+      <MemberSignature Language="F#" Value="static member Invoke : Action[] -&gt; unit" Usage="System.Threading.Tasks.Parallel.Invoke actions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>
@@ -2262,6 +2330,7 @@
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Invoke(class System.Threading.Tasks.ParallelOptions parallelOptions, class System.Action[] actions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Parallel.Invoke(System.Threading.Tasks.ParallelOptions,System.Action[])" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Invoke(System::Threading::Tasks::ParallelOptions ^ parallelOptions, ... cli::array &lt;Action ^&gt; ^ actions);" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Threading.Tasks.ParallelOptions * Action[] -&gt; unit" Usage="System.Threading.Tasks.Parallel.Invoke (parallelOptions, actions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Parallel</AssemblyName>

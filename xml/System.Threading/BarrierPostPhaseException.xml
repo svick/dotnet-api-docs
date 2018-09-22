@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.BarrierPostPhaseException" />
   <TypeSignature Language="VB.NET" Value="Public Class BarrierPostPhaseException&#xA;Inherits Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class BarrierPostPhaseException : Exception" />
+  <TypeSignature Language="F#" Value="type BarrierPostPhaseException = class&#xA;    inherit Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,9 +25,16 @@
     <BaseTypeName>System.Exception</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>The exception that is thrown when the post-phase action of a <see cref="T:System.Threading.Barrier" /> fails</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -38,6 +46,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.BarrierPostPhaseException" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -63,6 +73,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.BarrierPostPhaseException" /> class with a system-supplied message that describes the error.</summary>
@@ -81,6 +96,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -89,6 +107,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.BarrierPostPhaseException.#ctor(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BarrierPostPhaseException(Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Threading.BarrierPostPhaseException : Exception -&gt; System.Threading.BarrierPostPhaseException" Usage="new System.Threading.BarrierPostPhaseException innerException" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -106,6 +125,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="innerException" Type="System.Exception" />
       </Parameters>
@@ -113,6 +137,9 @@
         <param name="innerException">The exception that is the cause of the current exception.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.BarrierPostPhaseException" /> class with the specified inner exception.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -121,6 +148,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.BarrierPostPhaseException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BarrierPostPhaseException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Threading.BarrierPostPhaseException : string -&gt; System.Threading.BarrierPostPhaseException" Usage="new System.Threading.BarrierPostPhaseException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -138,6 +166,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
       </Parameters>
@@ -157,6 +190,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -165,6 +201,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.BarrierPostPhaseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; BarrierPostPhaseException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Threading.BarrierPostPhaseException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Threading.BarrierPostPhaseException" Usage="new System.Threading.BarrierPostPhaseException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -181,8 +218,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -201,6 +241,7 @@
   
  ]]></format>
         </remarks>
+        <related type="ExternalDocumentation" href="http://go.microsoft.com/fwlink/p/?LinkID=248602">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -209,6 +250,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.BarrierPostPhaseException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BarrierPostPhaseException(System::String ^ message, Exception ^ innerException);" />
+      <MemberSignature Language="F#" Value="new System.Threading.BarrierPostPhaseException : string * Exception -&gt; System.Threading.BarrierPostPhaseException" Usage="new System.Threading.BarrierPostPhaseException (message, innerException)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -249,6 +291,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/exceptions/index.md">Handling and Throwing Exceptions</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/613a8bc7-6a28-4795-bd6c-1abd9050478f">Barrier (.NET Framework)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e1a253ff-e0fb-4df8-95ff-d01a90d4cb19">How to: Synchronize Concurrent Operations with a Barrier</related>
       </Docs>
     </Member>
   </Members>

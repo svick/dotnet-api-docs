@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.IPartitionResolver" />
   <TypeSignature Language="VB.NET" Value="Public Interface IPartitionResolver" />
   <TypeSignature Language="C++ CLI" Value="public interface class IPartitionResolver" />
+  <TypeSignature Language="F#" Value="type IPartitionResolver = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -24,6 +26,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.SessionState.SessionStateMode" />
+    <related type="Article" href="http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4">Session State Modes</related>
   </Docs>
   <Members>
     <Member MemberName="Initialize">
@@ -32,9 +35,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.IPartitionResolver.Initialize" />
       <MemberSignature Language="VB.NET" Value="Public Sub Initialize ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize();" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : unit -&gt; unit" Usage="iPartitionResolver.Initialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -51,6 +56,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4">Session State Modes</related>
       </Docs>
     </Member>
     <Member MemberName="ResolvePartition">
@@ -59,9 +65,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.IPartitionResolver.ResolvePartition(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function ResolvePartition (key As Object) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolvePartition(System::Object ^ key);" />
+      <MemberSignature Language="F#" Value="abstract member ResolvePartition : obj -&gt; string" Usage="iPartitionResolver.ResolvePartition key" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -83,6 +91,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.SessionState.HttpSessionState.SessionID" />
+        <related type="Article" href="http://msdn.microsoft.com/library/0bb0a3a3-650f-4c47-a0c5-b08b9b591bb4">Session State Modes</related>
       </Docs>
     </Member>
   </Members>

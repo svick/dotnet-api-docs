@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Security.WindowsTokenRoleProvider" />
   <TypeSignature Language="VB.NET" Value="Public Class WindowsTokenRoleProvider&#xA;Inherits RoleProvider" />
   <TypeSignature Language="C++ CLI" Value="public ref class WindowsTokenRoleProvider : System::Web::Security::RoleProvider" />
+  <TypeSignature Language="F#" Value="type WindowsTokenRoleProvider = class&#xA;    inherit RoleProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -53,6 +55,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -64,8 +67,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Web.Security.WindowsTokenRoleProvider" /> class.</summary>
@@ -77,6 +86,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="AddUsersToRoles">
@@ -85,9 +95,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.WindowsTokenRoleProvider.AddUsersToRoles(System.String[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddUsersToRoles (usernames As String(), roleNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddUsersToRoles(cli::array &lt;System::String ^&gt; ^ usernames, cli::array &lt;System::String ^&gt; ^ roleNames);" />
+      <MemberSignature Language="F#" Value="override this.AddUsersToRoles : string[] * string[] -&gt; unit" Usage="windowsTokenRoleProvider.AddUsersToRoles (usernames, roleNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -110,6 +122,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">An unsupported method was called.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="ApplicationName">
@@ -118,11 +131,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Security.WindowsTokenRoleProvider.ApplicationName" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property ApplicationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.Web.Security.WindowsTokenRoleProvider.ApplicationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -157,6 +177,7 @@
         </remarks>
         <exception cref="T:System.Web.HttpException">An attempt was made to set the <see cref="P:System.Web.Security.WindowsTokenRoleProvider.ApplicationName" /> property by a caller that does not have <see cref="F:System.Web.AspNetHostingPermissionLevel.High" /> ASP.NET hosting permission.</exception>
         <exception cref="T:System.Configuration.Provider.ProviderException">An attempt was made to set the <see cref="P:System.Web.Security.WindowsTokenRoleProvider.ApplicationName" /> to a string that is longer than 256 characters.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="CreateRole">
@@ -165,9 +186,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.WindowsTokenRoleProvider.CreateRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CreateRole (roleName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CreateRole(System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="override this.CreateRole : string -&gt; unit" Usage="windowsTokenRoleProvider.CreateRole roleName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -196,9 +219,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.WindowsTokenRoleProvider.DeleteRole(System.String,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function DeleteRole (roleName As String, throwOnPopulatedRole As Boolean) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool DeleteRole(System::String ^ roleName, bool throwOnPopulatedRole);" />
+      <MemberSignature Language="F#" Value="override this.DeleteRole : string * bool -&gt; bool" Usage="windowsTokenRoleProvider.DeleteRole (roleName, throwOnPopulatedRole)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -215,6 +240,7 @@
         <returns>None. The method is not supported by the <see cref="T:System.Web.Security.WindowsTokenRoleProvider" /> class and always throws a <see cref="T:System.Configuration.Provider.ProviderException" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">An unsupported method was called.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="FindUsersInRole">
@@ -223,9 +249,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.WindowsTokenRoleProvider.FindUsersInRole(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function FindUsersInRole (roleName As String, usernameToMatch As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ FindUsersInRole(System::String ^ roleName, System::String ^ usernameToMatch);" />
+      <MemberSignature Language="F#" Value="override this.FindUsersInRole : string * string -&gt; string[]" Usage="windowsTokenRoleProvider.FindUsersInRole (roleName, usernameToMatch)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -242,6 +270,7 @@
         <returns>None. The method is not supported by the <see cref="T:System.Web.Security.WindowsTokenRoleProvider" /> class and always throws a <see cref="T:System.Configuration.Provider.ProviderException" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">An unsupported method was called.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllRoles">
@@ -250,9 +279,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.WindowsTokenRoleProvider.GetAllRoles" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAllRoles () As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetAllRoles();" />
+      <MemberSignature Language="F#" Value="override this.GetAllRoles : unit -&gt; string[]" Usage="windowsTokenRoleProvider.GetAllRoles " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -264,6 +295,7 @@
         <returns>None. The method is not supported by the <see cref="T:System.Web.Security.WindowsTokenRoleProvider" /> class and always throws a <see cref="T:System.Configuration.Provider.ProviderException" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">An unsupported method was called.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="GetRolesForUser">
@@ -272,9 +304,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.WindowsTokenRoleProvider.GetRolesForUser(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRolesForUser (username As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetRolesForUser(System::String ^ username);" />
+      <MemberSignature Language="F#" Value="override this.GetRolesForUser : string -&gt; string[]" Usage="windowsTokenRoleProvider.GetRolesForUser username" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -293,7 +327,7 @@
 ## Remarks  
  This method is called by the <xref:System.Web.Security.Roles> class to retrieve from the Windows operating system a list of the Windows groups that the specified user is in. The <xref:System.Web.Security.WindowsTokenRoleProvider.GetRolesForUser%2A> method can be called only for the currently logged-on user, as identified by the LOGON_USER server variable. If the value supplied in the `username` parameter is not the name of the currently logged-on user, a <xref:System.Configuration.Provider.ProviderException?displayProperty=nameWithType> is thrown.  
   
- For more information an ASP.NET and Windows authentication, see [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1).  
+ For more information an ASP.NET and Windows authentication, see [ASP.NET Authentication](https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)).  
   
    
   
@@ -317,6 +351,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="username" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Web.HttpException">The trust level is less than <see cref="F:System.Web.AspNetHostingPermissionLevel.Low" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="GetUsersInRole">
@@ -325,9 +360,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.WindowsTokenRoleProvider.GetUsersInRole(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetUsersInRole (roleName As String) As String()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetUsersInRole(System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="override this.GetUsersInRole : string -&gt; string[]" Usage="windowsTokenRoleProvider.GetUsersInRole roleName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -342,6 +379,7 @@
         <returns>None. The method is not supported by the <see cref="T:System.Web.Security.WindowsTokenRoleProvider" /> class and always throws a <see cref="T:System.Configuration.Provider.ProviderException" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">An unsupported method was called.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -350,9 +388,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.WindowsTokenRoleProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, config As NameValueCollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
+      <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="windowsTokenRoleProvider.Initialize (name, config)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -381,6 +421,7 @@
  -or-  
   
  The application configuration file for this <see cref="T:System.Web.Security.WindowsTokenRoleProvider" /> instance contains an unrecognized attribute.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="IsUserInRole">
@@ -390,6 +431,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Gets a value indicating whether the specified user is in the specified built-in Windows role.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="IsUserInRole">
@@ -398,9 +440,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.WindowsTokenRoleProvider.IsUserInRole(System.String,System.Security.Principal.WindowsBuiltInRole)" />
       <MemberSignature Language="VB.NET" Value="Public Function IsUserInRole (username As String, role As WindowsBuiltInRole) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsUserInRole(System::String ^ username, System::Security::Principal::WindowsBuiltInRole role);" />
+      <MemberSignature Language="F#" Value="override this.IsUserInRole : string * System.Security.Principal.WindowsBuiltInRole -&gt; bool" Usage="windowsTokenRoleProvider.IsUserInRole (username, role)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -424,7 +468,7 @@
   
  You can call the <xref:System.Web.Security.WindowsTokenRoleProvider.IsUserInRole%2A> method only for the currently logged-on user, as identified by the LOGON_USER server variable. If the value supplied in the `username` parameter is not the name of the currently logged-on user, an <xref:System.Web.HttpException> is thrown.  
   
- <xref:System.Web.Security.WindowsTokenRoleProvider.IsUserInRole%2A> method can only be called for the currently logged-on user identified by the LOGON_USER server variable. The current logged on user must be a Windows authenticated user. For more information on ASP.NET and Windows authentication, see [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1).  
+ <xref:System.Web.Security.WindowsTokenRoleProvider.IsUserInRole%2A> method can only be called for the currently logged-on user identified by the LOGON_USER server variable. The current logged on user must be a Windows authenticated user. For more information on ASP.NET and Windows authentication, see [ASP.NET Authentication](https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)).  
   
    
   
@@ -443,6 +487,7 @@
  -or-  
   
  <paramref name="username" /> does not match the <see cref="P:System.Security.Principal.WindowsIdentity.Name" /> of the current <see cref="T:System.Security.Principal.WindowsIdentity" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="IsUserInRole">
@@ -451,9 +496,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.WindowsTokenRoleProvider.IsUserInRole(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsUserInRole (username As String, roleName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsUserInRole(System::String ^ username, System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="override this.IsUserInRole : string * string -&gt; bool" Usage="windowsTokenRoleProvider.IsUserInRole (username, roleName)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -473,7 +520,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Security.WindowsTokenRoleProvider.IsUserInRole%2A> method is called by the <xref:System.Web.Security.Roles> class and the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Web.UI.Page.User%2A> property to determine whether a user is in a Windows group. You can call the <xref:System.Web.Security.WindowsTokenRoleProvider.IsUserInRole%2A> method only for the currently logged-on user, as identified by the LOGON_USER server variable. The current logged-on user must be a Windows authenticated user. For more information on ASP.NET and Windows authentication, see [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1).  
+ The <xref:System.Web.Security.WindowsTokenRoleProvider.IsUserInRole%2A> method is called by the <xref:System.Web.Security.Roles> class and the <xref:System.Security.Principal.IPrincipal.IsInRole%2A> method of the <xref:System.Web.UI.Page.User%2A> property to determine whether a user is in a Windows group. You can call the <xref:System.Web.Security.WindowsTokenRoleProvider.IsUserInRole%2A> method only for the currently logged-on user, as identified by the LOGON_USER server variable. The current logged-on user must be a Windows authenticated user. For more information on ASP.NET and Windows authentication, see [ASP.NET Authentication](https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)).  
   
    
   
@@ -500,6 +547,7 @@
  -or-  
   
  A failure occurred while retrieving the user's Windows group information.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveUsersFromRoles">
@@ -508,9 +556,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.WindowsTokenRoleProvider.RemoveUsersFromRoles(System.String[],System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveUsersFromRoles (usernames As String(), roleNames As String())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveUsersFromRoles(cli::array &lt;System::String ^&gt; ^ usernames, cli::array &lt;System::String ^&gt; ^ roleNames);" />
+      <MemberSignature Language="F#" Value="override this.RemoveUsersFromRoles : string[] * string[] -&gt; unit" Usage="windowsTokenRoleProvider.RemoveUsersFromRoles (usernames, roleNames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -541,9 +591,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Security.WindowsTokenRoleProvider.RoleExists(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function RoleExists (roleName As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool RoleExists(System::String ^ roleName);" />
+      <MemberSignature Language="F#" Value="override this.RoleExists : string -&gt; bool" Usage="windowsTokenRoleProvider.RoleExists roleName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -558,6 +610,7 @@
         <returns>None. The method is not supported by the <see cref="T:System.Web.Security.WindowsTokenRoleProvider" /> class and always throws a <see cref="T:System.Configuration.Provider.ProviderException" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Configuration.Provider.ProviderException">An unsupported method was called.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/a0d2f19d-a2a7-496d-88b6-30133f8ea3d6">Understanding ASP.NET Role Management</related>
       </Docs>
     </Member>
   </Members>

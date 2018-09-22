@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapDocumentMethodAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapDocumentMethodAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoapDocumentMethodAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type SoapDocumentMethodAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -14,8 +17,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Method, Inherited=true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -26,7 +32,7 @@
 ## Remarks  
  Web Services Description Language (WSDL) defines two styles for how an XML Web service method, which it calls an operation, can be formatted in a SOAP message: `RPC` and `Document`. `Document` refers to formatting the XML Web service method according to an XSD schema. The `Document` style refers to formatting the `Body` element as a series of one or more message parts following the `Body` element. Exactly how the individual message parts is determined by the <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.Use%2A> and <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.ParameterStyle%2A> properties. The <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.Use%2A> property determines whether parameters are formatted `Encoded` or `Literal`. The <xref:System.Web.Services.Protocols.SoapDocumentMethodAttribute.ParameterStyle%2A> determines whether the parameters are encapsulated within a single message part following the `Body` element or whether each parameter is an individual message part.  
   
- For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/library/1d777288-c0d9-4e6a-b638-f010da031952)  
+ For more details, see [Customizing SOAP Message Formatting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dkwy2d72(v=vs.100)).  
   
  This attribute can be applied to both an XML Web service method on the server and a method of the proxy class on the client.  
   
@@ -65,6 +71,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -80,9 +88,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapDocumentMethodAttribute.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (action As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapDocumentMethodAttribute(System::String ^ action);" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapDocumentMethodAttribute : string -&gt; System.Web.Services.Protocols.SoapDocumentMethodAttribute" Usage="new System.Web.Services.Protocols.SoapDocumentMethodAttribute action" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -101,9 +112,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapDocumentMethodAttribute.Action" />
       <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="System.Web.Services.Protocols.SoapDocumentMethodAttribute.Action" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -138,9 +152,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapDocumentMethodAttribute.Binding" />
       <MemberSignature Language="VB.NET" Value="Public Property Binding As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Binding { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Binding : string with get, set" Usage="System.Web.Services.Protocols.SoapDocumentMethodAttribute.Binding" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -171,9 +188,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapDocumentMethodAttribute.OneWay" />
       <MemberSignature Language="VB.NET" Value="Public Property OneWay As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OneWay { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.OneWay : bool with get, set" Usage="System.Web.Services.Protocols.SoapDocumentMethodAttribute.OneWay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -212,9 +232,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapDocumentMethodAttribute.ParameterStyle" />
       <MemberSignature Language="VB.NET" Value="Public Property ParameterStyle As SoapParameterStyle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Protocols::SoapParameterStyle ParameterStyle { System::Web::Services::Protocols::SoapParameterStyle get(); void set(System::Web::Services::Protocols::SoapParameterStyle value); };" />
+      <MemberSignature Language="F#" Value="member this.ParameterStyle : System.Web.Services.Protocols.SoapParameterStyle with get, set" Usage="System.Web.Services.Protocols.SoapDocumentMethodAttribute.ParameterStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -235,6 +258,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Services.Protocols.SoapParameterStyle" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dkwy2d72(v=vs.100)">Customizing SOAP Message Formatting</related>
       </Docs>
     </Member>
     <Member MemberName="RequestElementName">
@@ -243,9 +267,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapDocumentMethodAttribute.RequestElementName" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestElementName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestElementName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestElementName : string with get, set" Usage="System.Web.Services.Protocols.SoapDocumentMethodAttribute.RequestElementName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -278,9 +305,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapDocumentMethodAttribute.RequestNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property RequestNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RequestNamespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.RequestNamespace : string with get, set" Usage="System.Web.Services.Protocols.SoapDocumentMethodAttribute.RequestNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -313,9 +343,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapDocumentMethodAttribute.ResponseElementName" />
       <MemberSignature Language="VB.NET" Value="Public Property ResponseElementName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResponseElementName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResponseElementName : string with get, set" Usage="System.Web.Services.Protocols.SoapDocumentMethodAttribute.ResponseElementName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -348,9 +381,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapDocumentMethodAttribute.ResponseNamespace" />
       <MemberSignature Language="VB.NET" Value="Public Property ResponseNamespace As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResponseNamespace { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ResponseNamespace : string with get, set" Usage="System.Web.Services.Protocols.SoapDocumentMethodAttribute.ResponseNamespace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -383,9 +419,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapDocumentMethodAttribute.Use" />
       <MemberSignature Language="VB.NET" Value="Public Property Use As SoapBindingUse" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::SoapBindingUse Use { System::Web::Services::Description::SoapBindingUse get(); void set(System::Web::Services::Description::SoapBindingUse value); };" />
+      <MemberSignature Language="F#" Value="member this.Use : System.Web.Services.Description.SoapBindingUse with get, set" Usage="System.Web.Services.Protocols.SoapDocumentMethodAttribute.Use" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -401,7 +440,7 @@
 ## Remarks  
  The Web Services Description Language (WSDL) defines two methods for formatting parameters: <xref:System.Web.Services.Description.SoapBindingUse.Encoded> and <xref:System.Web.Services.Description.SoapBindingUse.Literal>. <xref:System.Web.Services.Description.SoapBindingUse.Encoded> refers to formatting parameters using SOAP encoding, as outlined in the SOAP specification in section 5. <xref:System.Web.Services.Description.SoapBindingUse.Literal> refers to formatting the parameters using a pre-defined XSD schema for each parameter.  
   
- For more details, see [&#91;\<topic://cpconCustomizingSOAPInASPNETWebServicesWebServiceClients>&#93;](http://msdn.microsoft.com/library/1d777288-c0d9-4e6a-b638-f010da031952).  
+ For more details, see [Customizing SOAP Message Formatting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dkwy2d72(v=vs.100)).  
   
    
   
@@ -413,6 +452,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.Services.Description.SoapBindingUse" />
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dkwy2d72(v=vs.100)">Customizing SOAP Message Formatting</related>
       </Docs>
     </Member>
   </Members>

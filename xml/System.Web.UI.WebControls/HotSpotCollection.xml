@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HotSpotCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HotSpotCollection&#xA;Inherits StateManagedCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class HotSpotCollection sealed : System::Web::UI::StateManagedCollection" />
+  <TypeSignature Language="F#" Value="type HotSpotCollection = class&#xA;    inherit StateManagedCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,8 +15,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.WebControls.HotSpotCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.WebControls.HotSpotCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -41,6 +46,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
     <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
+    <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -52,8 +58,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.HotSpotCollection" /> class.</summary>
@@ -76,6 +88,7 @@
         <altmember cref="T:System.Web.UI.WebControls.CircleHotSpot" />
         <altmember cref="T:System.Web.UI.WebControls.RectangleHotSpot" />
         <altmember cref="T:System.Web.UI.WebControls.PolygonHotSpot" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -84,9 +97,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.Add(System.Web.UI.WebControls.HotSpot)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (spot As HotSpot) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::UI::WebControls::HotSpot ^ spot);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.WebControls.HotSpot -&gt; int" Usage="hotSpotCollection.Add spot" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -118,6 +133,7 @@
         <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
         <altmember cref="M:System.Web.UI.WebControls.HotSpotCollection.Insert(System.Int32,System.Web.UI.WebControls.HotSpot)" />
         <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="CreateKnownType">
@@ -126,9 +142,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.CreateKnownType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateKnownType (index As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateKnownType(int index);" />
+      <MemberSignature Language="F#" Value="override this.CreateKnownType : int -&gt; obj" Usage="hotSpotCollection.CreateKnownType index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,9 +168,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.GetKnownTypes" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKnownTypes () As Type()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetKnownTypes();" />
+      <MemberSignature Language="F#" Value="override this.GetKnownTypes : unit -&gt; Type[]" Usage="hotSpotCollection.GetKnownTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,9 +191,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.Insert(System.Int32,System.Web.UI.WebControls.HotSpot)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, spot As HotSpot)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::WebControls::HotSpot ^ spot);" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.WebControls.HotSpot -&gt; unit" Usage="hotSpotCollection.Insert (index, spot)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,6 +228,7 @@
         <altmember cref="M:System.Web.UI.WebControls.HotSpotCollection.Add(System.Web.UI.WebControls.HotSpot)" />
         <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
         <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -214,9 +237,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HotSpotCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As HotSpot" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::HotSpot ^ default[int] { System::Web::UI::WebControls::HotSpot ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.HotSpot" Usage="System.Web.UI.WebControls.HotSpotCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -247,6 +272,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
         <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="OnValidate">
@@ -255,9 +281,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.OnValidate(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.OnValidate : obj -&gt; unit" Usage="hotSpotCollection.OnValidate o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -278,9 +306,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.Remove(System.Web.UI.WebControls.HotSpot)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (spot As HotSpot)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::HotSpot ^ spot);" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.WebControls.HotSpot -&gt; unit" Usage="hotSpotCollection.Remove spot" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -313,6 +343,7 @@
         <altmember cref="M:System.Web.UI.WebControls.HotSpotCollection.RemoveAt(System.Int32)" />
         <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
         <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -321,9 +352,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="hotSpotCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -356,6 +389,7 @@
         <altmember cref="M:System.Web.UI.WebControls.HotSpotCollection.Remove(System.Web.UI.WebControls.HotSpot)" />
         <altmember cref="T:System.Web.UI.WebControls.HotSpot" />
         <altmember cref="T:System.Web.UI.WebControls.ImageMap" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fbd4fe13-d705-4aff-a6dc-bcef89d292b5">ImageMap Web Server Control</related>
       </Docs>
     </Member>
     <Member MemberName="SetDirtyObject">
@@ -364,9 +398,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HotSpotCollection.SetDirtyObject(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDirtyObject (o As Object)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDirtyObject(System::Object ^ o);" />
+      <MemberSignature Language="F#" Value="override this.SetDirtyObject : obj -&gt; unit" Usage="hotSpotCollection.SetDirtyObject o" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

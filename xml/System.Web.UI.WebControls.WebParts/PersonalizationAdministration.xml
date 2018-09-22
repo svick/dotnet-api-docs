@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationAdministration" />
   <TypeSignature Language="VB.NET" Value="Public Class PersonalizationAdministration" />
   <TypeSignature Language="C++ CLI" Value="public ref class PersonalizationAdministration abstract sealed" />
+  <TypeSignature Language="F#" Value="type PersonalizationAdministration = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -39,6 +41,11 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07">Script Exploits Overview</related>
   </Docs>
   <Members>
     <Member MemberName="ApplicationName">
@@ -47,9 +54,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ApplicationName" />
       <MemberSignature Language="VB.NET" Value="Public Shared Property ApplicationName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ApplicationName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -76,6 +85,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindInactiveUserState">
@@ -86,6 +99,10 @@
       <Docs>
         <summary>Returns a collection of per-user personalization state information for inactive users, based on the specified parameters.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FindInactiveUserState">
@@ -94,9 +111,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindInactiveUserState(System.String,System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindInactiveUserState (pathToMatch As String, usernameToMatch As String, userInactiveSinceDate As DateTime) As PersonalizationStateInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::WebControls::WebParts::PersonalizationStateInfoCollection ^ FindInactiveUserState(System::String ^ pathToMatch, System::String ^ usernameToMatch, DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="F#" Value="static member FindInactiveUserState : string * string * DateTime -&gt; System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindInactiveUserState (pathToMatch, usernameToMatch, userInactiveSinceDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -149,6 +168,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="FindInactiveUserState">
@@ -157,9 +180,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindInactiveUserState(System.String,System.String,System.DateTime,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindInactiveUserState (pathToMatch As String, usernameToMatch As String, userInactiveSinceDate As DateTime, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As PersonalizationStateInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::WebControls::WebParts::PersonalizationStateInfoCollection ^ FindInactiveUserState(System::String ^ pathToMatch, System::String ^ usernameToMatch, DateTime userInactiveSinceDate, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="static member FindInactiveUserState : string * string * DateTime * int * int *  -&gt; System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindInactiveUserState (pathToMatch, usernameToMatch, userInactiveSinceDate, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -171,7 +196,7 @@
         <Parameter Name="userInactiveSinceDate" Type="System.DateTime" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pathToMatch">The path of the page to match.</param>
@@ -232,6 +257,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindSharedState">
@@ -242,6 +271,10 @@
       <Docs>
         <summary>Returns a collection of shared personalization state information based on the specified parameters.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FindSharedState">
@@ -250,9 +283,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindSharedState(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindSharedState (pathToMatch As String) As PersonalizationStateInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::WebControls::WebParts::PersonalizationStateInfoCollection ^ FindSharedState(System::String ^ pathToMatch);" />
+      <MemberSignature Language="F#" Value="static member FindSharedState : string -&gt; System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindSharedState pathToMatch" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -297,6 +332,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="FindSharedState">
@@ -305,9 +344,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindSharedState(System.String,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindSharedState (pathToMatch As String, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As PersonalizationStateInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::WebControls::WebParts::PersonalizationStateInfoCollection ^ FindSharedState(System::String ^ pathToMatch, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="static member FindSharedState : string * int * int *  -&gt; System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindSharedState (pathToMatch, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -317,7 +358,7 @@
         <Parameter Name="pathToMatch" Type="System.String" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pathToMatch">The path of the page to match.</param>
@@ -372,6 +413,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FindUserState">
@@ -382,6 +427,10 @@
       <Docs>
         <summary>Returns a collection of per-user personalization state information based on the specified parameters.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FindUserState">
@@ -390,9 +439,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindUserState(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindUserState (pathToMatch As String, usernameToMatch As String) As PersonalizationStateInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::WebControls::WebParts::PersonalizationStateInfoCollection ^ FindUserState(System::String ^ pathToMatch, System::String ^ usernameToMatch);" />
+      <MemberSignature Language="F#" Value="static member FindUserState : string * string -&gt; System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindUserState (pathToMatch, usernameToMatch)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -451,6 +502,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="FindUserState">
@@ -459,9 +514,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindUserState(System.String,System.String,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function FindUserState (pathToMatch As String, usernameToMatch As String, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As PersonalizationStateInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::WebControls::WebParts::PersonalizationStateInfoCollection ^ FindUserState(System::String ^ pathToMatch, System::String ^ usernameToMatch, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="static member FindUserState : string * string * int * int *  -&gt; System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.FindUserState (pathToMatch, usernameToMatch, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -472,7 +529,7 @@
         <Parameter Name="usernameToMatch" Type="System.String" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pathToMatch">The path of the page to match.</param>
@@ -540,6 +597,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAllInactiveUserState">
@@ -550,6 +611,10 @@
       <Docs>
         <summary>Returns a collection of all per-user personalization state information associated with inactive users.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetAllInactiveUserState">
@@ -558,9 +623,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetAllInactiveUserState(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAllInactiveUserState (userInactiveSinceDate As DateTime) As PersonalizationStateInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::WebControls::WebParts::PersonalizationStateInfoCollection ^ GetAllInactiveUserState(DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="F#" Value="static member GetAllInactiveUserState : DateTime -&gt; System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetAllInactiveUserState userInactiveSinceDate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -590,6 +657,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllInactiveUserState">
@@ -598,9 +669,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetAllInactiveUserState(System.DateTime,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAllInactiveUserState (userInactiveSinceDate As DateTime, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As PersonalizationStateInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::WebControls::WebParts::PersonalizationStateInfoCollection ^ GetAllInactiveUserState(DateTime userInactiveSinceDate, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="static member GetAllInactiveUserState : DateTime * int * int *  -&gt; System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetAllInactiveUserState (userInactiveSinceDate, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -610,7 +683,7 @@
         <Parameter Name="userInactiveSinceDate" Type="System.DateTime" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="userInactiveSinceDate">The last date a user's personalization information was accessed.</param>
@@ -651,6 +724,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetAllState">
@@ -668,9 +745,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetAllState(System.Web.UI.WebControls.WebParts.PersonalizationScope)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAllState (scope As PersonalizationScope) As PersonalizationStateInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::WebControls::WebParts::PersonalizationStateInfoCollection ^ GetAllState(System::Web::UI::WebControls::WebParts::PersonalizationScope scope);" />
+      <MemberSignature Language="F#" Value="static member GetAllState : System.Web.UI.WebControls.WebParts.PersonalizationScope -&gt; System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetAllState scope" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -700,6 +779,10 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="scope" /> is not a valid member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="GetAllState">
@@ -708,9 +791,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetAllState(System.Web.UI.WebControls.WebParts.PersonalizationScope,System.Int32,System.Int32,System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetAllState (scope As PersonalizationScope, pageIndex As Integer, pageSize As Integer, ByRef totalRecords As Integer) As PersonalizationStateInfoCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::WebControls::WebParts::PersonalizationStateInfoCollection ^ GetAllState(System::Web::UI::WebControls::WebParts::PersonalizationScope scope, int pageIndex, int pageSize, [Runtime::InteropServices::Out] int % totalRecords);" />
+      <MemberSignature Language="F#" Value="static member GetAllState : System.Web.UI.WebControls.WebParts.PersonalizationScope * int * int *  -&gt; System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetAllState (scope, pageIndex, pageSize, totalRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -720,7 +805,7 @@
         <Parameter Name="scope" Type="System.Web.UI.WebControls.WebParts.PersonalizationScope" />
         <Parameter Name="pageIndex" Type="System.Int32" />
         <Parameter Name="pageSize" Type="System.Int32" />
-        <Parameter Name="totalRecords" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="totalRecords" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="scope">The scope of the personalization information to be retrieved.</param>
@@ -763,6 +848,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetCountOfInactiveUserState">
@@ -773,6 +862,10 @@
       <Docs>
         <summary>Returns a count of the per-user personalization items in the underlying data store for inactive users.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetCountOfInactiveUserState">
@@ -781,11 +874,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfInactiveUserState(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCountOfInactiveUserState (userInactiveSinceDate As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetCountOfInactiveUserState(DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="F#" Value="static member GetCountOfInactiveUserState : DateTime -&gt; int" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfInactiveUserState userInactiveSinceDate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -816,6 +916,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="GetCountOfInactiveUserState">
@@ -824,9 +928,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfInactiveUserState(System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCountOfInactiveUserState (pathToMatch As String, userInactiveSinceDate As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetCountOfInactiveUserState(System::String ^ pathToMatch, DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="F#" Value="static member GetCountOfInactiveUserState : string * DateTime -&gt; int" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfInactiveUserState (pathToMatch, userInactiveSinceDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -872,6 +978,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetCountOfState">
@@ -882,6 +992,10 @@
       <Docs>
         <summary>Returns a count of the personalization state items in the underlying data store that exist for the specified scope and additional parameters.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetCountOfState">
@@ -890,11 +1004,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfState(System.Web.UI.WebControls.WebParts.PersonalizationScope)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCountOfState (scope As PersonalizationScope) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetCountOfState(System::Web::UI::WebControls::WebParts::PersonalizationScope scope);" />
+      <MemberSignature Language="F#" Value="static member GetCountOfState : System.Web.UI.WebControls.WebParts.PersonalizationScope -&gt; int" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfState scope" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -934,6 +1055,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="GetCountOfState">
@@ -942,9 +1067,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfState(System.Web.UI.WebControls.WebParts.PersonalizationScope,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCountOfState (scope As PersonalizationScope, pathToMatch As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetCountOfState(System::Web::UI::WebControls::WebParts::PersonalizationScope scope, System::String ^ pathToMatch);" />
+      <MemberSignature Language="F#" Value="static member GetCountOfState : System.Web.UI.WebControls.WebParts.PersonalizationScope * string -&gt; int" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfState (scope, pathToMatch)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -985,6 +1112,10 @@
           <paramref name="scope" /> is not a valid member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="GetCountOfUserState">
@@ -993,9 +1124,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfUserState(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GetCountOfUserState (usernameToMatch As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetCountOfUserState(System::String ^ usernameToMatch);" />
+      <MemberSignature Language="F#" Value="static member GetCountOfUserState : string -&gt; int" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.GetCountOfUserState usernameToMatch" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1039,6 +1172,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="Provider">
@@ -1047,9 +1184,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.Provider" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Provider As PersonalizationProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::UI::WebControls::WebParts::PersonalizationProvider ^ Provider { System::Web::UI::WebControls::WebParts::PersonalizationProvider ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Provider : System.Web.UI.WebControls.WebParts.PersonalizationProvider" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.Provider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1080,6 +1219,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="Providers">
@@ -1088,9 +1231,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.Providers" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Providers As PersonalizationProviderCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::UI::WebControls::WebParts::PersonalizationProviderCollection ^ Providers { System::Web::UI::WebControls::WebParts::PersonalizationProviderCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Web.UI.WebControls.WebParts.PersonalizationProviderCollection" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.Providers" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1116,6 +1261,10 @@
   
  The default personalization provider defined in configuration could not be found.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ResetAllState">
@@ -1124,9 +1273,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetAllState(System.Web.UI.WebControls.WebParts.PersonalizationScope)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ResetAllState (scope As PersonalizationScope) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ResetAllState(System::Web::UI::WebControls::WebParts::PersonalizationScope scope);" />
+      <MemberSignature Language="F#" Value="static member ResetAllState : System.Web.UI.WebControls.WebParts.PersonalizationScope -&gt; int" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetAllState scope" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1157,6 +1308,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count of affected rows.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ResetInactiveUserState">
@@ -1167,6 +1322,10 @@
       <Docs>
         <summary>Resets per-user personalization state information by deleting the associated rows in the underlying data store.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ResetInactiveUserState">
@@ -1175,11 +1334,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetInactiveUserState(System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ResetInactiveUserState (userInactiveSinceDate As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ResetInactiveUserState(DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="F#" Value="static member ResetInactiveUserState : DateTime -&gt; int" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetInactiveUserState userInactiveSinceDate" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1212,6 +1378,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ResetInactiveUserState">
@@ -1220,9 +1390,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetInactiveUserState(System.String,System.DateTime)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ResetInactiveUserState (path As String, userInactiveSinceDate As DateTime) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ResetInactiveUserState(System::String ^ path, DateTime userInactiveSinceDate);" />
+      <MemberSignature Language="F#" Value="static member ResetInactiveUserState : string * DateTime -&gt; int" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetInactiveUserState (path, userInactiveSinceDate)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1270,6 +1442,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider returned a negative number for the count.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ResetSharedState">
@@ -1280,6 +1456,10 @@
       <Docs>
         <summary>Resets shared state in the underlying data store for the specified path or paths.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ResetSharedState">
@@ -1288,9 +1468,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetSharedState(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ResetSharedState (path As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ResetSharedState(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member ResetSharedState : string -&gt; bool" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetSharedState path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1331,6 +1513,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was either a negative number or was greater than one.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ResetSharedState">
@@ -1339,9 +1525,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetSharedState(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ResetSharedState (paths As String()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ResetSharedState(cli::array &lt;System::String ^&gt; ^ paths);" />
+      <MemberSignature Language="F#" Value="static member ResetSharedState : string[] -&gt; int" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetSharedState paths" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1385,6 +1573,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ResetState">
@@ -1393,9 +1585,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetState(System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ResetState (data As PersonalizationStateInfoCollection) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ResetState(System::Web::UI::WebControls::WebParts::PersonalizationStateInfoCollection ^ data);" />
+      <MemberSignature Language="F#" Value="static member ResetState : System.Web.UI.WebControls.WebParts.PersonalizationStateInfoCollection -&gt; int" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetState data" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1452,6 +1646,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="ResetUserState">
@@ -1462,6 +1660,10 @@
       <Docs>
         <summary>Resets all per-user state in the underlying data store for the specified parameters.</summary>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="ResetUserState">
@@ -1470,9 +1672,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetUserState(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ResetUserState (path As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ResetUserState(System::String ^ path);" />
+      <MemberSignature Language="F#" Value="static member ResetUserState : string -&gt; int" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetUserState path" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1512,6 +1716,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ResetUserState">
@@ -1520,9 +1728,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetUserState(System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ResetUserState (usernames As String()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ResetUserState(cli::array &lt;System::String ^&gt; ^ usernames);" />
+      <MemberSignature Language="F#" Value="static member ResetUserState : string[] -&gt; int" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetUserState usernames" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1568,6 +1778,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ResetUserState">
@@ -1576,9 +1790,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetUserState(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ResetUserState (path As String, username As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool ResetUserState(System::String ^ path, System::String ^ username);" />
+      <MemberSignature Language="F#" Value="static member ResetUserState : string * string -&gt; bool" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetUserState (path, username)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1624,6 +1840,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
     <Member MemberName="ResetUserState">
@@ -1632,9 +1852,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetUserState(System.String,System.String[])" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ResetUserState (path As String, usernames As String()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ResetUserState(System::String ^ path, cli::array &lt;System::String ^&gt; ^ usernames);" />
+      <MemberSignature Language="F#" Value="static member ResetUserState : string * string[] -&gt; int" Usage="System.Web.UI.WebControls.WebParts.PersonalizationAdministration.ResetUserState (path, usernames)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -1686,6 +1908,10 @@
  The default personalization provider defined in configuration could not be found.</exception>
         <exception cref="T:System.Web.HttpException">The default provider indicated that the number of deleted rows was a negative number.</exception>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.WebPartPersonalization" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
       </Docs>
     </Member>
   </Members>

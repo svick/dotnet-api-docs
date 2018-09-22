@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.TextBlockAutomationPeer" />
   <TypeSignature Language="VB.NET" Value="Public Class TextBlockAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer" />
   <TypeSignature Language="C++ CLI" Value="public ref class TextBlockAutomationPeer : System::Windows::Automation::Peers::FrameworkElementAutomationPeer" />
+  <TypeSignature Language="F#" Value="type TextBlockAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -15,6 +17,8 @@
   <Docs>
     <summary>Exposes <see cref="T:System.Windows.Controls.TextBlock" /> types to UI Automation.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -23,11 +27,18 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TextBlockAutomationPeer.#ctor(System.Windows.Controls.TextBlock)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As TextBlock)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TextBlockAutomationPeer(System::Windows::Controls::TextBlock ^ owner);" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.TextBlockAutomationPeer : System.Windows.Controls.TextBlock -&gt; System.Windows.Automation.Peers.TextBlockAutomationPeer" Usage="new System.Windows.Automation.Peers.TextBlockAutomationPeer owner" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Controls.TextBlock" />
       </Parameters>
@@ -35,6 +46,8 @@
         <param name="owner">The <see cref="T:System.Windows.Controls.TextBlock" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextBlockAutomationPeer" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Automation.Peers.TextBlockAutomationPeer" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="GetAutomationControlTypeCore">
@@ -43,9 +56,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TextBlockAutomationPeer.GetAutomationControlTypeCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="textBlockAutomationPeer.GetAutomationControlTypeCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -56,6 +71,8 @@
         <summary>Gets the control type for the <see cref="T:System.Windows.Controls.TextBlock" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextBlockAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetAutomationControlType" />.</summary>
         <returns>The <see cref="F:System.Windows.Automation.Peers.AutomationControlType.Text" /> enumeration value.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="GetChildrenCore">
@@ -64,9 +81,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TextBlockAutomationPeer.GetChildrenCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="textBlockAutomationPeer.GetChildrenCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -77,6 +96,8 @@
         <summary>Gets the collection of child elements of the <see cref="T:System.Windows.Controls.TextBlock" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextBlockAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetChildren" />.</summary>
         <returns>A collection of child elements, or <see langword="null" /> if the <see cref="T:System.Windows.Controls.TextBlock" /> is empty.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="GetClassNameCore">
@@ -85,9 +106,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TextBlockAutomationPeer.GetClassNameCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="textBlockAutomationPeer.GetClassNameCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,6 +121,8 @@
         <summary>Gets the name of the <see cref="T:System.Windows.Controls.TextBlock" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.TextBlockAutomationPeer" />. Called by <see cref="M:System.Windows.Automation.Peers.AutomationPeer.GetClassName" />.</summary>
         <returns>A string that contains the word "TextBlock".</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
       </Docs>
     </Member>
     <Member MemberName="IsControlElementCore">
@@ -106,9 +131,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.TextBlockAutomationPeer.IsControlElementCore" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsControlElementCore () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsControlElementCore();" />
+      <MemberSignature Language="F#" Value="override this.IsControlElementCore : unit -&gt; bool" Usage="textBlockAutomationPeer.IsControlElementCore " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -120,6 +147,8 @@
         <returns>
           <see langword="false" /> if the element is part of a template; otherwise <see langword="true" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1f8b5ab3-c193-4d0f-9e67-a0076225a1a5">UI Automation Control Patterns</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b51206f2-1281-4ad0-9820-ea39d88ae577">UI Automation Text Pattern</related>
       </Docs>
     </Member>
   </Members>

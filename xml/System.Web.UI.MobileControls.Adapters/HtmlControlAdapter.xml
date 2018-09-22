@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlControlAdapter&#xA;Inherits ControlAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlControlAdapter : System::Web::UI::MobileControls::Adapters::ControlAdapter" />
+  <TypeSignature Language="F#" Value="type HtmlControlAdapter = class&#xA;    inherit ControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +16,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Web.Mobile.dll assembly has been deprecated and should no longer be used. For information about how to develop ASP.NET mobile applications, see http://go.microsoft.com/fwlink/?LinkId=157231.")</AttributeName>
     </Attribute>
   </Attributes>
@@ -21,6 +24,9 @@
     <summary>Provides the control adapter base class for the HTML adapter set. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Web.AspNetHostingPermission">for operating in a hosted environment. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; Permission value: <see cref="F:System.Web.AspNetHostingPermissionLevel.Minimal" />.</permission>
+    <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -32,12 +38,17 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter" /> class. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="AddAccesskeyAttribute">
@@ -46,9 +57,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.AddAccesskeyAttribute(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddAccesskeyAttribute (writer As HtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddAccesskeyAttribute(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member AddAccesskeyAttribute : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit&#xA;override this.AddAccesskeyAttribute : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit" Usage="htmlControlAdapter.AddAccesskeyAttribute writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -70,6 +84,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="AddAttributes">
@@ -78,9 +95,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.AddAttributes(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddAttributes (writer As HtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddAttributes(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member AddAttributes : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit&#xA;override this.AddAttributes : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit" Usage="htmlControlAdapter.AddAttributes writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -100,6 +120,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="AddJPhoneMultiMediaAttributes">
@@ -108,9 +131,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.AddJPhoneMultiMediaAttributes(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddJPhoneMultiMediaAttributes (writer As HtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddJPhoneMultiMediaAttributes(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member AddJPhoneMultiMediaAttributes : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit&#xA;override this.AddJPhoneMultiMediaAttributes : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit" Usage="htmlControlAdapter.AddJPhoneMultiMediaAttributes writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -133,6 +159,9 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.Configuration.HttpCapabilitiesBase.SupportsJPhoneMultiMediaAttributes" />
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/c330dabc-7e28-40bc-b777-101a5c6fa982">Control and Adapter Interaction</related>
       </Docs>
     </Member>
     <Member MemberName="ExitSecondaryUIMode">
@@ -141,9 +170,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.ExitSecondaryUIMode" />
       <MemberSignature Language="VB.NET" Value="Protected Sub ExitSecondaryUIMode ()" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ExitSecondaryUIMode();" />
+      <MemberSignature Language="F#" Value="member this.ExitSecondaryUIMode : unit -&gt; unit" Usage="htmlControlAdapter.ExitSecondaryUIMode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,6 +192,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="FormAdapter">
@@ -168,9 +201,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.FormAdapter" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property FormAdapter As HtmlFormAdapter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::Adapters::HtmlFormAdapter ^ FormAdapter { System::Web::UI::MobileControls::Adapters::HtmlFormAdapter ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FormAdapter : System.Web.UI.MobileControls.Adapters.HtmlFormAdapter" Usage="System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.FormAdapter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -180,6 +216,7 @@
         <summary>Retrieves the form adapter for the form on which the associated control resides. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <value>The form adapter for the form on which the associated control resides.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
       </Docs>
     </Member>
     <Member MemberName="LoadAdapterState">
@@ -188,9 +225,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.LoadAdapterState(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadAdapterState (state As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadAdapterState(System::Object ^ state);" />
+      <MemberSignature Language="F#" Value="override this.LoadAdapterState : obj -&gt; unit" Usage="htmlControlAdapter.LoadAdapterState state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -212,9 +252,12 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.NotSecondaryUI" />
       <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly NotSecondaryUI As Integer " />
       <MemberSignature Language="C++ CLI" Value="protected: static initonly int NotSecondaryUI;" />
+      <MemberSignature Language="F#" Value=" staticval mutable NotSecondaryUI : int" Usage="System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.NotSecondaryUI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -226,11 +269,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The HTML and WML adapter sets support a concept called *secondary UI*. Secondary UI is used by controls that need to show additional screens of UI, in the same way that a Windows-based application shows dialog boxes. For more information about secondary user interfaces, see the [Adapter Sets Functionality](http://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7) documentation.  
+ The HTML and WML adapter sets support a concept called *secondary UI*. Secondary UI is used by controls that need to show additional screens of UI, in the same way that a Windows-based application shows dialog boxes. For more information about secondary user interfaces, see the [Adapter Sets Functionality](https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7) documentation.  
   
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlControlAdapter" />
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="PageAdapter">
@@ -239,9 +284,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.PageAdapter" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property PageAdapter As HtmlPageAdapter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::Adapters::HtmlPageAdapter ^ PageAdapter { System::Web::UI::MobileControls::Adapters::HtmlPageAdapter ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PageAdapter : System.Web.UI.MobileControls.Adapters.HtmlPageAdapter" Usage="System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.PageAdapter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -252,6 +300,8 @@
         <value>The page adapter for the mobile page.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlControlAdapter" />
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Render">
@@ -262,6 +312,8 @@
       <Docs>
         <summary>Generates the target-specific markup for the associated control.</summary>
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.WmlControlAdapter" />
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Render">
@@ -270,9 +322,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlControlAdapter.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -294,9 +349,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.Render(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Sub Render (writer As HtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Render(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit" Usage="htmlControlAdapter.Render writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -316,6 +374,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderAsHiddenInputField">
@@ -324,9 +384,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.RenderAsHiddenInputField(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderAsHiddenInputField (writer As HtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderAsHiddenInputField(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="abstract member RenderAsHiddenInputField : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit&#xA;override this.RenderAsHiddenInputField : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit" Usage="htmlControlAdapter.RenderAsHiddenInputField writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -341,6 +404,8 @@
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.HtmlSelectionListAdapter" />
         <altmember cref="T:System.Web.UI.MobileControls.Adapters.HtmlTextBoxAdapter" />
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderBeginLink">
@@ -349,9 +414,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.RenderBeginLink(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RenderBeginLink (writer As HtmlMobileTextWriter, target As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderBeginLink(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer, System::String ^ target);" />
+      <MemberSignature Language="F#" Value="member this.RenderBeginLink : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter * string -&gt; unit" Usage="htmlControlAdapter.RenderBeginLink (writer, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -373,6 +441,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderEndLink">
@@ -381,9 +451,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.RenderEndLink(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RenderEndLink (writer As HtmlMobileTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderEndLink(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="member this.RenderEndLink : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit" Usage="htmlControlAdapter.RenderEndLink writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -396,6 +469,8 @@
         <param name="writer">The text writer.</param>
         <summary>Renders the end tag of a link. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderPostBackEventAsAnchor">
@@ -404,9 +479,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.RenderPostBackEventAsAnchor(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RenderPostBackEventAsAnchor (writer As HtmlMobileTextWriter, argument As String, linkText As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderPostBackEventAsAnchor(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer, System::String ^ argument, System::String ^ linkText);" />
+      <MemberSignature Language="F#" Value="member this.RenderPostBackEventAsAnchor : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter * string * string -&gt; unit" Usage="htmlControlAdapter.RenderPostBackEventAsAnchor (writer, argument, linkText)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -423,6 +501,8 @@
         <param name="linkText">The text specified for the label.</param>
         <summary>Renders a postback event as an anchor, with the text specified by the <paramref name="linkText" /> parameter as a label. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderPostBackEventAsAttribute">
@@ -431,9 +511,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.RenderPostBackEventAsAttribute(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter,System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RenderPostBackEventAsAttribute (writer As HtmlMobileTextWriter, attributeName As String, argument As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderPostBackEventAsAttribute(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer, System::String ^ attributeName, System::String ^ argument);" />
+      <MemberSignature Language="F#" Value="member this.RenderPostBackEventAsAttribute : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter * string * string -&gt; unit" Usage="htmlControlAdapter.RenderPostBackEventAsAttribute (writer, attributeName, argument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -450,6 +533,8 @@
         <param name="argument">The rendering parameter.</param>
         <summary>Renders a postback event as an attribute. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RenderPostBackEventReference">
@@ -458,9 +543,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.RenderPostBackEventReference(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter,System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub RenderPostBackEventReference (writer As HtmlMobileTextWriter, argument As String)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderPostBackEventReference(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer, System::String ^ argument);" />
+      <MemberSignature Language="F#" Value="member this.RenderPostBackEventReference : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter * string -&gt; unit" Usage="htmlControlAdapter.RenderPostBackEventReference (writer, argument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -475,6 +563,8 @@
         <param name="argument">The rendering parameter.</param>
         <summary>Renders a postback event reference. This API is obsolete. For information about how to develop ASP.NET mobile applications, see <see href="https://docs.microsoft.com/aspnet/mobile/overview">Mobile Apps &amp; Sites with ASP.NET</see>.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="RequiresFormTag">
@@ -483,9 +573,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.RequiresFormTag" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresFormTag As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresFormTag { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.RequiresFormTag : bool" Usage="System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.RequiresFormTag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -503,6 +596,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
     <Member MemberName="SaveAdapterState">
@@ -511,9 +606,12 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.SaveAdapterState" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function SaveAdapterState () As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ SaveAdapterState();" />
+      <MemberSignature Language="F#" Value="override this.SaveAdapterState : unit -&gt; obj" Usage="htmlControlAdapter.SaveAdapterState " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -534,9 +632,12 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.SecondaryUIMode" />
       <MemberSignature Language="VB.NET" Value="Protected Property SecondaryUIMode As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int SecondaryUIMode { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.SecondaryUIMode : int with get, set" Usage="System.Web.UI.MobileControls.Adapters.HtmlControlAdapter.SecondaryUIMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -549,10 +650,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The HTML and WML adapter sets support a concept called *secondary UI*. Secondary UI is used by controls that need to show additional screens of UI, in the same way as a dialog box in a Windows-based application. For more information about secondary user interfaces, see [Adapter Sets Functionality](http://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7).  
+ The HTML and WML adapter sets support a concept called *secondary UI*. Secondary UI is used by controls that need to show additional screens of UI, in the same way as a dialog box in a Windows-based application. For more information about secondary user interfaces, see [Adapter Sets Functionality](https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7).  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/4ff05ae9-4109-4352-929e-ad893895dbff(v=vs.100)">Architectural Overview of Adaptive Control Behavior</related>
+        <related type="Article" href="https://msdn.microsoft.com/library/903adf84-e45c-407e-8b55-98796c084ff7">Adapter Sets Functionality</related>
       </Docs>
     </Member>
   </Members>

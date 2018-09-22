@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.IdentifierCase" />
   <TypeSignature Language="VB.NET" Value="Public Enum IdentifierCase" />
   <TypeSignature Language="C++ CLI" Value="public enum class IdentifierCase" />
+  <TypeSignature Language="F#" Value="type IdentifierCase = " />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -31,6 +33,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Insensitive">
@@ -39,9 +42,11 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.IdentifierCase.Insensitive" />
       <MemberSignature Language="VB.NET" Value="Insensitive" />
       <MemberSignature Language="C++ CLI" Value="Insensitive" />
+      <MemberSignature Language="F#" Value="Insensitive = 1" Usage="System.Data.Common.IdentifierCase.Insensitive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -60,6 +65,7 @@
       <MemberValue>1</MemberValue>
       <Docs>
         <summary>The data source ignores identifier case when searching the system catalog. The identifiers "ab" and "AB" will match.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Sensitive">
@@ -68,9 +74,11 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.IdentifierCase.Sensitive" />
       <MemberSignature Language="VB.NET" Value="Sensitive" />
       <MemberSignature Language="C++ CLI" Value="Sensitive" />
+      <MemberSignature Language="F#" Value="Sensitive = 2" Usage="System.Data.Common.IdentifierCase.Sensitive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -89,6 +97,7 @@
       <MemberValue>2</MemberValue>
       <Docs>
         <summary>The data source distinguishes identifier case when searching the system catalog. The identifiers "ab" and "AB" will not match.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -97,9 +106,11 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Common.IdentifierCase.Unknown" />
       <MemberSignature Language="VB.NET" Value="Unknown" />
       <MemberSignature Language="C++ CLI" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Data.Common.IdentifierCase.Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -118,6 +129,7 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>The data source has ambiguous rules regarding identifier case and cannot discern this information.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

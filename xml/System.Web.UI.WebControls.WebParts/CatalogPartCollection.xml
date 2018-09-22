@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CatalogPartCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class CatalogPartCollection sealed : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type CatalogPartCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -54,6 +56,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -71,6 +74,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -82,8 +86,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new, empty instance of the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" /> class.</summary>
@@ -97,6 +107,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -105,9 +116,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.#ctor(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (catalogParts As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CatalogPartCollection(System::Collections::ICollection ^ catalogParts);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.CatalogPartCollection : System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.CatalogPartCollection" Usage="new System.Web.UI.WebControls.WebParts.CatalogPartCollection catalogParts" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -140,6 +153,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -148,9 +162,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.#ctor(System.Web.UI.WebControls.WebParts.CatalogPartCollection,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (existingCatalogParts As CatalogPartCollection, catalogParts As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; CatalogPartCollection(System::Web::UI::WebControls::WebParts::CatalogPartCollection ^ existingCatalogParts, System::Collections::ICollection ^ catalogParts);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.CatalogPartCollection : System.Web.UI.WebControls.WebParts.CatalogPartCollection * System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.CatalogPartCollection" Usage="new System.Web.UI.WebControls.WebParts.CatalogPartCollection (existingCatalogParts, catalogParts)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -162,6 +178,7 @@
         <param name="catalogParts">An <see cref="T:System.Collections.ICollection" /> of additional <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" /> class by passing in an <see cref="T:System.Collections.ICollection" /> collection of the existing <see cref="T:System.Web.UI.WebControls.WebParts.CatalogPart" /> controls in a zone, and an additional collection of controls.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -169,9 +186,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.WebParts.CatalogPart catalogPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Contains(System.Web.UI.WebControls.WebParts.CatalogPart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::WebParts::CatalogPart ^ catalogPart);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.WebParts.CatalogPart -&gt; bool" Usage="catalogPartCollection.Contains catalogPart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -205,6 +224,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -213,9 +233,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.CopyTo(System.Web.UI.WebControls.WebParts.CatalogPart[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As CatalogPart(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::WebParts::CatalogPart ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.UI.WebControls.WebParts.CatalogPart[] * int -&gt; unit" Usage="catalogPartCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -238,6 +260,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -246,9 +269,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As CatalogPartCollection " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::CatalogPartCollection ^ Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Web.UI.WebControls.WebParts.CatalogPartCollection" Usage="System.Web.UI.WebControls.WebParts.CatalogPartCollection.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -264,6 +289,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -271,9 +297,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.WebParts.CatalogPart catalogPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.IndexOf(System.Web.UI.WebControls.WebParts.CatalogPart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::WebParts::CatalogPart ^ catalogPart);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.WebParts.CatalogPart -&gt; int" Usage="catalogPartCollection.IndexOf catalogPart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -307,6 +335,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -324,9 +353,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As CatalogPart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::CatalogPart ^ default[int] { System::Web::UI::WebControls::WebParts::CatalogPart ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.WebParts.CatalogPart" Usage="System.Web.UI.WebControls.WebParts.CatalogPartCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -359,6 +390,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -367,9 +399,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(id As String) As CatalogPart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::CatalogPart ^ default[System::String ^] { System::Web::UI::WebControls::WebParts::CatalogPart ^ get(System::String ^ id); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.UI.WebControls.WebParts.CatalogPart" Usage="System.Web.UI.WebControls.WebParts.CatalogPartCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -402,6 +436,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

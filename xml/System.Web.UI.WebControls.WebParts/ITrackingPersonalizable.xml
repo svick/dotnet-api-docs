@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ITrackingPersonalizable" />
   <TypeSignature Language="VB.NET" Value="Public Interface ITrackingPersonalizable" />
   <TypeSignature Language="C++ CLI" Value="public interface class ITrackingPersonalizable" />
+  <TypeSignature Language="F#" Value="type ITrackingPersonalizable = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces />
@@ -36,6 +38,10 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7dc34f74-52aa-4082-b98d-2bcf9e07e320">Web Parts Personalization Overview</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/a88d2bd5-4932-4ec1-b176-7d7da45f85d9">Walkthrough: Implementing Web Parts Personalization with a User Control</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7885563f-7bbe-45a0-b5e2-c6bf1bc2deaa">Web Parts Personalization</related>
   </Docs>
   <Members>
     <Member MemberName="BeginLoad">
@@ -44,9 +50,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.BeginLoad" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginLoad ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginLoad();" />
+      <MemberSignature Language="F#" Value="abstract member BeginLoad : unit -&gt; unit" Usage="iTrackingPersonalizable.BeginLoad " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,9 +90,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.BeginSave" />
       <MemberSignature Language="VB.NET" Value="Public Sub BeginSave ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginSave();" />
+      <MemberSignature Language="F#" Value="abstract member BeginSave : unit -&gt; unit" Usage="iTrackingPersonalizable.BeginSave " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,9 +127,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.EndLoad" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndLoad ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndLoad();" />
+      <MemberSignature Language="F#" Value="abstract member EndLoad : unit -&gt; unit" Usage="iTrackingPersonalizable.EndLoad " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -155,9 +167,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.EndSave" />
       <MemberSignature Language="VB.NET" Value="Public Sub EndSave ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndSave();" />
+      <MemberSignature Language="F#" Value="abstract member EndSave : unit -&gt; unit" Usage="iTrackingPersonalizable.EndSave " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -190,9 +204,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.TracksChanges" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TracksChanges As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TracksChanges { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.TracksChanges : bool" Usage="System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.TracksChanges" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

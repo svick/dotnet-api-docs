@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.FormsAuthenticationConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormsAuthenticationConfiguration&#xA;Inherits ConfigurationElement" />
   <TypeSignature Language="C++ CLI" Value="public ref class FormsAuthenticationConfiguration sealed : System::Configuration::ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type FormsAuthenticationConfiguration = class&#xA;    inherit ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,7 +32,7 @@
 ## Examples  
  The following code example shows how to obtain the <xref:System.Web.Configuration.FormsAuthenticationConfiguration> object from the configuration file of an existing Web application. You can use this object to access its members. The configuration file will contain a setup similar to the following.  
   
- **Note** If you use the `credentials` section, be sure to follow the guidelines explained at [ASP.NET Authentication](http://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1). For scalability and better security, it is recommended that you use an external database to store the users' credentials. For more information about building secure ASP.NET applications search the Microsoft MSDN Web site (msdn.microsoft.com) for "Securing Your ASP.NET Application" and "Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication."  
+ **Note** If you use the `credentials` section, be sure to follow the guidelines explained at [ASP.NET Authentication](https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)). For scalability and better security, it is recommended that you use an external database to store the users' credentials. For more information about building secure ASP.NET applications search the Microsoft MSDN Web site (msdn.microsoft.com) for "Securing Your ASP.NET Application" and "Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication."  
   
 ```  
 <authentication mode="Forms">  
@@ -54,6 +56,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/99e2f9e8-5b97-4a4d-a4ed-5f93276053b7">Forms Authentication Across Applications</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,8 +70,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.FormsAuthenticationConfiguration" /> class.</summary>
@@ -89,13 +100,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Cookieless" />
       <MemberSignature Language="VB.NET" Value="Public Property Cookieless As HttpCookieMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpCookieMode Cookieless { System::Web::HttpCookieMode get(); void set(System::Web::HttpCookieMode value); };" />
+      <MemberSignature Language="F#" Value="member this.Cookieless : System.Web.HttpCookieMode with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Cookieless" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("cookieless", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -122,6 +135,8 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.Configuration.FormsAuthenticationConfiguration.Protection" />
+        <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
       </Docs>
     </Member>
     <Member MemberName="CookieSameSite">
@@ -130,13 +145,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.CookieSameSite" />
       <MemberSignature Language="VB.NET" Value="Public Property CookieSameSite As SameSiteMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::SameSiteMode CookieSameSite { System::Web::SameSiteMode get(); void set(System::Web::SameSiteMode value); };" />
+      <MemberSignature Language="F#" Value="member this.CookieSameSite : System.Web.SameSiteMode with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.CookieSameSite" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("cookieSameSite")</AttributeName>
         </Attribute>
       </Attributes>
@@ -155,13 +171,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Credentials" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Credentials As FormsAuthenticationCredentials" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::FormsAuthenticationCredentials ^ Credentials { System::Web::Configuration::FormsAuthenticationCredentials ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Credentials : System.Web.Configuration.FormsAuthenticationCredentials" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Credentials" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("credentials")</AttributeName>
         </Attribute>
       </Attributes>
@@ -198,16 +216,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.DefaultUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property DefaultUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.DefaultUrl : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.DefaultUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("defaultUrl", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -241,13 +261,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Domain" />
       <MemberSignature Language="VB.NET" Value="Public Property Domain As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Domain { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Domain : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Domain" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("domain", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -285,11 +307,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.ElementProperty" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementProperty As ConfigurationElementProperty" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationElementProperty ^ ElementProperty { System::Configuration::ConfigurationElementProperty ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ElementProperty : System.Configuration.ConfigurationElementProperty" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.ElementProperty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationElementProperty</ReturnType>
       </ReturnValue>
@@ -305,13 +334,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.EnableCrossAppRedirects" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableCrossAppRedirects As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableCrossAppRedirects { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableCrossAppRedirects : bool with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.EnableCrossAppRedirects" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("enableCrossAppRedirects", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -342,6 +373,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/99e2f9e8-5b97-4a4d-a4ed-5f93276053b7">Forms Authentication Across Applications</related>
       </Docs>
     </Member>
     <Member MemberName="LoginUrl">
@@ -350,16 +382,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.LoginUrl" />
       <MemberSignature Language="VB.NET" Value="Public Property LoginUrl As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LoginUrl { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.LoginUrl : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.LoginUrl" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("loginUrl", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -385,6 +419,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/77e21ba2-bad1-4967-a8ec-74942dea7e47">Forms Authentication Provider</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -393,16 +429,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("name", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -431,16 +469,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Path" />
       <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Path" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("path", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
         </Attribute>
       </Attributes>
@@ -475,11 +515,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Properties" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Properties" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
       </ReturnValue>
@@ -495,13 +542,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Protection" />
       <MemberSignature Language="VB.NET" Value="Public Property Protection As FormsProtectionEnum" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::FormsProtectionEnum Protection { System::Web::Configuration::FormsProtectionEnum get(); void set(System::Web::Configuration::FormsProtectionEnum value); };" />
+      <MemberSignature Language="F#" Value="member this.Protection : System.Web.Configuration.FormsProtectionEnum with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Protection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("protection", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -526,6 +575,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://msdn.microsoft.com/library/fc10b0ef-4ce4-4a7f-9174-886325221ee1(v=vs.100)">ASP.NET Authentication</related>
       </Docs>
     </Member>
     <Member MemberName="RequireSSL">
@@ -534,13 +584,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.RequireSSL" />
       <MemberSignature Language="VB.NET" Value="Public Property RequireSSL As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireSSL { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.RequireSSL : bool with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.RequireSSL" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("requireSSL", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -576,13 +628,15 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.SlidingExpiration" />
       <MemberSignature Language="VB.NET" Value="Public Property SlidingExpiration As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SlidingExpiration { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.SlidingExpiration : bool with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.SlidingExpiration" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("slidingExpiration", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -617,13 +671,14 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.TicketCompatibilityMode" />
       <MemberSignature Language="VB.NET" Value="Public Property TicketCompatibilityMode As TicketCompatibilityMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::TicketCompatibilityMode TicketCompatibilityMode { System::Web::Configuration::TicketCompatibilityMode get(); void set(System::Web::Configuration::TicketCompatibilityMode value); };" />
+      <MemberSignature Language="F#" Value="member this.TicketCompatibilityMode : System.Web.Configuration.TicketCompatibilityMode with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.TicketCompatibilityMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("ticketCompatibilityMode", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
       </Attributes>
@@ -656,19 +711,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationConfiguration.Timeout" />
       <MemberSignature Language="VB.NET" Value="Public Property Timeout As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Timeout { TimeSpan get(); void set(TimeSpan value); };" />
+      <MemberSignature Language="F#" Value="member this.Timeout : TimeSpan with get, set" Usage="System.Web.Configuration.FormsAuthenticationConfiguration.Timeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Configuration.TimeSpanMinutesConverter))</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.ConfigurationProperty("timeout", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Configuration.TimeSpanValidator(MaxValueString="10675199.02:48:05.4775807", MinValueString="00:01:00")</AttributeName>
         </Attribute>
       </Attributes>

@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DataAdapter" />
   <TypeSignature Language="VB.NET" Value="Public Class DataAdapter&#xA;Inherits Component&#xA;Implements IDataAdapter" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataAdapter : System::ComponentModel::Component, System::Data::IDataAdapter" />
+  <TypeSignature Language="F#" Value="type DataAdapter = class&#xA;    inherit Component&#xA;    interface IDataAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -40,6 +43,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -50,6 +54,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of a <see cref="T:System.Data.Common.DataAdapter" /> class.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -61,6 +66,8 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -92,17 +99,27 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected DataAdapter (System.Data.Common.DataAdapter from);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Data.Common.DataAdapter from) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.#ctor(System.Data.Common.DataAdapter)" />
-      <MemberSignature Language="VB.NET" Value="Protected Sub New (from As DataAdapter)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataAdapter(System::Data::Common::DataAdapter ^ from);" />
+      <MemberSignature Language="C#" Value="protected DataAdapter (System.Data.Common.DataAdapter from);" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Data.Common.DataAdapter from) cil managed" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.#ctor(System.Data.Common.DataAdapter)" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (from As DataAdapter)" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataAdapter(System::Data::Common::DataAdapter ^ from);" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DataAdapter : System.Data.Common.DataAdapter -&gt; System.Data.Common.DataAdapter" Usage="new System.Data.Common.DataAdapter from" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="C#" Value="protected DataAdapter (System.Data.Common.DataAdapter adapter);" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Data.Common.DataAdapter adapter) cil managed" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.#ctor(System.Data.Common.DataAdapter)" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (adapter As DataAdapter)" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataAdapter(System::Data::Common::DataAdapter ^ adapter);" FrameworkAlternate="netframework-1.1" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.DataAdapter : System.Data.Common.DataAdapter -&gt; System.Data.Common.DataAdapter" Usage="new System.Data.Common.DataAdapter adapter" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -116,10 +133,12 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="from" Type="System.Data.Common.DataAdapter" />
+        <Parameter Name="from" Type="System.Data.Common.DataAdapter" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="adapter" Type="System.Data.Common.DataAdapter" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="from">A <see cref="T:System.Data.Common.DataAdapter" /> object used to create the new <see cref="T:System.Data.Common.DataAdapter" />.</param>
+        <param name="adapter">To be added.</param>
         <summary>Initializes a new instance of a <see cref="T:System.Data.Common.DataAdapter" /> class from an existing object of the same type.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -129,6 +148,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AcceptChangesDuringFill">
@@ -137,9 +157,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.AcceptChangesDuringFill" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptChangesDuringFill As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AcceptChangesDuringFill { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptChangesDuringFill : bool with get, set" Usage="System.Data.Common.DataAdapter.AcceptChangesDuringFill" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -153,8 +176,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Data.DataSysDescription("DataAdapter_AcceptChangesDuringFill")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -172,6 +198,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AcceptChangesDuringUpdate">
@@ -180,9 +207,11 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.AcceptChangesDuringUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Property AcceptChangesDuringUpdate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AcceptChangesDuringUpdate { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.AcceptChangesDuringUpdate : bool with get, set" Usage="System.Data.Common.DataAdapter.AcceptChangesDuringUpdate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -196,7 +225,7 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
       </Attributes>
@@ -226,6 +255,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d1bd9a8c-0e29-40e3-bda8-d89176b72fb1">Updating Data Sources with DataAdapters</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/e5e9309a-3ebb-4a9c-9d78-21c4e2bafc5b">Merging DataSet Contents</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6b7f9cb-81be-44e1-bb94-56137954876d">Retrieving Identity or Autonumber Values</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CloneInternals">
@@ -234,9 +267,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.CloneInternals" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CloneInternals () As DataAdapter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::Common::DataAdapter ^ CloneInternals();" />
+      <MemberSignature Language="F#" Value="abstract member CloneInternals : unit -&gt; System.Data.Common.DataAdapter&#xA;override this.CloneInternals : unit -&gt; System.Data.Common.DataAdapter" Usage="dataAdapter.CloneInternals " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -250,8 +286,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Obsolete("CloneInternals() has been deprecated.  Use the DataAdapter(DataAdapter from) constructor.  http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Obsolete("use 'protected DataAdapter(DataAdapter)' ctor")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -274,6 +313,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Data.Common.DataAdapter.CloneInternals" /> in a derived class, be sure to call the base class's <see cref="M:System.Data.Common.DataAdapter.CloneInternals" /> method.</para>
         </block>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ContinueUpdateOnError">
@@ -282,9 +322,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.ContinueUpdateOnError" />
       <MemberSignature Language="VB.NET" Value="Public Property ContinueUpdateOnError As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContinueUpdateOnError { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ContinueUpdateOnError : bool with get, set" Usage="System.Data.Common.DataAdapter.ContinueUpdateOnError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -298,8 +341,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Data.DataSysDescription("DataAdapter_ContinueUpdateOnError")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -319,6 +365,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="CreateTableMappings">
@@ -327,9 +374,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.CreateTableMappings" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateTableMappings () As DataTableMappingCollection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::Common::DataTableMappingCollection ^ CreateTableMappings();" />
+      <MemberSignature Language="F#" Value="abstract member CreateTableMappings : unit -&gt; System.Data.Common.DataTableMappingCollection&#xA;override this.CreateTableMappings : unit -&gt; System.Data.Common.DataTableMappingCollection" Usage="dataAdapter.CreateTableMappings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -350,6 +400,7 @@
         <summary>Creates a new <see cref="T:System.Data.Common.DataTableMappingCollection" />.</summary>
         <returns>A new table mapping collection.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -358,9 +409,12 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="dataAdapter.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -397,8 +451,9 @@
           <para>
             <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" />, be careful not to reference objects that have been disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
- For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/library/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
+ For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).</para>
         </block>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Fill">
@@ -409,6 +464,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Adds or refreshes rows in the <see cref="T:System.Data.DataSet" /> to match those in the data source.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Fill">
@@ -416,12 +472,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Fill(class System.Data.DataSet dataSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Fill(System.Data.DataSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Fill(System::Data::DataSet ^ dataSet);" />
+      <MemberSignature Language="F#" Value="abstract member Fill : System.Data.DataSet -&gt; int&#xA;override this.Fill : System.Data.DataSet -&gt; int" Usage="dataAdapter.Fill dataSet" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataAdapter.Fill(System.Data.DataSet)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -466,6 +525,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Data.Common.DataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)" />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -473,9 +533,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 Fill(class System.Data.DataTable dataTable, class System.Data.IDataReader dataReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Fill(System.Data.DataTable,System.Data.IDataReader)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int Fill(System::Data::DataTable ^ dataTable, System::Data::IDataReader ^ dataReader);" />
+      <MemberSignature Language="F#" Value="abstract member Fill : System.Data.DataTable * System.Data.IDataReader -&gt; int&#xA;override this.Fill : System.Data.DataTable * System.Data.IDataReader -&gt; int" Usage="dataAdapter.Fill (dataTable, dataReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -508,6 +570,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -516,9 +579,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Fill(System.Data.DataTable[],System.Data.IDataReader,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function Fill (dataTables As DataTable(), dataReader As IDataReader, startRecord As Integer, maxRecords As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int Fill(cli::array &lt;System::Data::DataTable ^&gt; ^ dataTables, System::Data::IDataReader ^ dataReader, int startRecord, int maxRecords);" />
+      <MemberSignature Language="F#" Value="abstract member Fill : System.Data.DataTable[] * System.Data.IDataReader * int * int -&gt; int&#xA;override this.Fill : System.Data.DataTable[] * System.Data.IDataReader * int * int -&gt; int" Usage="dataAdapter.Fill (dataTables, dataReader, startRecord, maxRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -555,6 +620,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Fill">
@@ -562,9 +628,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 Fill(class System.Data.DataSet dataSet, string srcTable, class System.Data.IDataReader dataReader, int32 startRecord, int32 maxRecords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Fill(System.Data.DataSet,System.String,System.Data.IDataReader,System.Int32,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int Fill(System::Data::DataSet ^ dataSet, System::String ^ srcTable, System::Data::IDataReader ^ dataReader, int startRecord, int maxRecords);" />
+      <MemberSignature Language="F#" Value="abstract member Fill : System.Data.DataSet * string * System.Data.IDataReader * int * int -&gt; int&#xA;override this.Fill : System.Data.DataSet * string * System.Data.IDataReader * int * int -&gt; int" Usage="dataAdapter.Fill (dataSet, srcTable, dataReader, startRecord, maxRecords)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -603,6 +671,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FillError">
@@ -611,9 +680,11 @@
       <MemberSignature Language="DocId" Value="E:System.Data.Common.DataAdapter.FillError" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event FillError As FillErrorEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::FillErrorEventHandler ^ FillError;" />
+      <MemberSignature Language="F#" Value="member this.FillError : System.Data.FillErrorEventHandler " Usage="member this.FillError : System.Data.FillErrorEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -643,6 +714,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FillLoadOption">
@@ -651,9 +723,11 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.FillLoadOption" />
       <MemberSignature Language="VB.NET" Value="Public Property FillLoadOption As LoadOption" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::LoadOption FillLoadOption { System::Data::LoadOption get(); void set(System::Data::LoadOption value); };" />
+      <MemberSignature Language="F#" Value="member this.FillLoadOption : System.Data.LoadOption with get, set" Usage="System.Data.Common.DataAdapter.FillLoadOption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -667,8 +741,11 @@
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8">
+          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -679,6 +756,7 @@
         <value>A <see cref="T:System.Data.LoadOption" /> value.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Data.LoadOption" />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="FillSchema">
@@ -689,6 +767,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Adds a <see cref="T:System.Data.DataTable" /> to the specified <see cref="T:System.Data.DataSet" />.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="FillSchema">
@@ -696,12 +775,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.DataTable[] FillSchema(class System.Data.DataSet dataSet, valuetype System.Data.SchemaType schemaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Data::DataTable ^&gt; ^ FillSchema(System::Data::DataSet ^ dataSet, System::Data::SchemaType schemaType);" />
+      <MemberSignature Language="F#" Value="abstract member FillSchema : System.Data.DataSet * System.Data.SchemaType -&gt; System.Data.DataTable[]&#xA;override this.FillSchema : System.Data.DataSet * System.Data.SchemaType -&gt; System.Data.DataTable[]" Usage="dataAdapter.FillSchema (dataSet, schemaType)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -769,6 +851,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
  ]]></format>
         </remarks>
         <altmember cref="M:System.Data.Common.DataAdapter.Fill(System.Data.DataSet)" />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FillSchema">
@@ -776,9 +859,11 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.DataTable FillSchema(class System.Data.DataTable dataTable, valuetype System.Data.SchemaType schemaType, class System.Data.IDataReader dataReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.FillSchema(System.Data.DataTable,System.Data.SchemaType,System.Data.IDataReader)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::DataTable ^ FillSchema(System::Data::DataTable ^ dataTable, System::Data::SchemaType schemaType, System::Data::IDataReader ^ dataReader);" />
+      <MemberSignature Language="F#" Value="abstract member FillSchema : System.Data.DataTable * System.Data.SchemaType * System.Data.IDataReader -&gt; System.Data.DataTable&#xA;override this.FillSchema : System.Data.DataTable * System.Data.SchemaType * System.Data.IDataReader -&gt; System.Data.DataTable" Usage="dataAdapter.FillSchema (dataTable, schemaType, dataReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -806,6 +891,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         <summary>Adds a <see cref="T:System.Data.DataTable" /> to the specified <see cref="T:System.Data.DataSet" />.</summary>
         <returns>A <see cref="T:System.Data.DataTable" /> object that contains schema information returned from the data source.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FillSchema">
@@ -813,9 +899,11 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.DataTable[] FillSchema(class System.Data.DataSet dataSet, valuetype System.Data.SchemaType schemaType, string srcTable, class System.Data.IDataReader dataReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.FillSchema(System.Data.DataSet,System.Data.SchemaType,System.String,System.Data.IDataReader)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::Data::DataTable ^&gt; ^ FillSchema(System::Data::DataSet ^ dataSet, System::Data::SchemaType schemaType, System::String ^ srcTable, System::Data::IDataReader ^ dataReader);" />
+      <MemberSignature Language="F#" Value="abstract member FillSchema : System.Data.DataSet * System.Data.SchemaType * string * System.Data.IDataReader -&gt; System.Data.DataTable[]&#xA;override this.FillSchema : System.Data.DataSet * System.Data.SchemaType * string * System.Data.IDataReader -&gt; System.Data.DataTable[]" Usage="dataAdapter.FillSchema (dataSet, schemaType, srcTable, dataReader)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -845,6 +933,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         <summary>Adds a <see cref="T:System.Data.DataTable" /> to the specified <see cref="T:System.Data.DataSet" />.</summary>
         <returns>A reference to a collection of <see cref="T:System.Data.DataTable" /> objects that were added to the <see cref="T:System.Data.DataSet" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetFillParameters">
@@ -853,12 +942,15 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.GetFillParameters" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFillParameters () As IDataParameter()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Data::IDataParameter ^&gt; ^ GetFillParameters();" />
+      <MemberSignature Language="F#" Value="abstract member GetFillParameters : unit -&gt; System.Data.IDataParameter[]&#xA;override this.GetFillParameters : unit -&gt; System.Data.IDataParameter[]" Usage="dataAdapter.GetFillParameters " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataAdapter.GetFillParameters</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -872,7 +964,10 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
         </Attribute>
       </Attributes>
@@ -884,6 +979,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         <summary>Gets the parameters set by the user when executing an SQL SELECT statement.</summary>
         <returns>An array of <see cref="T:System.Data.IDataParameter" /> objects that contains the parameters set by the user.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="HasTableMappings">
@@ -892,9 +988,11 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.HasTableMappings" />
       <MemberSignature Language="VB.NET" Value="Protected Function HasTableMappings () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasTableMappings();" />
+      <MemberSignature Language="F#" Value="member this.HasTableMappings : unit -&gt; bool" Usage="dataAdapter.HasTableMappings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -916,6 +1014,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         <returns>
           <see langword="true" /> if a <see cref="T:System.Data.Common.DataTableMappingCollection" /> has been created; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MissingMappingAction">
@@ -924,12 +1023,15 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.MissingMappingAction" />
       <MemberSignature Language="VB.NET" Value="Public Property MissingMappingAction As MissingMappingAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::MissingMappingAction MissingMappingAction { System::Data::MissingMappingAction get(); void set(System::Data::MissingMappingAction value); };" />
+      <MemberSignature Language="F#" Value="member this.MissingMappingAction : System.Data.MissingMappingAction with get, set" Usage="System.Data.Common.DataAdapter.MissingMappingAction" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataAdapter.MissingMappingAction</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -943,8 +1045,11 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Data.DataSysDescription("DataAdapter_MissingMappingAction")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -971,6 +1076,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         </remarks>
         <exception cref="T:System.ArgumentException">The value set is not one of the <see cref="T:System.Data.MissingMappingAction" /> values.</exception>
         <altmember cref="P:System.Data.Common.DataAdapter.MissingSchemaAction" />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="MissingSchemaAction">
@@ -979,12 +1085,15 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.MissingSchemaAction" />
       <MemberSignature Language="VB.NET" Value="Public Property MissingSchemaAction As MissingSchemaAction" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::MissingSchemaAction MissingSchemaAction { System::Data::MissingSchemaAction get(); void set(System::Data::MissingSchemaAction value); };" />
+      <MemberSignature Language="F#" Value="member this.MissingSchemaAction : System.Data.MissingSchemaAction with get, set" Usage="System.Data.Common.DataAdapter.MissingSchemaAction" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataAdapter.MissingSchemaAction</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -998,8 +1107,11 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Data.DataSysDescription("DataAdapter_MissingSchemaAction")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1021,6 +1133,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         </remarks>
         <exception cref="T:System.ArgumentException">The value set is not one of the <see cref="T:System.Data.MissingSchemaAction" /> values.</exception>
         <altmember cref="P:System.Data.Common.DataAdapter.MissingMappingAction" />
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="OnFillError">
@@ -1029,9 +1142,11 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.OnFillError(System.Data.FillErrorEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFillError (value As FillErrorEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFillError(System::Data::FillErrorEventArgs ^ value);" />
+      <MemberSignature Language="F#" Value="abstract member OnFillError : System.Data.FillErrorEventArgs -&gt; unit&#xA;override this.OnFillError : System.Data.FillErrorEventArgs -&gt; unit" Usage="dataAdapter.OnFillError value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1054,6 +1169,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         <param name="value">A <see cref="T:System.Data.FillErrorEventArgs" /> object.</param>
         <summary>Invoked when an error occurs during a <see langword="Fill" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ResetFillLoadOption">
@@ -1062,9 +1178,11 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.ResetFillLoadOption" />
       <MemberSignature Language="VB.NET" Value="Public Sub ResetFillLoadOption ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetFillLoadOption();" />
+      <MemberSignature Language="F#" Value="member this.ResetFillLoadOption : unit -&gt; unit" Usage="dataAdapter.ResetFillLoadOption " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1078,7 +1196,10 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1089,6 +1210,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <Docs>
         <summary>Resets <see cref="P:System.Data.Common.DataAdapter.FillLoadOption" /> to its default state and causes <see cref="M:System.Data.Common.DataAdapter.Fill(System.Data.DataSet)" /> to honor <see cref="P:System.Data.Common.DataAdapter.AcceptChangesDuringFill" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ReturnProviderSpecificTypes">
@@ -1097,9 +1219,11 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.ReturnProviderSpecificTypes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Property ReturnProviderSpecificTypes As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ReturnProviderSpecificTypes { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ReturnProviderSpecificTypes : bool with get, set" Usage="System.Data.Common.DataAdapter.ReturnProviderSpecificTypes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1113,7 +1237,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1132,6 +1256,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeAcceptChangesDuringFill">
@@ -1140,9 +1265,11 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.ShouldSerializeAcceptChangesDuringFill" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ShouldSerializeAcceptChangesDuringFill () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ShouldSerializeAcceptChangesDuringFill();" />
+      <MemberSignature Language="F#" Value="abstract member ShouldSerializeAcceptChangesDuringFill : unit -&gt; bool&#xA;override this.ShouldSerializeAcceptChangesDuringFill : unit -&gt; bool" Usage="dataAdapter.ShouldSerializeAcceptChangesDuringFill " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1156,7 +1283,10 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1169,6 +1299,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         <returns>
           <see langword="true" /> if the <see cref="P:System.Data.Common.DataAdapter.AcceptChangesDuringFill" /> property is persisted; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeFillLoadOption">
@@ -1177,9 +1308,11 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.ShouldSerializeFillLoadOption" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function ShouldSerializeFillLoadOption () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ShouldSerializeFillLoadOption();" />
+      <MemberSignature Language="F#" Value="abstract member ShouldSerializeFillLoadOption : unit -&gt; bool&#xA;override this.ShouldSerializeFillLoadOption : unit -&gt; bool" Usage="dataAdapter.ShouldSerializeFillLoadOption " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1193,7 +1326,10 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1206,6 +1342,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         <returns>
           <see langword="true" /> if the <see cref="P:System.Data.Common.DataAdapter.FillLoadOption" /> property is persisted; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeTableMappings">
@@ -1214,9 +1351,12 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.ShouldSerializeTableMappings" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldSerializeTableMappings () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldSerializeTableMappings();" />
+      <MemberSignature Language="F#" Value="abstract member ShouldSerializeTableMappings : unit -&gt; bool&#xA;override this.ShouldSerializeTableMappings : unit -&gt; bool" Usage="dataAdapter.ShouldSerializeTableMappings " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1238,6 +1378,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         <returns>
           <see langword="true" /> if one or more <see cref="T:System.Data.Common.DataTableMapping" /> objects exist; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDataAdapter.TableMappings">
@@ -1245,13 +1386,15 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.ITableMappingCollection System.Data.IDataAdapter.TableMappings" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.System#Data#IDataAdapter#TableMappings" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property TableMappings As ITableMappingCollection Implements IDataAdapter.TableMappings" />
-      <MemberSignature Language="C++ CLI" Value="property System::Data::ITableMappingCollection ^ System.Data.IDataAdapter.TableMappings { System::Data::ITableMappingCollection ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Data::ITableMappingCollection ^ System::Data::IDataAdapter::TableMappings { System::Data::ITableMappingCollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Data.IDataAdapter.TableMappings" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataAdapter.TableMappings</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1280,6 +1423,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TableMappings">
@@ -1288,9 +1432,12 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DataAdapter.TableMappings" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TableMappings As DataTableMappingCollection" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DataTableMappingCollection ^ TableMappings { System::Data::Common::DataTableMappingCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TableMappings : System.Data.Common.DataTableMappingCollection" Usage="System.Data.Common.DataAdapter.TableMappings" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1304,8 +1451,14 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.Data.DataSysDescription("DataAdapter_TableMappings")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1330,6 +1483,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Update">
@@ -1337,12 +1491,15 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Update(class System.Data.DataSet dataSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DataAdapter.Update(System.Data.DataSet)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Update(System::Data::DataSet ^ dataSet);" />
+      <MemberSignature Language="F#" Value="abstract member Update : System.Data.DataSet -&gt; int&#xA;override this.Update : System.Data.DataSet -&gt; int" Usage="dataAdapter.Update dataSet" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataAdapter.Update(System.Data.DataSet)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1428,6 +1585,7 @@ If a unique clustered index is defined on a column or columns in a SQL Server ta
         </remarks>
         <exception cref="T:System.InvalidOperationException">The source table is invalid.</exception>
         <exception cref="T:System.Data.DBConcurrencyException">An attempt to execute an INSERT, UPDATE, or DELETE statement resulted in zero records affected.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IDisposable" />
   <TypeSignature Language="VB.NET" Value="Public Interface IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public interface class IDisposable" />
+  <TypeSignature Language="F#" Value="type IDisposable = interface" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,6 +16,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -24,7 +27,7 @@
   </AssemblyInfo>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
   </Attributes>
@@ -46,7 +49,7 @@
 > [!IMPORTANT]
 >  In the .NET Framework, the C++ compiler supports deterministic disposal of resources and does not allow direct implementation of the <xref:System.IDisposable.Dispose%2A> method.  
   
- For a detailed discussion about how this interface and the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method are used, see the [Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md) topics.  
+ For a detailed discussion about how this interface and the <xref:System.Object.Finalize%2A?displayProperty=nameWithType> method are used, see the [Garbage Collection](~/docs/standard/garbage-collection/index.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md) topics.  
   
 ## Using an object that implements IDisposable  
  If your app simply uses an object that implements the <xref:System.IDisposable> interface, you should call the object's <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation when you are finished using it. Depending on your programming language, you can do this in one of two ways:  
@@ -128,6 +131,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:Microsoft.Win32.SafeHandles.SafeFileHandle" />
+    <related type="Article" href="~/docs/standard/garbage-collection/implementing-dispose.md">Implementing a Dispose Method</related>
   </Docs>
   <Members>
     <Member MemberName="Dispose">
@@ -136,6 +140,7 @@
       <MemberSignature Language="DocId" Value="M:System.IDisposable.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit" Usage="iDisposable.Dispose " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -148,6 +153,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -200,6 +207,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/garbage-collection/implementing-dispose.md">Implementing a Dispose Method</related>
       </Docs>
     </Member>
   </Members>

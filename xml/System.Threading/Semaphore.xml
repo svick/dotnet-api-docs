@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.Semaphore" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Semaphore&#xA;Inherits WaitHandle" />
   <TypeSignature Language="C++ CLI" Value="public ref class Semaphore sealed : System::Threading::WaitHandle" />
+  <TypeSignature Language="F#" Value="type Semaphore = class&#xA;    inherit WaitHandle" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +14,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -25,7 +27,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -61,6 +63,8 @@
  ]]></format>
     </remarks>
     <threadsafe>This type is thread safe.</threadsafe>
+    <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+    <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -80,6 +84,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialCount As Integer, maximumCount As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Semaphore(int initialCount, int maximumCount);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Semaphore : int * int -&gt; System.Threading.Semaphore" Usage="new System.Threading.Semaphore (initialCount, maximumCount)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -90,6 +95,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -98,8 +104,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -137,6 +146,8 @@
  -or-  
   
  <paramref name="initialCount" /> is less than 0.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -145,6 +156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.#ctor(System.Int32,System.Int32,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialCount As Integer, maximumCount As Integer, name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Semaphore(int initialCount, int maximumCount, System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Semaphore : int * int * string -&gt; System.Threading.Semaphore" Usage="new System.Threading.Semaphore (initialCount, maximumCount, name)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -155,6 +167,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -218,6 +231,8 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code to create a named system semaphore. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.  
   
  Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -226,6 +241,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.#ctor(System.Int32,System.Int32,System.String,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (initialCount As Integer, maximumCount As Integer, name As String, ByRef createdNew As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Semaphore(int initialCount, int maximumCount, System::String ^ name, [Runtime::InteropServices::Out] bool % createdNew);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Semaphore : int * int * string *  -&gt; System.Threading.Semaphore" Usage="new System.Threading.Semaphore (initialCount, maximumCount, name, createdNew)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -236,6 +252,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -243,11 +260,16 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="initialCount" Type="System.Int32" />
         <Parameter Name="maximumCount" Type="System.Int32" />
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="createdNew" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="createdNew" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="initialCount">The initial number of requests for the semaphore that can be satisfied concurrently.</param>
@@ -298,6 +320,8 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code to create a named system semaphore. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.  
   
  Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -305,17 +329,25 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 initialCount, int32 maximumCount, string name, [out] bool&amp; createdNew, class System.Security.AccessControl.SemaphoreSecurity semaphoreSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.#ctor(System.Int32,System.Int32,System.String,System.Boolean@,System.Security.AccessControl.SemaphoreSecurity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; Semaphore(int initialCount, int maximumCount, System::String ^ name, [Runtime::InteropServices::Out] bool % createdNew, System::Security::AccessControl::SemaphoreSecurity ^ semaphoreSecurity);" />
+      <MemberSignature Language="F#" Value="new System.Threading.Semaphore : int * int * string *  * System.Security.AccessControl.SemaphoreSecurity -&gt; System.Threading.Semaphore" Usage="new System.Threading.Semaphore (initialCount, maximumCount, name, createdNew, semaphoreSecurity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="initialCount" Type="System.Int32" />
         <Parameter Name="maximumCount" Type="System.Int32" />
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="createdNew" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="createdNew" Type="System.Boolean" RefType="out" />
         <Parameter Name="semaphoreSecurity" Type="System.Security.AccessControl.SemaphoreSecurity" />
       </Parameters>
       <Docs>
@@ -375,6 +407,8 @@
         <exception cref="T:System.IO.IOException">A Win32 error occurred.</exception>
         <exception cref="T:System.Threading.WaitHandleCannotBeOpenedException">The named semaphore cannot be created, perhaps because a wait handle of a different type has the same name.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code to create a named system semaphore. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName="GetAccessControl">
@@ -383,11 +417,19 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.GetAccessControl" />
       <MemberSignature Language="VB.NET" Value="Public Function GetAccessControl () As SemaphoreSecurity" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::SemaphoreSecurity ^ GetAccessControl();" />
+      <MemberSignature Language="F#" Value="member this.GetAccessControl : unit -&gt; System.Security.AccessControl.SemaphoreSecurity" Usage="semaphore.GetAccessControl " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.SemaphoreSecurity</ReturnType>
@@ -429,6 +471,8 @@
   
  The current <see cref="T:System.Threading.Semaphore" /> object represents a named system semaphore and was not opened with <see cref="F:System.Security.AccessControl.SemaphoreRights.ReadPermissions" /> rights.</exception>
         <exception cref="T:System.NotSupportedException">Not supported for Windows 98 or Windows Millennium Edition.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="OpenExisting">
@@ -448,6 +492,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.OpenExisting(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenExisting (name As String) As Semaphore" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Semaphore ^ OpenExisting(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="static member OpenExisting : string -&gt; System.Threading.Semaphore" Usage="System.Threading.Semaphore.OpenExisting name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -458,6 +503,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -465,6 +511,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Threading.Semaphore</ReturnType>
       </ReturnValue>
@@ -518,6 +569,8 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code to open a named system semaphore. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.  
   
  Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName="OpenExisting">
@@ -526,11 +579,19 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.OpenExisting(System.String,System.Security.AccessControl.SemaphoreRights)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function OpenExisting (name As String, rights As SemaphoreRights) As Semaphore" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Semaphore ^ OpenExisting(System::String ^ name, System::Security::AccessControl::SemaphoreRights rights);" />
+      <MemberSignature Language="F#" Value="static member OpenExisting : string * System.Security.AccessControl.SemaphoreRights -&gt; System.Threading.Semaphore" Usage="System.Threading.Semaphore.OpenExisting (name, rights)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Semaphore</ReturnType>
@@ -585,6 +646,8 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code to create a named system semaphore. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.  
   
  Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Release">
@@ -604,6 +667,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.Release" />
       <MemberSignature Language="VB.NET" Value="Public Function Release () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Release();" />
+      <MemberSignature Language="F#" Value="member this.Release : unit -&gt; int" Usage="semaphore.Release " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -614,6 +678,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -622,11 +687,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.PrePrepareMethod</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -666,6 +734,8 @@
  -or-  
   
  The current semaphore represents a named system semaphore, but it was not opened with <see cref="F:System.Security.AccessControl.SemaphoreRights.Modify" />.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName="Release">
@@ -674,6 +744,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.Release(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Function Release (releaseCount As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int Release(int releaseCount);" />
+      <MemberSignature Language="F#" Value="member this.Release : int -&gt; int" Usage="semaphore.Release releaseCount" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -684,6 +755,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -692,7 +764,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.Success)</AttributeName>
         </Attribute>
       </Attributes>
@@ -738,6 +810,8 @@
  -or-  
   
  The current semaphore represents a named system semaphore, but it was not opened with <see cref="F:System.Security.AccessControl.SemaphoreRights.Modify" /> rights.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <Member MemberName="SetAccessControl">
@@ -745,11 +819,19 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessControl(class System.Security.AccessControl.SemaphoreSecurity semaphoreSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.SetAccessControl(System.Security.AccessControl.SemaphoreSecurity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessControl(System::Security::AccessControl::SemaphoreSecurity ^ semaphoreSecurity);" />
+      <MemberSignature Language="F#" Value="member this.SetAccessControl : System.Security.AccessControl.SemaphoreSecurity -&gt; unit" Usage="semaphore.SetAccessControl semaphoreSecurity" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -793,6 +875,8 @@
   
  The semaphore was not opened with <see cref="F:System.Security.AccessControl.SemaphoreRights.ChangePermissions" /> rights.</exception>
         <exception cref="T:System.NotSupportedException">The current <see cref="T:System.Threading.Semaphore" /> object does not represent a named system semaphore.</exception>
+        <related type="Article" href="~/docs/standard/threading/index.md">Managed Threading</related>
+        <related type="Article" href="~/docs/standard/threading/semaphore-and-semaphoreslim.md">Semaphore</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="TryOpenExisting">
@@ -812,6 +896,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.TryOpenExisting(System.String,System.Threading.Semaphore@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryOpenExisting (name As String, ByRef result As Semaphore) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryOpenExisting(System::String ^ name, [Runtime::InteropServices::Out] System::Threading::Semaphore ^ % result);" />
+      <MemberSignature Language="F#" Value="static member TryOpenExisting : string *  -&gt; bool" Usage="System.Threading.Semaphore.TryOpenExisting (name, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -834,7 +919,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
-        <Parameter Name="result" Type="System.Threading.Semaphore&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Threading.Semaphore" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">The name of the system semaphore to open.</param>
@@ -872,11 +957,18 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.TryOpenExisting(System.String,System.Security.AccessControl.SemaphoreRights,System.Threading.Semaphore@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryOpenExisting (name As String, rights As SemaphoreRights, ByRef result As Semaphore) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryOpenExisting(System::String ^ name, System::Security::AccessControl::SemaphoreRights rights, [Runtime::InteropServices::Out] System::Threading::Semaphore ^ % result);" />
+      <MemberSignature Language="F#" Value="static member TryOpenExisting : string * System.Security.AccessControl.SemaphoreRights *  -&gt; bool" Usage="System.Threading.Semaphore.TryOpenExisting (name, rights, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -884,7 +976,7 @@
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="rights" Type="System.Security.AccessControl.SemaphoreRights" />
-        <Parameter Name="result" Type="System.Threading.Semaphore&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Threading.Semaphore" RefType="out" />
       </Parameters>
       <Docs>
         <param name="name">The name of the system semaphore to open.</param>

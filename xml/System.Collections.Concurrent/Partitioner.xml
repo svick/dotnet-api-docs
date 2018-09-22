@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.Partitioner" />
   <TypeSignature Language="VB.NET" Value="Public Class Partitioner" />
   <TypeSignature Language="C++ CLI" Value="public ref class Partitioner abstract sealed" />
+  <TypeSignature Language="F#" Value="type Partitioner = class" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Concurrent</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +34,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Create">
@@ -52,6 +55,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.Partitioner.Create(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (fromInclusive As Integer, toExclusive As Integer) As OrderablePartitioner(Of Tuple(Of Integer, Integer))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Concurrent::OrderablePartitioner&lt;Tuple&lt;int, int&gt; ^&gt; ^ Create(int fromInclusive, int toExclusive);" />
+      <MemberSignature Language="F#" Value="static member Create : int * int -&gt; System.Collections.Concurrent.OrderablePartitioner&lt;int * int&gt;" Usage="System.Collections.Concurrent.Partitioner.Create (fromInclusive, toExclusive)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -89,6 +93,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="toExclusive" /> argument is less than or equal to the <paramref name="fromInclusive" /> argument.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -97,6 +104,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.Partitioner.Create(System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (fromInclusive As Long, toExclusive As Long) As OrderablePartitioner(Of Tuple(Of Long, Long))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Concurrent::OrderablePartitioner&lt;Tuple&lt;long, long&gt; ^&gt; ^ Create(long fromInclusive, long toExclusive);" />
+      <MemberSignature Language="F#" Value="static member Create : int64 * int64 -&gt; System.Collections.Concurrent.OrderablePartitioner&lt;int64 * int64&gt;" Usage="System.Collections.Concurrent.Partitioner.Create (fromInclusive, toExclusive)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -134,6 +142,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="toExclusive" /> argument is less than or equal to the <paramref name="fromInclusive" /> argument.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -142,6 +153,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.Partitioner.Create(System.Int32,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (fromInclusive As Integer, toExclusive As Integer, rangeSize As Integer) As OrderablePartitioner(Of Tuple(Of Integer, Integer))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Concurrent::OrderablePartitioner&lt;Tuple&lt;int, int&gt; ^&gt; ^ Create(int fromInclusive, int toExclusive, int rangeSize);" />
+      <MemberSignature Language="F#" Value="static member Create : int * int * int -&gt; System.Collections.Concurrent.OrderablePartitioner&lt;int * int&gt;" Usage="System.Collections.Concurrent.Partitioner.Create (fromInclusive, toExclusive, rangeSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -185,6 +197,9 @@
  -or-  
   
  The <paramref name="rangeSize" /> argument is less than or equal to 0.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -193,6 +208,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.Partitioner.Create(System.Int64,System.Int64,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (fromInclusive As Long, toExclusive As Long, rangeSize As Long) As OrderablePartitioner(Of Tuple(Of Long, Long))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Concurrent::OrderablePartitioner&lt;Tuple&lt;long, long&gt; ^&gt; ^ Create(long fromInclusive, long toExclusive, long rangeSize);" />
+      <MemberSignature Language="F#" Value="static member Create : int64 * int64 * int64 -&gt; System.Collections.Concurrent.OrderablePartitioner&lt;int64 * int64&gt;" Usage="System.Collections.Concurrent.Partitioner.Create (fromInclusive, toExclusive, rangeSize)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -236,6 +252,9 @@
  -or-  
   
  The <paramref name="rangeSize" /> argument is less than or equal to 0.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f4410508-cac6-4ba7-bef1-c5e68b2794f3">How to: Implement a Partitioner With a Static Number of Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="Create&lt;TSource&gt;">
@@ -244,6 +263,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.Partitioner.Create``1(System.Collections.Generic.IEnumerable{``0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of TSource) (source As IEnumerable(Of TSource)) As OrderablePartitioner(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA; static System::Collections::Concurrent::OrderablePartitioner&lt;TSource&gt; ^ Create(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source);" />
+      <MemberSignature Language="F#" Value="static member Create : seq&lt;'Source&gt; -&gt; System.Collections.Concurrent.OrderablePartitioner&lt;'Source&gt;" Usage="System.Collections.Concurrent.Partitioner.Create source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -282,6 +302,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="Create&lt;TSource&gt;">
@@ -290,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.Partitioner.Create``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Concurrent.EnumerablePartitionerOptions)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of TSource) (source As IEnumerable(Of TSource), partitionerOptions As EnumerablePartitionerOptions) As OrderablePartitioner(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA; static System::Collections::Concurrent::OrderablePartitioner&lt;TSource&gt; ^ Create(System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ source, System::Collections::Concurrent::EnumerablePartitionerOptions partitionerOptions);" />
+      <MemberSignature Language="F#" Value="static member Create : seq&lt;'Source&gt; * System.Collections.Concurrent.EnumerablePartitionerOptions -&gt; System.Collections.Concurrent.OrderablePartitioner&lt;'Source&gt;" Usage="System.Collections.Concurrent.Partitioner.Create (source, partitionerOptions)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -339,6 +363,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.Partitioner.Create``1(System.Collections.Generic.IList{``0},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of TSource) (list As IList(Of TSource), loadBalance As Boolean) As OrderablePartitioner(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA; static System::Collections::Concurrent::OrderablePartitioner&lt;TSource&gt; ^ Create(System::Collections::Generic::IList&lt;TSource&gt; ^ list, bool loadBalance);" />
+      <MemberSignature Language="F#" Value="static member Create : System.Collections.Generic.IList&lt;'Source&gt; * bool -&gt; System.Collections.Concurrent.OrderablePartitioner&lt;'Source&gt;" Usage="System.Collections.Concurrent.Partitioner.Create (list, loadBalance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -379,6 +404,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
     <Member MemberName="Create&lt;TSource&gt;">
@@ -387,6 +415,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.Partitioner.Create``1(``0[],System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of TSource) (array As TSource(), loadBalance As Boolean) As OrderablePartitioner(Of TSource)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TSource&gt;&#xA; static System::Collections::Concurrent::OrderablePartitioner&lt;TSource&gt; ^ Create(cli::array &lt;TSource&gt; ^ array, bool loadBalance);" />
+      <MemberSignature Language="F#" Value="static member Create : 'Source[] * bool -&gt; System.Collections.Concurrent.OrderablePartitioner&lt;'Source&gt;" Usage="System.Collections.Concurrent.Partitioner.Create (array, loadBalance)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -427,6 +456,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/96153688-9a01-47c4-8430-909cee9a2887">Custom Partitioners for PLINQ and TPL</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c7a66677-cb59-4cbf-969a-d2e8fc61a6ce">How to: Speed Up Small Loop Bodies</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/c875ad12-a161-43e6-ad1c-3d6927c536a7">How to: Implement Dynamic Partitions</related>
       </Docs>
     </Member>
   </Members>

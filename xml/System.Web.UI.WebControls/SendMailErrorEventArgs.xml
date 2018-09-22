@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SendMailErrorEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class SendMailErrorEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class SendMailErrorEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type SendMailErrorEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -58,6 +60,11 @@
     <altmember cref="E:System.Web.UI.WebControls.ChangePassword.SendMailError" />
     <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendMailError" />
     <altmember cref="T:System.Net.Mail.MailMessage" />
+    <related type="Article" href="http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/448f7802-0aa8-4304-abf7-82e138877dc8">Web Site Administration Tool Application Tab</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/d85075bc-9c1a-4453-8a0c-539b10853c9c">Securing Login Controls</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/3eeeee9e-b09f-4c7f-8ce5-d9ca1f9322ad">Basic Security Practices for Web Applications</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -66,11 +73,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SendMailErrorEventArgs.#ctor(System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (e As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SendMailErrorEventArgs(Exception ^ e);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.SendMailErrorEventArgs : Exception -&gt; System.Web.UI.WebControls.SendMailErrorEventArgs" Usage="new System.Web.UI.WebControls.SendMailErrorEventArgs e" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="e" Type="System.Exception" />
       </Parameters>
@@ -82,6 +96,9 @@
         <altmember cref="E:System.Web.UI.WebControls.ChangePassword.SendMailError" />
         <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendMailError" />
         <altmember cref="T:System.Net.Mail.MailMessage" />
+        <related type="Article" href="http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/448f7802-0aa8-4304-abf7-82e138877dc8">Web Site Administration Tool Application Tab</related>
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -90,11 +107,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SendMailErrorEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); void set(Exception ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception with get, set" Usage="System.Web.UI.WebControls.SendMailErrorEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
@@ -134,6 +161,9 @@
         <altmember cref="E:System.Web.UI.WebControls.ChangePassword.SendMailError" />
         <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendMailError" />
         <altmember cref="T:System.Net.Mail.MailMessage" />
+        <related type="Article" href="http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/448f7802-0aa8-4304-abf7-82e138877dc8">Web Site Administration Tool Application Tab</related>
       </Docs>
     </Member>
     <Member MemberName="Handled">
@@ -142,11 +172,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SendMailErrorEventArgs.Handled" />
       <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="System.Web.UI.WebControls.SendMailErrorEventArgs.Handled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -186,6 +226,9 @@
         <altmember cref="E:System.Web.UI.WebControls.ChangePassword.SendMailError" />
         <altmember cref="E:System.Web.UI.WebControls.PasswordRecovery.SendMailError" />
         <altmember cref="T:System.Net.Mail.MailMessage" />
+        <related type="Article" href="http://msdn.microsoft.com/library/765bfc89-33ee-4d0d-bbe6-3b172c06def9">Server Event Handling in ASP.NET Web Pages</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f">Handling and Raising Events</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/448f7802-0aa8-4304-abf7-82e138877dc8">Web Site Administration Tool Application Tab</related>
       </Docs>
     </Member>
   </Members>

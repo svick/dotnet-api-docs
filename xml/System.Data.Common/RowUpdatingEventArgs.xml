@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Common.RowUpdatingEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class RowUpdatingEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class RowUpdatingEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type RowUpdatingEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -34,6 +37,7 @@
     </remarks>
     <altmember cref="T:System.Data.OleDb.OleDbRowUpdatingEventArgs" />
     <altmember cref="T:System.Data.SqlClient.SqlRowUpdatingEventArgs" />
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -41,9 +45,12 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataRow dataRow, class System.Data.IDbCommand command, valuetype System.Data.StatementType statementType, class System.Data.Common.DataTableMapping tableMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.RowUpdatingEventArgs.#ctor(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; RowUpdatingEventArgs(System::Data::DataRow ^ dataRow, System::Data::IDbCommand ^ command, System::Data::StatementType statementType, System::Data::Common::DataTableMapping ^ tableMapping);" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.RowUpdatingEventArgs : System.Data.DataRow * System.Data.IDbCommand * System.Data.StatementType * System.Data.Common.DataTableMapping -&gt; System.Data.Common.RowUpdatingEventArgs" Usage="new System.Data.Common.RowUpdatingEventArgs (dataRow, command, statementType, tableMapping)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -69,6 +76,7 @@
         <param name="tableMapping">The <see cref="T:System.Data.Common.DataTableMapping" /> to send through an <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Data.Common.RowUpdatingEventArgs" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="BaseCommand">
@@ -77,9 +85,11 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.RowUpdatingEventArgs.BaseCommand" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Property BaseCommand As IDbCommand" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::IDbCommand ^ BaseCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.BaseCommand : System.Data.IDbCommand with get, set" Usage="System.Data.Common.RowUpdatingEventArgs.BaseCommand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -106,6 +116,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Command">
@@ -114,9 +125,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.RowUpdatingEventArgs.Command" />
       <MemberSignature Language="VB.NET" Value="Public Property Command As IDbCommand" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::IDbCommand ^ Command { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Data.IDbCommand with get, set" Usage="System.Data.Common.RowUpdatingEventArgs.Command" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -136,6 +150,7 @@
         <summary>Gets the <see cref="T:System.Data.IDbCommand" /> to execute during the <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" /> operation.</summary>
         <value>The <see cref="T:System.Data.IDbCommand" /> to execute during the <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Errors">
@@ -144,9 +159,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.RowUpdatingEventArgs.Errors" />
       <MemberSignature Language="VB.NET" Value="Public Property Errors As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Errors { Exception ^ get(); void set(Exception ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Errors : Exception with get, set" Usage="System.Data.Common.RowUpdatingEventArgs.Errors" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -166,6 +184,7 @@
         <summary>Gets any errors generated by the .NET Framework data provider when the <see cref="P:System.Data.Common.RowUpdatedEventArgs.Command" /> executes.</summary>
         <value>The errors generated by the .NET Framework data provider when the <see cref="P:System.Data.Common.RowUpdatedEventArgs.Command" /> executes.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Row">
@@ -174,9 +193,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.RowUpdatingEventArgs.Row" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As DataRow" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRow ^ Row { System::Data::DataRow ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Row : System.Data.DataRow" Usage="System.Data.Common.RowUpdatingEventArgs.Row" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -196,6 +218,7 @@
         <summary>Gets the <see cref="T:System.Data.DataRow" /> that will be sent to the server as part of an insert, update, or delete operation.</summary>
         <value>The <see cref="T:System.Data.DataRow" /> to send through an <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="StatementType">
@@ -204,9 +227,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.RowUpdatingEventArgs.StatementType" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatementType As StatementType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::StatementType StatementType { System::Data::StatementType get(); };" />
+      <MemberSignature Language="F#" Value="member this.StatementType : System.Data.StatementType" Usage="System.Data.Common.RowUpdatingEventArgs.StatementType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -241,6 +267,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Status">
@@ -249,9 +276,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.RowUpdatingEventArgs.Status" />
       <MemberSignature Language="VB.NET" Value="Public Property Status As UpdateStatus" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::UpdateStatus Status { System::Data::UpdateStatus get(); void set(System::Data::UpdateStatus value); };" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Data.UpdateStatus with get, set" Usage="System.Data.Common.RowUpdatingEventArgs.Status" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -271,6 +301,7 @@
         <summary>Gets or sets the <see cref="T:System.Data.UpdateStatus" /> of the <see cref="P:System.Data.Common.RowUpdatedEventArgs.Command" /> property.</summary>
         <value>One of the <see cref="T:System.Data.UpdateStatus" /> values. The default is <see langword="Continue" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="TableMapping">
@@ -279,9 +310,12 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Common.RowUpdatingEventArgs.TableMapping" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TableMapping As DataTableMapping" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DataTableMapping ^ TableMapping { System::Data::Common::DataTableMapping ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TableMapping : System.Data.Common.DataTableMapping" Usage="System.Data.Common.RowUpdatingEventArgs.TableMapping" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -301,6 +335,7 @@
         <summary>Gets the <see cref="T:System.Data.Common.DataTableMapping" /> to send through the <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</summary>
         <value>The <see cref="T:System.Data.Common.DataTableMapping" /> to send through the <see cref="M:System.Data.Common.DbDataAdapter.Update(System.Data.DataSet)" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

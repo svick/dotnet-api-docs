@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcMetaDataCollectionNames" />
   <TypeSignature Language="VB.NET" Value="Public Class OdbcMetaDataCollectionNames" />
   <TypeSignature Language="C++ CLI" Value="public ref class OdbcMetaDataCollectionNames abstract sealed" />
+  <TypeSignature Language="F#" Value="type OdbcMetaDataCollectionNames = class" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -19,6 +21,7 @@
   <Docs>
     <summary>Provides a list of constants for use with the **GetSchema** method to retrieve metadata collections.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
   </Docs>
   <Members>
     <Member MemberName="Columns">
@@ -27,9 +30,11 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.Columns" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Columns As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Columns;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Columns : string" Usage="System.Data.Odbc.OdbcMetaDataCollectionNames.Columns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -42,6 +47,7 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Columns** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="Indexes">
@@ -50,9 +56,11 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.Indexes" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Indexes As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Indexes;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Indexes : string" Usage="System.Data.Odbc.OdbcMetaDataCollectionNames.Indexes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -65,6 +73,7 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Indexes** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="ProcedureColumns">
@@ -73,9 +82,11 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.ProcedureColumns" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ProcedureColumns As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ProcedureColumns;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ProcedureColumns : string" Usage="System.Data.Odbc.OdbcMetaDataCollectionNames.ProcedureColumns" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -88,6 +99,7 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **ProcedureColumns** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="ProcedureParameters">
@@ -96,9 +108,11 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.ProcedureParameters" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ProcedureParameters As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ProcedureParameters;" />
+      <MemberSignature Language="F#" Value=" staticval mutable ProcedureParameters : string" Usage="System.Data.Odbc.OdbcMetaDataCollectionNames.ProcedureParameters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -111,6 +125,7 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **ProcedureParameters** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="Procedures">
@@ -119,9 +134,11 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.Procedures" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Procedures As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Procedures;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Procedures : string" Usage="System.Data.Odbc.OdbcMetaDataCollectionNames.Procedures" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -134,6 +151,7 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Procedures** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="Tables">
@@ -142,9 +160,11 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.Tables" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Tables As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Tables;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Tables : string" Usage="System.Data.Odbc.OdbcMetaDataCollectionNames.Tables" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -157,6 +177,7 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Tables** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
     <Member MemberName="Views">
@@ -165,9 +186,11 @@
       <MemberSignature Language="DocId" Value="F:System.Data.Odbc.OdbcMetaDataCollectionNames.Views" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Views As String " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Views;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Views : string" Usage="System.Data.Odbc.OdbcMetaDataCollectionNames.Views" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -180,6 +203,7 @@
       <Docs>
         <summary>A constant for use with the **GetSchema** method that represents the **Views** collection.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-database-schema-information.md">Obtaining Schema Information from a Database</related>
       </Docs>
     </Member>
   </Members>

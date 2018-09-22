@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageHeaderAttribute" />
   <TypeSignature Language="VB.NET" Value="Public Class MessageHeaderAttribute&#xA;Inherits MessageContractMemberAttribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class MessageHeaderAttribute : System::ServiceModel::MessageContractMemberAttribute" />
+  <TypeSignature Language="F#" Value="type MessageHeaderAttribute = class&#xA;    inherit MessageContractMemberAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -20,8 +22,17 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, AllowMultiple=false, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -44,7 +55,7 @@
   
 -   `Relay`  
   
- The `Actor` or `Role` attribute specifies the URI of the node for which a given header is intended. The `MustUnderstand` attribute specifies whether the header understands the node processing. The `Relay` attribute specifies whether the header is to be relayed to downstream nodes. [!INCLUDE[indigo1](~/includes/indigo1-md.md)] does not perform any processing of these attributes on incoming messages, except for the `MustUnderstand` attribute.  
+ The `Actor` or `Role` attribute specifies the URI of the node for which a given header is intended. The `MustUnderstand` attribute specifies whether the header understands the node processing. The `Relay` attribute specifies whether the header is to be relayed to downstream nodes. Windows Communication Foundation (WCF) does not perform any processing of these attributes on incoming messages, except for the `MustUnderstand` attribute.  
   
  You can, however, read and write these attributes, even though they are not sent by default. You can set the attribute values in two ways. First, you can change the <xref:System.ServiceModel.MessageHeaderAttribute.Actor%2A>, <xref:System.ServiceModel.MessageHeaderAttribute.MustUnderstand%2A> and <xref:System.ServiceModel.MessageHeaderAttribute.Relay%2A> properties on the <xref:System.ServiceModel.MessageHeaderAttribute>. (There is no `Role` property – set the <xref:System.ServiceModel.MessageHeaderAttribute.Actor%2A> property and `Role` is passed if SOAP 1.2 is used). For example:  
   
@@ -94,6 +105,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -102,6 +114,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.MessageHeaderAttribute" /> class.</summary>
@@ -114,12 +131,22 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageHeaderAttribute.Actor" />
       <MemberSignature Language="VB.NET" Value="Public Property Actor As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Actor { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Actor : string with get, set" Usage="System.ServiceModel.MessageHeaderAttribute.Actor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -142,10 +169,12 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageHeaderAttribute.MustUnderstand" />
       <MemberSignature Language="VB.NET" Value="Public Property MustUnderstand As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MustUnderstand { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.MustUnderstand : bool with get, set" Usage="System.ServiceModel.MessageHeaderAttribute.MustUnderstand" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -154,6 +183,11 @@
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -168,7 +202,7 @@
  For more information, see the Remarks section of <xref:System.ServiceModel.MessageHeaderAttribute> for details.  
   
 > [!IMPORTANT]
->  It is important to remember that if the <xref:System.ServiceModel.MessageHeaderAttribute.MustUnderstand%2A> property is `true` in a message being sent and the application on the receiving side does not understand the header a fault is generated. Conversely, if a header with the `mustUnderstand` SOAP header attribute set to `true` is received by [!INCLUDE[indigo1](~/includes/indigo1-md.md)], it must be a part of the message contract (or must be processed by one of the [!INCLUDE[indigo1](~/includes/indigo1-md.md)] channels); otherwise, it is assumed that the header is not understood and an exception is thrown.  
+>  It is important to remember that if the <xref:System.ServiceModel.MessageHeaderAttribute.MustUnderstand%2A> property is `true` in a message being sent and the application on the receiving side does not understand the header a fault is generated. Conversely, if a header with the `mustUnderstand` SOAP header attribute set to `true` is received by Windows Communication Foundation (WCF), it must be a part of the message contract (or must be processed by one of the Windows Communication Foundation (WCF) channels); otherwise, it is assumed that the header is not understood and an exception is thrown.  
   
    
   
@@ -188,12 +222,19 @@
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageHeaderAttribute.Relay" />
       <MemberSignature Language="VB.NET" Value="Public Property Relay As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Relay { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.Relay : bool with get, set" Usage="System.ServiceModel.MessageHeaderAttribute.Relay" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>

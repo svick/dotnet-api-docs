@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlElement" />
   <TypeSignature Language="VB.NET" Value="Public Class HtmlElement&#xA;Inherits HtmlContainerControl" />
   <TypeSignature Language="C++ CLI" Value="public ref class HtmlElement : System::Web::UI::HtmlControls::HtmlContainerControl" />
+  <TypeSignature Language="F#" Value="type HtmlElement = class&#xA;    inherit HtmlContainerControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,6 +16,7 @@
   <Docs>
     <summary>Provides programmatic access to the document's <see langword="&lt;html&gt;" /> element on the server, which represents the document's root.</summary>
     <remarks>To be added.</remarks>
+    <related type="ExternalDocumentation" href="http://www.w3.org/TR/html5/semantics.html#the-root-element">root element</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -40,19 +42,20 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlElement.Manifest" />
       <MemberSignature Language="VB.NET" Value="Public Property Manifest As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Manifest { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Manifest : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlElement.Manifest" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Web.UI.UrlProperty</AttributeName>
         </Attribute>
       </Attributes>
@@ -63,6 +66,7 @@
         <summary>Gets or sets the <see langword="manifest" /> attribute.</summary>
         <value>The <see langword="manifest" /> attribute..</value>
         <remarks>To be added.</remarks>
+        <related type="ExternalDocumentation" href="http://www.w3.org/TR/html5/semantics.html#attr-html-manifest">manifest attribute</related>
       </Docs>
     </Member>
     <Member MemberName="RenderAttributes">
@@ -71,6 +75,7 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlElement.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderAttributes (writer As HtmlTextWriter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
+      <MemberSignature Language="F#" Value="override this.RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlElement.RenderAttributes writer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

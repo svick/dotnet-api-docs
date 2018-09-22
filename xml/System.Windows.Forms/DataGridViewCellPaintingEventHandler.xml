@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellPaintingEventHandler" />
   <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewCellPaintingEventHandler(sender As Object, e As DataGridViewCellPaintingEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewCellPaintingEventHandler(System::Object ^ sender, DataGridViewCellPaintingEventArgs ^ e);" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellPaintingEventHandler = delegate of obj * DataGridViewCellPaintingEventArgs -&gt; unit" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -44,5 +46,6 @@
     <altmember cref="E:System.Windows.Forms.DataGridView.CellPainting" />
     <altmember cref="T:System.Windows.Forms.DataGridViewCellPaintingEventArgs" />
     <altmember cref="T:System.Windows.Forms.DataGridViewCell" />
+    <related type="Article" href="http://msdn.microsoft.com/library/478b20c9-625c-4116-9c5c-5a16e6f4ec67">How to: Customize the Appearance of Cells in the Windows Forms DataGridView Control</related>
   </Docs>
 </Type>

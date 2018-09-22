@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WsdlImporterElementCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WsdlImporterElementCollection&#xA;Inherits ServiceModelEnhancedConfigurationElementCollection(Of WsdlImporterElement)" />
   <TypeSignature Language="C++ CLI" Value="public ref class WsdlImporterElementCollection sealed : System::ServiceModel::Configuration::ServiceModelEnhancedConfigurationElementCollection&lt;System::ServiceModel::Configuration::WsdlImporterElement ^&gt;" />
+  <TypeSignature Language="F#" Value="type WsdlImporterElementCollection = class&#xA;    inherit ServiceModelEnhancedConfigurationElementCollection&lt;WsdlImporterElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,13 +18,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Configuration.ConfigurationCollection(typeof(System.ServiceModel.Configuration.WsdlImporterElement), AddItemName="extension")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
     <summary>Represents a collection of <see cref="T:System.ServiceModel.Configuration.WsdlImporterElement" /> instances. This class cannot be inherited.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/986b2165-8430-4dba-b1b8-00396841bb96">&lt;wsdlImporter&gt;</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -34,6 +37,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -48,9 +52,11 @@
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WsdlImporterElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="wsdlImporterElementCollection.GetElementKey element" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

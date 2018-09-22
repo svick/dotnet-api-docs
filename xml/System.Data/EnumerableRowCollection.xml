@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.EnumerableRowCollection" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class EnumerableRowCollection&#xA;Implements IEnumerable" />
   <TypeSignature Language="C++ CLI" Value="public ref class EnumerableRowCollection abstract : System::Collections::IEnumerable" />
+  <TypeSignature Language="F#" Value="type EnumerableRowCollection = class&#xA;    interface IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -31,6 +33,7 @@
     <altmember cref="T:System.Data.DataRow" />
     <altmember cref="T:System.Data.DataView" />
     <altmember cref="T:System.Data.EnumerableRowCollection`1" />
+    <related type="Article" href="http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17">LINQ to DataSet</related>
   </Docs>
   <Members>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -45,6 +48,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

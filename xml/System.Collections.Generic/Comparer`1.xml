@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.Comparer`1" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class Comparer(Of T)&#xA;Implements IComparer, IComparer(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Comparer abstract : System::Collections::Generic::IComparer&lt;T&gt;, System::Collections::IComparer" />
+  <TypeSignature Language="F#" Value="type Comparer&lt;'T&gt; = class&#xA;    interface IComparer&#xA;    interface IComparer&lt;'T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -13,6 +14,7 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -34,6 +36,11 @@
       <InterfaceName>System.Collections.IComparer</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <typeparam name="T">The type of objects to compare.</typeparam>
     <summary>Provides a base class for implementations of the <see cref="T:System.Collections.Generic.IComparer`1" /> generic interface.</summary>
@@ -67,7 +74,7 @@
   
  For string comparisons, the <see cref="T:System.StringComparer" /> class is recommended over <c>Comparer&lt;String&gt;</c>.  Properties of the <see cref="T:System.StringComparer" /> class return predefined instances that perform string comparisons with different combinations of culture-sensitivity and case-sensitivity.  The case-sensitivity and culture-sensitivity are consistent among the members of the same <see cref="T:System.StringComparer" /> instance.  
   
- For more information on culture-specific comparisons, see the <see cref="N:System.Globalization" /> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).</para>
+ For more information on culture-specific comparisons, see the <see cref="N:System.Globalization" /> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).</para>
     </block>
     <altmember cref="T:System.Collections.Generic.IComparer`1" />
     <altmember cref="T:System.IComparable`1" />
@@ -91,6 +98,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -110,6 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Comparer`1.Compare(`0,`0)" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride Function Compare (x As T, y As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int Compare(T x, T y);" />
+      <MemberSignature Language="F#" Value="abstract member Compare : 'T * 'T -&gt; int" Usage="comparer.Compare (x, y)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IComparer`1.Compare(`0,`0)</InterfaceMember>
@@ -123,6 +132,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -180,7 +190,7 @@
         <block subset="none" type="overrides">
           <para>Comparing <see langword="null" /> with any reference type is allowed and does not generate an exception. A null reference is considered to be less than any reference that is not null.  
   
- For information on culture-specific comparisons, see the <see cref="N:System.Globalization" /> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).</para>
+ For information on culture-specific comparisons, see the <see cref="N:System.Globalization" /> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).</para>
         </block>
         <altmember cref="T:System.IComparable`1" />
         <altmember cref="T:System.IComparable" />
@@ -195,6 +205,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.Comparer`1.Create(System.Comparison{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Create (comparison As Comparison(Of T)) As Comparer(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::Comparer&lt;T&gt; ^ Create(Comparison&lt;T&gt; ^ comparison);" />
+      <MemberSignature Language="F#" Value="static member Create : Comparison&lt;'T&gt; -&gt; System.Collections.Generic.Comparer&lt;'T&gt;" Usage="System.Collections.Generic.Comparer&lt;'T&gt;.Create comparison" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -231,6 +242,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.Comparer`1.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As Comparer(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::Generic::Comparer&lt;T&gt; ^ Default { System::Collections::Generic::Comparer&lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Collections.Generic.Comparer&lt;'T&gt;" Usage="System.Collections.Generic.Comparer&lt;'T&gt;.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -241,6 +253,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -248,6 +261,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.Comparer&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -273,7 +291,7 @@
         <block subset="none" type="usage">
           <para>For string comparisons, the <see cref="T:System.StringComparer" /> class is recommended over <c>Comparer&lt;String&gt;</c> (<c>Comparer(Of String)</c> in Visual Basic).  Properties of the <see cref="T:System.StringComparer" /> class return predefined instances that perform string comparisons with different combinations of culture-sensitivity and case-sensitivity.  The case-sensitivity and culture-sensitivity are consistent among the members of the same <see cref="T:System.StringComparer" /> instance.  
   
- For more information on culture-specific comparisons, see the <see cref="N:System.Globalization" /> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).</para>
+ For more information on culture-specific comparisons, see the <see cref="N:System.Globalization" /> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).</para>
         </block>
         <altmember cref="T:System.IComparable`1" />
         <altmember cref="T:System.IComparable" />
@@ -300,6 +318,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -367,7 +386,7 @@
   
  For string comparisons, the <see cref="T:System.StringComparer" /> class is recommended over <c>Comparer&lt;String&gt;</c>.  Properties of the <see cref="T:System.StringComparer" /> class return predefined instances that perform string comparisons with different combinations of culture-sensitivity and case-sensitivity.  The case-sensitivity and culture-sensitivity are consistent among the members of the same <see cref="T:System.StringComparer" /> instance.  
   
- For more information on culture-specific comparisons, see the <see cref="N:System.Globalization" /> namespace and [Globalization and Localization](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02).</para>
+ For more information on culture-specific comparisons, see the <see cref="N:System.Globalization" /> namespace and [Globalization and Localization](~/docs/standard/globalization-localization/index.md).</para>
         </block>
         <altmember cref="T:System.StringComparer" />
         <altmember cref="T:System.Collections.IComparer" />

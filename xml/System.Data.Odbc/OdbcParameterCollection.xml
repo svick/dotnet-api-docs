@@ -4,8 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcParameterCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcParameterCollection&#xA;Inherits DbParameterCollection" />
   <TypeSignature Language="C++ CLI" Value="public ref class OdbcParameterCollection sealed : System::Data::Common::DbParameterCollection" />
+  <TypeSignature Language="F#" Value="type OdbcParameterCollection = class&#xA;    inherit DbParameterCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -14,14 +17,24 @@
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Data.Common.DbParameterCollection</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-1.1">System.MarshalByRefObject</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces></Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="xamarinmac-3.0">
       <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBParametersEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.ComponentModel.ListBindable(false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-1.1">
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBParametersEditor, Microsoft.VSDesigner, Version=7.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBParametersEditor, Microsoft.VSDesigner, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Design.DBParametersEditor, Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -53,6 +66,8 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Add">
@@ -62,6 +77,8 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
       </AssemblyInfo>
       <Docs>
         <summary>Adds an <see cref="T:System.Data.Odbc.OdbcParameter" /> to the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Add">
@@ -70,9 +87,12 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Add(System.Data.Odbc.OdbcParameter)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (value As OdbcParameter) As OdbcParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcParameter ^ Add(System::Data::Odbc::OdbcParameter ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Data.Odbc.OdbcParameter -&gt; System.Data.Odbc.OdbcParameter" Usage="odbcParameterCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -92,6 +112,8 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Data.Odbc.OdbcParameter" /> specified in the <paramref name="value" /> parameter is already added to this or another <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> parameter is null.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -100,9 +122,12 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Add(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Add (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Add(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Add : obj -&gt; int" Usage="odbcParameterCollection.Add value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -110,7 +135,10 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -125,6 +153,8 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
         <summary>Adds the specified <see cref="T:System.Data.Odbc.OdbcParameter" /> object to the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
         <returns>The index of the new <see cref="T:System.Data.Odbc.OdbcParameter" /> object in the collection.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -132,9 +162,12 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Odbc.OdbcParameter Add(string parameterName, valuetype System.Data.Odbc.OdbcType odbcType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Add(System.String,System.Data.Odbc.OdbcType)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcParameter ^ Add(System::String ^ parameterName, System::Data::Odbc::OdbcType odbcType);" />
+      <MemberSignature Language="F#" Value="override this.Add : string * System.Data.Odbc.OdbcType -&gt; System.Data.Odbc.OdbcParameter" Usage="odbcParameterCollection.Add (parameterName, odbcType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -164,6 +197,8 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -172,9 +207,12 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Add(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function Add (parameterName As String, value As Object) As OdbcParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcParameter ^ Add(System::String ^ parameterName, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Add : string * obj -&gt; System.Data.Odbc.OdbcParameter" Usage="odbcParameterCollection.Add (parameterName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -182,11 +220,14 @@ INSERT INTO MyTable VALUES (@p1, @p2, @p3);
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netcore-2.1">
           <AttributeName>System.Obsolete("Add(String parameterName, Object value) has been deprecated.  Use AddWithValue(String parameterName, Object value).  http://go.microsoft.com/fwlink/?linkid=14202", false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-2.0;netframework-3.0;netframework-3.5;netcore-2.1">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -216,6 +257,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The <paramref name="value" /> parameter is not an <see cref="T:System.Data.Odbc.OdbcParameter" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -223,9 +266,12 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Odbc.OdbcParameter Add(string parameterName, valuetype System.Data.Odbc.OdbcType odbcType, int32 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Add(System.String,System.Data.Odbc.OdbcType,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcParameter ^ Add(System::String ^ parameterName, System::Data::Odbc::OdbcType odbcType, int size);" />
+      <MemberSignature Language="F#" Value="override this.Add : string * System.Data.Odbc.OdbcType * int -&gt; System.Data.Odbc.OdbcParameter" Usage="odbcParameterCollection.Add (parameterName, odbcType, size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -257,6 +303,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -264,9 +312,12 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Odbc.OdbcParameter Add(string parameterName, valuetype System.Data.Odbc.OdbcType odbcType, int32 size, string sourceColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Add(System.String,System.Data.Odbc.OdbcType,System.Int32,System.String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcParameter ^ Add(System::String ^ parameterName, System::Data::Odbc::OdbcType odbcType, int size, System::String ^ sourceColumn);" />
+      <MemberSignature Language="F#" Value="override this.Add : string * System.Data.Odbc.OdbcType * int * string -&gt; System.Data.Odbc.OdbcParameter" Usage="odbcParameterCollection.Add (parameterName, odbcType, size, sourceColumn)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -300,6 +351,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AddRange">
@@ -309,6 +362,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Adds elements to the end of the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddRange">
@@ -317,9 +372,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.AddRange(System.Array)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddRange (values As Array)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddRange(Array ^ values);" />
+      <MemberSignature Language="F#" Value="override this.AddRange : Array -&gt; unit" Usage="odbcParameterCollection.AddRange values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -336,6 +393,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="values">The <see cref="T:System.Array" /> values to add.</param>
         <summary>Adds an array of values to the end of the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="AddRange">
@@ -344,9 +403,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.AddRange(System.Data.Odbc.OdbcParameter[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (values As OdbcParameter())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Data::Odbc::OdbcParameter ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="override this.AddRange : System.Data.Odbc.OdbcParameter[] -&gt; unit" Usage="odbcParameterCollection.AddRange values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -363,6 +424,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="values">An array of <see cref="T:System.Data.Odbc.OdbcParameter" /> objects to add to the collection.</param>
         <summary>Adds an array of <see cref="T:System.Data.Odbc.OdbcParameter" /> values to the end of the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="AddWithValue">
@@ -371,9 +434,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.AddWithValue(System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddWithValue (parameterName As String, value As Object) As OdbcParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcParameter ^ AddWithValue(System::String ^ parameterName, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.AddWithValue : string * obj -&gt; System.Data.Odbc.OdbcParameter" Usage="odbcParameterCollection.AddWithValue (parameterName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -393,6 +458,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Adds a value to the end of the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
         <returns>An <see cref="T:System.Data.Odbc.OdbcParameter" /> object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -401,9 +468,12 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Clear();" />
+      <MemberSignature Language="F#" Value="override this.Clear : unit -&gt; unit" Usage="odbcParameterCollection.Clear " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -417,6 +487,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <Docs>
         <summary>Removes all <see cref="T:System.Data.Odbc.OdbcParameter" /> objects from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Contains">
@@ -426,6 +498,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Gets a value indicating whether an <see cref="T:System.Data.Odbc.OdbcParameter" /> object exists in the collection.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Contains">
@@ -434,9 +508,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Contains(System.Data.Odbc.OdbcParameter)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (value As OdbcParameter) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Data::Odbc::OdbcParameter ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Contains : System.Data.Odbc.OdbcParameter -&gt; bool" Usage="odbcParameterCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -455,6 +531,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <returns>
           <see langword="true" /> if the <see cref="T:System.Data.Odbc.OdbcParameter" /> is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -463,9 +541,12 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Contains(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Contains (value As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Contains(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Contains : obj -&gt; bool" Usage="odbcParameterCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -484,6 +565,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <returns>
           <see langword="true" /> if the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> contains the value otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -492,9 +575,12 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Contains(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Contains (value As String) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Contains(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Contains : string -&gt; bool" Usage="odbcParameterCollection.Contains value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -523,6 +609,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="CopyTo">
@@ -532,6 +620,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Copies all the elements of the current <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> to the specified object.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="CopyTo">
@@ -539,9 +629,12 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.CopyTo(System.Array,System.Int32)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyTo(Array ^ array, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : Array * int -&gt; unit" Usage="odbcParameterCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -560,6 +653,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="index">A 32-bit integer that represents the index in the <see cref="T:System.Array" /> at which copying starts.</param>
         <summary>Copies all the elements of the current <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> to the specified one-dimensional <see cref="T:System.Array" /> starting at the specified destination <see cref="T:System.Array" /> index.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -568,9 +663,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.CopyTo(System.Data.Odbc.OdbcParameter[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As OdbcParameter(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Data::Odbc::OdbcParameter ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Data.Odbc.OdbcParameter[] * int -&gt; unit" Usage="odbcParameterCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -589,6 +686,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="index">A 32-bit integer that represents the index in the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> at which copying starts.</param>
         <summary>Copies all the elements of the current <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> to the specified <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> starting at the specified destination index.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -597,15 +696,26 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcParameterCollection.Count" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Data.Odbc.OdbcParameterCollection.Count" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data.Odbc</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -613,6 +723,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Returns an Integer that contains the number of elements in the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />. Read-only.</summary>
         <value>The number of elements in the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> as an Integer.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -621,9 +733,12 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="odbcParameterCollection.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -636,8 +751,10 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <Parameters />
       <Docs>
         <summary>Returns an enumerator that iterates through the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
-        <returns>An <see cref="T:System.Collections.Generic.IEnumerator" /> for the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</returns>
+        <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="GetParameter">
@@ -646,9 +763,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.GetParameter(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetParameter (index As Integer) As DbParameter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbParameter ^ GetParameter(int index);" />
+      <MemberSignature Language="F#" Value="override this.GetParameter : int -&gt; System.Data.Common.DbParameter" Usage="odbcParameterCollection.GetParameter index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -674,9 +793,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.GetParameter(System.String)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetParameter (parameterName As String) As DbParameter" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbParameter ^ GetParameter(System::String ^ parameterName);" />
+      <MemberSignature Language="F#" Value="override this.GetParameter : string -&gt; System.Data.Common.DbParameter" Usage="odbcParameterCollection.GetParameter parameterName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -703,6 +824,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Gets the location of the specified <see cref="T:System.Data.Odbc.OdbcParameter" /> within the collection.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="IndexOf">
@@ -711,9 +834,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.IndexOf(System.Data.Odbc.OdbcParameter)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As OdbcParameter) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Data::Odbc::OdbcParameter ^ value);" />
+      <MemberSignature Language="F#" Value="override this.IndexOf : System.Data.Odbc.OdbcParameter -&gt; int" Usage="odbcParameterCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -731,6 +856,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Gets the location of the specified <see cref="T:System.Data.Odbc.OdbcParameter" /> within the collection.</summary>
         <returns>The zero-based location of the specified <see cref="T:System.Data.Odbc.OdbcParameter" /> within the collection.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -739,9 +866,12 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.IndexOf(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IndexOf (value As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int IndexOf(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.IndexOf : obj -&gt; int" Usage="odbcParameterCollection.IndexOf value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -759,6 +889,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Gets the location of the specified <see cref="T:System.Object" /> within the collection.</summary>
         <returns>The zero-based location of the specified <see cref="T:System.Object" /> that is a <see cref="T:System.Data.Odbc.OdbcParameter" /> within the collection.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -767,9 +899,12 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.IndexOf(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IndexOf (parameterName As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int IndexOf(System::String ^ parameterName);" />
+      <MemberSignature Language="F#" Value="override this.IndexOf : string -&gt; int" Usage="odbcParameterCollection.IndexOf parameterName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -787,6 +922,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Gets the location of the specified <see cref="T:System.Data.Odbc.OdbcParameter" /> with the specified name.</summary>
         <returns>The zero-based location of the specified <see cref="T:System.Data.Odbc.OdbcParameter" /> with the specified case-sensitive name.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Insert">
@@ -796,6 +933,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Inserts a <see cref="T:System.Data.Odbc.OdbcParameter" /> object into the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Insert">
@@ -804,9 +943,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Insert(System.Int32,System.Data.Odbc.OdbcParameter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As OdbcParameter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Data::Odbc::OdbcParameter ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Insert : int * System.Data.Odbc.OdbcParameter -&gt; unit" Usage="odbcParameterCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -825,6 +966,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="value">A <see cref="T:System.Data.Odbc.OdbcParameter" /> object to be inserted in the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</param>
         <summary>Inserts a <see cref="T:System.Data.Odbc.OdbcParameter" /> object into the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -833,9 +976,12 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Insert(System.Int32,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Insert (index As Integer, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Insert(int index, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Insert : int * obj -&gt; unit" Usage="odbcParameterCollection.Insert (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -854,6 +1000,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="value">A <see cref="T:System.Object" /> to be inserted in the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</param>
         <summary>Inserts a <see cref="T:System.Object" /> into the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="IsFixedSize">
@@ -862,9 +1010,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcParameterCollection.IsFixedSize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsFixedSize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Data.Odbc.OdbcParameterCollection.IsFixedSize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -879,6 +1029,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <value>
           <see langword="true" /> if the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> has a fixed size, otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -887,9 +1039,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcParameterCollection.IsReadOnly" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsReadOnly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Data.Odbc.OdbcParameterCollection.IsReadOnly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -904,6 +1058,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <value>
           <see langword="true" /> if the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> is read only, otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="IsSynchronized">
@@ -912,9 +1068,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcParameterCollection.IsSynchronized" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsSynchronized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Data.Odbc.OdbcParameterCollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -929,6 +1087,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <value>
           <see langword="true" /> if the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> is synchronized; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -938,6 +1098,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Gets or sets the <see cref="T:System.Data.Odbc.OdbcParameter" /> with a specified attribute.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -946,9 +1108,12 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcParameterCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As OdbcParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Odbc::OdbcParameter ^ default[int] { System::Data::Odbc::OdbcParameter ^ get(int index); void set(int index, System::Data::Odbc::OdbcParameter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Data.Odbc.OdbcParameter with get, set" Usage="System.Data.Odbc.OdbcParameterCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -956,11 +1121,14 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netcore-2.1">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netcore-2.1">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -985,6 +1153,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The index specified does not exist.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -993,9 +1163,12 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcParameterCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(parameterName As String) As OdbcParameter" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Odbc::OdbcParameter ^ default[System::String ^] { System::Data::Odbc::OdbcParameter ^ get(System::String ^ parameterName); void set(System::String ^ parameterName, System::Data::Odbc::OdbcParameter ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Data.Odbc.OdbcParameter with get, set" Usage="System.Data.Odbc.OdbcParameterCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1003,11 +1176,14 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netcore-2.1">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-2.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0;netcore-2.1">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1032,6 +1208,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The name specified does not exist.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Remove">
@@ -1041,6 +1219,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Removes the <see cref="T:System.Data.Odbc.OdbcParameter" /> object from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Remove">
@@ -1049,9 +1229,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Remove(System.Data.Odbc.OdbcParameter)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As OdbcParameter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Data::Odbc::OdbcParameter ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Remove : System.Data.Odbc.OdbcParameter -&gt; unit" Usage="odbcParameterCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1070,6 +1252,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidCastException">The parameter is not a <see cref="T:System.Data.Odbc.OdbcParameter" />.</exception>
         <exception cref="T:System.SystemException">The parameter does not exist in the collection.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -1078,9 +1262,12 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.Remove(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Remove (value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Remove(System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="override this.Remove : obj -&gt; unit" Usage="odbcParameterCollection.Remove value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1097,6 +1284,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="value">A <see cref="T:System.Object" /> to be removed from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</param>
         <summary>Removes the <see cref="T:System.Object" /> object from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="RemoveAt">
@@ -1106,6 +1295,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
       </AssemblyInfo>
       <Docs>
         <summary>Removes the <see cref="T:System.Data.Odbc.OdbcParameter" /> object from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> at the specified index.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="RemoveAt">
@@ -1114,9 +1305,12 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.RemoveAt(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveAt (index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveAt(int index);" />
+      <MemberSignature Language="F#" Value="override this.RemoveAt : int -&gt; unit" Usage="odbcParameterCollection.RemoveAt index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1133,6 +1327,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="index">The zero-based index of the <see cref="T:System.Data.Odbc.OdbcParameter" /> object to remove.</param>
         <summary>Removes the <see cref="T:System.Data.Odbc.OdbcParameter" /> from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> at the specified index.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">
@@ -1141,9 +1337,12 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.RemoveAt(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveAt (parameterName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveAt(System::String ^ parameterName);" />
+      <MemberSignature Language="F#" Value="override this.RemoveAt : string -&gt; unit" Usage="odbcParameterCollection.RemoveAt parameterName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1160,6 +1359,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <param name="parameterName">The name of the <see cref="T:System.Data.Odbc.OdbcParameter" /> object to remove.</param>
         <summary>Removes the <see cref="T:System.Data.Odbc.OdbcParameter" /> from the <see cref="T:System.Data.Odbc.OdbcParameterCollection" /> with the specified parameter name.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
     <Member MemberName="SetParameter">
@@ -1168,9 +1369,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.SetParameter(System.Int32,System.Data.Common.DbParameter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetParameter (index As Integer, value As DbParameter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetParameter(int index, System::Data::Common::DbParameter ^ value);" />
+      <MemberSignature Language="F#" Value="override this.SetParameter : int * System.Data.Common.DbParameter -&gt; unit" Usage="odbcParameterCollection.SetParameter (index, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1197,9 +1400,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcParameterCollection.SetParameter(System.String,System.Data.Common.DbParameter)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetParameter (parameterName As String, value As DbParameter)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetParameter(System::String ^ parameterName, System::Data::Common::DbParameter ^ value);" />
+      <MemberSignature Language="F#" Value="override this.SetParameter : string * System.Data.Common.DbParameter -&gt; unit" Usage="odbcParameterCollection.SetParameter (parameterName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1226,9 +1431,11 @@ parameters.Add("@pname", Convert.ToInt32(0));
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcParameterCollection.SyncRoot" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SyncRoot As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Data.Odbc.OdbcParameterCollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1242,6 +1449,8 @@ parameters.Add("@pname", Convert.ToInt32(0));
         <summary>Gets an object that can be used to synchronize access to the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />. Read-only.</summary>
         <value>An object that can be used to synchronize access to the <see cref="T:System.Data.Odbc.OdbcParameterCollection" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/b623f810-d871-49a5-b0f5-078cc3c34db6">Working with Commands</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/f21e6aba-b76d-46ad-a83e-2ad8e0af1e12">Using Parameters with a DataAdapter</related>
       </Docs>
     </Member>
   </Members>

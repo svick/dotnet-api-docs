@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ViewStateMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ViewStateMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ViewStateMode" />
+  <TypeSignature Language="F#" Value="type ViewStateMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +31,8 @@
     <altmember cref="P:System.Web.UI.Control.ViewState" />
     <altmember cref="M:System.Web.UI.Control.LoadViewState(System.Object)" />
     <altmember cref="M:System.Web.UI.Control.SaveViewState" />
+    <related type="Article" href="https://msdn.microsoft.com/library/0218d965-5d30-445b-b6a6-8870e70e63ce(v=vs.100)">ASP.NET State Management Overview</related>
+    <related type="Article" href="https://msdn.microsoft.com/en-us/library/C90FA3D7-788A-47D2-A80F-138122A1D8EE">Controlling View State</related>
   </Docs>
   <Members>
     <Member MemberName="Disabled">
@@ -38,6 +41,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ViewStateMode.Disabled" />
       <MemberSignature Language="VB.NET" Value="Disabled" />
       <MemberSignature Language="C++ CLI" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 2" Usage="System.Web.UI.ViewStateMode.Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +61,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ViewStateMode.Enabled" />
       <MemberSignature Language="VB.NET" Value="Enabled" />
       <MemberSignature Language="C++ CLI" Value="Enabled" />
+      <MemberSignature Language="F#" Value="Enabled = 1" Usage="System.Web.UI.ViewStateMode.Enabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +81,7 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ViewStateMode.Inherit" />
       <MemberSignature Language="VB.NET" Value="Inherit" />
       <MemberSignature Language="C++ CLI" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = 0" Usage="System.Web.UI.ViewStateMode.Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

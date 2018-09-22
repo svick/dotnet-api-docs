@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.ParallelExecutionMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum ParallelExecutionMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class ParallelExecutionMode" />
+  <TypeSignature Language="F#" Value="type ParallelExecutionMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Parallel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +25,9 @@
   <Docs>
     <summary>The query execution mode is a hint that specifies how the system should handle performance trade-offs when parallelizing queries.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="~/docs/standard/parallel-programming/parallel-linq-plinq.md">Parallel LINQ (PLINQ)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/e52ff26c-c5d3-4fab-9fec-c937fb387963">How to: Specify the Execution Mode in PLINQ</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/53706c7e-397d-467a-98cd-c0d1fd63ba5e">Understanding Speedup in PLINQ</related>
   </Docs>
   <Members>
     <Member MemberName="Default">
@@ -32,6 +36,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.ParallelExecutionMode.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Linq.ParallelExecutionMode.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Parallel</AssemblyName>
@@ -61,6 +66,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.ParallelExecutionMode.ForceParallelism" />
       <MemberSignature Language="VB.NET" Value="ForceParallelism" />
       <MemberSignature Language="C++ CLI" Value="ForceParallelism" />
+      <MemberSignature Language="F#" Value="ForceParallelism = 1" Usage="System.Linq.ParallelExecutionMode.ForceParallelism" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Parallel</AssemblyName>

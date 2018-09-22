@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EditorPartCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class EditorPartCollection sealed : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type EditorPartCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -59,6 +61,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.WebParts.EditorPart" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -68,6 +71,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -79,8 +83,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes an empty new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> class.</summary>
@@ -94,6 +104,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -102,9 +113,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPartCollection.#ctor(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (editorParts As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EditorPartCollection(System::Collections::ICollection ^ editorParts);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.EditorPartCollection : System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.EditorPartCollection" Usage="new System.Web.UI.WebControls.WebParts.EditorPartCollection editorParts" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -141,6 +154,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
         <altmember cref="P:System.Web.UI.WebControls.WebParts.EditorZoneBase.EditorParts" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -149,9 +163,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPartCollection.#ctor(System.Web.UI.WebControls.WebParts.EditorPartCollection,System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (existingEditorParts As EditorPartCollection, editorParts As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; EditorPartCollection(System::Web::UI::WebControls::WebParts::EditorPartCollection ^ existingEditorParts, System::Collections::ICollection ^ editorParts);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.EditorPartCollection : System.Web.UI.WebControls.WebParts.EditorPartCollection * System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.EditorPartCollection" Usage="new System.Web.UI.WebControls.WebParts.EditorPartCollection (existingEditorParts, editorParts)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -163,6 +179,7 @@
         <param name="editorParts">An <see cref="T:System.Collections.ICollection" /> of <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls not in a zone, but created programmatically.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> class by passing in an <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> collection of <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls, and an <see cref="T:System.Collections.ICollection" /> collection of additional <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> controls.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -170,9 +187,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.WebParts.EditorPart editorPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPartCollection.Contains(System.Web.UI.WebControls.WebParts.EditorPart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::WebParts::EditorPart ^ editorPart);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.WebParts.EditorPart -&gt; bool" Usage="editorPartCollection.Contains editorPart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -205,6 +224,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -213,9 +233,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPartCollection.CopyTo(System.Web.UI.WebControls.WebParts.EditorPart[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As EditorPart(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::WebParts::EditorPart ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.UI.WebControls.WebParts.EditorPart[] * int -&gt; unit" Usage="editorPartCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -249,6 +271,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Empty">
@@ -257,9 +280,11 @@
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.EditorPartCollection.Empty" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As EditorPartCollection " />
       <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::EditorPartCollection ^ Empty;" />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Web.UI.WebControls.WebParts.EditorPartCollection" Usage="System.Web.UI.WebControls.WebParts.EditorPartCollection.Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -275,6 +300,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -282,9 +308,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.WebParts.EditorPart editorPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPartCollection.IndexOf(System.Web.UI.WebControls.WebParts.EditorPart)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::WebParts::EditorPart ^ editorPart);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.WebParts.EditorPart -&gt; int" Usage="editorPartCollection.IndexOf editorPart" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -317,6 +345,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -325,9 +354,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.EditorPartCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As EditorPart" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::EditorPart ^ default[int] { System::Web::UI::WebControls::WebParts::EditorPart ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.WebParts.EditorPart" Usage="System.Web.UI.WebControls.WebParts.EditorPartCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -341,6 +372,7 @@
         <summary>Returns a specific member of the collection according to a unique identifier.</summary>
         <value>An <see cref="T:System.Web.UI.WebControls.WebParts.EditorPart" /> at the specified index in the collection.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

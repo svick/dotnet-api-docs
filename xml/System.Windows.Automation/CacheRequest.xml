@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.CacheRequest" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CacheRequest" />
   <TypeSignature Language="C++ CLI" Value="public ref class CacheRequest sealed" />
+  <TypeSignature Language="F#" Value="type CacheRequest = class" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -45,6 +47,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms771456(v=vs.90)">FetchTimer Sample</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -56,6 +61,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -69,6 +75,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="Activate">
@@ -77,9 +85,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.CacheRequest.Activate" />
       <MemberSignature Language="VB.NET" Value="Public Function Activate () As IDisposable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ Activate();" />
+      <MemberSignature Language="F#" Value="member this.Activate : unit -&gt; IDisposable" Usage="cacheRequest.Activate " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -107,6 +117,8 @@
         </remarks>
         <altmember cref="M:System.Windows.Automation.CacheRequest.Push" />
         <altmember cref="M:System.Windows.Automation.CacheRequest.Pop" />
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Add">
@@ -134,9 +146,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.CacheRequest.Add(System.Windows.Automation.AutomationPattern)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (pattern As AutomationPattern)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Automation::AutomationPattern ^ pattern);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Automation.AutomationPattern -&gt; unit" Usage="cacheRequest.Add pattern" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -165,6 +179,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Automation.CacheRequest" /> is active.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -173,9 +189,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.CacheRequest.Add(System.Windows.Automation.AutomationProperty)" />
       <MemberSignature Language="VB.NET" Value="Public Sub Add (property As AutomationProperty)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Automation::AutomationProperty ^ property);" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Automation.AutomationProperty -&gt; unit" Usage="cacheRequest.Add property" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -206,6 +224,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Windows.Automation.CacheRequest" /> is active.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="AutomationElementMode">
@@ -214,11 +234,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.CacheRequest.AutomationElementMode" />
       <MemberSignature Language="VB.NET" Value="Public Property AutomationElementMode As AutomationElementMode" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::AutomationElementMode AutomationElementMode { System::Windows::Automation::AutomationElementMode get(); void set(System::Windows::Automation::AutomationElementMode value); };" />
+      <MemberSignature Language="F#" Value="member this.AutomationElementMode : System.Windows.Automation.AutomationElementMode with get, set" Usage="System.Windows.Automation.CacheRequest.AutomationElementMode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.AutomationElementMode</ReturnType>
       </ReturnValue>
@@ -246,6 +273,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="Clone">
@@ -254,9 +283,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.CacheRequest.Clone" />
       <MemberSignature Language="VB.NET" Value="Public Function Clone () As CacheRequest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::CacheRequest ^ Clone();" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Windows.Automation.CacheRequest" Usage="cacheRequest.Clone " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -275,9 +306,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.CacheRequest.Current" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As CacheRequest" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Automation::CacheRequest ^ Current { System::Windows::Automation::CacheRequest ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Windows.Automation.CacheRequest" Usage="System.Windows.Automation.CacheRequest.Current" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -295,9 +328,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.CacheRequest.Pop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Pop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Pop();" />
+      <MemberSignature Language="F#" Value="member this.Pop : unit -&gt; unit" Usage="cacheRequest.Pop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -326,6 +361,8 @@
         </remarks>
         <exception cref="T:System.InvalidOperationException">An attempt was made to remove a cache request that was not the last one pushed onto the stack.</exception>
         <altmember cref="M:System.Windows.Automation.CacheRequest.Push" />
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="Push">
@@ -334,9 +371,11 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.CacheRequest.Push" />
       <MemberSignature Language="VB.NET" Value="Public Sub Push ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Push();" />
+      <MemberSignature Language="F#" Value="member this.Push : unit -&gt; unit" Usage="cacheRequest.Push " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -364,6 +403,8 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Windows.Automation.CacheRequest.Pop" />
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="TreeFilter">
@@ -372,11 +413,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.CacheRequest.TreeFilter" />
       <MemberSignature Language="VB.NET" Value="Public Property TreeFilter As Condition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::Condition ^ TreeFilter { System::Windows::Automation::Condition ^ get(); void set(System::Windows::Automation::Condition ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.TreeFilter : System.Windows.Automation.Condition with get, set" Usage="System.Windows.Automation.CacheRequest.TreeFilter" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Condition</ReturnType>
       </ReturnValue>
@@ -400,6 +448,8 @@
  ]]></format>
         </remarks>
         <altmember cref="F:System.Windows.Automation.Automation.ContentViewCondition" />
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
     <Member MemberName="TreeScope">
@@ -408,11 +458,18 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.CacheRequest.TreeScope" />
       <MemberSignature Language="VB.NET" Value="Public Property TreeScope As TreeScope" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::TreeScope TreeScope { System::Windows::Automation::TreeScope get(); void set(System::Windows::Automation::TreeScope value); };" />
+      <MemberSignature Language="F#" Value="member this.TreeScope : System.Windows.Automation.TreeScope with get, set" Usage="System.Windows.Automation.CacheRequest.TreeScope" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Automation.TreeScope</ReturnType>
       </ReturnValue>
@@ -436,6 +493,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">An attempt was made to set the property to <see cref="F:System.Windows.Automation.TreeScope.Parent" /> or <see cref="F:System.Windows.Automation.TreeScope.Ancestors" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/94c15031-4975-43cc-bcd5-c9439ed21c9c">Caching in UI Automation Clients</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
       </Docs>
     </Member>
   </Members>

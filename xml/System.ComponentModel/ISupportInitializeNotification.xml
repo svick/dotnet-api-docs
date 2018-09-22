@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ISupportInitializeNotification" />
   <TypeSignature Language="VB.NET" Value="Public Interface ISupportInitializeNotification&#xA;Implements ISupportInitialize" />
   <TypeSignature Language="C++ CLI" Value="public interface class ISupportInitializeNotification : System::ComponentModel::ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type ISupportInitializeNotification = interface&#xA;    interface ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -43,9 +45,11 @@
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.ISupportInitializeNotification.Initialized" />
       <MemberSignature Language="VB.NET" Value="Event Initialized As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Initialized;" />
+      <MemberSignature Language="F#" Value="member this.Initialized : EventHandler " Usage="member this.Initialized : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -69,7 +73,7 @@
 ## Remarks  
  This event typically occurs during the call to the <xref:System.ComponentModel.ISupportInitialize.EndInit%2A> method for the component, but it may occur later if the component has dependent controls that implement the <xref:System.ComponentModel.ISupportInitializeNotification> interface and the dependent controls have not completed initialization.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
@@ -81,9 +85,11 @@
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ISupportInitializeNotification.IsInitialized" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInitialized As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInitialized { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsInitialized : bool" Usage="System.ComponentModel.ISupportInitializeNotification.IsInitialized" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

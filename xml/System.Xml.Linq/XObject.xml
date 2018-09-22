@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XObject" />
   <TypeSignature Language="VB.NET" Value="Public MustInherit Class XObject&#xA;Implements IXmlLineInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class XObject abstract : System::Xml::IXmlLineInfo" />
+  <TypeSignature Language="F#" Value="type XObject = class&#xA;    interface IXmlLineInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -14,6 +15,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Xml.Linq</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -40,6 +42,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
   </Docs>
   <Members>
     <Member MemberName="AddAnnotation">
@@ -48,6 +51,7 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XObject.AddAnnotation(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddAnnotation (annotation As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAnnotation(System::Object ^ annotation);" />
+      <MemberSignature Language="F#" Value="member this.AddAnnotation : obj -&gt; unit" Usage="xObject.AddAnnotation annotation" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -59,6 +63,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -145,6 +150,7 @@ T1
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Annotation">
@@ -152,6 +158,7 @@ T1
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Annotation(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XObject.Annotation(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Annotation(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.Annotation : Type -&gt; obj" Usage="xObject.Annotation type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -163,6 +170,7 @@ T1
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -245,6 +253,7 @@ T1
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Annotation&lt;T&gt;">
@@ -253,6 +262,7 @@ T1
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XObject.Annotation``1" />
       <MemberSignature Language="VB.NET" Value="Public Function Annotation(Of T As Class) () As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class T Annotation();" />
+      <MemberSignature Language="F#" Value="member this.Annotation : unit -&gt; 'T (requires 'T : null)" Usage="xObject.Annotation " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -264,6 +274,7 @@ T1
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -350,6 +361,7 @@ T1
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Annotations">
@@ -357,6 +369,7 @@ T1
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; Annotations(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XObject.Annotations(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ Annotations(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.Annotations : Type -&gt; seq&lt;obj&gt;" Usage="xObject.Annotations type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -368,6 +381,7 @@ T1
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -480,6 +494,7 @@ def
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Annotations&lt;T&gt;">
@@ -488,6 +503,7 @@ def
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XObject.Annotations``1" />
       <MemberSignature Language="VB.NET" Value="Public Function Annotations(Of T As Class) () As IEnumerable(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class System::Collections::Generic::IEnumerable&lt;T&gt; ^ Annotations();" />
+      <MemberSignature Language="F#" Value="member this.Annotations : unit -&gt; seq&lt;'T (requires 'T : null)&gt; (requires 'T : null)" Usage="xObject.Annotations " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -499,12 +515,21 @@ def
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.6">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.XObject/&lt;Annotations&gt;d__2`1))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Xml.Linq.XObject/&lt;Annotations&gt;d__16`1))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerable&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -611,6 +636,7 @@ def
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="BaseUri">
@@ -619,6 +645,7 @@ def
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XObject.BaseUri" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseUri As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BaseUri { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.BaseUri : string" Usage="System.Xml.Linq.XObject.BaseUri" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -630,6 +657,7 @@ def
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -743,6 +771,7 @@ PurchaseOrder       2    2
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Changed">
@@ -751,6 +780,7 @@ PurchaseOrder       2    2
       <MemberSignature Language="DocId" Value="E:System.Xml.Linq.XObject.Changed" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Changed As EventHandler(Of XObjectChangeEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Xml::Linq::XObjectChangeEventArgs ^&gt; ^ Changed;" />
+      <MemberSignature Language="F#" Value="member this.Changed : EventHandler&lt;System.Xml.Linq.XObjectChangeEventArgs&gt; " Usage="member this.Changed : System.EventHandler&lt;System.Xml.Linq.XObjectChangeEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -762,6 +792,7 @@ PurchaseOrder       2    2
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -965,6 +996,7 @@ Total:308
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Changing">
@@ -973,6 +1005,7 @@ Total:308
       <MemberSignature Language="DocId" Value="E:System.Xml.Linq.XObject.Changing" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event Changing As EventHandler(Of XObjectChangeEventArgs) " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Xml::Linq::XObjectChangeEventArgs ^&gt; ^ Changing;" />
+      <MemberSignature Language="F#" Value="member this.Changing : EventHandler&lt;System.Xml.Linq.XObjectChangeEventArgs&gt; " Usage="member this.Changing : System.EventHandler&lt;System.Xml.Linq.XObjectChangeEventArgs&gt; " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -984,6 +1017,7 @@ Total:308
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1074,6 +1108,7 @@ Changed event raised
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Document">
@@ -1082,6 +1117,7 @@ Changed event raised
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XObject.Document" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Document As XDocument" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XDocument ^ Document { System::Xml::Linq::XDocument ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Document : System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XObject.Document" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1093,6 +1129,7 @@ Changed event raised
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1143,6 +1180,7 @@ Console.WriteLine(documentOfChild.FirstNode)
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="NodeType">
@@ -1151,6 +1189,7 @@ Console.WriteLine(documentOfChild.FirstNode)
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XObject.NodeType" />
       <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property NodeType As XmlNodeType" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Xml.XmlNodeType" Usage="System.Xml.Linq.XObject.NodeType" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1162,6 +1201,7 @@ Console.WriteLine(documentOfChild.FirstNode)
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1248,6 +1288,7 @@ Text
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="Parent">
@@ -1256,6 +1297,7 @@ Text
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XObject.Parent" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As XElement" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XElement ^ Parent { System::Xml::Linq::XElement ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Xml.Linq.XElement" Usage="System.Xml.Linq.XObject.Parent" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1267,6 +1309,7 @@ Text
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1325,6 +1368,7 @@ Root
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAnnotations">
@@ -1332,6 +1376,7 @@ Root
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAnnotations(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XObject.RemoveAnnotations(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAnnotations(Type ^ type);" />
+      <MemberSignature Language="F#" Value="member this.RemoveAnnotations : Type -&gt; unit" Usage="xObject.RemoveAnnotations type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1343,6 +1388,7 @@ Root
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1432,6 +1478,7 @@ Count after removing: 2
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="RemoveAnnotations&lt;T&gt;">
@@ -1440,6 +1487,7 @@ Count after removing: 2
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XObject.RemoveAnnotations``1" />
       <MemberSignature Language="VB.NET" Value="Public Sub RemoveAnnotations(Of T As Class) ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class void RemoveAnnotations();" />
+      <MemberSignature Language="F#" Value="member this.RemoveAnnotations : unit -&gt; unit (requires 'T : null)" Usage="xObject.RemoveAnnotations " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1451,6 +1499,7 @@ Count after removing: 2
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1543,6 +1592,7 @@ Count after removing: 2
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.IXmlLineInfo.HasLineInfo">
@@ -1552,9 +1602,6 @@ Count after removing: 2
       <MemberSignature Language="VB.NET" Value="Function HasLineInfo () As Boolean Implements IXmlLineInfo.HasLineInfo" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.Xml.IXmlLineInfo.HasLineInfo() = System::Xml::IXmlLineInfo::HasLineInfo;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Xml.IXmlLineInfo.HasLineInfo</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1565,6 +1612,7 @@ Count after removing: 2
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1692,11 +1740,9 @@ Root                1    2
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Xml.IXmlLineInfo.LineNumber" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XObject.System#Xml#IXmlLineInfo#LineNumber" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property LineNumber As Integer Implements IXmlLineInfo.LineNumber" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Xml.IXmlLineInfo.LineNumber { int get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Xml::IXmlLineInfo::LineNumber { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Xml.IXmlLineInfo.LineNumber" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Xml.IXmlLineInfo.LineNumber</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1707,6 +1753,7 @@ Root                1    2
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1823,6 +1870,7 @@ Root                1    2
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
     <Member MemberName="System.Xml.IXmlLineInfo.LinePosition">
@@ -1830,11 +1878,9 @@ Root                1    2
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Xml.IXmlLineInfo.LinePosition" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XObject.System#Xml#IXmlLineInfo#LinePosition" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property LinePosition As Integer Implements IXmlLineInfo.LinePosition" />
-      <MemberSignature Language="C++ CLI" Value="property int System.Xml.IXmlLineInfo.LinePosition { int get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property int System::Xml::IXmlLineInfo::LinePosition { int get(); };" />
+      <MemberSignature Language="F#" Usage="System.Xml.IXmlLineInfo.LinePosition" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.Xml.IXmlLineInfo.LinePosition</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1845,6 +1891,7 @@ Root                1    2
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -1961,6 +2008,7 @@ Root                1    2
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13">LINQ to XML</related>
       </Docs>
     </Member>
   </Members>

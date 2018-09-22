@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProviderConnectionPointCollection&#xA;Inherits ReadOnlyCollectionBase" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProviderConnectionPointCollection sealed : System::Collections::ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ProviderConnectionPointCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -30,6 +32,7 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" />
     <altmember cref="T:System.Collections.ReadOnlyCollectionBase" />
     <altmember cref="M:System.Web.UI.WebControls.WebParts.WebPartManager.GetProviderConnectionPoints(System.Web.UI.WebControls.WebParts.WebPart)" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -58,8 +61,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes an empty new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection" /> class.</summary>
@@ -71,6 +80,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -79,9 +89,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection.#ctor(System.Collections.ICollection)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (connectionPoints As ICollection)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProviderConnectionPointCollection(System::Collections::ICollection ^ connectionPoints);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection : System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection" Usage="new System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection connectionPoints" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -112,6 +124,7 @@
   
  There are duplicate IDs in the collection of connection points.</exception>
         <altmember cref="T:System.Collections.ICollection" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -120,9 +133,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection.Contains(System.Web.UI.WebControls.WebParts.ProviderConnectionPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Function Contains (connectionPoint As ProviderConnectionPoint) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ connectionPoint);" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.WebParts.ProviderConnectionPoint -&gt; bool" Usage="providerConnectionPointCollection.Contains connectionPoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -138,6 +153,7 @@
           <see langword="true" /> if the provider connection point is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Collections.IList.Contains(System.Object)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -146,9 +162,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection.CopyTo(System.Web.UI.WebControls.WebParts.ProviderConnectionPoint[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ProviderConnectionPoint(), index As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^&gt; ^ array, int index);" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.UI.WebControls.WebParts.ProviderConnectionPoint[] * int -&gt; unit" Usage="providerConnectionPointCollection.CopyTo (array, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -173,6 +191,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -181,9 +200,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection.Default" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Default As ProviderConnectionPoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ Default { System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" Usage="System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -201,6 +222,7 @@
  ]]></format>
         </remarks>
         <altmember cref="F:System.Web.UI.WebControls.WebParts.ConnectionPoint.DefaultID" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="IndexOf">
@@ -209,9 +231,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection.IndexOf(System.Web.UI.WebControls.WebParts.ProviderConnectionPoint)" />
       <MemberSignature Language="VB.NET" Value="Public Function IndexOf (connectionPoint As ProviderConnectionPoint) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ connectionPoint);" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.WebParts.ProviderConnectionPoint -&gt; int" Usage="providerConnectionPointCollection.IndexOf connectionPoint" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,6 +259,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="Item">
@@ -244,6 +269,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Gets a specific member of the collection according to its position or a unique identifier.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -252,9 +278,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ProviderConnectionPoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ default[int] { System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ get(int index); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" Usage="System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -269,6 +297,7 @@
         <value>A <see cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" /> at the index specified.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Collections.IList.Item(System.Int32)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -277,9 +306,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(id As String) As ProviderConnectionPoint" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ default[System::String ^] { System::Web::UI::WebControls::WebParts::ProviderConnectionPoint ^ get(System::String ^ id); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" Usage="System.Web.UI.WebControls.WebParts.ProviderConnectionPointCollection.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -293,6 +324,7 @@
         <summary>Gets a member of the collection based on a unique string identifier.</summary>
         <value>The first <see cref="T:System.Web.UI.WebControls.WebParts.ProviderConnectionPoint" /> whose ID equals the value of <paramref name="id" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

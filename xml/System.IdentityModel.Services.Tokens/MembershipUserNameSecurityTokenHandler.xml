@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler" />
   <TypeSignature Language="VB.NET" Value="Public Class MembershipUserNameSecurityTokenHandler&#xA;Inherits UserNameSecurityTokenHandler" />
   <TypeSignature Language="C++ CLI" Value="public ref class MembershipUserNameSecurityTokenHandler : System::IdentityModel::Tokens::UserNameSecurityTokenHandler" />
+  <TypeSignature Language="F#" Value="type MembershipUserNameSecurityTokenHandler = class&#xA;    inherit UserNameSecurityTokenHandler" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,6 +16,7 @@
   <Docs>
     <summary>A <see cref="T:System.IdentityModel.Tokens.UserNameSecurityTokenHandler" /> that validates a <see cref="T:System.IdentityModel.Tokens.UserNameSecurityToken" /> by using a configured <see cref="T:System.Web.Security.MembershipProvider" />.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/6ec3bac1-b014-49ae-843c-c54518cb709a">&lt;userNameSecurityTokenHandlerRequirement&gt;</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -50,6 +52,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.#ctor(System.Web.Security.MembershipProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (provider As MembershipProvider)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MembershipUserNameSecurityTokenHandler(System::Web::Security::MembershipProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler : System.Web.Security.MembershipProvider -&gt; System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler" Usage="new System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler provider" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -70,6 +73,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.CanValidateToken" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanValidateToken As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanValidateToken { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanValidateToken : bool" Usage="System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.CanValidateToken" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -91,6 +95,7 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadCustomConfiguration (customConfigElements As XmlNodeList)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadCustomConfiguration(System::Xml::XmlNodeList ^ customConfigElements);" />
+      <MemberSignature Language="F#" Value="abstract member LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit&#xA;override this.LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit" Usage="membershipUserNameSecurityTokenHandler.LoadCustomConfiguration customConfigElements" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.MembershipProvider" />
       <MemberSignature Language="VB.NET" Value="Public Property MembershipProvider As MembershipProvider" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Security::MembershipProvider ^ MembershipProvider { System::Web::Security::MembershipProvider ^ get(); void set(System::Web::Security::MembershipProvider ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.MembershipProvider : System.Web.Security.MembershipProvider with get, set" Usage="System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.MembershipProvider" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -126,6 +132,7 @@
         <summary>Gets the <see cref="T:System.Web.Security.MembershipProvider" /> that is configured for the current instance.</summary>
         <value>The configured membership provider.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/6ec3bac1-b014-49ae-843c-c54518cb709a">&lt;userNameSecurityTokenHandlerRequirement&gt;</related>
       </Docs>
     </Member>
     <Member MemberName="ValidateToken">
@@ -134,13 +141,14 @@
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.ValidateToken(System.IdentityModel.Tokens.SecurityToken)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ValidateToken (token As SecurityToken) As ReadOnlyCollection(Of ClaimsIdentity)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^ ValidateToken(System::IdentityModel::Tokens::SecurityToken ^ token);" />
+      <MemberSignature Language="F#" Value="abstract member ValidateToken : System.IdentityModel.Tokens.SecurityToken -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt;&#xA;override this.ValidateToken : System.IdentityModel.Tokens.SecurityToken -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="membershipUserNameSecurityTokenHandler.ValidateToken token" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>

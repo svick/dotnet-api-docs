@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.MyServices.RegistryProxy" />
   <TypeSignature Language="VB.NET" Value="Public Class RegistryProxy" />
   <TypeSignature Language="C++ CLI" Value="public ref class RegistryProxy" />
+  <TypeSignature Language="F#" Value="type RegistryProxy = class" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -13,7 +15,10 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
       <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
@@ -43,6 +48,8 @@
  ]]></format>
     </remarks>
     <altmember cref="T:Microsoft.Win32.Registry" />
+    <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+    <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
   </Docs>
   <Members>
     <Member MemberName="ClassesRoot">
@@ -51,11 +58,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.ClassesRoot" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClassesRoot As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::RegistryKey ^ ClassesRoot { Microsoft::Win32::RegistryKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ClassesRoot : Microsoft.Win32.RegistryKey" Usage="Microsoft.VisualBasic.MyServices.RegistryProxy.ClassesRoot" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
       </ReturnValue>
@@ -103,6 +117,9 @@
         </remarks>
         <altmember cref="T:Microsoft.Win32.RegistryKey" />
         <altmember cref="F:Microsoft.Win32.Registry.ClassesRoot" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentConfig">
@@ -111,11 +128,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentConfig" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentConfig As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::RegistryKey ^ CurrentConfig { Microsoft::Win32::RegistryKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentConfig : Microsoft.Win32.RegistryKey" Usage="Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentConfig" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
       </ReturnValue>
@@ -161,6 +185,9 @@
         </remarks>
         <altmember cref="T:Microsoft.Win32.RegistryKey" />
         <altmember cref="F:Microsoft.Win32.Registry.CurrentConfig" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <Member MemberName="CurrentUser">
@@ -169,11 +196,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentUser" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentUser As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::RegistryKey ^ CurrentUser { Microsoft::Win32::RegistryKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CurrentUser : Microsoft.Win32.RegistryKey" Usage="Microsoft.VisualBasic.MyServices.RegistryProxy.CurrentUser" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
       </ReturnValue>
@@ -219,6 +253,9 @@
         </remarks>
         <altmember cref="T:Microsoft.Win32.RegistryKey" />
         <altmember cref="F:Microsoft.Win32.Registry.CurrentUser" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <Member MemberName="DynData">
@@ -227,13 +264,15 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.DynData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DynData As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::RegistryKey ^ DynData { Microsoft::Win32::RegistryKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DynData : Microsoft.Win32.RegistryKey" Usage="Microsoft.VisualBasic.MyServices.RegistryProxy.DynData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.Obsolete("The DynData registry key works only on Win9x, which is not supported by this version of the .NET Framework.  Use the PerformanceData registry key instead.  This property will be removed from a future version of the framework.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -282,6 +321,9 @@
         </remarks>
         <altmember cref="T:Microsoft.Win32.RegistryKey" />
         <altmember cref="F:Microsoft.Win32.Registry.DynData" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -290,9 +332,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.RegistryProxy.GetValue(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValue (keyName As String, valueName As String, defaultValue As Object) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::String ^ keyName, System::String ^ valueName, System::Object ^ defaultValue);" />
+      <MemberSignature Language="F#" Value="member this.GetValue : string * string * obj -&gt; obj" Usage="registryProxy.GetValue (keyName, valueName, defaultValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -341,6 +385,9 @@
           <paramref name="keyName" /> does not begin with a valid registry root.</exception>
         <permission cref="T:System.Security.Permissions.RegistryPermission">to read from the registry. Associated enumeration: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Read" /></permission>
         <permission cref="T:System.Security.Permissions.EnvironmentPermission">to read a registry key of type REG_EXPAND_SZ. Associated enumeration: <see cref="F:System.Security.Permissions.PermissionState.Unrestricted" /></permission>
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <Member MemberName="LocalMachine">
@@ -349,11 +396,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.LocalMachine" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalMachine As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::RegistryKey ^ LocalMachine { Microsoft::Win32::RegistryKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.LocalMachine : Microsoft.Win32.RegistryKey" Usage="Microsoft.VisualBasic.MyServices.RegistryProxy.LocalMachine" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
       </ReturnValue>
@@ -399,6 +453,9 @@
         </remarks>
         <altmember cref="T:Microsoft.Win32.RegistryKey" />
         <altmember cref="F:Microsoft.Win32.Registry.LocalMachine" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <Member MemberName="PerformanceData">
@@ -407,11 +464,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.PerformanceData" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PerformanceData As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::RegistryKey ^ PerformanceData { Microsoft::Win32::RegistryKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.PerformanceData : Microsoft.Win32.RegistryKey" Usage="Microsoft.VisualBasic.MyServices.RegistryProxy.PerformanceData" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
       </ReturnValue>
@@ -461,6 +525,9 @@
         </remarks>
         <altmember cref="T:Microsoft.Win32.RegistryKey" />
         <altmember cref="F:Microsoft.Win32.Registry.PerformanceData" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="SetValue">
@@ -478,9 +545,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.RegistryProxy.SetValue(System.String,System.String,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (keyName As String, valueName As String, value As Object)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::String ^ keyName, System::String ^ valueName, System::Object ^ value);" />
+      <MemberSignature Language="F#" Value="member this.SetValue : string * string * obj -&gt; unit" Usage="registryProxy.SetValue (keyName, valueName, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -533,6 +602,9 @@
         <permission cref="T:System.Security.Permissions.RegistryPermission">to modify the specified registry key if it exists, or to create the registry key if it does not already exist. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Create" /></permission>
         <altmember cref="T:Microsoft.Win32.RegistryValueKind" />
         <altmember cref="Overload:Microsoft.Win32.Registry.SetValue" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <Member MemberName="SetValue">
@@ -541,9 +613,11 @@
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.MyServices.RegistryProxy.SetValue(System.String,System.String,System.Object,Microsoft.Win32.RegistryValueKind)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetValue (keyName As String, valueName As String, value As Object, valueKind As RegistryValueKind)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::String ^ keyName, System::String ^ valueName, System::Object ^ value, Microsoft::Win32::RegistryValueKind valueKind);" />
+      <MemberSignature Language="F#" Value="member this.SetValue : string * string * obj * Microsoft.Win32.RegistryValueKind -&gt; unit" Usage="registryProxy.SetValue (keyName, valueName, value, valueKind)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -603,6 +677,9 @@
         <permission cref="T:System.Security.Permissions.RegistryPermission">to modify the specified registry key if it exists, or to create the registry key if it does not already exist. Associated enumerations: <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Write" />, <see cref="F:System.Security.Permissions.RegistryPermissionAccess.Create" /></permission>
         <altmember cref="T:Microsoft.Win32.RegistryValueKind" />
         <altmember cref="Overload:Microsoft.Win32.Registry.SetValue" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
     <Member MemberName="Users">
@@ -611,11 +688,18 @@
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.MyServices.RegistryProxy.Users" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Users As RegistryKey" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::RegistryKey ^ Users { Microsoft::Win32::RegistryKey ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Users : Microsoft.Win32.RegistryKey" Usage="Microsoft.VisualBasic.MyServices.RegistryProxy.Users" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>8.0.0.0</AssemblyVersion>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
       </ReturnValue>
@@ -661,6 +745,9 @@
         </remarks>
         <altmember cref="T:Microsoft.Win32.RegistryKey" />
         <altmember cref="F:Microsoft.Win32.Registry.Users" />
+        <related type="Article" href="~/docs/visual-basic/language-reference/objects/index.md">Objects (Visual Basic)</related>
+        <related type="Article" href="~/docs/visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md">Reading from and Writing to the Registry (Visual Basic)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/9980aff7-2f69-492b-8f66-29a9a76d3df5">Security and the Registry</related>
       </Docs>
     </Member>
   </Members>

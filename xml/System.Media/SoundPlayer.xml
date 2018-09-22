@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Media.SoundPlayer" />
   <TypeSignature Language="VB.NET" Value="Public Class SoundPlayer&#xA;Inherits Component&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SoundPlayer : System::ComponentModel::Component, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type SoundPlayer = class&#xA;    inherit Component&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,8 +19,11 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
       <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -33,7 +38,7 @@
   
  You can load or play a .wav file synchronously or asynchronously. If you call a synchronous load or play method, the calling thread will wait until the method returns, which may cause painting and other events to be interrupted. Calling an asynchronous load or play method will allow the calling thread to continue without interruption. For more information on asynchronous method calls, see [How to: Run an Operation in the Background](~/docs/framework/winforms/controls/how-to-run-an-operation-in-the-background.md).  
   
- When a <xref:System.Media.SoundPlayer> has finished loading a .wav file, it raises the <xref:System.Media.SoundPlayer.LoadCompleted> event. You can examine the <xref:System.ComponentModel.AsyncCompletedEventArgs> in your event handler to determine if the load succeeded or failed. The <xref:System.Media.SoundPlayer.SoundLocationChanged> event is raised when the audio source is set to a new file path or URL. The <xref:System.Media.SoundPlayer.StreamChanged> event is raised when the audio source is set to a new <xref:System.IO.Stream>. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ When a <xref:System.Media.SoundPlayer> has finished loading a .wav file, it raises the <xref:System.Media.SoundPlayer.LoadCompleted> event. You can examine the <xref:System.ComponentModel.AsyncCompletedEventArgs> in your event handler to determine if the load succeeded or failed. The <xref:System.Media.SoundPlayer.SoundLocationChanged> event is raised when the audio source is set to a new file path or URL. The <xref:System.Media.SoundPlayer.StreamChanged> event is raised when the audio source is set to a new <xref:System.IO.Stream>. For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  For more information about <xref:System.Media.SoundPlayer>, see [SoundPlayer Class Overview](~/docs/framework/winforms/controls/soundplayer-class-overview.md).  
   
@@ -52,6 +57,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Media.SystemSounds" />
+    <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -72,6 +78,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -85,6 +92,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -92,11 +100,18 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.#ctor(System.IO.Stream)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoundPlayer(System::IO::Stream ^ stream);" />
+      <MemberSignature Language="F#" Value="new System.Media.SoundPlayer : System.IO.Stream -&gt; System.Media.SoundPlayer" Usage="new System.Media.SoundPlayer stream" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="stream" Type="System.IO.Stream" />
       </Parameters>
@@ -111,6 +126,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -119,9 +135,11 @@
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (soundLocation As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SoundPlayer(System::String ^ soundLocation);" />
+      <MemberSignature Language="F#" Value="new System.Media.SoundPlayer : string -&gt; System.Media.SoundPlayer" Usage="new System.Media.SoundPlayer soundLocation" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -139,6 +157,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.UriFormatException">The URL value specified by <paramref name="soundLocation" /> cannot be resolved.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -146,9 +165,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SoundPlayer(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Media.SoundPlayer : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Media.SoundPlayer" Usage="new System.Media.SoundPlayer (serializationInfo, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -161,6 +182,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Media.SoundPlayer" /> class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.UriFormatException">The <see cref="P:System.Media.SoundPlayer.SoundLocation" /> specified in <paramref name="serializationInfo" /> cannot be resolved.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="IsLoadCompleted">
@@ -169,11 +191,18 @@
       <MemberSignature Language="DocId" Value="P:System.Media.SoundPlayer.IsLoadCompleted" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLoadCompleted As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLoadCompleted { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsLoadCompleted : bool" Usage="System.Media.SoundPlayer.IsLoadCompleted" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -182,6 +211,7 @@
         <value>
           <see langword="true" /> if a .wav file is loaded; <see langword="false" /> if a .wav file has not yet been loaded.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="Load">
@@ -190,9 +220,11 @@
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.Load" />
       <MemberSignature Language="VB.NET" Value="Public Sub Load ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load();" />
+      <MemberSignature Language="F#" Value="member this.Load : unit -&gt; unit" Usage="soundPlayer.Load " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -228,6 +260,7 @@
         <permission cref="T:System.Net.WebPermission">for access to HTTP Internet resources. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Connect" /></permission>
         <altmember cref="M:System.Media.SoundPlayer.LoadAsync" />
         <altmember cref="E:System.Media.SoundPlayer.LoadCompleted" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="LoadAsync">
@@ -236,9 +269,11 @@
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.LoadAsync" />
       <MemberSignature Language="VB.NET" Value="Public Sub LoadAsync ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadAsync();" />
+      <MemberSignature Language="F#" Value="member this.LoadAsync : unit -&gt; unit" Usage="soundPlayer.LoadAsync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -274,6 +309,8 @@
         <exception cref="T:System.IO.FileNotFoundException">The file specified by <see cref="P:System.Media.SoundPlayer.SoundLocation" /> cannot be found.</exception>
         <altmember cref="M:System.Media.SoundPlayer.Load" />
         <altmember cref="E:System.Media.SoundPlayer.LoadCompleted" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/3b6a9296-1d5e-4d52-a4ba-94366d6fe302">How to: Load a Sound Asynchronously within a Windows Form</related>
       </Docs>
     </Member>
     <Member MemberName="LoadCompleted">
@@ -282,9 +319,11 @@
       <MemberSignature Language="DocId" Value="E:System.Media.SoundPlayer.LoadCompleted" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event LoadCompleted As AsyncCompletedEventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::AsyncCompletedEventHandler ^ LoadCompleted;" />
+      <MemberSignature Language="F#" Value="member this.LoadCompleted : System.ComponentModel.AsyncCompletedEventHandler " Usage="member this.LoadCompleted : System.ComponentModel.AsyncCompletedEventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -298,7 +337,7 @@
 ## Remarks  
  This event is raised when loading of a .wav file is complete. The event arguments indicate whether the load of the sound was completed successfully or failed.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -312,6 +351,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.ComponentModel.AsyncCompletedEventHandler" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="LoadTimeout">
@@ -320,11 +360,18 @@
       <MemberSignature Language="DocId" Value="P:System.Media.SoundPlayer.LoadTimeout" />
       <MemberSignature Language="VB.NET" Value="Public Property LoadTimeout As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LoadTimeout { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.LoadTimeout : int with get, set" Usage="System.Media.SoundPlayer.LoadTimeout" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -339,6 +386,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="OnLoadCompleted">
@@ -347,9 +395,11 @@
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.OnLoadCompleted(System.ComponentModel.AsyncCompletedEventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLoadCompleted (e As AsyncCompletedEventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoadCompleted(System::ComponentModel::AsyncCompletedEventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnLoadCompleted : System.ComponentModel.AsyncCompletedEventArgs -&gt; unit&#xA;override this.OnLoadCompleted : System.ComponentModel.AsyncCompletedEventArgs -&gt; unit" Usage="soundPlayer.OnLoadCompleted e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -377,6 +427,7 @@
           <para>When overriding <see cref="M:System.Media.SoundPlayer.OnLoadCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Media.SoundPlayer.OnLoadCompleted(System.ComponentModel.AsyncCompletedEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="E:System.Media.SoundPlayer.LoadCompleted" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="OnSoundLocationChanged">
@@ -385,9 +436,11 @@
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.OnSoundLocationChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSoundLocationChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSoundLocationChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnSoundLocationChanged : EventArgs -&gt; unit&#xA;override this.OnSoundLocationChanged : EventArgs -&gt; unit" Usage="soundPlayer.OnSoundLocationChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -415,6 +468,7 @@
           <para>When overriding <see cref="M:System.Media.SoundPlayer.OnSoundLocationChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Media.SoundPlayer.OnSoundLocationChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="P:System.Media.SoundPlayer.SoundLocation" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="OnStreamChanged">
@@ -423,9 +477,11 @@
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.OnStreamChanged(System.EventArgs)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStreamChanged (e As EventArgs)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStreamChanged(EventArgs ^ e);" />
+      <MemberSignature Language="F#" Value="abstract member OnStreamChanged : EventArgs -&gt; unit&#xA;override this.OnStreamChanged : EventArgs -&gt; unit" Usage="soundPlayer.OnStreamChanged e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -453,6 +509,7 @@
           <para>When overriding <see cref="M:System.Media.SoundPlayer.OnStreamChanged(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Media.SoundPlayer.OnStreamChanged(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
         <altmember cref="P:System.Media.SoundPlayer.Stream" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -461,11 +518,18 @@
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.Play" />
       <MemberSignature Language="VB.NET" Value="Public Sub Play ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Play();" />
+      <MemberSignature Language="F#" Value="member this.Play : unit -&gt; unit" Usage="soundPlayer.Play " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -498,6 +562,7 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for access to native code. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
         <altmember cref="M:System.Media.SoundPlayer.PlayLooping" />
         <altmember cref="M:System.Media.SoundPlayer.PlaySync" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="PlayLooping">
@@ -506,11 +571,18 @@
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.PlayLooping" />
       <MemberSignature Language="VB.NET" Value="Public Sub PlayLooping ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PlayLooping();" />
+      <MemberSignature Language="F#" Value="member this.PlayLooping : unit -&gt; unit" Usage="soundPlayer.PlayLooping " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -545,6 +617,7 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for access to native code. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
         <altmember cref="M:System.Media.SoundPlayer.Play" />
         <altmember cref="M:System.Media.SoundPlayer.PlaySync" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="PlaySync">
@@ -553,11 +626,18 @@
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.PlaySync" />
       <MemberSignature Language="VB.NET" Value="Public Sub PlaySync ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void PlaySync();" />
+      <MemberSignature Language="F#" Value="member this.PlaySync : unit -&gt; unit" Usage="soundPlayer.PlaySync " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -590,6 +670,7 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for access to native code. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
         <altmember cref="M:System.Media.SoundPlayer.Play" />
         <altmember cref="M:System.Media.SoundPlayer.PlayLooping" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="SoundLocation">
@@ -598,9 +679,11 @@
       <MemberSignature Language="DocId" Value="P:System.Media.SoundPlayer.SoundLocation" />
       <MemberSignature Language="VB.NET" Value="Public Property SoundLocation As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SoundLocation { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.SoundLocation : string with get, set" Usage="System.Media.SoundPlayer.SoundLocation" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -627,6 +710,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.FileIOPermission">for finding files. Associated enumeration: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /></permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="SoundLocationChanged">
@@ -635,9 +719,11 @@
       <MemberSignature Language="DocId" Value="E:System.Media.SoundPlayer.SoundLocationChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event SoundLocationChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SoundLocationChanged;" />
+      <MemberSignature Language="F#" Value="member this.SoundLocationChanged : EventHandler " Usage="member this.SoundLocationChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -651,7 +737,7 @@
 ## Remarks  
  This event is raised when a new audio source path for this <xref:System.Media.SoundPlayer> has been set.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
    
   
@@ -664,6 +750,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="Stop">
@@ -672,9 +759,11 @@
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.Stop" />
       <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="soundPlayer.Stop " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -696,6 +785,7 @@
  ]]></format>
         </remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for access to native code. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeSubWindows" /></permission>
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="Stream">
@@ -704,9 +794,11 @@
       <MemberSignature Language="DocId" Value="P:System.Media.SoundPlayer.Stream" />
       <MemberSignature Language="VB.NET" Value="Public Property Stream As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ Stream { System::IO::Stream ^ get(); void set(System::IO::Stream ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Stream : System.IO.Stream with get, set" Usage="System.Media.SoundPlayer.Stream" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -724,6 +816,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.IO.Stream" />
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="StreamChanged">
@@ -732,9 +825,11 @@
       <MemberSignature Language="DocId" Value="E:System.Media.SoundPlayer.StreamChanged" />
       <MemberSignature Language="VB.NET" Value="Public Custom Event StreamChanged As EventHandler " />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StreamChanged;" />
+      <MemberSignature Language="F#" Value="member this.StreamChanged : EventHandler " Usage="member this.StreamChanged : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -748,10 +843,11 @@
 ## Remarks  
  This event is raised when a new <xref:System.IO.Stream> audio source for this <xref:System.Media.SoundPlayer> has been set.  
   
- For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/library/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
+ For more information about how to handle events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/fcebb938-62b9-4677-9cbe-6465bc863e22">SoundPlayer Class Overview (Windows Forms)</related>
       </Docs>
     </Member>
     <Member MemberName="System.Runtime.Serialization.ISerializable.GetObjectData">
@@ -766,6 +862,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -795,11 +892,21 @@
       <MemberSignature Language="DocId" Value="P:System.Media.SoundPlayer.Tag" />
       <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Media.SoundPlayer.Tag" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>

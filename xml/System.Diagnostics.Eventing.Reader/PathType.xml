@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.PathType" />
   <TypeSignature Language="VB.NET" Value="Public Enum PathType" />
   <TypeSignature Language="C++ CLI" Value="public enum class PathType" />
+  <TypeSignature Language="F#" Value="type PathType = " />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,6 +16,8 @@
   <Docs>
     <summary>Specifies that a string contains a name of an event log or the file system path to an event log file.</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
   </Docs>
   <Members>
     <Member MemberName="FilePath">
@@ -22,9 +26,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.PathType.FilePath" />
       <MemberSignature Language="VB.NET" Value="FilePath" />
       <MemberSignature Language="C++ CLI" Value="FilePath" />
+      <MemberSignature Language="F#" Value="FilePath = 2" Usage="System.Diagnostics.Eventing.Reader.PathType.FilePath" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -41,9 +47,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.PathType.LogName" />
       <MemberSignature Language="VB.NET" Value="LogName" />
       <MemberSignature Language="C++ CLI" Value="LogName" />
+      <MemberSignature Language="F#" Value="LogName = 1" Usage="System.Diagnostics.Eventing.Reader.PathType.LogName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

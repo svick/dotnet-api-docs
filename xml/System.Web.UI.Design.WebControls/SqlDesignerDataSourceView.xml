@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlDesignerDataSourceView&#xA;Inherits DesignerDataSourceView" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlDesignerDataSourceView : System::Web::UI::Design::DesignerDataSourceView" />
+  <TypeSignature Language="F#" Value="type SqlDesignerDataSourceView = class&#xA;    inherit DesignerDataSourceView" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -16,6 +18,8 @@
     <summary>Provides a design-time view of data for the <see cref="T:System.Web.UI.Design.WebControls.SqlDataSourceDesigner" /> class.</summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Web.UI.Design.DesignerDataSourceView" />
+    <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -24,11 +28,18 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.#ctor(System.Web.UI.Design.WebControls.SqlDataSourceDesigner,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (owner As SqlDataSourceDesigner, viewName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDesignerDataSourceView(System::Web::UI::Design::WebControls::SqlDataSourceDesigner ^ owner, System::String ^ viewName);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.SqlDesignerDataSourceView : System.Web.UI.Design.WebControls.SqlDataSourceDesigner * string -&gt; System.Web.UI.Design.WebControls.SqlDesignerDataSourceView" Usage="new System.Web.UI.Design.WebControls.SqlDesignerDataSourceView (owner, viewName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Web.UI.Design.WebControls.SqlDataSourceDesigner" />
         <Parameter Name="viewName" Type="System.String" />
@@ -38,6 +49,8 @@
         <param name="viewName">The name of the view in the data source.</param>
         <summary>Creates a new instance of the <see cref="T:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView" /> class using the provided data source designer and name of the view.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CanDelete">
@@ -46,9 +59,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanDelete" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanDelete As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanDelete { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanDelete : bool" Usage="System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanDelete" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,6 +75,8 @@
           <see langword="true" /> if the <see cref="M:System.Web.UI.DataSourceView.ExecuteDelete(System.Collections.IDictionary,System.Collections.IDictionary)" /> method is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.DesignerDataSourceView.CanDelete" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CanInsert">
@@ -68,9 +85,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanInsert" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanInsert As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanInsert { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanInsert : bool" Usage="System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanInsert" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -82,6 +101,8 @@
           <see langword="true" /> if the <see cref="M:System.Web.UI.DataSourceView.ExecuteInsert(System.Collections.IDictionary)" /> method is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.DesignerDataSourceView.CanInsert" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CanPage">
@@ -90,9 +111,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanPage" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanPage As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanPage { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanPage : bool" Usage="System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanPage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,6 +127,8 @@
           <see langword="true" /> if paging through the data retrieved by the <see cref="M:System.Web.UI.DataSourceView.ExecuteSelect(System.Web.UI.DataSourceSelectArguments)" /> method is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.DesignerDataSourceView.CanPage" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CanRetrieveTotalRowCount">
@@ -112,9 +137,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanRetrieveTotalRowCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRetrieveTotalRowCount As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRetrieveTotalRowCount { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanRetrieveTotalRowCount : bool" Usage="System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanRetrieveTotalRowCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -126,6 +153,8 @@
           <see langword="true" /> if retrieving the total number of data rows is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.DesignerDataSourceView.CanRetrieveTotalRowCount" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CanSort">
@@ -134,9 +163,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanSort" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSort As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSort { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanSort : bool" Usage="System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanSort" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,6 +179,8 @@
           <see langword="true" /> if a sorted view on the underlying data source is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.DesignerDataSourceView.CanSort" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="CanUpdate">
@@ -156,9 +189,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanUpdate" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanUpdate As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanUpdate { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.CanUpdate : bool" Usage="System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.CanUpdate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -170,6 +205,8 @@
           <see langword="true" /> if the <see cref="M:System.Web.UI.DataSourceView.ExecuteUpdate(System.Collections.IDictionary,System.Collections.IDictionary,System.Collections.IDictionary)" /> method is supported; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.DesignerDataSourceView.CanUpdate" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeData">
@@ -178,9 +215,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.GetDesignTimeData(System.Int32,System.Boolean@)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeData (minimumRows As Integer, ByRef isSampleData As Boolean) As IEnumerable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerable ^ GetDesignTimeData(int minimumRows, [Runtime::InteropServices::Out] bool % isSampleData);" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeData : int *  -&gt; System.Collections.IEnumerable" Usage="sqlDesignerDataSourceView.GetDesignTimeData (minimumRows, isSampleData)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -188,7 +227,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="minimumRows" Type="System.Int32" />
-        <Parameter Name="isSampleData" Type="System.Boolean&amp;" RefType="out" />
+        <Parameter Name="isSampleData" Type="System.Boolean" RefType="out" />
       </Parameters>
       <Docs>
         <param name="minimumRows">The minimum number of rows to return.</param>
@@ -198,6 +237,8 @@
         <returns>A <see cref="T:System.Web.UI.DataSourceView" /> object containing data to display at design time.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Web.UI.Design.DesignerDataSourceView.GetDesignTimeData(System.Int32,System.Boolean@)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
     <Member MemberName="Schema">
@@ -206,9 +247,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.Schema" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Schema As IDataSourceViewSchema" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::IDataSourceViewSchema ^ Schema { System::Web::UI::Design::IDataSourceViewSchema ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Schema : System.Web.UI.Design.IDataSourceViewSchema" Usage="System.Web.UI.Design.WebControls.SqlDesignerDataSourceView.Schema" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -220,6 +263,8 @@
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Web.UI.Design.WebControls.DesignerDataSourceView.Schema" />
         <altmember cref="" />
+        <related type="Article" href="http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2">Extending Design-Time Support</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/68f85054-2253-47f5-a4f2-3f1ac8c9f27b">How to: Extend the Appearance and Behavior of Controls in Design Mode</related>
       </Docs>
     </Member>
   </Members>

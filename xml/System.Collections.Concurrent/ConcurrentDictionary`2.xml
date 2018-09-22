@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.ConcurrentDictionary`2" />
   <TypeSignature Language="VB.NET" Value="Public Class ConcurrentDictionary(Of TKey, TValue)&#xA;Implements ICollection(Of KeyValuePair(Of TKey, TValue)), IDictionary, IDictionary(Of TKey, TValue), IEnumerable(Of KeyValuePair(Of TKey, TValue)), IReadOnlyCollection(Of KeyValuePair(Of TKey, TValue)), IReadOnlyDictionary(Of TKey, TValue)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename TKey, typename TValue&gt;&#xA;public ref class ConcurrentDictionary : System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::Generic::IDictionary&lt;TKey, TValue&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::Generic::IReadOnlyCollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt;, System::Collections::Generic::IReadOnlyDictionary&lt;TKey, TValue&gt;, System::Collections::IDictionary" />
+  <TypeSignature Language="F#" Value="type ConcurrentDictionary&lt;'Key, 'Value&gt; = class&#xA;    interface IDictionary&lt;'Key, 'Value&gt;&#xA;    interface IDictionary&#xA;    interface IReadOnlyDictionary&lt;'Key, 'Value&gt;&#xA;    interface ICollection&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;    interface IEnumerable&#xA;    interface ICollection&#xA;    interface IReadOnlyCollection&lt;KeyValuePair&lt;'Key, 'Value&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Concurrent</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,14 +48,17 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerDisplay("Count = {Count}")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Collections.Generic.Mscorlib_DictionaryDebugView`2))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -93,6 +97,8 @@
  ]]></format>
     </remarks>
     <threadsafe>All public and protected members of <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> are thread-safe and may be used concurrently from multiple threads. However, members accessed through one of the interfaces the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> implements, including extension methods, are not guaranteed to be thread safe and may need to be synchronized by the caller.</threadsafe>
+    <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -104,6 +110,8 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -135,10 +143,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default concurrency level is the default concurrency multiplier (DEFAULT_CONCURRENCY_MULTIPLIER) times the number of CPUs. The higher the default concurrency multiplier is, the more concurrent write operations can take place without interference and blocking. Higher multiplier values also cause operations that require all locks (for example, table resizing, `ToArray` and `Count`) to become more expensive. The default concurrency multiplier is 4. The default capacity (DEFAULT_CAPACITY), which represents the initial number of buckets, is a trade-off between the size of a very small dictionary and the number of resizes when constructing a large dictionary. Also, the capacity should not be divisible by a small prime number. The default capacity is 31.  
+ The default concurrency level is equal to the number of CPUs. The higher the concurrency level is, the more concurrent write operations can take place without interference and blocking. Higher concurrency level values also cause operations that require all locks (for example, table resizing, `ToArray` and `Count`) to become more expensive. The default capacity (DEFAULT_CAPACITY), which represents the initial number of buckets, is a trade-off between the size of a very small dictionary and the number of resizes when constructing a large dictionary. Also, the capacity should not be divisible by a small prime number. The default capacity is 31.  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -147,6 +157,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of KeyValuePair(Of TKey, TValue)))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConcurrentDictionary(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ collection);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; -&gt; System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;" Usage="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; collection" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -174,6 +185,8 @@
           <paramref name="collection" /> or any of its keys is  <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="collection" /> contains one or more duplicate keys.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -182,6 +195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (comparer As IEqualityComparer(Of TKey))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConcurrentDictionary(System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; : System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;" Usage="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; comparer" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -207,6 +221,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="comparer" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -215,6 +231,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}},System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of KeyValuePair(Of TKey, TValue)), comparer As IEqualityComparer(Of TKey))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConcurrentDictionary(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ collection, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; : seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;" Usage="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; (collection, comparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -242,6 +259,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="collection" /> or <paramref name="comparer" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -250,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (concurrencyLevel As Integer, capacity As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConcurrentDictionary(int concurrencyLevel, int capacity);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; : int * int -&gt; System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;" Usage="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; (concurrencyLevel, capacity)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -281,6 +301,8 @@
  -or-  
   
  <paramref name="capacity" /> is less than 0.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -289,6 +311,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Int32,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}},System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (concurrencyLevel As Integer, collection As IEnumerable(Of KeyValuePair(Of TKey, TValue)), comparer As IEqualityComparer(Of TKey))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConcurrentDictionary(int concurrencyLevel, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ collection, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; : int * seq&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt; * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;" Usage="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; (concurrencyLevel, collection, comparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -322,6 +345,8 @@
           <paramref name="concurrencyLevel" /> is less than 1.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="collection" /> contains one or more duplicate keys.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -330,6 +355,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.#ctor(System.Int32,System.Int32,System.Collections.Generic.IEqualityComparer{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (concurrencyLevel As Integer, capacity As Integer, comparer As IEqualityComparer(Of TKey))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ConcurrentDictionary(int concurrencyLevel, int capacity, System::Collections::Generic::IEqualityComparer&lt;TKey&gt; ^ comparer);" />
+      <MemberSignature Language="F#" Value="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; : int * int * System.Collections.Generic.IEqualityComparer&lt;'Key&gt; -&gt; System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;" Usage="new System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt; (concurrencyLevel, capacity, comparer)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -361,6 +387,8 @@
           <paramref name="comparer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="concurrencyLevel" /> or <paramref name="capacity" /> is less than 1.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="AddOrUpdate">
@@ -382,6 +410,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="AddOrUpdate">
@@ -390,6 +420,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(`0,System.Func{`0,`1},System.Func{`0,`1,`1})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddOrUpdate (key As TKey, addValueFactory As Func(Of TKey, TValue), updateValueFactory As Func(Of TKey, TValue, TValue)) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue AddOrUpdate(TKey key, Func&lt;TKey, TValue&gt; ^ addValueFactory, Func&lt;TKey, TValue, TValue&gt; ^ updateValueFactory);" />
+      <MemberSignature Language="F#" Value="member this.AddOrUpdate : 'Key * Func&lt;'Key, 'Value&gt; * Func&lt;'Key, 'Value, 'Value&gt; -&gt; 'Value" Usage="concurrentDictionary.AddOrUpdate (key, addValueFactory, updateValueFactory)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -431,6 +462,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" />, <paramref name="addValueFactory" />, or <paramref name="updateValueFactory" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The dictionary already contains the maximum number of elements (<see cref="F:System.Int32.MaxValue" />).</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="AddOrUpdate">
@@ -439,6 +472,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(`0,`1,System.Func{`0,`1,`1})" />
       <MemberSignature Language="VB.NET" Value="Public Function AddOrUpdate (key As TKey, addValue As TValue, updateValueFactory As Func(Of TKey, TValue, TValue)) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue AddOrUpdate(TKey key, TValue addValue, Func&lt;TKey, TValue, TValue&gt; ^ updateValueFactory);" />
+      <MemberSignature Language="F#" Value="member this.AddOrUpdate : 'Key * 'Value * Func&lt;'Key, 'Value, 'Value&gt; -&gt; 'Value" Usage="concurrentDictionary.AddOrUpdate (key, addValue, updateValueFactory)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -483,6 +517,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> or <paramref name="updateValueFactory" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The dictionary already contains the maximum number of elements (<see cref="F:System.Int32.MaxValue" />).</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="AddOrUpdate&lt;TArg&gt;">
@@ -491,6 +527,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate``1(`0,System.Func{`0,``0,`1},System.Func{`0,`1,``0,`1},``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function AddOrUpdate(Of TArg) (key As TKey, addValueFactory As Func(Of TKey, TArg, TValue), updateValueFactory As Func(Of TKey, TValue, TArg, TValue), factoryArgument As TArg) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TArg&gt;&#xA; TValue AddOrUpdate(TKey key, Func&lt;TKey, TArg, TValue&gt; ^ addValueFactory, Func&lt;TKey, TValue, TArg, TValue&gt; ^ updateValueFactory, TArg factoryArgument);" />
+      <MemberSignature Language="F#" Value="member this.AddOrUpdate : 'Key * Func&lt;'Key, 'Arg, 'Value&gt; * Func&lt;'Key, 'Value, 'Arg, 'Value&gt; * 'Arg -&gt; 'Value" Usage="concurrentDictionary.AddOrUpdate (key, addValueFactory, updateValueFactory, factoryArgument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -499,6 +536,9 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -531,6 +571,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.Clear" />
       <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="concurrentDictionary.Clear " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.IDictionary.Clear</InterfaceMember>
@@ -558,6 +599,8 @@
       <Docs>
         <summary>Removes all keys and values from the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" />.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="ContainsKey">
@@ -566,6 +609,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.ContainsKey(`0)" />
       <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As TKey) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(TKey key);" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : 'Key -&gt; bool&#xA;override this.ContainsKey : 'Key -&gt; bool" Usage="concurrentDictionary.ContainsKey key" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)</InterfaceMember>
@@ -600,6 +644,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -608,6 +654,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.Count" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.Count" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
@@ -643,6 +690,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.OverflowException">The dictionary already contains the maximum number of elements (<see cref="F:System.Int32.MaxValue" />).</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -651,6 +700,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of TKey, TValue))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;&gt;" Usage="concurrentDictionary.GetEnumerator " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
@@ -670,6 +720,17 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.6">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Collections.Concurrent.ConcurrentDictionary`2/&lt;GetEnumerator&gt;d__1))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Collections.Concurrent.ConcurrentDictionary`2/&lt;GetEnumerator&gt;d__35))</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.7.2">
+          <AttributeName>System.Runtime.CompilerServices.IteratorStateMachine(typeof(System.Collections.Concurrent.ConcurrentDictionary`2/&lt;GetEnumerator&gt;d__34))</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;</ReturnType>
       </ReturnValue>
@@ -685,6 +746,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetOrAdd">
@@ -706,6 +769,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="GetOrAdd">
@@ -714,6 +779,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(`0,System.Func{`0,`1})" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOrAdd (key As TKey, valueFactory As Func(Of TKey, TValue)) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue GetOrAdd(TKey key, Func&lt;TKey, TValue&gt; ^ valueFactory);" />
+      <MemberSignature Language="F#" Value="member this.GetOrAdd : 'Key * Func&lt;'Key, 'Value&gt; -&gt; 'Value" Usage="concurrentDictionary.GetOrAdd (key, valueFactory)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -761,6 +827,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> or <paramref name="valueFactory" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The dictionary already contains the maximum number of elements (<see cref="F:System.Int32.MaxValue" />).</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="GetOrAdd">
@@ -769,6 +837,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(`0,`1)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOrAdd (key As TKey, value As TValue) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue GetOrAdd(TKey key, TValue value);" />
+      <MemberSignature Language="F#" Value="member this.GetOrAdd : 'Key * 'Value -&gt; 'Value" Usage="concurrentDictionary.GetOrAdd (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -801,6 +870,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The dictionary already contains the maximum number of elements (<see cref="F:System.Int32.MaxValue" />).</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="GetOrAdd&lt;TArg&gt;">
@@ -809,6 +880,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd``1(`0,System.Func{`0,``0,`1},``0)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetOrAdd(Of TArg) (key As TKey, valueFactory As Func(Of TKey, TArg, TValue), factoryArgument As TArg) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TArg&gt;&#xA; TValue GetOrAdd(TKey key, Func&lt;TKey, TArg, TValue&gt; ^ valueFactory, TArg factoryArgument);" />
+      <MemberSignature Language="F#" Value="member this.GetOrAdd : 'Key * Func&lt;'Key, 'Arg, 'Value&gt; * 'Arg -&gt; 'Value" Usage="concurrentDictionary.GetOrAdd (key, valueFactory, factoryArgument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -817,6 +889,9 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TValue</ReturnType>
@@ -845,6 +920,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.IsEmpty" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.IsEmpty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -869,6 +945,8 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> is empty; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -877,6 +955,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.Item(`0)" />
       <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As TKey) As TValue" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue default[TKey] { TValue get(TKey key); void set(TKey key, TValue value); };" />
+      <MemberSignature Language="F#" Value="member this.Item('Key) : 'Value with get, set" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
@@ -910,6 +989,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is  <see langword="null" />.</exception>
         <exception cref="T:System.Collections.Generic.KeyNotFoundException">The property is retrieved and <paramref name="key" /> does not exist in the collection.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -918,6 +999,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection(Of TKey)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;TKey&gt; ^ Keys { System::Collections::Generic::ICollection&lt;TKey&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.ICollection&lt;'Key&gt;" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
@@ -944,6 +1026,8 @@
         <summary>Gets a collection containing the keys in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</summary>
         <value>A collection of keys in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Add">
@@ -981,6 +1065,8 @@
         <param name="keyValuePair">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Contains">
@@ -1019,6 +1105,8 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.CopyTo">
@@ -1055,6 +1143,8 @@
         <param name="index">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly">
@@ -1062,7 +1152,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;TKey,TValue&gt;&gt;#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of KeyValuePair(Of TKey, TValue)).IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;TKey,TValue&gt;&gt;::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
@@ -1089,6 +1180,8 @@
         <summary>To be added.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;.Remove">
@@ -1127,6 +1220,8 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Add">
@@ -1166,6 +1261,8 @@
         <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IDictionary&lt;TKey,TValue&gt;.Remove">
@@ -1204,6 +1301,8 @@
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Keys">
@@ -1211,7 +1310,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;!TKey&gt; System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Keys" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As IEnumerable(Of TKey) Implements IReadOnlyDictionary(Of TKey, TValue).Keys" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Keys { System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ System::Collections::Generic::IReadOnlyDictionary&lt;TKey,TValue&gt;::Keys { System::Collections::Generic::IEnumerable&lt;TKey&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyDictionary`2.Keys</InterfaceMember>
@@ -1244,7 +1344,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;!TValue&gt; System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Values" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#Generic#IReadOnlyDictionary&lt;TKey,TValue&gt;#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As IEnumerable(Of TValue) Implements IReadOnlyDictionary(Of TKey, TValue).Values" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Values { System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ System::Collections::Generic::IReadOnlyDictionary&lt;TKey,TValue&gt;::Values { System::Collections::Generic::IEnumerable&lt;TValue&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IReadOnlyDictionary`2.Values</InterfaceMember>
@@ -1318,6 +1419,8 @@
  -or-  
   
  The number of elements in the source <see cref="T:System.Collections.ICollection" /> is greater than the available space from <paramref name="index" /> to the end of the destination <paramref name="array" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.IsSynchronized">
@@ -1325,7 +1428,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#ICollection#IsSynchronized" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::ICollection::IsSynchronized { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.IsSynchronized" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
@@ -1353,6 +1457,8 @@
         <value>
           <see langword="true" /> if access to the <see cref="T:System.Collections.ICollection" /> is synchronized (thread safe); otherwise, <see langword="false" />. For <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> this property always returns **false**.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.SyncRoot">
@@ -1360,7 +1466,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#ICollection#SyncRoot" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::ICollection::SyncRoot { System::Object ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.ICollection.SyncRoot" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
@@ -1388,6 +1495,8 @@
         <value>Always returns null.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">This property is not supported.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Add">
@@ -1440,6 +1549,8 @@
   
  A value with the same key already exists in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</exception>
         <exception cref="T:System.OverflowException">The dictionary already contains the maximum number of elements (<see cref="F:System.Int32.MaxValue" />).</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Contains">
@@ -1481,6 +1592,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.GetEnumerator">
@@ -1516,6 +1629,8 @@
         <summary>Provides a <see cref="T:System.Collections.IDictionaryEnumerator" /> for the <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
         <returns>A <see cref="T:System.Collections.IDictionaryEnumerator" /> for the <see cref="T:System.Collections.Generic.IDictionary`2" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.IsFixedSize">
@@ -1523,7 +1638,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#IsFixedSize" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IDictionary.IsFixedSize" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsFixedSize { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IDictionary::IsFixedSize { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.IsFixedSize" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
@@ -1551,6 +1667,8 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Collections.Generic.IDictionary`2" /> has a fixed size; otherwise, <see langword="false" />. For <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" />, this property always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.IsReadOnly">
@@ -1558,7 +1676,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#IsReadOnly" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IDictionary.IsReadOnly" />
-      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsReadOnly { bool get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property bool System::Collections::IDictionary::IsReadOnly { bool get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.IsReadOnly" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
@@ -1586,6 +1705,8 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Collections.Generic.IDictionary`2" /> is read-only; otherwise, <see langword="false" />. For <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" />, this property always returns <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Item">
@@ -1593,7 +1714,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IDictionary.Item(object)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#Item(System.Object)" />
       <MemberSignature Language="VB.NET" Value=" Property Item(key As Object) As Object Implements IDictionary.Item" />
-      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionary.Item[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System::Collections::IDictionary::Item[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Item(System.Object)</InterfaceMember>
@@ -1627,6 +1749,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is  <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">A value is being assigned, and <paramref name="key" /> is of a type that is not assignable to the key type or the value type of the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Keys">
@@ -1634,7 +1758,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Keys" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#Keys" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection Implements IDictionary.Keys" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Keys { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System::Collections::IDictionary::Keys { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Keys" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Keys</InterfaceMember>
@@ -1661,6 +1786,8 @@
         <summary>Gets an <see cref="T:System.Collections.ICollection" /> that contains the keys of the  <see cref="T:System.Collections.Generic.IDictionary`2" />.</summary>
         <value>An interface that contains the keys of the <see cref="T:System.Collections.Generic.IDictionary`2" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Remove">
@@ -1700,6 +1827,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IDictionary.Values">
@@ -1707,7 +1836,8 @@
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Values" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.System#Collections#IDictionary#Values" />
       <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection Implements IDictionary.Values" />
-      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Values { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System::Collections::IDictionary::Values { System::Collections::ICollection ^ get(); };" />
+      <MemberSignature Language="F#" Usage="System.Collections.IDictionary.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.IDictionary.Values</InterfaceMember>
@@ -1734,6 +1864,8 @@
         <summary>Gets an <see cref="T:System.Collections.ICollection" /> that contains the values in the <see cref="T:System.Collections.IDictionary" />.</summary>
         <value>An interface that contains the values in the <see cref="T:System.Collections.IDictionary" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -1776,6 +1908,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="ToArray">
@@ -1784,6 +1918,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.ToArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToArray () As KeyValuePair(Of TKey, TValue)()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Collections::Generic::KeyValuePair&lt;TKey, TValue&gt;&gt; ^ ToArray();" />
+      <MemberSignature Language="F#" Value="member this.ToArray : unit -&gt; System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt;[]" Usage="concurrentDictionary.ToArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -1808,6 +1943,8 @@
         <summary>Copies the key and value pairs stored in the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" /> to a new array.</summary>
         <returns>A new array containing a snapshot of key and value pairs copied from the <see cref="T:System.Collections.Concurrent.ConcurrentDictionary`2" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="TryAdd">
@@ -1816,6 +1953,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.TryAdd(`0,`1)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryAdd (key As TKey, value As TValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryAdd(TKey key, TValue value);" />
+      <MemberSignature Language="F#" Value="member this.TryAdd : 'Key * 'Value -&gt; bool" Usage="concurrentDictionary.TryAdd (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -1864,6 +2002,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is  <see langword="null" />.</exception>
         <exception cref="T:System.OverflowException">The dictionary already contains the maximum number of elements (<see cref="F:System.Int32.MaxValue" />).</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="TryGetValue">
@@ -1872,6 +2012,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.TryGetValue(`0,`1@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (key As TKey, ByRef value As TValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(TKey key, [Runtime::InteropServices::Out] TValue % value);" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : 'Key *  -&gt; bool&#xA;override this.TryGetValue : 'Key *  -&gt; bool" Usage="concurrentDictionary.TryGetValue (key, value)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Collections.Generic.IDictionary`2.TryGetValue(`0,`1@)</InterfaceMember>
@@ -1897,7 +2038,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="TKey" />
-        <Parameter Name="value" Type="TValue&amp;" RefType="out" />
+        <Parameter Name="value" Type="TValue" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">The key of the value to get.</param>
@@ -1908,6 +2049,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is  <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="TryRemove">
@@ -1916,6 +2059,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.TryRemove(`0,`1@)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryRemove (key As TKey, ByRef value As TValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryRemove(TKey key, [Runtime::InteropServices::Out] TValue % value);" />
+      <MemberSignature Language="F#" Value="member this.TryRemove : 'Key *  -&gt; bool" Usage="concurrentDictionary.TryRemove (key, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -1937,7 +2081,7 @@
       </ReturnValue>
       <Parameters>
         <Parameter Name="key" Type="TKey" />
-        <Parameter Name="value" Type="TValue&amp;" RefType="out" />
+        <Parameter Name="value" Type="TValue" RefType="out" />
       </Parameters>
       <Docs>
         <param name="key">The key of the element to remove and return.</param>
@@ -1958,6 +2102,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is  <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="TryUpdate">
@@ -1966,6 +2112,7 @@
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.ConcurrentDictionary`2.TryUpdate(`0,`1,`1)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryUpdate (key As TKey, newValue As TValue, comparisonValue As TValue) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryUpdate(TKey key, TValue newValue, TValue comparisonValue);" />
+      <MemberSignature Language="F#" Value="member this.TryUpdate : 'Key * 'Value * 'Value -&gt; bool" Usage="concurrentDictionary.TryUpdate (key, newValue, comparisonValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -1991,10 +2138,10 @@
         <Parameter Name="comparisonValue" Type="TValue" />
       </Parameters>
       <Docs>
-        <param name="key">The key whose value is compared with <c>comparisonValue</c> and possibly replaced.</param>
+        <param name="key">The key of the value that is compared with <c>comparisonValue</c> and possibly replaced.</param>
         <param name="newValue">The value that replaces the value of the element that has the specified <c>key</c> if the comparison results in equality.</param>
-        <param name="comparisonValue">The value that is compared to the value of the element that has the specified <c>key</c>.</param>
-        <summary>Compares the existing value for the specified key with a specified value, and if they are equal, updates the key with a third value.</summary>
+        <param name="comparisonValue">The value that is compared with the value of the element that has the specified <c>key</c>.</param>
+        <summary>Updates the value associated with <paramref name="key" /> to <paramref name="newValue" /> if the existing value with <paramref name="key" /> is equal to <paramref name="comparisonValue" />.</summary>
         <returns>
           <see langword="true" /> if the value with <paramref name="key" /> was equal to <paramref name="comparisonValue" /> and was replaced with <paramref name="newValue" />; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -2010,6 +2157,8 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -2018,6 +2167,7 @@
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.ConcurrentDictionary`2.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection(Of TValue)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;TValue&gt; ^ Values { System::Collections::Generic::ICollection&lt;TValue&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.ICollection&lt;'Value&gt;" Usage="System.Collections.Concurrent.ConcurrentDictionary&lt;'Key, 'Value&gt;.Values" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>
@@ -2044,6 +2194,8 @@
         <summary>Gets a collection that contains the values in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</summary>
         <value>A collection that contains the values in the <see cref="T:System.Collections.Generic.Dictionary`2" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/2e7ca21f-786c-4367-96be-0cf3f3dcc6bd">Thread-Safe Collections</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b64b95-13f7-4532-9249-ab532f629598">How to: Add and Remove Items from a ConcurrentDictionary</related>
       </Docs>
     </Member>
   </Members>

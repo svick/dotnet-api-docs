@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.XsltSettings" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XsltSettings" />
   <TypeSignature Language="C++ CLI" Value="public ref class XsltSettings sealed" />
+  <TypeSignature Language="F#" Value="type XsltSettings = class" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -43,6 +45,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/fde6f43f-c594-486f-abcb-2211197fae20">Script Blocks Using msxsl:script</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -53,6 +57,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.XsltSettings" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -64,6 +69,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -90,6 +96,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -98,9 +105,11 @@
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XsltSettings.#ctor(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (enableDocumentFunction As Boolean, enableScript As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; XsltSettings(bool enableDocumentFunction, bool enableScript);" />
+      <MemberSignature Language="F#" Value="new System.Xml.Xsl.XsltSettings : bool * bool -&gt; System.Xml.Xsl.XsltSettings" Usage="new System.Xml.Xsl.XsltSettings (enableDocumentFunction, enableScript)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -141,6 +150,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -149,9 +159,11 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltSettings.Default" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As XsltSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Xsl::XsltSettings ^ Default { System::Xml::Xsl::XsltSettings ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Xml.Xsl.XsltSettings" Usage="System.Xml.Xsl.XsltSettings.Default" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -181,6 +193,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="EnableDocumentFunction">
@@ -189,9 +202,11 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltSettings.EnableDocumentFunction" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableDocumentFunction As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableDocumentFunction { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableDocumentFunction : bool with get, set" Usage="System.Xml.Xsl.XsltSettings.EnableDocumentFunction" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -204,6 +219,14 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -221,6 +244,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
     <Member MemberName="EnableScript">
@@ -229,9 +253,11 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltSettings.EnableScript" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableScript As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableScript { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableScript : bool with get, set" Usage="System.Xml.Xsl.XsltSettings.EnableScript" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -244,6 +270,14 @@
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -261,6 +295,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/fde6f43f-c594-486f-abcb-2211197fae20">Script Blocks Using msxsl:script</related>
       </Docs>
     </Member>
     <Member MemberName="TrustedXslt">
@@ -269,9 +305,11 @@
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltSettings.TrustedXslt" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TrustedXslt As XsltSettings" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Xsl::XsltSettings ^ TrustedXslt { System::Xml::Xsl::XsltSettings ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.TrustedXslt : System.Xml.Xsl.XsltSettings" Usage="System.Xml.Xsl.XsltSettings.TrustedXslt" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -308,6 +346,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/f9b074f6-d6f4-49dd-a093-df510bf0cf7b">Using the XslCompiledTransform Class</related>
       </Docs>
     </Member>
   </Members>

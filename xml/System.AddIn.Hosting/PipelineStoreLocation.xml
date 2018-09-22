@@ -4,13 +4,20 @@
   <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.PipelineStoreLocation" />
   <TypeSignature Language="VB.NET" Value="Public Enum PipelineStoreLocation" />
   <TypeSignature Language="C++ CLI" Value="public enum class PipelineStoreLocation" />
+  <TypeSignature Language="F#" Value="type PipelineStoreLocation = " />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Specifies alternative locations for a pipeline store instead of a path to a directory.</summary>
     <remarks>
@@ -41,9 +48,11 @@
       <MemberSignature Language="DocId" Value="F:System.AddIn.Hosting.PipelineStoreLocation.ApplicationBase" />
       <MemberSignature Language="VB.NET" Value="ApplicationBase" />
       <MemberSignature Language="C++ CLI" Value="ApplicationBase" />
+      <MemberSignature Language="F#" Value="ApplicationBase = 0" Usage="System.AddIn.Hosting.PipelineStoreLocation.ApplicationBase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

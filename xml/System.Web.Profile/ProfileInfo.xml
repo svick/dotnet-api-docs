@@ -4,14 +4,21 @@
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileInfo" />
   <TypeSignature Language="VB.NET" Value="Public Class ProfileInfo" />
   <TypeSignature Language="C++ CLI" Value="public ref class ProfileInfo" />
+  <TypeSignature Language="F#" Value="type ProfileInfo = class" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Provides information about a user profile.</summary>
     <remarks>
@@ -29,6 +36,8 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/58de6e99-31a7-41b9-93ed-51b9b4a67e98">Implementing a Profile Provider</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -38,6 +47,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Web.Profile.ProfileInfo" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -49,8 +59,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Creates an instance of the <see cref="T:System.Web.Profile.ProfileInfo" /> object for a class that inherits the <see cref="T:System.Web.Profile.ProfileInfo" /> class.</summary>
@@ -64,6 +80,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -72,9 +89,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfo.#ctor(System.String,System.Boolean,System.DateTime,System.DateTime,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (username As String, isAnonymous As Boolean, lastActivityDate As DateTime, lastUpdatedDate As DateTime, size As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileInfo(System::String ^ username, bool isAnonymous, DateTime lastActivityDate, DateTime lastUpdatedDate, int size);" />
+      <MemberSignature Language="F#" Value="new System.Web.Profile.ProfileInfo : string * bool * DateTime * DateTime * int -&gt; System.Web.Profile.ProfileInfo" Usage="new System.Web.Profile.ProfileInfo (username, isAnonymous, lastActivityDate, lastUpdatedDate, size)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -107,6 +126,8 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/58de6e99-31a7-41b9-93ed-51b9b4a67e98">Implementing a Profile Provider</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsAnonymous">
@@ -115,11 +136,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfo.IsAnonymous" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsAnonymous As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAnonymous { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsAnonymous : bool" Usage="System.Web.Profile.ProfileInfo.IsAnonymous" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -128,6 +156,7 @@
         <value>
           <see langword="true" /> if the user name for the profile is anonymous; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LastActivityDate">
@@ -136,9 +165,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfo.LastActivityDate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LastActivityDate As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime LastActivityDate { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastActivityDate : DateTime" Usage="System.Web.Profile.ProfileInfo.LastActivityDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -148,6 +179,7 @@
         <summary>Gets the last date and time when the profile was read or updated.</summary>
         <value>A <see cref="T:System.DateTime" /> that represents the last date and time when the profile was read or updated.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="LastUpdatedDate">
@@ -156,9 +188,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfo.LastUpdatedDate" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LastUpdatedDate As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime LastUpdatedDate { DateTime get(); };" />
+      <MemberSignature Language="F#" Value="member this.LastUpdatedDate : DateTime" Usage="System.Web.Profile.ProfileInfo.LastUpdatedDate" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -168,6 +202,7 @@
         <summary>Gets the last date and time when the profile was updated.</summary>
         <value>A <see cref="T:System.DateTime" /> that represents the last date and time when the profile was updated.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -176,11 +211,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfo.Size" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Size As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Size { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Size : int" Usage="System.Web.Profile.ProfileInfo.Size" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -195,6 +237,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
     <Member MemberName="UserName">
@@ -203,11 +246,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfo.UserName" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UserName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UserName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.UserName : string" Usage="System.Web.Profile.ProfileInfo.UserName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -215,6 +265,7 @@
         <summary>Gets the user name for the profile.</summary>
         <value>The user name for the profile.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/89439440-92ea-48c3-a4bd-dea40307899d">ASP.NET Profile Properties Overview</related>
       </Docs>
     </Member>
   </Members>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Services.DataServiceConfiguration" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataServiceConfiguration&#xA;Implements IDataServiceConfiguration" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataServiceConfiguration sealed : System::Data::Services::IDataServiceConfiguration" />
+  <TypeSignature Language="F#" Value="type DataServiceConfiguration = class&#xA;    interface IDataServiceConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -29,6 +31,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
   </Docs>
   <Members>
     <Member MemberName="DataServiceBehavior">
@@ -37,11 +40,18 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceConfiguration.DataServiceBehavior" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataServiceBehavior As DataServiceBehavior" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::DataServiceBehavior ^ DataServiceBehavior { System::Data::Services::DataServiceBehavior ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.DataServiceBehavior : System.Data.Services.DataServiceBehavior" Usage="System.Data.Services.DataServiceConfiguration.DataServiceBehavior" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Data.Services.DataServiceBehavior</ReturnType>
       </ReturnValue>
@@ -49,6 +59,7 @@
         <summary>Gets a <see cref="T:System.Data.Services.DataServiceBehavior" /> object that defines additional behaviors of the data service.</summary>
         <value>A <see cref="T:System.Data.Services.DataServiceBehavior" /> object.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTypeAccess">
@@ -57,9 +68,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceConfiguration.EnableTypeAccess(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub EnableTypeAccess (typeName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnableTypeAccess(System::String ^ typeName);" />
+      <MemberSignature Language="F#" Value="member this.EnableTypeAccess : string -&gt; unit" Usage="dataServiceConfiguration.EnableTypeAccess typeName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -89,6 +102,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="EnableTypeConversion">
@@ -97,11 +111,18 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceConfiguration.EnableTypeConversion" />
       <MemberSignature Language="VB.NET" Value="Public Property EnableTypeConversion As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableTypeConversion { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EnableTypeConversion : bool with get, set" Usage="System.Data.Services.DataServiceConfiguration.EnableTypeConversion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -109,6 +130,7 @@
         <summary>Gets or sets whether the data service runtime should convert the type that is contained in the payload to the actual property type that is specified in the request.</summary>
         <value>A Boolean value that indicates whether to perform the conversion.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="MaxBatchCount">
@@ -117,14 +139,21 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceConfiguration.MaxBatchCount" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxBatchCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxBatchCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxBatchCount : int with get, set" Usage="System.Data.Services.DataServiceConfiguration.MaxBatchCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Services.IDataServiceConfiguration.MaxBatchCount</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -132,6 +161,7 @@
         <summary>Gets or sets the maximum number of change sets and query operations that are allowed in a single batch.</summary>
         <value>A value that is the maximum number of change sets.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="MaxChangesetCount">
@@ -140,14 +170,21 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceConfiguration.MaxChangesetCount" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxChangesetCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxChangesetCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxChangesetCount : int with get, set" Usage="System.Data.Services.DataServiceConfiguration.MaxChangesetCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Services.IDataServiceConfiguration.MaxChangesetCount</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -163,14 +200,21 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceConfiguration.MaxExpandCount" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxExpandCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxExpandCount { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxExpandCount : int with get, set" Usage="System.Data.Services.DataServiceConfiguration.MaxExpandCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Services.IDataServiceConfiguration.MaxExpandCount</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -178,6 +222,7 @@
         <summary>Gets or sets the maximum number of related entities that can be included in a single request by using the <see langword="$expand" /> operator.</summary>
         <value>The maximum number of related entities.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="MaxExpandDepth">
@@ -186,14 +231,21 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceConfiguration.MaxExpandDepth" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxExpandDepth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxExpandDepth { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxExpandDepth : int with get, set" Usage="System.Data.Services.DataServiceConfiguration.MaxExpandDepth" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Services.IDataServiceConfiguration.MaxExpandDepth</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -201,6 +253,7 @@
         <summary>Get or sets the maximum number of related entities that can be included in an <see langword="$expand" /> path in a single request.</summary>
         <value>The maximum depth of an <see langword="$expand" /> path.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="MaxObjectCountOnInsert">
@@ -209,14 +262,21 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceConfiguration.MaxObjectCountOnInsert" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxObjectCountOnInsert As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxObjectCountOnInsert { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxObjectCountOnInsert : int with get, set" Usage="System.Data.Services.DataServiceConfiguration.MaxObjectCountOnInsert" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Services.IDataServiceConfiguration.MaxObjectCountOnInsert</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -224,6 +284,7 @@
         <summary>Get or sets the maximum number of objects to insert that can be contained in a single POST request.</summary>
         <value>The maximum number of objects.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="MaxResultsPerCollection">
@@ -232,14 +293,21 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceConfiguration.MaxResultsPerCollection" />
       <MemberSignature Language="VB.NET" Value="Public Property MaxResultsPerCollection As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxResultsPerCollection { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.MaxResultsPerCollection : int with get, set" Usage="System.Data.Services.DataServiceConfiguration.MaxResultsPerCollection" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Services.IDataServiceConfiguration.MaxResultsPerCollection</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -254,6 +322,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="RegisterKnownType">
@@ -261,12 +330,14 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterKnownType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceConfiguration.RegisterKnownType(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterKnownType(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member RegisterKnownType : Type -&gt; unit&#xA;override this.RegisterKnownType : Type -&gt; unit" Usage="dataServiceConfiguration.RegisterKnownType type" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.Services.IDataServiceConfiguration.RegisterKnownType(System.Type)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -286,6 +357,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="SetEntitySetAccessRule">
@@ -294,12 +366,14 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceConfiguration.SetEntitySetAccessRule(System.String,System.Data.Services.EntitySetRights)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetEntitySetAccessRule (name As String, rights As EntitySetRights)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetEntitySetAccessRule(System::String ^ name, System::Data::Services::EntitySetRights rights);" />
+      <MemberSignature Language="F#" Value="abstract member SetEntitySetAccessRule : string * System.Data.Services.EntitySetRights -&gt; unit&#xA;override this.SetEntitySetAccessRule : string * System.Data.Services.EntitySetRights -&gt; unit" Usage="dataServiceConfiguration.SetEntitySetAccessRule (name, rights)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.Services.IDataServiceConfiguration.SetEntitySetAccessRule(System.String,System.Data.Services.EntitySetRights)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -329,6 +403,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="SetEntitySetPageSize">
@@ -337,9 +412,11 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceConfiguration.SetEntitySetPageSize(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetEntitySetPageSize (name As String, size As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetEntitySetPageSize(System::String ^ name, int size);" />
+      <MemberSignature Language="F#" Value="member this.SetEntitySetPageSize : string * int -&gt; unit" Usage="dataServiceConfiguration.SetEntitySetPageSize (name, size)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -361,6 +438,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="SetServiceOperationAccessRule">
@@ -369,12 +447,14 @@
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceConfiguration.SetServiceOperationAccessRule(System.String,System.Data.Services.ServiceOperationRights)" />
       <MemberSignature Language="VB.NET" Value="Public Sub SetServiceOperationAccessRule (name As String, rights As ServiceOperationRights)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetServiceOperationAccessRule(System::String ^ name, System::Data::Services::ServiceOperationRights rights);" />
+      <MemberSignature Language="F#" Value="abstract member SetServiceOperationAccessRule : string * System.Data.Services.ServiceOperationRights -&gt; unit&#xA;override this.SetServiceOperationAccessRule : string * System.Data.Services.ServiceOperationRights -&gt; unit" Usage="dataServiceConfiguration.SetServiceOperationAccessRule (name, rights)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.Services.IDataServiceConfiguration.SetServiceOperationAccessRule(System.String,System.Data.Services.ServiceOperationRights)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -396,6 +476,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
     <Member MemberName="UseVerboseErrors">
@@ -404,14 +485,21 @@
       <MemberSignature Language="DocId" Value="P:System.Data.Services.DataServiceConfiguration.UseVerboseErrors" />
       <MemberSignature Language="VB.NET" Value="Public Property UseVerboseErrors As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseVerboseErrors { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.UseVerboseErrors : bool with get, set" Usage="System.Data.Services.DataServiceConfiguration.UseVerboseErrors" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.Services.IDataServiceConfiguration.UseVerboseErrors</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -428,6 +516,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/59efd4c8-cc7a-4800-a0a4-d3f8abe6c55c">Configuring the Data Service (WCF Data Services)</related>
       </Docs>
     </Member>
   </Members>

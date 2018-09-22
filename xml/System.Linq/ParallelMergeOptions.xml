@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Linq.ParallelMergeOptions" />
   <TypeSignature Language="VB.NET" Value="Public Enum ParallelMergeOptions" />
   <TypeSignature Language="C++ CLI" Value="public enum class ParallelMergeOptions" />
+  <TypeSignature Language="F#" Value="type ParallelMergeOptions = " />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Parallel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +36,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="~/docs/standard/parallel-programming/parallel-linq-plinq.md">Parallel LINQ (PLINQ)</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/e8f7be3b-88de-4f33-ab14-dc008e76c1ba">Merge Options in PLINQ</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0f33b527-e91a-4550-a39a-e63e396fd831">How to: Specify Merge Options in PLINQ</related>
   </Docs>
   <Members>
     <Member MemberName="AutoBuffered">
@@ -43,6 +47,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.ParallelMergeOptions.AutoBuffered" />
       <MemberSignature Language="VB.NET" Value="AutoBuffered" />
       <MemberSignature Language="C++ CLI" Value="AutoBuffered" />
+      <MemberSignature Language="F#" Value="AutoBuffered = 2" Usage="System.Linq.ParallelMergeOptions.AutoBuffered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Parallel</AssemblyName>
@@ -72,6 +77,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.ParallelMergeOptions.Default" />
       <MemberSignature Language="VB.NET" Value="Default" />
       <MemberSignature Language="C++ CLI" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Linq.ParallelMergeOptions.Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Parallel</AssemblyName>
@@ -101,6 +107,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.ParallelMergeOptions.FullyBuffered" />
       <MemberSignature Language="VB.NET" Value="FullyBuffered" />
       <MemberSignature Language="C++ CLI" Value="FullyBuffered" />
+      <MemberSignature Language="F#" Value="FullyBuffered = 3" Usage="System.Linq.ParallelMergeOptions.FullyBuffered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Parallel</AssemblyName>
@@ -130,6 +137,7 @@
       <MemberSignature Language="DocId" Value="F:System.Linq.ParallelMergeOptions.NotBuffered" />
       <MemberSignature Language="VB.NET" Value="NotBuffered" />
       <MemberSignature Language="C++ CLI" Value="NotBuffered" />
+      <MemberSignature Language="F#" Value="NotBuffered = 1" Usage="System.Linq.ParallelMergeOptions.NotBuffered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Parallel</AssemblyName>

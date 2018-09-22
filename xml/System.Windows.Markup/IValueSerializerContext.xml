@@ -4,9 +4,14 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IValueSerializerContext" />
   <TypeSignature Language="VB.NET" Value="Public Interface IValueSerializerContext&#xA;Implements IServiceProvider, ITypeDescriptorContext" />
   <TypeSignature Language="C++ CLI" Value="public interface class IValueSerializerContext : IServiceProvider, System::ComponentModel::ITypeDescriptorContext" />
+  <TypeSignature Language="F#" Value="type IValueSerializerContext = interface&#xA;    interface ITypeDescriptorContext&#xA;    interface IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>WindowsBase</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Interfaces>
     <Interface>
@@ -17,7 +22,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
     </Attribute>
   </Attributes>
@@ -36,6 +41,7 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Markup.ValueSerializer" />
+    <related type="Article" href="http://msdn.microsoft.com/library/db07a952-05ce-4aa4-b6f9-aac7397d0326">Type Converters or Markup Extensions for XAML</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="GetValueSerializerFor">
@@ -53,10 +59,15 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor(System.ComponentModel.PropertyDescriptor)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetValueSerializerFor (descriptor As PropertyDescriptor) As ValueSerializer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Markup::ValueSerializer ^ GetValueSerializerFor(System::ComponentModel::PropertyDescriptor ^ descriptor);" />
+      <MemberSignature Language="F#" Value="abstract member GetValueSerializerFor : System.ComponentModel.PropertyDescriptor -&gt; System.Windows.Markup.ValueSerializer" Usage="iValueSerializerContext.GetValueSerializerFor descriptor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Markup.ValueSerializer</ReturnType>
@@ -70,6 +81,7 @@
         <returns>A <see cref="T:System.Windows.Markup.ValueSerializer" /> capable of serializing the specified property.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Markup.ValueSerializer" />
+        <related type="Article" href="http://msdn.microsoft.com/library/db07a952-05ce-4aa4-b6f9-aac7397d0326">Type Converters or Markup Extensions for XAML</related>
       </Docs>
     </Member>
     <Member MemberName="GetValueSerializerFor">
@@ -77,10 +89,15 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Markup.ValueSerializer GetValueSerializerFor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IValueSerializerContext.GetValueSerializerFor(System.Type)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Markup::ValueSerializer ^ GetValueSerializerFor(Type ^ type);" />
+      <MemberSignature Language="F#" Value="abstract member GetValueSerializerFor : Type -&gt; System.Windows.Markup.ValueSerializer" Usage="iValueSerializerContext.GetValueSerializerFor type" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Windows.Markup.ValueSerializer</ReturnType>
@@ -94,6 +111,7 @@
         <returns>A <see cref="T:System.Windows.Markup.ValueSerializer" /> capable of serializing the specified type.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Markup.ValueSerializer" />
+        <related type="Article" href="http://msdn.microsoft.com/library/db07a952-05ce-4aa4-b6f9-aac7397d0326">Type Converters or Markup Extensions for XAML</related>
       </Docs>
     </Member>
   </Members>

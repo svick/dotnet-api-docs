@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.WebUtility" />
   <TypeSignature Language="VB.NET" Value="Public Class WebUtility" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebUtility abstract sealed" />
+  <TypeSignature Language="F#" Value="type WebUtility = class" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +40,7 @@
     <altmember cref="T:System.Web.HttpUtility" />
     <altmember cref="T:System.Web.HttpServerUtility" />
     <altmember cref="P:System.Web.HttpContext.Server" />
+    <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="HtmlDecode">
@@ -59,6 +61,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebUtility.HtmlDecode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HtmlDecode (value As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ HtmlDecode(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member HtmlDecode : string -&gt; string" Usage="System.Net.WebUtility.HtmlDecode value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -91,7 +94,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as &lt; and &gt; for HTTP transmission.  
+ If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters `<` and `>` are encoded as `&lt;` and `&gt;` for HTTP transmission.  
   
  If the `value` parameter is `null`, then the returned decoded string is `null`. If the `value` parameter is an empty string, then the returned decoded string is an empty string.  
   
@@ -108,6 +111,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebUtility.HtmlDecode(System.String,System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub HtmlDecode (value As String, output As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void HtmlDecode(System::String ^ value, System::IO::TextWriter ^ output);" />
+      <MemberSignature Language="F#" Value="static member HtmlDecode : string * System.IO.TextWriter -&gt; unit" Usage="System.Net.WebUtility.HtmlDecode (value, output)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -138,7 +142,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as &lt; and &gt; for HTTP transmission.  
+ If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters `<` and `>` are encoded as `&lt;` and `&gt;` for HTTP transmission.  
   
  ]]></format>
         </remarks>
@@ -166,6 +170,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebUtility.HtmlEncode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function HtmlEncode (value As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ HtmlEncode(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member HtmlEncode : string -&gt; string" Usage="System.Net.WebUtility.HtmlEncode value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -198,7 +203,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and > are encoded as &lt; and &gt; for HTTP transmission.  
+ If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters `<` and `>` are encoded as `&lt;` and `&gt;` for HTTP transmission.  
   
  If the `value` parameter is `null`, then the returned encoded string is `null`. If the `value` parameter is an empty string, then the returned encoded string is an empty string.  
   
@@ -207,6 +212,7 @@
         <altmember cref="M:System.Net.WebUtility.HtmlDecode(System.String)" />
         <altmember cref="M:System.Web.HttpUtility.HtmlDecode(System.String)" />
         <altmember cref="T:System.Uri" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <Member MemberName="HtmlEncode">
@@ -215,6 +221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebUtility.HtmlEncode(System.String,System.IO.TextWriter)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Sub HtmlEncode (value As String, output As TextWriter)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static void HtmlEncode(System::String ^ value, System::IO::TextWriter ^ output);" />
+      <MemberSignature Language="F#" Value="static member HtmlEncode : string * System.IO.TextWriter -&gt; unit" Usage="System.Net.WebUtility.HtmlEncode (value, output)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -245,7 +252,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters \< and >, are encoded as &lt; and &gt; for HTTP transmission.  
+ If characters such as blanks and punctuation are passed in an HTTP stream, they might be misinterpreted at the receiving end. HTML encoding converts characters that are not allowed in HTML into character-entity equivalents; HTML decoding reverses the encoding. For example, when embedded in a block of text, the characters `<` and `>` are encoded as `&lt;` and `&gt;` for HTTP transmission.  
   
  ]]></format>
         </remarks>
@@ -253,6 +260,7 @@
         <altmember cref="M:System.Net.WebUtility.HtmlDecode(System.String,System.IO.TextWriter)" />
         <altmember cref="M:System.Web.HttpUtility.HtmlDecode(System.String,System.IO.TextWriter)" />
         <altmember cref="T:System.Uri" />
+        <related type="Article" href="http://msdn.microsoft.com/library/6f67973f-dda0-45a1-ba9d-e88532d7dc5b">How to: Protect Against Script Exploits in a Web Application by Applying HTML Encoding to Strings</related>
       </Docs>
     </Member>
     <Member MemberName="UrlDecode">
@@ -261,6 +269,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebUtility.UrlDecode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecode (encodedValue As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlDecode(System::String ^ encodedValue);" />
+      <MemberSignature Language="F#" Value="static member UrlDecode : string -&gt; string" Usage="System.Net.WebUtility.UrlDecode encodedValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -288,9 +297,7 @@
       <Docs>
         <param name="encodedValue">A URL-encoded string to decode.</param>
         <summary>Converts a string that has been encoded for transmission in a URL into a decoded string.</summary>
-        <returns>Returns <see cref="T:System.String" />.  
-  
- A decoded string.</returns>
+        <returns>A decoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -309,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebUtility.UrlDecodeToBytes(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlDecodeToBytes (encodedValue As Byte(), offset As Integer, count As Integer) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ UrlDecodeToBytes(cli::array &lt;System::Byte&gt; ^ encodedValue, int offset, int count);" />
+      <MemberSignature Language="F#" Value="static member UrlDecodeToBytes : byte[] * int * int -&gt; byte[]" Usage="System.Net.WebUtility.UrlDecodeToBytes (encodedValue, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -340,9 +348,7 @@
         <param name="offset">The offset, in bytes, from the start of the <see cref="T:System.Byte" /> array to decode.</param>
         <param name="count">The count, in bytes, to decode from the <see cref="T:System.Byte" /> array.</param>
         <summary>Converts an encoded byte array that has been encoded for transmission in a URL into a decoded byte array.</summary>
-        <returns>Returns <see cref="T:System.Byte" />.  
-  
- A decoded <see cref="T:System.Byte" /> array.</returns>
+        <returns>A decoded <see cref="T:System.Byte" /> array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -361,6 +367,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebUtility.UrlEncode(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncode (value As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncode(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member UrlEncode : string -&gt; string" Usage="System.Net.WebUtility.UrlEncode value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -388,9 +395,7 @@
       <Docs>
         <param name="value">The text to URL-encode.</param>
         <summary>Converts a text string into a URL-encoded string.</summary>
-        <returns>Returns <see cref="T:System.String" />.  
-  
- A URL-encoded string.</returns>
+        <returns>A URL-encoded string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -407,7 +412,7 @@
   
 -   `!` (exclamation point)  
   
--   \* (asterisk)  
+-   `*` (asterisk)  
   
 -   `(` and `)` (opening and closing parentheses)  
   
@@ -425,6 +430,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.WebUtility.UrlEncodeToBytes(System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncodeToBytes (value As Byte(), offset As Integer, count As Integer) As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ UrlEncodeToBytes(cli::array &lt;System::Byte&gt; ^ value, int offset, int count);" />
+      <MemberSignature Language="F#" Value="static member UrlEncodeToBytes : byte[] * int * int -&gt; byte[]" Usage="System.Net.WebUtility.UrlEncodeToBytes (value, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -456,9 +462,7 @@
         <param name="offset">The offset, in bytes, from the start of the <see cref="T:System.Byte" /> array to encode.</param>
         <param name="count">The count, in bytes, to encode from the <see cref="T:System.Byte" /> array.</param>
         <summary>Converts a byte array into a URL-encoded byte array.</summary>
-        <returns>Returns <see cref="T:System.Byte" />.  
-  
- An encoded <see cref="T:System.Byte" /> array.</returns>
+        <returns>An encoded <see cref="T:System.Byte" /> array.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -475,7 +479,7 @@
   
 -   `!` (exclamation point)  
   
--   '*' (asterisk)  
+-   `*` (asterisk)  
   
 -   `'` (single quotation mark)  
   

@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketException" />
   <TypeSignature Language="VB.NET" Value="Public Class SocketException&#xA;Inherits Win32Exception" />
   <TypeSignature Language="C++ CLI" Value="public ref class SocketException : System::ComponentModel::Win32Exception" />
+  <TypeSignature Language="F#" Value="type SocketException = class&#xA;    inherit Win32Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -12,6 +13,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -19,11 +22,19 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Net</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Exception</BaseTypeName>
     <BaseTypeName FrameworkAlternate="netframework-4.5">System.ComponentModel.Win32Exception</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>The exception that is thrown when a socket error occurs.</summary>
     <remarks>
@@ -64,12 +75,17 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -90,6 +106,7 @@
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketException.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SocketException(int errorCode);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.SocketException : int -&gt; System.Net.Sockets.SocketException" Usage="new System.Net.Sockets.SocketException errorCode" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -99,6 +116,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -106,6 +125,14 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="errorCode" Type="System.Int32" />
       </Parameters>
@@ -127,9 +154,12 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; SocketException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.SocketException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Net.Sockets.SocketException" Usage="new System.Net.Sockets.SocketException (serializationInfo, streamingContext)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -142,6 +172,14 @@
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
@@ -158,6 +196,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/serialization/xml-and-soap-serialization.md">XML and SOAP Serialization</related>
       </Docs>
     </Member>
     <Member MemberName="ErrorCode">
@@ -166,9 +205,12 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketException.ErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ErrorCode As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ErrorCode { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int" Usage="System.Net.Sockets.SocketException.ErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -180,6 +222,9 @@
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -193,7 +238,7 @@
 ## Remarks  
  The <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property contains the error code that is associated with the error that caused the exception.  
   
- The default constructor for <xref:System.Net.Sockets.SocketException> sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system error that occurred. For more information about socket error codes, see the Windows Sockets version 2 API error code documentation in MSDN.  
+ The default constructor for <xref:System.Net.Sockets.SocketException> sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system error that occurred. For more information about socket error codes, see the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation.  
   
  ]]></format>
         </remarks>
@@ -205,6 +250,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketException.Message" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Net.Sockets.SocketException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -214,12 +260,16 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -236,6 +286,7 @@
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketException.SocketErrorCode" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SocketErrorCode As SocketError" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::SocketError SocketErrorCode { System::Net::Sockets::SocketError get(); };" />
+      <MemberSignature Language="F#" Value="member this.SocketErrorCode : System.Net.Sockets.SocketError" Usage="System.Net.Sockets.SocketException.SocketErrorCode" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -245,12 +296,16 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
@@ -264,7 +319,7 @@
 ## Remarks  
  The <xref:System.Net.Sockets.SocketException.SocketErrorCode%2A> property contains the error code that is associated with the error that caused the exception.  
   
- The default constructor for <xref:System.Net.Sockets.SocketException> sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system error that occurred. For more information about socket error codes, see the Windows Sockets version 2 API error code documentation in MSDN.  
+ The default constructor for <xref:System.Net.Sockets.SocketException> sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system error that occurred. For more information about socket error codes, see the [Windows Sockets version 2 API error code](/windows/desktop/winsock/windows-sockets-error-codes-2) documentation.  
   
  ]]></format>
         </remarks>

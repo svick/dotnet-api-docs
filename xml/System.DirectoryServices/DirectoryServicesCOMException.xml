@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryServicesCOMException" />
   <TypeSignature Language="VB.NET" Value="Public Class DirectoryServicesCOMException&#xA;Inherits COMException&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class DirectoryServicesCOMException : System::Runtime::InteropServices::COMException, System::Runtime::Serialization::ISerializable" />
+  <TypeSignature Language="F#" Value="type DirectoryServicesCOMException = class&#xA;    inherit COMException&#xA;    interface ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -17,6 +19,11 @@
       <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Contains extended error information about an error that occurred when the <see cref="M:System.DirectoryServices.DirectoryEntry.Invoke(System.String,System.Object[])" /> method is called.</summary>
     <remarks>To be added.</remarks>
@@ -42,6 +49,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -57,9 +65,11 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesCOMException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryServicesCOMException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.DirectoryServicesCOMException : string -&gt; System.DirectoryServices.DirectoryServicesCOMException" Usage="new System.DirectoryServices.DirectoryServicesCOMException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -78,9 +88,11 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesCOMException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; DirectoryServicesCOMException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.DirectoryServicesCOMException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.DirectoryServices.DirectoryServicesCOMException" Usage="new System.DirectoryServices.DirectoryServicesCOMException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -101,9 +113,11 @@
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesCOMException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryServicesCOMException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.DirectoryServicesCOMException : string * Exception -&gt; System.DirectoryServices.DirectoryServicesCOMException" Usage="new System.DirectoryServices.DirectoryServicesCOMException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -124,9 +138,11 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryServicesCOMException.ExtendedError" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtendedError As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ExtendedError { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtendedError : int" Usage="System.DirectoryServices.DirectoryServicesCOMException.ExtendedError" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -145,9 +161,11 @@
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryServicesCOMException.ExtendedErrorMessage" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtendedErrorMessage As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExtendedErrorMessage { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.ExtendedErrorMessage : string" Usage="System.DirectoryServices.DirectoryServicesCOMException.ExtendedErrorMessage" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -165,12 +183,14 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesCOMException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="directoryServicesCOMException.GetObjectData (serializationInfo, streamingContext)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>

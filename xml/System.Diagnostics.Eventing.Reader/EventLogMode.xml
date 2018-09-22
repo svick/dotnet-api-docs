@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogMode" />
   <TypeSignature Language="VB.NET" Value="Public Enum EventLogMode" />
   <TypeSignature Language="C++ CLI" Value="public enum class EventLogMode" />
+  <TypeSignature Language="F#" Value="type EventLogMode = " />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -14,6 +16,8 @@
   <Docs>
     <summary>Determines the behavior for the event log service handles an event log when the log reaches its maximum allowed size (when the event log is full).</summary>
     <remarks>To be added.</remarks>
+    <related type="Article" href="https://msdn.microsoft.com/library/d26107ee-7a80-44d7-b43b-cf774559e4ac">Technology Summary for Reading and Managing Event Logs</related>
+    <related type="Article" href="https://msdn.microsoft.com/library/79377aba-b6e5-4e4d-a9be-ea25ce6f1dc5">Event Log Scenarios</related>
   </Docs>
   <Members>
     <Member MemberName="AutoBackup">
@@ -22,9 +26,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.EventLogMode.AutoBackup" />
       <MemberSignature Language="VB.NET" Value="AutoBackup" />
       <MemberSignature Language="C++ CLI" Value="AutoBackup" />
+      <MemberSignature Language="F#" Value="AutoBackup = 1" Usage="System.Diagnostics.Eventing.Reader.EventLogMode.AutoBackup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -41,9 +47,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.EventLogMode.Circular" />
       <MemberSignature Language="VB.NET" Value="Circular" />
       <MemberSignature Language="C++ CLI" Value="Circular" />
+      <MemberSignature Language="F#" Value="Circular = 0" Usage="System.Diagnostics.Eventing.Reader.EventLogMode.Circular" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -60,9 +68,11 @@
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.EventLogMode.Retain" />
       <MemberSignature Language="VB.NET" Value="Retain" />
       <MemberSignature Language="C++ CLI" Value="Retain" />
+      <MemberSignature Language="F#" Value="Retain = 2" Usage="System.Diagnostics.Eventing.Reader.EventLogMode.Retain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

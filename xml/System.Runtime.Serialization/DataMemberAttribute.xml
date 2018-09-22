@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.DataMemberAttribute" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataMemberAttribute&#xA;Inherits Attribute" />
   <TypeSignature Language="C++ CLI" Value="public ref class DataMemberAttribute sealed : Attribute" />
+  <TypeSignature Language="F#" Value="type DataMemberAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -13,6 +14,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
@@ -24,8 +26,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinmac-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, AllowMultiple=false, Inherited=false)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -61,6 +66,10 @@
     <altmember cref="T:System.Runtime.Serialization.DataContractAttribute" />
     <altmember cref="T:System.Runtime.Serialization.DataContractSerializer" />
     <altmember cref="T:System.Runtime.Serialization.IExtensibleDataObject" />
+    <related type="Article" href="~/docs/framework/wcf/feature-details/using-data-contracts.md">Using Data Contracts</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/bf0ab338-4d36-4e12-8002-8ebfdeb346cb">Best Practices: Data Contract Versioning</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/53a3b505-4b27-444b-b079-0eb84a97cfd8">Data Member Default Values</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/0658a47d-b6e5-4ae0-ba72-ababc3c6ff33">Data Member Order</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -79,6 +88,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -97,6 +107,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue" />
       <MemberSignature Language="VB.NET" Value="Public Property EmitDefaultValue As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EmitDefaultValue { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.EmitDefaultValue : bool with get, set" Usage="System.Runtime.Serialization.DataMemberAttribute.EmitDefaultValue" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -107,6 +118,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -147,6 +159,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataMemberAttribute.IsNameSetExplicitly" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNameSetExplicitly As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNameSetExplicitly { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsNameSetExplicitly : bool" Usage="System.Runtime.Serialization.DataMemberAttribute.IsNameSetExplicitly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -178,6 +191,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataMemberAttribute.IsRequired" />
       <MemberSignature Language="VB.NET" Value="Public Property IsRequired As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRequired { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.IsRequired : bool with get, set" Usage="System.Runtime.Serialization.DataMemberAttribute.IsRequired" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -188,6 +202,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -210,6 +225,8 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Runtime.Serialization.SerializationException">the member is not present.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/4a0700cb-5f5f-4137-8705-3a3ecf06461f">Data Contract Versioning</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/bf0ab338-4d36-4e12-8002-8ebfdeb346cb">Best Practices: Data Contract Versioning</related>
       </Docs>
     </Member>
     <Member MemberName="Name">
@@ -218,6 +235,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataMemberAttribute.Name" />
       <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Runtime.Serialization.DataMemberAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -228,6 +246,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -250,6 +269,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/wcf/feature-details/using-data-contracts.md">Using Data Contracts</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/31f87e6c-247b-48f5-8e94-b9e1e33d8d09">Data Contract Names</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/4a0700cb-5f5f-4137-8705-3a3ecf06461f">Data Contract Versioning</related>
       </Docs>
     </Member>
     <Member MemberName="Order">
@@ -258,6 +280,7 @@
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.DataMemberAttribute.Order" />
       <MemberSignature Language="VB.NET" Value="Public Property Order As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Order { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.Order : int with get, set" Usage="System.Runtime.Serialization.DataMemberAttribute.Order" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Primitives</AssemblyName>
@@ -268,6 +291,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
@@ -288,6 +312,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/0658a47d-b6e5-4ae0-ba72-ababc3c6ff33">Data Member Order</related>
       </Docs>
     </Member>
   </Members>

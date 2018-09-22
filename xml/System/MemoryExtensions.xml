@@ -4,9 +4,11 @@
   <TypeSignature Language="DocId" Value="T:System.MemoryExtensions" />
   <TypeSignature Language="VB.NET" Value="Public Module MemoryExtensions" />
   <TypeSignature Language="C++ CLI" Value="public ref class MemoryExtensions abstract sealed" />
+  <TypeSignature Language="F#" Value="type MemoryExtensions = class" />
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -23,10 +25,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsMemory(System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsMemory (text As String) As ReadOnlyMemory(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlyMemory&lt;char&gt; AsMemory(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="static member AsMemory : string -&gt; ReadOnlyMemory&lt;char&gt;" Usage="System.MemoryExtensions.AsMemory text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlyMemory&lt;System.Char&gt;</ReturnType>
@@ -47,10 +51,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsMemory(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsMemory (text As String, start As Integer) As ReadOnlyMemory(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlyMemory&lt;char&gt; AsMemory(System::String ^ text, int start);" />
+      <MemberSignature Language="F#" Value="static member AsMemory : string * int -&gt; ReadOnlyMemory&lt;char&gt;" Usage="System.MemoryExtensions.AsMemory (text, start)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlyMemory&lt;System.Char&gt;</ReturnType>
@@ -73,10 +79,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsMemory(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsMemory (text As String, start As Integer, length As Integer) As ReadOnlyMemory(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlyMemory&lt;char&gt; AsMemory(System::String ^ text, int start, int length);" />
+      <MemberSignature Language="F#" Value="static member AsMemory : string * int * int -&gt; ReadOnlyMemory&lt;char&gt;" Usage="System.MemoryExtensions.AsMemory (text, start, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlyMemory&lt;System.Char&gt;</ReturnType>
@@ -101,10 +109,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsMemory``1(System.ArraySegment{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsMemory(Of T) (segment As ArraySegment(Of T)) As Memory(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Memory&lt;T&gt; AsMemory(ArraySegment&lt;T&gt; segment);" />
+      <MemberSignature Language="F#" Value="static member AsMemory : ArraySegment&lt;'T&gt; -&gt; Memory&lt;'T&gt;" Usage="System.MemoryExtensions.AsMemory segment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -129,10 +139,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsMemory``1(``0[])" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsMemory(Of T) (array As T()) As Memory(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Memory&lt;T&gt; AsMemory(cli::array &lt;T&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="static member AsMemory : 'T[] -&gt; Memory&lt;'T&gt;" Usage="System.MemoryExtensions.AsMemory array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -157,10 +169,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsMemory``1(System.ArraySegment{``0},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsMemory(Of T) (segment As ArraySegment(Of T), start As Integer) As Memory(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Memory&lt;T&gt; AsMemory(ArraySegment&lt;T&gt; segment, int start);" />
+      <MemberSignature Language="F#" Value="static member AsMemory : ArraySegment&lt;'T&gt; * int -&gt; Memory&lt;'T&gt;" Usage="System.MemoryExtensions.AsMemory (segment, start)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -187,10 +201,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsMemory``1(``0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsMemory(Of T) (array As T(), start As Integer) As Memory(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Memory&lt;T&gt; AsMemory(cli::array &lt;T&gt; ^ array, int start);" />
+      <MemberSignature Language="F#" Value="static member AsMemory : 'T[] * int -&gt; Memory&lt;'T&gt;" Usage="System.MemoryExtensions.AsMemory (array, start)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -217,10 +233,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsMemory``1(System.ArraySegment{``0},System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsMemory(Of T) (segment As ArraySegment(Of T), start As Integer, length As Integer) As Memory(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Memory&lt;T&gt; AsMemory(ArraySegment&lt;T&gt; segment, int start, int length);" />
+      <MemberSignature Language="F#" Value="static member AsMemory : ArraySegment&lt;'T&gt; * int * int -&gt; Memory&lt;'T&gt;" Usage="System.MemoryExtensions.AsMemory (segment, start, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -249,10 +267,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsMemory``1(``0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsMemory(Of T) (array As T(), start As Integer, length As Integer) As Memory(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Memory&lt;T&gt; AsMemory(cli::array &lt;T&gt; ^ array, int start, int length);" />
+      <MemberSignature Language="F#" Value="static member AsMemory : 'T[] * int * int -&gt; Memory&lt;'T&gt;" Usage="System.MemoryExtensions.AsMemory (array, start, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
@@ -281,10 +301,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsSpan(System.String)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsSpan (text As String) As ReadOnlySpan(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;char&gt; AsSpan(System::String ^ text);" />
+      <MemberSignature Language="F#" Value="static member AsSpan : string -&gt; ReadOnlySpan&lt;char&gt;" Usage="System.MemoryExtensions.AsSpan text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
@@ -305,10 +327,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsSpan(System.String,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsSpan (text As String, start As Integer) As ReadOnlySpan(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;char&gt; AsSpan(System::String ^ text, int start);" />
+      <MemberSignature Language="F#" Value="static member AsSpan : string * int -&gt; ReadOnlySpan&lt;char&gt;" Usage="System.MemoryExtensions.AsSpan (text, start)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
@@ -331,10 +355,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsSpan(System.String,System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsSpan (text As String, start As Integer, length As Integer) As ReadOnlySpan(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;char&gt; AsSpan(System::String ^ text, int start, int length);" />
+      <MemberSignature Language="F#" Value="static member AsSpan : string * int * int -&gt; ReadOnlySpan&lt;char&gt;" Usage="System.MemoryExtensions.AsSpan (text, start, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
@@ -359,10 +385,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsSpan``1(System.ArraySegment{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsSpan(Of T) (segment As ArraySegment(Of T)) As Span(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Span&lt;T&gt; AsSpan(ArraySegment&lt;T&gt; segment);" />
+      <MemberSignature Language="F#" Value="static member AsSpan : ArraySegment&lt;'T&gt; -&gt; Span&lt;'T&gt;" Usage="System.MemoryExtensions.AsSpan segment" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -387,10 +415,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsSpan``1(``0[])" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsSpan(Of T) (array As T()) As Span(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Span&lt;T&gt; AsSpan(cli::array &lt;T&gt; ^ array);" />
+      <MemberSignature Language="F#" Value="static member AsSpan : 'T[] -&gt; Span&lt;'T&gt;" Usage="System.MemoryExtensions.AsSpan array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -415,10 +445,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsSpan``1(System.ArraySegment{``0},System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsSpan(Of T) (segment As ArraySegment(Of T), start As Integer) As Span(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Span&lt;T&gt; AsSpan(ArraySegment&lt;T&gt; segment, int start);" />
+      <MemberSignature Language="F#" Value="static member AsSpan : ArraySegment&lt;'T&gt; * int -&gt; Span&lt;'T&gt;" Usage="System.MemoryExtensions.AsSpan (segment, start)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -445,10 +477,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsSpan``1(``0[],System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsSpan(Of T) (array As T(), start As Integer) As Span(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Span&lt;T&gt; AsSpan(cli::array &lt;T&gt; ^ array, int start);" />
+      <MemberSignature Language="F#" Value="static member AsSpan : 'T[] * int -&gt; Span&lt;'T&gt;" Usage="System.MemoryExtensions.AsSpan (array, start)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -475,10 +509,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsSpan``1(System.ArraySegment{``0},System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsSpan(Of T) (segment As ArraySegment(Of T), start As Integer, length As Integer) As Span(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Span&lt;T&gt; AsSpan(ArraySegment&lt;T&gt; segment, int start, int length);" />
+      <MemberSignature Language="F#" Value="static member AsSpan : ArraySegment&lt;'T&gt; * int * int -&gt; Span&lt;'T&gt;" Usage="System.MemoryExtensions.AsSpan (segment, start, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -507,10 +543,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.AsSpan``1(``0[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function AsSpan(Of T) (array As T(), start As Integer, length As Integer) As Span(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static Span&lt;T&gt; AsSpan(cli::array &lt;T&gt; ^ array, int start, int length);" />
+      <MemberSignature Language="F#" Value="static member AsSpan : 'T[] * int * int -&gt; Span&lt;'T&gt;" Usage="System.MemoryExtensions.AsSpan (array, start, length)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
@@ -539,10 +577,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.BinarySearch``1(System.ReadOnlySpan{``0},System.IComparable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BinarySearch(Of T) (span As ReadOnlySpan(Of T), comparable As IComparable(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int BinarySearch(ReadOnlySpan&lt;T&gt; span, IComparable&lt;T&gt; ^ comparable);" />
+      <MemberSignature Language="F#" Value="static member BinarySearch : ReadOnlySpan&lt;'T&gt; * IComparable&lt;'T&gt; -&gt; int" Usage="System.MemoryExtensions.BinarySearch (span, comparable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -569,10 +609,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.BinarySearch``1(System.Span{``0},System.IComparable{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BinarySearch(Of T) (span As Span(Of T), comparable As IComparable(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int BinarySearch(Span&lt;T&gt; span, IComparable&lt;T&gt; ^ comparable);" />
+      <MemberSignature Language="F#" Value="static member BinarySearch : Span&lt;'T&gt; * IComparable&lt;'T&gt; -&gt; int" Usage="System.MemoryExtensions.BinarySearch (span, comparable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -599,10 +641,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{``0},``1)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BinarySearch(Of T, TComparable) (span As ReadOnlySpan(Of T), comparable As TComparable) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename TComparable&gt;&#xA; where TComparable : IComparable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int BinarySearch(ReadOnlySpan&lt;T&gt; span, TComparable comparable);" />
+      <MemberSignature Language="F#" Value="static member BinarySearch : ReadOnlySpan&lt;'T&gt; * 'Comparable -&gt; int (requires 'Comparable :&gt; IComparable&lt;'T&gt;)" Usage="System.MemoryExtensions.BinarySearch (span, comparable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -635,10 +679,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.BinarySearch``2(System.Span{``0},``1)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BinarySearch(Of T, TComparable) (span As Span(Of T), comparable As TComparable) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename TComparable&gt;&#xA; where TComparable : IComparable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int BinarySearch(Span&lt;T&gt; span, TComparable comparable);" />
+      <MemberSignature Language="F#" Value="static member BinarySearch : Span&lt;'T&gt; * 'Comparable -&gt; int (requires 'Comparable :&gt; IComparable&lt;'T&gt;)" Usage="System.MemoryExtensions.BinarySearch (span, comparable)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -671,10 +717,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.BinarySearch``2(System.ReadOnlySpan{``0},``0,``1)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BinarySearch(Of T, TComparer) (span As ReadOnlySpan(Of T), value As T, comparer As TComparer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename TComparer&gt;&#xA; where TComparer : System::Collections::Generic::IComparer&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int BinarySearch(ReadOnlySpan&lt;T&gt; span, T value, TComparer comparer);" />
+      <MemberSignature Language="F#" Value="static member BinarySearch : ReadOnlySpan&lt;'T&gt; * 'T * 'Comparer -&gt; int (requires 'Comparer :&gt; System.Collections.Generic.IComparer&lt;'T&gt;)" Usage="System.MemoryExtensions.BinarySearch (span, value, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -709,10 +757,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.BinarySearch``2(System.Span{``0},``0,``1)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function BinarySearch(Of T, TComparer) (span As Span(Of T), value As T, comparer As TComparer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T, typename TComparer&gt;&#xA; where TComparer : System::Collections::Generic::IComparer&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int BinarySearch(Span&lt;T&gt; span, T value, TComparer comparer);" />
+      <MemberSignature Language="F#" Value="static member BinarySearch : Span&lt;'T&gt; * 'T * 'Comparer -&gt; int (requires 'Comparer :&gt; System.Collections.Generic.IComparer&lt;'T&gt;)" Usage="System.MemoryExtensions.BinarySearch (span, value, comparer)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -747,10 +797,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.CompareTo(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CompareTo (span As ReadOnlySpan(Of Char), other As ReadOnlySpan(Of Char), comparisonType As StringComparison) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int CompareTo(ReadOnlySpan&lt;char&gt; span, ReadOnlySpan&lt;char&gt; other, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="static member CompareTo : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; * StringComparison -&gt; int" Usage="System.MemoryExtensions.CompareTo (span, other, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -775,10 +827,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Contains(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Contains (span As ReadOnlySpan(Of Char), value As ReadOnlySpan(Of Char), comparisonType As StringComparison) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Contains(ReadOnlySpan&lt;char&gt; span, ReadOnlySpan&lt;char&gt; value, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="static member Contains : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; * StringComparison -&gt; bool" Usage="System.MemoryExtensions.Contains (span, value, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -803,10 +857,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.CopyTo``1(``0[],System.Memory{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub CopyTo(Of T) (source As T(), destination As Memory(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void CopyTo(cli::array &lt;T&gt; ^ source, Memory&lt;T&gt; destination);" />
+      <MemberSignature Language="F#" Value="static member CopyTo : 'T[] * Memory&lt;'T&gt; -&gt; unit" Usage="System.MemoryExtensions.CopyTo (source, destination)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -832,10 +888,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.CopyTo``1(``0[],System.Span{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub CopyTo(Of T) (source As T(), destination As Span(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void CopyTo(cli::array &lt;T&gt; ^ source, Span&lt;T&gt; destination);" />
+      <MemberSignature Language="F#" Value="static member CopyTo : 'T[] * Span&lt;'T&gt; -&gt; unit" Usage="System.MemoryExtensions.CopyTo (source, destination)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -861,10 +919,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.EndsWith(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function EndsWith (span As ReadOnlySpan(Of Char), value As ReadOnlySpan(Of Char), comparisonType As StringComparison) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool EndsWith(ReadOnlySpan&lt;char&gt; span, ReadOnlySpan&lt;char&gt; value, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="static member EndsWith : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; * StringComparison -&gt; bool" Usage="System.MemoryExtensions.EndsWith (span, value, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -889,10 +949,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.EndsWith``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function EndsWith(Of T As IEquatable(Of T)) (span As ReadOnlySpan(Of T), value As ReadOnlySpan(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static bool EndsWith(ReadOnlySpan&lt;T&gt; span, ReadOnlySpan&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member EndsWith : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; bool (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.EndsWith (span, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -923,10 +985,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.EndsWith``1(System.Span{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function EndsWith(Of T As IEquatable(Of T)) (span As Span(Of T), value As ReadOnlySpan(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static bool EndsWith(Span&lt;T&gt; span, ReadOnlySpan&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member EndsWith : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; bool (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.EndsWith (span, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -957,10 +1021,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Equals(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Equals (span As ReadOnlySpan(Of Char), other As ReadOnlySpan(Of Char), comparisonType As StringComparison) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Equals(ReadOnlySpan&lt;char&gt; span, ReadOnlySpan&lt;char&gt; other, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="static member Equals : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; * StringComparison -&gt; bool" Usage="System.MemoryExtensions.Equals (span, other, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -985,10 +1051,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.IndexOf(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IndexOf (span As ReadOnlySpan(Of Char), value As ReadOnlySpan(Of Char), comparisonType As StringComparison) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int IndexOf(ReadOnlySpan&lt;char&gt; span, ReadOnlySpan&lt;char&gt; value, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="static member IndexOf : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; * StringComparison -&gt; int" Usage="System.MemoryExtensions.IndexOf (span, value, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1013,10 +1081,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.IndexOf``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IndexOf(Of T As IEquatable(Of T)) (span As ReadOnlySpan(Of T), value As ReadOnlySpan(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int IndexOf(ReadOnlySpan&lt;T&gt; span, ReadOnlySpan&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member IndexOf : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.IndexOf (span, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1047,10 +1117,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.IndexOf``1(System.ReadOnlySpan{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IndexOf(Of T As IEquatable(Of T)) (span As ReadOnlySpan(Of T), value As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int IndexOf(ReadOnlySpan&lt;T&gt; span, T value);" />
+      <MemberSignature Language="F#" Value="static member IndexOf : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.IndexOf (span, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1081,10 +1153,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.IndexOf``1(System.Span{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IndexOf(Of T As IEquatable(Of T)) (span As Span(Of T), value As ReadOnlySpan(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int IndexOf(Span&lt;T&gt; span, ReadOnlySpan&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member IndexOf : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.IndexOf (span, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1115,10 +1189,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.IndexOf``1(System.Span{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IndexOf(Of T As IEquatable(Of T)) (span As Span(Of T), value As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int IndexOf(Span&lt;T&gt; span, T value);" />
+      <MemberSignature Language="F#" Value="static member IndexOf : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.IndexOf (span, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1149,10 +1225,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.IndexOfAny``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IndexOfAny(Of T As IEquatable(Of T)) (span As ReadOnlySpan(Of T), values As ReadOnlySpan(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int IndexOfAny(ReadOnlySpan&lt;T&gt; span, ReadOnlySpan&lt;T&gt; values);" />
+      <MemberSignature Language="F#" Value="static member IndexOfAny : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.IndexOfAny (span, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1183,10 +1261,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.IndexOfAny``1(System.Span{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IndexOfAny(Of T As IEquatable(Of T)) (span As Span(Of T), values As ReadOnlySpan(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int IndexOfAny(Span&lt;T&gt; span, ReadOnlySpan&lt;T&gt; values);" />
+      <MemberSignature Language="F#" Value="static member IndexOfAny : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.IndexOfAny (span, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1217,10 +1297,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.IndexOfAny``1(System.ReadOnlySpan{``0},``0,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IndexOfAny(Of T As IEquatable(Of T)) (span As ReadOnlySpan(Of T), value0 As T, value1 As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int IndexOfAny(ReadOnlySpan&lt;T&gt; span, T value0, T value1);" />
+      <MemberSignature Language="F#" Value="static member IndexOfAny : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T * 'T -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.IndexOfAny (span, value0, value1)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1253,10 +1335,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.IndexOfAny``1(System.Span{``0},``0,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IndexOfAny(Of T As IEquatable(Of T)) (span As Span(Of T), value0 As T, value1 As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int IndexOfAny(Span&lt;T&gt; span, T value0, T value1);" />
+      <MemberSignature Language="F#" Value="static member IndexOfAny : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T * 'T -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.IndexOfAny (span, value0, value1)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1289,10 +1373,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.IndexOfAny``1(System.ReadOnlySpan{``0},``0,``0,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IndexOfAny(Of T As IEquatable(Of T)) (span As ReadOnlySpan(Of T), value0 As T, value1 As T, value2 As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int IndexOfAny(ReadOnlySpan&lt;T&gt; span, T value0, T value1, T value2);" />
+      <MemberSignature Language="F#" Value="static member IndexOfAny : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T * 'T * 'T -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.IndexOfAny (span, value0, value1, value2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1327,10 +1413,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.IndexOfAny``1(System.Span{``0},``0,``0,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IndexOfAny(Of T As IEquatable(Of T)) (span As Span(Of T), value0 As T, value1 As T, value2 As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int IndexOfAny(Span&lt;T&gt; span, T value0, T value1, T value2);" />
+      <MemberSignature Language="F#" Value="static member IndexOfAny : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T * 'T * 'T -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.IndexOfAny (span, value0, value1, value2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1365,10 +1453,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.IsWhiteSpace(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function IsWhiteSpace (span As ReadOnlySpan(Of Char)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool IsWhiteSpace(ReadOnlySpan&lt;char&gt; span);" />
+      <MemberSignature Language="F#" Value="static member IsWhiteSpace : ReadOnlySpan&lt;char&gt; -&gt; bool" Usage="System.MemoryExtensions.IsWhiteSpace span" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1389,10 +1479,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.LastIndexOf``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LastIndexOf(Of T As IEquatable(Of T)) (span As ReadOnlySpan(Of T), value As ReadOnlySpan(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int LastIndexOf(ReadOnlySpan&lt;T&gt; span, ReadOnlySpan&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member LastIndexOf : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.LastIndexOf (span, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1423,10 +1515,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.LastIndexOf``1(System.ReadOnlySpan{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LastIndexOf(Of T As IEquatable(Of T)) (span As ReadOnlySpan(Of T), value As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int LastIndexOf(ReadOnlySpan&lt;T&gt; span, T value);" />
+      <MemberSignature Language="F#" Value="static member LastIndexOf : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.LastIndexOf (span, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1457,10 +1551,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.LastIndexOf``1(System.Span{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LastIndexOf(Of T As IEquatable(Of T)) (span As Span(Of T), value As ReadOnlySpan(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int LastIndexOf(Span&lt;T&gt; span, ReadOnlySpan&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member LastIndexOf : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.LastIndexOf (span, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1491,10 +1587,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.LastIndexOf``1(System.Span{``0},``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LastIndexOf(Of T As IEquatable(Of T)) (span As Span(Of T), value As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int LastIndexOf(Span&lt;T&gt; span, T value);" />
+      <MemberSignature Language="F#" Value="static member LastIndexOf : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.LastIndexOf (span, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1525,10 +1623,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.LastIndexOfAny``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LastIndexOfAny(Of T As IEquatable(Of T)) (span As ReadOnlySpan(Of T), values As ReadOnlySpan(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int LastIndexOfAny(ReadOnlySpan&lt;T&gt; span, ReadOnlySpan&lt;T&gt; values);" />
+      <MemberSignature Language="F#" Value="static member LastIndexOfAny : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.LastIndexOfAny (span, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1559,10 +1659,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.LastIndexOfAny``1(System.Span{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LastIndexOfAny(Of T As IEquatable(Of T)) (span As Span(Of T), values As ReadOnlySpan(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int LastIndexOfAny(Span&lt;T&gt; span, ReadOnlySpan&lt;T&gt; values);" />
+      <MemberSignature Language="F#" Value="static member LastIndexOfAny : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.LastIndexOfAny (span, values)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1593,10 +1695,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.LastIndexOfAny``1(System.ReadOnlySpan{``0},``0,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LastIndexOfAny(Of T As IEquatable(Of T)) (span As ReadOnlySpan(Of T), value0 As T, value1 As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int LastIndexOfAny(ReadOnlySpan&lt;T&gt; span, T value0, T value1);" />
+      <MemberSignature Language="F#" Value="static member LastIndexOfAny : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T * 'T -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.LastIndexOfAny (span, value0, value1)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1629,10 +1733,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.LastIndexOfAny``1(System.Span{``0},``0,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LastIndexOfAny(Of T As IEquatable(Of T)) (span As Span(Of T), value0 As T, value1 As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int LastIndexOfAny(Span&lt;T&gt; span, T value0, T value1);" />
+      <MemberSignature Language="F#" Value="static member LastIndexOfAny : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T * 'T -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.LastIndexOfAny (span, value0, value1)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1665,10 +1771,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.LastIndexOfAny``1(System.ReadOnlySpan{``0},``0,``0,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LastIndexOfAny(Of T As IEquatable(Of T)) (span As ReadOnlySpan(Of T), value0 As T, value1 As T, value2 As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int LastIndexOfAny(ReadOnlySpan&lt;T&gt; span, T value0, T value1, T value2);" />
+      <MemberSignature Language="F#" Value="static member LastIndexOfAny : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T * 'T * 'T -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.LastIndexOfAny (span, value0, value1, value2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1703,10 +1811,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.LastIndexOfAny``1(System.Span{``0},``0,``0,``0)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function LastIndexOfAny(Of T As IEquatable(Of T)) (span As Span(Of T), value0 As T, value1 As T, value2 As T) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int LastIndexOfAny(Span&lt;T&gt; span, T value0, T value1, T value2);" />
+      <MemberSignature Language="F#" Value="static member LastIndexOfAny : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * 'T * 'T * 'T -&gt; int (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.LastIndexOfAny (span, value0, value1, value2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1741,10 +1851,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Overlaps(Of T) (span As ReadOnlySpan(Of T), other As ReadOnlySpan(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Overlaps(ReadOnlySpan&lt;T&gt; span, ReadOnlySpan&lt;T&gt; other);" />
+      <MemberSignature Language="F#" Value="static member Overlaps : ReadOnlySpan&lt;'T&gt; * ReadOnlySpan&lt;'T&gt; -&gt; bool" Usage="System.MemoryExtensions.Overlaps (span, other)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1771,10 +1883,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Overlaps``1(System.Span{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Overlaps(Of T) (span As Span(Of T), other As ReadOnlySpan(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Overlaps(Span&lt;T&gt; span, ReadOnlySpan&lt;T&gt; other);" />
+      <MemberSignature Language="F#" Value="static member Overlaps : Span&lt;'T&gt; * ReadOnlySpan&lt;'T&gt; -&gt; bool" Usage="System.MemoryExtensions.Overlaps (span, other)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1801,10 +1915,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Overlaps``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0},System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Overlaps(Of T) (span As ReadOnlySpan(Of T), other As ReadOnlySpan(Of T), ByRef elementOffset As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Overlaps(ReadOnlySpan&lt;T&gt; span, ReadOnlySpan&lt;T&gt; other, [Runtime::InteropServices::Out] int % elementOffset);" />
+      <MemberSignature Language="F#" Value="static member Overlaps : ReadOnlySpan&lt;'T&gt; * ReadOnlySpan&lt;'T&gt; *  -&gt; bool" Usage="System.MemoryExtensions.Overlaps (span, other, elementOffset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1815,7 +1931,7 @@
       <Parameters>
         <Parameter Name="span" Type="System.ReadOnlySpan&lt;T&gt;" RefType="this" />
         <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" />
-        <Parameter Name="elementOffset" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="elementOffset" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1833,10 +1949,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Overlaps``1(System.Span{``0},System.ReadOnlySpan{``0},System.Int32@)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Overlaps(Of T) (span As Span(Of T), other As ReadOnlySpan(Of T), ByRef elementOffset As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool Overlaps(Span&lt;T&gt; span, ReadOnlySpan&lt;T&gt; other, [Runtime::InteropServices::Out] int % elementOffset);" />
+      <MemberSignature Language="F#" Value="static member Overlaps : Span&lt;'T&gt; * ReadOnlySpan&lt;'T&gt; *  -&gt; bool" Usage="System.MemoryExtensions.Overlaps (span, other, elementOffset)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1847,7 +1965,7 @@
       <Parameters>
         <Parameter Name="span" Type="System.Span&lt;T&gt;" RefType="this" />
         <Parameter Name="other" Type="System.ReadOnlySpan&lt;T&gt;" />
-        <Parameter Name="elementOffset" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="elementOffset" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -1865,10 +1983,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Reverse``1(System.Span{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub Reverse(Of T) (span As Span(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Reverse(Span&lt;T&gt; span);" />
+      <MemberSignature Language="F#" Value="static member Reverse : Span&lt;'T&gt; -&gt; unit" Usage="System.MemoryExtensions.Reverse span" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1892,10 +2012,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.SequenceCompareTo``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SequenceCompareTo(Of T As IComparable(Of T)) (span As ReadOnlySpan(Of T), other As ReadOnlySpan(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IComparable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int SequenceCompareTo(ReadOnlySpan&lt;T&gt; span, ReadOnlySpan&lt;T&gt; other);" />
+      <MemberSignature Language="F#" Value="static member SequenceCompareTo : ReadOnlySpan&lt;'T (requires 'T :&gt; IComparable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IComparable&lt;'T&gt;)&gt; -&gt; int (requires 'T :&gt; IComparable&lt;'T&gt;)" Usage="System.MemoryExtensions.SequenceCompareTo (span, other)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1926,10 +2048,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.SequenceCompareTo``1(System.Span{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SequenceCompareTo(Of T As IComparable(Of T)) (span As Span(Of T), other As ReadOnlySpan(Of T)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IComparable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static int SequenceCompareTo(Span&lt;T&gt; span, ReadOnlySpan&lt;T&gt; other);" />
+      <MemberSignature Language="F#" Value="static member SequenceCompareTo : Span&lt;'T (requires 'T :&gt; IComparable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IComparable&lt;'T&gt;)&gt; -&gt; int (requires 'T :&gt; IComparable&lt;'T&gt;)" Usage="System.MemoryExtensions.SequenceCompareTo (span, other)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1960,10 +2084,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.SequenceEqual``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SequenceEqual(Of T As IEquatable(Of T)) (span As ReadOnlySpan(Of T), other As ReadOnlySpan(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static bool SequenceEqual(ReadOnlySpan&lt;T&gt; span, ReadOnlySpan&lt;T&gt; other);" />
+      <MemberSignature Language="F#" Value="static member SequenceEqual : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; bool (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.SequenceEqual (span, other)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1994,10 +2120,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.SequenceEqual``1(System.Span{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function SequenceEqual(Of T As IEquatable(Of T)) (span As Span(Of T), other As ReadOnlySpan(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static bool SequenceEqual(Span&lt;T&gt; span, ReadOnlySpan&lt;T&gt; other);" />
+      <MemberSignature Language="F#" Value="static member SequenceEqual : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; bool (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.SequenceEqual (span, other)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2028,10 +2156,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.StartsWith(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char},System.StringComparison)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function StartsWith (span As ReadOnlySpan(Of Char), value As ReadOnlySpan(Of Char), comparisonType As StringComparison) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool StartsWith(ReadOnlySpan&lt;char&gt; span, ReadOnlySpan&lt;char&gt; value, StringComparison comparisonType);" />
+      <MemberSignature Language="F#" Value="static member StartsWith : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; * StringComparison -&gt; bool" Usage="System.MemoryExtensions.StartsWith (span, value, comparisonType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2056,10 +2186,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.StartsWith``1(System.ReadOnlySpan{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function StartsWith(Of T As IEquatable(Of T)) (span As ReadOnlySpan(Of T), value As ReadOnlySpan(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static bool StartsWith(ReadOnlySpan&lt;T&gt; span, ReadOnlySpan&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member StartsWith : ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; bool (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.StartsWith (span, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2090,10 +2222,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.StartsWith``1(System.Span{``0},System.ReadOnlySpan{``0})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function StartsWith(Of T As IEquatable(Of T)) (span As Span(Of T), value As ReadOnlySpan(Of T)) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : IEquatable&lt;T&gt;[System::Runtime::CompilerServices::Extension]&#xA; static bool StartsWith(Span&lt;T&gt; span, ReadOnlySpan&lt;T&gt; value);" />
+      <MemberSignature Language="F#" Value="static member StartsWith : Span&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; * ReadOnlySpan&lt;'T (requires 'T :&gt; IEquatable&lt;'T&gt;)&gt; -&gt; bool (requires 'T :&gt; IEquatable&lt;'T&gt;)" Usage="System.MemoryExtensions.StartsWith (span, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2124,10 +2258,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.ToLower(System.ReadOnlySpan{System.Char},System.Span{System.Char},System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToLower (source As ReadOnlySpan(Of Char), destination As Span(Of Char), culture As CultureInfo) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int ToLower(ReadOnlySpan&lt;char&gt; source, Span&lt;char&gt; destination, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="static member ToLower : ReadOnlySpan&lt;char&gt; * Span&lt;char&gt; * System.Globalization.CultureInfo -&gt; int" Usage="System.MemoryExtensions.ToLower (source, destination, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2152,10 +2288,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.ToLowerInvariant(System.ReadOnlySpan{System.Char},System.Span{System.Char})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToLowerInvariant (source As ReadOnlySpan(Of Char), destination As Span(Of Char)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int ToLowerInvariant(ReadOnlySpan&lt;char&gt; source, Span&lt;char&gt; destination);" />
+      <MemberSignature Language="F#" Value="static member ToLowerInvariant : ReadOnlySpan&lt;char&gt; * Span&lt;char&gt; -&gt; int" Usage="System.MemoryExtensions.ToLowerInvariant (source, destination)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2178,10 +2316,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.ToUpper(System.ReadOnlySpan{System.Char},System.Span{System.Char},System.Globalization.CultureInfo)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToUpper (source As ReadOnlySpan(Of Char), destination As Span(Of Char), culture As CultureInfo) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int ToUpper(ReadOnlySpan&lt;char&gt; source, Span&lt;char&gt; destination, System::Globalization::CultureInfo ^ culture);" />
+      <MemberSignature Language="F#" Value="static member ToUpper : ReadOnlySpan&lt;char&gt; * Span&lt;char&gt; * System.Globalization.CultureInfo -&gt; int" Usage="System.MemoryExtensions.ToUpper (source, destination, culture)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2206,10 +2346,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.ToUpperInvariant(System.ReadOnlySpan{System.Char},System.Span{System.Char})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function ToUpperInvariant (source As ReadOnlySpan(Of Char), destination As Span(Of Char)) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int ToUpperInvariant(ReadOnlySpan&lt;char&gt; source, Span&lt;char&gt; destination);" />
+      <MemberSignature Language="F#" Value="static member ToUpperInvariant : ReadOnlySpan&lt;char&gt; * Span&lt;char&gt; -&gt; int" Usage="System.MemoryExtensions.ToUpperInvariant (source, destination)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2232,10 +2374,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Trim(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Trim (span As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;char&gt; Trim(ReadOnlySpan&lt;char&gt; span);" />
+      <MemberSignature Language="F#" Value="static member Trim : ReadOnlySpan&lt;char&gt; -&gt; ReadOnlySpan&lt;char&gt;" Usage="System.MemoryExtensions.Trim span" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
@@ -2256,10 +2400,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Trim(System.ReadOnlySpan{System.Char},System.Char)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Trim (span As ReadOnlySpan(Of Char), trimChar As Char) As ReadOnlySpan(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;char&gt; Trim(ReadOnlySpan&lt;char&gt; span, char trimChar);" />
+      <MemberSignature Language="F#" Value="static member Trim : ReadOnlySpan&lt;char&gt; * char -&gt; ReadOnlySpan&lt;char&gt;" Usage="System.MemoryExtensions.Trim (span, trimChar)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
@@ -2282,10 +2428,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.Trim(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function Trim (span As ReadOnlySpan(Of Char), trimChars As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;char&gt; Trim(ReadOnlySpan&lt;char&gt; span, ReadOnlySpan&lt;char&gt; trimChars);" />
+      <MemberSignature Language="F#" Value="static member Trim : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; -&gt; ReadOnlySpan&lt;char&gt;" Usage="System.MemoryExtensions.Trim (span, trimChars)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
@@ -2308,10 +2456,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimEnd(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimEnd (span As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;char&gt; TrimEnd(ReadOnlySpan&lt;char&gt; span);" />
+      <MemberSignature Language="F#" Value="static member TrimEnd : ReadOnlySpan&lt;char&gt; -&gt; ReadOnlySpan&lt;char&gt;" Usage="System.MemoryExtensions.TrimEnd span" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
@@ -2332,10 +2482,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimEnd(System.ReadOnlySpan{System.Char},System.Char)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimEnd (span As ReadOnlySpan(Of Char), trimChar As Char) As ReadOnlySpan(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;char&gt; TrimEnd(ReadOnlySpan&lt;char&gt; span, char trimChar);" />
+      <MemberSignature Language="F#" Value="static member TrimEnd : ReadOnlySpan&lt;char&gt; * char -&gt; ReadOnlySpan&lt;char&gt;" Usage="System.MemoryExtensions.TrimEnd (span, trimChar)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
@@ -2358,10 +2510,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimEnd(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimEnd (span As ReadOnlySpan(Of Char), trimChars As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;char&gt; TrimEnd(ReadOnlySpan&lt;char&gt; span, ReadOnlySpan&lt;char&gt; trimChars);" />
+      <MemberSignature Language="F#" Value="static member TrimEnd : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; -&gt; ReadOnlySpan&lt;char&gt;" Usage="System.MemoryExtensions.TrimEnd (span, trimChars)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
@@ -2384,10 +2538,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimStart(System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimStart (span As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;char&gt; TrimStart(ReadOnlySpan&lt;char&gt; span);" />
+      <MemberSignature Language="F#" Value="static member TrimStart : ReadOnlySpan&lt;char&gt; -&gt; ReadOnlySpan&lt;char&gt;" Usage="System.MemoryExtensions.TrimStart span" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
@@ -2408,10 +2564,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimStart(System.ReadOnlySpan{System.Char},System.Char)" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimStart (span As ReadOnlySpan(Of Char), trimChar As Char) As ReadOnlySpan(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;char&gt; TrimStart(ReadOnlySpan&lt;char&gt; span, char trimChar);" />
+      <MemberSignature Language="F#" Value="static member TrimStart : ReadOnlySpan&lt;char&gt; * char -&gt; ReadOnlySpan&lt;char&gt;" Usage="System.MemoryExtensions.TrimStart (span, trimChar)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>
@@ -2434,10 +2592,12 @@
       <MemberSignature Language="DocId" Value="M:System.MemoryExtensions.TrimStart(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char})" />
       <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function TrimStart (span As ReadOnlySpan(Of Char), trimChars As ReadOnlySpan(Of Char)) As ReadOnlySpan(Of Char)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static ReadOnlySpan&lt;char&gt; TrimStart(ReadOnlySpan&lt;char&gt; span, ReadOnlySpan&lt;char&gt; trimChars);" />
+      <MemberSignature Language="F#" Value="static member TrimStart : ReadOnlySpan&lt;char&gt; * ReadOnlySpan&lt;char&gt; -&gt; ReadOnlySpan&lt;char&gt;" Usage="System.MemoryExtensions.TrimStart (span, trimChars)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlySpan&lt;System.Char&gt;</ReturnType>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.SequenceActivity" />
   <TypeSignature Language="VB.NET" Value="Public Class SequenceActivity&#xA;Inherits CompositeActivity&#xA;Implements IActivityEventListener(Of ActivityExecutionStatusChangedEventArgs)" />
   <TypeSignature Language="C++ CLI" Value="public ref class SequenceActivity : System::Workflow::ComponentModel::CompositeActivity, System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt;" />
+  <TypeSignature Language="F#" Value="type SequenceActivity = class&#xA;    inherit CompositeActivity&#xA;    interface IActivityEventListener&lt;ActivityExecutionStatusChangedEventArgs&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -17,16 +19,16 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.Designer(typeof(System.Workflow.Activities.SequenceDesigner), typeof(System.ComponentModel.Design.IDesigner))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.ComponentModel.ToolboxItem(typeof(System.Workflow.ComponentModel.Design.ActivityToolboxItem))</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Drawing.ToolboxBitmap(typeof(System.Workflow.Activities.SequenceActivity), "Resources.Sequence.png")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
       <AttributeName>System.Obsolete("The System.Workflow.* types are deprecated.  Instead, please use the new types from System.Activities.*")</AttributeName>
     </Attribute>
   </Attributes>
@@ -56,6 +58,7 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735795(v=vs.90)">Using the Sequence Activity</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -65,6 +68,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SequenceActivity" /> class.</summary>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735795(v=vs.90)">Using the Sequence Activity</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -76,6 +80,7 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -92,6 +97,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735795(v=vs.90)">Using the Sequence Activity</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -100,9 +106,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SequenceActivity.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; SequenceActivity(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.SequenceActivity : string -&gt; System.Workflow.Activities.SequenceActivity" Usage="new System.Workflow.Activities.SequenceActivity name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -112,6 +120,7 @@
         <param name="name">The user-defined name of the activity.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.SequenceActivity" /> class using the name of the activity.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735795(v=vs.90)">Using the Sequence Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -120,9 +129,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SequenceActivity.Cancel(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Cancel (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Cancel(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Cancel : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="sequenceActivity.Cancel executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -136,6 +147,7 @@
         <summary>Cancels the execution of the activity.</summary>
         <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of the activity after canceling the execution.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735795(v=vs.90)">Using the Sequence Activity</related>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -144,9 +156,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SequenceActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="sequenceActivity.Execute executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -160,6 +174,7 @@
         <summary>Executes the activity.</summary>
         <returns>The <see cref="T:System.Workflow.ComponentModel.ActivityExecutionStatus" /> of the activity after executing the activity.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735795(v=vs.90)">Using the Sequence Activity</related>
       </Docs>
     </Member>
     <Member MemberName="HandleFault">
@@ -167,9 +182,11 @@
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus HandleFault(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SequenceActivity.HandleFault(System.Workflow.ComponentModel.ActivityExecutionContext,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus HandleFault(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="override this.HandleFault : System.Workflow.ComponentModel.ActivityExecutionContext * Exception -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="sequenceActivity.HandleFault (executionContext, exception)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -193,9 +210,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SequenceActivity.OnActivityChangeRemove(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.Activity)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnActivityChangeRemove (executionContext As ActivityExecutionContext, removedActivity As Activity)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnActivityChangeRemove(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext, System::Workflow::ComponentModel::Activity ^ removedActivity);" />
+      <MemberSignature Language="F#" Value="override this.OnActivityChangeRemove : System.Workflow.ComponentModel.ActivityExecutionContext * System.Workflow.ComponentModel.Activity -&gt; unit" Usage="sequenceActivity.OnActivityChangeRemove (executionContext, removedActivity)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -218,9 +237,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SequenceActivity.OnSequenceComplete(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSequenceComplete (executionContext As ActivityExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSequenceComplete(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="abstract member OnSequenceComplete : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; unit&#xA;override this.OnSequenceComplete : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; unit" Usage="sequenceActivity.OnSequenceComplete executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,6 +256,7 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="executionContext" /> is a null reference (Nothing in Visual Basic).</exception>
+        <related type="Article" href="https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735795(v=vs.90)">Using the Sequence Activity</related>
       </Docs>
     </Member>
     <Member MemberName="OnWorkflowChangesCompleted">
@@ -243,9 +265,11 @@
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SequenceActivity.OnWorkflowChangesCompleted(System.Workflow.ComponentModel.ActivityExecutionContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnWorkflowChangesCompleted (executionContext As ActivityExecutionContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnWorkflowChangesCompleted(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
+      <MemberSignature Language="F#" Value="override this.OnWorkflowChangesCompleted : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; unit" Usage="sequenceActivity.OnWorkflowChangesCompleted executionContext" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -272,6 +296,7 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

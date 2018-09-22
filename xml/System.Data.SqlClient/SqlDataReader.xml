@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlDataReader" />
   <TypeSignature Language="VB.NET" Value="Public Class SqlDataReader&#xA;Inherits DbDataReader&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="public ref class SqlDataReader : System::Data::Common::DbDataReader, IDisposable" />
+  <TypeSignature Language="F#" Value="type SqlDataReader = class&#xA;    inherit DbDataReader&#xA;    interface IDataReader&#xA;    interface IDisposable&#xA;    interface IDataRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -11,6 +12,8 @@
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
+    <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -20,6 +23,7 @@
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Data.Common.DbDataReader</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netframework-1.1">System.MarshalByRefObject</BaseTypeName>
   </Base>
   <Interfaces>
     <Interface>
@@ -55,6 +59,9 @@
   
  ]]></format>
     </remarks>
+    <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders</related>
+    <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+    <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
   </Docs>
   <Members>
     <Member MemberName="Close">
@@ -63,14 +70,20 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.Close" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="sqlDataReader.Close " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataReader.Close</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -87,7 +100,7 @@
  The `Close` method fills in the values for output parameters, return values and `RecordsAffected`, increasing the time that it takes to close a `SqlDataReader` that was used to process a large or complex query. When the return values and the number of records affected by a query are not significant, the time that it takes to close the `SqlDataReader` can be reduced by calling the <xref:System.Data.SqlClient.SqlCommand.Cancel%2A> method of the associated <xref:System.Data.SqlClient.SqlCommand> object before calling the `Close` method.  
   
 > [!CAUTION]
->  Do not call `Close` or `Dispose` on a Connection, a DataReader, or any other managed object in the `Finalize` method of your class. In a finalizer, you should only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9).  
+>  Do not call `Close` or `Dispose` on a Connection, a DataReader, or any other managed object in the `Finalize` method of your class. In a finalizer, you should only release unmanaged resources that your class owns directly. If your class does not own any unmanaged resources, do not include a `Finalize` method in your class definition. For more information, see [Garbage Collection](~/docs/standard/garbage-collection/index.md).  
   
    
   
@@ -99,6 +112,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Connection">
@@ -107,6 +124,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.Connection" />
       <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Connection As SqlConnection" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Data::SqlClient::SqlConnection ^ Connection { System::Data::SqlClient::SqlConnection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Connection : System.Data.SqlClient.SqlConnection" Usage="System.Data.SqlClient.SqlDataReader.Connection" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -115,6 +133,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -129,6 +148,10 @@
         <summary>Gets the <see cref="T:System.Data.SqlClient.SqlConnection" /> associated with the <see cref="T:System.Data.SqlClient.SqlDataReader" />.</summary>
         <value>The <see cref="T:System.Data.SqlClient.SqlConnection" /> associated with the <see cref="T:System.Data.SqlClient.SqlDataReader" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Depth">
@@ -137,6 +160,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.Depth" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Depth As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Depth { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Depth : int" Usage="System.Data.SqlClient.SqlDataReader.Depth" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataReader.Depth</InterfaceMember>
@@ -148,6 +172,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -169,6 +195,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FieldCount">
@@ -177,6 +206,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.FieldCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FieldCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int FieldCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.FieldCount : int" Usage="System.Data.SqlClient.SqlDataReader.FieldCount" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataRecord.FieldCount</InterfaceMember>
@@ -188,6 +218,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -210,6 +242,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">There is no current connection to an instance of SQL Server.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetBoolean">
@@ -218,6 +253,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetBoolean(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBoolean (i As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetBoolean(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetBoolean : int -&gt; bool" Usage="sqlDataReader.GetBoolean i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetBoolean(System.Int32)</InterfaceMember>
@@ -229,6 +265,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -257,6 +295,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetByte">
@@ -265,6 +306,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetByte(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetByte (i As Integer) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Byte GetByte(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetByte : int -&gt; byte" Usage="sqlDataReader.GetByte i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetByte(System.Int32)</InterfaceMember>
@@ -276,6 +318,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -304,6 +348,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetBytes">
@@ -312,6 +359,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBytes (i As Integer, dataIndex As Long, buffer As Byte(), bufferIndex As Integer, length As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetBytes(int i, long dataIndex, cli::array &lt;System::Byte&gt; ^ buffer, int bufferIndex, int length);" />
+      <MemberSignature Language="F#" Value="override this.GetBytes : int * int64 * byte[] * int * int -&gt; int64" Usage="sqlDataReader.GetBytes (i, dataIndex, buffer, bufferIndex, length)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)</InterfaceMember>
@@ -323,6 +371,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -360,6 +410,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetChar">
@@ -368,6 +421,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetChar(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChar (i As Integer) As Char" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override char GetChar(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetChar : int -&gt; char" Usage="sqlDataReader.GetChar i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetChar(System.Int32)</InterfaceMember>
@@ -379,6 +433,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -387,7 +443,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinmac-3.0">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -410,6 +469,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetChars">
@@ -418,6 +478,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChars (i As Integer, dataIndex As Long, buffer As Char(), bufferIndex As Integer, length As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetChars(int i, long dataIndex, cli::array &lt;char&gt; ^ buffer, int bufferIndex, int length);" />
+      <MemberSignature Language="F#" Value="override this.GetChars : int * int64 * char[] * int * int -&gt; int64" Usage="sqlDataReader.GetChars (i, dataIndex, buffer, bufferIndex, length)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)</InterfaceMember>
@@ -429,6 +490,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -469,6 +532,45 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
+      </Docs>
+    </Member>
+    <Member MemberName="GetData">
+      <MemberSignature Language="C#" Value="public System.Data.IDataReader GetData (int i);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.IDataReader GetData(int32 i) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetData(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetData (i As Integer) As IDataReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::IDataReader ^ GetData(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetData : int -&gt; System.Data.IDataReader&#xA;override this.GetData : int -&gt; System.Data.IDataReader" Usage="sqlDataReader.GetData i" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetData(System.Int32)</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-1.1">
+          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Data.IDataReader</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="i" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="i">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetDataTypeName">
@@ -477,6 +579,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetDataTypeName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDataTypeName (i As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDataTypeName(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetDataTypeName : int -&gt; string" Usage="sqlDataReader.GetDataTypeName i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetDataTypeName(System.Int32)</InterfaceMember>
@@ -488,6 +591,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -515,6 +620,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDateTime">
@@ -523,6 +629,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetDateTime(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDateTime (i As Integer) As DateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override DateTime GetDateTime(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetDateTime : int -&gt; DateTime" Usage="sqlDataReader.GetDateTime i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetDateTime(System.Int32)</InterfaceMember>
@@ -534,6 +641,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -562,6 +671,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDateTimeOffset">
@@ -570,6 +682,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetDateTimeOffset(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDateTimeOffset (i As Integer) As DateTimeOffset" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual DateTimeOffset GetDateTimeOffset(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetDateTimeOffset : int -&gt; DateTimeOffset&#xA;override this.GetDateTimeOffset : int -&gt; DateTimeOffset" Usage="sqlDataReader.GetDateTimeOffset i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -578,6 +691,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -606,6 +720,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6f5ff56a-a57e-49d7-8ae9-bbed697e42e3">Date and Time Data Types (Katmai)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDecimal">
@@ -614,6 +732,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetDecimal(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDecimal (i As Integer) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Decimal GetDecimal(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetDecimal : int -&gt; decimal" Usage="sqlDataReader.GetDecimal i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetDecimal(System.Int32)</InterfaceMember>
@@ -625,6 +744,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -653,6 +774,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDouble">
@@ -661,6 +785,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetDouble(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDouble (i As Integer) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override double GetDouble(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetDouble : int -&gt; double" Usage="sqlDataReader.GetDouble i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetDouble(System.Int32)</InterfaceMember>
@@ -672,6 +797,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -700,6 +827,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -708,6 +838,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetEnumerator" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="sqlDataReader.GetEnumerator " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -716,6 +847,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -738,6 +870,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetFieldType">
@@ -746,6 +881,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetFieldType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFieldType (i As Integer) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetFieldType(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetFieldType : int -&gt; Type" Usage="sqlDataReader.GetFieldType i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetFieldType(System.Int32)</InterfaceMember>
@@ -757,6 +893,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -775,6 +913,9 @@
         <summary>Gets the <see cref="T:System.Type" /> that is the data type of the object.</summary>
         <returns>The <see cref="T:System.Type" /> that is the data type of the object. If the type does not exist on the client, in the case of a User-Defined Type (UDT) returned from the database, **GetFieldType** returns null.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetFieldValue&lt;T&gt;">
@@ -783,6 +924,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetFieldValue``1(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFieldValue(Of T) (i As Integer) As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; override T GetFieldValue(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetFieldValue : int -&gt; 'T" Usage="sqlDataReader.GetFieldValue i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -852,6 +994,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; GetFieldValueAsync&lt;T&gt;(int32 i, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetFieldValueAsync``1(System.Int32,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; override System::Threading::Tasks::Task&lt;T&gt; ^ GetFieldValueAsync(int i, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.GetFieldValueAsync : int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="sqlDataReader.GetFieldValueAsync (i, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -926,6 +1069,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetFloat(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFloat (i As Integer) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override float GetFloat(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetFloat : int -&gt; single" Usage="sqlDataReader.GetFloat i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetFloat(System.Int32)</InterfaceMember>
@@ -937,6 +1081,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -965,6 +1111,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetGuid">
@@ -973,6 +1122,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetGuid(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGuid (i As Integer) As Guid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Guid GetGuid(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetGuid : int -&gt; Guid" Usage="sqlDataReader.GetGuid i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetGuid(System.Int32)</InterfaceMember>
@@ -984,6 +1134,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1012,6 +1164,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetInt16">
@@ -1020,6 +1175,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetInt16(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt16 (i As Integer) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override short GetInt16(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetInt16 : int -&gt; int16" Usage="sqlDataReader.GetInt16 i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetInt16(System.Int32)</InterfaceMember>
@@ -1031,6 +1187,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1059,6 +1217,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetInt32">
@@ -1067,6 +1228,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetInt32(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt32 (i As Integer) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetInt32(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetInt32 : int -&gt; int" Usage="sqlDataReader.GetInt32 i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetInt32(System.Int32)</InterfaceMember>
@@ -1078,6 +1240,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1106,6 +1270,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetInt64">
@@ -1114,6 +1281,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetInt64(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInt64 (i As Integer) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override long GetInt64(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetInt64 : int -&gt; int64" Usage="sqlDataReader.GetInt64 i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetInt64(System.Int32)</InterfaceMember>
@@ -1125,6 +1293,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1153,6 +1323,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetName">
@@ -1161,6 +1334,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetName(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetName (i As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetName(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetName : int -&gt; string" Usage="sqlDataReader.GetName i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetName(System.Int32)</InterfaceMember>
@@ -1172,6 +1346,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1190,6 +1366,9 @@
         <summary>Gets the name of the specified column.</summary>
         <returns>The name of the specified column.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetOrdinal">
@@ -1198,6 +1377,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetOrdinal(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetOrdinal (name As String) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetOrdinal(System::String ^ name);" />
+      <MemberSignature Language="F#" Value="override this.GetOrdinal : string -&gt; int" Usage="sqlDataReader.GetOrdinal name" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetOrdinal(System.String)</InterfaceMember>
@@ -1209,6 +1389,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1247,6 +1429,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">The name specified is not a valid column name.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetProviderSpecificFieldType">
@@ -1255,6 +1440,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetProviderSpecificFieldType(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProviderSpecificFieldType (i As Integer) As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetProviderSpecificFieldType(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetProviderSpecificFieldType : int -&gt; Type" Usage="sqlDataReader.GetProviderSpecificFieldType i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1263,6 +1449,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1281,6 +1468,9 @@
         <summary>Gets an <see langword="Object" /> that is a representation of the underlying provider-specific field type.</summary>
         <returns>Gets an <see cref="T:System.Object" /> that is a representation of the underlying provider-specific field type.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetProviderSpecificValue">
@@ -1289,6 +1479,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProviderSpecificValue (i As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetProviderSpecificValue(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetProviderSpecificValue : int -&gt; obj" Usage="sqlDataReader.GetProviderSpecificValue i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1297,6 +1488,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1315,6 +1507,10 @@
         <summary>Gets an <see langword="Object" /> that is a representation of the underlying provider specific value.</summary>
         <returns>An <see cref="T:System.Object" /> that is a representation of the underlying provider specific value.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetProviderSpecificValues">
@@ -1323,6 +1519,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetProviderSpecificValues(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProviderSpecificValues (values As Object()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetProviderSpecificValues(cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="override this.GetProviderSpecificValues : obj[] -&gt; int" Usage="sqlDataReader.GetProviderSpecificValues values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1331,6 +1528,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1349,6 +1547,10 @@
         <summary>Gets an array of objects that are a representation of the underlying provider specific values.</summary>
         <returns>The array of objects that are a representation of the underlying provider specific values.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSchemaTable">
@@ -1357,14 +1559,20 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSchemaTable" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSchemaTable () As DataTable" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::DataTable ^ GetSchemaTable();" />
+      <MemberSignature Language="F#" Value="override this.GetSchemaTable : unit -&gt; System.Data.DataTable" Usage="sqlDataReader.GetSchemaTable " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataReader.GetSchemaTable</InterfaceMember>
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
@@ -1389,7 +1597,7 @@
 |BaseTableName|The name of the table or view in the data store that contains the column. A null value if the base table name cannot be determined. The default of this column is a null value.|  
 |ColumnName|The name of the column; this might not be unique. If this cannot be determined, a null value is returned. This name always reflects the most recent renaming of the column in the current view or command text.|  
 |ColumnOrdinal|The zero-based ordinal of the column. This column cannot contain a null value.|  
-|ColumnSize|The maximum possible length of a value in the column. For columns that use a fixed-length data type, this is the size of the data type. For `nvarchar(MAX)`, `varchar(MAX)`, and `varbinary(MAX)` columns stored in a SQL Server database, the maximum size is 2GB. If these columns are stored and accessed as files, the limit on maximum size is imposed by the file system. This value changes when using the `Type System Version` keyword in the connection string.  For new types they are represented as downlevel types. The MAX data types return the normal 4k for `nvarchar` and 8000 for `varchar`. For more information, see the Transact-SQL reference in SQL Server Books Online.|  
+|ColumnSize|The maximum possible length of a value in the column. For columns that use a fixed-length data type, this is the size of the data type. For `nvarchar(MAX)`, `varchar(MAX)`, and `varbinary(MAX)` columns stored in a SQL Server database, the maximum size is 2GB. If these columns are stored and accessed as files, the limit on maximum size is imposed by the file system. This value changes when using the `Type System Version` keyword in the connection string.  For new types they are represented as downlevel types. The MAX data types return the normal 4k for `nvarchar` and 8000 for `varchar`. For more information, see the [Transact-SQL reference](/sql/t-sql/language-reference).|
 |DataTypeName|Returns a string representing the data type of the specified column.|  
 |IsAliased|`true`: The column name is an alias.<br /><br /> `false`: The column name is not an alias.|  
 |IsAutoIncrement|`true`: The column assigns values to new rows in fixed increments.<br /><br /> `false`: The column does not assign values to new rows in fixed increments. The default of this column is `false`.|  
@@ -1418,6 +1626,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Data.SqlClient.SqlDataReader" /> is closed.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlBinary">
@@ -1426,6 +1635,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlBinary(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlBinary (i As Integer) As SqlBinary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlBinary GetSqlBinary(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlBinary : int -&gt; System.Data.SqlTypes.SqlBinary&#xA;override this.GetSqlBinary : int -&gt; System.Data.SqlTypes.SqlBinary" Usage="sqlDataReader.GetSqlBinary i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1434,6 +1644,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1459,6 +1671,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlBoolean">
@@ -1467,6 +1683,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlBoolean(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlBoolean (i As Integer) As SqlBoolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlBoolean GetSqlBoolean(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlBoolean : int -&gt; System.Data.SqlTypes.SqlBoolean&#xA;override this.GetSqlBoolean : int -&gt; System.Data.SqlTypes.SqlBoolean" Usage="sqlDataReader.GetSqlBoolean i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1475,6 +1692,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1500,6 +1719,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlByte">
@@ -1508,6 +1731,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlByte(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlByte (i As Integer) As SqlByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlByte GetSqlByte(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlByte : int -&gt; System.Data.SqlTypes.SqlByte&#xA;override this.GetSqlByte : int -&gt; System.Data.SqlTypes.SqlByte" Usage="sqlDataReader.GetSqlByte i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1516,6 +1740,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1541,6 +1767,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlBytes">
@@ -1549,6 +1779,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlBytes(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlBytes (i As Integer) As SqlBytes" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlBytes ^ GetSqlBytes(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlBytes : int -&gt; System.Data.SqlTypes.SqlBytes&#xA;override this.GetSqlBytes : int -&gt; System.Data.SqlTypes.SqlBytes" Usage="sqlDataReader.GetSqlBytes i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1557,6 +1788,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1575,6 +1807,10 @@
         <summary>Gets the value of the specified column as <see cref="T:System.Data.SqlTypes.SqlBytes" />.</summary>
         <returns>The value of the column expressed as a <see cref="T:System.Data.SqlTypes.SqlBytes" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlChars">
@@ -1583,6 +1819,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlChars(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlChars (i As Integer) As SqlChars" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlChars ^ GetSqlChars(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlChars : int -&gt; System.Data.SqlTypes.SqlChars&#xA;override this.GetSqlChars : int -&gt; System.Data.SqlTypes.SqlChars" Usage="sqlDataReader.GetSqlChars i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1591,6 +1828,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1609,6 +1847,10 @@
         <summary>Gets the value of the specified column as <see cref="T:System.Data.SqlTypes.SqlChars" />.</summary>
         <returns>The value of the column expressed as a  <see cref="T:System.Data.SqlTypes.SqlChars" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlDateTime">
@@ -1617,6 +1859,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlDateTime(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDateTime (i As Integer) As SqlDateTime" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlDateTime GetSqlDateTime(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDateTime : int -&gt; System.Data.SqlTypes.SqlDateTime&#xA;override this.GetSqlDateTime : int -&gt; System.Data.SqlTypes.SqlDateTime" Usage="sqlDataReader.GetSqlDateTime i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1625,6 +1868,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1650,6 +1895,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlDecimal">
@@ -1658,6 +1907,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlDecimal(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDecimal (i As Integer) As SqlDecimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlDecimal GetSqlDecimal(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDecimal : int -&gt; System.Data.SqlTypes.SqlDecimal&#xA;override this.GetSqlDecimal : int -&gt; System.Data.SqlTypes.SqlDecimal" Usage="sqlDataReader.GetSqlDecimal i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1666,6 +1916,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1691,6 +1943,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlDouble">
@@ -1699,6 +1955,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlDouble(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlDouble (i As Integer) As SqlDouble" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlDouble GetSqlDouble(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlDouble : int -&gt; System.Data.SqlTypes.SqlDouble&#xA;override this.GetSqlDouble : int -&gt; System.Data.SqlTypes.SqlDouble" Usage="sqlDataReader.GetSqlDouble i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1707,6 +1964,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1732,6 +1991,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlGuid">
@@ -1740,6 +2003,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlGuid(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlGuid (i As Integer) As SqlGuid" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlGuid GetSqlGuid(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlGuid : int -&gt; System.Data.SqlTypes.SqlGuid&#xA;override this.GetSqlGuid : int -&gt; System.Data.SqlTypes.SqlGuid" Usage="sqlDataReader.GetSqlGuid i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1748,6 +2012,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1773,6 +2039,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlInt16">
@@ -1781,6 +2051,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlInt16(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlInt16 (i As Integer) As SqlInt16" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlInt16 GetSqlInt16(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlInt16 : int -&gt; System.Data.SqlTypes.SqlInt16&#xA;override this.GetSqlInt16 : int -&gt; System.Data.SqlTypes.SqlInt16" Usage="sqlDataReader.GetSqlInt16 i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1789,6 +2060,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1814,6 +2087,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlInt32">
@@ -1822,6 +2099,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlInt32(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlInt32 (i As Integer) As SqlInt32" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlInt32 GetSqlInt32(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlInt32 : int -&gt; System.Data.SqlTypes.SqlInt32&#xA;override this.GetSqlInt32 : int -&gt; System.Data.SqlTypes.SqlInt32" Usage="sqlDataReader.GetSqlInt32 i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1830,6 +2108,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1855,6 +2135,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlInt64">
@@ -1863,6 +2147,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlInt64(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlInt64 (i As Integer) As SqlInt64" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlInt64 GetSqlInt64(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlInt64 : int -&gt; System.Data.SqlTypes.SqlInt64&#xA;override this.GetSqlInt64 : int -&gt; System.Data.SqlTypes.SqlInt64" Usage="sqlDataReader.GetSqlInt64 i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1871,6 +2156,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1896,6 +2183,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlMoney">
@@ -1904,6 +2195,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlMoney(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlMoney (i As Integer) As SqlMoney" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlMoney GetSqlMoney(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlMoney : int -&gt; System.Data.SqlTypes.SqlMoney&#xA;override this.GetSqlMoney : int -&gt; System.Data.SqlTypes.SqlMoney" Usage="sqlDataReader.GetSqlMoney i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1912,6 +2204,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1937,6 +2231,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlSingle">
@@ -1945,6 +2243,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlSingle(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlSingle (i As Integer) As SqlSingle" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlSingle GetSqlSingle(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlSingle : int -&gt; System.Data.SqlTypes.SqlSingle&#xA;override this.GetSqlSingle : int -&gt; System.Data.SqlTypes.SqlSingle" Usage="sqlDataReader.GetSqlSingle i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1953,6 +2252,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -1978,6 +2279,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlString">
@@ -1986,6 +2291,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlString(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlString (i As Integer) As SqlString" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlString GetSqlString(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlString : int -&gt; System.Data.SqlTypes.SqlString&#xA;override this.GetSqlString : int -&gt; System.Data.SqlTypes.SqlString" Usage="sqlDataReader.GetSqlString i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1994,6 +2300,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2019,6 +2327,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlValue">
@@ -2027,6 +2339,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlValue (i As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetSqlValue(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlValue : int -&gt; obj&#xA;override this.GetSqlValue : int -&gt; obj" Usage="sqlDataReader.GetSqlValue i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2035,6 +2348,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2060,6 +2375,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlValues">
@@ -2068,6 +2387,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlValues(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlValues (values As Object()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetSqlValues(cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlValues : obj[] -&gt; int&#xA;override this.GetSqlValues : obj[] -&gt; int" Usage="sqlDataReader.GetSqlValues values" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2076,6 +2396,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2103,6 +2425,10 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="values" /> is null.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetSqlXml">
@@ -2111,6 +2437,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetSqlXml(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSqlXml (i As Integer) As SqlXml" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::SqlTypes::SqlXml ^ GetSqlXml(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetSqlXml : int -&gt; System.Data.SqlTypes.SqlXml&#xA;override this.GetSqlXml : int -&gt; System.Data.SqlTypes.SqlXml" Usage="sqlDataReader.GetSqlXml i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2119,6 +2446,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2149,6 +2477,10 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The index passed was outside the range of 0 to <see cref="P:System.Data.DataTableReader.FieldCount" /> - 1</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to read or access columns in a closed <see cref="T:System.Data.SqlClient.SqlDataReader" />.</exception>
         <exception cref="T:System.InvalidCastException">The retrieved data is not compatible with the <see cref="T:System.Data.SqlTypes.SqlXml" /> type.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/retrieving-and-modifying-data.md">Manipulating Data (ADO.NET)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetStream">
@@ -2157,6 +2489,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetStream(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStream (i As Integer) As Stream" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IO::Stream ^ GetStream(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetStream : int -&gt; System.IO.Stream" Usage="sqlDataReader.GetStream i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2247,6 +2580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetString(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetString (i As Integer) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetString(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetString : int -&gt; string" Usage="sqlDataReader.GetString i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetString(System.Int32)</InterfaceMember>
@@ -2258,6 +2592,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2286,6 +2622,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetTextReader">
@@ -2294,6 +2634,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetTextReader(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetTextReader (i As Integer) As TextReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IO::TextReader ^ GetTextReader(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetTextReader : int -&gt; System.IO.TextReader" Usage="sqlDataReader.GetTextReader i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2366,6 +2707,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetTimeSpan(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTimeSpan (i As Integer) As TimeSpan" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TimeSpan GetTimeSpan(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetTimeSpan : int -&gt; TimeSpan&#xA;override this.GetTimeSpan : int -&gt; TimeSpan" Usage="sqlDataReader.GetTimeSpan i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2374,6 +2716,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2402,6 +2745,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.InvalidCastException">The specified cast is not valid.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/6f5ff56a-a57e-49d7-8ae9-bbed697e42e3">Date and Time Data Types (Katmai)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetValue">
@@ -2410,6 +2757,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetValue(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (i As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(int i);" />
+      <MemberSignature Language="F#" Value="override this.GetValue : int -&gt; obj" Usage="sqlDataReader.GetValue i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetValue(System.Int32)</InterfaceMember>
@@ -2421,6 +2769,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2446,6 +2796,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetValues">
@@ -2454,6 +2808,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetValues(System.Object[])" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValues (values As Object()) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetValues(cli::array &lt;System::Object ^&gt; ^ values);" />
+      <MemberSignature Language="F#" Value="override this.GetValues : obj[] -&gt; int" Usage="sqlDataReader.GetValues values" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.GetValues(System.Object[])</InterfaceMember>
@@ -2465,6 +2820,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2502,6 +2859,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/81b43550-23e8-43bb-b460-7eb8ac825c33">Working with SqlTypes</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetXmlReader">
@@ -2510,6 +2871,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.GetXmlReader(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetXmlReader (i As Integer) As XmlReader" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlReader ^ GetXmlReader(int i);" />
+      <MemberSignature Language="F#" Value="abstract member GetXmlReader : int -&gt; System.Xml.XmlReader&#xA;override this.GetXmlReader : int -&gt; System.Xml.XmlReader" Usage="sqlDataReader.GetXmlReader i" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2568,6 +2930,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.HasRows" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property HasRows As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasRows { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.HasRows : bool" Usage="System.Data.SqlClient.SqlDataReader.HasRows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2576,6 +2939,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2591,6 +2956,9 @@
         <value>
           <see langword="true" /> if the <see cref="T:System.Data.SqlClient.SqlDataReader" /> contains one or more rows; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsClosed">
@@ -2599,6 +2967,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.IsClosed" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsClosed As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsClosed { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsClosed : bool" Usage="System.Data.SqlClient.SqlDataReader.IsClosed" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataReader.IsClosed</InterfaceMember>
@@ -2610,6 +2979,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2632,6 +3003,10 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsCommandBehavior">
@@ -2640,11 +3015,16 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.IsCommandBehavior(System.Data.CommandBehavior)" />
       <MemberSignature Language="VB.NET" Value="Protected Function IsCommandBehavior (condition As CommandBehavior) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsCommandBehavior(System::Data::CommandBehavior condition);" />
+      <MemberSignature Language="F#" Value="member this.IsCommandBehavior : System.Data.CommandBehavior -&gt; bool" Usage="sqlDataReader.IsCommandBehavior condition" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2665,6 +3045,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsDBNull">
@@ -2673,6 +3054,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.IsDBNull(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDBNull (i As Integer) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDBNull(int i);" />
+      <MemberSignature Language="F#" Value="override this.IsDBNull : int -&gt; bool" Usage="sqlDataReader.IsDBNull i" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataRecord.IsDBNull(System.Int32)</InterfaceMember>
@@ -2684,6 +3066,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2713,6 +3097,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="IsDBNullAsync">
@@ -2720,6 +3107,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; IsDBNullAsync(int32 i, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.IsDBNullAsync(System.Int32,System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;bool&gt; ^ IsDBNullAsync(int i, System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.IsDBNullAsync : int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="sqlDataReader.IsDBNullAsync (i, cancellationToken)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2780,6 +3168,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Gets the value of a column in its native format.</summary>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
@@ -2788,6 +3177,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.Item(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overrides ReadOnly Property Item(i As Integer) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[int] { System::Object ^ get(int i); };" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="System.Data.SqlClient.SqlDataReader.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataRecord.Item(System.Int32)</InterfaceMember>
@@ -2799,6 +3189,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2818,6 +3210,9 @@
         <value>The value of the specified column in its native format.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.IndexOutOfRangeException">The index passed was outside the range of 0 through <see cref="P:System.Data.IDataRecord.FieldCount" />.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Item">
@@ -2826,6 +3221,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.Item(System.String)" />
       <MemberSignature Language="VB.NET" Value="Default Public Overrides ReadOnly Property Item(name As String) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj" Usage="System.Data.SqlClient.SqlDataReader.Item" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataRecord.Item(System.String)</InterfaceMember>
@@ -2837,6 +3233,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2865,6 +3263,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.IndexOutOfRangeException">No column with the specified name was found.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="NextResult">
@@ -2873,6 +3274,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.NextResult" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function NextResult () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool NextResult();" />
+      <MemberSignature Language="F#" Value="override this.NextResult : unit -&gt; bool" Usage="sqlDataReader.NextResult " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataReader.NextResult</InterfaceMember>
@@ -2884,6 +3286,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -2909,6 +3313,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="NextResultAsync">
@@ -2916,6 +3323,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; NextResultAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.NextResultAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;bool&gt; ^ NextResultAsync(System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.NextResultAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="sqlDataReader.NextResultAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2954,6 +3362,7 @@
   
  <see langword="Context Connection=true" /> is specified in the connection string.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">SQL Server returned an error while executing the command text.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="Read">
@@ -2962,6 +3371,7 @@
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.Read" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Read () As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Read();" />
+      <MemberSignature Language="F#" Value="override this.Read : unit -&gt; bool" Usage="sqlDataReader.Read " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.Data.IDataReader.Read</InterfaceMember>
@@ -2973,6 +3383,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3007,6 +3419,10 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Data.SqlClient.SqlException">SQL Server returned an error while executing the command text.</exception>
+        <related type="Article" href="http://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="ReadAsync">
@@ -3014,6 +3430,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; ReadAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.ReadAsync(System.Threading.CancellationToken)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;bool&gt; ^ ReadAsync(System::Threading::CancellationToken cancellationToken);" />
+      <MemberSignature Language="F#" Value="override this.ReadAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="sqlDataReader.ReadAsync cancellationToken" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3054,6 +3471,7 @@
   
  <see langword="Context Connection=true" /> is specified in the connection string.</exception>
         <exception cref="T:System.Data.SqlClient.SqlException">SQL Server returned an error while executing the command text.</exception>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
     <Member MemberName="RecordsAffected">
@@ -3062,6 +3480,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.RecordsAffected" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RecordsAffected As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int RecordsAffected { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.RecordsAffected : int" Usage="System.Data.SqlClient.SqlDataReader.RecordsAffected" />
       <MemberType>Property</MemberType>
       <Implements>
         <InterfaceMember>P:System.Data.IDataReader.RecordsAffected</InterfaceMember>
@@ -3073,6 +3492,8 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3090,14 +3511,43 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> property is not set until all rows are read and you close the <xref:System.Data.SqlClient.SqlDataReader>.  
-  
  The value of this property is cumulative. For example, if two records are inserted in batch mode, the value of `RecordsAffected` will be two.  
   
  <xref:System.Data.SqlClient.SqlDataReader.IsClosed%2A> and <xref:System.Data.SqlClient.SqlDataReader.RecordsAffected%2A> are the only properties that you can call after the <xref:System.Data.SqlClient.SqlDataReader> is closed.  
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/7e51d44e-7c4e-4040-9332-f0190fe36f07">SQL Server Connection Pooling (ADO.NET)</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
+      </Docs>
+    </Member>
+    <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
+      <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Data.IDataRecord.GetData">
@@ -3112,10 +3562,17 @@
       </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3137,6 +3594,33 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
+      </Docs>
+    </Member>
+    <Member MemberName="System.IDisposable.Dispose">
+      <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
+      <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataReader.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="VisibleFieldCount">
@@ -3145,6 +3629,7 @@
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataReader.VisibleFieldCount" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property VisibleFieldCount As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int VisibleFieldCount { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.VisibleFieldCount : int" Usage="System.Data.SqlClient.SqlDataReader.VisibleFieldCount" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -3153,6 +3638,7 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -3174,6 +3660,9 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74">DataAdapters and DataReaders (ADO.NET)</related>
+        <related type="Article" href="~/docs/framework/data/adonet/sql/index.md">SQL Server and ADO.NET</related>
+        <related type="Article" href="~/docs/framework/data/adonet/ado-net-overview.md">ADO.NET Overview</related>
       </Docs>
     </Member>
   </Members>

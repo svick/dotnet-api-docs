@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadLocal`1" />
   <TypeSignature Language="VB.NET" Value="Public Class ThreadLocal(Of T)&#xA;Implements IDisposable" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ThreadLocal : IDisposable" />
+  <TypeSignature Language="F#" Value="type ThreadLocal&lt;'T&gt; = class&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,11 +33,14 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerDisplay("IsValueCreated={IsValueCreated}, Value={ValueForDebugDisplay}, Count={ValuesCountForDebugDisplay}")</AttributeName>
     </Attribute>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.Threading.SystemThreading_ThreadLocalDebugView`1))</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0">
+      <AttributeName>System.Diagnostics.DebuggerDisplay("IsValueCreated={IsValueCreated}, Value={ValueForDebugDisplay}")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -56,6 +60,8 @@
     <threadsafe>With the exception of <see cref="M:System.Threading.ThreadLocal`1.Dispose" />, all public and protected members of <see cref="T:System.Threading.ThreadLocal`1" /> are thread-safe and may be used concurrently from multiple threads. The value returned for the <see cref="P:System.Threading.ThreadLocal`1.Value" /> and <see cref="P:System.Threading.ThreadLocal`1.IsValueCreated" /> properties is specific for the thread on which the property is accessed.</threadsafe>
     <altmember cref="T:System.Lazy`1" />
     <altmember cref="T:System.Threading.AsyncLocal`1" />
+    <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -92,6 +98,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes the <see cref="T:System.Threading.ThreadLocal`1" /> instance.</summary>
@@ -106,6 +117,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Lazy`1" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -114,6 +127,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.#ctor(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (trackAllValues As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadLocal(bool trackAllValues);" />
+      <MemberSignature Language="F#" Value="new System.Threading.ThreadLocal&lt;'T&gt; : bool -&gt; System.Threading.ThreadLocal&lt;'T&gt;" Usage="new System.Threading.ThreadLocal&lt;'T&gt; trackAllValues" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -154,6 +168,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.#ctor(System.Func{`0})" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T))" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadLocal(Func&lt;T&gt; ^ valueFactory);" />
+      <MemberSignature Language="F#" Value="new System.Threading.ThreadLocal&lt;'T&gt; : Func&lt;'T&gt; -&gt; System.Threading.ThreadLocal&lt;'T&gt;" Usage="new System.Threading.ThreadLocal&lt;'T&gt; valueFactory" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -181,6 +196,8 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="valueFactory" /> is a null reference (Nothing in Visual Basic).</exception>
         <altmember cref="T:System.Lazy`1" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -189,6 +206,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.#ctor(System.Func{`0},System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T), trackAllValues As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadLocal(Func&lt;T&gt; ^ valueFactory, bool trackAllValues);" />
+      <MemberSignature Language="F#" Value="new System.Threading.ThreadLocal&lt;'T&gt; : Func&lt;'T&gt; * bool -&gt; System.Threading.ThreadLocal&lt;'T&gt;" Usage="new System.Threading.ThreadLocal&lt;'T&gt; (valueFactory, trackAllValues)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -244,6 +262,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.Dispose" />
       <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="threadLocal.Dispose " />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
@@ -284,6 +303,8 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Lazy`1" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="Dispose">
@@ -292,6 +313,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.Dispose(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="threadLocal.Dispose disposing" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -327,14 +349,17 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Lazy`1" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="~ThreadLocal`1 ();" />
+      <MemberSignature Language="C#" Value="~ThreadLocal ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.Finalize" />
       <MemberSignature Language="VB.NET" Value="Finalize ()" />
       <MemberSignature Language="C++ CLI" Value="!ThreadLocal`1 ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="threadLocal.Finalize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -360,6 +385,8 @@
         <summary>Releases the resources used by this <see cref="T:System.Threading.ThreadLocal`1" /> instance.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Lazy`1" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="IsValueCreated">
@@ -368,6 +395,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.ThreadLocal`1.IsValueCreated" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValueCreated As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValueCreated { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsValueCreated : bool" Usage="System.Threading.ThreadLocal&lt;'T&gt;.IsValueCreated" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -394,6 +422,8 @@
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.ThreadLocal`1" /> instance has been disposed.</exception>
         <altmember cref="T:System.Lazy`1" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -402,6 +432,7 @@
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadLocal`1.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="threadLocal.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -439,6 +470,8 @@
         <exception cref="T:System.InvalidOperationException">The initialization function attempted to reference <see cref="P:System.Threading.ThreadLocal`1.Value" /> recursively.</exception>
         <exception cref="T:System.MissingMemberException">No default constructor is provided and no value factory is supplied.</exception>
         <altmember cref="T:System.Lazy`1" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="Value">
@@ -447,6 +480,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.ThreadLocal`1.Value" />
       <MemberSignature Language="VB.NET" Value="Public Property Value As T" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Value { T get(); void set(T value); };" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T with get, set" Usage="System.Threading.ThreadLocal&lt;'T&gt;.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -465,7 +499,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -487,6 +521,8 @@
         <exception cref="T:System.InvalidOperationException">The initialization function attempted to reference <see cref="P:System.Threading.ThreadLocal`1.Value" /> recursively.</exception>
         <exception cref="T:System.MissingMemberException">No default constructor is provided and no value factory is supplied.</exception>
         <altmember cref="T:System.Lazy`1" />
+        <related type="Article" href="~/docs/framework/performance/lazy-initialization.md">Lazy Initialization</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/8cd68620-dcc3-4f20-8835-c728a6820e71">How to: Perform Lazy Initialization of Objects</related>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -495,6 +531,7 @@
       <MemberSignature Language="DocId" Value="P:System.Threading.ThreadLocal`1.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IList(Of T)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;T&gt; ^ Values { System::Collections::Generic::IList&lt;T&gt; ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.IList&lt;'T&gt;" Usage="System.Threading.ThreadLocal&lt;'T&gt;.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>

@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewSelectEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ListViewSelectEventArgs&#xA;Inherits CancelEventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListViewSelectEventArgs : System::ComponentModel::CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type ListViewSelectEventArgs = class&#xA;    inherit CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -36,6 +38,7 @@
     </remarks>
     <altmember cref="T:System.Web.UI.WebControls.ListView" />
     <altmember cref="E:System.Web.UI.WebControls.ListView.SelectedIndexChanging" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -44,9 +47,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewSelectEventArgs.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (newSelectedIndex As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewSelectEventArgs(int newSelectedIndex);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ListViewSelectEventArgs : int -&gt; System.Web.UI.WebControls.ListViewSelectEventArgs" Usage="new System.Web.UI.WebControls.ListViewSelectEventArgs newSelectedIndex" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -73,6 +78,7 @@
  ]]></format>
         </remarks>
         <altmember cref="P:System.Web.UI.WebControls.ListViewSelectEventArgs.NewSelectedIndex" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="NewSelectedIndex">
@@ -81,11 +87,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewSelectEventArgs.NewSelectedIndex" />
       <MemberSignature Language="VB.NET" Value="Public Property NewSelectedIndex As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NewSelectedIndex { int get(); void set(int value); };" />
+      <MemberSignature Language="F#" Value="member this.NewSelectedIndex : int with get, set" Usage="System.Web.UI.WebControls.ListViewSelectEventArgs.NewSelectedIndex" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -111,6 +127,7 @@
         <altmember cref="P:System.Web.UI.WebControls.ListView.SelectedIndex" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.SelectedIndexChanging" />
         <altmember cref="P:System.Web.UI.WebControls.ListView.Items" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
   </Members>

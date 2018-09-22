@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.PropertyKind" />
   <TypeSignature Language="VB.NET" Value="Public Enum PropertyKind" />
   <TypeSignature Language="C++ CLI" Value="public enum class PropertyKind" />
+  <TypeSignature Language="F#" Value="type PropertyKind = " />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -24,7 +26,7 @@
 ## Examples  
  The following code sample demonstrates how to get a metadata workspace from the connection and then use that metadata workspace to retrieve information about the extended properties in the specified data model. Note that the metadata workspace is a runtime service component that provides support for retrieving metadata.  
   
- The code sample uses a <xref:System.Data.Metadata.Edm.DataSpace.CSpace> to specify the model. The <xref:System.Data.Metadata.Edm.DataSpace.CSpace> represents the default name for the conceptual model. The code sample uses the AdventureWorks Model that is provided in the [AdventureWorks Model (EDM)](http://msdn.microsoft.com/library/da87d29e-8c89-4310-bbac-5cbd062930a7)topic. For an example of the application config file, see [AdventureWorks Object Model in Applications (EDM)](http://msdn.microsoft.com/library/84c01270-90ba-467b-ad24-df10c1ca8f45).  
+ The code sample uses a <xref:System.Data.Metadata.Edm.DataSpace.CSpace> to specify the model. The <xref:System.Data.Metadata.Edm.DataSpace.CSpace> represents the default name for the conceptual model. The code sample uses the AdventureWorks Model that is provided in the [AdventureWorks Model (EDM)](http://msdn.microsoft.com/library/da87d29e-8c89-4310-bbac-5cbd062930a7) topic. For an example of the application config file, see [AdventureWorks Object Model in Applications (EDM)](http://msdn.microsoft.com/library/84c01270-90ba-467b-ad24-df10c1ca8f45).  
   
 ```csharp  
 using System;  
@@ -126,9 +128,11 @@ class UsePropertyKindExample
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PropertyKind.Extended" />
       <MemberSignature Language="VB.NET" Value="Extended" />
       <MemberSignature Language="C++ CLI" Value="Extended" />
+      <MemberSignature Language="F#" Value="Extended = 1" Usage="System.Data.Metadata.Edm.PropertyKind.Extended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -145,9 +149,11 @@ class UsePropertyKindExample
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.PropertyKind.System" />
       <MemberSignature Language="VB.NET" Value="System" />
       <MemberSignature Language="C++ CLI" Value="System" />
+      <MemberSignature Language="F#" Value="System = 0" Usage="System.Data.Metadata.Edm.PropertyKind.System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

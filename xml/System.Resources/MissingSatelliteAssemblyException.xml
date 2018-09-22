@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Resources.MissingSatelliteAssemblyException" />
   <TypeSignature Language="VB.NET" Value="Public Class MissingSatelliteAssemblyException&#xA;Inherits SystemException" />
   <TypeSignature Language="C++ CLI" Value="public ref class MissingSatelliteAssemblyException : SystemException" />
+  <TypeSignature Language="F#" Value="type MissingSatelliteAssemblyException = class&#xA;    inherit SystemException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
@@ -23,8 +25,11 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -95,6 +100,8 @@ HelloWorld2
     </remarks>
     <altmember cref="T:System.Resources.ResourceManager" />
     <altmember cref="T:System.Resources.MissingManifestResourceException" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8d5c6044-2919-41d2-8321-274706b295ac">Creating Satellite Assemblies</related>
+    <related type="Article" href="~/docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md">Packaging and Deploying Resources</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -116,6 +123,7 @@ HelloWorld2
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -152,9 +160,11 @@ HelloWorld2
       <MemberSignature Language="DocId" Value="M:System.Resources.MissingSatelliteAssemblyException.#ctor(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MissingSatelliteAssemblyException(System::String ^ message);" />
+      <MemberSignature Language="F#" Value="new System.Resources.MissingSatelliteAssemblyException : string -&gt; System.Resources.MissingSatelliteAssemblyException" Usage="new System.Resources.MissingSatelliteAssemblyException message" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -194,9 +204,11 @@ HelloWorld2
       <MemberSignature Language="DocId" Value="M:System.Resources.MissingSatelliteAssemblyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; MissingSatelliteAssemblyException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
+      <MemberSignature Language="F#" Value="new System.Resources.MissingSatelliteAssemblyException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Resources.MissingSatelliteAssemblyException" Usage="new System.Resources.MissingSatelliteAssemblyException (info, context)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -209,6 +221,11 @@ HelloWorld2
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
@@ -233,9 +250,11 @@ HelloWorld2
       <MemberSignature Language="DocId" Value="M:System.Resources.MissingSatelliteAssemblyException.#ctor(System.String,System.Exception)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MissingSatelliteAssemblyException(System::String ^ message, Exception ^ inner);" />
+      <MemberSignature Language="F#" Value="new System.Resources.MissingSatelliteAssemblyException : string * Exception -&gt; System.Resources.MissingSatelliteAssemblyException" Usage="new System.Resources.MissingSatelliteAssemblyException (message, inner)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -279,9 +298,11 @@ HelloWorld2
       <MemberSignature Language="DocId" Value="M:System.Resources.MissingSatelliteAssemblyException.#ctor(System.String,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, cultureName As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; MissingSatelliteAssemblyException(System::String ^ message, System::String ^ cultureName);" />
+      <MemberSignature Language="F#" Value="new System.Resources.MissingSatelliteAssemblyException : string * string -&gt; System.Resources.MissingSatelliteAssemblyException" Usage="new System.Resources.MissingSatelliteAssemblyException (message, cultureName)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
@@ -323,9 +344,11 @@ HelloWorld2
       <MemberSignature Language="DocId" Value="P:System.Resources.MissingSatelliteAssemblyException.CultureName" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CultureName As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CultureName { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.CultureName : string" Usage="System.Resources.MissingSatelliteAssemblyException.CultureName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>

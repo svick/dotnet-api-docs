@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ContainerControlDesigner" />
   <TypeSignature Language="VB.NET" Value="Public Class ContainerControlDesigner&#xA;Inherits ControlDesigner" />
   <TypeSignature Language="C++ CLI" Value="public ref class ContainerControlDesigner : System::Web::UI::Design::ControlDesigner" />
+  <TypeSignature Language="F#" Value="type ContainerControlDesigner = class&#xA;    inherit ControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -54,6 +56,8 @@
     <altmember cref="T:System.Web.UI.Design.EditableDesignerRegion" />
     <altmember cref="T:System.Web.UI.WebControls.Panel" />
     <altmember cref="T:System.Web.UI.Design.WebControls.PanelContainerDesigner" />
+    <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/7aed9eb4-124b-4a15-a0a3-458f37ac9ef7">Attributes and Design-Time Support</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -65,12 +69,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.Design.ContainerControlDesigner" /> class.</summary>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AddDesignTimeCssAttributes">
@@ -79,9 +85,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ContainerControlDesigner.AddDesignTimeCssAttributes(System.Collections.IDictionary)" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddDesignTimeCssAttributes (styleAttributes As IDictionary)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddDesignTimeCssAttributes(System::Collections::IDictionary ^ styleAttributes);" />
+      <MemberSignature Language="F#" Value="abstract member AddDesignTimeCssAttributes : System.Collections.IDictionary -&gt; unit&#xA;override this.AddDesignTimeCssAttributes : System.Collections.IDictionary -&gt; unit" Usage="containerControlDesigner.AddDesignTimeCssAttributes styleAttributes" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -104,6 +112,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="AllowResize">
@@ -112,9 +121,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ContainerControlDesigner.AllowResize" />
       <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AllowResize As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowResize { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.AllowResize : bool" Usage="System.Web.UI.Design.ContainerControlDesigner.AllowResize" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -135,6 +146,7 @@
         <block subset="none" type="overrides">
           <para>Classes that are derived from the <see cref="T:System.Web.UI.Design.ContainerControlDesigner" /> class can override the <see cref="P:System.Web.UI.Design.ContainerControlDesigner.AllowResize" /> property to indicate that the designer does not support resizing of the control on the design surface.</para>
         </block>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FrameCaption">
@@ -143,9 +155,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ContainerControlDesigner.FrameCaption" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FrameCaption As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FrameCaption { System::String ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FrameCaption : string" Usage="System.Web.UI.Design.ContainerControlDesigner.FrameCaption" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -168,6 +182,7 @@
           <para>You can set a different frame caption for a control designer by deriving a class from the <see cref="T:System.Web.UI.Design.ContainerControlDesigner" /> class, and then overriding the <see cref="P:System.Web.UI.Design.ContainerControlDesigner.FrameCaption" /> property.</para>
         </block>
         <altmember cref="P:System.Web.UI.Design.ContainerControlDesigner.FrameStyle" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="FrameStyle">
@@ -176,11 +191,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ContainerControlDesigner.FrameStyle" />
       <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FrameStyle As Style" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Style ^ FrameStyle { System::Web::UI::WebControls::Style ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.FrameStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.Design.ContainerControlDesigner.FrameStyle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.Style</ReturnType>
       </ReturnValue>
@@ -199,6 +221,7 @@
           <para>When deriving a class from the <see cref="T:System.Web.UI.Design.ContainerControlDesigner" /> class, override the <see cref="P:System.Web.UI.Design.ContainerControlDesigner.FrameStyle" /> property to change the <see cref="T:System.Web.UI.WebControls.Style" /> properties of the frame, such as the border, foreground color, background color, and caption font settings.</para>
         </block>
         <altmember cref="P:System.Web.UI.Design.ContainerControlDesigner.FrameCaption" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeCssAttributes">
@@ -207,9 +230,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDesignTimeCssAttributes () As IDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IDictionary ^ GetDesignTimeCssAttributes();" />
+      <MemberSignature Language="F#" Value="abstract member GetDesignTimeCssAttributes : unit -&gt; System.Collections.IDictionary&#xA;override this.GetDesignTimeCssAttributes : unit -&gt; System.Collections.IDictionary" Usage="containerControlDesigner.GetDesignTimeCssAttributes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -235,6 +260,7 @@
           <para>The default implementation for the <see cref="M:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeCssAttributes" /> method initializes the style attribute collection by using the <see cref="M:System.Web.UI.Design.ContainerControlDesigner.AddDesignTimeCssAttributes(System.Collections.IDictionary)" /> method. To manipulate styles in a control designer that are derived from the <see cref="T:System.Web.UI.Design.ContainerControlDesigner" /> class, override the <see cref="M:System.Web.UI.Design.ContainerControlDesigner.AddDesignTimeCssAttributes(System.Collections.IDictionary)" /> method.</para>
         </block>
         <altmember cref="M:System.Web.UI.Design.ContainerControlDesigner.AddDesignTimeCssAttributes(System.Collections.IDictionary)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetDesignTimeHtml">
@@ -243,9 +269,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ContainerControlDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml (regions As DesignerRegionCollection) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml(System::Web::UI::Design::DesignerRegionCollection ^ regions);" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : System.Web.UI.Design.DesignerRegionCollection -&gt; string" Usage="containerControlDesigner.GetDesignTimeHtml regions" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -268,6 +296,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetEditableDesignerRegionContent">
@@ -276,9 +305,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ContainerControlDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEditableDesignerRegionContent (region As EditableDesignerRegion) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetEditableDesignerRegionContent(System::Web::UI::Design::EditableDesignerRegion ^ region);" />
+      <MemberSignature Language="F#" Value="override this.GetEditableDesignerRegionContent : System.Web.UI.Design.EditableDesignerRegion -&gt; string" Usage="containerControlDesigner.GetEditableDesignerRegionContent region" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -300,6 +331,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Design.ContainerControlDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
     <Member MemberName="GetPersistenceContent">
@@ -308,9 +340,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ContainerControlDesigner.GetPersistenceContent" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPersistenceContent () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetPersistenceContent();" />
+      <MemberSignature Language="F#" Value="override this.GetPersistenceContent : unit -&gt; string" Usage="containerControlDesigner.GetPersistenceContent " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -338,6 +372,7 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ContainerControlDesigner.NoWrap" />
       <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property NoWrap As Boolean" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool NoWrap { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.NoWrap : bool" Usage="System.Web.UI.Design.ContainerControlDesigner.NoWrap" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -359,9 +394,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ContainerControlDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetEditableDesignerRegionContent (region As EditableDesignerRegion, content As String)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetEditableDesignerRegionContent(System::Web::UI::Design::EditableDesignerRegion ^ region, System::String ^ content);" />
+      <MemberSignature Language="F#" Value="override this.SetEditableDesignerRegionContent : System.Web.UI.Design.EditableDesignerRegion * string -&gt; unit" Usage="containerControlDesigner.SetEditableDesignerRegionContent (region, content)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -384,6 +421,7 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.Web.UI.Design.ContainerControlDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">ASP.NET Control Designers Overview</related>
       </Docs>
     </Member>
   </Members>

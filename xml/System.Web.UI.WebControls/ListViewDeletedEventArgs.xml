@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewDeletedEventArgs" />
   <TypeSignature Language="VB.NET" Value="Public Class ListViewDeletedEventArgs&#xA;Inherits EventArgs" />
   <TypeSignature Language="C++ CLI" Value="public ref class ListViewDeletedEventArgs : EventArgs" />
+  <TypeSignature Language="F#" Value="type ListViewDeletedEventArgs = class&#xA;    inherit EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
+    <AssemblyVersion>3.5.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -46,6 +48,7 @@
     <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.ExceptionHandled" />
     <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys" />
     <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values" />
+    <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -53,9 +56,11 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 affectedRows, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewDeletedEventArgs.#ctor(System.Int32,System.Exception)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewDeletedEventArgs(int affectedRows, Exception ^ exception);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ListViewDeletedEventArgs : int * Exception -&gt; System.Web.UI.WebControls.ListViewDeletedEventArgs" Usage="new System.Web.UI.WebControls.ListViewDeletedEventArgs (affectedRows, exception)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -88,6 +93,7 @@
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
         <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemDeleted(System.Web.UI.WebControls.ListViewDeletedEventArgs)" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="AffectedRows">
@@ -96,11 +102,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.AffectedRows" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AffectedRows As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AffectedRows { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.AffectedRows : int" Usage="System.Web.UI.WebControls.ListViewDeletedEventArgs.AffectedRows" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -134,6 +147,7 @@
         <altmember cref="M:System.Web.UI.WebControls.ListView.OnItemDeleted(System.Web.UI.WebControls.ListViewDeletedEventArgs)" />
         <altmember cref="P:System.Web.UI.WebControls.SqlDataSource.ConflictDetection" />
         <altmember cref="T:System.Web.UI.ConflictOptions" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -142,11 +156,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Exception" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Web.UI.WebControls.ListViewDeletedEventArgs.Exception" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>
@@ -174,6 +195,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="ExceptionHandled">
@@ -182,11 +204,21 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.ExceptionHandled" />
       <MemberSignature Language="VB.NET" Value="Public Property ExceptionHandled As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceptionHandled { bool get(); void set(bool value); };" />
+      <MemberSignature Language="F#" Value="member this.ExceptionHandled : bool with get, set" Usage="System.Web.UI.WebControls.ListViewDeletedEventArgs.ExceptionHandled" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -212,6 +244,7 @@
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.ListView" />
         <altmember cref="E:System.Web.UI.WebControls.ListView.ItemDeleted" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
       </Docs>
     </Member>
     <Member MemberName="Keys">
@@ -220,9 +253,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As IOrderedDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ Keys { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -258,6 +293,8 @@
         <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
         <altmember cref="T:System.Collections.DictionaryEntry" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/aa3f28c5-fd99-4978-8a66-c7709e0816c4">How a Data Source Control Creates Parameters for Data-bound Fields</related>
       </Docs>
     </Member>
     <Member MemberName="Values">
@@ -266,9 +303,11 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IOrderedDictionary" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ Values { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.ListViewDeletedEventArgs.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>3.5.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -307,6 +346,8 @@
         <altmember cref="T:System.Collections.Specialized.IOrderedDictionary" />
         <altmember cref="T:System.Collections.DictionaryEntry" />
         <altmember cref="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys" />
+        <related type="Article" href="http://msdn.microsoft.com/library/8b4da934-2f5e-4b5a-b03d-fca5e15f85af">Technology Overview: The ListView Control</related>
+        <related type="Article" href="http://msdn.microsoft.com/library/aa3f28c5-fd99-4978-8a66-c7709e0816c4">How a Data Source Control Creates Parameters for Data-bound Fields</related>
       </Docs>
     </Member>
   </Members>

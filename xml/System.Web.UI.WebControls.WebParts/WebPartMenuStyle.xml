@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartMenuStyle" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebPartMenuStyle&#xA;Inherits TableStyle&#xA;Implements ICustomTypeDescriptor" />
   <TypeSignature Language="C++ CLI" Value="public ref class WebPartMenuStyle sealed : System::Web::UI::WebControls::TableStyle, System::ComponentModel::ICustomTypeDescriptor" />
+  <TypeSignature Language="F#" Value="type WebPartMenuStyle = class&#xA;    inherit TableStyle&#xA;    interface ICustomTypeDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -38,6 +40,7 @@
  ]]></format>
     </remarks>
     <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuPopupStyle" />
+    <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -47,6 +50,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartMenuStyle" /> class.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
@@ -58,8 +62,14 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartMenuStyle" /> class using default style values.</summary>
@@ -72,9 +82,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.#ctor(System.Web.UI.StateBag)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (bag As StateBag)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartMenuStyle(System::Web::UI::StateBag ^ bag);" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartMenuStyle : System.Web.UI.StateBag -&gt; System.Web.UI.WebControls.WebParts.WebPartMenuStyle" Usage="new System.Web.UI.WebControls.WebParts.WebPartMenuStyle bag" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -92,9 +104,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.CopyFrom(System.Web.UI.WebControls.Style)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (s As Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::Web::UI::WebControls::Style ^ s);" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.Web.UI.WebControls.Style -&gt; unit" Usage="webPartMenuStyle.CopyFrom s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -117,6 +131,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="FillStyleAttributes">
@@ -125,9 +140,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.FillStyleAttributes(System.Web.UI.CssStyleCollection,System.Web.UI.IUrlResolutionService)" />
       <MemberSignature Language="VB.NET" Value="Protected Overrides Sub FillStyleAttributes (attributes As CssStyleCollection, urlResolver As IUrlResolutionService)" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void FillStyleAttributes(System::Web::UI::CssStyleCollection ^ attributes, System::Web::UI::IUrlResolutionService ^ urlResolver);" />
+      <MemberSignature Language="F#" Value="override this.FillStyleAttributes : System.Web.UI.CssStyleCollection * System.Web.UI.IUrlResolutionService -&gt; unit" Usage="webPartMenuStyle.FillStyleAttributes (attributes, urlResolver)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -150,19 +167,27 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.HorizontalAlign" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Property HorizontalAlign As HorizontalAlign" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::HorizontalAlign HorizontalAlign { System::Web::UI::WebControls::HorizontalAlign get(); void set(System::Web::UI::WebControls::HorizontalAlign value); };" />
+      <MemberSignature Language="F#" Value="member this.HorizontalAlign : System.Web.UI.WebControls.HorizontalAlign with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartMenuStyle.HorizontalAlign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+        </Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -181,6 +206,7 @@
  ]]></format>
         </remarks>
         <altmember cref="T:System.Web.UI.WebControls.HorizontalAlign" />
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="MergeWith">
@@ -189,9 +215,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.MergeWith(System.Web.UI.WebControls.Style)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub MergeWith (s As Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void MergeWith(System::Web::UI::WebControls::Style ^ s);" />
+      <MemberSignature Language="F#" Value="override this.MergeWith : System.Web.UI.WebControls.Style -&gt; unit" Usage="webPartMenuStyle.MergeWith s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -214,6 +242,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="Reset">
@@ -222,9 +251,11 @@
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.Reset" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="webPartMenuStyle.Reset " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -241,6 +272,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="ShadowColor">
@@ -249,16 +281,18 @@
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.ShadowColor" />
       <MemberSignature Language="VB.NET" Value="Public Property ShadowColor As Color" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ShadowColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
+      <MemberSignature Language="F#" Value="member this.ShadowColor : System.Drawing.Color with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartMenuStyle.ShadowColor" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "")</AttributeName>
         </Attribute>
-        <Attribute>
+        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Web.UI.WebControls.WebColorConverter))</AttributeName>
         </Attribute>
       </Attributes>
@@ -276,6 +310,7 @@
   
  ]]></format>
         </remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetAttributes">
@@ -287,6 +322,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -297,6 +333,7 @@
         <summary>Returns a collection of custom attributes for this instance of a component. Implements the <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetAttributes" /> method.</summary>
         <returns>An <see cref="T:System.ComponentModel.AttributeCollection" /> containing the attributes for this object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetClassName">
@@ -308,6 +345,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -318,6 +356,7 @@
         <summary>Returns the class name of this instance of a component. This method implements the <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetClassName" /> method.</summary>
         <returns>A string that contains the class name of the object, or <see langword="null" /> if the class has no name.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetComponentName">
@@ -329,6 +368,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -339,6 +379,7 @@
         <summary>Returns the name of this instance of a component. This method implements the <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetComponentName" /> method.</summary>
         <returns>A string that contains the object name, or <see langword="null" /> if the object has no name.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetConverter">
@@ -350,6 +391,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -360,6 +402,7 @@
         <summary>Returns a type converter for this instance of a component. This method implements the <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetConverter" /> method.</summary>
         <returns>A <see cref="T:System.ComponentModel.TypeConverter" /> used for this object, or <see langword="null" /> if there is no <see cref="T:System.ComponentModel.TypeConverter" />.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent">
@@ -371,6 +414,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -381,6 +425,7 @@
         <summary>Returns the default event for this instance of a component. This method implements the <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent" /> method.</summary>
         <returns>An <see cref="T:System.ComponentModel.EventDescriptor" /> that represents the default event for this object, or <see langword="null" /> if the object has no events.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty">
@@ -392,6 +437,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -402,6 +448,7 @@
         <summary>Returns the default property for this instance of a component. This method implements the <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty" /> method.</summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that represents the default property for this object, or <see langword="null" /> if the object has no properties.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEditor">
@@ -413,6 +460,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -426,6 +474,7 @@
         <summary>Returns an editor of the specified type for this instance of a component. This method implements the <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetEditor(System.Type)" /> method.</summary>
         <returns>An <see cref="T:System.Object" /> of type <paramref name="editorBaseType" /> that serves as the editor for this object, or <see langword="null" /> if the editor cannot be found.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEvents">
@@ -435,6 +484,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Returns the events for this instance of a component. This method implements the overloaded <see cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetEvents" /> method.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEvents">
@@ -446,6 +496,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -456,6 +507,7 @@
         <summary>Returns the events for this instance of a component. This method implements the <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetEvents" /> method overload.</summary>
         <returns>An <see cref="T:System.ComponentModel.EventDescriptorCollection" /> that represents the events for this object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEvents">
@@ -467,6 +519,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -480,6 +533,7 @@
         <summary>Returns the events for this instance of a component using the specified attribute array as a filter. This method implements the <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetEvents(System.Attribute[])" /> method overload.</summary>
         <returns>An <see cref="T:System.ComponentModel.EventDescriptorCollection" /> that represents the filtered events for this object.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
     <MemberGroup MemberName="System.ComponentModel.ICustomTypeDescriptor.GetProperties">
@@ -489,6 +543,7 @@
       </AssemblyInfo>
       <Docs>
         <summary>Returns the properties for this instance of a component. This method implements the overloaded <see cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetProperties" /> method.</summary>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </MemberGroup>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetProperties">
@@ -500,6 +555,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -521,6 +577,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -545,6 +602,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -558,6 +616,7 @@
         <summary>Returns an object that contains the property described by the specified property descriptor. This method implements the <see cref="M:System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)" /> method.</summary>
         <returns>An <see cref="T:System.Object" /> that represents the owner of the specified property.</returns>
         <remarks>To be added.</remarks>
+        <related type="Article" href="http://msdn.microsoft.com/library/ab78a66e-9feb-4391-b3c3-8c07555e2308">ASP.NET Web Parts Pages</related>
       </Docs>
     </Member>
   </Members>

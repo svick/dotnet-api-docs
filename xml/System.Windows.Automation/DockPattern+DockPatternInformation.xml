@@ -4,8 +4,10 @@
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.DockPattern.DockPatternInformation" />
   <TypeSignature Language="VB.NET" Value="Public Structure DockPattern.DockPatternInformation" />
   <TypeSignature Language="C++ CLI" Value="public: value class DockPattern::DockPatternInformation" />
+  <TypeSignature Language="F#" Value="type DockPattern.DockPatternInformation = struct" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
+    <AssemblyVersion>3.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
@@ -23,6 +25,9 @@
  ]]></format>
     </remarks>
     <altmember cref="T:System.Windows.Automation.Provider.IDockProvider" />
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-overview.md">UI Automation Control Patterns Overview</related>
+    <related type="Article" href="~/docs/framework/ui-automation/ui-automation-control-patterns-for-clients.md">UI Automation Control Patterns for Clients</related>
+    <related type="Article" href="http://msdn.microsoft.com/library/ec722dff-6009-4279-b86a-e18d3fa94ebf">Use Caching in UI Automation</related>
   </Docs>
   <Members>
     <Member MemberName="DockPosition">
@@ -31,9 +36,11 @@
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.DockPattern.DockPatternInformation.DockPosition" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DockPosition As DockPosition" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::DockPosition DockPosition { System::Windows::Automation::DockPosition get(); };" />
+      <MemberSignature Language="F#" Value="member this.DockPosition : System.Windows.Automation.DockPosition" Usage="System.Windows.Automation.DockPattern.DockPatternInformation.DockPosition" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>3.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

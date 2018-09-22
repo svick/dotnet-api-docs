@@ -4,6 +4,7 @@
   <TypeSignature Language="DocId" Value="T:System.Numerics.BigInteger" />
   <TypeSignature Language="VB.NET" Value="Public Structure BigInteger&#xA;Implements IComparable, IComparable(Of BigInteger), IEquatable(Of BigInteger), IFormattable" />
   <TypeSignature Language="C++ CLI" Value="public value class BigInteger : IComparable, IComparable&lt;System::Numerics::BigInteger&gt;, IEquatable&lt;System::Numerics::BigInteger&gt;, IFormattable" />
+  <TypeSignature Language="F#" Value="type BigInteger = struct&#xA;    interface IFormattable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Numerics</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +37,14 @@
       <InterfaceName>System.IFormattable</InterfaceName>
     </Interface>
   </Interfaces>
+  <Attributes>
+    <Attribute FrameworkAlternate="netcore-2.1">
+      <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
+    </Attribute>
+    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
+      <AttributeName>Serializable</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
     <summary>Represents an arbitrarily large signed integer.</summary>
     <remarks>
@@ -174,6 +183,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.#ctor(System.Byte[])" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Byte())" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BigInteger(cli::array &lt;System::Byte&gt; ^ value);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.BigInteger : byte[] -&gt; System.Numerics.BigInteger" Usage="new System.Numerics.BigInteger value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -191,7 +201,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -257,6 +267,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.#ctor(System.Decimal)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Decimal)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BigInteger(System::Decimal value);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.BigInteger : decimal -&gt; System.Numerics.BigInteger" Usage="new System.Numerics.BigInteger value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -305,6 +316,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.#ctor(System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BigInteger(double value);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.BigInteger : double -&gt; System.Numerics.BigInteger" Usage="new System.Numerics.BigInteger value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -364,6 +376,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.#ctor(System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Integer)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BigInteger(int value);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.BigInteger : int -&gt; System.Numerics.BigInteger" Usage="new System.Numerics.BigInteger value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -414,6 +427,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.#ctor(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Long)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BigInteger(long value);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.BigInteger : int64 -&gt; System.Numerics.BigInteger" Usage="new System.Numerics.BigInteger value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -462,6 +476,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.#ctor(System.Single)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As Single)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BigInteger(float value);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.BigInteger : single -&gt; System.Numerics.BigInteger" Usage="new System.Numerics.BigInteger value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -521,6 +536,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.#ctor(System.UInt32)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As UInteger)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BigInteger(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.BigInteger : uint32 -&gt; System.Numerics.BigInteger" Usage="new System.Numerics.BigInteger value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -538,7 +554,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -575,6 +591,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.#ctor(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As ULong)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; BigInteger(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="new System.Numerics.BigInteger : uint64 -&gt; System.Numerics.BigInteger" Usage="new System.Numerics.BigInteger value" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -592,7 +609,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -628,10 +645,17 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ReadOnlySpan`1&lt;unsigned int8&gt; value, bool isUnsigned, bool isBigEndian) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.#ctor(System.ReadOnlySpan{System.Byte},System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Sub New (value As ReadOnlySpan(Of Byte), Optional isUnsigned As Boolean = false, Optional isBigEndian As Boolean = false)" />
+      <MemberSignature Language="F#" Value="new System.Numerics.BigInteger : ReadOnlySpan&lt;byte&gt; * bool * bool -&gt; System.Numerics.BigInteger" Usage="new System.Numerics.BigInteger (value, isUnsigned, isBigEndian)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Byte&gt;" />
@@ -652,6 +676,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Abs(System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Abs (value As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger Abs(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member Abs : System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.Abs value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -710,6 +735,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Add(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Add (left As BigInteger, right As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger Add(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member Add : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.Add (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -726,6 +752,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
       </ReturnValue>
@@ -760,6 +791,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Compare(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (left As BigInteger, right As BigInteger) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Compare(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member Compare : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; int" Usage="System.Numerics.BigInteger.Compare (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -836,6 +868,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.CompareTo(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (other As Long) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(long other);" />
+      <MemberSignature Language="F#" Value="member this.CompareTo : int64 -&gt; int" Usage="bigInteger.CompareTo other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -904,6 +937,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.CompareTo(System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (other As BigInteger) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Numerics::BigInteger other);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : System.Numerics.BigInteger -&gt; int&#xA;override this.CompareTo : System.Numerics.BigInteger -&gt; int" Usage="bigInteger.CompareTo other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
@@ -983,6 +1017,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.CompareTo(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (obj As Object) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="bigInteger.CompareTo obj" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
@@ -1062,6 +1097,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.CompareTo(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Function CompareTo (other As ULong) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(System::UInt64 other);" />
+      <MemberSignature Language="F#" Value="member this.CompareTo : uint64 -&gt; int" Usage="bigInteger.CompareTo other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1079,7 +1115,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1120,6 +1156,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Divide(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Divide (dividend As BigInteger, divisor As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger Divide(System::Numerics::BigInteger dividend, System::Numerics::BigInteger divisor);" />
+      <MemberSignature Language="F#" Value="static member Divide : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.Divide (dividend, divisor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1136,6 +1173,11 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
       </ReturnValue>
@@ -1179,6 +1221,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.DivRem(System.Numerics.BigInteger,System.Numerics.BigInteger,System.Numerics.BigInteger@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function DivRem (dividend As BigInteger, divisor As BigInteger, ByRef remainder As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger DivRem(System::Numerics::BigInteger dividend, System::Numerics::BigInteger divisor, [Runtime::InteropServices::Out] System::Numerics::BigInteger % remainder);" />
+      <MemberSignature Language="F#" Value="static member DivRem : System.Numerics.BigInteger * System.Numerics.BigInteger *  -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.DivRem (dividend, divisor, remainder)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1201,7 +1244,7 @@
       <Parameters>
         <Parameter Name="dividend" Type="System.Numerics.BigInteger" />
         <Parameter Name="divisor" Type="System.Numerics.BigInteger" />
-        <Parameter Name="remainder" Type="System.Numerics.BigInteger&amp;" RefType="out" />
+        <Parameter Name="remainder" Type="System.Numerics.BigInteger" RefType="out" />
       </Parameters>
       <Docs>
         <param name="dividend">The value to be divided.</param>
@@ -1249,6 +1292,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Equals(System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(long other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : int64 -&gt; bool" Usage="bigInteger.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1303,6 +1347,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Equals(System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Numerics::BigInteger other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Numerics.BigInteger -&gt; bool" Usage="bigInteger.Equals other" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
@@ -1360,6 +1405,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Equals(System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="bigInteger.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1413,6 +1459,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Equals(System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ULong) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::UInt64 other);" />
+      <MemberSignature Language="F#" Value="override this.Equals : uint64 -&gt; bool" Usage="bigInteger.Equals other" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1430,7 +1477,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -1469,10 +1516,17 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetByteCount(bool isUnsigned) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.GetByteCount(System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function GetByteCount (Optional isUnsigned As Boolean = false) As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetByteCount : bool -&gt; int" Usage="bigInteger.GetByteCount isUnsigned" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1493,6 +1547,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.GetHashCode" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="bigInteger.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1525,6 +1580,7 @@
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.GreatestCommonDivisor(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function GreatestCommonDivisor (left As BigInteger, right As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger GreatestCommonDivisor(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member GreatestCommonDivisor : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.GreatestCommonDivisor (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1584,6 +1640,7 @@
       <MemberSignature Language="DocId" Value="P:System.Numerics.BigInteger.IsEven" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEven As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEven { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsEven : bool" Usage="System.Numerics.BigInteger.IsEven" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1633,6 +1690,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="P:System.Numerics.BigInteger.IsOne" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOne As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOne { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsOne : bool" Usage="System.Numerics.BigInteger.IsOne" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1673,6 +1731,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="P:System.Numerics.BigInteger.IsPowerOfTwo" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPowerOfTwo As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPowerOfTwo { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsPowerOfTwo : bool" Usage="System.Numerics.BigInteger.IsPowerOfTwo" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1712,6 +1771,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="P:System.Numerics.BigInteger.IsZero" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsZero As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsZero { bool get(); };" />
+      <MemberSignature Language="F#" Value="member this.IsZero : bool" Usage="System.Numerics.BigInteger.IsZero" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1762,6 +1822,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Log(System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Log (value As BigInteger) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Log(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member Log : System.Numerics.BigInteger -&gt; double" Usage="System.Numerics.BigInteger.Log value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1778,6 +1839,11 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
@@ -1823,6 +1889,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Log(System.Numerics.BigInteger,System.Double)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Log (value As BigInteger, baseValue As Double) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Log(System::Numerics::BigInteger value, double baseValue);" />
+      <MemberSignature Language="F#" Value="static member Log : System.Numerics.BigInteger * double -&gt; double" Usage="System.Numerics.BigInteger.Log (value, baseValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1889,6 +1956,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Log10(System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Log10 (value As BigInteger) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static double Log10(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member Log10 : System.Numerics.BigInteger -&gt; double" Usage="System.Numerics.BigInteger.Log10 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1905,6 +1973,11 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
@@ -1944,6 +2017,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Max(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Max (left As BigInteger, right As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger Max(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member Max : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.Max (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -1997,6 +2071,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Min(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Min (left As BigInteger, right As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger Min(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member Min : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.Min (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2050,6 +2125,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="P:System.Numerics.BigInteger.MinusOne" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinusOne As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Numerics::BigInteger MinusOne { System::Numerics::BigInteger get(); };" />
+      <MemberSignature Language="F#" Value="member this.MinusOne : System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.MinusOne" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2066,6 +2142,11 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
       </ReturnValue>
@@ -2090,6 +2171,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.ModPow(System.Numerics.BigInteger,System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function ModPow (value As BigInteger, exponent As BigInteger, modulus As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger ModPow(System::Numerics::BigInteger value, System::Numerics::BigInteger exponent, System::Numerics::BigInteger modulus);" />
+      <MemberSignature Language="F#" Value="static member ModPow : System.Numerics.BigInteger * System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.ModPow (value, exponent, modulus)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2153,6 +2235,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Multiply(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (left As BigInteger, right As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger Multiply(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.Multiply (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2169,6 +2252,11 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
       </ReturnValue>
@@ -2211,6 +2299,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Negate(System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Negate (value As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger Negate(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member Negate : System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.Negate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2227,6 +2316,11 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
       </ReturnValue>
@@ -2267,6 +2361,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="P:System.Numerics.BigInteger.One" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property One As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Numerics::BigInteger One { System::Numerics::BigInteger get(); };" />
+      <MemberSignature Language="F#" Value="member this.One : System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.One" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2283,6 +2378,11 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
       </ReturnValue>
@@ -2307,6 +2407,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Addition(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (left As BigInteger, right As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger operator +(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="left + right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2357,6 +2458,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_BitwiseAnd(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator And (left As BigInteger, right As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger operator &amp;(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( &amp;&amp;&amp; ) : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="left &amp;&amp;&amp; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2415,6 +2517,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_BitwiseOr(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator Or (left As BigInteger, right As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger operator |(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( ||| ) : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="left ||| right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2473,6 +2576,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Decrement(System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared op_Decrement (value As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger operator --(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member op_Decrement : System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.op_Decrement value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2525,6 +2629,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Division(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator / (dividend As BigInteger, divisor As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger operator /(System::Numerics::BigInteger dividend, System::Numerics::BigInteger divisor);" />
+      <MemberSignature Language="F#" Value="static member ( / ) : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="dividend / divisor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2595,6 +2700,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Equality(System.Int64,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As Long, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(long left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : int64 * System.Numerics.BigInteger -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2648,6 +2754,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Equality(System.Numerics.BigInteger,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As BigInteger, right As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Numerics::BigInteger left, long right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Numerics.BigInteger * int64 -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2701,6 +2808,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Equality(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As BigInteger, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2753,6 +2861,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Equality(System.Numerics.BigInteger,System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As BigInteger, right As ULong) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Numerics::BigInteger left, System::UInt64 right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Numerics.BigInteger * uint64 -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2770,7 +2879,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2809,6 +2918,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Equality(System.UInt64,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As ULong, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::UInt64 left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( = ) : uint64 * System.Numerics.BigInteger -&gt; bool" Usage="left = right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2826,7 +2936,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -2865,6 +2975,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_ExclusiveOr(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator Xor (left As BigInteger, right As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger operator ^(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( ^^^ ) : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="left ^^^ right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2933,6 +3044,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Decimal)~System.Numerics.BigInteger" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Decimal) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Numerics::BigInteger(System::Decimal value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : decimal -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -2986,6 +3098,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Double)~System.Numerics.BigInteger" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Double) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Numerics::BigInteger(double value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : double -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3048,6 +3161,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Byte" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As BigInteger) As Byte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Byte(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.BigInteger -&gt; byte" Usage="System.Numerics.BigInteger.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3103,6 +3217,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Decimal" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As BigInteger) As Decimal" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Decimal(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.BigInteger -&gt; decimal" Usage="System.Numerics.BigInteger.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3158,6 +3273,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Double" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As BigInteger) As Double" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator double(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.BigInteger -&gt; double" Usage="System.Numerics.BigInteger.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3215,6 +3331,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Int16" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As BigInteger) As Short" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator short(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.BigInteger -&gt; int16" Usage="System.Numerics.BigInteger.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3270,6 +3387,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Int32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As BigInteger) As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator int(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.BigInteger -&gt; int" Usage="System.Numerics.BigInteger.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3325,6 +3443,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Int64" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As BigInteger) As Long" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator long(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.BigInteger -&gt; int64" Usage="System.Numerics.BigInteger.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3380,6 +3499,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.SByte" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As BigInteger) As SByte" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::SByte(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.BigInteger -&gt; sbyte" Usage="System.Numerics.BigInteger.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3397,7 +3517,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3443,6 +3563,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.Single" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As BigInteger) As Single" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator float(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.BigInteger -&gt; single" Usage="System.Numerics.BigInteger.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3500,6 +3621,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.UInt16" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As BigInteger) As UShort" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::UInt16(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.BigInteger -&gt; uint16" Usage="System.Numerics.BigInteger.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3517,7 +3639,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3563,6 +3685,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.UInt32" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As BigInteger) As UInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::UInt32(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.BigInteger -&gt; uint32" Usage="System.Numerics.BigInteger.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3580,7 +3703,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3626,6 +3749,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Numerics.BigInteger)~System.UInt64" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As BigInteger) As ULong" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::UInt64(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Numerics.BigInteger -&gt; uint64" Usage="System.Numerics.BigInteger.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3643,7 +3767,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3689,6 +3813,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Explicit(System.Single)~System.Numerics.BigInteger" />
       <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Single) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Numerics::BigInteger(float value);" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : single -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.op_Explicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3761,6 +3886,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThan(System.Int64,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (left As Long, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(long left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : int64 * System.Numerics.BigInteger -&gt; bool" Usage="left &gt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3816,6 +3942,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThan(System.Numerics.BigInteger,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (left As BigInteger, right As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(System::Numerics::BigInteger left, long right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Numerics.BigInteger * int64 -&gt; bool" Usage="left &gt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3871,6 +3998,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThan(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (left As BigInteger, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; bool" Usage="left &gt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3924,6 +4052,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThan(System.Numerics.BigInteger,System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (left As BigInteger, right As ULong) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(System::Numerics::BigInteger left, System::UInt64 right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Numerics.BigInteger * uint64 -&gt; bool" Usage="left &gt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3941,7 +4070,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -3981,6 +4110,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThan(System.UInt64,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (left As ULong, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;(System::UInt64 left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : uint64 * System.Numerics.BigInteger -&gt; bool" Usage="left &gt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -3998,7 +4128,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -4049,6 +4179,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThanOrEqual(System.Int64,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (left As Long, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;=(long left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : int64 * System.Numerics.BigInteger -&gt; bool" Usage="left &gt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4104,6 +4235,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThanOrEqual(System.Numerics.BigInteger,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (left As BigInteger, right As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;=(System::Numerics::BigInteger left, long right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Numerics.BigInteger * int64 -&gt; bool" Usage="left &gt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4159,6 +4291,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThanOrEqual(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (left As BigInteger, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;=(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; bool" Usage="left &gt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4212,6 +4345,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThanOrEqual(System.Numerics.BigInteger,System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (left As BigInteger, right As ULong) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;=(System::Numerics::BigInteger left, System::UInt64 right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Numerics.BigInteger * uint64 -&gt; bool" Usage="left &gt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4229,7 +4363,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -4270,6 +4404,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_GreaterThanOrEqual(System.UInt64,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (left As ULong, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &gt;=(System::UInt64 left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : uint64 * System.Numerics.BigInteger -&gt; bool" Usage="left &gt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4287,7 +4422,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -4338,6 +4473,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.Byte)~System.Numerics.BigInteger" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Byte) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Numerics::BigInteger(System::Byte value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : byte -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4387,6 +4523,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.Int16)~System.Numerics.BigInteger" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Short) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Numerics::BigInteger(short value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : int16 -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4434,6 +4571,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.Int32)~System.Numerics.BigInteger" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Integer) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Numerics::BigInteger(int value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : int -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4481,6 +4619,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.Int64)~System.Numerics.BigInteger" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Long) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Numerics::BigInteger(long value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : int64 -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4528,6 +4667,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.SByte)~System.Numerics.BigInteger" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As SByte) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Numerics::BigInteger(System::SByte value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : sbyte -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4545,7 +4685,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -4583,6 +4723,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.UInt16)~System.Numerics.BigInteger" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As UShort) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Numerics::BigInteger(System::UInt16 value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : uint16 -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4600,7 +4741,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -4638,6 +4779,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.UInt32)~System.Numerics.BigInteger" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As UInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Numerics::BigInteger(System::UInt32 value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : uint32 -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4655,7 +4797,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -4693,6 +4835,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Implicit(System.UInt64)~System.Numerics.BigInteger" />
       <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As ULong) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Numerics::BigInteger(System::UInt64 value);" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : uint64 -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.op_Implicit value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4710,7 +4853,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -4748,6 +4891,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Increment(System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared op_Increment (value As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger operator ++(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member op_Increment : System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.op_Increment value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4809,6 +4953,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Inequality(System.Int64,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As Long, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(long left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : int64 * System.Numerics.BigInteger -&gt; bool" Usage="System.Numerics.BigInteger.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4866,6 +5011,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Inequality(System.Numerics.BigInteger,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As BigInteger, right As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Numerics::BigInteger left, long right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Numerics.BigInteger * int64 -&gt; bool" Usage="System.Numerics.BigInteger.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4923,6 +5069,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Inequality(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As BigInteger, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; bool" Usage="System.Numerics.BigInteger.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4978,6 +5125,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Inequality(System.Numerics.BigInteger,System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As BigInteger, right As ULong) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Numerics::BigInteger left, System::UInt64 right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Numerics.BigInteger * uint64 -&gt; bool" Usage="System.Numerics.BigInteger.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -4995,7 +5143,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -5038,6 +5186,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Inequality(System.UInt64,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As ULong, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::UInt64 left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : uint64 * System.Numerics.BigInteger -&gt; bool" Usage="System.Numerics.BigInteger.op_Inequality (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5055,7 +5204,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -5098,6 +5247,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LeftShift(System.Numerics.BigInteger,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;&lt; (value As BigInteger, shift As Integer) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger operator &lt;&lt;(System::Numerics::BigInteger value, int shift);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;&lt;&lt; ) : System.Numerics.BigInteger * int -&gt; System.Numerics.BigInteger" Usage="value &lt;&lt;&lt; shift" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5164,6 +5314,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThan(System.Int64,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (left As Long, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(long left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : int64 * System.Numerics.BigInteger -&gt; bool" Usage="left &lt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5219,6 +5370,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThan(System.Numerics.BigInteger,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (left As BigInteger, right As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(System::Numerics::BigInteger left, long right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Numerics.BigInteger * int64 -&gt; bool" Usage="left &lt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5274,6 +5426,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThan(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (left As BigInteger, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; bool" Usage="left &lt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5327,6 +5480,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThan(System.Numerics.BigInteger,System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (left As BigInteger, right As ULong) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(System::Numerics::BigInteger left, System::UInt64 right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Numerics.BigInteger * uint64 -&gt; bool" Usage="left &lt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5344,7 +5498,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -5385,6 +5539,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThan(System.UInt64,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (left As ULong, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;(System::UInt64 left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : uint64 * System.Numerics.BigInteger -&gt; bool" Usage="left &lt; right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5402,7 +5557,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -5453,6 +5608,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThanOrEqual(System.Int64,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (left As Long, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(long left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : int64 * System.Numerics.BigInteger -&gt; bool" Usage="left &lt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5508,6 +5664,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThanOrEqual(System.Numerics.BigInteger,System.Int64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (left As BigInteger, right As Long) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(System::Numerics::BigInteger left, long right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Numerics.BigInteger * int64 -&gt; bool" Usage="left &lt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5563,6 +5720,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThanOrEqual(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (left As BigInteger, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; bool" Usage="left &lt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5616,6 +5774,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThanOrEqual(System.Numerics.BigInteger,System.UInt64)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (left As BigInteger, right As ULong) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(System::Numerics::BigInteger left, System::UInt64 right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Numerics.BigInteger * uint64 -&gt; bool" Usage="left &lt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5633,7 +5792,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -5674,6 +5833,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_LessThanOrEqual(System.UInt64,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (left As ULong, right As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator &lt;=(System::UInt64 left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : uint64 * System.Numerics.BigInteger -&gt; bool" Usage="left &lt;= right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5691,7 +5851,7 @@ value Mod 2 = 0
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute>
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-1.1;netstandard-1.2;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0">
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -5732,6 +5892,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Modulus(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator Mod (dividend As BigInteger, divisor As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger operator %(System::Numerics::BigInteger dividend, System::Numerics::BigInteger divisor);" />
+      <MemberSignature Language="F#" Value="static member ( % ) : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="dividend % divisor" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5787,6 +5948,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Multiply(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator * (left As BigInteger, right As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger operator *(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="left * right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5835,6 +5997,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_OnesComplement(System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator Not (value As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger operator ~(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member op_OnesComplement : System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.op_OnesComplement value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5884,6 +6047,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_RightShift(System.Numerics.BigInteger,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;&gt; (value As BigInteger, shift As Integer) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger operator &gt;&gt;(System::Numerics::BigInteger value, int shift);" />
+      <MemberSignature Language="F#" Value="static member ( &gt;&gt;&gt; ) : System.Numerics.BigInteger * int -&gt; System.Numerics.BigInteger" Usage="value &gt;&gt;&gt; shift" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5939,6 +6103,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_Subtraction(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (left As BigInteger, right As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger operator -(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member ( - ) : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="left - right" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -5989,6 +6154,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_UnaryNegation(System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator - (value As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger operator -(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member ( ~- ) : System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="- value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -6039,6 +6205,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.op_UnaryPlus(System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Operator + (value As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger operator +(System::Numerics::BigInteger value);" />
+      <MemberSignature Language="F#" Value="static member ( ~+ ) : System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="+ value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -6091,6 +6258,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Parse(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (value As String) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger Parse(System::String ^ value);" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.Parse value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -6164,6 +6332,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Parse(System.String,System.Globalization.NumberStyles)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (value As String, style As NumberStyles) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger Parse(System::String ^ value, System::Globalization::NumberStyles style);" />
+      <MemberSignature Language="F#" Value="static member Parse : string * System.Globalization.NumberStyles -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.Parse (value, style)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -6219,6 +6388,9 @@ value Mod 2 = 0
 |E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
+> [!NOTE]
+> Any terminating NUL (U+0000) characters in `s` are ignored by the parsing operation, regardless of the value of the `style` argument.
+
  A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
   
 |`NumberStyles` value|Elements permitted in `value` in addition to digits|  
@@ -6282,6 +6454,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Parse(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (value As String, provider As IFormatProvider) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger Parse(System::String ^ value, IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="static member Parse : string * IFormatProvider -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.Parse (value, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -6376,10 +6549,17 @@ value Mod 2 = 0
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.BigInteger Parse(valuetype System.ReadOnlySpan`1&lt;char&gt; value, valuetype System.Globalization.NumberStyles style, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Parse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (value As ReadOnlySpan(Of Char), Optional style As NumberStyles = System.Globalization.NumberStyles.Integer, Optional provider As IFormatProvider = null) As BigInteger" />
+      <MemberSignature Language="F#" Value="static member Parse : ReadOnlySpan&lt;char&gt; * System.Globalization.NumberStyles * IFormatProvider -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.Parse (value, style, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
@@ -6404,6 +6584,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Parse(System.String,System.Globalization.NumberStyles,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (value As String, style As NumberStyles, provider As IFormatProvider) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger Parse(System::String ^ value, System::Globalization::NumberStyles style, IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="static member Parse : string * System.Globalization.NumberStyles * IFormatProvider -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.Parse (value, style, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -6461,6 +6642,9 @@ value Mod 2 = 0
 |E|The "e" or "E" character, which indicates that the value is represented in exponential (scientific) notation. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
+> [!NOTE]
+> Any terminating NUL (U+0000) characters in `s` are ignored by the parsing operation, regardless of the value of the `style` argument.
+
  A string with digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> style) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in the input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
   
 |NumberStyles value|Elements permitted in value in addition to digits|  
@@ -6537,6 +6721,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Pow(System.Numerics.BigInteger,System.Int32)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Pow (value As BigInteger, exponent As Integer) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger Pow(System::Numerics::BigInteger value, int exponent);" />
+      <MemberSignature Language="F#" Value="static member Pow : System.Numerics.BigInteger * int -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.Pow (value, exponent)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -6592,6 +6777,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Remainder(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Remainder (dividend As BigInteger, divisor As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger Remainder(System::Numerics::BigInteger dividend, System::Numerics::BigInteger divisor);" />
+      <MemberSignature Language="F#" Value="static member Remainder : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.Remainder (dividend, divisor)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -6608,6 +6794,11 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
       </ReturnValue>
@@ -6652,6 +6843,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="P:System.Numerics.BigInteger.Sign" />
       <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sign As Integer" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Sign { int get(); };" />
+      <MemberSignature Language="F#" Value="member this.Sign : int" Usage="System.Numerics.BigInteger.Sign" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -6708,6 +6900,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.Subtract(System.Numerics.BigInteger,System.Numerics.BigInteger)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (left As BigInteger, right As BigInteger) As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::BigInteger Subtract(System::Numerics::BigInteger left, System::Numerics::BigInteger right);" />
+      <MemberSignature Language="F#" Value="static member Subtract : System.Numerics.BigInteger * System.Numerics.BigInteger -&gt; System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.Subtract (left, right)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -6724,6 +6917,11 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
       </ReturnValue>
@@ -6766,6 +6964,12 @@ value Mod 2 = 0
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -6785,6 +6989,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.ToByteArray" />
       <MemberSignature Language="VB.NET" Value="Public Function ToByteArray () As Byte()" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ ToByteArray();" />
+      <MemberSignature Language="F#" Value="member this.ToByteArray : unit -&gt; byte[]" Usage="bigInteger.ToByteArray " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -6845,10 +7050,17 @@ value Mod 2 = 0
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] ToByteArray(bool isUnsigned, bool isBigEndian) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.ToByteArray(System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToByteArray (Optional isUnsigned As Boolean = false, Optional isBigEndian As Boolean = false) As Byte()" />
+      <MemberSignature Language="F#" Value="member this.ToByteArray : bool * bool -&gt; byte[]" Usage="bigInteger.ToByteArray (isUnsigned, isBigEndian)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte[]</ReturnType>
@@ -6881,6 +7093,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="bigInteger.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -6928,6 +7141,8 @@ value Mod 2 = 0
   
  ]]></format>
         </remarks>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -6936,6 +7151,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.ToString(System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="bigInteger.ToString provider" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -7002,6 +7218,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.ToString(System.String)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format);" />
+      <MemberSignature Language="F#" Value="override this.ToString : string -&gt; string" Usage="bigInteger.ToString format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -7062,6 +7279,8 @@ value Mod 2 = 0
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is not a valid format string.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -7070,6 +7289,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.ToString(System.String,System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String, provider As IFormatProvider) As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(System::String ^ format, IFormatProvider ^ provider);" />
+      <MemberSignature Language="F#" Value="override this.ToString : string * IFormatProvider -&gt; string" Usage="bigInteger.ToString (format, provider)" />
       <MemberType>Method</MemberType>
       <Implements>
         <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
@@ -7143,6 +7363,8 @@ value Mod 2 = 0
         </remarks>
         <exception cref="T:System.FormatException">
           <paramref name="format" /> is not a valid format string.</exception>
+        <related type="Article" href="~/docs/standard/base-types/standard-numeric-format-strings.md">Standard Numeric Format Strings</related>
+        <related type="Article" href="~/docs/standard/base-types/custom-numeric-format-strings.md">Custom Numeric Format Strings</related>
       </Docs>
     </Member>
     <Member MemberName="TryFormat">
@@ -7150,17 +7372,24 @@ value Mod 2 = 0
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryFormat(valuetype System.Span`1&lt;char&gt; destination, [out] int32&amp; charsWritten, valuetype System.ReadOnlySpan`1&lt;char&gt; format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.TryFormat(System.Span{System.Char},System.Int32@,System.ReadOnlySpan{System.Char},System.IFormatProvider)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryFormat (destination As Span(Of Char), ByRef charsWritten As Integer, Optional format As ReadOnlySpan(Of Char) = null, Optional provider As IFormatProvider = null) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryFormat : Span&lt;char&gt; *  * ReadOnlySpan&lt;char&gt; * IFormatProvider -&gt; bool" Usage="bigInteger.TryFormat (destination, charsWritten, format, provider)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="destination" Type="System.Span&lt;System.Char&gt;" />
-        <Parameter Name="charsWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="charsWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="format" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
@@ -7190,17 +7419,24 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.TryParse(System.ReadOnlySpan{System.Char},System.Numerics.BigInteger@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (value As ReadOnlySpan(Of Char), ByRef result As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(ReadOnlySpan&lt;char&gt; value, [Runtime::InteropServices::Out] System::Numerics::BigInteger % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : ReadOnlySpan&lt;char&gt; *  -&gt; bool" Usage="System.Numerics.BigInteger.TryParse (value, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
-        <Parameter Name="result" Type="System.Numerics.BigInteger&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Numerics.BigInteger" RefType="out" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -7216,6 +7452,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.TryParse(System.String,System.Numerics.BigInteger@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (value As String, ByRef result As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ value, [Runtime::InteropServices::Out] System::Numerics::BigInteger % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Numerics.BigInteger.TryParse (value, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -7237,7 +7474,7 @@ value Mod 2 = 0
       </ReturnValue>
       <Parameters>
         <Parameter Name="value" Type="System.String" />
-        <Parameter Name="result" Type="System.Numerics.BigInteger&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Numerics.BigInteger" RefType="out" />
       </Parameters>
       <Docs>
         <param name="value">The string representation of a number.</param>
@@ -7293,10 +7530,17 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.TryParse(System.ReadOnlySpan{System.Char},System.Globalization.NumberStyles,System.IFormatProvider,System.Numerics.BigInteger@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (value As ReadOnlySpan(Of Char), style As NumberStyles, provider As IFormatProvider, ByRef result As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(ReadOnlySpan&lt;char&gt; value, System::Globalization::NumberStyles style, IFormatProvider ^ provider, [Runtime::InteropServices::Out] System::Numerics::BigInteger % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : ReadOnlySpan&lt;char&gt; * System.Globalization.NumberStyles * IFormatProvider *  -&gt; bool" Usage="System.Numerics.BigInteger.TryParse (value, style, provider, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -7305,7 +7549,7 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.ReadOnlySpan&lt;System.Char&gt;" />
         <Parameter Name="style" Type="System.Globalization.NumberStyles" />
         <Parameter Name="provider" Type="System.IFormatProvider" />
-        <Parameter Name="result" Type="System.Numerics.BigInteger&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Numerics.BigInteger" RefType="out" />
       </Parameters>
       <Docs>
         <param name="value">To be added.</param>
@@ -7323,6 +7567,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.TryParse(System.String,System.Globalization.NumberStyles,System.IFormatProvider,System.Numerics.BigInteger@)" />
       <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (value As String, style As NumberStyles, provider As IFormatProvider, ByRef result As BigInteger) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ value, System::Globalization::NumberStyles style, IFormatProvider ^ provider, [Runtime::InteropServices::Out] System::Numerics::BigInteger % result);" />
+      <MemberSignature Language="F#" Value="static member TryParse : string * System.Globalization.NumberStyles * IFormatProvider *  -&gt; bool" Usage="System.Numerics.BigInteger.TryParse (value, style, provider, result)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -7346,7 +7591,7 @@ value Mod 2 = 0
         <Parameter Name="value" Type="System.String" />
         <Parameter Name="style" Type="System.Globalization.NumberStyles" />
         <Parameter Name="provider" Type="System.IFormatProvider" />
-        <Parameter Name="result" Type="System.Numerics.BigInteger&amp;" RefType="out" />
+        <Parameter Name="result" Type="System.Numerics.BigInteger" RefType="out" />
       </Parameters>
       <Docs>
         <param name="value">The string representation of a number. The string is interpreted using the style specified by <c>style</c>.</param>
@@ -7385,6 +7630,9 @@ value Mod 2 = 0
 |*exponential_digits*|A sequence of digits from 0 through 9. The `value` parameter can represent a number in exponential notation if `style` includes the <xref:System.Globalization.NumberStyles.AllowExponent?displayProperty=nameWithType> flag.|  
 |*hexdigits*|A sequence of hexadecimal digits from 0 through f, or 0 through F.|  
   
+> [!NOTE]
+> Any terminating NUL (U+0000) characters in `s` are ignored by the parsing operation, regardless of the value of the `style` argument.
+
  A string with decimal digits only (which corresponds to the <xref:System.Globalization.NumberStyles.None?displayProperty=nameWithType> flag) always parses successfully. Most of the remaining <xref:System.Globalization.NumberStyles> members control elements that may be present, but are not required to be present, in this input string. The following table indicates how individual <xref:System.Globalization.NumberStyles> members affect the elements that may be present in `value`.  
   
 |Non-composite `NumberStyles` values|Elements permitted in value in addition to digits|  
@@ -7456,17 +7704,24 @@ value Mod 2 = 0
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryWriteBytes(valuetype System.Span`1&lt;unsigned int8&gt; destination, [out] int32&amp; bytesWritten, bool isUnsigned, bool isBigEndian) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.BigInteger.TryWriteBytes(System.Span{System.Byte},System.Int32@,System.Boolean,System.Boolean)" />
       <MemberSignature Language="VB.NET" Value="Public Function TryWriteBytes (destination As Span(Of Byte), ByRef bytesWritten As Integer, Optional isUnsigned As Boolean = false, Optional isBigEndian As Boolean = false) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryWriteBytes : Span&lt;byte&gt; *  * bool * bool -&gt; bool" Usage="bigInteger.TryWriteBytes (destination, bytesWritten, isUnsigned, isBigEndian)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
         <Parameter Name="destination" Type="System.Span&lt;System.Byte&gt;" />
-        <Parameter Name="bytesWritten" Type="System.Int32&amp;" RefType="out" />
+        <Parameter Name="bytesWritten" Type="System.Int32" RefType="out" />
         <Parameter Name="isUnsigned" Type="System.Boolean" />
         <Parameter Name="isBigEndian" Type="System.Boolean" />
       </Parameters>
@@ -7486,6 +7741,7 @@ value Mod 2 = 0
       <MemberSignature Language="DocId" Value="P:System.Numerics.BigInteger.Zero" />
       <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Zero As BigInteger" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Numerics::BigInteger Zero { System::Numerics::BigInteger get(); };" />
+      <MemberSignature Language="F#" Value="member this.Zero : System.Numerics.BigInteger" Usage="System.Numerics.BigInteger.Zero" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
@@ -7502,6 +7758,11 @@ value Mod 2 = 0
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Numerics.BigInteger</ReturnType>
       </ReturnValue>
