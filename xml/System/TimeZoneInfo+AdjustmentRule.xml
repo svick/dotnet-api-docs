@@ -42,7 +42,7 @@
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("System.Core, Version=2.0.5.0, Culture=Neutral, PublicKeyToken=7cec85d7bea7798e")</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-3.5;xamarinandroid-7.1;xamarinios-10.8">
-      <AttributeName>Serializable</AttributeName>
+      <AttributeName>System.Serializable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -167,8 +167,8 @@ W. Central Africa Standard Time has no adjustment rules
         <Parameter Name="daylightTransitionEnd" Type="System.TimeZoneInfo+TransitionTime" />
       </Parameters>
       <Docs>
-        <param name="dateStart">The effective date of the adjustment rule. If the value of the <c>dateStart</c> parameter is <see langword="DateTime.MinValue.Date" />, this is the first adjustment rule in effect for a time zone.</param>
-        <param name="dateEnd">The last date that the adjustment rule is in force. If the value of the <c>dateEnd</c> parameter is <see langword="DateTime.MaxValue.Date" />, the adjustment rule has no end date.</param>
+        <param name="dateStart">The effective date of the adjustment rule. If the value of the <paramref name="dateStart" /> parameter is <see langword="DateTime.MinValue.Date" />, this is the first adjustment rule in effect for a time zone.</param>
+        <param name="dateEnd">The last date that the adjustment rule is in force. If the value of the <paramref name="dateEnd" /> parameter is <see langword="DateTime.MaxValue.Date" />, the adjustment rule has no end date.</param>
         <param name="daylightDelta">The time change that results from the adjustment. This value is added to the time zone's <see cref="P:System.TimeZoneInfo.BaseUtcOffset" /> property to obtain the correct daylight offset from Coordinated Universal Time (UTC). This value can range from -14 to 14.</param>
         <param name="daylightTransitionStart">An object that defines the start of daylight saving time.</param>
         <param name="daylightTransitionEnd">An object that defines the end of daylight saving time.</param>
@@ -405,7 +405,7 @@ TimeZoneTime = BaseUtcOffset + DaylightDelta + UtcTime
  The value of the <xref:System.TimeZoneInfo.AdjustmentRule.DaylightDelta%2A> property can range from 14 hours to -14 hours.  
   
 > [!NOTE]
->  The <xref:System.TimeZoneInfo.AdjustmentRule.DaylightDelta%2A> property measures the difference between the time zone’s standard time and its daylight saving time. It does not apply to changes in a time zone's standard offset from Coordinated Universal Time (UTC). To represent a time zone that has changed its standard time offset from UTC, you must call the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to create a new time zone.  
+>  The <xref:System.TimeZoneInfo.AdjustmentRule.DaylightDelta%2A> property measures the difference between the time zone's standard time and its daylight saving time. It does not apply to changes in a time zone's standard offset from Coordinated Universal Time (UTC). To represent a time zone that has changed its standard time offset from UTC, you must call the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to create a new time zone.  
   
  The most common value of the <xref:System.TimeZoneInfo.AdjustmentRule.DaylightDelta%2A> property is 1.0 hours. The application of the daylight saving time adjustment rule increases the time zone's offset from Coordinated Universal Time (UTC) by one hour.  
   
