@@ -43,7 +43,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Runtime.Serialization.DataContract</AttributeName>
     </Attribute>
   </Attributes>
@@ -676,7 +676,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="results" /> is <see langword="null" />.</exception>
+          <paramref name="message" /> or <paramref name="results" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ServiceModel.Dispatcher.InvalidBodyAccessException">A filter attempted to examine the contents of the message body.</exception>
       </Docs>
     </Member>
@@ -723,7 +723,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="results" /> is <see langword="null" />.</exception>
+          <paramref name="messageBuffer" /> or <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingFilters">
@@ -763,7 +763,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="results" /> is <see langword="null" />.</exception>
+          <paramref name="navigator" /> or <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingFilters">
@@ -803,7 +803,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="matches" /> is <see langword="null" />.</exception>
+          <paramref name="navigator" /> or <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="GetMatchingValue">
@@ -1053,7 +1053,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="results" /> is <see langword="null" />.</exception>
+          <paramref name="message" /> or <paramref name="results" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ServiceModel.Dispatcher.InvalidBodyAccessException">A filter attempted to examine the contents of the message body.</exception>
       </Docs>
     </Member>
@@ -1098,7 +1098,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="results" /> is <see langword="null" />.</exception>
+          <paramref name="messageBuffer" /> or <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingValues">
@@ -1138,7 +1138,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="results" /> is <see langword="null" />.</exception>
+          <paramref name="navigator" /> or <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetMatchingValues">
@@ -1178,7 +1178,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="results" /> is <see langword="null" />.</exception>
+          <paramref name="navigator" /> or <paramref name="results" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IsReadOnly">
@@ -1306,7 +1306,7 @@ myFilters(filter)
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Runtime.Serialization.DataMember</AttributeName>
         </Attribute>
       </Attributes>

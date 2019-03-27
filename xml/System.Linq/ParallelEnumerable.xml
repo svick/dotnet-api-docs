@@ -372,7 +372,7 @@
         <param name="source">A sequence whose elements to apply the predicate to.</param>
         <param name="predicate">A function to test each element for a condition.</param>
         <summary>Determines in parallel whether all elements of a sequence satisfy a condition.</summary>
-        <returns>true if every element of the source sequence passes the test in the specified predicate, or if the sequence is empty; otherwise, false..</returns>
+        <returns>true if every element of the source sequence passes the test in the specified predicate, or if the sequence is empty; otherwise, false.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
         <exception cref="T:System.ArgumentNullException">
@@ -1142,7 +1142,7 @@
       <Docs>
         <param name="source">The source sequence.</param>
         <summary>Computes in parallel the average of a sequence of values.</summary>
-        <returns>Returns the average of the sequence of values.</returns>
+        <returns>The average of the sequence of values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
         <exception cref="T:System.ArgumentNullException">A sequence of values that are used to calculate an average.The average of the sequence of values.<paramref name="source" /> is a null reference (Nothing in Visual Basic).</exception>
@@ -1886,7 +1886,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.Obsolete("The second data source of a binary operator must be of type System.Linq.ParallelQuery&lt;T&gt; rather than System.Collections.Generic.IEnumerable&lt;T&gt;. To fix this problem, use the AsParallel() extension method to convert the right data source to System.Linq.ParallelQuery&lt;T&gt;.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -2539,7 +2539,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.Obsolete("The second data source of a binary operator must be of type System.Linq.ParallelQuery&lt;T&gt; rather than System.Collections.Generic.IEnumerable&lt;T&gt;. To fix this problem, use the AsParallel() extension method to convert the right data source to System.Linq.ParallelQuery&lt;T&gt;.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -2645,7 +2645,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.Obsolete("The second data source of a binary operator must be of type System.Linq.ParallelQuery&lt;T&gt; rather than System.Collections.Generic.IEnumerable&lt;T&gt;. To fix this problem, use the AsParallel() extension method to convert the right data source to System.Linq.ParallelQuery&lt;T&gt;.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -3488,7 +3488,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.Obsolete("The second data source of a binary operator must be of type System.Linq.ParallelQuery&lt;T&gt; rather than System.Collections.Generic.IEnumerable&lt;T&gt;. To fix this problem, use the AsParallel() extension method to convert the right data source to System.Linq.ParallelQuery&lt;T&gt;.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -3621,7 +3621,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.Obsolete("The second data source of a binary operator must be of type System.Linq.ParallelQuery&lt;T&gt; rather than System.Collections.Generic.IEnumerable&lt;T&gt;. To fix this problem, use the AsParallel() extension method to convert the right data source to System.Linq.ParallelQuery&lt;T&gt;.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -3760,7 +3760,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.Obsolete("The second data source of a binary operator must be of type System.Linq.ParallelQuery&lt;T&gt; rather than System.Collections.Generic.IEnumerable&lt;T&gt;. To fix this problem, use the AsParallel() extension method to convert the right data source to System.Linq.ParallelQuery&lt;T&gt;.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -3866,7 +3866,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.Obsolete("The second data source of a binary operator must be of type System.Linq.ParallelQuery&lt;T&gt; rather than System.Collections.Generic.IEnumerable&lt;T&gt;. To fix this problem, use the AsParallel() extension method to convert the right data source to System.Linq.ParallelQuery&lt;T&gt;.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -3981,7 +3981,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.Obsolete("The second data source of a binary operator must be of type System.Linq.ParallelQuery&lt;T&gt; rather than System.Collections.Generic.IEnumerable&lt;T&gt;. To fix this problem, use the AsParallel() extension method to convert the right data source to System.Linq.ParallelQuery&lt;T&gt;.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -4114,7 +4114,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.Obsolete("The second data source of a binary operator must be of type System.Linq.ParallelQuery&lt;T&gt; rather than System.Collections.Generic.IEnumerable&lt;T&gt;. To fix this problem, use the AsParallel() extension method to convert the right data source to System.Linq.ParallelQuery&lt;T&gt;.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -6598,9 +6598,9 @@
       </Parameters>
       <Docs>
         <typeparam name="TResult">The type to filter the elements of the sequence on.</typeparam>
-        <param name="source">The sequence whose elements to filter.</param>
+        <param name="source">The sequence with elements to filter.</param>
         <summary>Filters the elements of a ParallelQuery based on a specified type.</summary>
-        <returns>A sequence that contains elements from the input sequence of type .</returns>
+        <returns>A sequence that contains elements from the input sequence filtered by type.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="source" /> is a null reference (Nothing in Visual Basic).</exception>
@@ -6847,7 +6847,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="source" /> or <paramref name="KeySelector" /> is a null reference (Nothing in Visual Basic)..</exception>
+          <paramref name="source" /> or <paramref name="KeySelector" /> is a null reference (Nothing in Visual Basic).</exception>
         <exception cref="T:System.OperationCanceledException">The query was canceled with the token passed in through <paramref name="WithCancellation" />.</exception>
         <exception cref="T:System.AggregateException">One or more exceptions occurred during the evaluation of the query.</exception>
         <related type="Article" href="~/docs/standard/parallel-programming/parallel-linq-plinq.md">Parallel LINQ (PLINQ)</related>
@@ -7334,7 +7334,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.Obsolete("The second data source of a binary operator must be of type System.Linq.ParallelQuery&lt;T&gt; rather than System.Collections.Generic.IEnumerable&lt;T&gt;. To fix this problem, use the AsParallel() extension method to convert the right data source to System.Linq.ParallelQuery&lt;T&gt;.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -7435,7 +7435,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.Obsolete("The second data source of a binary operator must be of type System.Linq.ParallelQuery&lt;T&gt; rather than System.Collections.Generic.IEnumerable&lt;T&gt;. To fix this problem, use the AsParallel() extension method to convert the right data source to System.Linq.ParallelQuery&lt;T&gt;.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -9696,7 +9696,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.Obsolete("The second data source of a binary operator must be of type System.Linq.ParallelQuery&lt;T&gt; rather than System.Collections.Generic.IEnumerable&lt;T&gt;. To fix this problem, use the AsParallel() extension method to convert the right data source to System.Linq.ParallelQuery&lt;T&gt;.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -9804,7 +9804,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.Obsolete("The second data source of a binary operator must be of type System.Linq.ParallelQuery&lt;T&gt; rather than System.Collections.Generic.IEnumerable&lt;T&gt;. To fix this problem, use the AsParallel() extension method to convert the right data source to System.Linq.ParallelQuery&lt;T&gt;.")</AttributeName>
         </Attribute>
       </Attributes>
@@ -10223,7 +10223,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0;netframework-4.8;netcore-2.2;dotnet-uwp-10.0;netcore-3.0">
           <AttributeName>System.Obsolete("The second data source of a binary operator must be of type System.Linq.ParallelQuery&lt;T&gt; rather than System.Collections.Generic.IEnumerable&lt;T&gt;. To fix this problem, use the AsParallel() extension method to convert the right data source to System.Linq.ParallelQuery&lt;T&gt;.")</AttributeName>
         </Attribute>
       </Attributes>

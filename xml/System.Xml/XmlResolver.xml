@@ -39,7 +39,7 @@
   
 -   <xref:System.Xml.XmlUrlResolver> is the default resolver for all classes in the <xref:System.Xml> namespace. It supports the `file://` and `http://` protocols and requests from the <xref:System.Net.WebRequest?displayProperty=nameWithType> class. For examples of extending the class to improve performance, see the <xref:System.Xml.XmlUrlResolver> reference page.  
   
--   <xref:System.Xml.XmlSecureResolver> helps secure another <xref:System.Xml.XmlResolver> object by wrapping the object object and restricting the resources that it can access. For example, the <xref:System.Xml.XmlSecureResolver> can prohibit access to specific Internet sites or zones.  
+-   <xref:System.Xml.XmlSecureResolver> helps secure another <xref:System.Xml.XmlResolver> object by wrapping the object and restricting the resources that it can access. For example, the <xref:System.Xml.XmlSecureResolver> can prohibit access to specific Internet sites or zones.  
   
  You can create and specify your own resolver. If you don't specify a resolver, the reader uses a default <xref:System.Xml.XmlUrlResolver> with no user credentials.  
   
@@ -82,7 +82,7 @@
   
  ]]></format>
     </remarks>
-    <related type="Article" href="https://msdn.microsoft.com/library/e695047f-3c0f-4045-8708-5baea91cc380">XML Documents and Data</related>
+    <related type="Article" href="~/docs/standard/data/xml/index.md">XML Documents and Data</related>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -282,9 +282,9 @@ resolver.Credentials = myCache;
         <ReturnType>System.Threading.Tasks.Task&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="absoluteUri" Type="System.Uri" />
-        <Parameter Name="role" Type="System.String" />
-        <Parameter Name="ofObjectToReturn" Type="System.Type" />
+        <Parameter Name="absoluteUri" Type="System.Uri" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="role" Type="System.String" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="ofObjectToReturn" Type="System.Type" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="absoluteUri">The URI returned from <see cref="M:System.Xml.XmlResolver.ResolveUri(System.Uri,System.String)" />.</param>
@@ -381,8 +381,8 @@ resolver.Credentials = myCache;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="absoluteUri" Type="System.Uri" />
-        <Parameter Name="type" Type="System.Type" />
+        <Parameter Name="absoluteUri" Type="System.Uri" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="type" Type="System.Type" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="absoluteUri">The URI.</param>

@@ -75,7 +75,7 @@
     <altmember cref="T:System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner" />
     <altmember cref="T:System.Web.UI.WebControls.WebControl" />
     <altmember cref="T:System.Web.UI.Design.ControlDesigner" />
-    <related type="Article" href="https://msdn.microsoft.com/library/1d5a99d7-0a72-403e-812e-2c1ab595c810">Introduction to ASP.NET Control Designers</related>
+    <related type="Article" href="https://docs.microsoft.com/previous-versions/aspnet/wxh45wzs(v=vs.100)">Introduction to ASP.NET Control Designers</related>
     <related type="Article" href="https://msdn.microsoft.com/library/27e44af0-6e12-4b7d-b17f-db35f1b6a052">Walkthrough: Creating a Basic Control Designer for a Web Server Control</related>
   </Docs>
   <Members>
@@ -160,7 +160,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dataBoundControl" Type="System.Web.UI.WebControls.BaseDataBoundControl" />
+        <Parameter Name="dataBoundControl" Type="System.Web.UI.WebControls.BaseDataBoundControl" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dataBoundControl">The associated control derived from the <see cref="T:System.Web.UI.WebControls.ListControl" />, or a copy of that control.</param>
@@ -478,8 +478,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Object" />
-        <Parameter Name="ce" Type="System.ComponentModel.Design.ComponentChangedEventArgs" />
+        <Parameter Name="source" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1" />
+        <Parameter Name="ce" Type="System.ComponentModel.Design.ComponentChangedEventArgs" Index="1" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="source">The source of the event.</param>
@@ -571,7 +571,7 @@ Handles changes made to the component. This includes changes made in the propert
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="forceUpdateView" Type="System.Boolean" />
+        <Parameter Name="forceUpdateView" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="forceUpdateView">A <see cref="T:System.Boolean" /> that indicates whether the design-time markup is to be unconditionally updated. This parameter is ignored.</param>

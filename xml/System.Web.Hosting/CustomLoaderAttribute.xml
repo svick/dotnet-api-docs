@@ -14,7 +14,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly, AllowMultiple=false, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
@@ -40,7 +40,7 @@
         <Parameter Name="customLoaderType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="customLoaderType">To be added.</param>
+        <param name="customLoaderType">The type of the custom loader.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.Hosting.CustomLoaderAttribute" /> class.</summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

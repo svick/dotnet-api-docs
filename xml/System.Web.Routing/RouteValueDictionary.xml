@@ -123,7 +123,7 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="dictionary" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" />
+        <Parameter Name="dictionary" Type="System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="dictionary">A collection whose elements are copied to the new collection.</param>
@@ -160,7 +160,7 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="values" Type="System.Object" />
+        <Parameter Name="values" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="values">An object that contains properties that will be added as elements to the new collection.</param>
@@ -207,8 +207,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" />
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The key of the element to add.</param>
@@ -270,7 +270,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The key to locate in the dictionary.</param>
@@ -301,7 +301,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="value">The value to locate in the dictionary.</param>
@@ -391,7 +391,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The key of the value to get or set.</param>
@@ -402,12 +402,12 @@
       </Docs>
     </Member>
     <Member MemberName="Keys">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary.KeyCollection&lt;string,object&gt; Keys { get; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,object&gt;.KeyCollection Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2/KeyCollection&lt;string, object&gt; Keys" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteValueDictionary.Keys" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As Dictionary.KeyCollection(Of String, Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary::KeyCollection&lt;System::String ^, System::Object ^&gt; ^ Keys { System::Collections::Generic::Dictionary::KeyCollection&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.Dictionary.KeyCollection&lt;string, obj&gt;" Usage="System.Web.Routing.RouteValueDictionary.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As Dictionary(Of String, Object).KeyCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt;::KeyCollection ^ Keys { System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt;::KeyCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.Dictionary&lt;string, obj&gt;.KeyCollection" Usage="System.Web.Routing.RouteValueDictionary.Keys" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -418,7 +418,7 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.Dictionary+KeyCollection&lt;System.String,System.Object&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;+KeyCollection</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets a collection that contains the keys in the dictionary.</summary>
@@ -450,7 +450,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The key of the element to remove.</param>
@@ -483,11 +483,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
+        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="item">The key/value pair to add to the dictionary.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.Generic.ICollection`1.Add(`0)" />.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -514,12 +514,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
+        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The key and value pair to locate in the dictionary.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.Generic.ICollection`1.Contains(`0)" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -543,13 +544,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;[]" />
-        <Parameter Name="arrayIndex" Type="System.Int32" />
+        <Parameter Name="array" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;[]" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="arrayIndex" Type="System.Int32" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="array">To be added.</param>
-        <param name="arrayIndex">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="array">The one-dimensional array that is the destination of the elements copied from the dictionary.</param>
+        <param name="arrayIndex">The zero-based index in <paramref name="array" /> at which copying starts.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)" />.</summary>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -577,8 +578,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>For a description of this member, see <see cref="P:System.Collections.Generic.ICollection`1.IsReadOnly" />.</summary>
+        <value>
+          <see langword="true" /> if the dictionary is read-only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -605,12 +607,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" />
+        <Parameter Name="item" Type="System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;" Index="0" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
-        <param name="item">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="item">The key of the element to remove.</param>
+        <summary>For a description of this member, see <see cref="M:System.Collections.Generic.ICollection`1.Remove(`0)" />.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="item" /> was successfully removed from the collection; otherwise, <see langword="false" />. This method also returns <see langword="false" /> if <paramref name="item" /> is not found in the collection.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -638,8 +641,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.String&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>For a description of this member, see <see cref="P:System.Collections.Generic.IDictionary`2.Keys" />.</summary>
+        <value>A collection that contains the keys in the dictionary.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -667,8 +670,8 @@
         <ReturnType>System.Collections.Generic.ICollection&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>For a description of this member, see <see cref="P:System.Collections.Generic.IDictionary`2.Values" />.</summary>
+        <value>A collection that contains the values in the dictionary.</value>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -696,8 +699,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>For a description of this member, see <see cref="M:System.Collections.Generic.IEnumerable`1.GetEnumerator" />.</summary>
+        <returns>A structure for reading data in the dictionary.</returns>
         <remarks>To be added.</remarks>
         <related type="Article" href="https://msdn.microsoft.com/library/892441af-8f1d-483e-ab5f-b82c23576f5a">ASP.NET Routing</related>
       </Docs>
@@ -758,8 +761,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" />
-        <Parameter Name="value" Type="System.Object" RefType="out" />
+        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netframework-4.8" />
+        <Parameter Name="value" Type="System.Object" RefType="out" Index="1" FrameworkAlternate="netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="key">The key of the value to get.</param>
@@ -781,12 +784,12 @@
       </Docs>
     </Member>
     <Member MemberName="Values">
-      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary.ValueCollection&lt;string,object&gt; Values { get; }" />
+      <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,object&gt;.ValueCollection Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2/ValueCollection&lt;string, object&gt; Values" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.RouteValueDictionary.Values" />
-      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As Dictionary.ValueCollection(Of String, Object)" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary::ValueCollection&lt;System::String ^, System::Object ^&gt; ^ Values { System::Collections::Generic::Dictionary::ValueCollection&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.Dictionary.ValueCollection&lt;string, obj&gt;" Usage="System.Web.Routing.RouteValueDictionary.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As Dictionary(Of String, Object).ValueCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt;::ValueCollection ^ Values { System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt;::ValueCollection ^ get(); };" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.Dictionary&lt;string, obj&gt;.ValueCollection" Usage="System.Web.Routing.RouteValueDictionary.Values" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -797,7 +800,7 @@
         <AssemblyVersion>3.5.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
-        <ReturnType>System.Collections.Generic.Dictionary+ValueCollection&lt;System.String,System.Object&gt;</ReturnType>
+        <ReturnType>System.Collections.Generic.Dictionary&lt;System.String,System.Object&gt;+ValueCollection</ReturnType>
       </ReturnValue>
       <Docs>
         <summary>Gets a collection that contains the values in the dictionary.</summary>

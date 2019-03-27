@@ -19,10 +19,10 @@
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
       <AttributeName>System.Obsolete("Use of this type is not recommended because it is being deprecated in Visual Studio 2005; there will be no replacement for this feature. Please see the ICodeCompiler documentation for additional help.")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+    <Attribute>
       <AttributeName>System.Runtime.InteropServices.Guid("E0C0FFE7-7eea-4ee5-b7e4-0080c7eb0b74")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5">
+    <Attribute>
       <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
     </Attribute>
   </Attributes>
@@ -138,7 +138,7 @@ The appended source text is provided as a single string. Should the string requi
       </ReturnValue>
       <Docs>
         <summary>Gets the code document object model (CodeDOM) represented in the code item.</summary>
-        <value>Returns the CodeDOM for the code item.</value>
+        <value>The CodeDOM for the code item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[
 
@@ -199,7 +199,7 @@ Removing an event source does not remove the underlying event handler from sourc
       </ReturnValue>
       <Docs>
         <summary>Sets or gets the text of a specified code item, including auto-generated code, if any.</summary>
-        <value>Returns the source text of the code item.</value>
+        <value>The source text of the code item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[
 

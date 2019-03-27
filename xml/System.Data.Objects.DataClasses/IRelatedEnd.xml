@@ -96,7 +96,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entity" Type="System.Object" />
+        <Parameter Name="entity" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entity">An object to add to the collection.</param>
@@ -176,7 +176,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entity" Type="System.Object" />
+        <Parameter Name="entity" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entity">The object being attached.</param>
@@ -296,7 +296,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `Load` is called to explicitly load related objects from a related end that is exposed by a navigation property. For more information, see [Loading Related Objects](https://msdn.microsoft.com/library/452347d2-7b3b-44cd-9001-231299a28cb1).  
+ `Load` is called to explicitly load related objects from a related end that is exposed by a navigation property. For more information, see [Loading Related Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896272(v=vs.100)).  
   
  ]]></format>
         </remarks>
@@ -327,7 +327,7 @@
 ## Remarks  
  The <xref:System.Data.Objects.DataClasses.RelatedEnd> class implements the <xref:System.Data.Objects.DataClasses.IRelatedEnd.Load%2A> method of <xref:System.Data.Objects.DataClasses.IRelatedEnd>. For more information, see <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A>.  
   
- <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> is called to explicitly load related objects from a related end exposed by a navigation property. For more information, see [Loading Related Objects](https://msdn.microsoft.com/library/452347d2-7b3b-44cd-9001-231299a28cb1).  
+ <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> is called to explicitly load related objects from a related end exposed by a navigation property. For more information, see [Loading Related Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896272(v=vs.100)).  
   
  The <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> method loads related objects from the data source whether or not <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> is `true`.  
   
@@ -362,7 +362,7 @@
 ## Remarks  
  The <xref:System.Data.Objects.DataClasses.RelatedEnd> class implements the <xref:System.Data.Objects.DataClasses.IRelatedEnd.Load%2A> method. Both the <xref:System.Data.Objects.DataClasses.EntityCollection%601> and <xref:System.Data.Objects.DataClasses.EntityReference%601> classes override this implementation.  
   
- `Load` is called to explicitly load related objects from a related end that is exposed by a navigation property. For more information, see [Loading Related Objects](https://msdn.microsoft.com/library/452347d2-7b3b-44cd-9001-231299a28cb1).  
+ `Load` is called to explicitly load related objects from a related end that is exposed by a navigation property. For more information, see [Loading Related Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896272(v=vs.100)).  
   
  The <xref:System.Data.Objects.DataClasses.IRelatedEnd.Load%2A> method loads related objects from the data source whether or not <xref:System.Data.Objects.DataClasses.RelatedEnd.IsLoaded%2A> is `true`.  
   
@@ -487,7 +487,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="entity" Type="System.Object" />
+        <Parameter Name="entity" Type="System.Object" Index="0" FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="entity">An object to remove from the collection.</param>

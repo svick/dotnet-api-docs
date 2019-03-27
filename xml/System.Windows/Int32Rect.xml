@@ -19,13 +19,13 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Int32RectConverter))</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Windows.Markup.ValueSerializer(typeof(System.Windows.Converters.Int32RectValueSerializer))</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.Serializable</AttributeName>
     </Attribute>
   </Attributes>
@@ -186,7 +186,7 @@
         <param name="o">The object to compare to the current rectangle.</param>
         <summary>Determines whether the specified rectangle is equal to this rectangle.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="o" /> is an <see cref="T:System.Windows.Int32Rect" /> and the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" /> as this rectangle; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="o" /> is an <see cref="T:System.Windows.Int32Rect" /> and has the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" /> as this rectangle; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -220,7 +220,7 @@
         <param name="value">The rectangle to compare to the current rectangle.</param>
         <summary>Determines whether the specified rectangle is equal to this rectangle.</summary>
         <returns>
-          <see langword="true" /> if both rectangles have the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" /> as this rectangle; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if <paramref name="value" /> has the same <see cref="P:System.Windows.Int32Rect.X" />, <see cref="P:System.Windows.Int32Rect.Y" />, <see cref="P:System.Windows.Int32Rect.Width" />, and <see cref="P:System.Windows.Int32Rect.Height" /> as this rectangle; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

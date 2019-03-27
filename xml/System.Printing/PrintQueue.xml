@@ -492,8 +492,8 @@
         <ReturnType>System.Printing.PrintSystemJobInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="jobName" Type="System.String" />
-        <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
+        <Parameter Name="jobName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="printTicket" Type="System.Printing.PrintTicket" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="jobName">The path and name of the document that is being printed.</param>
@@ -596,10 +596,10 @@
         <ReturnType>System.Printing.PrintSystemJobInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="jobName" Type="System.String" />
-        <Parameter Name="documentPath" Type="System.String" />
-        <Parameter Name="fastCopy" Type="System.Boolean" />
-        <Parameter Name="printTicket" Type="System.Printing.PrintTicket" />
+        <Parameter Name="jobName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="documentPath" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="fastCopy" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="printTicket" Type="System.Printing.PrintTicket" Index="3" FrameworkAlternate="netcore-3.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       </Parameters>
       <Docs>
         <param name="jobName">The path and name of the document that is being printed.</param>
@@ -745,7 +745,7 @@
         <exception cref="T:System.Printing.PrintSystemException">Some of the properties could not be committed.</exception>
         <exception cref="T:System.Printing.PrintCommitAttributesException">Some of the properties could not be committed.  
   
- \- or -  
+-or-
   
  The <see cref="T:System.Printing.PrintQueue" /> object was not created with sufficient rights.</exception>
         <altmember cref="M:System.Printing.PrintQueue.Refresh" />
@@ -1451,7 +1451,7 @@
       <Parameters />
       <Docs>
         <summary>Creates a collection that contains a <see cref="T:System.Printing.PrintSystemJobInfo" /> object for each job in the queue.</summary>
-        <returns>Returns a <see cref="T:System.Printing.PrintJobInfoCollection" /> of <see cref="T:System.Printing.PrintSystemJobInfo" /> objects. There is one for each job in the queue.</returns>
+        <returns>A collection of <see cref="T:System.Printing.PrintSystemJobInfo" /> objects. There is one for each job in the queue.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

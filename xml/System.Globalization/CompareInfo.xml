@@ -83,7 +83,7 @@
  ]]></format>
     </remarks>
     <related type="ExternalDocumentation" href="https://www.microsoft.com/en-us/download/details.aspx?id=10921">Sorting Weight Tables for Windows operating systems</related>
-    <related type="ExternalDocumentation" href="https://www.unicode.org/Public/UCA/latest/allkeys.txt">Default Unicode Collation Elemeent Table, for Linux and macOS</related>
+    <related type="ExternalDocumentation" href="https://www.unicode.org/Public/UCA/latest/allkeys.txt">Default Unicode Collation Element Table, for Linux and macOS</related>
   </Docs>
   <Members>
     <MemberGroup MemberName="Compare">
@@ -835,7 +835,7 @@
         <ReturnType>System.Globalization.CompareInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="culture" Type="System.Int32" />
+        <Parameter Name="culture" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="culture">An integer representing the culture identifier.</param>
@@ -959,8 +959,8 @@
         <ReturnType>System.Globalization.CompareInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="culture" Type="System.Int32" />
-        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+        <Parameter Name="culture" Type="System.Int32" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="culture">An integer representing the culture identifier.</param>
@@ -1016,8 +1016,8 @@
         <ReturnType>System.Globalization.CompareInfo</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="name" Type="System.String" />
-        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="name">A string representing the culture name.</param>
@@ -1113,6 +1113,42 @@
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
+      <MemberSignature Language="C#" Value="public int GetHashCode (ReadOnlySpan&lt;char&gt; source, System.Globalization.CompareOptions options);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetHashCode(valuetype System.ReadOnlySpan`1&lt;char&gt; source, valuetype System.Globalization.CompareOptions options) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.GetHashCode(System.ReadOnlySpan{System.Char},System.Globalization.CompareOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHashCode (source As ReadOnlySpan(Of Char), options As CompareOptions) As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetHashCode(ReadOnlySpan&lt;char&gt; source, System::Globalization::CompareOptions options);" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : ReadOnlySpan&lt;char&gt; * System.Globalization.CompareOptions -&gt; int" Usage="compareInfo.GetHashCode (source, options)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Globalization</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="source" Type="System.ReadOnlySpan&lt;System.Char&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="options" Type="System.Globalization.CompareOptions" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="source">To be added.</param>
+        <param name="options">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetHashCode">
       <MemberSignature Language="C#" Value="public virtual int GetHashCode (string source, System.Globalization.CompareOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(string source, valuetype System.Globalization.CompareOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CompareInfo.GetHashCode(System.String,System.Globalization.CompareOptions)" />
@@ -1142,8 +1178,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.String" />
-        <Parameter Name="options" Type="System.Globalization.CompareOptions" />
+        <Parameter Name="source" Type="System.String" Index="0" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="options" Type="System.Globalization.CompareOptions" Index="1" FrameworkAlternate="dotnet-uwp-10.0;netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-1.3;netstandard-1.4;netstandard-1.6;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="source">The string whose hash code is to be returned.</param>
@@ -1211,7 +1247,7 @@
         <ReturnType>System.Globalization.SortKey</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.String" />
+        <Parameter Name="source" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="source">The string for which a <see cref="T:System.Globalization.SortKey" /> object is obtained.</param>
@@ -1259,8 +1295,8 @@
         <ReturnType>System.Globalization.SortKey</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.String" />
-        <Parameter Name="options" Type="System.Globalization.CompareOptions" />
+        <Parameter Name="source" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="options" Type="System.Globalization.CompareOptions" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="source">The string for which a <see cref="T:System.Globalization.SortKey" /> object is obtained.</param>
@@ -1556,9 +1592,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.String" />
-        <Parameter Name="value" Type="System.Char" />
-        <Parameter Name="startIndex" Type="System.Int32" />
+        <Parameter Name="source" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Char" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="startIndex" Type="System.Int32" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
@@ -1717,9 +1753,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.String" />
-        <Parameter Name="value" Type="System.String" />
-        <Parameter Name="startIndex" Type="System.Int32" />
+        <Parameter Name="source" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="startIndex" Type="System.Int32" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
@@ -2541,7 +2577,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ch" Type="System.Char" />
+        <Parameter Name="ch" Type="System.Char" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="ch">A Unicode character.</param>
@@ -2596,7 +2632,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="text">A string of zero or more Unicode characters.</param>
@@ -2938,7 +2974,7 @@
   
  <paramref name="value" /> is <see langword="null" />.</exception>
         <block subset="none" type="usage">
-          <para>Character sets include ignorable characters, which are characters that are not considered when performing a linguistic or culture-sensitive sort. In a culture-sensitive search, if <paramref name="value" /> contains an ignorable character, the result is equivalent to searching with that character removed. If <paramref name="value" /> consists only of one or more ignorable characters, the <see cref="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.String)" /> method always returns <paramref name="source" />.<see cref="P:System.String.Length" /> – 1, which represents the last index position in <paramref name="source" />. In the following example, the <see cref="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.String)" /> method is used to find three substrings (a soft hyphen (U+00AD), a soft hyphen followed by "n", and a soft hyphen followed by "m") in two strings. Only one of the strings contains a soft hyphen. In each case, because the soft hyphen is an ignorable character, the result is the same as if the soft hyphen had not been included in <paramref name="value" />. When searching for a soft hyphen only, the method returns 6 and 5. These values correspond to the index of the last character in the two strings.  
+          <para>Character sets include ignorable characters, which are characters that are not considered when performing a linguistic or culture-sensitive sort. In a culture-sensitive search, if <paramref name="value" /> contains an ignorable character, the result is equivalent to searching with that character removed. If <paramref name="value" /> consists only of one or more ignorable characters, the <see cref="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.String)" /> method always returns <paramref name="source" />.<see cref="P:System.String.Length" /> - 1, which represents the last index position in <paramref name="source" />. In the following example, the <see cref="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.String)" /> method is used to find three substrings (a soft hyphen (U+00AD), a soft hyphen followed by "n", and a soft hyphen followed by "m") in two strings. Only one of the strings contains a soft hyphen. In each case, because the soft hyphen is an ignorable character, the result is the same as if the soft hyphen had not been included in <paramref name="value" />. When searching for a soft hyphen only, the method returns 6 and 5. These values correspond to the index of the last character in the two strings.  
   
  [!code-csharp[System.Globalization.CompareInfo.LastIndexOf#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.compareinfo.lastindexof/cs/lastignorable1.cs#2)]
  [!code-vb[System.Globalization.CompareInfo.LastIndexOf#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.compareinfo.lastindexof/vb/lastignorable1.vb#2)]</para>
@@ -3058,9 +3094,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.String" />
-        <Parameter Name="value" Type="System.Char" />
-        <Parameter Name="startIndex" Type="System.Int32" />
+        <Parameter Name="source" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.Char" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="startIndex" Type="System.Int32" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
@@ -3184,7 +3220,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="options" /> contains an invalid <see cref="T:System.Globalization.CompareOptions" /> value.</exception>
         <block subset="none" type="usage">
-          <para>Character sets include ignorable characters, which are characters that are not considered when performing a linguistic or culture-sensitive sort. In a culture-sensitive search (that is, if <paramref name="options" /> is not <see cref="F:System.Globalization.CompareOptions.Ordinal" /> or <see cref="F:System.Globalization.CompareOptions.OrdinalIgnoreCase" />), if <paramref name="value" /> contains an ignorable character, the result is equivalent to searching with that character removed. If <paramref name="value" /> consists only of one or more ignorable characters, the <see cref="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.String,System.Globalization.CompareOptions)" /> method always returns <paramref name="source" />.<see cref="P:System.String.Length" /> – 1, which represents the last index position in <paramref name="source" />. In the following example, the <see cref="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.String,System.Globalization.CompareOptions)" /> method is used to find three substrings (a soft hyphen (U+00AD), a soft hyphen followed by "n", and a soft hyphen followed by "m") in two strings. Only one of the strings contains a soft hyphen. Because the soft hyphen is an ignorable character, a culture-sensitive search returns the same value that it would return if the soft hyphen were not included in the search string. An ordinal search, however, successfully finds the soft hyphen in one string and reports that it is absent from the second string.  
+          <para>Character sets include ignorable characters, which are characters that are not considered when performing a linguistic or culture-sensitive sort. In a culture-sensitive search (that is, if <paramref name="options" /> is not <see cref="F:System.Globalization.CompareOptions.Ordinal" /> or <see cref="F:System.Globalization.CompareOptions.OrdinalIgnoreCase" />), if <paramref name="value" /> contains an ignorable character, the result is equivalent to searching with that character removed. If <paramref name="value" /> consists only of one or more ignorable characters, the <see cref="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.String,System.Globalization.CompareOptions)" /> method always returns <paramref name="source" />.<see cref="P:System.String.Length" /> - 1, which represents the last index position in <paramref name="source" />. In the following example, the <see cref="M:System.Globalization.CompareInfo.LastIndexOf(System.String,System.String,System.Globalization.CompareOptions)" /> method is used to find three substrings (a soft hyphen (U+00AD), a soft hyphen followed by "n", and a soft hyphen followed by "m") in two strings. Only one of the strings contains a soft hyphen. Because the soft hyphen is an ignorable character, a culture-sensitive search returns the same value that it would return if the soft hyphen were not included in the search string. An ordinal search, however, successfully finds the soft hyphen in one string and reports that it is absent from the second string.  
   
  [!code-csharp[System.Globalization.CompareInfo.LastIndexOf#6](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.globalization.compareinfo.lastindexof/cs/lastignorable5.cs#6)]
  [!code-vb[System.Globalization.CompareInfo.LastIndexOf#6](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.globalization.compareinfo.lastindexof/vb/lastignorable5.vb#6)]</para>
@@ -3224,9 +3260,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.String" />
-        <Parameter Name="value" Type="System.String" />
-        <Parameter Name="startIndex" Type="System.Int32" />
+        <Parameter Name="source" Type="System.String" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="value" Type="System.String" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
+        <Parameter Name="startIndex" Type="System.Int32" Index="2" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="source">The string to search.</param>
@@ -3974,7 +4010,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="sender" Type="System.Object" />
+        <Parameter Name="sender" Type="System.Object" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="sender">The object that initiated the callback.</param>

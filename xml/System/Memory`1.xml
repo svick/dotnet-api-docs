@@ -12,6 +12,9 @@
   <AssemblyInfo>
     <AssemblyName>System.Memory</AssemblyName>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="T" />
   </TypeParameters>
@@ -20,7 +23,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -59,8 +62,11 @@ In addition to `Memory<T>`, you can use <xref:System.ReadOnlyMemory%601?displayP
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
-        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="array">The array from which to create the <see cref="T:System.Memory`1" /> object.</param>
@@ -95,10 +101,13 @@ The array is <see href="~/docs/csharp/programming-guide/concepts/covariance-cont
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
-        <Parameter Name="array" Type="T[]" />
-        <Parameter Name="start" Type="System.Int32" />
-        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="start" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="length" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="array">The source array.</param>
@@ -113,9 +122,16 @@ If `array` is `null`, this constructor returns a  <xref:System.Memory%601> objec
        ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="array" /> is <see langword="null" />, but <paramref name="start" /> or <paramref name="length" /> is non-zero.<p />
-          --or--<p /><paramref name="start" /> is outside the bounds of the array. <p />
-          --or--<p /><paramref name="start" /> and <paramref name="length" /> exceeds the number of elements in the array.
+          <paramref name="array" /> is <see langword="null" />, but <paramref name="start" /> or <paramref name="length" /> is non-zero.
+
+
+-or-
+
+<paramref name="start" /> is outside the bounds of the array.
+
+-or-
+
+<paramref name="start" /> and <paramref name="length" /> exceeds the number of elements in the array.
         </exception>
         <exception cref="T:System.ArrayTypeMismatchException">
           <paramref name="T" /> is a reference type, and <paramref name="array" /> is not an array of type <paramref name="T" />.</exception>
@@ -136,14 +152,17 @@ If `array` is `null`, this constructor returns a  <xref:System.Memory%601> objec
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Memory&lt;T&gt;" />
+        <Parameter Name="destination" Type="System.Memory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="destination">The destination .</param>
+        <param name="destination">The destination <see cref="T:System.Memory`1" /> object.</param>
         <summary>Copies the contents of a <see cref="T:System.Memory`1" /> object into a destination <see cref="T:System.Memory`1" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -170,6 +189,9 @@ This method copies all of the contents of the current <xref:System.Memory%601> i
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -194,11 +216,14 @@ This method copies all of the contents of the current <xref:System.Memory%601> i
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="System.Memory&lt;T&gt;" />
+        <Parameter Name="other" Type="System.Memory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="other">The object to compare with the current instance.</param>
@@ -235,8 +260,11 @@ The `Equals(Memory<T>)` method performs a test for reference equality; it does n
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -244,7 +272,7 @@ The `Equals(Memory<T>)` method performs a test for reference equality; it does n
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="obj">The object to compare with the current instance.</param>
@@ -275,8 +303,11 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+        <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>
@@ -305,6 +336,9 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -313,6 +347,37 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
         <value>
           <see langword="true" /> if the current instance is empty; otherwise, <see langword="false" />. </value>
         <remarks>A <see cref="T:System.Memory`1" /> object is empty if its length is 0.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Memory&lt;T&gt; this[Range range] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Memory`1&lt;!T&gt; Item(valuetype System.Range)" />
+      <MemberSignature Language="DocId" Value="P:System.Memory`1.Item(System.Range)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(range As Range) As Memory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Memory&lt;T&gt; default[Range] { Memory&lt;T&gt; get(Range range); };" />
+      <MemberSignature Language="F#" Value="member this.Item(Range) : Memory&lt;'T&gt;" Usage="System.Memory&lt;'T&gt;.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="range" Type="System.Range" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="range">To be added.</param>
+        <summary>To be added.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Length">
@@ -329,6 +394,9 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -354,11 +422,14 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="segment">The object to convert.</param>
@@ -382,11 +453,14 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ReadOnlyMemory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="memory" Type="System.Memory&lt;T&gt;" />
+        <Parameter Name="memory" Type="System.Memory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="memory">The object to convert.</param>
@@ -410,11 +484,14 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="array" Type="T[]" />
+        <Parameter Name="array" Type="T[]" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="array">The array to convert.</param>
@@ -437,6 +514,9 @@ Two <xref:System.Memory%601> objects are equal if both objects point to the same
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Buffers.MemoryHandle</ReturnType>
@@ -462,6 +542,37 @@ The garbage collector will not move the memory until the returned <xref:System.B
       </Docs>
     </Member>
     <Member MemberName="Slice">
+      <MemberSignature Language="C#" Value="public Memory&lt;T&gt; Slice (Index startIndex);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Memory`1&lt;!T&gt; Slice(valuetype System.Index startIndex) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Memory`1.Slice(System.Index)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Slice (startIndex As Index) As Memory(Of T)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Memory&lt;T&gt; Slice(Index startIndex);" />
+      <MemberSignature Language="F#" Value="member this.Slice : Index -&gt; Memory&lt;'T&gt;" Usage="memory.Slice startIndex" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="startIndex" Type="System.Index" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="startIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Slice">
       <MemberSignature Language="C#" Value="public Memory&lt;T&gt; Slice (int start);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Memory`1&lt;!T&gt; Slice(int32 start) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Memory`1.Slice(System.Int32)" />
@@ -476,11 +587,14 @@ The garbage collector will not move the memory until the returned <xref:System.B
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int32" />
+        <Parameter Name="start" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin the slice.</param>
@@ -489,6 +603,36 @@ The garbage collector will not move the memory until the returned <xref:System.B
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeExceptionException">
           <paramref name="start" /> is less than zero or greater than or equal to <see cref="P:System.Memory`1.Length" />. </exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Slice">
+      <MemberSignature Language="C#" Value="public Memory&lt;T&gt; Slice (Range range);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Memory`1&lt;!T&gt; Slice(valuetype System.Range range) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Memory`1.Slice(System.Range)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Memory&lt;T&gt; Slice(Range range);" />
+      <MemberSignature Language="F#" Value="member this.Slice : Range -&gt; Memory&lt;'T&gt;" Usage="memory.Slice range" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Memory&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="range" Type="System.Range" Index="0" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="range">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="Slice">
@@ -506,12 +650,15 @@ The garbage collector will not move the memory until the returned <xref:System.B
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Memory&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="start" Type="System.Int32" />
-        <Parameter Name="length" Type="System.Int32" />
+        <Parameter Name="start" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="length" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="start">The index at which to begin the slice.</param>
@@ -542,6 +689,9 @@ The garbage collector will not move the memory until the returned <xref:System.B
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Span&lt;T&gt;</ReturnType>
       </ReturnValue>
@@ -565,6 +715,9 @@ The garbage collector will not move the memory until the returned <xref:System.B
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>T[]</ReturnType>
@@ -599,6 +752,9 @@ Each call to the `ToArray` method returns a new array.
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -630,14 +786,17 @@ For a `Memory<Char>`, the `ToString` method returns a <xref:System.String> that 
       <AssemblyInfo>
         <AssemblyName>System.Memory</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Memory&lt;T&gt;" />
+        <Parameter Name="destination" Type="System.Memory&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="destination">To be added.</param>
+        <param name="destination">The destination <see cref="T:System.Memory`1" /> object.</param>
         <summary>Copies the contents of the memory into a destination <see cref="T:System.Memory`1" /> instance.</summary>
         <returns>
           <see langword="true" /> if the copy operation succeeds; otherwise, <see langword="false" />.</returns>

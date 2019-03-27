@@ -18,7 +18,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Method)</AttributeName>
     </Attribute>
   </Attributes>
@@ -130,7 +130,7 @@
       </Parameters>
       <Docs>
         <param name="operationDescription">The operation description.</param>
-        <param name="clientOperation">The client operation..</param>
+        <param name="clientOperation">The client operation.</param>
         <summary>An implementation of the <see cref="M:System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)" /> method. Used by the WCF infrastructure and is not intended to be used by developers.</summary>
         <remarks>To be added.</remarks>
       </Docs>

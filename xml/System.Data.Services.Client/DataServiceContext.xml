@@ -556,7 +556,7 @@
         <Parameter Name="state" Type="System.Object" />
         <Parameter Name="queries" Type="System.Data.Services.Client.DataServiceRequest[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1529,14 +1529,14 @@
       <Parameters>
         <Parameter Name="queries" Type="System.Data.Services.Client.DataServiceRequest[]">
           <Attributes>
-            <Attribute>
+            <Attribute FrameworkAlternate="netframework-3.5">
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="queries">Array of <see cref="T:System.Data.Services.Client.DataServiceRequest[]" /> objects that make up the queries.</param>
+        <param name="queries">Array of <see cref="T:System.Data.Services.Client.DataServiceRequest" /> objects that make up the queries.</param>
         <summary>Submits a group of queries as a batch to the data service.</summary>
         <returns>The response to the batch operation.</returns>
         <remarks>

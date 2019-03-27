@@ -118,8 +118,8 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="_Right">An existing <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object to be copied to the current container.</param>
+        <summary>Allocates and initializes a new <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object from an existing <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,9 +250,9 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">A valid iterator that points to the same container as the current iterator.</param>
+        <summary>Determines the distance between the element that the current iterator is pointing to and the element that the given iterator is pointing to.</summary>
+        <returns>The distance, in number of elements, between the element that the current iterator is pointing to and the element that <paramref name="_Right" /> is pointing to. This number is negative if <paramref name="_Right" /> points to an element that is before the element that the current iterator points to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -312,9 +312,10 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object.</param>
+        <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object is the same as the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the two <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> objects are the same object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -342,7 +343,7 @@
       </Docs>
     </Member>
     <Member MemberName="get_cref">
-      <MemberSignature Language="C#" Value="public virtual TValue get_cref ();" />
+      <MemberSignature Language="C#" Value="public virtual ref TValue get_cref ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue get_cref() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1.get_cref" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function get_cref () As TValue" />
@@ -388,7 +389,7 @@
       </Docs>
     </Member>
     <Member MemberName="get_ref">
-      <MemberSignature Language="C#" Value="public virtual TValue get_ref ();" />
+      <MemberSignature Language="C#" Value="public virtual ref TValue get_ref ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue get_ref() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1.get_ref" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function get_ref () As TValue" />
@@ -495,9 +496,10 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">A valid iterator that points to the same container as the current iterator.</param>
+        <summary>Determines whether the current iterator is pointing to an element in the container that is before the element that the given iterator points to.</summary>
+        <returns>
+          <see langword="true" /> if the current iterator is pointing to an element that comes before the element that <paramref name="_Right" /> is pointing to; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -582,7 +584,7 @@
         <Parameter Name="_Right" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
         <param name="_Right">The number of elements to increment.</param>
         <summary>Increments the reverse iterator by the given number of elements. The integer parameter is specified on the right side of the addition operator.</summary>
         <returns>An iterator.</returns>
@@ -603,7 +605,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1000")</AttributeName>
         </Attribute>
       </Attributes>
@@ -644,9 +646,9 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object to assign to the current object.</param>
+        <summary>Assigns the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object to the current object.</summary>
+        <returns>The current object (*this).</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -679,7 +681,7 @@
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
         <summary>Decrements the reverse iterator by one element. This is the prefix version of the decrement operator.</summary>
         <returns>An iterator.</returns>
         <remarks>To be added.</remarks>
@@ -706,8 +708,8 @@
         <Parameter Name="A_0" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
-        <param name="A_0">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
+        <param name="A_0">An unused parameter that indicates this is the postfix version of the operator.</param>
         <summary>Decrements the reverse iterator by one element. This is the postfix version of the decrement operator.</summary>
         <returns>An iterator.</returns>
         <remarks>To be added.</remarks>
@@ -738,9 +740,10 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object.</param>
+        <summary>Determines whether two iterators are the same object.</summary>
+        <returns>
+          <see langword="true" /> if the two iterators are the same object; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -769,9 +772,10 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The iterator to compare with the left-side iterator.</param>
+        <summary>Determines whether the position of the left-side iterator is greater than the position of the given right-side iterator.</summary>
+        <returns>
+          <see langword="true" /> if the left-side iterator is greater than the given right-side iterator; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -795,9 +799,10 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The iterator to compare with the left-side iterator.</param>
+        <summary>Determines whether the position of the left-side iterator is greater than or equal to the position of the given right-side iterator.</summary>
+        <returns>
+          <see langword="true" /> if the left-side iterator is greater than or equal to the given right-side iterator; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -853,7 +858,7 @@
         <Parameter Name="" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" RefType="ref" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
         <summary>Increments the reverse iterator by one element. This is the prefix version of the increment operator.</summary>
         <returns>An iterator.</returns>
         <remarks>To be added.</remarks>
@@ -880,8 +885,8 @@
         <Parameter Name="A_0" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
-        <param name="A_0">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
+        <param name="A_0">An unused parameter that indicates this is the postfix version of the operator.</param>
         <summary>Increments the reverse iterator by one element. This is the postfix version of the increment operator.</summary>
         <returns>An iterator.</returns>
         <remarks>To be added.</remarks>
@@ -907,9 +912,10 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object to compare with the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object.</param>
+        <summary>Determines whether the given <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object differs from the current <see cref="T:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1" /> object.</summary>
+        <returns>
+          <see langword="true" /> if the two iterators are different objects; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -938,9 +944,10 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The iterator to compare with the left-side iterator.</param>
+        <summary>Determines whether the position of the left-side iterator is less than the position of the given right-side iterator.</summary>
+        <returns>
+          <see langword="true" /> if the left-side iterator is less than the given right-side iterator; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -964,14 +971,15 @@
         <Parameter Name="_Right" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Right">The iterator to compare with the left-side iterator.</param>
+        <summary>Determines whether the position of the left-side iterator is less than or equal to the position of the given right-side iterator.</summary>
+        <returns>
+          <see langword="true" /> if the left-side iterator is less than or equal to the given right-side iterator; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_MemberSelection">
-      <MemberSignature Language="C#" Value="public static TValue op_MemberSelection (Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; _Left);" />
+      <MemberSignature Language="C#" Value="public static ref TValue op_MemberSelection (Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; _Left);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !TValue op_MemberSelection(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt; _Left) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1.op_MemberSelection(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Shared op_MemberSelection (_Left As ReverseRandomAccessIterator(Of TValue)) As TValue" />
@@ -984,7 +992,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1000")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -998,14 +1006,14 @@
         <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Left">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Left">The iterator that the operator is applied to.</param>
+        <summary>Returns the element that the iterator is currently pointing to.</summary>
+        <returns>The element that the iterator is currently pointing to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="op_PointerDereference">
-      <MemberSignature Language="C#" Value="public static TValue op_PointerDereference (Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; _Left);" />
+      <MemberSignature Language="C#" Value="public static ref TValue op_PointerDereference (Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt; _Left);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname !TValue op_PointerDereference(class Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1&lt;!TValue&gt; _Left) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1.op_PointerDereference(Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator{`0}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
       <MemberSignature Language="VB.NET" Value="Public Shared op_PointerDereference (_Left As ReverseRandomAccessIterator(Of TValue)) As TValue" />
@@ -1018,7 +1026,7 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+        <Attribute>
           <AttributeName>System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Design", "CA1000")</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
@@ -1032,9 +1040,9 @@
         <Parameter Name="_Left" Type="Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <param name="_Left">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="_Left">The iterator that the operator is applied to.</param>
+        <summary>Returns the element that the iterator is currently pointing to.</summary>
+        <returns>The element that the iterator is currently pointing to.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1099,7 +1107,7 @@
         <Parameter Name="_Right" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="">To be added.</param>
+        <param name="">A reference to the current iterator.</param>
         <param name="_Right">The number of elements to decrement.</param>
         <summary>Decrements the iterator by the given number of elements. The integer parameter is specified on the right side of the subtraction operator.</summary>
         <returns>An iterator.</returns>

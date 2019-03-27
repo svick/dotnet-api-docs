@@ -1,6 +1,6 @@
 ﻿<Type Name="Lazy&lt;T&gt;" FullName="System.Lazy&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class Lazy&lt;T&gt;" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Lazy`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Lazy`1&lt;T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Lazy`1" />
   <TypeSignature Language="VB.NET" Value="Public Class Lazy(Of T)" />
   <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Lazy" />
@@ -34,16 +34,16 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerDisplay("ThreadSafetyMode={Mode}, IsValueCreated={IsValueCreated}, IsValueFaulted={IsValueFaulted}, Value={ValueForDebugDisplay}")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
       <AttributeName>System.Diagnostics.DebuggerTypeProxy(typeof(System.System_LazyDebugView`1))</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+    <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
       <AttributeName>System.Serializable</AttributeName>
     </Attribute>
   </Attributes>
@@ -253,7 +253,7 @@
         <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="isThreadSafe" Type="System.Boolean" />
+        <Parameter Name="isThreadSafe" Type="System.Boolean" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="isThreadSafe">
@@ -318,7 +318,7 @@
         <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" />
+        <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="valueFactory">The delegate that is invoked to produce the lazily initialized value when it is needed.</param>
@@ -398,7 +398,7 @@
         <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="mode" Type="System.Threading.LazyThreadSafetyMode" />
+        <Parameter Name="mode" Type="System.Threading.LazyThreadSafetyMode" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="mode">One of the enumeration values that specifies the thread safety mode.</param>
@@ -473,12 +473,17 @@
         <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="value" Type="T" />
+        <Parameter Name="value" Type="T" Index="0" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The preinitialized value to be used.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.Lazy`1" /> class that uses a preinitialized specified value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[
+## Remarks
+An instance created with this constructor is usable by multiple threads concurrently.
+]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -511,8 +516,8 @@
         <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" />
-        <Parameter Name="isThreadSafe" Type="System.Boolean" />
+        <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="isThreadSafe" Type="System.Boolean" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="valueFactory">The delegate that is invoked to produce the lazily initialized value when it is needed.</param>
@@ -597,8 +602,8 @@
         <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" />
-        <Parameter Name="mode" Type="System.Threading.LazyThreadSafetyMode" />
+        <Parameter Name="valueFactory" Type="System.Func&lt;T&gt;" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="mode" Type="System.Threading.LazyThreadSafetyMode" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="valueFactory">The delegate that is invoked to produce the lazily initialized value when it is needed.</param>
@@ -693,6 +698,11 @@
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
+          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -795,7 +805,7 @@
         <AssemblyName>System.Core</AssemblyName>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8">
+        <Attribute FrameworkAlternate="xamarinandroid-7.1;xamarinios-10.8;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;xamarinmac-3.0">
           <AttributeName>System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)</AttributeName>
         </Attribute>
       </Attributes>

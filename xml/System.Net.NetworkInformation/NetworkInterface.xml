@@ -7,6 +7,7 @@
   <TypeSignature Language="F#" Value="type NetworkInterface = class" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
     <AssemblyVersion>4.2.1.0</AssemblyVersion>
@@ -283,9 +284,7 @@
       <Parameters />
       <Docs>
         <summary>Gets the IP statistics for this <see cref="T:System.Net.NetworkInformation.NetworkInterface" /> instance.</summary>
-        <returns>Returns <see cref="T:System.Net.NetworkInformation.IPInterfaceStatistics" />.  
-  
- The IP statistics.</returns>
+        <returns>The IP statistics.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -335,6 +334,7 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
         <AssemblyVersion>4.2.1.0</AssemblyVersion>
@@ -490,9 +490,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the index of the IPv6 loopback interface.</summary>
-        <value>Returns <see cref="T:System.Int32" />.  
-  
- The index for the IPv6 loopback interface.</value>
+        <value>The index for the IPv6 loopback interface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -835,7 +833,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="networkInterfaceComponent" Type="System.Net.NetworkInformation.NetworkInterfaceComponent" />
+        <Parameter Name="networkInterfaceComponent" Type="System.Net.NetworkInformation.NetworkInterfaceComponent" Index="0" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netstandard-2.0;xamarinandroid-7.1;xamarinios-10.8;xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="networkInterfaceComponent">A <see cref="T:System.Net.NetworkInformation.NetworkInterfaceComponent" /> value.</param>

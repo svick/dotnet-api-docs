@@ -310,7 +310,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnterStyle(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.EnterStyle(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnterStyle(System::Web::UI::MobileControls::Style ^ style);" />
-      <MemberSignature Language="F#" Value="member this.EnterStyle : System.Web.UI.MobileControls.Style -&gt; unit" Usage="mobileTextWriter.EnterStyle style" />
+      <MemberSignature Language="F#" Value="override this.EnterStyle : System.Web.UI.MobileControls.Style -&gt; unit" Usage="mobileTextWriter.EnterStyle style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -492,7 +492,7 @@
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExitStyle(class System.Web.UI.MobileControls.Style style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.MobileTextWriter.ExitStyle(System.Web.UI.MobileControls.Style)" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExitStyle(System::Web::UI::MobileControls::Style ^ style);" />
-      <MemberSignature Language="F#" Value="member this.ExitStyle : System.Web.UI.MobileControls.Style -&gt; unit" Usage="mobileTextWriter.ExitStyle style" />
+      <MemberSignature Language="F#" Value="override this.ExitStyle : System.Web.UI.MobileControls.Style -&gt; unit" Usage="mobileTextWriter.ExitStyle style" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -563,7 +563,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="text">The string to be encoded.</param>
@@ -589,7 +589,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="url" Type="System.String" />
+        <Parameter Name="url" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="url">The URL string.</param>
@@ -624,7 +624,7 @@ Derived writer classes can override this method.
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="urlText" Type="System.String" />
+        <Parameter Name="urlText" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="urlText">The URL string.</param>
@@ -657,8 +657,8 @@ Inherited writer classes can override this method.
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="s" Type="System.String" />
-        <Parameter Name="argument" Type="System.Boolean" />
+        <Parameter Name="s" Type="System.String" Index="0" FrameworkAlternate="netframework-1.1" />
+        <Parameter Name="argument" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-1.1" />
       </Parameters>
       <Docs>
         <param name="s">The string to be added.</param>

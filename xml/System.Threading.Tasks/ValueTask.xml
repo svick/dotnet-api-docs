@@ -12,6 +12,9 @@
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
@@ -21,10 +24,10 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
       <AttributeName>System.Runtime.CompilerServices.AsyncMethodBuilder(typeof(System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder))</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -47,8 +50,11 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
-        <Parameter Name="task" Type="System.Threading.Tasks.Task" />
+        <Parameter Name="task" Type="System.Threading.Tasks.Task" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="task">To be added.</param>
@@ -71,9 +77,12 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <Parameters>
-        <Parameter Name="source" Type="System.Threading.Tasks.Sources.IValueTaskSource" />
-        <Parameter Name="token" Type="System.Int16" />
+        <Parameter Name="source" Type="System.Threading.Tasks.Sources.IValueTaskSource" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="token" Type="System.Int16" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="source">To be added.</param>
@@ -96,6 +105,9 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task</ReturnType>
@@ -122,11 +134,14 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ConfiguredValueTaskAwaitable</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="continueOnCapturedContext" Type="System.Boolean" />
+        <Parameter Name="continueOnCapturedContext" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="continueOnCapturedContext">To be added.</param>
@@ -150,11 +165,14 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="obj" Type="System.Object" />
+        <Parameter Name="obj" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="obj">To be added.</param>
@@ -181,11 +199,14 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="other" Type="System.Threading.Tasks.ValueTask" />
+        <Parameter Name="other" Type="System.Threading.Tasks.ValueTask" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="other">To be added.</param>
@@ -208,6 +229,9 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.ValueTaskAwaiter</ReturnType>
@@ -234,6 +258,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -259,6 +286,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -282,6 +312,9 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -307,6 +340,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -330,6 +366,9 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -355,12 +394,15 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Threading.Tasks.ValueTask" />
-        <Parameter Name="right" Type="System.Threading.Tasks.ValueTask" />
+        <Parameter Name="left" Type="System.Threading.Tasks.ValueTask" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Threading.Tasks.ValueTask" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -385,12 +427,15 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="left" Type="System.Threading.Tasks.ValueTask" />
-        <Parameter Name="right" Type="System.Threading.Tasks.ValueTask" />
+        <Parameter Name="left" Type="System.Threading.Tasks.ValueTask" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="right" Type="System.Threading.Tasks.ValueTask" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="left">To be added.</param>
@@ -414,6 +459,9 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>

@@ -19,7 +19,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
+    <Attribute>
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Class)</AttributeName>
     </Attribute>
   </Attributes>
@@ -368,7 +368,7 @@ public void MyMethod()
       <Docs>
         <summary>Gets or sets a value that indicates whether the service ordered dispatch is ensured.</summary>
         <value>
-          <see langword="True" /> if the service ordered dispatch is ensured; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+          <see langword="true" /> if the service ordered dispatch is ensured; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

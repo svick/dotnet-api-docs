@@ -9,6 +9,10 @@
     <AssemblyName>System.Memory</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
@@ -31,6 +35,10 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -39,8 +47,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
-        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="out" />
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="segment" Type="System.ArraySegment&lt;T&gt;" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -63,6 +71,10 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -71,8 +83,8 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
-        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="out" />
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="memory" Type="System.ReadOnlyMemory&lt;T&gt;" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -95,6 +107,10 @@
         <AssemblyName>System.Memory</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -103,11 +119,11 @@
         <TypeParameter Name="T" />
       </TypeParameters>
       <Parameters>
-        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" />
-        <Parameter Name="startSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" RefType="out" />
-        <Parameter Name="startIndex" Type="System.Int32" RefType="out" />
-        <Parameter Name="endSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" RefType="out" />
-        <Parameter Name="endIndex" Type="System.Int32" RefType="out" />
+        <Parameter Name="sequence" Type="System.Buffers.ReadOnlySequence&lt;T&gt;" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="startSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="startIndex" Type="System.Int32" RefType="out" Index="2" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="endSegment" Type="System.Buffers.ReadOnlySequenceSegment&lt;T&gt;" RefType="out" Index="3" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="endIndex" Type="System.Int32" RefType="out" Index="4" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
@@ -116,6 +132,46 @@
         <param name="startIndex">To be added.</param>
         <param name="endSegment">To be added.</param>
         <param name="endIndex">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryRead&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool TryRead&lt;T&gt; (ref System.Buffers.SequenceReader&lt;byte&gt; reader, out T value) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryRead&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Buffers.SequenceReader`1&lt;unsigned int8&gt;&amp; reader, [out] !!T&amp; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SequenceMarshal.TryRead``1(System.Buffers.SequenceReader{System.Byte}@,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryRead(Of T As Structure) (ByRef reader As SequenceReader(Of Byte), ByRef value As T) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : value class static bool TryRead(System::Buffers::SequenceReader&lt;System::Byte&gt; % reader, [Runtime::InteropServices::Out] T % value);" />
+      <MemberSignature Language="F#" Value="static member TryRead :  *  -&gt; bool (requires 'T : struct)" Usage="System.Runtime.InteropServices.SequenceMarshal.TryRead (reader, value)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Memory</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="reader" Type="System.Buffers.SequenceReader&lt;System.Byte&gt;" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="value" Type="T" RefType="out" Index="1" FrameworkAlternate="netcore-3.0" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="reader">To be added.</param>
+        <param name="value">To be added.</param>
         <summary>To be added.</summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>

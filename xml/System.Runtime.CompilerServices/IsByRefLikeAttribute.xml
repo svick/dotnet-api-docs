@@ -14,15 +14,18 @@
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-2.2;netcore-3.0">
       <AttributeName>System.AttributeUsage(System.AttributeTargets.Struct)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0">
       <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
     </Attribute>
   </Attributes>
@@ -53,6 +56,9 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <Parameters />
       <Docs>

@@ -12,6 +12,9 @@
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
@@ -24,7 +27,7 @@
     </Interface>
   </Interfaces>
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-2.1;netcore-2.2">
+    <Attribute FrameworkAlternate="netcore-2.2;netcore-2.1;netcore-3.0">
       <AttributeName>System.Runtime.CompilerServices.IsReadOnly</AttributeName>
     </Attribute>
   </Attributes>
@@ -47,6 +50,9 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -71,6 +77,9 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -99,11 +108,14 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="continuation" Type="System.Action" />
+        <Parameter Name="continuation" Type="System.Action" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="continuation">To be added.</param>
@@ -129,11 +141,14 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="continuation" Type="System.Action" />
+        <Parameter Name="continuation" Type="System.Action" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="continuation">To be added.</param>

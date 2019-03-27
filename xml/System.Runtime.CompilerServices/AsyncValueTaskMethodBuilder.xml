@@ -12,6 +12,9 @@
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>netstandard</AssemblyName>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
@@ -36,6 +39,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -52,8 +58,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" />
-        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
+        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TAwaiter">To be added.</typeparam>
@@ -79,6 +85,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -95,8 +104,8 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" />
-        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
+        <Parameter Name="awaiter" Type="TAwaiter" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" Index="1" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TAwaiter">To be added.</typeparam>
@@ -122,6 +131,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Runtime.CompilerServices.AsyncValueTaskMethodBuilder</ReturnType>
       </ReturnValue>
@@ -146,11 +158,14 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="exception" Type="System.Exception" />
+        <Parameter Name="exception" Type="System.Exception" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="exception">To be added.</param>
@@ -172,6 +187,9 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -197,11 +215,14 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="stateMachine" Type="System.Runtime.CompilerServices.IAsyncStateMachine" />
+        <Parameter Name="stateMachine" Type="System.Runtime.CompilerServices.IAsyncStateMachine" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <param name="stateMachine">To be added.</param>
@@ -224,6 +245,9 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -235,7 +259,7 @@
         </TypeParameter>
       </TypeParameters>
       <Parameters>
-        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" />
+        <Parameter Name="stateMachine" Type="TStateMachine" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0" />
       </Parameters>
       <Docs>
         <typeparam name="TStateMachine">To be added.</typeparam>
@@ -258,6 +282,9 @@
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Extensions</AssemblyName>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.ValueTask</ReturnType>
